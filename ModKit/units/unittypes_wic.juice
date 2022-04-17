@@ -5082,14 +5082,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 800
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -5843,35 +5864,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 650
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -6820,14 +6841,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 500
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 500
@@ -8325,14 +8367,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -9497,35 +9560,35 @@ UnitTypeList UnitTypes
 		myHealth 650
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 800
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 950
+				myPrice 800
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -10770,14 +10833,35 @@ UnitTypeList UnitTypes
 		myHealth 575
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -11781,35 +11865,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost Armor
-			{
-				myRole ARMOR_ROLE
-				myPrice 750
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 900
+				myPrice 750
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 750
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 750
@@ -12824,35 +12908,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -13886,14 +13970,35 @@ UnitTypeList UnitTypes
 		myHealth 550
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 1900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1900
@@ -14953,35 +15058,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
-				myRole AIR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
 			{
-				myRole ARMY_ROLE
-				myPrice 1100
+				myRole AIR_ROLE
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -15890,14 +15995,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(2)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -16705,35 +16831,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -17474,39 +17600,39 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(4)
-			{
-				myRole FPM_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
-				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
+			{
+				myRole FPM_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
 		}
@@ -18273,14 +18399,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -18898,35 +19045,35 @@ UnitTypeList UnitTypes
 		myHealth 350
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_NORMAL
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole AIR_ROLE
-				myPrice 800
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(5)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 550
@@ -19707,14 +19854,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 300
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 300
@@ -20237,14 +20405,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -21498,35 +21687,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
-			{
-				myRole ARMOR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -22584,35 +22773,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -23314,35 +23503,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 600
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -30182,14 +30371,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 800
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -30919,35 +31129,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 650
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -31872,14 +32082,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 500
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 500
@@ -33329,14 +33560,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -34541,35 +34793,35 @@ UnitTypeList UnitTypes
 		myHealth 650
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 800
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 950
+				myPrice 800
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -35824,14 +36076,35 @@ UnitTypeList UnitTypes
 		myHealth 575
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -36887,35 +37160,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost Armor
-			{
-				myRole ARMOR_ROLE
-				myPrice 750
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 900
+				myPrice 750
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 750
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 750
@@ -37792,35 +38065,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -38742,14 +39015,35 @@ UnitTypeList UnitTypes
 		myHealth 550
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 1900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1900
@@ -39627,35 +39921,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
-				myRole AIR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
 			{
-				myRole ARMY_ROLE
-				myPrice 1100
+				myRole AIR_ROLE
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -40534,14 +40828,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(2)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -41335,35 +41650,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -42108,39 +42423,39 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(4)
-			{
-				myRole FPM_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
-				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
+			{
+				myRole FPM_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
 		}
@@ -42883,14 +43198,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -43486,35 +43822,35 @@ UnitTypeList UnitTypes
 		myHealth 350
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_NORMAL
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole AIR_ROLE
-				myPrice 800
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(5)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 550
@@ -44276,14 +44612,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 300
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 300
@@ -44806,14 +45163,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -46043,35 +46421,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
-			{
-				myRole ARMOR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -47101,35 +47479,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -47801,35 +48179,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 600
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -54815,14 +55193,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 800
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 800
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -55576,35 +55975,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 650
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -56553,14 +56952,35 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 500
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 500
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 500
@@ -58058,14 +58478,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -59230,35 +59671,35 @@ UnitTypeList UnitTypes
 		myHealth 650
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 800
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 950
+				myPrice 800
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 800
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
+				myPrice 800
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 800
@@ -60449,14 +60890,35 @@ UnitTypeList UnitTypes
 		myHealth 575
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -61460,35 +61922,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost Armor
-			{
-				myRole ARMOR_ROLE
-				myPrice 750
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 900
+				myPrice 750
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 1000
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 750
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 750
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 750
@@ -62503,35 +62965,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -63477,14 +63939,35 @@ UnitTypeList UnitTypes
 		myHealth 550
 		myRoleCosts
 		{
-			RoleCost RoleCost(1)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 1900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 1900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1900
@@ -64378,35 +64861,35 @@ UnitTypeList UnitTypes
 		myHealth 450
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
-				myRole AIR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
 			{
-				myRole ARMY_ROLE
-				myPrice 1100
+				myRole AIR_ROLE
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -65311,14 +65794,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(2)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -66126,35 +66630,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 800
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -66923,39 +67427,39 @@ UnitTypeList UnitTypes
 		myHealth 200
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(2)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(4)
-			{
-				myRole FPM_ROLE
 				myPrice 600
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
+			RoleCost ENGINEER
 			{
-				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myRole ENGINEER_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
+			{
+				myRole FPM_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
 			}
 
 		}
@@ -67722,14 +68226,35 @@ UnitTypeList UnitTypes
 		myHealth 750
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 900
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -68349,35 +68874,35 @@ UnitTypeList UnitTypes
 		myHealth 350
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 650
-				myPriceType REBATE_NORMAL
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole AIR_ROLE
-				myPrice 800
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(5)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 550
@@ -69163,14 +69688,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 300
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 300
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 300
@@ -69693,14 +70239,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
+			{
+				myRole ARMY_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 1200
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
 			{
 				myRole AIR_ROLE
 				myPrice 1200
 				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 1200
@@ -70926,35 +71493,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 900
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 1100
+				myPrice 900
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
-			{
-				myRole ARMOR_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 1300
-				myPriceType REBATE_PREMIUM
+				myPrice 900
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 900
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 900
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 900
@@ -72014,35 +72581,35 @@ UnitTypeList UnitTypes
 		myHealth 500
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 650
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole ENGINEER_ROLE
-				myPrice 900
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(3)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 650
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
+			{
+				myRole ENGINEER_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 650
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 650
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 650
@@ -72672,35 +73239,35 @@ UnitTypeList UnitTypes
 		myHealth 400
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
-			{
-				myRole AIR_ROLE
-				myPrice 600
-				myPriceType REBATE_REBATED
-			}
-
-			RoleCost RoleCost(1)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
-				myPrice 750
+				myPrice 600
 				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(2)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(3)
+			RoleCost ARMOR
 			{
 				myRole ARMOR_ROLE
-				myPrice 850
-				myPriceType REBATE_PREMIUM
+				myPrice 600
+				myPriceType REBATE_NORMAL
 			}
 
-			RoleCost RoleCost(4)
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 600
+				myPriceType REBATE_UNIQUE
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 600
@@ -82612,35 +83179,35 @@ UnitTypeList UnitTypes
 		myHealth 150
 		myRoleCosts
 		{
-			RoleCost RoleCost(0)
+			RoleCost ARMY
 			{
 				myRole ARMY_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(1)
-			{
-				myRole ARMOR_ROLE
-				myPrice 900
-				myPriceType REBATE_NORMAL
-			}
-
-			RoleCost RoleCost(2)
-			{
-				myRole AIR_ROLE
-				myPrice 1100
-				myPriceType REBATE_PREMIUM
-			}
-
-			RoleCost RoleCost(4)
+			RoleCost ENGINEER
 			{
 				myRole ENGINEER_ROLE
 				myPrice 550
-				myPriceType REBATE_REBATED
+				myPriceType REBATE_UNIQUE
 			}
 
-			RoleCost RoleCost(5)
+			RoleCost ARMOR
+			{
+				myRole ARMOR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost AIR
+			{
+				myRole AIR_ROLE
+				myPrice 550
+				myPriceType REBATE_NORMAL
+			}
+
+			RoleCost FPM
 			{
 				myRole FPM_ROLE
 				myPrice 550
