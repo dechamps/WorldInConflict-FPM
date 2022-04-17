@@ -1,0 +1,10 @@
+# Ignore files written by JuiceMaker
+/ModKit/**/*.juice.html
+/ModKit/**/*.juice.lock
+/ModKit/**/*.hash
+/ModKit/**/*.ice
+/ModKit/**/*.loc
+/ModKit/juice_debug_file.txt
+/ModKit/juice_error_file.txt
+/ModKit/juice_error_file.xml
+/ModKit/juicemaker.tfm
