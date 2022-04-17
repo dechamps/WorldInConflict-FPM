@@ -1,0 +1,1115 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Body01"
+		myMeshBone "Body"
+		myObjectIsCg 1
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 11
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.000000
+			myY -1.346115
+			myZ -0.074388
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "WALK"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "Body02"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY -0.111885
+					myZ 0.310388
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.047012
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.714
+					myY 0.844
+					myZ 1.707
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 8527.844727
+				myVerts
+				{
+				}
+			}
+			Element myElement19
+			{
+				myName "Body19"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY 0.325115
+					myZ -3.230612
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.085135
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.222
+					myY 0.224
+					myZ 2.031
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 837.290161
+				myVerts
+				{
+				}
+			}
+			Element myElement20
+			{
+				myName "Body20"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY 1.074115
+					myZ 0.091388
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.047012
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.331
+					myY 0.482
+					myZ 0.48
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 634.864929
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody5
+	{
+		myName "Wreck_Main05"
+		myMeshBone "Wreck_Main"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.031000
+			myY -1.352000
+			myZ 0.068000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement6
+			{
+				myName "Wreck_Main06"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.043016
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.865
+					myY 0.812
+					myZ 1.802
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 4999.999512
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody7
+	{
+		myName "Wreck_Tail07"
+		myMeshBone "Wreck_Tail"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.160595
+			myY -0.660267
+			myZ -3.991113
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement8
+			{
+				myName "Wreck_Tail08"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.166595
+					myY -0.379733
+					myZ 0.475709
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.091112
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.286
+					myY 0.199
+					myZ 1.725
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 679.008484
+				myVerts
+				{
+				}
+			}
+			Element myElement28
+			{
+				myName "Wreck_Tail28"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.352405
+					myY 0.803267
+					myZ -1.006291
+				}
+				myRotHPB
+				{
+					myX 0.346785
+					myY -0.110624
+					myZ 0.054862
+				}
+				myExtents
+				{
+					myX 1.167
+					myY 0.205
+					myZ 0.194
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 320.991455
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody9
+	{
+		myName "Wreck_Rotor09"
+		myMeshBone "Wreck_Rotor"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.000000
+			myY -0.184000
+			myZ 0.003000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement10
+			{
+				myName "Wreck_Rotor10"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.607
+					myY 0.283
+					myZ 0.593
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 499.999969
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody11
+	{
+		myName "Wreck_Sled11"
+		myMeshBone "Wreck_Sled"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.807669
+			myY -2.579000
+			myZ 0.758000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement12
+			{
+				myName "Wreck_Sled12"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.816505
+				}
+				myExtents
+				{
+					myX 0.119
+					myY 0.36
+					myZ 1.438
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 499.999969
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody13
+	{
+		myName "Wreck_Rot113"
+		myMeshBone "Wreck_Rot1"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -3.338027
+			myY -0.031000
+			myZ -0.152000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement14
+			{
+				myName "Wreck_Rot114"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 2.296
+					myY 0.294
+					myZ 0.561
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 49.999996
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody15
+	{
+		myName "Wreck_Rot215"
+		myMeshBone "Wreck_Rot2"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 3.030622
+			myY 0.063000
+			myZ 0.092000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement16
+			{
+				myName "Wreck_Rot216"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 2.163
+					myY 0.294
+					myZ 0.5
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 49.999996
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody17
+	{
+		myName "Wreck_Rot317"
+		myMeshBone "Wreck_Rot3"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 12
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.006000
+			myY -0.226000
+			myZ 3.195868
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement18
+			{
+				myName "Wreck_Rot318"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.638
+					myY 0.294
+					myZ 2.358
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 49.999996
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+	Joint myJoint0
+	{
+		myType HINGE_JOINT
+		myRB1 "Body01"
+		myRB2 "Wreck_Main05"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint1
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Main05"
+		myRB2 "Wreck_Tail07"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint2
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Main05"
+		myRB2 "Wreck_Rotor09"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint3
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Main05"
+		myRB2 "Wreck_Sled11"
+		myPos
+		{
+			myX -0.543
+			myY -0.943
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint4
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Rotor09"
+		myRB2 "Wreck_Rot113"
+		myPos
+		{
+			myX -0.529
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint5
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Rotor09"
+		myRB2 "Wreck_Rot215"
+		myPos
+		{
+			myX 0.529
+			myY 0.0
+			myZ 0.023
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+	Joint myJoint6
+	{
+		myType HINGE_JOINT
+		myRB1 "Wreck_Rotor09"
+		myRB2 "Wreck_Rot317"
+		myPos
+		{
+			myX -0.011
+			myY 0.0
+			myZ 0.552
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+}
+
+DelayedExplosions myExplosions
+{
+}
+

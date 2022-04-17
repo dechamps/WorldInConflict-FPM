@@ -1,0 +1,510 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "frys01"
+		myMeshBone "frys"
+		myObjectIsCg 1
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 2.345486
+			myY 1.113420
+			myZ 0.518759
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "frys02"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.386149
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.412
+					myY 0.504
+					myZ 0.36
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 123.38308
+				myVerts
+				{
+				}
+			}
+			Element myElement11
+			{
+				myName "frys11"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.621851
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.412
+					myY 0.504
+					myZ 0.36
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 76.616913
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody3
+	{
+		myName "toa03"
+		myMeshBone "toa"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 1.335948
+			myY 0.378943
+			myZ 0.443212
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "toa04"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.007351
+					myY 0.403506
+					myZ -0.23851
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.19
+					myY 0.264
+					myZ 0.075
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 18.318537
+				myVerts
+				{
+				}
+			}
+			Element myElement10
+			{
+				myName "toa10"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.001649
+					myY -0.090494
+					myZ 0.05349
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.208
+					myY 0.287
+					myZ 0.281
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 81.681458
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody5
+	{
+		myName "tv05"
+		myMeshBone "tv"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.122307
+			myY 0.666105
+			myZ 0.673138
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement6
+			{
+				myName "tv06"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.538
+					myY 0.375
+					myZ 0.203
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 79.999992
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody7
+	{
+		myName "soffa07"
+		myMeshBone "soffa"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -2.028848
+			myY 0.472928
+			myZ 0.496852
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement8
+			{
+				myName "soffa08"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.360979
+					myZ -0.354037
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.0
+				}
+				myExtents
+				{
+					myX 1.202
+					myY 0.274
+					myZ 0.133
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 26.452324
+				myVerts
+				{
+				}
+			}
+			Element myElement9
+			{
+				myName "soffa09"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -0.055021
+					myZ 0.053963
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.0
+				}
+				myExtents
+				{
+					myX 1.245
+					myY 0.41
+					myZ 0.563
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 173.547668
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+	DelayedExplosion myExplosion0
+	{
+		myDelay 0.000000
+		myDelayRndLo 0.000000
+		myDelayRndHi 0.000000
+		myBone "Null_Explosion"
+		myState "STND"
+		myRadius 10.000000
+		myStrength 1500.000000
+		mySoundFile ""
+		myProbability 1.000000
+	}
+}
+

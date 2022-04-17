@@ -1,0 +1,190 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "body01"
+		myMeshBone "body"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 1
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.503664
+			myY 0.993777
+			myZ 0.043000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "body02"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX 0.017336
+					myY -0.397777
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 4.184
+					myY 0.867
+					myZ 4.857
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 5951.416016
+				myVerts
+				{
+				}
+			}
+			Element myElement7
+			{
+				myName "body07"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.068336
+					myY 0.179223
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 2.195
+					myY 1.445
+					myZ 2.991
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3204.499756
+				myVerts
+				{
+				}
+			}
+			Element myElement8
+			{
+				myName "body08"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX -0.381664
+					myY 2.124222
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.374
+					myY 0.769
+					myZ 2.365
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 844.083984
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

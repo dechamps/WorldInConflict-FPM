@@ -1,0 +1,92 @@
+INCLUDE juice/ShowboxWireExport.fruit
+
+
+ShowboxWireExport myExports
+{
+	myAttachPoints
+	{
+		WireAttach myAttachPoint0
+		{
+			myBone "GN_WireConn_0"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint1
+		{
+			myBone "GN_WireConn_1"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint2
+		{
+			myBone "GN_WireConn_2"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint3
+		{
+			myBone "GN_WireConn_3"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint4
+		{
+			myBone "GN_WireConn_4"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint5
+		{
+			myBone "GN_WireConn_5"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint6
+		{
+			myBone "GN_WireConn_6"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint7
+		{
+			myBone "GN_WireConn_7"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint8
+		{
+			myBone "GN_WireConn_8"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint9
+		{
+			myBone "GN_WireConn_9"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint10
+		{
+			myBone "GN_WireConn_10"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint11
+		{
+			myBone "GN_WireConn_11"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint12
+		{
+			myBone "GN_WireConn_12"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint13
+		{
+			myBone "GN_WireConn_13"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint14
+		{
+			myBone "GN_WireConn_14"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint15
+		{
+			myBone "GN_WireConn_15"
+			myExternalFlag 1
+		}
+	}
+	myInternalWires
+	{
+	}
+}

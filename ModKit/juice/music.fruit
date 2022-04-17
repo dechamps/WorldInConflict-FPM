@@ -1,0 +1,35 @@
+
+TYPE MusicAction
+{
+	MUSIC_PLAY
+	MUSIC_STOP
+}
+TYPE MusicRevertState
+{
+	REVERT_TO_SILENCE
+	REVERT_TO_BEGINNING
+	//REVERT_TO_LAST_POS
+}
+
+TYPE SoundChannel
+{
+	CHANNEL_MUSIC
+	CHANNEL_AMBIENCE
+	CHANNEL_VOICE
+}
+	
+
+CLASS MusicEvent
+{
+	MusicAction myAction
+	SoundChannel mySoundChannel
+	DECIMAL myFadeTime
+	MusicRevertState myRevertState // only valid if myNumLoops is positive, or MUSIC_STOP is set
+	NUMBER myNumLoops // <=0 == infinite, only valid for action MUSIC_PLAY
+	FILE myMusicFile // only valid for action MUSIC_PLAY
+}
+
+SCRIPTCLASS MusicEventList
+{
+	MusicEvent
+}

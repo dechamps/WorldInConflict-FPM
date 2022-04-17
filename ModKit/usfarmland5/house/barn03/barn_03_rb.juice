@@ -1,0 +1,363 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody2
+	{
+		myName "barn_03_1_barn0302"
+		myMeshBone "barn_03_1_barn03"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.379663
+			myY 5.325347
+			myZ 0.005975
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement3
+			{
+				myName "barn_03_1_barn0303"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.051337
+					myY 0.906652
+					myZ -5.274974
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.483779
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 22.360998
+					myY 2.818
+					myZ 7.195
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1176.06958
+				myVerts
+				{
+				}
+			}
+			Element myElement4
+			{
+				myName "barn_03_1_barn0304"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.039663
+					myY 0.709652
+					myZ 4.962025
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.487367
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 22.415998
+					myY 3.046
+					myZ 7.372
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1305.699951
+				myVerts
+				{
+				}
+			}
+			Element myElement5
+			{
+				myName "barn_03_1_barn0305"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX 0.015663
+					myY 0.903652
+					myZ -0.062975
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 22.575998
+					myY 7.102
+					myZ 12.719999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 5290.35498
+				myVerts
+				{
+				}
+			}
+			Element myElement6
+			{
+				myName "barn_03_1_barn0306"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.033337
+					myY -3.040348
+					myZ 0.026025
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.007
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 22.446999
+					myY 3.048
+					myZ 12.552999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2227.875
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody11
+	{
+		myName "barn_03_wreck_1_Wreckgen111"
+		myMeshBone "barn_03_wreck_1_Wreckgen1"
+		myObjectIsCg 0
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -2.878000
+			myY 8.010509
+			myZ 7.551645
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "HUR3"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement12
+			{
+				myName "barn_03_wreck_1_Wreckgen112"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.81149
+					myZ -0.888646
+				}
+				myRotHPB
+				{
+					myX 3.141593
+					myY -0.480193
+					myZ 3.141593
+				}
+				myExtents
+				{
+					myX 5.422
+					myY 0.177
+					myZ 7.044
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 8493.053711
+				myVerts
+				{
+				}
+			}
+			Element myElement13
+			{
+				myName "barn_03_wreck_1_Wreckgen113"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY -4.57351
+					myZ 5.008354
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -1.554794
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 5.422
+					myY 0.091
+					myZ 2.431
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1506.945923
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

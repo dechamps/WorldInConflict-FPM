@@ -1,0 +1,7 @@
+CLASS VitalStats
+{
+	DECIMAL mySpeed
+	DECIMAL myPerception
+	DECIMAL myStealth
+	DECIMAL myViewRange
+}

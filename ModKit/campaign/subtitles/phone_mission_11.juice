@@ -1,0 +1,195 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub0
+	{
+		myText <empty>
+		myStartTime 1.3
+		myVisibleTime 5.0
+	}
+
+	MovieSubtitle Sub1
+	{
+		myText "You have, one, new message."
+		myStartTime 8.2
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "You've reached Earl Davis and Harriet Bannon. Leave a message after the beep and we'll get back to you."
+		myStartTime 11.2
+		myVisibleTime 4.6
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Hey, Mom. It's Mark. I just thought I'd call to let you know I'm alright, but... "
+		myStartTime 17.0
+		myVisibleTime 4.2
+	}
+
+	MovieSubtitle Sub3b
+	{
+		myText "I guess you're out so..."
+		myStartTime 21.9
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "We've been fighting in the mountains, for a while now."
+		myStartTime 24.7
+		myVisibleTime 2.3
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "It's cold... almost as cold as it was in Russia. "
+		myStartTime 27.3
+		myVisibleTime 2.8
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "Food is scarce too. "
+		myStartTime 31.4
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Funny thing..."
+		myStartTime 33.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "you wouldn't think food would be a problem when you're fighting in your own country, but..."
+		myStartTime 34.7
+		myVisibleTime 3.1
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "there aren't many stores around here, and most of them have been looted clean."
+		myStartTime 38.9
+		myVisibleTime 3.1
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText Anyway...
+		myStartTime 43.3
+		myVisibleTime 1.2
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "we're holed up in a small town called Cascade Falls..."
+		myStartTime 44.9
+		myVisibleTime 2.8
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "and... it looks like there's gonna be a big battle tomorrow."
+		myStartTime 48.3
+		myVisibleTime 2.6
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Commies are coming at us with everything they got..."
+		myStartTime 52.0
+		myVisibleTime 1.9
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "and we can't let them through... cause if we do..."
+		myStartTime 54.3
+		myVisibleTime 2.4
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "it will all be over."
+		myStartTime 57.4
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "I wish I could explain... but... it's kind of a secret."
+		myStartTime 59.8
+		myVisibleTime 3.8
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "I'm gonna do good tomorrow, though. "
+		myStartTime 64.8
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "God knows I've screwed things up before and..."
+		myStartTime 67.5
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "I probably should've stayed out of the army in the first place instead of signing up \nbecause of what I thought dad would think..."
+		myStartTime 70.2
+		myVisibleTime 4.8
+	}
+
+	MovieSubtitle Sub20
+	{
+		myText "but that doesn't really matter now."
+		myStartTime 76.4
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub21
+	{
+		myText "Tomorrow I'm going to do good. "
+		myStartTime 79.2
+		myVisibleTime 2.2
+	}
+
+	MovieSubtitle Sub22
+	{
+		myText "No matter what it takes."
+		myStartTime 82.0
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub23
+	{
+		myText "Take care, okay."
+		myStartTime 85.2
+		myVisibleTime 1.7
+	}
+
+	MovieSubtitle Sub24
+	{
+		myText "Bye mom."
+		myStartTime 88.0
+		myVisibleTime 1.3
+	}
+
+	MovieSubtitle Sub25
+	{
+		myText "I love you."
+		myStartTime 89.7
+		myVisibleTime 2.0
+	}
+
+}
+

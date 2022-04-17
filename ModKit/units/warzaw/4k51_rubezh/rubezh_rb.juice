@@ -1,0 +1,199 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody19
+	{
+		myName "Master19"
+		myMeshBone "rubezh_1_Main"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.147490
+			myY 1.928002
+			myZ 0.784942
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement20
+			{
+				myName "Master20"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX -0.08449
+					myY -0.587002
+					myZ 0.509058
+				}
+				myRotHPB
+				{
+					myX -0.017998
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.409
+					myY 1.333
+					myZ 5.63
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 6289.181152
+				myVerts
+				{
+				}
+			}
+			Element myElement21
+			{
+				myName "main21"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.12649
+					myY 0.494998
+					myZ 1.646058
+				}
+				myRotHPB
+				{
+					myX -0.017998
+					myY -0.0
+					myZ -0.0
+				}
+				myExtents
+				{
+					myX 0.966
+					myY 1.52
+					myZ 2.011
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1756.213745
+				myVerts
+				{
+				}
+			}
+			Element myElement22
+			{
+				myName "main22"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.38551
+					myY 1.443998
+					myZ -3.116941
+				}
+				myRotHPB
+				{
+					myX 1.678027
+					myY 1.314958
+					myZ 0.380345
+				}
+				myExtents
+				{
+					myX 1.207
+					myY 3.126
+					myZ 0.871
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1954.604858
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

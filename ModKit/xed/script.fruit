@@ -1,0 +1,1495 @@
+// script.fruit
+// The export format for script data for an xed map file.
+
+
+INCLUDE xed/xinstances.fruit
+INCLUDE xed/scriptlist.fruit
+INCLUDE units/unittype.fruit
+
+// Theese are the current context constants
+//      CONTEXT.PLAYER
+//      CONTEXT.TEAM
+//      CONTEXT.AGENT
+
+// The main script container
+
+SCRIPTCLASS Script
+{
+        // Team
+        TEAM_ShowButtonMessagebox
+        TEAM_ShowTimedMessageBox
+        TEAM_ShowAutomaticMessageBox
+        TEAM_ChangeSoundtrack
+        TEAM_ApRewardOrPenalty
+        TEAM_AddMinimapMarker
+        TEAM_RemoveMinimapMarker
+        TEAM_FlashPositionInMinimap
+        TEAM_CameraShake
+        TEAM_FadeToColor
+        TEAM_SetCameraPosition
+        TEAM_SetCameraOrientation
+        TEAM_SetCameraView
+        TEAM_CameraPositionTrackAgent
+        TEAM_CameraSpline
+        TEAM_PlaySound
+        TEAM_SaveCameraPosition
+        TEAM_RestoreCameraPosition
+        TEAM_FreezeInput
+        TEAM_PurgeMessageQueue
+	TEAM_ForceTopDownCamera
+	TEAM_SetCameraWidescreen
+	TEAM_LoadCameraSpline
+	TEAM_CreateModel        
+
+	// Objectives
+        OBJ_AddObjective_HumanObjective
+        OBJ_AddObjective_Zone
+        OBJ_AddObjective_Annihilate
+        OBJ_AddObjective_SearchAndDestroy
+        OBJ_AddObjective_DefendUnit
+        OBJ_AddObjective_DefendArea
+        OBJ_ChangeObjectiveImportance
+        OBJ_ObjectiveFailed
+        OBJ_ObjectiveCompleted
+        OBJ_RemoveObjective
+
+	// Zone Actions
+        TEAM_AddZone
+	TEAM_AddZoneWIC
+	
+	TEAM_ChangeZoneOwner
+	TEAM_RemoveZone
+
+        // Player
+        PLAYER_AddAgent
+        PLAYER_ChangeAgentsOwner
+        PLAYER_FreezeInput
+        PLAYER_PlaySound
+        PLAYER_MoveCameraToLz
+        PLAYER_AIChangeDecisionTree
+        PLAYER_AiAddAgent
+        PLAYER_AiChangeEngageSuccessProbability
+        PLAYER_AiRemoveZone
+        
+        // Agent
+        AGENT_MoveTo
+        AGENT_AttackAgents
+        AGENT_AttackArea
+        AGENT_SetIndestructable
+        AGENT_EnterBuilding
+        AGENT_ExitBuilding
+        AGENT_EnterContainer
+        AGENT_ExitContainer
+        AGENT_Die
+	AGENT_Remove
+        AGENT_Hurt
+        AGENT_Heal
+	AGENT_Teleport
+        AGENT_SecondaryMode
+        AGENT_SetEnabled
+        AGENT_SetFireBehaviour
+        AGENT_SetMoveBehaviour
+        
+        // Thing
+        THING_AddThing
+        THING_SetAnimationState
+        THING_SetPlayerColor
+        THING_RemoveThing
+        THING_LookAtThing
+        THING_LookAtAgent
+        THING_LookAtCamera
+        THING_MoveTo
+        
+        
+        // Script
+        SCRIPT_ActivateScript
+        SCRIPT_AddSound
+        SCRIPT_RemoveSound
+        SCRIPT_SlowMotion
+	SCRIPT_RandomAddZone
+
+	// End Mission thingys
+	SCRIPT_EndMission
+        SCRIPT_SetGameOverTie
+        SCRIPT_SucceedMission
+        
+        // Weather
+        WEATHER_SetWeatherEffect
+        
+        // Persistent data
+        DATA_SetIntCampaignFlag
+        DATA_SetStrCampaignFlag
+        DATA_ChangeIntCampaignFlag
+        DATA_RemoveCampaignFlag
+        
+        // Triggers
+        SCRIPT_KillTriggers
+        TRIGGER_AllPlayersReady
+	TRIGGER_PlayerAction
+        TRIGGER_Timer
+        TRIGGER_CampaignFlagSet
+        TRIGGER_CampaignFlagNotSet
+        TRIGGER_AgentsWereKilled
+        TRIGGER_AgentTypeWasKilled
+        TRIGGER_TeamEnterArea
+        TRIGGER_AnyOtherTeamEnterArea
+        TRIGGER_PlayerEnterArea
+        TRIGGER_AnyOtherPlayerEnterArea
+        TRIGGER_AgentsEnterArea
+        TRIGGER_AgentTypeEnterArea
+        TRIGGER_PlayerLeaveArea
+        TRIGGER_AgentsLeaveArea
+        TRIGGER_AgentTypeLeaveArea
+        TRIGGER_PlayerEnterBuilding
+        TRIGGER_AgentsEnterBuilding
+        TRIGGER_AgentTypeEnterBuilding
+        TRIGGER_PlayerExitBuilding
+        TRIGGER_AgentsExitBuilding
+        TRIGGER_AgentTypeExitBuilding
+   	    TRIGGER_PlayerEnterContainer
+        TRIGGER_AgentsEnterContainer
+        TRIGGER_AgentTypeEnterContainer
+        TRIGGER_PlayerExitContainer
+        TRIGGER_AgentsExitContainer
+        TRIGGER_AgentTypeExitContainer
+        TRIGGER_PlayerHaveKilled
+        TRIGGER_AgentsHaveKilled
+        TRIGGER_AgentTypeHaveKilled
+        TRIGGER_PlayerUnderAttack
+        TRIGGER_AgentsUnderAttack
+        TRIGGER_AgentTypeUnderAttack
+        TRIGGER_PlayerConnected
+        TRIGGER_TriggerIsTriggered
+	    TRIGGER_MessageBoxClosed
+	    TRIGGER_AllPlayersReady
+	TRIGGER_GameOver
+	
+	// Zone triggers
+        TRIGGER_ZonesTakenByTeam
+        TRIGGER_ZoneTakenByPlayer
+        TRIGGER_NumberOfZonesTakenByTeam
+        
+        // Conditions
+        TRIGGER_ConditionBranch
+        SCRIPT_EvaluationBranch
+        
+        // Debug sheet
+        DEBUG_DebugText
+        
+        // Random
+        RANDOM_ActivateScript
+        
+        // Groups
+        GROUP_AgentGroup
+        
+        // Help GUI
+        GUI_HelpEnableWidget
+        GUI_HelpDisableAll
+}
+
+SCRIPTCLASS AgentGroup
+{
+        PLAYER_AddAgent*
+		PLAYER_AiAddAgent*
+}
+
+SCRIPTCLASS MessageBoxRefList
+{
+	TEAM_ShowButtonMessagebox*
+        TEAM_ShowTimedMessageBox*
+        TEAM_ShowAutomaticMessageBox*
+}
+
+SCRIPTCLASS TriggerRefList
+{
+        TRIGGER_Timer*
+        TRIGGER_CampaignFlagSet*
+        TRIGGER_CampaignFlagNotSet*
+        TRIGGER_AgentsWereKilled*
+        TRIGGER_AgentTypeWasKilled*
+        TRIGGER_TeamEnterArea*
+        TRIGGER_AnyOtherTeamEnterArea*
+        TRIGGER_PlayerEnterArea*
+        TRIGGER_AnyOtherPlayerEnterArea*
+        TRIGGER_AgentsEnterArea*
+        TRIGGER_PlayerLeaveArea*
+        TRIGGER_AgentsLeaveArea*
+        TRIGGER_PlayerEnterBuilding*
+        TRIGGER_AgentsEnterBuilding*
+        TRIGGER_PlayerExitBuilding*
+        TRIGGER_AgentsExitBuilding*
+        TRIGGER_PlayerHaveKilled*
+        TRIGGER_AgentsHaveKilled*
+        TRIGGER_PlayerUnderAttack*
+        TRIGGER_AgentsUnderAttack*
+        TRIGGER_PlayerConnected*
+        TRIGGER_TriggerIsTriggered*
+        TRIGGER_ZonesTakenByTeam*
+        TRIGGER_ZoneTakenByPlayer*
+        TRIGGER_NumberOfZonesTakenByTeam*
+        TRIGGER_AgentTypeUnderAttack*
+        TRIGGER_AgentTypeHaveKilled*
+        TRIGGER_AgentTypeExitBuilding*
+        TRIGGER_AgentTypeEnterBuilding*
+        TRIGGER_AgentTypeLeaveArea*
+        TRIGGER_AgentTypeEnterArea*
+        TRIGGER_ConditionBranch*
+        TRIGGER_AgentTypeExitContainer*
+        TRIGGER_AgentTypeEnterContainer*
+        TRIGGER_AgentsExitContainer*
+        TRIGGER_AgentsEnterContainer*
+	TRIGGER_PlayerEnterContainer*
+	TRIGGER_MessageBoxClosed*
+	TRIGGER_AllPlayersReady*
+	TRIGGER_PlayerAction*
+	TRIGGER_GameOver*
+}
+
+CLASS GROUP_AgentGroup
+{
+        AgentGroup myAgentGroup     
+}
+
+CLASS DEBUG_DebugText
+{
+        TEXT myText
+}
+
+TYPE Quadrant
+{
+	NORTH
+	EAST
+	SOUTH
+	WEST
+}
+
+CLASS WayPoint
+{
+        XCameraInstance* myCameraInstance
+        DECIMAL myTransportTimeInSeconds
+        DECIMAL myBias 
+        DECIMAL myTension 
+}
+
+SCRIPTCLASS WayPoints
+{
+        WayPoint
+}
+
+CLASS CONDITION_IntCampaignFlagEquals
+{
+        TEXT myFlag
+        NUMBER myValue
+}
+
+CLASS CONDITION_StrCampaignFlagEquals
+{
+        TEXT myFlag
+        TEXT myValue
+}
+
+CLASS CONDITION_IntCampaignFlagNotEquals
+{
+        TEXT myFlag
+        NUMBER myValue
+}
+
+CLASS CONDITION_StrCampaignFlagNotEquals
+{
+        TEXT myFlag
+        TEXT myValue
+}
+
+CLASS CONDITION_IntCampaignFlagGreaterThan
+{
+        TEXT myFlag
+        NUMBER myValue
+}
+
+CLASS CONDITION_IntCampaignFlagLessThan
+{
+        TEXT myFlag
+        NUMBER myValue
+}
+
+CLASS CONDITION_Timer
+{
+        DECIMAL myTimeInSeconds        
+}
+
+CLASS CONDITION_IsAreaEmpty
+{
+        XSphereInstance* myArea
+}
+
+CLASS CONDITION_IsTriggered
+{
+	TriggerRefList myTriggers
+}
+CLASS CONDITION_IsAreaNotEmpty
+{
+        XSphereInstance* myArea
+}
+
+SCRIPTCLASS Conditions
+{
+        CONDITION_IntCampaignFlagEquals
+        CONDITION_StrCampaignFlagEquals
+        CONDITION_IntCampaignFlagNotEquals
+        CONDITION_StrCampaignFlagNotEquals
+        CONDITION_IntCampaignFlagGreaterThan
+        CONDITION_IntCampaignFlagLessThan
+        CONDITION_Timer
+        CONDITION_IsAreaEmpty
+        CONDITION_IsTriggered
+}
+
+CLASS Option
+{
+        Script* myTriggeredScript
+        Conditions myConditions
+}
+
+CLASS RandomOption
+{
+        Script* myTriggeredScript
+        NUMBER myWeight
+}
+
+SCRIPTCLASS Options
+{
+        Option
+}
+
+SCRIPTCLASS RandomOptions
+{
+        RandomOption
+}
+
+SCRIPTCLASS Evaluations
+{
+        Evaluation
+}
+
+CLASS Template
+{
+        TEXT myDescription
+        ScriptList myScripts        
+}
+
+SCRIPTCLASS Templates
+{
+        Template
+}
+
+SCRIPTCLASS ObjectiveRefList
+{
+	OBJ_AddObjective_HumanObjective*
+	OBJ_AddObjective_Zone*
+	OBJ_AddObjective_Annihilate*
+	OBJ_AddObjective_SearchAndDestroy*
+	OBJ_AddObjective_DefendUnit*
+	OBJ_AddObjective_DefendArea*
+}
+
+SCRIPTCLASS AgentRefList
+{
+        PLAYER_AddAgent*
+		PLAYER_AiAddAgent*
+        GROUP_AgentGroup*
+}
+
+SCRIPTCLASS AreaRefList
+{
+	XSphereInstance*
+}
+
+SCRIPTCLASS FocusInstanceRefList
+{
+        PLAYER_AddAgent*
+		PLAYER_AiAddAgent*
+        XSphereInstance*
+        THING_AddThing*
+        XPropInstance*
+}
+        
+SCRIPTCLASS ZoneList
+{
+	TEAM_AddZone*
+}
+
+TYPE Team
+{
+        TEAM_NOTEAM
+        TEAM_1 
+        TEAM_2
+        TEAM_3 
+        TEAM_4
+        TEAM_5 
+        TEAM_6
+        TEAM_7 
+        TEAM_8
+        TEAM_ANY
+        CONTEXT.TEAM
+}
+
+TYPE Player
+{
+        PLAYER_PLAYER1
+        PLAYER_PLAYER2
+        PLAYER_PLAYER3
+        PLAYER_PLAYER4
+        PLAYER_PLAYER5
+        PLAYER_PLAYER6
+        PLAYER_PLAYER7
+        PLAYER_PLAYER8
+        PLAYER_PLAYER9
+        PLAYER_PLAYER10
+        PLAYER_PLAYER11
+        PLAYER_PLAYER12
+        PLAYER_PLAYER13
+        PLAYER_PLAYER14
+        PLAYER_PLAYER15
+        PLAYER_PLAYER16
+        PLAYER_ANY
+        CONTEXT.PLAYER
+        PLAYER_NOPLAYER
+}
+
+TYPE Flag
+{
+        FALSE
+        TRUE 
+}
+
+TYPE AgentsFlag
+{
+        AllAgents
+        FirstAgent
+}
+
+TYPE FadeType
+{
+        IN
+        OUT
+}
+
+TYPE FadeTo
+{
+			WIDESCREEN
+			NORMAL
+}
+
+TYPE TriggerAffector
+{
+        SPECIFIC
+        ANY
+        CONTEXT
+}
+
+TYPE ActionAffector
+{
+        SPECIFIC
+        CONTEXT
+}
+
+CLASS BuyItem
+{
+        NUMBER myAmount
+        TEXT myAgentType
+}
+
+SCRIPTCLASS BuyItems
+{
+        BuyItem
+}
+
+CLASS TEAM_AddZone
+{
+        XThingInstance* myZoneMarker
+        XSphereInstance* myArea
+        XSphereInstance* myBasePosition
+        XCameraInstance* myCamera
+        Team myStartingTeam
+        Flag myIsCapturableFlag
+        Flag myIsLandableFlag
+        NUMBER myCaptureApAward
+        NUMBER myTimedApAward
+        NUMBER myApAwardIntervalInSeconds
+        NUMBER myTimeToCaptureInSeconds
+        NUMBER myTimeToLooseInSeconds
+		DECIMAL myCautionFactor
+        FILE myMinimapIconFile
+        FILE myCaptureSound
+        FILE myLostSound
+        FILE mySomeoneCapturedItSound
+        FILE myAboutToLooseSound        
+}
+
+CLASS MiniZone
+{
+	 XSphereInstance* myArea
+	XThingInstance* myZoneMarker	
+}
+
+SCRIPTCLASS MiniZones
+{
+	MiniZone
+}
+
+CLASS TEAM_AddZoneWIC
+{
+        XThingInstance* myZoneMarker
+        XSphereInstance* myArea
+        XSphereInstance* myBasePosition
+        XCameraInstance* myCamera
+        Team myStartingTeam
+        Flag myIsCapturableFlag
+        Flag myIsLandableFlag
+        NUMBER myCaptureApAward
+        NUMBER myTimedApAward
+        NUMBER myApAwardIntervalInSeconds
+        NUMBER myTimeToCaptureInSeconds
+        NUMBER myTimeToLooseInSeconds
+	DECIMAL myCautionFactor
+        FILE myMinimapIconFile1
+        FILE myMinimapIconFile2
+        FILE myMinimapIconFile3
+        FILE myMinimapIconFileNeutral
+        FILE myCaptureSoundTeam1
+        FILE myLostSoundTeam1
+        FILE mySomeoneCapturedItSoundTeam1
+        FILE myAboutToLooseSoundTeam1    
+	FILE myCaptureSoundTeam2
+        FILE myLostSoundTeam2
+        FILE mySomeoneCapturedItSoundTeam2
+        FILE myAboutToLooseSoundTeam2    
+        LOCTEXT myZoneWeCapturedText
+        LOCTEXT myZoneEnemyCapturedText
+        LOCTEXT myZoneLostText
+	MiniZones myMiniZones
+}
+
+CLASS PLAYER_AddAgent
+{
+        Player myPlayer
+        XAgentInstance* myAgent
+}
+
+CLASS PLAYER_ChangeAgentsOwner
+{
+        AgentRefList myAgents
+        Player myNewPlayer
+        ActionAffector myAffector
+}
+
+CLASS PLAYER_MoveCameraToLz
+{
+		Player myPlayer
+		DECIMAL myMoveTimeInSeconds
+}
+
+CLASS PLAYER_AiAddAgent
+{
+	Player myAIPlayer
+	XAgentInstance* myAgent
+	ObjectiveRefList myObjective	
+}
+
+CLASS PLAYER_AiChangeEngageSuccessProbability
+{
+	Player myAIPlayer
+	DECIMAL myNewEngageSuccessProbability 
+}
+
+CLASS PLAYER_AiRemoveZone
+{
+	Player myAIPlayer
+	TEAM_AddZone* myZoneToRemove	
+}
+
+
+CLASS OBJ_AddObjective_HumanObjective
+{
+        Player myPlayer
+        LOCTEXT myShortDescription
+        LOCTEXT myLongDescription
+        DECIMAL myImportance
+}
+
+CLASS OBJ_AddObjective_Zone
+{
+        Player myPlayer
+        TEAM_AddZone* myZone
+        LOCTEXT myShortDescription
+        LOCTEXT myLongDescription
+        DECIMAL myImportance
+	DECIMAL myCautionFactor
+}
+
+CLASS OBJ_AddObjective_Annihilate
+{
+        Player myPlayer
+        LOCTEXT myShortDescription
+        LOCTEXT myLongDescription
+        DECIMAL myImportance
+	DECIMAL myCautionFactor
+}
+
+CLASS OBJ_AddObjective_SearchAndDestroy
+{
+        Player myPlayer
+        LOCTEXT myShortDescription
+        LOCTEXT myLongDescription
+        DECIMAL myImportance
+        DECIMAL myAIImportance
+        NUMBER myDifficulty
+        AreaRefList myAreas
+}
+
+CLASS OBJ_AddObjective_DefendUnit
+{
+        Player myPlayer
+        LOCTEXT myShortDescription
+        LOCTEXT myLongDescription
+        DECIMAL myImportance
+        PLAYER_AddAgent* myUnitToDefend
+}
+
+CLASS OBJ_AddObjective_DefendArea
+{
+			Player myPlayer
+			LOCTEXT myShortDescription
+			LOCTEXT myLongDescription
+			DECIMAL myImportance
+			NUMBER myDifficulty
+			DECIMAL myCautionFactor
+			DECIMAL myAIImportance
+			XSphereInstance* myArea
+}
+
+CLASS OBJ_ChangeObjectiveImportance
+{       
+        ObjectiveRefList myObjectives
+        DECIMAL myNewImportance
+}
+
+CLASS OBJ_ObjectiveFailed
+{
+        ObjectiveRefList myObjectives
+}
+
+CLASS OBJ_ObjectiveCompleted
+{
+        ObjectiveRefList myObjectives
+}
+
+CLASS OBJ_RemoveObjective
+{
+        ObjectiveRefList myObjectives        
+}
+
+CLASS PLAYER_FreezeInput
+{
+        Player myPlayer
+        Flag myFlag        
+}
+
+CLASS TEAM_FreezeInput
+{
+        Team myTeam
+        Flag myFlag        
+}
+
+CLASS TEAM_ChangeZoneOwner
+{
+        TEAM_AddZone* myZone
+        Team myNewTeam
+}
+
+CLASS PLAYER_PlaySound
+{
+        Player myPlayer
+        FILE mySoundFile
+}
+
+// ITeam
+CLASS SCRIPT_SucceedMission
+{
+        Team myTeam        
+}
+
+CLASS SCRIPT_SetGameOverTie
+{
+}
+
+CLASS TEAM_ApRewardOrPenalty
+{
+        Team myTeam
+        NUMBER myApRewardOrPenalty
+}
+
+CLASS TEAM_ChangeSoundtrack
+{
+        Team myTeam
+        FILE mySoundtrack
+}
+
+CLASS TEAM_ShowButtonMessagebox
+{
+        Team myTeam
+        LOCTEXT myText
+        TEXT myCharacter
+        FILE myAudioFile
+}
+
+CLASS TEAM_ShowTimedMessageBox
+{
+        Team myTeam
+        LOCTEXT myText
+        TEXT myCharacter
+        FILE myAudioFile
+        DECIMAL myTimeToShowInSeconds
+}
+
+CLASS TEAM_ShowAutomaticMessageBox
+{
+        Team myTeam
+        LOCTEXT myText
+        TEXT myCharacter
+        FILE myAudioFile
+}
+
+
+CLASS TEAM_AddMinimapMarker
+{
+        Team myTeam
+        LOCTEXT myToolTipText
+        NUMBER myNumberOfFlashes
+        FILE myMinimapIconFile
+        XSphereInstance* myPosition
+}
+
+CLASS TEAM_RemoveMinimapMarker
+{
+        TEAM_AddMinimapMarker* myMarkerToRemove        
+}
+
+CLASS TEAM_FlashPositionInMinimap
+{
+        Team myTeam
+        NUMBER myNumberOfFlashes
+        FILE myMinimapIconFile
+        XSphereInstance* myPosition        
+}
+
+CLASS TEAM_CameraShake
+{
+        Team myTeam
+        NUMBER myIntensityPercentage
+        NUMBER myDurationInSeconds
+}
+
+CLASS TEAM_FadeToColor
+{
+        Team myTeam
+        XColor myColor
+        FadeType myFadeType
+        FadeTo myFadeToScreenType
+        DECIMAL myFadetimeInSeconds
+}
+
+CLASS TEAM_SetCameraView
+{
+        Team myTeam 
+        XCameraInstance* myCameraPosition 
+        DECIMAL myTransportTimeInSeconds 
+}
+
+CLASS TEAM_SetCameraPosition
+{
+        Team myTeam 
+        XCameraInstance* myCameraPosition 
+        DECIMAL myTransportTimeInSeconds 
+}
+
+CLASS TEAM_SetCameraOrientation
+{
+        Team myTeam 
+        Vector2 myCameraOrientation 
+        DECIMAL myTransportTimeInSeconds 
+}
+
+CLASS TEAM_CameraPositionTrackAgent
+{
+        Team myTeam 
+        XCameraInstance* myCameraRelativePosition 
+        DECIMAL myTransportTimeInSeconds 
+        PLAYER_AddAgent* myAgent 
+        ActionAffector myAffector 
+}
+
+CLASS TEAM_CameraSpline
+{
+        Team myTeam 
+        NUMBER myStartingFovInDegrees 
+        NUMBER myEndingFovInDegrees  
+        FocusInstanceRefList myFocusInstance 
+        WayPoints myWayPoints 
+}
+
+TYPE SplineType
+{
+	POSITION_AND_ORIENTATION
+	POSITION
+	ORIENTATION
+	LOOK_AT
+}
+
+CLASS TEAM_LoadCameraSpline        
+{
+	Team myTeam
+	SplineType mySplineType
+	FILE mySplineFile
+	DECIMAL myTimeOverride
+	DECIMAL myFov
+	Vector3 myPosition
+	Vector3 myDirection
+}
+
+CLASS TEAM_CreateModel
+{
+	Team myTeam
+	Vector3 myPosition
+	Vector3 myDirection
+	DECIMAL myTimeToLive
+	FILE myModelFile
+}
+
+CLASS TEAM_SetCameraWidescreen
+{
+	Team myTeam
+	Flag myWidescreenFlag
+}
+
+CLASS TEAM_PlaySound
+{
+        Team myTeam
+        FILE mySoundFile
+}
+
+CLASS TEAM_SaveCameraPosition
+{
+        Team myTeam        
+}
+
+CLASS TEAM_RestoreCameraPosition
+{
+        Team myTeam        
+}
+
+CLASS TEAM_PurgeMessageQueue
+{
+			Team myTeam
+}
+
+CLASS TEAM_ForceTopDownCamera
+{
+	Flag myForceFlag
+}
+
+// Agent
+CLASS AGENT_MoveTo
+{
+        AgentRefList myAgents
+        XSphereInstance* myPos
+        ActionAffector myAffector
+}
+
+
+CLASS AGENT_AttackAgents
+{
+        AgentRefList myAgents
+        AgentRefList myAgentsToAttack
+        ActionAffector myAffector
+}
+
+CLASS AGENT_AttackArea
+{
+        AgentRefList myAgents
+        XSphereInstance* myArea
+        ActionAffector myAffector
+}
+
+CLASS AGENT_SetIndestructable
+{
+        AgentRefList myAgents
+        Flag myFlag
+        ActionAffector myAffector
+}
+
+CLASS AGENT_EnterBuilding
+{
+        AgentRefList myAgents  
+        XPropInstance* myBuilding
+        ActionAffector myAffector
+        Quadrant myEntryQuadrant
+}
+
+CLASS AGENT_ExitBuilding
+{
+        AgentRefList myAgents
+        ActionAffector myAffector
+}
+
+CLASS AGENT_EnterContainer
+{
+	AgentRefList myAgents
+	PLAYER_AddAgent* myContainer
+	ActionAffector myAffector
+}
+
+CLASS AGENT_ExitContainer
+{
+        AgentRefList myAgents
+        ActionAffector myAffector
+}
+
+CLASS AGENT_Die
+{
+        AgentRefList myAgents
+        ActionAffector myAffector
+}
+
+CLASS AGENT_Remove
+{
+        AgentRefList myAgents
+        ActionAffector myAffector
+}
+
+CLASS AGENT_Teleport
+{
+        AgentRefList myAgents
+        ActionAffector myAffector
+	XSphereInstance* myPos
+}
+
+
+CLASS AGENT_Hurt
+{
+        AgentRefList myAgents
+        NUMBER myDamage
+        ActionAffector myAffector
+}
+
+CLASS AGENT_Heal
+{
+        AgentRefList myAgents
+        NUMBER myAmount
+        ActionAffector myAffector
+}
+
+CLASS AGENT_SecondaryMode
+{
+        AgentRefList myAgents
+        Flag myFlag
+        ActionAffector myAffector
+}
+
+CLASS AGENT_SetEnabled
+{
+        AgentRefList myAgents
+        Flag myFlag
+        ActionAffector myAffector
+}
+
+TYPE FireBehaviour
+{
+	FREE_FIRE
+	HOLD_FIRE
+	RETURN_FIRE	
+}
+
+TYPE MoveBehaviour
+{
+	FOLLOW_TARGET
+	HOLD_POSITION	
+}
+
+CLASS AGENT_SetFireBehaviour
+{
+        AgentRefList myAgents
+        FireBehaviour myBehaviour
+        ActionAffector myAffector
+}
+
+CLASS AGENT_SetMoveBehaviour
+{
+        AgentRefList myAgents
+        MoveBehaviour myBehaviour
+        ActionAffector myAffector
+}
+
+// Thing
+CLASS THING_AddThing
+{
+        XThingInstance* myThingInstance
+}
+
+CLASS THING_SetAnimationState
+{
+        THING_AddThing* myThing
+        TEXT my4LetterAnimationState
+}
+
+CLASS THING_SetPlayerColor
+{
+        THING_AddThing* myThing
+        Player myPlayer
+}
+
+CLASS THING_RemoveThing
+{
+        THING_AddThing* myThing
+}
+
+CLASS THING_LookAtThing
+{
+        THING_AddThing* myThing
+        THING_AddThing* myThingToLookAt
+}
+
+CLASS THING_LookAtAgent
+{
+        THING_AddThing* myThing
+        PLAYER_AddAgent* myAgentToLookAt
+        ActionAffector myAffector
+}
+
+CLASS THING_LookAtCamera
+{
+        THING_AddThing* myThing
+        Team myCameraToLookAtTeam
+}
+
+CLASS THING_MoveTo
+{
+        THING_AddThing* myThing
+        XSphereInstance* myPosition
+}
+
+// Script
+CLASS SCRIPT_ActivateScript
+{
+        Script* myScript
+}
+
+CLASS SCRIPT_AddSound
+{
+        XSoundInstance* mySound
+        NUMBER myBaseFrequencyInHz
+}
+
+CLASS SCRIPT_RemoveSound
+{
+        SCRIPT_AddSound* mySound 
+}
+
+CLASS SCRIPT_SlowMotion
+{
+        NUMBER mySlowmotionPercentage
+        NUMBER myDurationInSeconds        
+}
+
+CLASS WEATHER_SetWeatherEffect
+{
+		TEXT myNewWeatherType
+}
+
+// Persistent data
+CLASS DATA_SetIntCampaignFlag
+{
+        TEXT myFlag
+        NUMBER myValue
+}
+
+CLASS DATA_SetStrCampaignFlag
+{
+        TEXT myFlag
+        TEXT myValue
+}
+
+CLASS DATA_ChangeIntCampaignFlag
+{
+        TEXT myFlag
+        NUMBER myAmount
+}
+
+CLASS DATA_RemoveCampaignFlag
+{
+        TEXT myFlag
+}
+
+// Triggers
+CLASS SCRIPT_KillTriggers
+{
+        TriggerRefList myTriggersToKill        
+}
+
+CLASS TRIGGER_Timer
+{
+        Script* myTriggeredScript
+        DECIMAL myTimeInSeconds
+}
+
+CLASS TRIGGER_GameOver
+{
+        Script* myTriggeredScript
+}
+
+CLASS TRIGGER_CampaignFlagSet
+{
+        Script* myTriggeredScript
+        TEXT myFlag
+}
+
+CLASS TRIGGER_CampaignFlagNotSet
+{
+        Script* myTriggeredScript
+        TEXT myFlag
+}
+
+CLASS TRIGGER_AgentsWereKilled
+{
+        Script* myTriggeredScript
+        AgentsFlag myFireWhenFlag
+        AgentRefList myAgents
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_AgentTypeWasKilled
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+}
+
+CLASS TRIGGER_PlayerEnterArea
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_AnyOtherPlayerEnterArea
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_TeamEnterArea
+{
+        Script* myTriggeredScript
+        Team myTeam
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_AnyOtherTeamEnterArea
+{
+        Script* myTriggeredScript
+        Team myTeam
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_AgentsEnterArea
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        XSphereInstance* myArea
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerLeaveArea
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_AgentsLeaveArea
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        XSphereInstance* myArea
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerEnterBuilding
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        XPropInstance* myBuilding
+}
+
+CLASS TRIGGER_AgentsEnterBuilding
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        XPropInstance* myBuilding
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerExitBuilding
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        XPropInstance* myBuilding
+}
+
+CLASS TRIGGER_AgentsExitBuilding
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        XPropInstance* myBuilding
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerEnterContainer
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        PLAYER_AddAgent* myContainer
+}
+
+CLASS TRIGGER_AgentsEnterContainer
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        PLAYER_AddAgent* myContainer
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerExitContainer
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        PLAYER_AddAgent* myContainer
+}
+
+CLASS TRIGGER_AgentsExitContainer
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        PLAYER_AddAgent* myContainer
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_AgentTypeExitContainer
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        PLAYER_AddAgent* myContainer
+}
+
+CLASS TRIGGER_AgentTypeEnterContainer
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        PLAYER_AddAgent* myContainer
+}
+
+CLASS TRIGGER_PlayerHaveKilled
+{
+        Script* myTriggeredScript
+        Player myPlayer
+}
+
+CLASS TRIGGER_AgentsHaveKilled
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerUnderAttack
+{
+        Script* myTriggeredScript
+        Player myPlayer
+}
+
+CLASS TRIGGER_AgentsUnderAttack
+{
+        Script* myTriggeredScript
+        AgentRefList myAgents
+        AgentsFlag myFireWhenFlag
+        TriggerAffector myAffector
+}
+
+CLASS TRIGGER_PlayerConnected
+{
+        Script* myTriggeredScript
+        Player myPlayer
+}
+
+CLASS TRIGGER_TriggerIsTriggered
+{
+        Script* myTriggeredScript
+        NUMBER myNeededNumberOfTriggeredTriggers
+        TriggerRefList myTriggers
+}
+
+CLASS TRIGGER_ZonesTakenByTeam
+{
+        Script* myTriggeredScript
+        Team myTeam
+        Flag myAllZonesFlag
+        ZoneList myZones
+}
+
+CLASS TRIGGER_NumberOfZonesTakenByTeam
+{
+        Script* myTriggeredScript
+        Team myTeam
+        NUMBER myNumberOfZonesNeeded
+}
+
+CLASS TRIGGER_ZoneTakenByPlayer
+{
+        Script* myTriggeredScript
+        Player myPlayer
+        TEAM_AddZone* myZone
+}
+
+CLASS TRIGGER_AgentTypeUnderAttack
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+}
+
+CLASS TRIGGER_AgentTypeHaveKilled
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+}
+
+CLASS TRIGGER_AgentTypeExitBuilding
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        XPropInstance* myBuilding
+}
+
+CLASS TRIGGER_AgentTypeEnterBuilding
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        XPropInstance* myBuilding
+}
+
+CLASS TRIGGER_AgentTypeLeaveArea
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        XSphereInstance* myArea
+}
+
+CLASS TRIGGER_AgentTypeEnterArea
+{
+        Script* myTriggeredScript
+        TEXT myAgentType
+        XSphereInstance* myArea
+}
+
+// Conditions
+CLASS TRIGGER_ConditionBranch
+{
+        Options myOptions
+}
+
+CLASS SCRIPT_EvaluationBranch
+{
+        Script* myTrueScript
+        Script* myFalseScript
+        Conditions myConditions
+}
+
+// Random
+CLASS RANDOM_ActivateScript
+{
+        RandomOptions myRandomOptions
+}
+
+CLASS SCRIPT_EndMission
+{
+
+}
+
+CLASS TEAM_RemoveZone
+{
+        TEAM_AddZone* myZoneToRemove
+}
+
+CLASS PLAYER_AIChangeDecisionTree
+{
+	FILE myDecisionTreeFile
+	Player myPlayer
+}
+
+CLASS GUI_HelpEnableWidget
+{
+	TEXT myWidgetToEnable
+}
+
+CLASS GUI_HelpDisableAll
+{
+
+}
+
+CLASS TRIGGER_MessageBoxClosed
+{
+	MessageBoxRefList myMessageBox
+	Script* myTriggeredScript
+}
+
+CLASS TRIGGER_AllPlayersReady
+{
+        Script* myTriggeredScript
+}
+
+TYPE PlayerAction
+{
+	AGENT_SELECTED
+	AGENT_SELECTED_MULTIPLE
+	REPAIR_BUTTON_PRESSED
+	SECONDARY_MODE
+	DROPSHIP_CONFIG_PRESSED
+	DROPSHIP_DEPLOY
+	DROPSHIP_UPGRADE
+	DROPSHIP_UPGRADE_STARTED
+	DROPSHIP_SELECT
+	DROPSHIP_SELECT_LZ
+	MEGAMAP_PRESSED
+	MEGAMAP_CLOSED
+	SUPPORT_WEAPON_USED
+	SKIP_CUTSCENE
+	NO_ACTION
+}
+
+CLASS TRIGGER_PlayerAction
+{
+	Player myPlayer
+	PlayerAction myAction
+	Script* myTriggeredScript
+}
+
+CLASS SCRIPT_RandomAddZone
+{
+	ZoneList myZones
+}

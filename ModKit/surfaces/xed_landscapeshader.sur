@@ -1,0 +1,396 @@
+Version 2
+
+DefaultTextures
+{
+	texture surfaces/dummy		// tanspace x
+	texture surfaces/dummy		// tanspace y
+	texture surfaces/dummy		// weightMap
+	texture surfaces/dummy		// normalMap
+	texture surfaces/dummy		// finalNormal
+}
+
+DefineText YawPitchOrient
+{
+	float GetYaw(float3 aVect)
+	{
+		float3 vect = aVect;
+		vect.y = 0.0f;
+		vect = normalize(vect);
+		float dotSat = saturate(dot(float3(0, 0, 1), vect)*0.5f + 0.5f) * 2.0f - 1.0f;
+		float heading = acos(dotSat);
+		if(dot(float3(1, 0, 0), vect) < 0.0f)
+		{
+			heading = 3.1415926f * 2.0f - heading;
+		}
+		return heading;
+	}
+	
+	float GetPitch(float3 aVect)
+	{
+		float3 vect = aVect;
+		vect = normalize(vect);
+		float3 forward = vect;
+		forward.y = 0.0f;
+		forward = normalize(forward);
+		
+		float ret;
+		if(length(forward) < 0.25f)
+			ret = 0.0f;
+		else
+		{
+			float dotSat = saturate(dot(vect, forward)*0.5f + 0.5f) * 2.0f - 1.0f;
+			float pitch = acos(dotSat);
+			if(dot(vect, float3(0, 1, 0)) < 0.0f)
+				pitch = -pitch;
+			
+			pitch = -pitch;
+			
+			if(pitch > 1.5533430325f)	// > 89 degrees
+				pitch = 1.5533430325f;
+			if(pitch < -1.5533430325f)
+				pitch = -1.5533430325f;
+			
+			ret = pitch;
+		}
+			
+		return ret;
+	}
+	
+	float3x3 Orientation(float aHeading, float aPitch, float aBank)
+	{
+		float sB = sin(aBank);
+		float cB = cos(aBank);
+		float sP = sin(aPitch);
+		float cP = cos(aPitch);
+		float sH = sin(aHeading);
+		float cH = cos(aHeading);
+	
+		float sBcH = sB * cH;
+		float sBsH = sB * sH;
+		float cBcH = cB * cH;
+		float cBsH = cB * sH;
+		
+		return float3x3(cBcH + sBsH * sP, sB * cP, -cBsH + sBcH * sP,
+						-sBcH + cBsH * sP, cB * cP, sBsH + cBcH * sP,
+						cP * sH, -sP, cP * cH);
+	}
+}
+
+Config Normal PS2.0		
+{
+	NormalPass
+	{
+		blend = off
+		zWrite = off
+
+		setConstant[1] = CUSTOM0	// Light dir
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+			
+			sampler2D s2d_tanspacex		: register(s0);
+			sampler2D s2d_tanspacey		: register(s1);
+			sampler2D s2d_weightmap		: register(s2);
+			sampler2D s2d_normalmap		: register(s3);
+			sampler2D s2d_finalnormal	: register(s4);
+			
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+				float2 myUV3	: TEXCOORD3;
+			};
+			
+			$insertText YawPitchOrient
+						
+			float4 main (VSOutput aVSOut) : COLOR0
+			{	
+				float w = tex2D(s2d_weightmap, aVSOut.myUV3.xy).x;
+				float3 finalNormal = tex2D(s2d_finalnormal, aVSOut.myUV0.xy).xyz;
+				float3 tempNormal = normalize(tex2D(s2d_normalmap, aVSOut.myUV1.xy).yxz * 2.0f - 1.0f);
+								
+				//Get normalize value
+				float normVal = tex2D(s2d_finalnormal, aVSOut.myUV0.xy).a;
+				float newVal = normVal * (1.0f - w);
+				w *= normVal;
+			
+				//Get and build tangent space
+				float3 tanx = normalize(tex2D(s2d_tanspacex, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tany = normalize(tex2D(s2d_tanspacey, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tanz = (cross(tanx, -tany));
+				
+				float3x3 tanSpaceMatrix;
+				tanSpaceMatrix._11_12_13 = tanx;
+				tanSpaceMatrix._21_22_23 = tany;
+				tanSpaceMatrix._31_32_33 = tanz;
+						
+				float yaw = GetYaw(finalNormal);
+				float pitch = GetPitch(finalNormal);
+				float3x3 normalBasis = Orientation(yaw, pitch, 0.0f);
+										
+				tempNormal = mul(tempNormal, normalBasis); //Normalize??
+				tempNormal *= w;
+				
+				finalNormal += tempNormal;
+				
+				//Write finalNormal and new normalize value
+				return float4(finalNormal.xyz, newVal);
+			}		
+		}
+	}
+	
+	SplattingPass
+	{
+		blend = off
+		zWrite = off
+
+		setConstant[1] = CUSTOM0	// Light dir
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+			
+			sampler2D s2d_tanspacex		: register(s0);
+			sampler2D s2d_tanspacey		: register(s1);
+			sampler2D s2d_weightmap		: register(s2);
+			sampler2D s2d_normalmap		: register(s3);
+			sampler2D s2d_finalnormal	: register(s4);
+			
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+				float3 myUV3	: TEXCOORD3;
+				float3 myUV4	: TEXCOORD4;
+				float3 myUV5	: TEXCOORD5;
+				float3 myUV6	: TEXCOORD6;
+			};
+			
+			$insertText YawPitchOrient
+						
+			float4 main (VSOutput aVSOut) : COLOR0
+			{	
+				float w = tex2D(s2d_weightmap, aVSOut.myUV6.xy).x;
+				float3 finalNormal = tex2D(s2d_finalnormal, aVSOut.myUV0.xy).xyz;
+				float3 tempNormal = normalize(tex2D(s2d_normalmap, aVSOut.myUV1.xy).yxz * 2.0f - 1.0f);
+				
+				//Get normalize value
+				float normVal = tex2D(s2d_finalnormal, aVSOut.myUV0.xy).a;
+				float newVal = normVal * (1.0f - w);
+				w *= normVal;
+							
+				//Get and build tangent space
+				float3 tanx = normalize(tex2D(s2d_tanspacex, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tany = normalize(tex2D(s2d_tanspacey, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tanz = (cross(tanx, -tany));
+				
+				float3x3 tanSpaceMatrix;
+				tanSpaceMatrix._11_12_13 = tanx;
+				tanSpaceMatrix._21_22_23 = tany;
+				tanSpaceMatrix._31_32_33 = tanz;
+				
+				//Get and build tangent space 2
+				float3 tanx2 = aVSOut.myUV3.xyz;
+				float3 tany2 = aVSOut.myUV4.xyz;
+				float3 tanz2 = aVSOut.myUV5.xyz;
+				if(length(tanx2) < 0.01f)
+					tanx2 = cross(tanz2, tany2);
+				if(length(tany2) < 0.01f)
+					tany2 = cross(tanx2, tanz2);
+				
+				float3x3 tanSpaceMatrix2;
+				tanSpaceMatrix2._11_12_13 = normalize(tanx2);
+				tanSpaceMatrix2._21_22_23 = normalize(tany2);
+				tanSpaceMatrix2._31_32_33 = normalize(tanz2);
+				
+				tempNormal = (mul(tempNormal, tanSpaceMatrix2));
+				tempNormal = (mul(tanSpaceMatrix, tempNormal));
+										
+				float yaw = GetYaw(finalNormal);
+				float pitch = GetPitch(finalNormal);
+				float3x3 normalBasis = Orientation(yaw, pitch, 0.0f);
+										
+				tempNormal = mul(tempNormal, normalBasis); //Normalize??
+				tempNormal *= w;
+				
+				finalNormal += tempNormal;
+								
+				//Write finalNormal and new normalize value
+				return float4(finalNormal.xyz, newVal);
+			}		
+		}
+	}
+	
+	InitPass
+	{
+		blend = off
+		zWrite = off
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+						
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+			};
+			
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				return float4(0, 0, 1, 1);
+			}
+		}
+	}
+	
+	ShadePass
+	{
+		blend = off
+		zWrite = off
+
+		setConstant[1] = CUSTOM0	// Light dir
+		setConstant[2] = CUSTOM1	// Scale factor
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+			
+			sampler2D s2d_tanspacex		: register(s0);
+			sampler2D s2d_tanspacey		: register(s1);
+			sampler2D s2d_finalnormal	: register(s2);
+			
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+			};
+			
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				float3 lightDir = setConstant1.xyz;
+				float factor = setConstant2.x;
+							
+				float3 tanx = normalize(tex2D(s2d_tanspacex, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tany = normalize(tex2D(s2d_tanspacey, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tanz = (cross(tanx, -tany));
+				
+				float3x3 tanSpaceMatrix;
+				tanSpaceMatrix._11_12_13 = tanx;
+				tanSpaceMatrix._21_22_23 = tany;
+				tanSpaceMatrix._31_32_33 = tanz;
+				
+				float3 tanSpaceLight = normalize(mul(tanSpaceMatrix, lightDir));
+				
+				float3 normal = normalize(tex2D(s2d_finalnormal, aVSOut.myUV0.xy).xyz);
+				float shade = dot(tanSpaceLight, normal);
+
+				return float4(saturate(shade*factor).xxx, 1.0);
+			}
+		}
+	}
+	
+	ShadeExp2Pass
+	{
+		blend = off
+		zWrite = off
+
+		setConstant[1] = CUSTOM0	// Light dir
+		setConstant[2] = CUSTOM1	// Scale factor
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+			
+			sampler2D s2d_tanspacex		: register(s0);
+			sampler2D s2d_tanspacey		: register(s1);
+			sampler2D s2d_finalnormal	: register(s2);
+			
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+			};
+			
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				float3 lightDir = setConstant1.xyz;
+				float factor = setConstant2.x;
+							
+				float3 tanx = normalize(tex2D(s2d_tanspacex, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tany = normalize(tex2D(s2d_tanspacey, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tanz = (cross(tanx, -tany));
+				
+				float3x3 tanSpaceMatrix;
+				tanSpaceMatrix._11_12_13 = tanx;
+				tanSpaceMatrix._21_22_23 = tany;
+				tanSpaceMatrix._31_32_33 = tanz;
+				
+				float3 tanSpaceLight = normalize(mul(tanSpaceMatrix, lightDir));
+				
+				float3 normal = normalize(tex2D(s2d_finalnormal, aVSOut.myUV0.xy).xyz);
+				float shade = dot(tanSpaceLight, normal);
+
+				return float4(saturate(shade*shade*factor).xxx, 1.0);
+			}
+		}
+	}
+	
+	ShadeExp4Pass
+	{
+		blend = off
+		zWrite = off
+
+		setConstant[1] = CUSTOM0	// Light dir
+		setConstant[2] = CUSTOM1	// Scale factor
+		
+		Code
+		{
+			HLSL (ps_3_0, main)
+			
+			sampler2D s2d_tanspacex		: register(s0);
+			sampler2D s2d_tanspacey		: register(s1);
+			sampler2D s2d_finalnormal	: register(s2);
+			
+			struct VSOutput
+			{
+				float4 myColor	: COLOR0;
+				float2 myUV0	: TEXCOORD0;
+				float2 myUV1	: TEXCOORD1;
+				float2 myUV2	: TEXCOORD2;
+			};
+			
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				float3 lightDir = setConstant1.xyz;
+				float factor = setConstant2.x;
+							
+				float3 tanx = normalize(tex2D(s2d_tanspacex, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tany = normalize(tex2D(s2d_tanspacey, aVSOut.myUV2.xy).xyz * 2.0f - 1.0f);
+				float3 tanz = (cross(tanx, -tany));
+				
+				float3x3 tanSpaceMatrix;
+				tanSpaceMatrix._11_12_13 = tanx;
+				tanSpaceMatrix._21_22_23 = tany;
+				tanSpaceMatrix._31_32_33 = tanz;
+				
+				float3 tanSpaceLight = normalize(mul(tanSpaceMatrix, lightDir));
+				
+				float3 normal = normalize(tex2D(s2d_finalnormal, aVSOut.myUV0.xy).xyz);
+				float shade = dot(tanSpaceLight, normal);
+
+				return float4(saturate(shade*shade*shade*shade*factor).xxx, 1.0);
+			}
+		}
+	}
+}

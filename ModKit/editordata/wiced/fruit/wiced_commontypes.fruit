@@ -1,0 +1,7 @@
+// Common types
+
+TYPE BOOLEAN
+{
+	TRUE
+	FALSE
+}

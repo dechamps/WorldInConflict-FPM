@@ -1,0 +1,386 @@
+// wicmap.fruit
+// WICEd/GroundEd map save/export format (used by WICEd and GroundEd)
+// Created 050422 by Peen
+
+INCLUDE juice/vector2.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE editordata/wiced/fruit/wiced_commontypes.fruit
+INCLUDE editordata/wiced/fruit/wicedmissionstats.fruit
+INCLUDE editordata/wiced/fruit/wicedinstances.fruit
+INCLUDE juice/waterdata.fruit
+INCLUDE juice/sundata.fruit
+INCLUDE juice/cloudsdata.fruit
+INCLUDE juice/posteffectdata.fruit
+INCLUDE autopropsets/wic_massgrass.fruit
+INCLUDE juice/cables.fruit
+//INCLUDE juice/moodsetup.fruit
+INCLUDE juice/clouddata.fruit
+
+CLASS WicedColor
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB 
+} 
+
+
+CLASS WicedLight
+{
+	DECIMAL myDirection
+	DECIMAL myElevation
+	WicedColor myColor
+	DECIMAL myOverbrightFactor
+
+}
+
+
+//SCRIPTCLASS WicedLightList
+//{
+//	WicedLight
+//}
+
+CLASS WicedMapTile
+{
+	FILE myTexture0
+	FILE myTexture1
+	FILE myTexture2
+	FILE myTexture3
+	NUMBER myIsTileWithSubTilesFlag
+	NUMBER myIsLockedTile
+	NUMBER myMaxResolution //valid values=512, 1024, 2048. All other values will be reset to 1024
+}
+
+SCRIPTCLASS WicedMapTiles
+{
+	WicedMapTile
+}
+
+SCRIPTCLASS WicedTextures
+{
+	FILE
+}
+
+SCRIPTCLASS WicedSinglePlayerScriptFiles
+{
+	FILE
+}
+
+SCRIPTCLASS WicedCinematicScriptCameraFiles
+{
+	FILE
+}
+
+CLASS WicedEnvData
+{
+	WicedColor myFogColor
+	WicedColor mySunFogColor
+	DECIMAL myFogFactor		// LEGACY - todo: remove
+	DECIMAL myFogStart
+	DECIMAL myFogEnd
+	DECIMAL myFogThreshold		// 0.0 = full fog, 0.1 = fog goes up to 90%
+	DECIMAL myFogExponent		// 1.0 = standard, 2.0 - 4.0 = smoothens fog increase
+	
+	DECIMAL myGlobalSpecModifier	// -1.0 - 4.0 (art default is 0.0)
+	
+	DECIMAL myOverrideFarplane	// WIC uses default 2500.0, this doesn't work on newyork1 (0.0 = use WIC default)
+	DECIMAL myOverrideDeployZBias	// Default is 0.0
+
+	FILE mySkyModel
+	DECIMAL myWaterLevel
+	WicedColor myLightAmbient
+	//WicedLightList myLights
+	WicedLight myDirectionalLight
+	FILE myWaterTexture0
+	FILE myWaterTexture1
+	FILE myWaterEdgeTexture
+	FILE myWaterReflectionTexture
+	FILE myCloudMap
+	FILE mySkyDomeTexture
+	FILE myMapEnvmap
+	WicedColor myPostFXBloomColor // ta bort?
+	DECIMAL myShadowFactor
+	WicedColor myShadowColor
+	DECIMAL myHighendSpecularExponent
+	WicedColor myGammaBrightnessColor // ta bort?
+	DECIMAL myGammaValue // ta bort?
+	DECIMAL myGammaContrast // ta bort?
+	
+	NUMBER myTreeOverrideLighting		// 0 = false, 1 = true
+	WicedColor myTreeDirectionalColor
+	WicedColor myTreeAmbientColor
+	DECIMAL myTreeOverbrightFactor	// 0.0 - 1.0
+
+	// Override global shadows
+	NUMBER myTreeOverrideShadows		// 0 = false, 1 = true
+	WicedColor myTreeShadowColor	
+	DECIMAL myTreeShadowFactor			// 0.0 - 1.0
+
+	// Override default values for stem darkening
+	NUMBER myTreeOverrideStemDarkening		// 0 = false, 1 = true
+	DECIMAL myTreeStemUpperMaxDarkness		// 0.0 - 1.0
+	DECIMAL myTreeStemRootMaxDarkness		// 0.0 - 1.0
+	DECIMAL myTreeStemRootHeightInMeters
+	
+	// Fill-light for models
+	NUMBER myFillLightOverrideDirection		// 0 = false, 1 = true
+	DECIMAL myFillLightDirection			// 0.0 - 360 (auto calc in game is 90)
+	
+	NUMBER myFillLightOverrideColor			// 0 = false, 1 = true
+	WicedColor myFillLightColor			// 0-255 RGB, (auto calc in game is 30,30,30)
+	
+	NUMBER myOverrideBacklight
+	WicedColor myBackLightColor
+	DECIMAL myBackLightStrength
+	
+	NUMBER myOverrideGlobalShadowing
+	DECIMAL myGlobalShadowingMinValueAtBottom
+	DECIMAL myGlobalShadowingMinValueAtTop
+	
+	DECIMAL myCloudShadowDensity			// 0 - 1 for how hard the shadows from clouds should be, below 0 turns off cloud shadows and light shafts
+	NUMBER myCloudShadowExtraClouds			// 0 or 1 for rendering extra copies of clouds for shadows further out
+
+	DECIMAL myLightShaftIntensity			// 0 - 1 for how intense light shafts should be
+	DECIMAL myLightShaftMultiplier			// 1 - n premultiplier for shafts that is then capped to 1, usefull for making even small openings get maximum light
+	DECIMAL myLightShaftCutoff				// 0 - 1 subtracted from lightshafts previous to cap, more cloudy levels should generally have a lower value, 1 = disable light shafts
+	DECIMAL myLightShaftCloudAltitude		// 0 - n should be somewhat above the max cloud height, used to stop clouds from casting shadows backward
+	DECIMAL myLightShaftSunDirDependency	// 0 - 1 denotes how dependent the lightshaft intensity is on direction toward sun, high values increase light shaft intensity toward sun and decrese them from sun
+	DECIMAL myLightShaftDarkening			// 0 - 1 higher values means clouded areas becomes darker instead of non clouded areas becomming lighter
+
+	Vector3 myRelativeSunLightCrater
+	Vector3 myRelativeAmbLightCrater
+
+	Vector3 myRelativeSunLightParticle
+	Vector3 myRelativeAmbLightParticle
+
+	windObjectList myWind
+}
+
+TYPE WicedSpecMeshType
+{
+	WIC_ROAD
+	WIC_SURRMESH
+}
+CLASS WicedSpecMesh // surround meshes, roads
+{
+	WicedSpecMeshType myType
+	FILE myModel
+	Vector3 myPosition
+	Vector2 myDirection
+	NUMBER mySpecData
+}
+SCRIPTCLASS WicedSpecMeshes
+{
+	WicedSpecMesh
+}
+
+SCRIPTCLASS LocFiles
+{
+    FILE
+}
+
+SCRIPTCLASS LocStrings
+{
+	LOCTEXT
+}
+
+CLASS WicedAutoPropType			// instance's name = typename in selected autoprop set
+{
+	FILE myWeightMap
+	WicedColor myColorTint		// -127 - 127
+	BOOLEAN myUseGroundColorFlag
+	TEXT myTypeName
+}
+SCRIPTCLASS WicedAutoPropTypes
+{
+	WicedAutoPropType
+}
+
+SCRIPTCLASS MoodFiles
+{
+    FILE
+}
+
+CLASS WicedMinimapData
+{
+	DECIMAL mySurroundMeshSpaceStatic // good default: 0.0
+	DECIMAL mySurroundMeshSpaceRotating // good default 256.0
+	DECIMAL myZoomStatic // good default 1.0
+	DECIMAL myZoomRotating // good default 1.0
+	DECIMAL myContrast // good default: 1.0
+	DECIMAL myBrightness // good default: 1.0
+	DECIMAL myGamma // good default: 1.0
+}
+
+CLASS WicedMap_001
+{
+	// NOTE: Please document any changes in this structure in the file /EditorData/DevLog.txt
+	// NOTE: The .juice file created by GroundEd must have ONE instance of this class and it
+	// must be named "myWicedMap"
+
+	// Data provided by GroundEd
+	WicedEnvData myEnvironment
+	FILE myHeightMapFile
+	FILE myInvisibleHeightmapFile
+	FILE myRigidGroundFile
+	FILE myGroundSpecWeightMap		// only used in lowend. spec map built into myHighendDetailMapFile2 in highend version
+	FILE myGroundSpecWeightMapDDS		// DDS:ed variant of ground spec weight map
+	FILE myAutoPropFile
+	TEXT myAutoPropSetName
+	//NUMBER myAutoPropNumTypesInSet ???
+	WicedAutoPropTypes myAutoPropTypeList
+	FILE myAutoPropColorTintFile		// LEGACY - todo: remove
+	FILE myAutoPropColorMapFile		// scaled down version of map's textures
+	FILE myGroundColorMapDDS		// DDS:ed variant of ground color map (same as autoprop color map)
+	FILE myHitEffectsFile
+	FILE myNodesWreckFile			// wreck effects script file
+	FILE mySlotRepFile				// slot reps script file
+	FILE myScriptModelFile			// script model script file
+	FILE myHitEffectsSpawnFile
+	FILE myHitEffectsColorTintFile		// scaled down version of map's textures with tints built in
+
+	// detail textures
+	FILE myDetailTextureFile
+	FILE myDetailTextureFile2
+	DECIMAL myDetailTexture1TileFactor	// tile factor for det1.r, det1.g, det1.b (1.0 = as now, 2.0 = tile more, 0.5 = tile less)
+	DECIMAL myDetailTexture2TileFactor	// tile factor for det2.r, det2.g
+	FILE myDetailMapFile
+	FILE myDetailMapFile2
+	FILE myHighendDetailMapFile1
+	FILE myHighendDetailMapFile2
+
+	// highend only
+	FILE myDetailTextureFile3
+	FILE myHighendDetailMapFile3
+	FILE myHighendWreckTextureFile
+	FILE myHighendWreckObjectsTextureFile
+	DECIMAL myDetailTexture3TileFactorX	// tile factor for det3.r
+	DECIMAL myDetailTexture3TileFactorY	// tile factor for det3.g
+	DECIMAL myDetailTexture3TileFactorZ	// tile factor for det3.b
+	DECIMAL myDetailTexture3TileFactorW	// tile factor for det3.a
+	NUMBER myHighendDetail3MappingX		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingY		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingZ		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingW		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	// end detail textures
+
+    	FILE myExplosionBrushGetY
+	FILE myExplosionBrushNormalAndAlphaLowres
+	FILE myExplosionBrushNormalAndAlphaHires
+	FILE myExplosionBrushAtlasUVs
+	FILE myExplosionBrushTypes
+
+	FILE myOverViewMapFile
+	FILE myOverViewMapExtendedFile
+	FILE myGroundLowResTextureFile
+	
+	WicedMapTiles myMapTiles
+	WicedSpecMeshes mySpecMeshes
+
+	FILE myHeightmapLodsFile
+
+	TEXT myGroundedMetaData			// editor-specific map meta-data for GroundEd
+	TEXT myWicedMetaData			// editor-specific map meta-data for WICEd	
+
+	// Data to be filled in by WICEd
+	TEXT mySpeedTreeSet
+	FILE mySpeedTreeForest
+	WicedInstances myInstances
+	WicedInstanceData myInstanceData
+    	Vector2 myPlayfieldMinCoord
+    	Vector2 myPlayfieldMaxCoord
+	Vector2 myCameraPlayfieldMinCoord
+    	Vector2 myCameraPlayfieldMaxCoord
+    	WicedMissionStats myMissionStats
+
+	// Path maps
+	FILE myPathFile				// Fallback to old path format. Remove later
+	FILE myPathFile1
+	FILE myPathFile2
+	FILE myPathFile3
+	FILE myPathFile4
+	FILE myPathBlockFile1
+	FILE myPathBlockFile2
+	FILE myPathBlockFile3
+	FILE myPathBlockFile4
+
+	// Localized strings
+	LocStrings myLocStrings
+	
+	// Localized files referenced in this map (special sounds etc)
+	LocFiles myLocFiles
+
+	// Python stuff
+	FILE myPythonServerScript
+	FILE myPythonClientScript
+	FILE myPythonServerAutogenScript
+	FILE myPythonClientAutogenScript
+
+	// Databases
+	FILE myAgentTypesFile
+	FILE myAgentTypesSinglePlayerFile
+	FILE myAgentSoundsFile
+	FILE myPropTypeDatabase
+	FILE mySupportThingDatabase		// TODO: remove later... now in directory
+	FILE myWeatherDatabase
+	FILE myCharacterDatabase
+	FILE mySoundDatabase
+	FILE myAddOnPropsFile			// add on database file
+
+	WaterData myWaterData
+	SunData mySunData
+	CloudsData myCloudsData
+	FILE myCameraEffectObject
+	MassGrass myGrassData
+	CableSetup myCableData
+	MoodFiles myMoodSetupFiles
+	MoodFiles myMoodSetupOverrides
+
+	FILE myBloomConfigFile
+	TEXT myBloomSetup
+
+	FILE myWarFilterFile
+	FILE myCoverFile
+	
+	PostEffectData myHighendPostEffectData
+	PostEffectData myLowendPostEffectData
+	
+	WicedMinimapData myMinimapData
+
+	// AI files
+    	FILE myStrengthHintsFile
+    	FILE myAnalysisFile
+    	FILE myForestMapFile
+    	FILE myTerrainAnalysisFile
+    	FILE myBuildingAnalysisFile
+    	
+    	// Cinematics cutscenes script
+    	FILE myCinematicsFile
+    	
+    	// Single Player Division and Cinematics Division Data
+    	FILE mySinglePlayerDataFile
+    	FILE myCinematicsDataFile
+    	
+    	// LODS script file
+    	FILE myLodsDataFile
+    	
+    // TOW angle
+   	DECIMAL myToWLineAngleRad
+   	
+   	FILE myFaction1HQFile
+   	FILE myFaction2HQFile
+	FILE mySinglePlayerFeedbackFile
+}
+
+CLASS WicedSinglePlayerData
+{
+	WicedSinglePlayerScriptFiles mySinglePlayerScriptFiles
+	WicedSinglePlayerMissionStats mySinglePlayerMissionStats
+	WicedInstanceData mySinglePlayerInstanceData
+}
+
+CLASS WicedCinematicsData
+{
+	WicedInstanceData myCinematicsInstanceData
+	WicedCinematicScriptCameraFiles myCinematicScriptCameraFiles
+	
+}

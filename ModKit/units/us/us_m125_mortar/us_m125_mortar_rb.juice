@@ -1,0 +1,336 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Body01"
+		myMeshBone "MASTER"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 2
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.004000
+			myY 0.815905
+			myZ 0.522000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+			TEXT myState2 "STN2"
+			TEXT myState3 "FIR1"
+			TEXT myState4 "FIR2"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 0.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 0.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "Body02"
+				myType 2
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -1.111
+					myY 0.034095
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.746
+					myY 0.746
+					myZ 2.983
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 4363.77832
+				myVerts
+				{
+				}
+			}
+			Element myElement17
+			{
+				myName "MASTER17"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.046
+					myY 0.507095
+					myZ 2.109
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.786812
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.65
+					myY 1.087
+					myZ 0.41
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 0.0
+				myVerts
+				{
+				}
+			}
+			Element myElement18
+			{
+				myName "MASTER18"
+				myType 2
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 1.111
+					myY 0.034095
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.746
+					myY 0.746
+					myZ 2.983
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 4363.77832
+				myVerts
+				{
+				}
+			}
+			Element myElement19
+			{
+				myName "MASTER19"
+				myType 2
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 1.019
+					myY -0.077905
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.746
+					myY 0.746
+					myZ 1.395
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 2040.721191
+				myVerts
+				{
+				}
+			}
+			Element myElement20
+			{
+				myName "MASTER20"
+				myType 2
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -1.019
+					myY -0.067905
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.746
+					myY 0.746
+					myZ 1.395
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 2040.721191
+				myVerts
+				{
+				}
+			}
+			Element myElement21
+			{
+				myName "MASTER21"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.046
+					myY 0.718095
+					myZ -0.801
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.65
+					myY 0.725
+					myZ 2.347
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 0.0
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+	Joint myJoint0
+	{
+		myType ANGULAR_JOINT_LIMIT
+		myRB1 "Body01"
+		myRB2 "myPhysWorld"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.7
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+	}
+}
+
+DelayedExplosions myExplosions
+{
+}
+

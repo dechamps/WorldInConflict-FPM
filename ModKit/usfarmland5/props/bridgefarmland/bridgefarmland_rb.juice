@@ -1,0 +1,291 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "bridgeFarmland_1_Bridge01"
+		myMeshBone "bridgeFarmland_1_Bridge"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 5
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.115925
+			myY 3.883395
+			myZ 1.658911
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement8
+			{
+				myName "bridgeFarmland_1_Bridge08"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX 5.232075
+					myY -1.222396
+					myZ 0.150089
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.661
+					myY 3.456
+					myZ 29.289999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2104.184326
+				myVerts
+				{
+				}
+			}
+			Element myElement14
+			{
+				myName "bridgeFarmland_1_Bridge14"
+				myType 0
+				myMaterial "GROUND_ROCK"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 1
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 0
+					NUMBER myBlockingFlag1 0
+					NUMBER myBlockingFlag2 0
+					NUMBER myBlockingFlag3 1
+					NUMBER myBlockingFlag4 0
+					NUMBER myBlockingFlag5 0
+				}
+				myPos
+				{
+					myX -0.221925
+					myY -2.695395
+					myZ -0.107911
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 4.932
+					myY 0.72
+					myZ 31.417999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3508.515137
+				myVerts
+				{
+				}
+			}
+			Element myElement15
+			{
+				myName "bridgeFarmland_1_Bridge15"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX -5.611924
+					myY -1.220396
+					myZ 0.153089
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.543
+					myY 3.619
+					myZ 29.247
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1807.419678
+				myVerts
+				{
+				}
+			}
+			Element myElement18
+			{
+				myName "bridgeFarmland_1_Bridge18"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 3.406075
+					myY 5.517603
+					myZ -0.082911
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 1.129516
+				}
+				myExtents
+				{
+					myX 0.661
+					myY 3.66
+					myZ 16.955
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1289.940186
+				myVerts
+				{
+				}
+			}
+			Element myElement19
+			{
+				myName "bridgeFarmland_1_Bridge19"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -3.473924
+					myY 5.517603
+					myZ -0.082911
+				}
+				myRotHPB
+				{
+					myX 3.141593
+					myY -0.0
+					myZ 1.129516
+				}
+				myExtents
+				{
+					myX 0.661
+					myY 3.66
+					myZ 16.955
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1289.940186
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

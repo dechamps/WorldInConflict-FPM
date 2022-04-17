@@ -1,0 +1,404 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT3.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT3.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT_High2.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT_High2.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_High2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT_Row.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT_Row.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT_Row2.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT_Row2.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanBoxwood_RT_Row3.spt
+	{
+		myFilename speedtrees/berlin/AmericanBoxwood_RT_Row3.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanBoxwood_RT_Row3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanElm_RT.spt
+	{
+		myFilename speedtrees/berlin/AmericanElm_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanElm_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanElm_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanElm_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanElm_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanElm_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanElm_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanElm_RT2.spt
+	{
+		myFilename speedtrees/berlin/AmericanElm_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanElm_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanElm_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanElm_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanElm_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanElm_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanElm_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanElm_RT3.spt
+	{
+		myFilename speedtrees/berlin/AmericanElm_RT3.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanElm_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanElm_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanElm_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanElm_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanElm_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanElm_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/AmericanElm_RT4.spt
+	{
+		myFilename speedtrees/berlin/AmericanElm_RT4.spt
+		myBBSideTexture speedtrees/berlin/billboards/AmericanElm_RT4_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/AmericanElm_RT4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/AmericanElm_RT4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/AmericanElm_RT4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/AmericanElm_RT4_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/AmericanElm_RT4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/BurfordHolly_RT.spt
+	{
+		myFilename speedtrees/berlin/BurfordHolly_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/BurfordHolly_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/BurfordHolly_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/BurfordHolly_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/BurfordHolly_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/BurfordHolly_RT2.spt
+	{
+		myFilename speedtrees/berlin/BurfordHolly_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/BurfordHolly_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/BurfordHolly_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/BurfordHolly_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/BurfordHolly_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/BurfordHolly_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/BurfordHolly_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/BurfordHolly_RT_Row.spt
+	{
+		myFilename speedtrees/berlin/BurfordHolly_RT_Row.spt
+		myBBSideTexture speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_Row_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/BurfordHolly_RT_Row2.spt
+	{
+		myFilename speedtrees/berlin/BurfordHolly_RT_Row2.spt
+		myBBSideTexture speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/BurfordHolly_RT_Row2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/douglasfir_rt.spt
+	{
+		myFilename speedtrees/berlin/douglasfir_rt.spt
+		myBBSideTexture speedtrees/berlin/billboards/douglasfir_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/douglasfir_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/douglasfir_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/douglasfir_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/douglasfir_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/douglasfir_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/douglasfir_rt2.spt
+	{
+		myFilename speedtrees/berlin/douglasfir_rt2.spt
+		myBBSideTexture speedtrees/berlin/billboards/douglasfir_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/douglasfir_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/douglasfir_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/douglasfir_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/douglasfir_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/douglasfir_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/douglasfir_rt3.spt
+	{
+		myFilename speedtrees/berlin/douglasfir_rt3.spt
+		myBBSideTexture speedtrees/berlin/billboards/douglasfir_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/douglasfir_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/douglasfir_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/douglasfir_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/douglasfir_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/douglasfir_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/GreenAsh_RT.spt
+	{
+		myFilename speedtrees/berlin/GreenAsh_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/GreenAsh_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/GreenAsh_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/GreenAsh_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/GreenAsh_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/GreenAsh_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/GreenAsh_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/GreenAsh_RT2.spt
+	{
+		myFilename speedtrees/berlin/GreenAsh_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/GreenAsh_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/GreenAsh_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/GreenAsh_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/GreenAsh_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/GreenAsh_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/GreenAsh_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/GreenAsh_RT3.spt
+	{
+		myFilename speedtrees/berlin/GreenAsh_RT3.spt
+		myBBSideTexture speedtrees/berlin/billboards/GreenAsh_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/GreenAsh_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/GreenAsh_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/GreenAsh_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/GreenAsh_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/GreenAsh_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/HorseChestnut_RT.spt
+	{
+		myFilename speedtrees/berlin/HorseChestnut_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/HorseChestnut_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/HorseChestnut_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/HorseChestnut_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/HorseChestnut_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/HorseChestnut_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/HorseChestnut_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/HorseChestnut_RT2.spt
+	{
+		myFilename speedtrees/berlin/HorseChestnut_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/HorseChestnut_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/HorseChestnut_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/HorseChestnut_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/HorseChestnut_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/HorseChestnut_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/HorseChestnut_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/HorseChestnut_RT3.spt
+	{
+		myFilename speedtrees/berlin/HorseChestnut_RT3.spt
+		myBBSideTexture speedtrees/berlin/billboards/HorseChestnut_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/HorseChestnut_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/HorseChestnut_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/HorseChestnut_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/HorseChestnut_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/HorseChestnut_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/HorseChestnut_RT4.spt
+	{
+		myFilename speedtrees/berlin/HorseChestnut_RT4.spt
+		myBBSideTexture speedtrees/berlin/billboards/HorseChestnut_RT4_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/HorseChestnut_RT4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/HorseChestnut_RT4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/HorseChestnut_RT4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/HorseChestnut_RT4_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/HorseChestnut_RT4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/PeachTree_RT.spt
+	{
+		myFilename speedtrees/berlin/PeachTree_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/PeachTree_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/PeachTree_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/PeachTree_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/PeachTree_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/PeachTree_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/PeachTree_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/PeachTree_RT2.spt
+	{
+		myFilename speedtrees/berlin/PeachTree_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/PeachTree_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/PeachTree_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/PeachTree_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/PeachTree_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/PeachTree_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/PeachTree_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/PeachTree_RT3.spt
+	{
+		myFilename speedtrees/berlin/PeachTree_RT3.spt
+		myBBSideTexture speedtrees/berlin/billboards/PeachTree_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/PeachTree_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/PeachTree_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/PeachTree_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/PeachTree_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/PeachTree_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/PeachTree_RT4.spt
+	{
+		myFilename speedtrees/berlin/PeachTree_RT4.spt
+		myBBSideTexture speedtrees/berlin/billboards/PeachTree_RT4_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/PeachTree_RT4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/PeachTree_RT4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/PeachTree_RT4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/PeachTree_RT4_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/PeachTree_RT4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/weedpatch_rt.spt
+	{
+		myFilename speedtrees/berlin/weedpatch_rt.spt
+		myBBSideTexture speedtrees/berlin/billboards/weedpatch_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/weedpatch_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/weedpatch_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/weedpatch_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/weedpatch_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/weedpatch_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/weedpatch_rt2.spt
+	{
+		myFilename speedtrees/berlin/weedpatch_rt2.spt
+		myBBSideTexture speedtrees/berlin/billboards/weedpatch_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/weedpatch_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/weedpatch_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/weedpatch_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/weedpatch_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/weedpatch_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/weedpatch_rt3.spt
+	{
+		myFilename speedtrees/berlin/weedpatch_rt3.spt
+		myBBSideTexture speedtrees/berlin/billboards/weedpatch_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/weedpatch_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/weedpatch_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/weedpatch_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/weedpatch_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/weedpatch_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/WeepingWillow_RT.spt
+	{
+		myFilename speedtrees/berlin/WeepingWillow_RT.spt
+		myBBSideTexture speedtrees/berlin/billboards/WeepingWillow_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/WeepingWillow_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/WeepingWillow_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/WeepingWillow_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/WeepingWillow_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/WeepingWillow_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/WeepingWillow_RT2.spt
+	{
+		myFilename speedtrees/berlin/WeepingWillow_RT2.spt
+		myBBSideTexture speedtrees/berlin/billboards/WeepingWillow_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/WeepingWillow_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/WeepingWillow_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/WeepingWillow_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/WeepingWillow_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/WeepingWillow_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/italiancypress_rt.spt
+	{
+		myFilename speedtrees/berlin/italiancypress_rt.spt
+		myBBSideTexture speedtrees/berlin/billboards/italiancypress_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/italiancypress_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/italiancypress_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/italiancypress_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/italiancypress_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/italiancypress_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/italiancypress_rt2.spt
+	{
+		myFilename speedtrees/berlin/italiancypress_rt2.spt
+		myBBSideTexture speedtrees/berlin/billboards/italiancypress_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/italiancypress_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/italiancypress_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/italiancypress_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/italiancypress_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/italiancypress_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/italiancypress_rt3.spt
+	{
+		myFilename speedtrees/berlin/italiancypress_rt3.spt
+		myBBSideTexture speedtrees/berlin/billboards/italiancypress_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/italiancypress_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/italiancypress_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/italiancypress_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/italiancypress_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/italiancypress_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/graybirch_rt.spt
+	{
+		myFilename speedtrees/berlin/graybirch_rt.spt
+		myBBSideTexture speedtrees/berlin/billboards/graybirch_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/graybirch_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/graybirch_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/graybirch_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/graybirch_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/graybirch_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/graybirch_rt2.spt
+	{
+		myFilename speedtrees/berlin/graybirch_rt2.spt
+		myBBSideTexture speedtrees/berlin/billboards/graybirch_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/graybirch_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/graybirch_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/graybirch_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/graybirch_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/graybirch_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/berlin/graybirch_rt3.spt
+	{
+		myFilename speedtrees/berlin/graybirch_rt3.spt
+		myBBSideTexture speedtrees/berlin/billboards/graybirch_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/berlin/billboards/graybirch_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/berlin/billboards/graybirch_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/berlin/billboards/graybirch_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/berlin/billboards/graybirch_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/berlin/billboards/graybirch_rt3_bbtop_n.dds
+	}
+}

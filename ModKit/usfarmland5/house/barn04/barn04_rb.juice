@@ -1,0 +1,199 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "barn04_1_Barn04_Main01"
+		myMeshBone "barn04_1_Barn04_Main"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.422000
+			myY 3.895545
+			myZ 0.092737
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "barn04_1_Barn04_Main02"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 2.485454
+					myZ -4.054737
+				}
+				myRotHPB
+				{
+					myX 3.141593
+					myY 0.407256
+					myZ 3.141593
+				}
+				myExtents
+				{
+					myX 17.174
+					myY 3.019
+					myZ 5.761
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2039.303955
+				myVerts
+				{
+				}
+			}
+			Element myElement3
+			{
+				myName "barn04_1_Barn04_Main03"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX -0.0
+					myY -1.690546
+					myZ -0.034737
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 17.186998
+					myY 4.777
+					myZ 10.539
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 5907.506348
+				myVerts
+				{
+				}
+			}
+			Element myElement4
+			{
+				myName "barn04_1_Barn04_Main04"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 2.395454
+					myZ 4.127263
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.413555
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 17.08
+					myY 3.068
+					myZ 5.739
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2053.189209
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

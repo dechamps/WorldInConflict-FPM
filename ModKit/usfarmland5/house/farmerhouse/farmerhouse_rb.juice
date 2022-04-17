@@ -1,0 +1,516 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "FarmerHouse_1_Main01"
+		myMeshBone "FarmerHouse_1_Main"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -2.104468
+			myY 3.323284
+			myZ 1.640755
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "FarmerHouse_1_Main02"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 8.073467
+					myY -1.006284
+					myZ 2.690245
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 6.879
+					myY 4.317
+					myZ 3.877
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1189.778198
+				myVerts
+				{
+				}
+			}
+			Element myElement6
+			{
+				myName "FarmerHouse_1_Main06"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX 2.414468
+					myY -1.006284
+					myZ 1.541245
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 14.601
+					myY 4.317
+					myZ 6.104
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3975.960205
+				myVerts
+				{
+				}
+			}
+			Element myElement7
+			{
+				myName "FarmerHouse_1_Main07"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX -5.722531
+					myY -1.006284
+					myZ -2.466755
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 6.772
+					myY 4.317
+					myZ 10.000999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3021.379395
+				myVerts
+				{
+				}
+			}
+			Element myElement14
+			{
+				myName "FarmerHouse_1_Main14"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -2.647532
+					myY 4.420716
+					myZ -2.466755
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.543335
+				}
+				myExtents
+				{
+					myX 3.837
+					myY 1.559
+					myZ 10.000999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 618.221619
+				myVerts
+				{
+				}
+			}
+			Element myElement15
+			{
+				myName "FarmerHouse_1_Main15"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -8.119532
+					myY 4.510716
+					myZ -2.466755
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.539734
+				}
+				myExtents
+				{
+					myX 3.837
+					myY 1.559
+					myZ 10.000999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 618.221619
+				myVerts
+				{
+				}
+			}
+			Element myElement16
+			{
+				myName "FarmerHouse_1_Main16"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 8.224467
+					myY 4.448716
+					myZ 3.054245
+				}
+				myRotHPB
+				{
+					myX 1.567202
+					myY 0.000272
+					myZ 0.663501
+				}
+				myExtents
+				{
+					myX 3.777
+					myY 1.595
+					myZ 6.794
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 422.956848
+				myVerts
+				{
+				}
+			}
+			Element myElement17
+			{
+				myName "FarmerHouse_1_Main17"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 8.224467
+					myY 5.442716
+					myZ -0.765755
+				}
+				myRotHPB
+				{
+					myX 1.571945
+					myY 0.003417
+					myZ 2.483097
+				}
+				myExtents
+				{
+					myX 3.079
+					myY 0.71
+					myZ 6.794
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 153.481644
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody3
+	{
+		myName "FarmerHouse_wreck_1_Main03"
+		myMeshBone "FarmerHouse_wreck_1_Main"
+		myObjectIsCg 0
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 3
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -6.702872
+			myY 2.694364
+			myZ -4.538088
+		}
+		myStates
+		{
+			TEXT myState0 "HUR3"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "FarmerHouse_wreck_1_Main04"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 2.890872
+					myY -0.324364
+					myZ -6.148911
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.257833
+				}
+				myExtents
+				{
+					myX 1.798
+					myY 3.745
+					myZ 0.242
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 6799.909668
+				myVerts
+				{
+				}
+			}
+			Element myElement10
+			{
+				myName "FarmerHouse_wreck_1_Main10"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -7.414127
+					myY 0.507636
+					myZ 12.180088
+				}
+				myRotHPB
+				{
+					myX 1.560285
+					myY 0.005802
+					myZ -2.637246
+				}
+				myExtents
+				{
+					myX 0.753
+					myY 1.906
+					myZ 0.213
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1275.685791
+				myVerts
+				{
+				}
+			}
+			Element myElement11
+			{
+				myName "FarmerHouse_wreck_1_Main11"
+				myType 0
+				myMaterial "HOUSE"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -5.300127
+					myY 0.809636
+					myZ 13.653088
+				}
+				myRotHPB
+				{
+					myX 3.140033
+					myY 0.0069
+					myZ 2.777434
+				}
+				myExtents
+				{
+					myX 1.497
+					myY 1.867
+					myZ 0.165
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1924.404297
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

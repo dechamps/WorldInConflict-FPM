@@ -1,0 +1,271 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody13
+	{
+		myName "Master13"
+		myMeshBone "Master"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.286909
+			myY 0.498849
+			myZ -7.195340
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement14
+			{
+				myName "Master14"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.02108
+					myY -2.643876
+					myZ -10.260369
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY 0.01733
+					myZ 0.000479
+				}
+				myExtents
+				{
+					myX 7.412
+					myY 5.059
+					myZ 59.542
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 5053.616211
+				myVerts
+				{
+				}
+			}
+			Element myElement15
+			{
+				myName "Master15"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.054863
+					myY 3.180336
+					myZ 8.355272
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY 0.01733
+					myZ 0.000479
+				}
+				myExtents
+				{
+					myX 6.327
+					myY 5.114
+					myZ 40.993999
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3002.324463
+				myVerts
+				{
+				}
+			}
+			Element myElement16
+			{
+				myName "Master16"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.090922
+					myY 11.500204
+					myZ 17.433771
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY 0.01733
+					myZ 0.000479
+				}
+				myExtents
+				{
+					myX 2.696
+					myY 5.22
+					myZ 9.492
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 302.361755
+				myVerts
+				{
+				}
+			}
+			Element myElement17
+			{
+				myName "Master17"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.168581
+					myY 5.434442
+					myZ 65.617661
+				}
+				myRotHPB
+				{
+					myX -0.000023
+					myY -0.030681
+					myZ 0.000479
+				}
+				myExtents
+				{
+					myX 4.188
+					myY 1.049
+					myZ 18.068998
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 179.678024
+				myVerts
+				{
+				}
+			}
+			Element myElement18
+			{
+				myName "Boat18"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 0
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 1
+					NUMBER myBlockingFlag1 1
+					NUMBER myBlockingFlag2 1
+					NUMBER myBlockingFlag3 0
+					NUMBER myBlockingFlag4 1
+					NUMBER myBlockingFlag5 1
+				}
+				myPos
+				{
+					myX 0.037884
+					myY -0.438392
+					myZ 6.638311
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 10.231
+					myY 0.798
+					myZ 79.113998
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1462.019287
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

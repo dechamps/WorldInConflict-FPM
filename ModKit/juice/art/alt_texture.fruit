@@ -1,0 +1,13 @@
+TYPE AlternateTexture
+{
+	Original
+	Version_2
+	Version_3
+	Version_4
+	Version_5
+	Version_6
+	Version_7
+	Version_8
+	Version_9
+	Version_10
+}

@@ -1,0 +1,43 @@
+/// Weathers.fruit
+//  Contains the various weather effects and base environment setup thingys
+INCLUDE juice/vector3.fruit
+INCLUDE juice/vector2.fruit
+
+CLASS WColor
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+}
+
+CLASS WeatherEffect
+{
+	FILE myFogBorderMRB
+	FILE myCloudMRB
+	FILE myCameraEffectMRB
+	FILE myWorldSpawnMRB
+	FILE myAmbientSound
+	DECIMAL myMinimumWorldSpawnTime	
+	DECIMAL myMaximumWorldSpawnTime
+	DECIMAL myWorldSpawnLiveTime
+	DECIMAL myFadeInTime
+	DECIMAL myFadeOutTime
+	Vector3 myAmbientColorModifier	
+	Vector3 mySunColorModifier	
+	Vector3 myFogColorModifier	
+	DECIMAL myFogFactor // Remove later (oct 2005)
+	DECIMAL myFogStart
+	DECIMAL myFogEnd
+	DECIMAL myShadowFactor
+	DECIMAL myHaloFactor
+	DECIMAL myWindFactor
+	DECIMAL myWindSpeed
+	DECIMAL myViewRangeFactor
+	DECIMAL myWeaponRangeFactor
+	WColor myPostFXBloomColor
+}
+
+SCRIPTCLASS Weathers
+{
+	WeatherEffect
+}

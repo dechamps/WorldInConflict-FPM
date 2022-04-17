@@ -1,0 +1,1472 @@
+INCLUDE juice/scriptmodels.fruit
+
+ScriptModelGroups myGroups
+{
+	ScriptModelGroup Civilians
+	{
+		ScriptModel B_Run
+		{
+			myMRB civilians/civilian_groups/showbox_files/b_run.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Jog1
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_jog1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Jog2
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_jog2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Jog3
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_jog3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Runcrouched1
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_runcrouched1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Runcrouched2
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_runcrouched2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Runcrouched3
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_runcrouched3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Runcrouched4
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_runcrouched4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk1
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk2
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk3
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk4
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk5
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel F_Walk6
+		{
+			myMRB civilians/civilian_groups/showbox_files/f_walk6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam1
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam2
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam3
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam4
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam5
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam6
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Fam7
+		{
+			myMRB civilians/civilian_groups/showbox_files/fam7.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel G_Run1
+		{
+			myMRB civilians/civilian_groups/showbox_files/g_run1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel G_Run2
+		{
+			myMRB civilians/civilian_groups/showbox_files/g_run2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Jog1
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_jog1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Jog2
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_jog2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Jog3
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_jog3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Run1
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_run1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Run2
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_run2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched1
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched2
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched3
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched4
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched5
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Runcrouched6
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_runcrouched6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk1
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk2
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk3
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk4
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk5
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk6
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk7
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk7.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk8
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk8.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk9
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk9.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Walk10
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_walk10.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Wounded1
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_wounded1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Wounded2
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_wounded2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Wounded3
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_wounded3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel M_Wounded4
+		{
+			myMRB civilians/civilian_groups/showbox_files/m_wounded4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par1
+		{
+			myMRB civilians/civilian_groups/showbox_files/par1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par2
+		{
+			myMRB civilians/civilian_groups/showbox_files/par2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par3
+		{
+			myMRB civilians/civilian_groups/showbox_files/par3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par4
+		{
+			myMRB civilians/civilian_groups/showbox_files/par4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par5
+		{
+			myMRB civilians/civilian_groups/showbox_files/par5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Par6
+		{
+			myMRB civilians/civilian_groups/showbox_files/par6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Sedan
+		{
+			myMRB civilians/props/lightwave/sedan/sedan.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel StationWagon
+		{
+			myMRB civilians/props/lightwave/station_wagon/stationwagon.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Pickup
+		{
+			myMRB civilians/props/lightwave/pickup/pickup.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Citybus
+		{
+			myMRB civilians/props/lightwave/city_bus/seattlecitybus.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Van
+		{
+			myMRB civilians/props/lightwave/van/van.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Bike
+		{
+			myMRB civilians/props/lightwave/crossbike/bike.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_B_Run
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_b_run.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Jog1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_jog1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Jog2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_jog2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Jog3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_jog3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Runcrouched1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_runcrouched1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Runcrouched2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_runcrouched2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Runcrouched3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_runcrouched3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Runcrouched4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_runcrouched4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk5
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_F_Walk6
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_f_walk6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam5
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam6
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Fam7
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_fam7.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_G_Run1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_g_run1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_G_Run2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_g_run2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Jog1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_jog1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Jog2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_jog2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Jog3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_jog3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Run1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_run1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Run2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_run2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched5
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Runcrouched6
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_runcrouched6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk5
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk6
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk7
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk7.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk8
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk8.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk9
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk9.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Walk10
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_walk10.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Wounded1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_wounded1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Wounded2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_wounded2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Wounded3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_wounded3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_M_Wounded4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_m_wounded4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par1
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par2
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par3
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par4
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par5
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par5.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Par6
+		{
+			myMRB civilians/civilian_groups/showbox_files/high_par6.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Sedan
+		{
+			myMRB civilians/props/lightwave/sedan/high_sedan.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_StationWagon
+		{
+			myMRB civilians/props/lightwave/station_wagon/high_stationwagon.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Pickup
+		{
+			myMRB civilians/props/lightwave/pickup/high_pickup.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Citybus
+		{
+			myMRB civilians/props/lightwave/city_bus/high_seattlecitybus.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Van
+		{
+			myMRB civilians/props/lightwave/van/high_van.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel HIGH_Bike
+		{
+			myMRB civilians/props/lightwave/crossbike/high_bike.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Roof_Female_01
+		{
+			myMRB civilians/civilian_groups/showbox_files/roof_female_01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Roof_Female_02
+		{
+			myMRB civilians/civilian_groups/showbox_files/roof_female_02.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Roof_Male_01
+		{
+			myMRB civilians/civilian_groups/showbox_files/roof_male_01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Roof_Male_02
+		{
+			myMRB civilians/civilian_groups/showbox_files/roof_male_02.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Roof_Male_03
+		{
+			myMRB civilians/civilian_groups/showbox_files/roof_male_03.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+	}
+
+	ScriptModelGroup Tutorial
+	{
+		ScriptModel Purple_Smoke
+		{
+			myMRB effects/supportweapons/markers/_test/andys_purple.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Red_Circle
+		{
+			myMRB ui/markers/tutorial_flythought/tutorial_flythought.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel Yellow_Smoke
+		{
+			myMRB effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+	}
+
+	ScriptModelGroup Cinematics
+	{
+		ScriptModel CinModel_Mortar
+		{
+			myMRB hit_set_effects/mortar/myhiteffects/ground_default/mortarhit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_CarpetBomb
+		{
+			myMRB hit_set_effects/supportweapons/carpetbombing/carpetbomb.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_CarpetBombWater
+		{
+			myMRB hit_set_effects/supportweapons/carpetbombing/carpetbomb_water.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryBasic
+		{
+			myMRB hit_set_effects/supportweapons/artillery/artillery.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryWater
+		{
+			myMRB hit_set_effects/supportweapons/artillery/artillery_water.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryPion1
+		{
+			myMRB hit_set_effects/mortar_big/myhiteffects/ground_01/bb_groundd_hit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryPion2
+		{
+			myMRB hit_set_effects/mortar_big/myhiteffects/ground_01/bb_groundd_hit_ver2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryPion3
+		{
+			myMRB hit_set_effects/mortar_big/myhiteffects/ground_01/bb_groundd_hit_ver3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_ArtilleryPionWater
+		{
+			myMRB hit_set_effects/mortar_big/myhiteffects/water_01/mb_waterhit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_Napalm
+		{
+			myMRB hit_set_effects/supportweapons/napalm/napalm.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_B52Flyby1
+		{
+			myMRB cutscenes/effects/cin_effects/b52/b-52_carpetbombing_fast.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_CruiseMissileImpact1
+		{
+			myMRB cutscenes/maps/ustown3/m05f02_s04/crusermissile_impact.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_HumweeFlying1
+		{
+			myMRB cutscenes/maps/ustown4/ustown4rally/flyinghumvee.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_TankWreck1
+		{
+			myMRB units/genericwreckparts/tankwreck_large.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_TankWreck2
+		{
+			myMRB units/genericwreckparts/tankwreck_large_ver2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_TankWreck3
+		{
+			myMRB units/genericwreckparts/tankwreck_large_ver3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_SmokeSnowDrifting1
+		{
+			myMRB cutscenes/effects/cin_effects/sub/driftsmokesnow.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_SmokeTall1
+		{
+			myMRB cutscenes/effects/cin_effects/liberty/longsmoke01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_SmokeGreen1
+		{
+			myMRB cutscenes/effects/cin_effects/liberty/greensmoke01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_Fire5
+		{
+			myMRB hit_set_effects/fire/fire_5m.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_Fire10
+		{
+			myMRB cutscenes/effects/cin_effects/liberty/fire_10m.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_Fire25
+		{
+			myMRB cutscenes/effects/cin_effects/liberty/fire_25m.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_F15Flyby1Short
+		{
+			myMRB cutscenes/effects/cin_effects/fighterplanedrops/us_f15e_eagle_flyby_gasbomb_short.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_F15Flyby1Long
+		{
+			myMRB units/us/us_f15e_eagle/us_f15e_eagle_flyby_gasbomb.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_F15Flyby2
+		{
+			myMRB cutscenes/effects/cin_effects/fighterplanedrops/us_f15e_eagle_flyby_napalm_short.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_F15Flyby3Bomb
+		{
+			myMRB cutscenes/effects/cin_effects/fighterplanedrops/us_f15e_eagle_flyby_bunkerbuster_short.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_F16Flyby1
+		{
+			myMRB cutscenes/effects/cin_effects/fighterplanedrops/us_f16_falcon_airstrike_short.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_BombHit
+		{
+			myMRB units/us/us_f15e_eagle/effects/f15_bombhit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_RocketHit
+		{
+			myMRB hit_set_effects/rocket_big/myhiteffects/ground_01/rb_groundderault.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_MultiBlastNato
+		{
+			myMRB hit_set_effects/supportweapons/nato_daisy/nato_carpetbomber_hit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_NukeUs
+		{
+			myMRB effects/mushroomsmoke/smoke_2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel CinModel_NukeHemi
+		{
+			myMRB cutscenes/effects/cin_effects/nuke/nuke_gs_nolt_hemicircle.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+	}
+
+	ScriptModelGroup Effects
+	{
+		ScriptModel dogfight1
+		{
+			myMRB russian/berlin/surroundeffects/dogfight/berlin_dogfight.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+		
+		ScriptModel surroundcopters
+		{
+			myMRB russian/berlin/surroundeffects/helicopters/surround_helicopters.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+		
+		ScriptModel surroundartys
+		{
+			myMRB hit_set_effects/environment/artillaryandbullit/sur_artillery.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+		
+		ScriptModel planecrash
+		{
+			myMRB hit_set_effects/environment/planecrash/planecrash.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+		
+		ScriptModel tracer1
+		{
+			myMRB hit_set_effects/bullets/suround_bullets/suround_bullets.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel tracer2
+		{
+			myMRB hit_set_effects/bullets/suround_bullets/suround_bullets_2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel tracer3
+		{
+			myMRB hit_set_effects/bullets/suround_bullets/suround_bullets_3.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel tracer4
+		{
+			myMRB hit_set_effects/bullets/suround_bullets/suround_bullets_4.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel explosion1
+		{
+			myMRB hit_set_effects/supportweapons/bunkerbuster/bunkerbuster_ussr.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel explosion2
+		{
+			myMRB hit_set_effects/mortar/myhiteffects/ground_default/mortarhit.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel explosion3
+		{
+			myMRB hit_set_effects/mortar_big/myhiteffects/ground_01/bb_groundd_hit_ver2.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel explosion4
+		{
+			myMRB hit_set_effects/supportweapons/daisycutter/daisycutter.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel smoke1
+		{
+			myMRB hit_set_effects/fire/smoke_longlived_1.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel smoke2
+		{
+			myMRB hit_set_effects/fire/fire_10m.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel smoke3
+		{
+			myMRB hit_set_effects/fire/horizonfire/horizonfire_lesssmoke.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel smoke4
+		{
+			myMRB effects/fire/large_fire_01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel lightning1
+		{
+			myMRB hit_set_effects/environment/lightning/LightningMove.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		ScriptModel OilrigSpecial
+		{
+			myMRB russian/europe/house/eur_oilrig/eur_oilrig_wreck.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+	}
+
+}
+
+ScriptSounds mySounds
+{
+	SoundSource Test
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_dirt_debris_02
+	}
+
+	SoundSource CinSound_Mortar1
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_rock_debris_01
+	}
+
+	SoundSource CinSound_Mortar2
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_rock_debris_02
+	}
+
+	SoundSource CinSound_Mortar3
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_rock_debris_03
+	}
+
+	SoundSource CinSound_MortarBig1
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_dirt_debris_01
+	}
+
+	SoundSource CinSound_MortarBig2
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_dirt_debris_02
+	}
+
+	SoundSource CinSound_MortarBig3
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_large_dirt_debris_03
+	}
+
+	SoundSource CinSound_CarpetBomb
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_ta_us_carpetbomb_01
+	}
+
+	SoundSource CinSound_TankWreck1
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosive_tank_H_ground_01
+	}
+
+	SoundSource CinSound_TankWreck2
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosive_tank_H_ground_02
+	}
+
+	SoundSource CinSound_TankWreck3
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosive_tank_H_ground_03
+	}
+
+	SoundSource CinSound_Napalm
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_ta_us_napalm_01
+	}
+
+	SoundSource CinSound_RocketSmall1
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_medium_rock_debris_01
+	}
+
+	SoundSource CinSound_RocketSmall2
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_medium_rock_debris_02
+	}
+
+	SoundSource CinSound_RocketSmall3
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 1
+		mySound explosion_medium_rock_debris_03
+	}
+
+	SoundSource civ_run_01
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_run_01
+	}
+
+	SoundSource civ_run_02
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_run_02
+	}
+
+	SoundSource civ_walk_01
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_walk_01
+	}
+
+	SoundSource civ_walk_02
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_walk_02
+	}
+
+	SoundSource civ_walk_03
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_walk_03
+	}
+
+	SoundSource civ_walk_04
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_walk_04
+	}
+
+	SoundSource civ_walk_05
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_walk_05
+	}
+
+	SoundSource civ_veh_01
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_veh_01
+	}
+
+	SoundSource civ_veh_02
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_veh_02
+	}
+
+	SoundSource civ_veh_03
+	{
+		myBaseFrequency 0
+		mySpeedShiftFlag 0
+		myDopplerShiftFlag 0
+		mySound civ_veh_03
+	}
+
+}
+

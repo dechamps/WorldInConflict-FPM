@@ -1,0 +1,255 @@
+//exodus_map_export.fruit
+//the export format for all game data for an xmap file (Version 0006)
+//updated 030827 by johno
+
+//agents are "in-out" data, in that they aren't used or processed in any way by XEd
+//this means we can use the same format throughout
+//INCLUDE juice/agent.fruit
+
+//entities also "in-out"
+//INCLUDE xed/xentity.fruit
+INCLUDE xed/script.fruit
+INCLUDE juice/vector2.fruit
+INCLUDE xed/scriptlist.fruit
+INCLUDE xed/missionstats.fruit
+INCLUDE xed/campos.fruit
+INCLUDE sound/MS_Sound.fruit
+INCLUDE xed/autoprop.fruit
+INCLUDE messagebox_characters/character.fruit
+INCLUDE xed/weathers.fruit
+INCLUDE xed/supportthings.fruit
+INCLUDE xed/xkeybuildingparasites.fruit
+INCLUDE units/unittype.fruit
+INCLUDE juice/materials.fruit
+INCLUDE juice/waterdata.fruit
+INCLUDE juice/sundata.fruit
+
+//DATABASE
+//DATABASE
+//DATABASE
+//DATABASE
+CLASS Position2
+{
+        DECIMAL myX
+        DECIMAL myZ
+}
+
+SCRIPTCLASS PathLineList
+{
+        Position2
+}
+
+
+TYPE LightType
+{
+        SHADOWMAP_AND_LIGHT
+        LIGHTMAP
+}
+
+TYPE PropGraphicalImportance
+{
+	ALWAYS_VISIBLE
+	VISIBLE_NO_REFLECTION
+	NOT_VISIBLE_IN_LOWEND
+}
+
+CLASS PropType
+{
+	FILE myVisualModel
+	FILE myShadowModel
+	FILE myShadowLod2
+	FILE myGetYModel
+	NUMBER myAutoGenerateGetYFlag
+	DECIMAL myShadowLod2Distance
+	FILE myPhysFile
+	LightType myLightType
+	MaterialID myMaterial
+	NUMBER myUnitsAreVisibleThroughMeFlag 
+	NUMBER myBlocksPathFlag
+	FILE mySlotFile
+	FILE myGridFile
+	PropGraphicalImportance myGraphicalImportance
+	NUMBER myReactToCollisionFlag
+	DECIMAL myFallOverRadius 
+	DECIMAL myPhysBreakLimit
+	TEXT myDestructionSound
+	NUMBER myIsDestroyableFlag
+	NUMBER myArmor
+	NUMBER myHealth
+	FILE myAreaFile
+	DECIMAL myTimeBeforeOvertake
+	XKeyBuildingParasites myParasites
+	UnitType::DeathEffects myDeathEffects
+	NUMBER myOnlyAffectsLosFlag
+}
+
+SCRIPTCLASS PropTypeList
+{
+        PropType        
+}
+
+//WORLD DATA
+//WORLD DATA
+//WORLD DATA
+//WORLD DATA
+CLASS Color
+{
+        NUMBER myR
+        NUMBER myG
+        NUMBER myB
+}
+
+CLASS XDirectionalLight
+{
+        DECIMAL myDirection
+        DECIMAL myElevation
+        Color myColor
+	DECIMAL myOverbrightFactor
+}
+
+SCRIPTCLASS LightList
+{
+        XDirectionalLight
+}
+
+CLASS Environment
+{
+        Color myFogColor
+        DECIMAL myFogFactor
+        FILE mySkyModel
+        DECIMAL myWaterLevel
+        Color myLightAmbient
+        LightList myLights
+        FILE myWaterTexture0
+        FILE myWaterTexture1
+        FILE myCloudMap
+        FILE myWaterEdgeTexture
+        FILE myWaterReflectionTexture
+}
+
+//INSTANCES
+//INSTANCES
+//INSTANCES
+//INSTANCES
+//CLASS Orientation
+//{
+//        DECIMAL myHeading
+//        DECIMAL myPitch
+//        DECIMAL myBank
+//}
+//
+//CLASS ModelInstance
+//{
+//        TEXT myType
+//        Vector3 myPosition
+//        Orientation myOrientation
+//}
+//
+//SCRIPTCLASS PropInstanceList
+//{
+//        ModelInstance
+//}
+//
+//SCRIPTCLASS EntityInstanceList
+//{
+//        XPositionEntity
+//        XSphereEntity
+//        XBoxEntity
+//        ModelInstance
+//        XCommandEntity
+//}
+//
+//SCRIPTCLASS SoundInstanceList
+//{
+//        XSoundEntity
+//}
+
+SCRIPTCLASS Textures
+{
+	FILE
+}
+
+
+
+//ENTIRE MAP DATA
+//ENTIRE MAP DATA
+//ENTIRE MAP DATA
+//ENTIRE MAP DATA
+CLASS Exodus_Map_Export
+{
+        //internal database
+        PropTypeList myPropTypes
+        MS_SoundGroup mySoundTypes
+        CharacterList myCharacters
+        Weathers myWeathers
+        SupportThings mySupportThings
+
+        //external database
+        FILE myAgentTypesFile
+        FILE myDropshipConfigFile
+        FILE myAgentSoundsFile
+
+	// Moved from internal db to external db (TODO: Remove internal DB)
+	FILE myPropTypesFile
+	FILE mySoundTypesFile
+	FILE myCharactersFile
+	FILE myWeathersFile
+	FILE mySupportThingsFile
+        
+        //world data
+        FILE myHeightMapFile
+        FILE myInvisibleHeightMapFile
+        FILE myPhysHeightMapFile
+        FILE myDetailTextureFile
+        FILE myOverviewMapFile
+        FILE myInstancesFile
+        FILE myPathFile
+        FILE myAnalysisFile
+	FILE myDetailMapFile
+	FILE myDetailTextureFile2
+	FILE myDetailMapFile2
+	Textures myTextures
+	Textures myLowendTextures
+	FILE myHeightmapLodsFile
+	FILE myZonesDefinitionsFile
+	FILE myMapEnvmap
+        
+        // hints
+        FILE myChokePointsFile
+        FILE myStrengthHintsFile
+        FILE myMinfieldHintsFile
+        FILE mySupportHintsFile
+        
+        Environment myEnvironment
+        //AutoPropList myAutoProp
+	FILE myAutoPropFile
+	FILE mySpeedTreeForest
+	FILE myGroundSpecWeightMap
+        
+        // playfield
+        Vector2 myPlayfieldMinCoord
+        Vector2 myPlayfieldMaxCoord
+        
+        // initial camera positions/rotations
+        XCamPos myInitialCameraPosition
+        XCamPosList myCameraPositions
+
+	// Python stuff
+	FILE myPythonBase
+	FILE myPythonServerScript
+	FILE myPythonClientScript
+	FILE myPythonServerAutogenScript
+	FILE myPythonClientAutogenScript
+        
+        // mission stats
+        XMissionStats myMissionStats
+        
+        // Water
+        WaterData myWaterData
+        
+        // Sun
+        SunData mySunData
+
+	FILE myHitEffectsSpawnFile
+	FILE myHitEffectsColorTintFile
+}

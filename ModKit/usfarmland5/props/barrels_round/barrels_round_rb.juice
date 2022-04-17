@@ -1,0 +1,390 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody5
+	{
+		myName "Barrel0305"
+		myMeshBone "Barrel03"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 10.000000
+		myRootPosition
+		{
+			myX -0.950000
+			myY 0.618000
+			myZ -0.150000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement6
+			{
+				myName "Barrel0306"
+				myType 0
+				myMaterial "WOOD"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.0
+					myZ -0.0
+				}
+				myRotHPB
+				{
+					myX -3.043417
+					myY -1.56677
+					myZ -0.0
+				}
+				myExtents
+				{
+					myX 0.307
+					myY 0.296
+					myZ 0.62
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 799.999939
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody3
+	{
+		myName "Barrel0203"
+		myMeshBone "Barrel02"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 15.000000
+		myRootPosition
+		{
+			myX -0.050000
+			myY 0.618000
+			myZ 0.700000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "Barrel0204"
+				myType 0
+				myMaterial "WOOD"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX -2.948619
+					myY 1.566667
+					myZ 0.244977
+				}
+				myExtents
+				{
+					myX 0.307
+					myY 0.3
+					myZ 0.619
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 899.999939
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody1
+	{
+		myName "Barrel0101"
+		myMeshBone "Barrel01"
+		myObjectIsCg 1
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 10.000000
+		myRootPosition
+		{
+			myX 1.050000
+			myY 0.618000
+			myZ 0.250000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "Barrel0102"
+				myType 0
+				myMaterial "WOOD"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 2.190697
+					myY 1.566785
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.295
+					myY 0.285
+					myZ 0.619
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 699.999939
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody7
+	{
+		myName "Barrel0407"
+		myMeshBone "Barrel04"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 15.000000
+		myRootPosition
+		{
+			myX 0.201000
+			myY 0.612000
+			myZ -0.342000
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement8
+			{
+				myName "Barrel0408"
+				myType 0
+				myMaterial "WOOD"
+				myNoPhysicsFlag 0
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ -0.0
+				}
+				myRotHPB
+				{
+					myX 0.891682
+					myY -1.56677
+					myZ 3.141593
+				}
+				myExtents
+				{
+					myX 0.284
+					myY 0.272
+					myZ 0.59
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 799.999939
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

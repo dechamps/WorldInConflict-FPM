@@ -1,0 +1,164 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/libya/CinnamonFern_RT.spt
+	{
+		myFilename speedtrees/libya/CinnamonFern_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/CinnamonFern_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/CinnamonFern_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/CinnamonFern_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/CinnamonFern_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/CinnamonFern_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/CinnamonFern_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/CinnamonFern_RT2.spt
+	{
+		myFilename speedtrees/libya/CinnamonFern_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/CinnamonFern_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/CinnamonFern_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/CinnamonFern_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/CinnamonFern_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/CinnamonFern_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/CinnamonFern_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/DatePalm_RT.spt
+	{
+		myFilename speedtrees/libya/DatePalm_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/DatePalm_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/DatePalm_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/DatePalm_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/DatePalm_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/DatePalm_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/DatePalm_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/DatePalm_RT2.spt
+	{
+		myFilename speedtrees/libya/DatePalm_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/DatePalm_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/DatePalm_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/DatePalm_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/DatePalm_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/DatePalm_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/DatePalm_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/DatePalm_RT3.spt
+	{
+		myFilename speedtrees/libya/DatePalm_RT3.spt
+		myBBSideTexture speedtrees/libya/billboards/DatePalm_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/DatePalm_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/DatePalm_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/DatePalm_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/DatePalm_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/DatePalm_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/FanPalm_RT.spt
+	{
+		myFilename speedtrees/libya/FanPalm_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/FanPalm_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/FanPalm_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/FanPalm_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/FanPalm_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/FanPalm_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/FanPalm_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/FanPalm_RT2.spt
+	{
+		myFilename speedtrees/libya/FanPalm_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/FanPalm_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/FanPalm_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/FanPalm_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/FanPalm_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/FanPalm_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/FanPalm_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/JungleBrush_RT.spt
+	{
+		myFilename speedtrees/libya/JungleBrush_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/JungleBrush_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/JungleBrush_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/JungleBrush_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/JungleBrush_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/JungleBrush_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/JungleBrush_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/JungleBrush_RT2.spt
+	{
+		myFilename speedtrees/libya/JungleBrush_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/JungleBrush_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/JungleBrush_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/JungleBrush_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/JungleBrush_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/JungleBrush_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/JungleBrush_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/QueenPalm_RT.spt
+	{
+		myFilename speedtrees/libya/QueenPalm_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/QueenPalm_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/QueenPalm_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/QueenPalm_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/QueenPalm_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/QueenPalm_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/QueenPalm_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/QueenPalm_RT2.spt
+	{
+		myFilename speedtrees/libya/QueenPalm_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/QueenPalm_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/QueenPalm_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/QueenPalm_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/QueenPalm_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/QueenPalm_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/QueenPalm_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/RedYucca_RT.spt
+	{
+		myFilename speedtrees/libya/RedYucca_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/RedYucca_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/RedYucca_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/RedYucca_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/RedYucca_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/RedYucca_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/RedYucca_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/RedYucca_RT2.spt
+	{
+		myFilename speedtrees/libya/RedYucca_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/RedYucca_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/RedYucca_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/RedYucca_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/RedYucca_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/RedYucca_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/RedYucca_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/UmbrellaThorn_RT.spt
+	{
+		myFilename speedtrees/libya/UmbrellaThorn_RT.spt
+		myBBSideTexture speedtrees/libya/billboards/UmbrellaThorn_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/UmbrellaThorn_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/UmbrellaThorn_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/UmbrellaThorn_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/UmbrellaThorn_RT2.spt
+	{
+		myFilename speedtrees/libya/UmbrellaThorn_RT2.spt
+		myBBSideTexture speedtrees/libya/billboards/UmbrellaThorn_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/UmbrellaThorn_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/UmbrellaThorn_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/UmbrellaThorn_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/libya/UmbrellaThorn_RT_Dead.spt
+	{
+		myFilename speedtrees/libya/UmbrellaThorn_RT_Dead.spt
+		myBBSideTexture speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbside.dds
+		myBBSideTextureMulti speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbside_multi.dds
+		myBBSideNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbside_n_multi.dds
+		myBBTopTexture speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbtop.dds
+		myBBTopNormalmap speedtrees/libya/billboards/UmbrellaThorn_RT_Dead_bbtop_n.dds
+	}
+}

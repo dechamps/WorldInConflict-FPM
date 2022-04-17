@@ -1,0 +1,334 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L1_1.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L1_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L1_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L1_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L1_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L1_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L1_2.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L1_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L1_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L1_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L1_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L1_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L1_3.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L1_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L1_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L1_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L1_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L1_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L1_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L3_1.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L3_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L3_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L3_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L3_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L3_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L3_2.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L3_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L3_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L3_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L3_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L3_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L3_3.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L3_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L3_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L3_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L3_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L3_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/AmericanElm_L3_4.spt
+	{
+		myFilename speedtrees/usBurned/AmericanElm_L3_4.spt
+		myBBSideTexture speedtrees/usBurned/billboards/AmericanElm_L3_4_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/AmericanElm_L3_4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/AmericanElm_L3_4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/AmericanElm_L3_4_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/AmericanElm_L3_4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L2_1.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L2_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L2_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L2_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L2_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L2_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L2_2.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L2_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L2_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L2_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L2_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L2_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L2_3.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L2_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L2_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L2_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L2_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L2_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L2_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L3_1.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L3_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L3_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L3_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L3_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L3_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L3_2.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L3_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L3_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L3_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L3_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L3_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_L3_3.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_L3_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_L3_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_L3_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_L3_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_L3_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_L3_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_RT.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_RT.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_RT2.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_RT2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_RT_full.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_RT_full.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_RT_full_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_RT_full_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_full_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_RT_full_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_RT_full_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_full_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/DouglasFir_RT_full2.spt
+	{
+		myFilename speedtrees/usBurned/DouglasFir_RT_full2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/DouglasFir_RT_full2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_L2_1.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_L2_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_L2_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_L2_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_L2_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_L2_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_L2_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_L2_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_L2_2.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_L2_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_L2_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_L2_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_L2_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_L2_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_L2_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_L2_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_L2_3.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_L2_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_L2_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_L2_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_L2_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_L2_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_L2_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_L2_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_L3_1.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_L3_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_L3_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_L3_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_L3_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_L3_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_L3_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_L3_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_L3_2.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_L3_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_L3_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_L3_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_L3_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_L3_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_L3_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_L3_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_RT.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_RT.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_RT2.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_RT2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/PeachTree_RT3.spt
+	{
+		myFilename speedtrees/usBurned/PeachTree_RT3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/PeachTree_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/PeachTree_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/PeachTree_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/PeachTree_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/PeachTree_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/PeachTree_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_L1_1.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_L1_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_L1_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_L1_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_L1_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_L1_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_L1_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_L1_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_L1_2.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_L1_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_L1_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_L1_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_L1_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_L1_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_L1_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_L1_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_L2_1.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_L2_1.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_L2_1_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_L2_1_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_L2_1_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_L2_1_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_L2_1_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_L2_1_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_L2_2.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_L2_2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_L2_2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_L2_2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_L2_2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_L2_2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_L2_2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_L2_2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_L2_3.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_L2_3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_L2_3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_L2_3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_L2_3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_L2_3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_L2_3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_L2_3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_RT.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_RT.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_RT2.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_RT2.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usBurned/SugarPine_RT3.spt
+	{
+		myFilename speedtrees/usBurned/SugarPine_RT3.spt
+		myBBSideTexture speedtrees/usBurned/billboards/SugarPine_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/usBurned/billboards/SugarPine_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usBurned/billboards/SugarPine_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usBurned/billboards/SugarPine_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usBurned/billboards/SugarPine_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/usBurned/billboards/SugarPine_RT3_bbtop_n.dds
+	}
+}

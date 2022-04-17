@@ -1,0 +1,188 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody25
+	{
+		myName "MasterNull25"
+		myMeshBone "MasterNull"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 2
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.058464
+			myY 1.282419
+			myZ 0.393353
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement26
+			{
+				myName "MasterNull26"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.024464
+					myY -0.138419
+					myZ 0.046647
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.674
+					myY 0.85
+					myZ 3.64
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 8732.420898
+				myVerts
+				{
+				}
+			}
+			Element myElement27
+			{
+				myName "MasterNull27"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.168536
+					myY 0.953581
+					myZ -0.321353
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 1.1
+					myY 0.482
+					myZ 1.418
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1267.578491
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+	Joint myJoint0
+	{
+		myType BALL_JOINT
+		myRB1 "MasterNull25"
+		myRB2 "myPhysWorld"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.0
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+	}
+}
+
+DelayedExplosions myExplosions
+{
+}
+

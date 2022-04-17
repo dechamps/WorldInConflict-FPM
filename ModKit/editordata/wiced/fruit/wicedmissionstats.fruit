@@ -1,0 +1,362 @@
+// wicedmissionstats.fruit
+// Mission stats for a WIC mission
+// Created 0505422 by Peen
+
+INCLUDE juice/vector3.fruit
+INCLUDE xed/script.fruit
+INCLUDE juice/team/team.fruit
+INCLUDE editordata/wiced/fruit/wicedinstances.fruit
+INCLUDE juice/role.fruit
+INCLUDE campaign/objectives.fruit
+INCLUDE juice/music.fruit
+INCLUDE editordata/wiced/fruit/loadingbriefing.fruit
+
+TYPE MissionType
+{
+	SINGLEPLAYER
+	MULTIPLAYER
+}
+
+TYPE XPlayer::Type
+{
+	HUMAN
+	AI
+	SCRIPT
+}
+
+CLASS XPlayer::Color
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+}
+
+TYPE XPlayer::Team
+{
+	TEAM_1
+	TEAM_2
+}
+
+
+SCRIPTCLASS XPlayer::AllowedSupportThings
+{
+	TEXT
+}
+
+
+SCRIPTCLASS DisallowedSupportThings
+{
+	TEXT
+}
+
+SCRIPTCLASS DisallowedUnits
+{
+	TEXT
+}
+
+SCRIPTCLASS SinglePlayerDeploymentAreaMasks
+{
+	FILE
+}
+
+CLASS XPlayer
+{
+	XPlayer::Type myType
+	XPlayer::Team myTeam
+	//XPlayer::Color myColor
+	//LOCTEXT myName
+	FILE myAIConfigFile
+	//Vector3 myBasePosition
+
+}
+TYPE DeploymentDirection
+{
+    North
+    East
+    South
+    West
+}
+
+TYPE DeploymentOrientation
+{
+    Horizontal
+    Vertical
+}
+
+TYPE GameMode
+{
+    Domination
+    Assault
+    TugOfWar
+    TeamDeathmatch
+}
+
+TYPE LandscapeTexture
+{
+    Normal
+    Desert
+    Winter
+    Easter
+}
+
+CLASS XPlayers
+{
+	XPlayer PLAYER1
+	XPlayer PLAYER2
+	XPlayer PLAYER3
+	XPlayer PLAYER4
+	XPlayer PLAYER5
+	XPlayer PLAYER6
+	XPlayer PLAYER7
+	XPlayer PLAYER8
+	XPlayer PLAYER9
+	XPlayer PLAYER10
+	XPlayer PLAYER11
+	XPlayer PLAYER12
+	XPlayer PLAYER13
+	XPlayer PLAYER14
+	XPlayer PLAYER15
+	XPlayer PLAYER16
+}
+
+CLASS StartingDropZonesForTeam
+{
+	WicedDropZoneInstance* myStartingDropZonePlayer1
+	WicedDropZoneInstance* myStartingDropZonePlayer2
+	WicedDropZoneInstance* myStartingDropZonePlayer3
+	WicedDropZoneInstance* myStartingDropZonePlayer4
+	WicedDropZoneInstance* myStartingDropZonePlayer5
+	WicedDropZoneInstance* myStartingDropZonePlayer6
+	WicedDropZoneInstance* myStartingDropZonePlayer7
+	WicedDropZoneInstance* myStartingDropZonePlayer8
+	WicedDropZoneInstance* myStartingDropZonePlayer9
+	WicedDropZoneInstance* myStartingDropZonePlayer10
+	WicedDropZoneInstance* myStartingDropZonePlayer11
+	WicedDropZoneInstance* myStartingDropZonePlayer12
+	WicedDropZoneInstance* myStartingDropZonePlayer13
+	WicedDropZoneInstance* myStartingDropZonePlayer14
+	WicedDropZoneInstance* myStartingDropZonePlayer15
+	WicedDropZoneInstance* myStartingDropZonePlayer16
+}
+
+
+SCRIPTCLASS StartingDropZonesPerTeamList 
+{
+	StartingDropZonesForTeam
+}
+
+CLASS SoundTrack
+{
+	//FILE mySoundTrackFile
+	MusicEvent myMusicEvent
+	DECIMAL myPercentageTrigger
+}
+
+SCRIPTCLASS SoundTrackList
+{
+	SoundTrack
+}
+
+CLASS SoundTrackDefinition
+{
+	DECIMAL myTimeBeforeSoundTrackSwap
+	DECIMAL myTimeTimeLeftOfMatchForCrescendo
+	SoundTrackList myTracks
+}
+
+CLASS StartingUnitsPositionMarker
+{
+	FILE myModelFile
+	Role myRole
+}
+
+SCRIPTCLASS StartingUnitsPositionMarkerList
+{
+	StartingUnitsPositionMarker
+}
+
+
+CLASS ScriptEvent
+{
+	LOCTEXT myString
+	FILE myIcon
+	FILE mySound
+	TEXT myGuiElementToFlash
+	TEXT myOnClickPythonClientFunction
+	TEXT myOnClickPythonServerFunction
+	NUMBER myShowAsSysMessageFlag
+}
+SCRIPTCLASS ScriptEvents
+{
+	ScriptEvent
+}
+
+CLASS TipText
+{
+	LOCTEXT myHeader
+	LOCTEXT myText
+	FILE myImage
+}
+
+SCRIPTCLASS TipTexts
+{
+	TipText
+}
+
+TYPE MessageBoxType
+{
+	MB_TIMED
+	MB_BUTTON
+	MB_AUTOMATIC
+}
+
+CLASS MessageBoxData
+{
+	MessageBoxType myType
+	LOCTEXT myText
+	FILE mySoundFile
+	FILE myVideoPortraitFile
+	LOCTEXT myPortraitText	
+	DECIMAL myTimeToShow
+}
+
+SCRIPTCLASS MessageBoxList
+{
+	MessageBoxData
+}
+
+CLASS WicedMissionStats
+{
+	LOCTEXT myName
+	LOCTEXT mySPName
+	TEXT myMapListName
+	LOCTEXT myDescription
+	LOCTEXT mySPDescription
+	MissionType myMissionType
+	GameMode myGameMode
+	NUMBER myMissionVersion
+	NUMBER myInitialAp
+	NUMBER myInitialApSinglePlayerTeam1	// player team
+	NUMBER myInitialApSinglePlayerTeam2	// enemy team
+	NUMBER myMaxAp
+	NUMBER myMaxApSinglePlayerTeam1		// player team
+	NUMBER myMaxApSinglePlayerTeam2		// enemy team
+	NUMBER myInitialTickets
+	//NUMBER myInitialTicketsSinglePlayer
+	DECIMAL myGameLengthSinglePlayer	// <=0 = same as mp, positive = real value
+	Vector3 myWindDirection
+	Teams myAllowedTeam1
+	Teams myAllowedTeam2
+	Teams myAllowedTeam1SinglePlayer
+	Teams myAllowedTeam2SinglePlayer
+	XPlayers myPlayers
+	DisallowedUnits myDisallowedUnits
+	DisallowedSupportThings myDisallowedSupportthings
+	LoadingBriefing myLoadingBriefing
+	//FILE myLoadingScreenImage
+	//LOCTEXT myLoadingScreenText
+	//MusicEvent myLoadingScreenMusic
+	//FILE myLoadingScreenImageSinglePlayer	// null = same as mp
+	//LOCTEXT myLoadingScreenTextSinglePlayer	// null = same as mp
+	LandscapeTexture myLandscapeTextureSet
+	Flag myAllowScriptedVictory
+	Flag myAllowDominationVictory
+	Flag myAllowNoLZDefeat
+	Flag myAllowNoVLDefeat
+	Flag myAllowNoUnitsDefeat
+	Flag myAllowNoPresenceDefeat
+	DECIMAL myScriptedAPFactor
+	DECIMAL myZoneTickAPFactor
+	DECIMAL myUnitKilledAPFactor
+	DECIMAL myUnitLostAPFactor
+	DECIMAL myDeploymentZoneStartingSizeTeam1
+	DECIMAL myDeploymentZoneStartingSizeTeam2 
+	DeploymentOrientation myDeploymentZoneOrientation
+	DeploymentDirection myTeam1DeploymentDirection
+	FILE myStartingDeploymentAreaMaskTeam1
+	FILE myStartingDeploymentAreaMaskTeam2
+	SinglePlayerDeploymentAreaMasks mySinglePlayerDeploymentAreaMask
+	Vector2 myLandingAreaTeam1Start
+	Vector2 myLandingAreaTeam1End
+	Vector2 myLandingAreaTeam2Start
+	Vector2 myLandingAreaTeam2End	
+	DECIMAL myAPRegrowthRate
+	NUMBER myNumberOfBalanceTicksPerTeam
+	StartingDropZonesPerTeamList myStartingDropZonesPerTeam
+	StartingUnitsPositionMarkerList myStartingUnitsPositionMarkerPerRoles
+	MusicEvent myAmbientSound
+	//FILE mySoundtrackFile
+   	DECIMAL myDefensiveFortificationSpawnDelayMultiplier
+   	SoundTrackDefinition mySoundTrack
+	PrimaryObjectives myPrimaryObjectives
+	SecondaryObjectives mySecondaryObjectives
+
+	PrimaryObjectives myAttackCPObjectives
+	PrimaryObjectives myDefendCPObjectives
+
+	ScriptEvents myScriptEvents
+	TipTexts myTipTexts
+	MessageBoxList myMessageBoxList
+	//NUMBER myDefaultSinglePlayerRole
+	TEXT myPythonStartCameraSweepFunction
+	TEXT myPythonEndCameraSweepFunction
+
+	DECIMAL myGlobalDestructionMultiplier
+}
+
+CLASS TutorialMessageBox
+{
+	LOCTEXT myTitle
+	LOCTEXT myText
+	FILE myIcon
+	Vector2 mySize
+	Vector2 myPosition
+	DECIMAL myTimeToLive
+	NUMBER myIsMandatory
+}
+
+SCRIPTCLASS LocStringsSP
+{
+	LOCTEXT
+}
+
+SCRIPTCLASS TutorialMsgBoxes
+{
+	TutorialMessageBox
+}
+
+SCRIPTCLASS PreloadScriptModels
+{
+	TEXT
+}
+
+CLASS WicedSinglePlayerMissionStats
+{
+	GameMode myGameModeSinglePlayer
+	NUMBER myInitialApSinglePlayerTeam1
+	NUMBER myInitialApSinglePlayerTeam2
+	NUMBER myMaxApSinglePlayerTeam1
+	NUMBER myMaxApSinglePlayerTeam2
+	NUMBER myGameLengthSinglePlayer
+	FILE myMMBFileToPreload
+	PreloadScriptModels myScriptModelsToPreload
+	//FILE myLoadingScreenImageSinglePlayer
+	//LOCTEXT myLoadingScreenTextSinglePlayer
+	//MusicEvent myLoadingScreenMusicSinglePlayer
+	LoadingBriefing myLoadingBriefing
+	XPlayers myPlayers
+	DisallowedUnits myDisallowedUnits
+	DisallowedSupportThings myDisallowedSupportthings
+	SinglePlayerDeploymentAreaMasks mySinglePlayerDeploymentAreaMask
+	PrimaryObjectives myPrimaryObjectives
+	SecondaryObjectives mySecondaryObjectives
+	PrimaryObjectives myTutorialObjectives
+	ScriptEvents myScriptEvents
+	TipTexts myTipTexts
+	MessageBoxList myMessageBoxList
+	FILE mySinglePlayerMusicEvents
+	LOCTEXT myWonText
+	LOCTEXT myLostText
+	LocStringsSP myLocStrings
+	TutorialMsgBoxes myTutorialMessageBoxes
+}

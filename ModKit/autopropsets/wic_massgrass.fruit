@@ -1,0 +1,47 @@
+
+
+CLASS MassGrassLayer
+{
+	// Scripted per set
+	FILE myGrassTexture		// grass.dds texture
+	FILE myFadeTexture		// "fade ring" see T:/Docs/Grass For WIC.pdf
+	NUMBER myNumBladeQuadsInTexture	// grass texture variations in grass.dds see T:/Docs/Grass For WIC.pdf
+	DECIMAL myWidth			// Width (in meters) of grass quad
+	DECIMAL myHeight		// Height (in meters) of grass quad
+	DECIMAL myFadeDist		// Visible distance (e.g. 120 meters from camera)
+	DECIMAL myHeightFadeFactor	// Height fade out distance in meters
+	NUMBER myWeightmapRes		// Resolution controls density (1024=very dens, 512=medium dens, 256=sparse)
+	TEXT myOptionsString	// weightThreshold = <float>, only use pixel values > <float> (<float> is 0.0-1.0)
+							// windFactor = <float>
+
+	// Unique per map
+	FILE myPerMapWeightmap			// Calced by GroundEd per map (maps/map/grassweight01_768.tga)
+	FILE myPerMapGroundColormap		// Calced by GroundEd per map (same ground color map dds)
+	FILE myPerMapGroundSpecWeightMap  	// Calced by GroundEd per map (same as ground spec weight map dds)
+}
+
+SCRIPTCLASS MassGrassLayers
+{
+	MassGrassLayer
+}
+
+CLASS MassGrassType
+{
+	TEXT myTypeName
+	NUMBER myColorTintR		// Tweaked in GroundEd per map
+	NUMBER myColorTintG
+	NUMBER myColorTintB
+
+	MassGrassLayers myLayers
+}
+
+
+SCRIPTCLASS MassGrassTypeList
+{
+	MassGrassType
+}
+
+CLASS MassGrass
+{
+	MassGrassTypeList myTypes
+}

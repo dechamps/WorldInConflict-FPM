@@ -1,0 +1,110 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Pelvis01"
+		myMeshBone "Pelvis"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 2
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.011655
+			myY 0.930960
+			myZ 0.070022
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement3
+			{
+				myName "Hips03"
+				myType 0
+				myMaterial "FLESH"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.774083
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.271
+					myY 1.171
+					myZ 0.244
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 9999.999023
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

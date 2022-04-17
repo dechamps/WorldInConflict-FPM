@@ -1,0 +1,14 @@
+INCLUDE juice/color.fruit
+
+CLASS PlayerColorStyle
+{
+	XColorRGBA myDiscreteColor
+	XColorRGBA myStandardColor
+	XColorRGBA myHighlightColor	
+}
+
+CLASS UnitMarker
+{
+	NUMBER mySmallSize
+	NUMBER myBigSize
+}

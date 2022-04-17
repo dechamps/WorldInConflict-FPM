@@ -1,0 +1,487 @@
+INCLUDE juice/explosiondebris.fruit
+
+ParticleTemplates myTemplates
+{
+	ParticleTemplate Concrete
+	{
+		myName Concreate
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture hit_set_effects/effect_textures/special/betongplate_128x128_32f.dds
+		myNormalTexture hit_set_effects/effect_textures/special/betongplate_128x128_32f_nmap_renormalize.dds
+		myAnimFramesX 8
+		myAnimFramesY 4
+		myProbability 2
+		myMinSize 0.4
+		myMaxSize 0.6
+		myMaxRotationSpeed 3
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.5
+		myMinRestitution 0.15
+		myMaxRestitution 0.3
+		myMinWindDrag 0.05
+		myMaxWindDrag 0.1
+		myStartSpeedMin 0.2
+		myStartSpeedMax 0.5
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.6
+		myRedMax 0.7
+		myGreenMin 0.6
+		myGreenMax 0.7
+		myBlueMin 0.6
+		myBlueMax 0.7
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate Paper
+	{
+		myName Paper
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture effects/houserubble/blowinpaper_32x32_64f.dds
+		myNormalTexture surfaces/dummy_normalmap_flat.tga
+		myAnimFramesX 8
+		myAnimFramesY 8
+		myProbability 10
+		myMinSize 0.4
+		myMaxSize 0.6
+		myMaxRotationSpeed 1
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.3
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 1
+		myMaxWindDrag 1.5
+		myStartSpeedMin 0.2
+		myStartSpeedMax 0.5
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.8
+		myRedMax 0.9
+		myGreenMin 0.8
+		myGreenMax 0.9
+		myBlueMin 0.8
+		myBlueMax 0.9
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate Puts
+	{
+		myName Puts
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture hit_set_effects/effect_textures/special/puts_64x64_16f.dds
+		myNormalTexture hit_set_effects/effect_textures/special/puts_64x64_16f_nmap.dds
+		myAnimFramesX 4
+		myAnimFramesY 4
+		myProbability 5
+		myMinSize 0.3
+		myMaxSize 0.4
+		myMaxRotationSpeed 3
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 1
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 0.2
+		myMaxWindDrag 0.4
+		myStartSpeedMin 0.2
+		myStartSpeedMax 0.5
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.6
+		myRedMax 0.7
+		myGreenMin 0.6
+		myGreenMax 0.7
+		myBlueMin 0.6
+		myBlueMax 0.7
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate PutsBig
+	{
+		myName PutsBig
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture hit_set_effects/effect_textures/special/betongplate_128x128_32f.dds
+		myNormalTexture hit_set_effects/effect_textures/special/betongplate_128x128_32f_nmap_renormalize.dds
+		myAnimFramesX 8
+		myAnimFramesY 4
+		myProbability 1
+		myMinSize 0.8
+		myMaxSize 1.6
+		myMaxRotationSpeed 3
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.5
+		myMinRestitution 0.15
+		myMaxRestitution 0.3
+		myMinWindDrag 0.05
+		myMaxWindDrag 0.1
+		myStartSpeedMin 0.15
+		myStartSpeedMax 0.25
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.6
+		myRedMax 0.7
+		myGreenMin 0.6
+		myGreenMax 0.7
+		myBlueMin 0.6
+		myBlueMax 0.7
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate Balk
+	{
+		myName Balk
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture hit_set_effects/effect_textures/special/balk_128x128_16f.dds
+		myNormalTexture hit_set_effects/effect_textures/special/balk_128x128_16f_nmap_renormalize.tga
+		myAnimFramesX 4
+		myAnimFramesY 4
+		myProbability 1
+		myMinSize 0.8
+		myMaxSize 1.6
+		myMaxRotationSpeed 1
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.3
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 0.05
+		myMaxWindDrag 0.1
+		myStartSpeedMin 0.15
+		myStartSpeedMax 0.25
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.8
+		myRedMax 0.9
+		myGreenMin 0.8
+		myGreenMax 0.9
+		myBlueMin 0.8
+		myBlueMax 0.9
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate Bricks
+	{
+		myName Bricks
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture effects/houserubble/brick_32x32_16f.dds
+		myNormalTexture effects/houserubble/brick_32x32_16f_normap_renormalize.dds
+		myAnimFramesX 4
+		myAnimFramesY 4
+		myProbability 40
+		myMinSize 0.2
+		myMaxSize 0.3
+		myMaxRotationSpeed 1
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.3
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 0.05
+		myMaxWindDrag 0.1
+		myStartSpeedMin 0.2
+		myStartSpeedMax 0.5
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.8
+		myRedMax 0.9
+		myGreenMin 0.8
+		myGreenMax 0.9
+		myBlueMin 0.8
+		myBlueMax 0.9
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate Metal
+	{
+		myName Metal
+		mySurface surfaces/game/explosion_debris.sur
+		myDiffuseTexture hit_set_effects/effect_textures/special/metalpart_64x64_16f.dds
+		myNormalTexture hit_set_effects/effect_textures/special/metalpart_64x64_16f_nmap_renormalize.tga
+		myAnimFramesX 4
+		myAnimFramesY 4
+		myProbability 1
+		myMinSize 1
+		myMaxSize 1.5
+		myMaxRotationSpeed 1
+		myMinAnimSpeed 0.0
+		myMaxAnimSpeed 0.3
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 0.05
+		myMaxWindDrag 0.1
+		myStartSpeedMin 0.2
+		myStartSpeedMax 0.35
+		myFadeInTime 0.0
+		myFadeOutTime 3
+		myFullAlpha 0
+		myRedMin 0.8
+		myRedMax 0.9
+		myGreenMin 0.8
+		myGreenMax 0.9
+		myBlueMin 0.8
+		myBlueMax 0.9
+		myMoveType FreeFlying
+	}
+
+	ParticleTemplate GroundSmoke1
+	{
+		myName GroundSmoke1
+		mySurface surfaces/game/explosion_debris_smoke.sur
+		myDiffuseTexture hit_set_effects/effect_textures/smokeanimations/new_nmap/rotatesmokefill_6p_0pos_128x128_128.dds
+		myNormalTexture hit_set_effects/effect_textures/smokeanimations/new_nmap/rotatesmokefill_6p_1neg_128x128_128.dds
+		myAnimFramesX 8
+		myAnimFramesY 8
+		myProbability 1
+		myMinSize 8
+		myMaxSize 12
+		myMaxRotationSpeed 0.1
+		myMinAnimSpeed 0.6
+		myMaxAnimSpeed 0.9
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 2
+		myMaxWindDrag 5
+		myStartSpeedMin 0.99
+		myStartSpeedMax 1
+		myFadeInTime 0.5
+		myFadeOutTime 3
+		myFullAlpha 100
+		myRedMin 0.8
+		myRedMax 0.9
+		myGreenMin 0.8
+		myGreenMax 0.9
+		myBlueMin 0.8
+		myBlueMax 0.9
+		myMoveType GroundHugging
+	}
+
+	ParticleTemplate GroundSmoke2
+	{
+		myName GroundSmoke2
+		mySurface surfaces/game/explosion_debris_smoke.sur
+		myDiffuseTexture hit_set_effects/effect_textures/smokeanimations/new_nmap/rotatesmokefill_6p_0pos_128x128_128.dds
+		myNormalTexture hit_set_effects/effect_textures/smokeanimations/new_nmap/rotatesmokefill_6p_1neg_128x128_128.dds
+		myAnimFramesX 8
+		myAnimFramesY 8
+		myProbability 1
+		myMinSize 4
+		myMaxSize 6
+		myMaxRotationSpeed 0.1
+		myMinAnimSpeed 0.6
+		myMaxAnimSpeed 0.9
+		myMinRestitution 0.1
+		myMaxRestitution 0.15
+		myMinWindDrag 0.5
+		myMaxWindDrag 0.7
+		myStartSpeedMin 0.99
+		myStartSpeedMax 1
+		myFadeInTime 0.2
+		myFadeOutTime 4
+		myFullAlpha 150
+		myRedMin 0.4
+		myRedMax 0.45
+		myGreenMin 0.4
+		myGreenMax 0.45
+		myBlueMin 0.4
+		myBlueMax 0.45
+		myMoveType GroundHugging
+	}
+
+}
+
+Houses myHouses
+{
+	myHouses
+	{
+		HouseDebris house1
+		{
+			myNumParticlesMod 0.8
+			myUpperParticleTemplates
+			{
+				TEXT TEXT(16) Paper
+
+				TEXT TEXT(20) Bricks
+
+			}
+
+			myLowerParticleTemplates
+			{
+				TEXT TEXT(21) Metal
+
+				TEXT TEXT(28) Bricks
+
+			}
+
+			myGroundSmoke
+			{
+				myParticleTemplates
+				{
+					TEXT TEXT(12) GroundSmoke2
+
+				}
+
+			}
+
+		}
+
+		HouseDebris House2
+		{
+			myNumParticlesMod 0.8
+			myUpperParticleTemplates
+			{
+				TEXT TEXT(13) Metal
+
+				TEXT TEXT(16) Paper
+
+				TEXT TEXT(20) Bricks
+
+			}
+
+			myLowerParticleTemplates
+			{
+				TEXT TEXT(21) Metal
+
+				TEXT TEXT(23) Concreate
+
+				TEXT TEXT(0) Bricks
+
+			}
+
+			myGroundSmoke
+			{
+				myParticleTemplates
+				{
+					TEXT TEXT(12) GroundSmoke2
+
+				}
+
+			}
+
+		}
+
+		HouseDebris House3
+		{
+			myNumParticlesMod 0.8
+			myUpperParticleTemplates
+			{
+				TEXT TEXT(17) Puts
+
+				TEXT TEXT(19) Balk
+
+				TEXT TEXT(0) Bricks
+
+			}
+
+			myLowerParticleTemplates
+			{
+				TEXT TEXT(23) Concreate
+
+				TEXT TEXT(24) Paper
+
+				TEXT TEXT(26) PutsBig
+
+			}
+
+			myGroundSmoke
+			{
+				myParticleTemplates
+				{
+					TEXT TEXT(12) GroundSmoke2
+
+				}
+
+			}
+
+		}
+
+		HouseDebris House4
+		{
+			myNumParticlesMod 0.8
+			myUpperParticleTemplates
+			{
+				TEXT TEXT(14) Bricks
+
+				TEXT TEXT(17) Puts
+
+				TEXT TEXT(20) Bricks
+
+			}
+
+			myLowerParticleTemplates
+			{
+				TEXT TEXT(23) Concreate
+
+				TEXT TEXT(24) Paper
+
+				TEXT TEXT(26) PutsBig
+
+				TEXT TEXT(28) Bricks
+
+			}
+
+			myGroundSmoke
+			{
+				myParticleTemplates
+				{
+					TEXT TEXT(12) GroundSmoke2
+
+				}
+
+			}
+
+		}
+
+		HouseDebris House5
+		{
+			myNumParticlesMod 0.8
+			myUpperParticleTemplates
+			{
+				TEXT TEXT(14) Bricks
+
+				TEXT TEXT(16) Paper
+
+				TEXT TEXT(19) Balk
+
+			}
+
+			myLowerParticleTemplates
+			{
+				TEXT TEXT(23) Concreate
+
+				TEXT TEXT(24) Paper
+
+				TEXT TEXT(27) Balk
+
+				TEXT TEXT(0) Bricks
+
+			}
+
+			myGroundSmoke
+			{
+				myParticleTemplates
+				{
+					TEXT TEXT(12) GroundSmoke2
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+GroundSmoke myGroundSmoke
+{
+	myParticleTemplates
+	{
+		TEXT TEXT(29) GroundSmoke1
+
+	}
+
+}
+

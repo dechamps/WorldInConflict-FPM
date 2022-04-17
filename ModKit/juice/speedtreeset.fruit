@@ -1,0 +1,54 @@
+INCLUDE juice/speedtreeshared.fruit
+
+
+CLASS SpeedTreeType
+{
+	FILE myFilename
+	FILE myBranchTexture
+	NUMBER mySeed				// currently unused
+	DECIMAL mySize				// 0.0 = Get value from .spt and convert feet to meters
+	DECIMAL mySizeVariance			// 0.0 = Use 0.1 which is 10% of size... (0.5 = 50% of size)
+	DECIMAL myLodNear			// 0.0 = autocalc
+	DECIMAL myLodFar			// 0.0 = autocalc (otherwise set ~25.0 - 300.0)
+	FILE myBurnModel
+	FILE myPushOverModel
+	FILE myExplodeModel
+	BirdEffect myBirdEffect	
+
+	NUMBER myCreatesForestFlag		// 0 = Does not affect Forests,	1 Affects Forest
+
+	NUMBER myShadowType			// 0 = autocal
+						// 1 = vertex-ground-shadow (buskar och mindre träd)
+						// 2 = Rendered shadow (proj. shadow, stora träd)
+						// -1 = none
+						
+	DECIMAL myWICEdGetYRadius		// Radius for GetY magic sphere
+	
+	TEXT mySpecialOptions			// Special override options
+}
+
+
+SCRIPTCLASS SpeedTreeTypeList
+{
+	SpeedTreeType
+}
+
+
+CLASS SpeedTreeSet
+{
+	FILE myCompositeMap
+	FILE myCompositeNormalmap
+	FILE myCompositeShadowmap		// currently unused
+	FILE myTreeStubMRB
+	FILE myTreeStubBurnedMRB
+	FILE myBillboardTextures		// ice file with all billboard textures for this set
+	FILE myPackedFiles
+	SpeedTreeTypeList mySpeedTreeTypes
+}
+
+
+SCRIPTCLASS SpeedTreeForestList
+{
+	SpeedTreeSet
+}
+

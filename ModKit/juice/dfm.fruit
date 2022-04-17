@@ -1,0 +1,57 @@
+
+TYPE DFM_CameraType
+{
+	DFM_CAM_TYPE_A
+	DFM_CAM_TYPE_B
+	DFM_CAM_TYPE_C
+}
+
+CLASS DFM_Accuracy
+{
+	DECIMAL myMaxPenalty
+	DECIMAL myMinPenalty
+	DECIMAL myPenaltyRate
+	DECIMAL myPenaltyCooldownRate
+}
+
+CLASS DFM_CameraSettings
+{
+	DECIMAL myZoomedInRotationSpeed
+	DECIMAL myZoomedOutRotationSpeed
+	
+	DECIMAL myZoomedInLerpSpeed
+	DECIMAL myZoomedOutLerpSpeed
+	
+	DECIMAL myMinimumSurfaceClearance
+	
+	DECIMAL myZoomedInFov
+	DECIMAL myZoomedOutFov
+	
+	DECIMAL myFovLerpSpeed
+	DECIMAL myZoomSteps
+	
+	DECIMAL myPitchDownLimit
+	DECIMAL myPichUpLimit
+		
+	DECIMAL myZoomedInMouseSensitivity
+	DECIMAL myZoomedOutMouseSensitivity
+	
+	DECIMAL myZoomedInKeySensitivity
+	DECIMAL myZoomedOutKeySensitivity
+		
+	DECIMAL myZoomedInAccelerationTime
+	DECIMAL myZoomedOutAccelerationTime
+	DECIMAL myZoomedInDecayTime
+	DECIMAL myZoomedOutDecayTime
+	DECIMAL myCameraAngle
+	DECIMAL myCameraDistance
+	DECIMAL myCameraAngleModifier
+}
+
+CLASS DirectFireMode_Parasite
+{
+	DFM_CameraType myDFM_Type
+	DFM_Accuracy myAccuracyModel
+	DFM_CameraSettings myCameraSettings
+}
+

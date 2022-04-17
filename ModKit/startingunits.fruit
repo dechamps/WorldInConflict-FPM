@@ -1,0 +1,23 @@
+INCLUDE juice/team/team.fruit
+
+SCRIPTCLASS UnitList
+{
+	TEXT
+}
+
+CLASS StartingUnitListForFaction
+{
+	TEXT myListName
+	Teams myTeam
+	UnitList myUnits
+}
+
+SCRIPTCLASS StartingUnitsPerFaction
+{
+	StartingUnitListForFaction
+}
+
+CLASS StartingUnits
+{
+	StartingUnitsPerFaction myUnitLists
+}

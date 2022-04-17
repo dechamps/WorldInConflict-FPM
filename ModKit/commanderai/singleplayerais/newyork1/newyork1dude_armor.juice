@@ -1,0 +1,217 @@
+INCLUDE juice/caidata.fruit
+
+TreeList myTrees
+{
+	DecisionTreeNode myTree
+	{
+		myNodeType BRANCHING_NODE
+		myNodeName OvsDBranch
+		myWeight 0.0
+		myManager AGENT_MANAGER
+		myManagedAgentType Root
+		myLevel 0
+		myChilds
+		{
+			DecisionTreeNode UNITS
+			{
+				myNodeType BRANCHING_NODE
+				myNodeName OffensiveTankBranch
+				myWeight 0.60
+				myManager AGENT_MANAGER
+				myManagedAgentType ARMOR_ROLE
+				myLevel 0
+				myChilds
+				{
+				}
+
+			}
+
+		}
+
+	}
+
+	DecisionTreeNode mySupportWeaponTree
+	{
+		myNodeType BRANCHING_NODE
+		myNodeName SupportWeapons
+		myWeight 0.0
+		myManager OFFENSIVE_SUPPORTWEAPON_MANAGER
+		myManagedAgentType SupportWeaponTree
+		myLevel 0
+		myChilds
+		{
+			DecisionTreeNode TA_BARRAGE
+			{
+				myNodeType BRANCHING_NODE
+				myNodeName ARMOR_ROLE_BRANCH
+				myWeight 0.0
+				myManager OFFENSIVE_SUPPORTWEAPON_MANAGER
+				myManagedAgentType ARMOR_ROLE
+				myLevel 0
+				myChilds
+				{
+					DecisionTreeNode Artillery_US
+					{
+						myNodeType MANAGING_NODE
+						myNodeName US_Artillery_Strike
+						myWeight 1.0
+						myManager OFFENSIVE_SUPPORTWEAPON_MANAGER
+						myManagedAgentType Artillery_US
+						myLevel 0
+						myChilds
+						{
+						}
+
+					}
+
+					DecisionTreeNode Airstrike_US
+					{
+						myNodeType MANAGING_NODE
+						myNodeName US_Air_Strike
+						myWeight 1.0
+						myManager OFFENSIVE_SUPPORTWEAPON_MANAGER
+						myManagedAgentType Airstrike_US
+						myLevel 0
+						myChilds
+						{
+						}
+
+					}
+
+					DecisionTreeNode HeavyArtilleryBarrage_US
+					{
+						myNodeType MANAGING_NODE
+						myNodeName HeavyArtilleryBarrage_NATO
+						myWeight 1.0
+						myManager OFFENSIVE_SUPPORTWEAPON_MANAGER
+						myManagedAgentType HeavyArtilleryBarrage_NATO
+						myLevel 0
+						myChilds
+						{
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+AdvancedUsers Advanced
+{
+	myIsActiveRole 0
+	myAwarnessModifierRadius 50
+	myAwarnessModifierBase 3000
+	myDefaultAwareness 0.0
+	myMaxSquadSize 1
+	mySquadCohesionValue 0.8
+	myInfluenceMovementFadeOutBase 4
+	myUnitRenewBehaviourStepCount 64
+	myEnemyGroupDistance 50
+	myRallyAreaWidth 150
+	myReactionTimeToEnemyMovement 8
+	myDefenseNeedCutOff 0.0
+	myEnemyLZRadius 450
+	myNeutralLZRadius 450
+	myLZRadius 450
+	myEnemyVLRadius 450
+	myNeutralVLRadius 450
+	myVLRadius 450
+	mySpecialAbilityOffensiveFactor 0.0
+	mySpecialAbilityDefensiveFactor 0.0
+	myLeadSkillSuckageFactor 0.0
+	myObedienceFactor 0.0
+	myPatternNumber 0
+	myIgnoresThreatsFlag 0
+	myUpperMergePlatoonMergeLimit 0.0
+	myLowerMergePlatoonMergeLimit 0.0
+	myAttackBehavior 0
+	myUIName Vance
+}
+
+AINearConstants NearConstants
+{
+	myAttackFitnessDistanceNormalisationValue 10
+	myDefendFitnessDistanceNormalisationValue 10
+	myMoveFitnessDistanceNormalisationValue 10
+	myDeathMapDecayRate 2
+	myOpponentActivityMapDecayRate 0.82
+	myAssumedEnemyHistoryTime 15
+	myAssumedEnemyDistance 10
+	myAssumedEnemyRememberTime 10
+	myPlatoonCohesionValue -900000
+	myPlatoonCohesionRadius 50
+	myFormationRowDistance 20
+	myFormationColumnDistance 20
+	myScoutMapThresHold 100
+	myEnemyGroupPositionDistance 100
+	myDeathMapForbiddenTilesThreshold -1000
+	myDeathMapInfluenceDistance 30
+}
+
+CommanderBrain myBrain
+{
+	myEnforcedBuyDelay 0.0
+	myMaxNrOfUnits 100
+	myEnemyVLBaseValue 4000
+	myNeutralVLBaseValue 11000
+	myVLBaseValue 2000
+	myEnemyLZBaseValue 2500
+	myNeutralLZBaseValue 6000
+	myLZBaseValue 2400
+	myEnemyLZMaxBonus 6
+	myNeutralLZMaxBonus 1
+	myLZMaxBonus 5
+	myEnemyVLMaxBonus 6
+	myNeutralVLMaxBonus 1
+	myVLMaxBonus 5
+	myEnemyGroupAttackWillingness 1.0
+	myFitnessMaxValue 1.2
+	myMilitaryAllowTakeOverMissionFactor 1.9
+	myPlatoonDeviationWillingness 1.9
+	myPlatoonEngageSucessProbability 0.1
+	myNumberOfActivePlatoons 1
+	myNumberOfInactivePlatoons 0
+	myUnitReassignmentFactor 1.0
+	myDefendUnitPriority 10000
+	mySADPriority 10000
+	myUseDropShipInCombat 1
+	myUseDropShipFactor 1.0
+}
+
+AdvancedAIMissions myMissionParameters
+{
+	myGenerateRequestMissions 1
+	myGenerateOnlyRequestMissions 1
+	myGenerateCaptureMissions 1
+	myGenerateBreakMissions 1
+	myGenerateDefendMissions 1
+	myGenerateBackupMissions 1
+	myGenerateFireSupportMissions 0
+	myGenerateAntiAirMissions 0
+	myGenerateHealingMissions 0
+	myGenerateAirEscortMissions 0
+	myGenerateEnemyGroupMissions 1
+	myGenerateEnemyGroupBackupMissions 1
+	myGenerateFortifyAreaMissions 1
+	myGenerateAttackAreaMissions 1
+	myGenerateHoldAreaMissions 1
+	myFireTaOnlyOnRequest 0
+	myArtilleryBarrageTimeInSeconds 120
+	myHoldAreaTimeInSeconds 180
+	myAntiAirTimeInSeconds 120
+	myHealingTimeInSeconds 120
+	myArtilleryTargetBlindEnemyPerimiterPoints 1
+	myArtilleryTargetSlowTargets 1
+	myArtilleryTargetFastTargets 1
+	myArtilleryBarrageAreaRadius 100.0
+	myStrengthFactorCap 0.0
+}
+
+TEXT ConstantsFile commanderai/constants.ice
+

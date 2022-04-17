@@ -1,0 +1,328 @@
+Version 2
+
+DefaultTextures
+{
+	texture surfaces/dummy						// Color map (alpha = mask) (DXT1)
+	texture surfaces/dummy						// Baked lights (.rgb) (DXT1)
+	texture surfaces/dummy_spec					// Specular map (DXT1)
+	cubemap surfaces/system/normalization128			// Normalization cubemap (don't change!)
+	texture surfaces/system/spec16			noRepeat	// Specular lookup ramp (you may change to other surfaces/system/specXX)
+}
+
+DefineText AlphaTest
+{
+	alphaTest = greater 180
+}
+
+DefineText HLSLCode
+{
+	struct VSOut
+	{
+		float4 myPos 			: POSITION;
+		half4  myLightRGB 		: COLOR0;
+		half4  myTsLightAndOverbright 	: COLOR1;
+		float2 myUV0 			: TEXCOORD0;
+		half4  myFillLight		: TEXCOORD1;
+		float2 myUV1 			: TEXCOORD2;
+		half4  myVertexColor		: TEXCOORD3;
+		half3  myTsHalf 		: TEXCOORD4;
+	};
+
+	half4 main(VSOut aVSOut) : COLOR0
+	{
+		half4 setConstant3 = half4(2.0, 1.0, 0.5, 0.5);
+		half4 colorMap = tex2D(sampler0, aVSOut.myUV0.xy);
+		colorMap *= tex2D(sampler1, aVSOut.myUV1.xy);			// baked lights/shadows
+		half3 normal = half3(0,0,1);	// 060331: Use dummy normal
+		
+		// DIFFUSE CALC
+		half4 tsLight = aVSOut.myTsLightAndOverbright * setConstant3.x - setConstant3.y;	// [0,1] -> [-1,1]
+		half4 diffLight = saturate( dot(normal.xyz, tsLight.xyz) ) * colorMap;
+		diffLight *= aVSOut.myLightRGB;
+		
+		// OVERBRIGHT DIFFUSE
+		half colorMapIntensity = dot(colorMap.xyz, half3(0.333,0.333,0.333));
+		colorMapIntensity = 1.0 - colorMapIntensity;
+		colorMapIntensity *= aVSOut.myTsLightAndOverbright.a;
+		diffLight += diffLight * (colorMapIntensity * 2.0);
+	
+		// SPECULAR CALC
+		half4 specCalc = saturate( dot(normal.xyz, normalize(aVSOut.myTsHalf.xyz)) );
+		half4 specLight = half4(tex2D(sampler2, aVSOut.myUV0.xy)) * tex2D(sampler3, specCalc.xy);
+		specLight *= aVSOut.myLightRGB;
+	
+		// COMBINE
+		half4 final = saturate(diffLight + specLight);
+		
+		#ifdef AMBIENCE_PASS
+			half4 extras = colorMap * setConstant1;			// ambience
+			extras += aVSOut.myFillLight * colorMap;		// fill light
+			extras *= aVSOut.myVertexColor;
+			final += extras;
+		#endif
+		
+		final.a = colorMap.a * setConstant0.a;				// mask and fade
+
+		return saturate(final);
+	}
+}
+
+
+Config High PS2.0
+{
+	VertexShader
+	{
+		shader = NORMAL_MAP
+		
+		oD0 = lightRGB
+		oD1 = tsLightVectorBXHalf
+		oT0 = uv0
+		// oT1: Reserved for fill light
+		oT2 = uv1
+		oT3 = vertexColor
+		oT4 = tsHalfVector
+		
+		overbright
+		fillLightInAmbPass
+	}
+	
+	AmbiencePass
+	{
+		blend = off
+		fadeBlend = alphaBlend
+		$insertText AlphaTest
+		textureRemap = (0,1,1)
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				half4 myDiffuse : COLOR0;
+				half2 myUV0 : TEXCOORD0;
+				half3 myUV1 : TEXCOORD1;
+				half2 myUV2 : TEXCOORD2;
+			};
+
+			float4 main(VSOutput aVSOut) : COLOR0
+			{
+				// lightcalc
+				half4 tex = tex2D(sampler0, aVSOut.myUV0);
+				half4 tex2 = tex2D(sampler2, aVSOut.myUV2);
+			
+				half4 temp = tex * tex2 * setConstant0;		// baked lights
+				temp.rgb = tex.rgb * aVSOut.myUV1.rgb + temp.rgb;	// fill light
+				return temp * aVSOut.myDiffuse;
+			}
+
+//			ps_1_1
+//			tex t0
+//			texcoord t1
+//			tex t2				// baked lights & shadows
+//			mul_sat r0, t0, t2		// baked lights
+//			mul_sat r0, r0, c0
+//			mad_sat r0.rgb, t0, t1, r0	// fill light
+//			mul_sat r0, r0, v0
+		}
+	}
+
+	AmbienceAndFirstLightPass
+	{
+		blend = off
+		fadeBlend = alphaBlend
+		$insertText AlphaTest
+		zWrite = default
+		setConstant[1] = ambience
+		fogColor = default			// NOTE: no ambience pass before, so apply fog in this pass
+		textureRemap = (0,1,2,4)
+		// setConstant[3] = (2.0, 1.0, 0.5, 0.5)	// moved to HLSL for perf reason
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			#define AMBIENCE_PASS
+			
+			$insertText HLSLCode
+		}
+	}
+	
+	NormalPass
+	{
+		blend = add
+		fadeBlend = srcAlpha one
+		$insertText AlphaTest
+		zWrite = default
+		fogColor = default
+		textureRemap = (0,1,2,4)
+		// setConstant[3] = (2.0, 1.0, 0.5, 0.5)	// moved to HLSL for perf reason
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			$insertText HLSLCode
+		}
+	}
+
+	ShowboxColorPass
+	{
+		textureRemap = (0)
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				return setConstant0;
+			}
+
+//			ps_1_1
+//			mov r0, c0
+		}
+	}
+	
+	SurfaceCodePass
+	{
+		textureRemap = (0)
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				return half4(0,1,0,1);
+			}
+
+//			ps_1_1
+//			def c1, 0,1,0,1
+//			mov r0, c1
+		}
+	}
+}
+
+
+Config Normal PS1.1
+{
+	VertexShader
+	{
+		shader = NORMAL_MAP
+		overbrightHalf
+		// custom01					// NORMAL_MAP uses CUSTOM01 for set lightRGB.a = 0.0
+	}
+	
+	AmbiencePass
+	{
+		blend = off
+		fadeBlend = alphaBlend
+		$insertText AlphaTest
+		
+		Code
+		{
+			ps_1_1
+			
+			tex t0
+			
+			mul_sat r0, t0, c0
+		}
+	}
+	
+	AmbienceAndFirstLightPass
+	{
+		blend = off
+		fadeBlend = alphaBlend
+		$insertText AlphaTest
+		zWrite = default
+		setConstant[1] = ambience
+		// setConstant[3] = (0.75, 0.75, 0.75, 0.75)	// moved to ps code for perf
+		fogColor = default				// NOTE: no ambience pass before, so apply fog in this pass
+		
+		textureRemap = (0,1,2,3)
+		
+		Code
+		{
+			ps_1_1
+		
+			def c3, 0.75, 0.75, 0.75, 0.75
+			def c4, 0,0,1,0				// dummy normal
+			
+			tex t0
+			tex t2
+			tex t3
+			
+			dp3_sat r0.rgba, c4, v1_bx2		// diffuse: dot3(dummynormal, lightVector)
+			mul_sat r0.rgba, r0, t0
+
+			dp3_sat r1.rgba, c4, t3_bx2		// specular: dot3(dummynormal, halfVector)
+			sub_x4_sat r1.rgba, r1, c3
+			mad_sat r0.rgb, t2, r1, r0		// r0 = (specular*specmap) + diffuse
+			mul_sat r0.rgb, v0, r0			// (diffuse+specular) * lightRGB
+			mad_sat r0.rgb, r0, v1.a, r0		// overbright
+			
+			mad_sat r0.rgb, c1, t0, r0			// out = (tex0 * ambience/constant0.a) + lightCalc
+			+mul_sat r0.a, t0.a, c0.a		// mask and fade
+		}
+	}
+
+	NormalPass
+	{
+		blend = add
+		fadeBlend = srcAlpha one
+		$insertText AlphaTest
+		zWrite = default
+		// setConstant[3] = (0.75, 0.75, 0.75, 0.75)	// moved to ps code for perf
+		fogColor = default
+		
+		textureRemap = (0,1,2,3)
+		
+		Code
+		{
+			ps_1_1
+		
+			def c3, 0.75, 0.75, 0.75, 0.75
+			def c4, 0,0,1,0				// dummy normal
+			
+			tex t0
+			tex t2
+			tex t3
+			
+			dp3_sat r0.rgba, c4, v1_bx2		// diffuse: dot3(dummynormal, lightVector)
+			mul_sat r0.rgba, r0, t0
+
+			dp3_sat r1.rgba, c4, t3_bx2		// specular: dot3(dummynormal, halfVector)
+			sub_x4_sat r1.rgba, r1, c3
+			mad_sat r0.rgba, t2, r1, r0		// r0 = (specular*specmap) + diffuse
+			mul_sat r0.rgba, v0, r0			// (diffuse+specular) * lightRGB
+			mad_sat r0.rgba, r0, v1.a, r0		// overbright
+			mul_sat r0.a, t0.a, c0.a		// mask and fade
+		}
+	}
+
+	ShowboxColorPass
+	{
+		textureRemap = (0)
+		Code
+		{
+			ps_1_1
+			mov r0, c0
+		}
+	}
+	
+	SurfaceCodePass
+	{
+		textureRemap = (0)
+		Code
+		{
+			ps_1_1
+			def c1, 0,1,0,1
+			mov r0, c1
+		}
+	}
+}

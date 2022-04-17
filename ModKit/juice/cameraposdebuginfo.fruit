@@ -1,0 +1,16 @@
+
+INCLUDE juice/vector3.fruit
+INCLUDE juice/vector2.fruit
+
+CLASS CameraPosDebugInfo
+{
+	Vector3 myPos
+	Vector2 myOri
+	TEXT myDescription
+	NUMBER myConsideredToBeFixedFlag
+}
+
+SCRIPTCLASS CameraPosDebugInfoList
+{
+	CameraPosDebugInfo
+}

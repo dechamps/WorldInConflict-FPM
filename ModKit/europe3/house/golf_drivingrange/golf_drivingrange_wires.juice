@@ -1,0 +1,47 @@
+INCLUDE juice/ShowboxWireExport.fruit
+
+
+ShowboxWireExport myExports
+{
+	myAttachPoints
+	{
+		WireAttach myAttachPoint0
+		{
+			myBone "Golf_DrivingRange_2_Detail"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint1
+		{
+			myBone "Wreck_main"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint2
+		{
+			myBone "Golf_DrivingRange_wreck_1_"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint3
+		{
+			myBone "FX_main"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint4
+		{
+			myBone "FX1"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint5
+		{
+			myBone "FX2"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint6
+		{
+			myBone "FX3"
+			myExternalFlag 1
+		}
+	}
+	myInternalWires
+	{
+	}
+}

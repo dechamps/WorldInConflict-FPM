@@ -1,0 +1,25 @@
+INCLUDE juice/TurretHelperClass.fruit
+
+TYPE XLightType
+{
+	SHADOWMAP_AND_LIGHT
+	LIGHTMAP
+}
+
+
+CLASS EXCL_Rep
+{
+	TEXT myModelName
+	TEXT myAnimationScript
+	TEXT myGYDFile	
+	TEXT myCollisionFile
+	TEXT myShadowFile
+	TEXT myTracksTexture
+	TEXT mySlotFile
+	DECIMAL myTracksWidth
+	XLightType myLightType
+	NUMBER myPathCollFlag
+	NUMBER myCollFlag
+	DECIMAL myRadius
+	TEXT myDeathProp
+}

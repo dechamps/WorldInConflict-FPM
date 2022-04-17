@@ -1,0 +1,39 @@
+CLASS KBP_Protector
+{
+	DECIMAL myDefensiveBonusMultiplier
+}
+
+SCRIPTCLASS UnitList
+{
+	TEXT
+}
+
+CLASS KBP_UnitUnlocker
+{
+	UnitList myAdditionalUnits
+}
+
+CLASS KBP_Healer
+{
+	NUMBER myHealedAmountPerTimeInterval
+	DECIMAL myTimeInterval
+	DECIMAL myAffectionRadius
+}
+
+SCRIPTCLASS SupportWeaponList
+{
+	TEXT
+}
+
+CLASS KBP_SupportUnlocker
+{
+	SupportWeaponList myAdditionalSupportWeapons
+}
+
+SCRIPTCLASS XKeyBuildingParasites
+{
+	KBP_Protector
+	KBP_UnitUnlocker
+	KBP_Healer
+	KBP_SupportUnlocker
+}

@@ -1,0 +1,39 @@
+CLASS CablePoint
+{
+	TEXT myPropName
+	TEXT myBone
+}
+
+SCRIPTCLASS CablePointList
+{
+	CablePoint
+}
+
+CLASS CableDef
+{
+	DECIMAL myDefaultMass // 0.25 - 1.5
+	DECIMAL myStiffness // 0.9 - 1.1
+	DECIMAL myResolution // beror på längd, antal splits mellan två punkter
+	DECIMAL myElasticLimit  // 1 - infinity
+	NUMBER myMaterial
+	NUMBER myDontCauseSparks //0=causesparks 1=dont
+
+	CablePointList myPoints
+}
+
+SCRIPTCLASS CableList
+{
+	CableDef
+}
+
+SCRIPTCLASS CableMaterialList
+{
+	FILE
+}
+
+CLASS CableSetup
+{
+	CableMaterialList myMaterials
+	CableList myCables
+}
+

@@ -1,0 +1,11 @@
+INCLUDE juice/color.fruit
+
+CLASS PostEffectData
+{
+	DECIMAL myStrength // 0 - 1
+	DECIMAL mySaturation // 0 - 2
+	XColorRGB myLevels // 0 - 2
+	DECIMAL myLevelsLow // 0 - 255
+	DECIMAL myLevelsHigh // 0 - 255
+	DECIMAL myNoise // 0 - 1
+}

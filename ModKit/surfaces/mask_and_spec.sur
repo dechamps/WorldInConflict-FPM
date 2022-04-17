@@ -1,0 +1,104 @@
+Version 2
+
+
+DefaultTextures
+{
+	texture surfaces/textures/dummy
+	texture surfaces/textures/specmap
+}
+
+SurfaceSettings
+{
+}
+
+Config Normal PS2.0
+{
+	NormalPass
+	{
+		blend = one zero
+		alphaTest = greater 127
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				half4	myColor			: COLOR0;
+				half3	mySpecColor		: COLOR1;
+				half2	myUV0			: TEXCOORD0;
+				half2	myUV1			: TEXCOORD1;
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				half4 diffuse = tex2D(sampler0, aVSOut.myUV0.xy);			// diffuse map
+				half3 specular = tex2D(sampler1, aVSOut.myUV1.xy);			// specular map
+				
+				half3 temp = diffuse.rgb * aVSOut.myColor.rgb;
+				return half4(aVSOut.mySpecColor * specular + temp,  setConstant0.a * diffuse.a);
+			}
+		}
+	}
+	
+	FadePass
+	{
+		blend = alphaBlend
+		alphaTest = greater 127
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				half4	myColor			: COLOR0;
+				half3	mySpecColor		: COLOR1;
+				half2	myUV0			: TEXCOORD0;
+				half2	myUV1			: TEXCOORD1;
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				half4 diffuse = tex2D(sampler0, aVSOut.myUV0.xy);			// diffuse map
+				half3 specular = tex2D(sampler1, aVSOut.myUV1.xy);			// specular map
+				
+				half3 temp = diffuse.rgb * aVSOut.myColor.rgb;
+				return half4(aVSOut.mySpecColor * specular + temp,  setConstant0.a * diffuse.a);
+			}
+		}
+	}
+}
+
+Config Normal PS1.1
+{
+	NormalPass
+	{
+		blend = one zero
+		alphaTest = greater 127
+		
+		Code
+		{
+			ps_1_1			
+			tex t0				// diffuse map
+			tex t1				// specular map
+			mul_sat r1, t0, v0		// r1 = diffusetex * lightcalc
+			mad_sat r0, v1, t1, r1		// output.rgb = (speccalc*specmap.rgb) + r1
+			mul_sat r0.a, t0.a, c0.a	// output.a = (mask*constalpha)
+		}
+	}
+	
+	FadePass
+	{
+		blend = alphaBlend
+		alphaTest = greater 127
+		
+		Code
+		{
+			ps_1_1
+			tex t0				// diffuse map
+			tex t1				// specular map
+			mul_sat r1, t0, v0		// r1 = diffusetex * lightcalc
+			mad_sat r0, v1, t1, r1		// output.rgb = (speccalc*specmap.rgb) + r1
+			mul_sat r0.a, t0.a, c0.a	// output.a = (mask*constalpha)
+		}
+	}
+}

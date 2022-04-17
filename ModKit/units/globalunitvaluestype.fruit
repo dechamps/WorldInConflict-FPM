@@ -1,0 +1,22 @@
+CLASS GlobalUnitValuesType
+{
+	DECIMAL GLOBAL_UnitHealthMultiplier
+	DECIMAL GLOBAL_UnitScoreMultiplier
+	DECIMAL GLOBAL_UnitHealingScoreMultiplier
+	DECIMAL GLOBAL_UnitScoreToBattleHonorMultiplier	
+	DECIMAL GLOBAL_UnitBridgeLayingScoreMultiplier
+	DECIMAL GLOBAL_UnitUnloadingMaxScore
+	DECIMAL GLOBAL_UnitUnloadingTime
+	DECIMAL GLOBAL_UnitUnloadingMaxDistance
+	DECIMAL GLOBAL_UnitReloadingDelay
+	DECIMAL GLOBAL_FortificationScoreMultiplier
+	DECIMAL GLOBAL_UnitSeekingTurretSector
+	DECIMAL GLOBAL_UnitSeekingTurretBaseTime
+	DECIMAL GLOBAL_UnitSeekingTurretRandomTime
+	DECIMAL GLOBAL_UnitTriggerProneRadius
+	DECIMAL GLOBAL_FormationRadiusVariation
+	DECIMAL GLOBAL_UnitIconSpeedCap
+	DECIMAL GLOBAL_UnitIconLerpTimeModifier
+	DECIMAL GLOBAL_RepairRepairerMultiplier
+	DECIMAL GLOBAL_RepairOwnStandardUnitMultiplier
+}

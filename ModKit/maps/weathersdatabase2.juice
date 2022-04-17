@@ -1,0 +1,6 @@
+INCLUDE xed/weathers.fruit
+
+Weathers myWeathers
+{
+}
+

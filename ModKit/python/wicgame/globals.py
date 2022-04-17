@@ -1,0 +1,102 @@
+import position
+from wicmath import wicmath
+
+TEAM_NEUTRAL	= 0
+TEAM_USA	= 1
+TEAM_NATO	= 2
+TEAM_RUSSIA	= 3
+TEAM_USSR	= 3
+
+PLAYER_SCRIPT 		= 0
+PLAYER_HUMAN		= 1
+
+EAST = position.Position(-1.0, 0.0, 0.0)
+WEST = position.Position(1.0, 0.0, 0.0)
+NORTH = position.Position(0.0, 0.0, -1.0)
+SOUTH = position.Position(0.0, 0.0, 1.0)
+
+NORTH_EAST = position.Position(-0.7071, 0.0, -0.7071)
+NORTH_WEST = position.Position(0.7071, 0.0, -0.7071)
+SOUTH_EAST = position.Position(-0.7071, 0.0, 0.7071)
+SOUTH_WEST = position.Position(0.7071, 0.0, 0.7071)
+
+EAST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( EAST ) )
+WEST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( WEST ) )
+NORTH_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( NORTH ) )
+SOUTH_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( SOUTH ) )
+
+NORTH_EAST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( NORTH_EAST ) )
+NORTH_WEST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( NORTH_WEST ) )
+SOUTH_EAST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( SOUTH_EAST ) )
+SOUTH_WEST_HEADING = wicmath.Vector2Heading( wicmath.Position2Vector( SOUTH_WEST ) )
+
+AI_RU_ONE 	= 1
+AI_US_ONE 	= 2
+AI_RU_TWO	= 3
+AI_US_TWO	= 4
+AI_RU_THREE	= 5
+AI_US_THREE	= 6
+AI_RU_FOUR	= 7
+AI_US_FOUR	= 8
+AI_RU_FIVE	= 9
+AI_US_FIVE	= 10
+
+PLAYER2 = 1
+PLAYER3 = 2
+PLAYER4 = 3
+PLAYER5 = 4
+PLAYER6 = 5
+PLAYER7 = 6
+PLAYER8 = 7
+PLAYER9 = 8
+PLAYER10 = 9
+PLAYER11 = 10
+PLAYER12 = 11
+PLAYER13 = 12
+PLAYER14 = 13
+PLAYER15 = 14
+PLAYER16 = 15
+
+AI_STANCE_DEFENSIVE	= 0
+AI_STANCE_OFFENSIVE	= 1
+
+INVALID_MSG_BOX_ID	= -242
+
+DEFAULT_ASPECT_RATIO 		= 2.35111
+
+DEFAULT_GRABCAMERA_TIME 	= 1.0
+DEFAULT_START_FADEIN_TIME 	= 1.5
+DEFAULT_START_FADEOUT_TIME 	= 4.0
+DEFAULT_END_FADEIN_TIME 	= 1.5
+DEFAULT_END_FADEOUT_TIME 	= 4.0
+
+DEFAULT_SCENE_FADEIN_TIME	= 1.5
+DEFAULT_SCENE_FADEOUT_TIME	= 4.0
+
+DEFAULT_START_BLACK_TIME	= 0.2
+DEFAULT_END_BLACK_TIME		= 0.2
+
+DEFAULT_HIDE_UNITS_TIME		= 0.9
+
+USE_CINEMATIC_TIMER		= False
+
+
+TUT_MOVE_FORWARD	= 0
+TUT_MOVE_BACKWARD	= 1
+TUT_MOVE_LEFT		= 2
+TUT_MOVE_RIGHT		= 3
+TUT_PAN_UP		= 4
+TUT_PAN_DOWN		= 5
+TUT_PAN_LEFT		= 6
+TUT_PAN_RIGHT		= 7
+TUT_MESSAGE		= 8
+TUT_BUTTON_RESTART	= 9
+TUT_BUTTON_SKIP		= 10
+TUT_BUTTON_NEXT		= 11
+TUT_BUTTON_FINISH	= 12
+
+EASY 	= 0
+NORMAL	= 1
+HARD	= 2
+
+DEFAULT_TRICKLE_RATE = 40

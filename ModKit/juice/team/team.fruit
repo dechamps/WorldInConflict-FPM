@@ -1,0 +1,33 @@
+INCLUDE juice/gui/gui_defs.fruit
+INCLUDE juice/vector3.fruit
+
+TYPE Teams
+{
+	Neutral
+	US
+	NATO
+	USSR
+	TEAM4
+	TEAM5
+	TEAM6
+	TEAM7
+	TEAM8
+}
+
+CLASS PlayerTeam
+{
+	Teams myTeam
+	LOCTEXT myTeamName
+	OrderIcons myOrderIcons	
+	TEXT myIconPrefab
+	TEXT myIconFlagPrefab
+	TEXT myZoneBigFlagAnimationState
+	TEXT myZoneSmallFlagAnimationState
+	FILE myWinScreenBackground
+	FILE myDominationBarModelFile
+}
+
+SCRIPTCLASS TeamList
+{
+	PlayerTeam
+}

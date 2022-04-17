@@ -1,0 +1,4967 @@
+INCLUDE editordata/wiced/fruit/wicedprototypes.fruit
+INCLUDE juice/lodsdata.fruit
+
+WicedMetaDataPrototypes myMetaDataPrototypes
+{
+	myLayerPrototype
+	{
+		myName "New Layer"
+		myEnabledFlag TRUE
+		myEnabledInPlayAreaFlag TRUE
+		myEnabledInSurroundFlag FALSE
+		myMask
+		{
+			myUseFractalNoise FALSE
+			myUseMaxAltitude FALSE
+			myUseMinAltitude FALSE
+			myUseMaxSlope FALSE
+			myUseMinSlope FALSE
+			myUseDirection FALSE
+			myOpacity 1.0
+			myFractalNoiseSeed 7436
+			myFractalNoiseRoughness 0.6
+			myFractalNoiseCoverage 0.8
+			myFractalNoiseContrast 0.6
+			myMaxAltitude 128
+			myMinAltitude 0
+			myMaxSlope 90
+			myMinSlope 0
+			myDirection 0
+			myMaxAltitudeSharpness 0.8
+			myMinAltitudeSharpness 0.8
+			myMaxSlopeSharpness 0.8
+			myMinSlopeSharpness 0.8
+			myDirectionCutoff 0.5
+			myDirectionSharpness 0.8
+		}
+
+		mySurface
+		{
+			myUseTextureFlag TRUE
+			myTexture <empty>
+			myBlendingType Normal
+			myTextureColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTextureXScaleFactor 1.0
+			myTextureYScaleFactor 1.0
+			myBrightnessModifier 0.0
+			myTextureIntensity 1.0
+			myTileTextureFlag TRUE
+			myUVProjAxis 0.0
+			myUseSideSplattingFlag TRUE
+			myDontUseSideSplattingFlag TRUE
+			mySideSplattingDir 0
+			myUseDetailTextureFlag TRUE
+			myDetailTextureID -1
+			myDetailTextureIntensity 1.0
+			myDetailTextureEnabledInLowendFlag TRUE
+			myDetailTextureEnabledInHighendFlag TRUE
+			myUseSpecularityFlag TRUE
+			mySpecularity 0.05
+			myUseMaterialFlag TRUE
+			myMaterialID GROUND_DEFAULT
+			myMaterialParticleColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myCombineParticleColorWithGroundFlag TRUE
+			myUseAutopropFlag TRUE
+			myAutopropName <empty>
+			myAutopropIntensity 1.0
+			myAutopropColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myUseMassGrassFlag TRUE
+			myMassGrassType <empty>
+			myMassGrassIntensity 1.0
+			myUseNormalMapFlag TRUE
+			myNormalMap <empty>
+		}
+
+		myGeneratedMask <empty>
+		myGeneratedSurroundMask <empty>
+		myMaskOverride <empty>
+		myMaskOverrideOriginal <empty>
+		myGeneratedMaskDirtyFlag TRUE
+		myGeneratedSurroundMaskDirtyFlag TRUE
+	}
+
+	mySplinePrototype
+	{
+		myName "New Spline"
+		myWidth 8.0
+		mySegmentation 15
+		mySmoothness 3
+		myElasticity 0
+		mySideFlatteningWidth 0
+		mySide1InterpolationLength 1.5
+		mySide2InterpolationLength 1.5
+		myHeightModifier 0.0
+		myGenerateMeshFlag TRUE
+		myFlattenHeightMapFlag TRUE
+		myRemoveAutopropsFlag TRUE
+		myRenderToGroundFlag TRUE
+		myLockedRoad <empty>
+		myGroundDetailTextureID 0
+		myGroundDetailTextureIntensity 0.0
+		myMaterialID METAL
+		myTextureFile editordata/wiced/road.dds
+		mySpecMapFile editordata/wiced/roadspecmap.dds
+		myNormalMapFile surfaces/dummy_normalmap_flat.dds
+		myVariationFile <empty>
+		myGlobalBrightnessMask <empty>
+		myGlobalOpacityMask <empty>
+		myIsOverlayFlag FALSE
+		myWayPoints
+		{
+		}
+
+	}
+
+	myImportedRoadPrototype
+	{
+		myImportedModel <empty>
+		myAlphaMask <empty>
+		myBrightnessMask <empty>
+		myAffectedByMasksFlag TRUE
+	}
+
+	myImportedSurroundMeshPrototype
+	{
+		myNumber -1
+		myBoneNbrContainingHeightMapData 0
+		myHeightMap <empty>
+	}
+
+	mySplineWayPointPrototype
+	{
+		myPos
+		{
+			x 0.0
+			z 0.0
+		}
+
+		myHeightModifier 0.0
+		myBrightness 1.0
+		myOpacity 1.0
+	}
+
+	myTerrainGenerationStackPrototype
+	{
+	}
+
+	myTerrainGenerationPassPrototype
+	{
+		myFaultData
+		{
+			myNumberOfIterations 64
+			myMinDelta 0
+			myMaxDelta 255
+			myFilterValue 0.5
+			myFilterIterations 3
+		}
+
+		myFilterData
+		{
+			myExtensionValue 0.1
+			myFilterValue 0
+			myCenterValue 0
+			myAutoFindCenterFlag FALSE
+			myLevelValue 0
+			myInvertHeightfieldFlag TRUE
+			myHeightfieldmultiplier 0
+		}
+
+		myFluidSimulationData
+		{
+			myNumberOfIterations 1000
+			mySpeed 100
+			myNodeDistance 10
+			myFluidViscosity 100
+			myTimeStep 0.33
+		}
+
+		myMidpointDisplacementData
+		{
+			myRoughnessValue 1
+		}
+
+		myParticleDepositionData
+		{
+			myNumberOfPiles 32
+			myWalkingPeakValue 2
+			myMinNumberOfParticles 512
+			myMaxNumberOfParticles 32000
+			myCalderaPercentage 0.2
+			myFilterValue 0.2
+		}
+
+		myPerlinNoiseData
+		{
+			myHalvingSteps 10
+			myStartFrequency 2
+			myIsRidgedPerlin TRUE
+			myIsMultiPerlin TRUE
+		}
+
+		myBlendFactor 100
+		myClearHeightmapFlag FALSE
+		myActivePass 0
+		myPassName "DEFAULT NAME"
+	}
+
+	myWicedTerrainGenerationPresetPrototype
+	{
+		myWicedTerrainGenerationStack
+		{
+		}
+
+	}
+
+	myEnvironmentTemplatePrototype
+	{
+		myTemplateName <empty>
+		myTemplateThumbnailImage <empty>
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 60
+				myG 70
+				myB 73
+			}
+
+			mySunFogColor
+			{
+				myR 140
+				myG 140
+				myB 130
+			}
+
+			myFogFactor 0.190000
+			myFogStart 200
+			myFogEnd 3000
+			myFogThreshold 0.05
+			myFogExponent 3.0
+			myGlobalSpecModifier 0.0
+			myOverrideFarplane 0.0
+			myOverrideDeployZBias 0.0
+			mySkyModel landscapes/global/skies/sunrise01/sunrise01.mrb
+			myWaterLevel 11
+			myLightAmbient
+			{
+				myR 80
+				myG 90
+				myB 90
+			}
+
+			myDirectionalLight
+			{
+				myDirection 52.000000
+				myElevation 15.000000
+				myColor
+				{
+					myR 190
+					myG 170
+					myB 140
+				}
+
+				myOverbrightFactor 1.000000
+			}
+
+			myWaterTexture0 <empty>
+			myWaterTexture1 <empty>
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture <empty>
+			myCloudMap maps/usTown1/CloudMap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap <empty>
+			myPostFXBloomColor
+			{
+				myR 255
+				myG 255
+				myB 255
+			}
+
+			myShadowFactor 0.580000
+			myShadowColor
+			{
+				myR 0
+				myG 20
+				myB 50
+			}
+
+			myHighendSpecularExponent 1.000000
+			myGammaBrightnessColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGammaValue 0.0
+			myGammaContrast 0.0
+			myTreeOverrideLighting 0
+			myTreeDirectionalColor
+			{
+				myR 190
+				myG 170
+				myB 140
+			}
+
+			myTreeAmbientColor
+			{
+				myR 80
+				myG 90
+				myB 90
+			}
+
+			myTreeOverbrightFactor 1.000000
+			myTreeOverrideShadows 0
+			myTreeShadowColor
+			{
+				myR 0
+				myG 20
+				myB 50
+			}
+
+			myTreeShadowFactor 0.580000
+			myTreeOverrideStemDarkening 0
+			myTreeStemUpperMaxDarkness 0.0
+			myTreeStemRootMaxDarkness 0.0
+			myTreeStemRootHeightInMeters 0.0
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.0
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 280.6526
+			mySunReflectionScale 8.6127
+			myRippleSoftener 0.3379
+			myRippleReflectionScale 2.0666
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.5691
+				myG 0.5909
+				myB 0.5762
+			}
+
+			myMeanReflectionDist 8.6992
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 1.3713
+			myRippleScaler2 0.7000
+			myRippleScaler3 0.6007
+			myRippleScaler4 0.7579
+			myWaterAngle1 -91.1778
+			myRelDir2 12.6224
+			myRelDir3 -11.3638
+			myRelDir4 -13.2178
+			myWaterScale1 0.0100
+			myWaterScale2 0.0109
+			myWaterScale3 0.0501
+			myWaterScale4 0.1002
+			myWaterSpeed1 4
+			myWaterSpeed2 3.5371
+			myWaterSpeed3 1.0522
+			myWaterSpeed4 0.9996
+			myRefractShallowColor
+			{
+				myR 0.4355
+				myG 0.4355
+				myB 0.4355
+				myA 1.0000
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.2114
+				myG 0.2114
+				myB 0.2114
+				myA 0.8000
+			}
+
+			myFresnelBase 0.3583
+			myFresnelExponent 0.9718
+			myFresnelScale 1.0742
+			myAlphaExponent 4.0435
+			myAlphaBase -0.0409
+			myReflectionStrength 1.0000
+			myWaveReflection 0.0000
+			myReflectedColorScaleAlpha 1.8757
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0030
+			myFoamAlphaScale 2.9838
+			myFoamScaleU1 0.0600
+			myFoamScaleV1 0.0600
+			myFoamScaleU2 0.0750
+			myFoamScaleV2 0.0750
+			myFoamSpeedU1 0.5600
+			myFoamSpeedV1 2.5131
+			myFoamSpeedU2 -0.5006
+			myFoamSpeedV2 2.0262
+			myWaveFoamScale1 3.37
+			myWaveFoamScale2 6.74
+			myWaveFoamScale3 0.0000
+			myWaveFoamScale4 0.0000
+			myWaveFoamScrollingMaskRelDir1 0.3725
+			myWaveFoamScrollingMaskScale1 0.0069
+			myWaveFoamScrollingMaskSpeed1 3.2
+			myWaveFoamScrollingMaskRelDir2 0.0986
+			myWaveFoamScrollingMaskScale2 0.0073
+			myWaveFoamScrollingMaskSpeed2 3.1
+			myCrestMaxStartDist 238.7802
+			myCrestMaxYTravel 0.5000
+			myCrestMaxGroundTravelDist 1.0000
+			myCrestMinmumSpacing 35.4957
+			myCrestFadeInTime 0.07000
+			myCrestFadeOutTime 0.5000
+			myCrestLifeTime 2.5000
+			myCrestSecondLayerSpeed 2.6500
+			myCrestSecondLayerUScale 11.0000
+			myCrestSecondLayerVScale 2.0000
+			myCrestSpeedScale 6.0644
+			myCrestShrinkFactor 0.0200
+			myCrestWidth 2.2122
+			myCrestLength 2.2183
+			myCrestAlphaScale 1.7599
+			myCrestWaveDirLimit 1.3433
+			myLowEndValuesOverride 1.0000
+			myLowWaterScale1 0.0193
+			myLowWaterScale2 0.0109
+			myLowWaterSpeed1 1.9701
+			myLowWaterSpeed2 5.6507
+			myLowWaterAngle1 -91.1778
+			myLowRelDir2 28.4033
+			myLowRefractShallowColor
+			{
+				myR 0.2067
+				myG 0.2561
+				myB 0.2530
+				myA 0.2431
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.1139
+				myG 0.1446
+				myB 0.1135
+				myA 1.3216
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 1.0172
+				myG 0.9712
+				myB 0.5762
+			}
+
+			myLowFresnelBase 0.9796
+			myLowFresnelExponent 12.8775
+			myLowFresnelScale 0.9959
+			myLowAlphaExponent 0.7115
+			myLowAlphaBase 0.0112
+			myLowReflectionStrength 0.0795
+			myLowReflectedColorScaleAlpha 1.3490
+			myLowWaterSurface_Normal effects/water/calm_water_normal_and_height.tga
+			myWaterSurface_NormalAndHeight effects/water/Water_Normal_And_Height.tga
+			myWaterSurface_NormalMask surfaces/dummy.dds
+			myWaterSurface_Foam effects/water/Water_Foam.tga
+			myWaterSurface_FoamMask surfaces/textures/black.tga
+			myWaterSurface_WaveFoamScrollingMask surfaces/textures/black.tga
+			myCrestMask <empty>
+			myCrest_Foam1 effects/water/water_foam_1.tga
+			myCrest_Foam2 effects/water/water_foam_2.tga
+			myAroundVessel_Foam effects/water/water_around_foam.tga
+			myAroundVessel_Side effects/water/water_around_side.tga
+			myAroundVessel_BoatShape effects/water/water_around_boat_shape.tga
+			myTrail_Foam effects/water/water_trail_foam.tga
+			myTrail_Noise effects/water/water_trail_noise.tga
+			myWaterMeshFile maps/defaultdata/WaterMesh.txt
+		}
+
+		mySunData
+		{
+			myCoinFile <empty>
+			myCoinSizeX 0.0
+			myCoinSizeY 0.0
+			myEarlyFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile <empty>
+					myLowLimit 0.0
+					myHighLimit 0.0
+					myMinSizeX 0.0
+					myMinSizeY 0.0
+					myMaxSizeX 0.0
+					myMaxSizeY 0.0
+					myMinAlpha 0.0
+					myMaxAlpha 0.0
+					myGrowSpeed 0.0
+					myDecaySpeed 0.0
+					myExponent 0.0
+					myDazzleFactor 0.0
+					myShimmerMagnitude 0.0
+					myShimmerSpeed 0.0
+				}
+
+			}
+
+			myPreBloomFlareSetupList
+			{
+			}
+
+			myFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile <empty>
+					myLowLimit 0.0
+					myHighLimit 0.0
+					myMinSizeX 0.0
+					myMinSizeY 0.0
+					myMaxSizeX 0.0
+					myMaxSizeY 0.0
+					myMinAlpha 0.0
+					myMaxAlpha 0.0
+					myGrowSpeed 0.0
+					myDecaySpeed 0.0
+					myExponent 0.0
+					myDazzleFactor 0.0
+					myShimmerMagnitude 0.0
+					myShimmerSpeed 0.0
+				}
+
+				SunFlareSetup b
+				{
+					myFile <empty>
+					myLowLimit 0.0
+					myHighLimit 0.0
+					myMinSizeX 0.0
+					myMinSizeY 0.0
+					myMaxSizeX 0.0
+					myMaxSizeY 0.0
+					myMinAlpha 0.0
+					myMaxAlpha 0.0
+					myGrowSpeed 0.0
+					myDecaySpeed 0.0
+					myExponent 0.0
+					myDazzleFactor 0.0
+					myShimmerMagnitude 0.0
+					myShimmerSpeed 0.0
+				}
+
+				SunFlareSetup c
+				{
+					myFile <empty>
+					myLowLimit 0.0
+					myHighLimit 0.0
+					myMinSizeX 0.0
+					myMinSizeY 0.0
+					myMaxSizeX 0.0
+					myMaxSizeY 0.0
+					myMinAlpha 0.0
+					myMaxAlpha 0.0
+					myGrowSpeed 0.0
+					myDecaySpeed 0.0
+					myExponent 0.0
+					myDazzleFactor 0.0
+					myShimmerMagnitude 0.0
+					myShimmerSpeed 0.0
+				}
+
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+		myBloomConfigFile <empty>
+		myBloomSetup default
+		myMoodSetupFiles
+		{
+		}
+
+		myMoodSetup <empty>
+		mySunSettings
+		{
+			myGroundOverrideLighting 0
+			myGroundDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundElevation 0.0
+			myShadowDetail 0
+			myOverbrightFactor 0.0
+			myOverbrightFactorCap 0.0
+			myShadowStretch 0.0
+			myShadowSoftness 0.0
+			myOnRoadsFactorRaytrace 0.5
+			mySoftShadowsSettings
+			{
+				myEnabledFlag TRUE
+				myPropShadowStrength 0.9
+				myPropShadowSoftness 0.2
+				myPropShadowMinSizeMeters 1.0
+				myTreeShadowDarkness 0.8
+				myTreeShadowSizeMeters 4.0
+				myTreeShadowDarknessCap 0.85
+				myOnRoadsFactor 0.5
+			}
+
+		}
+
+		mySunFlareTemplate <Custom>
+		myWaterTemplate <Custom>
+		myCloudsTemplate <Custom>
+		myCameraEffectObject <empty>
+		myHighendPostEffectData
+		{
+			myStrength 0.0
+			mySaturation 0.0
+			myLevels
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLevelsLow 0.0
+			myLevelsHigh 0.0
+			myNoise 0.0
+		}
+
+		myLowendPostEffectData
+		{
+			myStrength 0.0
+			mySaturation 0.0
+			myLevels
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLevelsLow 0.0
+			myLevelsHigh 0.0
+			myNoise 0.0
+		}
+
+	}
+
+	myGroundTemplatePrototype
+	{
+		myTemplateName <empty>
+		myTemplateThumbnailImage <empty>
+		myLayers
+		{
+		}
+
+		myBaseDetailTextures
+		{
+		}
+
+		myAutoPropSetName <empty>
+		myAutoPropTypeList
+		{
+		}
+
+		myWicedTerrainGenerationStack
+		{
+		}
+
+		myMassGrassTypes
+		{
+		}
+
+		myDetailTexture1TileFactor 0
+		myDetailTexture2TileFactor 0
+		myDetailTexture3TileFactorX 0
+		myDetailTexture3TileFactorY 0
+		myDetailTexture3TileFactorZ 0
+		myDetailTexture3TileFactorW 0
+		myHighendDetail3MappingX 0
+		myHighendDetail3MappingY 0
+		myHighendDetail3MappingZ 0
+		myHighendDetail3MappingW 0
+	}
+
+	mySunFlarePresetPrototype
+	{
+		myTemplateThumbnailImage <empty>
+		mySunData
+		{
+			myCoinFile <empty>
+			myCoinSizeX 0.0
+			myCoinSizeY 0.0
+			myEarlyFlareSetupList
+			{
+			}
+
+			myPreBloomFlareSetupList
+			{
+			}
+
+			myFlareSetupList
+			{
+			}
+
+		}
+
+	}
+
+	myWaterPresetPrototype
+	{
+		myTemplateThumbnailImage <empty>
+		myWaterData
+		{
+			mySpecExponent 0.0
+			mySunReflectionScale 0.0
+			myRippleSoftener 0.0
+			myRippleReflectionScale 0.0
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.0
+			myRippleScaler2 0.0
+			myRippleScaler3 0.0
+			myRippleScaler4 0.0
+			myWaterAngle1 0.0
+			myRelDir2 0.0
+			myRelDir3 0.0
+			myRelDir4 0.0
+			myWaterScale1 0.0
+			myWaterScale2 0.0
+			myWaterScale3 0.0
+			myWaterScale4 0.0
+			myWaterSpeed1 0.0
+			myWaterSpeed2 0.0
+			myWaterSpeed3 0.0
+			myWaterSpeed4 0.0
+			myRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myFresnelBase 0.0
+			myFresnelExponent 0.0
+			myFresnelScale 0.0
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0
+			myFoamAlphaScale 0.0
+			myFoamScaleU1 0.0
+			myFoamScaleV1 0.0
+			myFoamScaleU2 0.0
+			myFoamScaleV2 0.0
+			myFoamSpeedU1 0.0
+			myFoamSpeedV1 0.0
+			myFoamSpeedU2 0.0
+			myFoamSpeedV2 0.0
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 0.0
+			myCrestMaxYTravel 0.0
+			myCrestMaxGroundTravelDist 0.0
+			myCrestMinmumSpacing 0.0
+			myCrestFadeInTime 0.0
+			myCrestFadeOutTime 0.0
+			myCrestLifeTime 0.1
+			myCrestSecondLayerSpeed 0.0
+			myCrestSecondLayerUScale 0.0
+			myCrestSecondLayerVScale 0.0
+			myCrestSpeedScale 0.0
+			myCrestShrinkFactor 0.0
+			myCrestWidth 0.0
+			myCrestLength 0.0
+			myCrestAlphaScale 0.0
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myLowWaterSurface_Normal <empty>
+			myWaterSurface_NormalAndHeight <empty>
+			myWaterSurface_NormalMask <empty>
+			myWaterSurface_Foam <empty>
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 <empty>
+			myCrest_Foam2 <empty>
+			myAroundVessel_Foam <empty>
+			myAroundVessel_Side <empty>
+			myAroundVessel_BoatShape <empty>
+			myTrail_Foam <empty>
+			myTrail_Noise <empty>
+			myWaterMeshFile <empty>
+		}
+
+	}
+
+	myCloudPresetPrototype
+	{
+		myTemplateThumbnailImage <empty>
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+	}
+
+	myAutoPropTypePrototype
+	{
+		myWeightMap <empty>
+		myColorTint
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myUseGroundColorFlag TRUE
+		myTypeName <empty>
+	}
+
+	mySpecMeshPrototype
+	{
+		myType WIC_ROAD
+		myModel <empty>
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 0.0
+		}
+
+		mySpecData 0
+	}
+
+	myMassGrassTypePrototype
+	{
+		myColorTint
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+	}
+
+	myWicedCommandPointDeploymentAreaMaskPrototype
+	{
+		myCommandPointInstance <empty>
+		myDeploymentAreaMask <empty>
+	}
+
+	myWicedMetaDataPrototype
+	{
+		myName WicEd
+		myMapDir editordata/wiced/temp
+		myMetaDataDir editordata/wiced/temp
+		mySunSettings
+		{
+			myGroundOverrideLighting 0
+			myGroundDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundElevation 0.0
+			myShadowDetail 0
+			myOverbrightFactor 0.4
+			myOverbrightFactorCap 0.4
+			myShadowStretch 1.0
+			myShadowSoftness 0.4
+			myOnRoadsFactorRaytrace 0.0
+			mySoftShadowsSettings
+			{
+				myEnabledFlag TRUE
+				myPropShadowStrength 0.0
+				myPropShadowSoftness 0.0
+				myPropShadowMinSizeMeters 0.0
+				myTreeShadowDarkness 0.0
+				myTreeShadowSizeMeters 0.0
+				myTreeShadowDarknessCap 0.0
+				myOnRoadsFactor 0.0
+			}
+
+		}
+
+		myLayers
+		{
+		}
+
+		myBaseDetailTextures
+		{
+			WicedBaseDetailTexture myDetailTexture0
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTexture1
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTexture2
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTexture3
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTexture4
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTextureHigh0
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTextureHigh1
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTextureHigh2
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+			WicedBaseDetailTexture myDetailTextureHigh3
+			{
+				myImageFile <empty>
+				myUseInSurrMeshFlag FALSE
+			}
+
+		}
+
+		myCachedTextureMap512 editordata/wiced/TextureMap.tga
+		mySavedSurrMeshTextures
+		{
+			FILE myTexture0 <empty>
+
+			FILE myTexture1 <empty>
+
+			FILE myTexture2 <empty>
+
+			FILE myTexture3 <empty>
+
+			FILE myTexture4 <empty>
+
+			FILE myTexture5 <empty>
+
+			FILE myTexture6 <empty>
+
+			FILE myTexture7 <empty>
+
+		}
+
+		mySavedSurrMeshDetailTexture <empty>
+		myGeneratedBlendedMap <empty>
+		myGeneratedBlendedMapHiRes <empty>
+		myGeneratedShadedMap <empty>
+		myGeneratedShadedMapHiRes <empty>
+		myGeneratedBlendedSurroundMap <empty>
+		myGeneratedShadedSurroundMap <empty>
+		myUseImportedDeploymentMasksFlag FALSE
+		myStartingDeploymentAreaMaskTeam1 <empty>
+		myStartingDeploymentAreaMaskTeam2 <empty>
+		myCommandPointDeploymentAreaMasks
+		{
+		}
+
+		myTeam1AssaultDeployPoint
+		{
+			x 50
+			z 50
+		}
+
+		myTeam2AssaultDeployPoint
+		{
+			x 1450
+			z 1450
+		}
+
+		myAssaultDeploySplineWidth 100
+		myOverlayRoadsAlphaMask <empty>
+		myOverlayRoadsBrightnessMask <empty>
+		myUnderlayRoadsAlphaMask <empty>
+		myUnderlayRoadsBrightnessMask <empty>
+		mySplineEditorDisabled 0
+		myImportedRoadModels
+		{
+		}
+
+		mySurroundMeshesImported 0
+		myImportedSurroundMeshes
+		{
+		}
+
+		myGlobalDropZonePattern 0
+		myTeam1DropZonePattern 0
+		myTeam2DropZonePattern 0
+		myMassGrassTypes
+		{
+		}
+
+		myMassGrassFile autopropsets/massgrasstypes.juice
+		mySplines
+		{
+		}
+
+		myTerrainGenerationStack
+		{
+		}
+
+		myTerrainGenerationSeed 0
+		mySurrMeshFile editordata/wiced/defaultdata/wiced_defaultsurroundheightmap.raw
+		mySurrMeshTransitionLength 0.02
+		mySurrMeshHeightModifier 1.0
+		myOverviewMapWaterColor
+		{
+			myR 67
+			myG 83
+			myB 138
+		}
+
+		mySunFlareTemplate <empty>
+		myWaterTemplate <empty>
+		myCloudsTemplate <empty>
+		myMoodPreset <empty>
+		myCamPosDebugInfoFile editordata/wiced/CameraPosDebugInfo.juice
+		myLowResReferenceMapTiles
+		{
+			WicedMapTile myTile0
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile1
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile2
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile3
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile4
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile5
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile6
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile7
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile8
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile9
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile10
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile11
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile12
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile13
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile14
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile15
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile16
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile17
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile18
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile19
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile20
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile21
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile22
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile23
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile24
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile25
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile26
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile27
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile28
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile29
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile30
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile31
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile32
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile33
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile34
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile35
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile36
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile37
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile38
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile39
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile40
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile41
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile42
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile43
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile44
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile45
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile46
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile47
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile48
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile49
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile50
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile51
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile52
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile53
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile54
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile55
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile56
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile57
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile58
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile59
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile60
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile61
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile62
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+			WicedMapTile myTile63
+			{
+				myTexture0 <empty>
+				myTexture1 <empty>
+				myTexture2 <empty>
+				myTexture3 <empty>
+				myIsTileWithSubTilesFlag 0
+				myIsLockedTile 0
+			}
+
+		}
+
+		myRaycastOptions
+		{
+			myIncludeSpeedtreesFlag TRUE
+			myIncludePropsFlag TRUE
+			myIncludeWaterFlag TRUE
+			myIncludeRoadsFlag TRUE
+			myIncludeCutoutsFlag TRUE
+			myIncludePerimeterPointsFlag TRUE
+			myShowTexturesFlag TRUE
+			myGeneratedMapQuality 0
+			myGeneratedMapPath <empty>
+		}
+
+		myTextureGenerationStack
+		{
+		}
+
+		myInstanceGroups
+		{
+		}
+
+		myGeneratedShadowMap <empty>
+		myGeneratedShadowSurroundMap <empty>
+		myPerimeterPointSize SMALL
+	}
+
+	myTextureGenerationPreSetPrototype
+	{
+		myBlendFlag FALSE
+		myShadeFlag FALSE
+		myPropertiesFlag FALSE
+		myInPlayfieldFlag FALSE
+		myInSurroundFlag FALSE
+		myKeepAlphaFlag TRUE
+		myGeneratedTextureResolution 0
+		myApplyToTerrainFlag FALSE
+		myLaunchImageFlag FALSE
+		myMarkedForGenerationFlag FALSE
+		mySelectLeft 0
+		mySelectTop 0
+		mySelectRight 0
+		mySelectBottom 0
+	}
+
+	myCamPosDebugInfoPrototype
+	{
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myOri
+		{
+			x 0.0
+			z 0.0
+		}
+
+		myDescription <empty>
+		myConsideredToBeFixedFlag 0
+	}
+
+	myInstanceBrushPrototype
+	{
+		myBrushName <empty>
+		myBelongsToSpeeTreeSetName <empty>
+		myAllowedWicedInstanceType <empty>
+		myBrushInstanceList
+		{
+		}
+
+	}
+
+	myBrushInstancePrototype
+	{
+		myInstanceDBType <empty>
+		myPositionRelFocus
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myHPBRelFocus
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+	}
+
+	myInstanceGroupPrototype
+	{
+		myInstanceGroupName <empty>
+		myBrushOriginName <empty>
+		myAllowedWicedInstanceType <empty>
+		myMidPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myMidHPB
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myLockedFlag 0
+		myWarnedFlag 0
+		myInstanceDivisionType ALL
+		myGroupedInstances
+		{
+		}
+
+	}
+
+	myGroupedInstancePrototype
+	{
+		myInstanceName <empty>
+		myInstanceType <empty>
+		myWicedInstanceType <empty>
+		myPositionRelFocusInstance
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myHPBRelFocusInstance
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+	}
+
+	myFeedbackPrototype
+	{
+		myFeedbackDomination_US
+		{
+			myCaptureSound sound/feedback/us/mission/generic/us_generic_cap_domination.mp3
+			myLostSound sound/feedback/us/mission/generic/us_generic_lost_domination.mp3
+			myEnemyCapturedSound sound/feedback/us/mission/generic/us_generic_ecap_domination.mp3
+		}
+
+		myFeedbackDomination_USSR
+		{
+			myCaptureSound sound/feedback/ru/mission/generic/ru_generic_cap_domination.mp3
+			myLostSound sound/feedback/ru/mission/generic/ru_generic_lost_domination.mp3
+			myEnemyCapturedSound sound/feedback/ru/mission/generic/ru_generic_ecap_domination.mp3
+		}
+
+		myFeedbackTOW_US
+		{
+			myLastFriendlyCPLostSound sound/feedback/us/mission/tugofwar/us_tug_lost_friendly_b.mp3
+			myFriendlyCPCaptureSound sound/feedback/us/mission/tugofwar/us_tug_cap_friendly.mp3
+			myFriendlyCPLostSound sound/feedback/us/mission/tugofwar/us_tug_lost_friendly_a.mp3
+			myMiddleCPCaptureSound sound/feedback/us/mission/tugofwar/us_tug_cap_middle.mp3
+			myMiddleCPLostSound sound/feedback/us/mission/tugofwar/us_tug_lost_middle.mp3
+			myEnemyCPCaptureSound sound/feedback/us/mission/tugofwar/us_tug_cap_enemy_a.mp3
+			myEnemyCPLostSound sound/feedback/us/mission/tugofwar/us_tug_lost_enemy.mp3
+			myLastEnemyCPCaptureSound sound/feedback/us/mission/tugofwar/us_tug_cap_enemy_b.mp3
+		}
+
+		myFeedbackTOW_USSR
+		{
+			myLastFriendlyCPLostSound sound/feedback/ru/mission/tugofwar/ru_tug_lost_friendly_b.mp3
+			myFriendlyCPCaptureSound sound/feedback/ru/mission/tugofwar/ru_tug_cap_friendly.mp3
+			myFriendlyCPLostSound sound/feedback/ru/mission/tugofwar/ru_tug_lost_friendly_a.mp3
+			myMiddleCPCaptureSound sound/feedback/ru/mission/tugofwar/ru_tug_cap_middle.mp3
+			myMiddleCPLostSound sound/feedback/ru/mission/tugofwar/ru_tug_lost_middle.mp3
+			myEnemyCPCaptureSound sound/feedback/ru/mission/tugofwar/ru_tug_cap_enemy_a.mp3
+			myEnemyCPLostSound sound/feedback/ru/mission/tugofwar/ru_tug_lost_enemy.mp3
+			myLastEnemyCPCaptureSound sound/feedback/ru/mission/tugofwar/ru_tug_cap_enemy_b.mp3
+		}
+
+		myFeedbackAssault_US
+		{
+			myRound1CaptureSound sound/feedback/us/mission/generic/us_generic_cap_assault.mp3
+			myRound1LostSound sound/feedback/us/mission/generic/us_generic_adv_assault.mp3
+			myRound1EnemyCapturedSound sound/feedback/us/mission/generic/us_generic_ret_assault.mp3
+			myRound2CaptureSound <empty>
+			myRound2LostSound sound/feedback/us/mission/generic/us_generic_los_assault.mp3
+			myRound2EnemyCapturedSound sound/feedback/us/mission/generic/us_generic_ecap_assault.mp3
+		}
+
+		myFeedbackAssault_USSR
+		{
+			myRound1CaptureSound <empty>
+			myRound1LostSound sound/feedback/ru/mission/generic/ru_generic_los_assault.mp3
+			myRound1EnemyCapturedSound sound/feedback/ru/mission/generic/ru_generic_ecap_assault.mp3
+			myRound2CaptureSound sound/feedback/ru/mission/generic/ru_generic_cap_assault.mp3
+			myRound2LostSound sound/feedback/ru/mission/generic/ru_generic_adv_assault.mp3
+			myRound2EnemyCapturedSound sound/feedback/ru/mission/generic/ru_generic_ret_assault.mp3
+		}
+
+	}
+	
+	myBloomConfigPrototype
+	{
+		myBloomSetups
+		{
+		
+		}
+	}
+	
+	myBloomSetupPrototype
+	{
+		myName <empty>
+		myBloomPhase
+		{
+			myBloomType HIRES
+			myEnabledFlag TRUE
+			NUMBER myNumBlurPasses 1
+			myBlurExtraPunch 0.0
+			myBlurMode NORMAL_BLUR
+			myBlurMasking FALSE
+			myBlurMaskFactor 1.0
+			myColorMode RGB
+			mySourceBlend ZERO
+			myDestBlend ZERO
+			myColor
+			{
+				myR 1.0
+				myG 1.0
+				myB 1.0
+			}
+			myAlpha 1.0
+			
+			myColorRampFlag FALSE
+			myBloomColorRamp
+			{
+				myCenter
+				{
+					myX 1.0
+					myY 1.0
+					myZ 1.0
+				}
+				
+				myScale
+				{
+					myX 1.0
+					myY 1.0
+					myZ 1.0
+				}
+				
+				myInvertFlag
+				{
+					myX 0
+					myY 0
+					myZ 0
+				}
+				
+				myExponent
+				{
+					myX 1.0
+					myY 1.0
+					myZ 1.0
+				}
+				
+				myMinClampAt
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				
+				myMinClampValue
+				{
+					myR 0.0
+					myG 0.0
+					myB 0.0
+				}
+				
+				myMaxClampAt
+				{
+					myX 1.0
+					myY 1.0
+					myZ 1.0
+				}
+				
+				myMaxClampValue
+				{
+					myR 1.0
+					myG 1.0
+					myB 1.0
+				}
+				
+			}
+		}
+	}
+	
+	MoodSetup myMoodSetupPrototype
+	{
+		myMoodVariables
+		{
+		}
+	}	
+}
+
+WicedInstancePrototypes myInstancePrototypes
+{
+	myPropInstancePrototype
+	{
+		myName <empty>
+		myType <empty>
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 1.0
+		}
+
+		myHPB
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myAmbientColorTintRGB
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRepBitfield 0
+		myLockedFlag 0
+		myWarnedFlag 0
+		myHealthLostPercentage 0.0
+		myAddonPropList
+		{
+		}
+
+	}
+
+	myAgentInstancePrototype
+	{
+		myType <empty>
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 1.0
+		}
+
+		myHPB
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myCameraInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRotation
+		{
+			x 0.0
+			z 0.0
+		}
+
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myAreaInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRadius 0.0
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myCommandpointInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myUiName <empty>
+		myCommandPointType VL_thing
+		myMinimapIconFileTeam1 ui/skins/cp_ours.dds
+		myMinimapIconFileTeam2 ui/skins/cp_enemy.dds
+		myMinimapIconFileOurs ui/skins/cp_ours.dds
+		myMinimapIconFileEnemy ui/skins/cp_enemy.dds
+		myMinimapIconFileNeutral ui/skins/cp_neutral.dds
+		myWeCapturedText "We captured the "
+		myWeLostText "We lost control of the "
+		myEnemyCapturedText "Enemy captured the "
+		myTeam1CaptureSound sound/ingame/general_feedback/team1_objective_success.wav
+		myTeam1LostSound sound/ingame/general_feedback/team1_objective_neutral.wav
+		myTeam1EnemyCapturedSound sound/ingame/general_feedback/team1_objective_enemy_success.wav
+		myTeam2CaptureSound sound/ingame/general_feedback/team1_objective_success.wav
+		myTeam2LostSound sound/ingame/general_feedback/team1_objective_neutral.wav
+		myTeam2EnemyCapturedSound sound/ingame/general_feedback/team1_objective_enemy_success.wav
+		myAssaultRound2Team1CaptureSound <empty>
+		myAssaultRound2Team1LostSound <empty>
+		myAssaultRound2Team1EnemyCapturedSound <empty>
+		myAssaultRound2Team2CaptureSound <empty>
+		myAssaultRound2Team2LostSound <empty>
+		myAssaultRound2Team2EnemyCapturedSound <empty>
+		myDeploymentAreaMask <empty>
+		myDontAutogenPythonCodeFlag 0
+		myLockedFlag 0
+		myWarnedFlag 0
+		myAssaultCaptureOrder 0
+		myToWCaptureOrder 0
+	}
+
+	myPerimeterpointInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 0.0
+		}
+
+		myRadius 0.0
+		myPerimeterPointType Flag_small
+		myPerimeterPointTypeMegaMap Flag_small
+		myParent NULL
+		myLockedFlag 0
+		myWarnedFlag 0
+		myPerimeterPointSize LARGE
+		myFortificationSet default
+	}
+
+	myDefensiveFortificationInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 1.0
+		}
+
+		mySpawnedAgentType fortification_machinegun
+		myTimerModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 10.0
+			myFadeOutTime 5.0
+		}
+
+		myDropperModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 0.0
+			myFadeOutTime 0.0
+		}
+
+		myLevel 1
+		myInitialDelay 0.0
+		myDropDelay 0.0
+		myParent NULL
+		myGrandParent NULL
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myDropZoneInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRadius 10.0
+		myTeam TEAM_X
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myAmbientSoundInstancePrototype
+	{
+		myType <empty>
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myNPCWaypointInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRadius 0.0
+		myNPCType CIVILIAN
+		myNPCWaypointList
+		{
+		}
+
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+	myNPCSpawnpointInstancePrototype
+	{
+		myPosition
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myDirection
+		{
+			x 0.0
+			z 1.0
+		}
+
+		myHPB
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		mySpawnType <empty>
+		myNPCType CIVILIAN
+		myLockedFlag 0
+		myWarnedFlag 0
+	}
+
+}
+
+WicedMap_001 myWicedMap
+{
+	myEnvironment
+	{
+		myFogColor
+		{
+			myR 255
+			myG 255
+			myB 255
+		}
+
+		mySunFogColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myFogFactor 0.0
+		myFogStart 1625.0
+		myFogEnd 2500.0
+		myFogThreshold 0.0
+		myFogExponent 0.0
+		myGlobalSpecModifier 0.0
+		myOverrideFarplane 0.0
+		myOverrideDeployZBias 0.0
+		mySkyModel Landscapes/Global/sky_n_weather/morningHaze01/morningHaze01.mrb
+		myWaterLevel 19.0
+		myLightAmbient
+		{
+			myR 255
+			myG 255
+			myB 255
+		}
+
+		myDirectionalLight
+		{
+			myDirection 0.0
+			myElevation 45.0
+			myColor
+			{
+				myR 220
+				myG 190
+				myB 180
+			}
+
+			myOverbrightFactor 0.9
+		}
+
+		myWaterTexture0 <empty>
+		myWaterTexture1 <empty>
+		myWaterEdgeTexture <empty>
+		myWaterReflectionTexture <empty>
+		myCloudMap <empty>
+		mySkyDomeTexture <empty>
+		myMapEnvmap <empty>
+		myPostFXBloomColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myShadowFactor 0.5
+		myShadowColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myHighendSpecularExponent 8.0
+		myGammaBrightnessColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myGammaValue 0.0
+		myGammaContrast 0.0
+		myTreeOverrideLighting 0
+		myTreeDirectionalColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myTreeAmbientColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myTreeOverbrightFactor 0.0
+		myTreeOverrideShadows 0
+		myTreeShadowColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myTreeShadowFactor 0.0
+		myTreeOverrideStemDarkening 0
+		myTreeStemUpperMaxDarkness 0.0
+		myTreeStemRootMaxDarkness 0.0
+		myTreeStemRootHeightInMeters 0.0
+		myFillLightOverrideDirection 0
+		myFillLightDirection 0.0
+		myFillLightOverrideColor 0
+		myFillLightColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myOverrideBacklight 0
+		myBackLightColor
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+		myBackLightStrength 0.0
+		myOverrideGlobalShadowing 0
+		myGlobalShadowingMinValueAtBottom 0.0
+		myGlobalShadowingMinValueAtTop 0.0
+		myCloudShadowDensity 0.0
+		myCloudShadowExtraClouds 0
+		myLightShaftIntensity 0.0
+		myLightShaftMultiplier 0.0
+		myLightShaftCutoff 0.0
+		myLightShaftCloudAltitude 0.0
+		myLightShaftSunDirDependency 0.0
+		myLightShaftDarkening 0.0
+		myRelativeSunLightCrater
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRelativeAmbLightCrater
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRelativeSunLightParticle
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+		myRelativeAmbLightParticle
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+
+	}
+
+	myHeightMapFile editordata/wiced/defaultdata/wiced_defaultheightmap.raw
+	myInvisibleHeightmapFile editordata/wiced/defaultdata/wiced_defaultheightmap.raw
+	myRigidGroundFile <empty>
+	myGroundSpecWeightMap editordata/wiced/defaultdata/wiced_defaultspecweightmap.tga
+	myGroundSpecWeightMapDDS <empty>
+	myAutoPropFile autopropsets/autopropset_01.ice
+	myAutoPropSetName fall
+	myAutoPropTypeList
+	{
+	}
+
+	myAutoPropColorTintFile <empty>
+	myAutoPropColorMapFile editordata/wiced/defaultdata/wiced_defaultautopropcolormap.tga
+	myGroundColorMapDDS <empty>
+	myHitEffectsFile juice/hiteffects.ice
+	myNodesWreckFile <empty>
+	mySlotRepFile <empty>
+	myScriptModelFile <empty>
+	myHitEffectsSpawnFile editordata/wiced/defaultdata/wiced_defaulthiteffectsspawnmap.tga
+	myHitEffectsColorTintFile editordata/wiced/defaultdata/wiced_defaulthiteffectscolortintmap.tga
+	myDetailTextureFile editordata/wiced/defaultdata/wiced_defaultdetailtexture.dds
+	myDetailTextureFile2 editordata/wiced/defaultdata/wiced_defaultdetailtexture.dds
+	myDetailTexture1TileFactor 1.0
+	myDetailTexture2TileFactor 1.0
+	myDetailMapFile editordata/wiced/defaultdata/wiced_defaultdetailtexturemap.tga
+	myDetailMapFile2 editordata/wiced/defaultdata/wiced_defaultdetailtexturemap.tga
+	myHighendDetailMapFile1 editordata/wiced/defaultdata/wiced_defaultdetailtexturemap.tga
+	myHighendDetailMapFile2 editordata/wiced/defaultdata/wiced_defaultdetailtexturemap.tga
+	myDetailTextureFile3 editordata/wiced/defaultdata/wiced_defaultdetailtexture.dds
+	myHighendDetailMapFile3 editordata/wiced/defaultdata/wiced_defaultdetailtexturemap.tga
+	myHighendWreckTextureFile editordata/wiced/defaultdata/wrecktexture.dds
+	myHighendWreckObjectsTextureFile <empty>
+	myDetailTexture3TileFactorX 1.0
+	myDetailTexture3TileFactorY 1.0
+	myDetailTexture3TileFactorZ 1.0
+	myDetailTexture3TileFactorW 1.0
+	myHighendDetail3MappingX 0
+	myHighendDetail3MappingY 0
+	myHighendDetail3MappingZ 0
+	myHighendDetail3MappingW 0
+	myExplosionBrushGetY <empty>
+	myExplosionBrushNormalAndAlphaLowres <empty>
+	myExplosionBrushNormalAndAlphaHires <empty>
+	myExplosionBrushAtlasUVs <empty>
+	myExplosionBrushTypes <empty>
+	myOverViewMapFile editordata/wiced/defaultdata/wiced_defaultoverviewmap.tga
+	myOverViewMapExtendedFile <empty>
+	myGroundLowResTextureFile editordata/wiced/defaultdata/wiced_defaultautopropcolormap.tga
+	myMapTiles
+	{
+		WicedMapTile myTile0
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile1
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile2
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile3
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile4
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile5
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile6
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile7
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile8
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile9
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile10
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile11
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile12
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile13
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile14
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile15
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile16
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile17
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile18
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile19
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile20
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile21
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile22
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile23
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile24
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile25
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile26
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile27
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile28
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile29
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile30
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile31
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile32
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile33
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile34
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile35
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile36
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile37
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile38
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile39
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile40
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile41
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile42
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile43
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile44
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile45
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile46
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile47
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile48
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile49
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile50
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile51
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile52
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile53
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile54
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile55
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile56
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile57
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile58
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile59
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile60
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile61
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile62
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile63
+		{
+			myTexture0 editordata/wiced/defaultdata/wiced_defaulttexture.dds
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+	}
+
+	mySpecMeshes
+	{
+	}
+
+	myHeightmapLodsFile <empty>
+	myGroundedMetaData EditorData/GroundEd/grounded_metadata.juice
+	myWicedMetaData <empty>
+	mySpeedTreeSet usFarmland
+	mySpeedTreeForest <empty>
+	myInstances
+	{
+	}
+
+	myInstanceData
+	{
+		myPropInstances
+		{
+		}
+
+		myAgentInstances
+		{
+		}
+
+		mySpeedTreeInstances
+		{
+		}
+
+		myAreaInstances
+		{
+		}
+
+		myMiscInstances
+		{
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer1
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 35.269516
+					myZ 575.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer2
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 28.803387
+					myZ 320.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer3
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 9.144531
+					myZ 840.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer4
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 33.968735
+					myZ 623.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer5
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 19.613281
+					myZ 360.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer6
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 21.152336
+					myZ 880.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer7
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 15.958328
+					myZ 464.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer8
+			{
+				myPosition
+				{
+					myX 840.000000
+					myY 33.610676
+					myZ 736.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer9
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 41.466156
+					myZ 575.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer10
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 30.260418
+					myZ 320.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer11
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 18.209635
+					myZ 840.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer12
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 46.493496
+					myZ 623.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer13
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 19.589838
+					myZ 360.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer14
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 22.389317
+					myZ 880.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer15
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 12.744786
+					myZ 464.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam1StartingDropZonePlayer16
+			{
+				myPosition
+				{
+					myX 920.000000
+					myY 32.578125
+					myZ 736.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_1
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer1
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 26.222651
+					myZ 575.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer2
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 10.339845
+					myZ 320.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer3
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 76.458977
+					myZ 840.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer4
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 37.800758
+					myZ 623.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer5
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 10.675781
+					myZ 360.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer6
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 78.531898
+					myZ 880.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer7
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 21.576820
+					myZ 464.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer8
+			{
+				myPosition
+				{
+					myX 359.999969
+					myY 67.117828
+					myZ 736.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer9
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 25.522133
+					myZ 575.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer10
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 10.477865
+					myZ 320.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer11
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 76.060547
+					myZ 840.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer12
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 24.610672
+					myZ 623.999939
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer13
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 8.463528
+					myZ 360.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer14
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 80.477219
+					myZ 880.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer15
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 22.477863
+					myZ 464.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+			WicedDropZoneInstance myTeam2StartingDropZonePlayer16
+			{
+				myPosition
+				{
+					myX 279.999969
+					myY 64.471992
+					myZ 736.000000
+				}
+
+				myRadius 10.0
+				myTeam TEAM_2
+				myLockedFlag 0
+				myWarnedFlag 0
+			}
+
+		}
+
+	}
+
+	myPlayfieldMinCoord
+	{
+		x 50.000000
+		z 50.000000
+	}
+
+	myPlayfieldMaxCoord
+	{
+		x 1486.000000
+		z 1486.000000
+	}
+
+	myCameraPlayfieldMinCoord
+	{
+		x 0.0
+		z 0.0
+	}
+
+	myCameraPlayfieldMaxCoord
+	{
+		x 0.0
+		z 0.0
+	}
+
+	myMissionStats
+	{
+		myName newMap
+		mySPName <empty>
+		myMapListName <empty>
+		myDescription "New map"
+		mySPDescription <empty>
+		myMissionType MULTIPLAYER
+		myGameMode Domination
+		myMissionVersion 0
+		myInitialAp 4000
+		myInitialApSinglePlayerTeam1 0
+		myInitialApSinglePlayerTeam2 0
+		myMaxAp 6000
+		myMaxApSinglePlayerTeam1 0
+		myMaxApSinglePlayerTeam2 0
+		myInitialTickets 300
+		myGameLengthSinglePlayer 0.0
+		myWindDirection
+		{
+			myX 4
+			myY 0.0
+			myZ 4
+		}
+
+		myAllowedTeam1 US
+		myAllowedTeam2 USSR
+		myAllowedTeam1SinglePlayer Neutral
+		myAllowedTeam2SinglePlayer Neutral
+		myPlayers
+		{
+			PLAYER1
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER2
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER3
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER4
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER5
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER6
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER7
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER8
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER9
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER10
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER11
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER12
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER13
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER14
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER15
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER16
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+		}
+
+		myDisallowedUnits
+		{
+		}
+
+		myDisallowedSupportthings
+		{
+		}
+
+		myLoadingBriefing
+		{
+			myLoadingSlides
+			{
+			}
+
+			myVoiceOvers
+			{
+			}
+
+			myLoadingScreenMusic
+			{
+				myAction MUSIC_PLAY
+				mySoundChannel CHANNEL_MUSIC
+				myFadeTime 0.0
+				myRevertState REVERT_TO_SILENCE
+				myNumLoops 0
+				myMusicFile <empty>
+			}
+
+		}
+
+		myLandscapeTextureSet Normal
+		myAllowScriptedVictory TRUE
+		myAllowDominationVictory TRUE
+		myAllowNoLZDefeat FALSE
+		myAllowNoVLDefeat TRUE
+		myAllowNoUnitsDefeat FALSE
+		myAllowNoPresenceDefeat TRUE
+		myScriptedAPFactor 1.0
+		myZoneTickAPFactor 0.000000
+		myUnitKilledAPFactor 0.000000
+		myUnitLostAPFactor 0.000000
+		myDeploymentZoneStartingSizeTeam1 20.0
+		myDeploymentZoneStartingSizeTeam2 20.0
+		myDeploymentZoneOrientation Vertical
+		myTeam1DeploymentDirection North
+		myStartingDeploymentAreaMaskTeam1 <empty>
+		myStartingDeploymentAreaMaskTeam2 <empty>
+		mySinglePlayerDeploymentAreaMask
+		{
+		}
+
+		myLandingAreaTeam1Start
+		{
+			x 260.000000
+			z 100.000000
+		}
+
+		myLandingAreaTeam1End
+		{
+			x 100.000000
+			z 1439.000000
+		}
+
+		myLandingAreaTeam2Start
+		{
+			x 1439.000000
+			z 100.000000
+		}
+
+		myLandingAreaTeam2End
+		{
+			x 1266.000000
+			z 1439.000000
+		}
+
+		myAPRegrowthRate 45
+		myNumberOfBalanceTicksPerTeam 1500
+		myStartingDropZonesPerTeam
+		{
+			StartingDropZonesForTeam team1StartingDropZones
+			{
+				myStartingDropZonePlayer1 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer1
+				myStartingDropZonePlayer2 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer2
+				myStartingDropZonePlayer3 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer3
+				myStartingDropZonePlayer4 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer4
+				myStartingDropZonePlayer5 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer5
+				myStartingDropZonePlayer6 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer6
+				myStartingDropZonePlayer7 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer7
+				myStartingDropZonePlayer8 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer8
+				myStartingDropZonePlayer9 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer9
+				myStartingDropZonePlayer10 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer10
+				myStartingDropZonePlayer11 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer11
+				myStartingDropZonePlayer12 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer12
+				myStartingDropZonePlayer13 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer13
+				myStartingDropZonePlayer14 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer14
+				myStartingDropZonePlayer15 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer15
+				myStartingDropZonePlayer16 myWicedMap.myInstanceData.myMiscInstances.myTeam1StartingDropZonePlayer16
+			}
+
+			StartingDropZonesForTeam team2StartingDropZones
+			{
+				myStartingDropZonePlayer1 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer1
+				myStartingDropZonePlayer2 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer2
+				myStartingDropZonePlayer3 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer3
+				myStartingDropZonePlayer4 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer4
+				myStartingDropZonePlayer5 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer5
+				myStartingDropZonePlayer6 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer6
+				myStartingDropZonePlayer7 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer7
+				myStartingDropZonePlayer8 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer8
+				myStartingDropZonePlayer9 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer9
+				myStartingDropZonePlayer10 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer10
+				myStartingDropZonePlayer11 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer11
+				myStartingDropZonePlayer12 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer12
+				myStartingDropZonePlayer13 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer13
+				myStartingDropZonePlayer14 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer14
+				myStartingDropZonePlayer15 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer15
+				myStartingDropZonePlayer16 myWicedMap.myInstanceData.myMiscInstances.myTeam2StartingDropZonePlayer16
+			}
+
+		}
+
+		myStartingUnitsPositionMarkerPerRoles
+		{
+		}
+
+		myAmbientSound
+		{
+			myAction MUSIC_PLAY
+			mySoundChannel CHANNEL_MUSIC
+			myFadeTime 0.0
+			myRevertState REVERT_TO_SILENCE
+			myNumLoops 0
+			myMusicFile <empty>
+		}
+
+		myDefensiveFortificationSpawnDelayMultiplier 0.0
+		mySoundTrack
+		{
+			myTimeBeforeSoundTrackSwap 0.0
+			myTimeTimeLeftOfMatchForCrescendo 0.0
+			myTracks
+			{
+			}
+
+		}
+
+		myPrimaryObjectives
+		{
+		}
+
+		mySecondaryObjectives
+		{
+		}
+
+		myAttackCPObjectives
+		{
+		}
+
+		myDefendCPObjectives
+		{
+		}
+
+		myScriptEvents
+		{
+		}
+
+		myTipTexts
+		{
+		}
+
+		myMessageBoxList
+		{
+		}
+
+		myPythonStartCameraSweepFunction <empty>
+		myPythonEndCameraSweepFunction <empty>
+		myGlobalDestructionMultiplier 0.0
+	}
+
+	myPathFile editordata/wiced/defaultdata/wiced_path.path
+	myPathFile1 editordata/wiced/defaultdata/wiced_path1.p3f
+	myPathFile2 editordata/wiced/defaultdata/wiced_path2.p3f
+	myPathFile3 editordata/wiced/defaultdata/wiced_path3.p3f
+	myPathFile4 editordata/wiced/defaultdata/wiced_path4.p3f
+	myPathBlockFile1 editordata/wiced/defaultdata/wiced_path1.p3b
+	myPathBlockFile2 editordata/wiced/defaultdata/wiced_path2.p3b
+	myPathBlockFile3 editordata/wiced/defaultdata/wiced_path3.p3b
+	myPathBlockFile4 editordata/wiced/defaultdata/wiced_path4.p3b
+	myLocStrings
+	{
+	}
+
+	myLocFiles
+	{
+	}
+
+	myPythonServerScript editordata/WICEd/python/templates/server.py
+	myPythonClientScript editordata/WICEd/python/templates/client.py
+	myPythonServerAutogenScript <empty>
+	myPythonClientAutogenScript <empty>
+	myAgentTypesFile units/unittypes_expansion.ice
+	myAgentTypesSinglePlayerFile <empty>
+	myAgentSoundsFile sound/agentsounds.ice
+	myPropTypeDatabase maps/propsdatabase2.ice
+	mySupportThingDatabase maps/supportdatabase2.ice
+	myWeatherDatabase maps/weathersdatabase2.ice
+	myCharacterDatabase maps/charactersdatabase2.ice
+	mySoundDatabase maps/sounddatabase2.ice
+	myAddOnPropsFile <empty>
+	myWaterData
+	{
+		mySpecExponent 280.6526
+		mySunReflectionScale 8.6127
+		myRippleSoftener 0.3379
+		myRippleReflectionScale 2.0666
+		myWaveReflectionScale 0.0
+		myReflectedColorScale
+		{
+			myR 0.5691
+			myG 0.5909
+			myB 0.5762
+		}
+
+		myMeanReflectionDist 8.6992
+		myWaveHeight1 0.0
+		myWaveHeight2 0.0
+		myWaveLength1 0.0
+		myWaveLength2 0.0
+		myTravelSpeed1 0.0
+		myTravelSpeed2 0.0
+		myRippleScaler1 1.3713
+		myRippleScaler2 0.7000
+		myRippleScaler3 0.6007
+		myRippleScaler4 0.7579
+		myWaterAngle1 -91.1778
+		myRelDir2 12.6224
+		myRelDir3 -11.3638
+		myRelDir4 -13.2178
+		myWaterScale1 0.0100
+		myWaterScale2 0.0109
+		myWaterScale3 0.0501
+		myWaterScale4 0.1002
+		myWaterSpeed1 4
+		myWaterSpeed2 3.5371
+		myWaterSpeed3 1.0522
+		myWaterSpeed4 0.9996
+		myRefractShallowColor
+		{
+			myR 0.4355
+			myG 0.4355
+			myB 0.4355
+			myA 1.0000
+		}
+
+		myRefractDeepColor
+		{
+			myR 0.2114
+			myG 0.2114
+			myB 0.2114
+			myA 0.8000
+		}
+
+		myFresnelBase 0.3583
+		myFresnelExponent 0.9718
+		myFresnelScale 1.0742
+		myAlphaExponent 4.0435
+		myAlphaBase -0.0409
+		myReflectionStrength 1.0000
+		myWaveReflection 0.0000
+		myReflectedColorScaleAlpha 1.8757
+		myFoamHeightOffset 0.0
+		myFoamDepthScale 0.0
+		myFoamDepthOffset 0.0030
+		myFoamAlphaScale 2.9838
+		myFoamScaleU1 0.0600
+		myFoamScaleV1 0.0600
+		myFoamScaleU2 0.0750
+		myFoamScaleV2 0.0750
+		myFoamSpeedU1 0.5600
+		myFoamSpeedV1 2.5131
+		myFoamSpeedU2 -0.5006
+		myFoamSpeedV2 2.0262
+		myWaveFoamScale1 3.37
+		myWaveFoamScale2 6.74
+		myWaveFoamScale3 0.0000
+		myWaveFoamScale4 0.0000
+		myWaveFoamScrollingMaskRelDir1 0.3725
+		myWaveFoamScrollingMaskScale1 0.0069
+		myWaveFoamScrollingMaskSpeed1 3.2
+		myWaveFoamScrollingMaskRelDir2 0.0986
+		myWaveFoamScrollingMaskScale2 0.0073
+		myWaveFoamScrollingMaskSpeed2 3.1
+		myCrestMaxStartDist 238.7802
+		myCrestMaxYTravel 0.5000
+		myCrestMaxGroundTravelDist 1.0000
+		myCrestMinmumSpacing 35.4957
+		myCrestFadeInTime 0.07000
+		myCrestFadeOutTime 0.5000
+		myCrestLifeTime 2.5000
+		myCrestSecondLayerSpeed 2.6500
+		myCrestSecondLayerUScale 11.0000
+		myCrestSecondLayerVScale 2.0000
+		myCrestSpeedScale 6.0644
+		myCrestShrinkFactor 0.0200
+		myCrestWidth 2.2122
+		myCrestLength 2.2183
+		myCrestAlphaScale 1.7599
+		myCrestWaveDirLimit 1.3433
+		myLowEndValuesOverride 1.0000
+		myLowWaterScale1 0.0193
+		myLowWaterScale2 0.0109
+		myLowWaterSpeed1 1.9701
+		myLowWaterSpeed2 5.6507
+		myLowWaterAngle1 -91.1778
+		myLowRelDir2 28.4033
+		myLowRefractShallowColor
+		{
+			myR 0.2067
+			myG 0.2561
+			myB 0.2530
+			myA 0.2431
+		}
+
+		myLowRefractDeepColor
+		{
+			myR 0.1139
+			myG 0.1446
+			myB 0.1135
+			myA 1.3216
+		}
+
+		myLowReflectedColorScale
+		{
+			myR 1.0172
+			myG 0.9712
+			myB 0.5762
+		}
+
+		myLowFresnelBase 0.9796
+		myLowFresnelExponent 12.8775
+		myLowFresnelScale 0.9959
+		myLowAlphaExponent 0.7115
+		myLowAlphaBase 0.0112
+		myLowReflectionStrength 0.0795
+		myLowReflectedColorScaleAlpha 1.3490
+		myLowWaterSurface_Normal effects/water/calm_water_normal_and_height.tga
+		myWaterSurface_NormalAndHeight effects/water/Water_Normal_And_Height.tga
+		myWaterSurface_NormalMask surfaces/dummy.dds
+		myWaterSurface_Foam effects/water/Water_Foam.tga
+		myWaterSurface_FoamMask <empty>
+		myWaterSurface_WaveFoamScrollingMask surfaces/textures/black.tga
+		myCrestMask <empty>
+		myCrest_Foam1 effects/water/water_foam_1.tga
+		myCrest_Foam2 effects/water/water_foam_2.tga
+		myAroundVessel_Foam effects/water/water_around_foam.tga
+		myAroundVessel_Side effects/water/water_around_side.tga
+		myAroundVessel_BoatShape effects/water/water_around_boat_shape.tga
+		myTrail_Foam effects/water/water_trail_foam.tga
+		myTrail_Noise effects/water/water_trail_noise.tga
+		myWaterMeshFile editordata/wiced/defaultdata/WaterMesh.txt
+	}
+
+	mySunData
+	{
+		myCoinFile <empty>
+		myCoinSizeX 0.0
+		myCoinSizeY 0.0
+		myEarlyFlareSetupList
+		{
+		}
+
+		myPreBloomFlareSetupList
+		{
+		}
+
+		myFlareSetupList
+		{
+		}
+
+	}
+
+	myCloudsData
+	{
+		mySystemList
+		{
+		}
+
+	}
+
+	myCameraEffectObject <empty>
+	myGrassData
+	{
+		myTypes
+		{
+		}
+
+	}
+
+	myCableData
+	{
+		myMaterials
+		{
+		}
+
+		myCables
+		{
+		}
+
+	}
+
+	myMoodSetupFiles
+	{
+	}
+
+	myMoodSetupOverrides
+	{
+	}
+
+	myBloomConfigFile effects/bloom/defaultbloom.ini
+	myBloomSetup defaultbloom
+	myWarFilterFile <empty>
+	myCoverFile <empty>
+	myHighendPostEffectData
+	{
+		myStrength 0.0
+		mySaturation 0.0
+		myLevels
+		{
+			myR 0.0
+			myG 0.0
+			myB 0.0
+		}
+
+		myLevelsLow 0.0
+		myLevelsHigh 0.0
+		myNoise 0.0
+	}
+
+	myLowendPostEffectData
+	{
+		myStrength 0.0
+		mySaturation 0.0
+		myLevels
+		{
+			myR 0.0
+			myG 0.0
+			myB 0.0
+		}
+
+		myLevelsLow 0.0
+		myLevelsHigh 0.0
+		myNoise 0.0
+	}
+
+	myMinimapData
+	{
+		mySurroundMeshSpaceStatic 0.0
+		mySurroundMeshSpaceRotating 0.0
+		myZoomStatic 0.0
+		myZoomRotating 0.0
+		myContrast 0.0
+		myBrightness 0.0
+		myGamma 0.0
+	}
+
+	myStrengthHintsFile <empty>
+	myAnalysisFile <empty>
+	myForestMapFile <empty>
+	myTerrainAnalysisFile <empty>
+	myBuildingAnalysisFile <empty>
+	myCinematicsFile <empty>
+	mySinglePlayerDataFile <empty>
+	myCinematicsDataFile <empty>
+	myLodsDataFile <empty>
+	myToWLineAngleRad 0.0
+	myFaction1HQFile <empty>
+	myFaction2HQFile <empty>
+}
+
+WicedSinglePlayerData mySinglePlayerData
+{
+	mySinglePlayerScriptFiles
+	{
+	}
+
+	mySinglePlayerMissionStats
+	{
+		myGameModeSinglePlayer Domination
+		myInitialApSinglePlayerTeam1 0
+		myInitialApSinglePlayerTeam2 0
+		myMaxApSinglePlayerTeam1 0
+		myMaxApSinglePlayerTeam2 0
+		myGameLengthSinglePlayer 0
+		myMMBFileToPreload <empty>
+		myScriptModelsToPreload
+		{
+		}
+
+		myLoadingBriefing
+		{
+			myLoadingSlides
+			{
+			}
+
+			myVoiceOvers
+			{
+			}
+
+			myLoadingScreenMusic
+			{
+				myAction MUSIC_PLAY
+				mySoundChannel CHANNEL_MUSIC
+				myFadeTime 0.0
+				myRevertState REVERT_TO_SILENCE
+				myNumLoops 0
+				myMusicFile <empty>
+			}
+
+		}
+
+		myPlayers
+		{
+			PLAYER1
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER2
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER3
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER4
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER5
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER6
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER7
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER8
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER9
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER10
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER11
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER12
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER13
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER14
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER15
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER16
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+		}
+
+		myDisallowedUnits
+		{
+		}
+
+		myDisallowedSupportthings
+		{
+		}
+
+		mySinglePlayerDeploymentAreaMask
+		{
+		}
+
+		myPrimaryObjectives
+		{
+		}
+
+		mySecondaryObjectives
+		{
+		}
+
+		myScriptEvents
+		{
+		}
+
+		myTipTexts
+		{
+		}
+
+		myMessageBoxList
+		{
+		}
+
+		mySinglePlayerMusicEvents <empty>
+		myWonText <empty>
+		myLostText <empty>
+		myLocStrings
+		{
+		}
+
+	}
+
+	mySinglePlayerInstanceData
+	{
+		myPropInstances
+		{
+		}
+
+		myAgentInstances
+		{
+		}
+
+		mySpeedTreeInstances
+		{
+		}
+
+		myAreaInstances
+		{
+		}
+
+		myMiscInstances
+		{
+		}
+
+	}
+
+}
+
+WicedCinematicsData myCinematicsData
+{
+	myCinematicsInstanceData
+	{
+		myPropInstances
+		{
+		}
+
+		myAgentInstances
+		{
+		}
+
+		mySpeedTreeInstances
+		{
+		}
+
+		myAreaInstances
+		{
+		}
+
+		myMiscInstances
+		{
+		}
+
+	}
+
+	myCinematicScriptCameraFiles
+	{
+	}
+
+}
+
+LodsData myLodsData
+{
+	myShadowData
+	{
+		myOverrideShadowLodSettings 0.0
+		mySmallObjectSoftPercent 0.0
+		mySmallObjectLod1Percent 0.0
+		mySmallRemoveDistanceScale 0.0
+		mySmallForceCapRendering 0.0
+		myLargeObjectSoftPercent 0.0
+		myLargeObjectLod1Percent 0.0
+		myLargeRemoveDistanceScale 0.0
+		myLargeObjectThreshold 0.0
+		myUseShadowOffset 0.0
+		myUseDistanceFromShadowEdge 0.0
+		myShadowUseVolume 0.0
+		myShadowUseHeight 0.0
+	}
+
+	myAutolodData
+	{
+		myOverrideAutolodSettings 0.0
+		myPropsLargeDetailScale 0.0
+		myPropsLargeWindowScale 0.0
+		myPropsLargeScale 0.0
+		myPropsLargeLod2Percent 0.0
+		myPropsLargeLod3Percent 0.0
+		myPropsLargeLod4Percent 0.0
+		myPropsLargeThreshhold 0.0
+		myAddonPropScale 0.0
+		myPropsMaxLod4Distance 0.0
+		myPropsSmallDetailScale 0.0
+		myPropsSmallWindowScale 0.0
+		myPropsSmallScale 0.0
+		myPropsSmallLod2Percent 0.0
+		myPropsSmallLod3Percent 0.0
+		myPropsSmallLod4Percent 0.0
+		myPropsParticleScale 0.0
+		myPropsWiresScale 0.0
+		myWreckFxScale 0.0
+		myWreckFxParticleScale 0.0
+		myProjectileScale 0.0
+		myProjectileParticleScale 0.0
+		myExplosionScale 0.0
+		myExplosionParticleScale 0.0
+		mySlotRepScale 0.0
+		mySlotRepParticleScale 0.0
+		myUnitDetailScale 0.0
+		myUnitWindowScale 0.0
+		myUnitScale 0.0
+		myUnitLod2Percent 0.0
+		myUnitLod3Percent 0.0
+		myUnitLod4Percent 0.0
+		myUnitParticleScale 0.0
+		myInfantryDetailScale 0.0
+		myInfantryWindowScale 0.0
+		myInfantryScale 0.0
+		myInfantryLod2Percent 0.0
+		myInfantryLod3Percent 0.0
+		myInfantryLod4Percent 0.0
+		myDeathLargeScale 0.0
+		myDeathSmallScale 0.0
+		myDeathLargeThreshold 0.0
+		myDeathParticleScale 0.0
+		myOtherLod2Percent 0.0
+		myOtherLod3Percent 0.0
+		myOtherLod4Percent 0.0
+		mySpeedTreeDistanceScale 0.0
+		myLandscapeScale 0.0
+		myUseRadiusFlag 0.0
+	}
+
+}
+
+CloudsSystemData myCloudSystemPrototype
+{
+	myDisableFlag 0
+	myDistributionType 0
+	myBillboadType 0
+	myCount 190
+	myRandomSeed 0
+	myGroupCountBase 13
+	myGroupCountSpread 3
+	myGroupSpacingBaseRelSize 1
+	myGroupSpacingSpreadRelSize 0.3
+	myCloudsMasksFile effects/clouds/DefaultCloudsMasks.tga
+	myCloudsNoiseFile effects/clouds/DefaultCloudsNoise.tga
+	myStandardSurface surfaces/game/wicclouds.sur
+	myFlatSurface surfaces/game/wicclouds_flat.sur
+	myBacklightBase 1.05
+	myBacklightTopLightScale 0.78
+	myBacklightAlphaInvertBase 1.41
+	myBacklightAlphaInvertScale 1
+	myBacklightAlphaScale 0.41
+	myBacklightExponent 118
+	myBacklightSideFactor 0.5
+	myBacklightColor
+	{
+		myR 264
+		myG 228
+		myB 130
+	}
+
+	myTransparency 0.0
+	myColorLight
+	{
+		myR 150
+		myG 150
+		myB 150
+	}
+
+	myColorDark
+	{
+		myR 122
+		myG 129
+		myB 139
+	}
+
+	myBottomShade 0.47
+	mySideScale 0.1
+	myClusterShade 0.99
+	myFarDist 2300
+	myFarFadeStartRelative 0.9
+	myYBase 200
+	myYSpread 110
+	mySizeBase
+	{
+		x 135
+		z 82
+	}
+
+	mySizeSpread 0.5
+	myWindSpeedScale 2.0
+	mySunOcclusionScale 1
+	mySunOcclusionExponent 3
+}
+
+SunFlareSetup mySunFlareSetupPrototype
+{
+	myFile EFFECTS/HALO/MRB/HALO03/HALO03.MRB
+	myLowLimit -0.215
+	myHighLimit 0.047
+	myMinSizeX 0.064
+	myMinSizeY 0.071
+	myMaxSizeX 2.609
+	myMaxSizeY 2.648
+	myMinAlpha 0.010
+	myMaxAlpha 0.899
+	myGrowSpeed 138.523
+	myDecaySpeed 1362.407
+	myExponent 0.992
+	myDazzleFactor 0.074
+	myShimmerMagnitude 0.343
+	myShimmerSpeed 0.818
+}
+
+Objective myObjectivePrototype
+{
+	myDescription <empty>
+	myLongDescription <empty>
+	myOptionalImage <empty>
+	myDontShowInPOLFlag 0
+	myOnClickPythonClientFunction <empty>
+	myOnClickPythonServerFunction <empty>
+	myVisualisationText <empty>
+}
+
+WicedRoadPreset myRoadPresetPrototype
+{
+	myWicedSpline
+	{
+		myName <empty>
+		myWidth 0.000000
+		mySegmentation 0
+		mySmoothness 0
+		myElasticity 0
+		mySideFlatteningWidth 0
+		mySide1InterpolationLength 0
+		mySide2InterpolationLength 0
+		myHeightModifier 0.0
+		myGenerateMeshFlag TRUE
+		myFlattenHeightMapFlag TRUE
+		myRemoveAutopropsFlag TRUE
+		myRenderToGroundFlag TRUE
+		myLockedRoad <empty>
+		myGroundDetailTextureID 0
+		myGroundDetailTextureIntensity 0.0
+		myMaterialID METAL
+		myTextureFile <empty>
+		mySpecMapFile <empty>
+		myNormalMapFile <empty>
+		myVariationFile <empty>
+		myGlobalBrightnessMask <empty>
+		myGlobalOpacityMask <empty>
+		myIsOverlayFlag FALSE
+		myWayPoints
+		{
+		}
+
+	}
+
+}
+
+WicedRoadIntersectionPreset myIntersectionPresetPrototype
+{
+	myWicedRoadIntersection
+	{
+		myIntersectionMRB <empty>
+		myIsLockedFlag FALSE
+		myRenderToGroundFlag TRUE
+		myInnerGroundAffectRadius 7
+		myOuterGroundAffectRadius 10
+		myTextureFile <empty>
+		mySpecMapFile <empty>
+		myNormalMapFile <empty>
+		myVariationFile <empty>
+		myGroundDetailTextureID 0
+		myRemoveAutopropsFlag TRUE
+		myScaleFactor 1.000000
+	}
+
+}
+

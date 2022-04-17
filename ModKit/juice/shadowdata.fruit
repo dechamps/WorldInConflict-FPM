@@ -1,0 +1,18 @@
+
+CLASS ShadowData
+{
+	DECIMAL myOverrideShadowLodSettings
+	DECIMAL mySmallObjectSoftPercent
+	DECIMAL mySmallObjectLod1Percent
+	DECIMAL mySmallRemoveDistanceScale
+	DECIMAL mySmallForceCapRendering
+	DECIMAL myLargeObjectSoftPercent
+	DECIMAL myLargeObjectLod1Percent
+	DECIMAL myLargeRemoveDistanceScale
+	DECIMAL myLargeObjectThreshold
+	DECIMAL myUseShadowOffset
+	DECIMAL myUseDistanceFromShadowEdge
+	DECIMAL myShadowUseVolume
+	DECIMAL myShadowUseHeight
+}
+

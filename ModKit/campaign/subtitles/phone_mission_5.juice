@@ -1,0 +1,139 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "Hola?\nIsabelita? Cariño?"
+		myStartTime 9.7
+		myVisibleTime 2.4
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Hi daddy!"
+		myStartTime 12.3
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Where are you?"
+		myStartTime 14.5
+		myVisibleTime 1.3
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "I-I'm on a fishing trip in the mountains, sweetie. It's beautiful here."
+		myStartTime 16.0
+		myVisibleTime 3.6
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "Snow everywhere, and the air is so cold you can see your breath."
+		myStartTime 19.9
+		myVisibleTime 3.5
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "I want to see snow too!"
+		myStartTime 23.6
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Soon corazón, soon."
+		myStartTime 25.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "Who is it, Isabel?\nIt's daddy!"
+		myStartTime 27.1
+		myVisibleTime 2.4
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "Daddy?! Can I talk to him, honey?"
+		myStartTime 29.7
+		myVisibleTime 2.1
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "Mom wants to talk to you."
+		myStartTime 32.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "Okay, take care cariño, and I'll see you soon, okay?"
+		myStartTime 33.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "Hugs and kisses daddy!"
+		myStartTime 36.7
+		myVisibleTime 1.9
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText Anton?\nYeah.
+		myStartTime 39.1
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Honey are you...?"
+		myStartTime 40.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "I'm alright and I'm gonna stay alright. "
+		myStartTime 41.8
+		myVisibleTime 1.8
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "So stay at your mom's and I'll come and get you when it's over."
+		myStartTime 44.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "But, when will that be, Anton?\nI don't know..."
+		myStartTime 46.7
+		myVisibleTime 2.6
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "Listen, I have to go. But I'll call you as soon as I can okay? "
+		myStartTime 49.8
+		myVisibleTime 3.0
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "I love you, mi cielo."
+		myStartTime 53.2
+		myVisibleTime 2.5
+	}
+
+}
+

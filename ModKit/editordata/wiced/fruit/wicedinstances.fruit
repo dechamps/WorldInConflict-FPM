@@ -1,0 +1,243 @@
+// wicedinstance.fruit
+// Fruit data for all instance types
+// Created 050426 by Peen
+
+INCLUDE juice/vector3.fruit
+INCLUDE juice/vector2.fruit
+INCLUDE juice/genericmodel.fruit
+
+TYPE WicedPerimeterPointSize
+{
+	SMALL
+	LARGE
+	SP_SIZE1
+	SP_SIZE2
+	SP_SIZE3
+	SP_SIZE4
+}
+
+TYPE WicedNPCType
+{
+	CIVILIAN
+	CRITTER
+}
+
+SCRIPTCLASS WicedNPCWaypointList
+{
+	TEXT
+}
+
+CLASS WicedAddonProp
+{
+	TEXT myPosition
+	TEXT myAddonPropName
+	Vector3 myHPB
+}
+
+SCRIPTCLASS WicedAddonPropList
+{
+	WicedAddonProp
+}
+
+
+
+CLASS WicedPropInstance
+{
+	TEXT myName
+	TEXT myType
+	Vector3 myPosition
+	Vector2 myDirection
+	Vector3 myHPB
+	Vector3 myAmbientColorTintRGB
+	NUMBER myRepBitfield
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+	DECIMAL myHealthLostPercentage		// 0.0 = Unhurt building, 1.0 = destroyed building
+	WicedAddonPropList myAddonPropList
+}
+
+CLASS WicedAgentInstance
+{
+	TEXT myType
+	Vector3 myPosition
+	Vector2 myDirection
+	Vector3 myHPB
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+CLASS WicedCameraInstance
+{
+        Vector3 myPosition
+        Vector2 myRotation
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+CLASS WicedAreaInstance
+{
+        Vector3 myPosition
+        DECIMAL myRadius
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+
+CLASS WicedDropZoneInstance
+{
+	Vector3 myPosition	
+	DECIMAL myRadius
+	TEXT myTeam
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+CLASS WicedAmbientSoundInstance
+{
+	TEXT myType
+	Vector3 myPosition
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+CLASS WicedNPCWaypointInstance
+{
+	Vector3 myPosition
+	DECIMAL myRadius
+	WicedNPCType myNPCType
+	WicedNPCWaypointList myNPCWaypointList	
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag	
+}
+
+CLASS WicedNPCSpawnpointInstance
+{
+	Vector3 myPosition
+	Vector2 myDirection
+	Vector3 myHPB
+	TEXT mySpawnType 	
+	WicedNPCType myNPCType
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+
+CLASS WicedCommandpointInstance
+{
+    Vector3 myPosition
+	LOCTEXT myUiName
+	TEXT myCommandPointType	
+   	FILE myMinimapIconFileTeam1
+   	FILE myMinimapIconFileTeam2
+   	FILE myMinimapIconFileOurs
+   	FILE myMinimapIconFileEnemy
+   	FILE myMinimapIconFileNeutral
+	LOCTEXT myWeCapturedText
+	LOCTEXT myWeLostText
+	LOCTEXT myEnemyCapturedText
+	FILE myTeam1CaptureSound
+	FILE myTeam1LostSound
+	FILE myTeam1EnemyCapturedSound
+	FILE myTeam2CaptureSound
+	FILE myTeam2LostSound
+	FILE myTeam2EnemyCapturedSound
+	FILE myAssaultRound2Team1CaptureSound
+	FILE myAssaultRound2Team1LostSound
+	FILE myAssaultRound2Team1EnemyCapturedSound
+	FILE myAssaultRound2Team2CaptureSound
+	FILE myAssaultRound2Team2LostSound
+	FILE myAssaultRound2Team2EnemyCapturedSound	
+	FILE myDeploymentAreaMask
+	NUMBER myDontAutogenPythonCodeFlag
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+	NUMBER myAssaultCaptureOrder
+	NUMBER myToWCaptureOrder
+}
+
+CLASS WicedPerimeterpointInstance
+{
+	Vector3 myPosition
+	Vector2 myDirection
+        DECIMAL myRadius
+	TEXT myPerimeterPointType
+	TEXT myPerimeterPointTypeMegaMap
+	WicedCommandpointInstance* myParent
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+	WicedPerimeterPointSize myPerimeterPointSize
+	TEXT myFortificationSet
+}
+
+CLASS WicedDefensiveFortificationInstance
+{
+	Vector3 myPosition
+        Vector2 myDirection
+	TEXT mySpawnedAgentType
+	GenericModel myTimerModel
+	GenericModel myDropperModel
+	NUMBER myLevel
+	DECIMAL myInitialDelay
+	DECIMAL myDropDelay
+	WicedPerimeterpointInstance* myParent
+	WicedCommandpointInstance* myGrandParent
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+}
+
+SCRIPTCLASS WicedInstances
+{
+	WicedPropInstance
+	WicedAgentInstance
+	WicedCameraInstance
+	WicedAreaInstance
+	WicedCommandpointInstance
+	WicedPerimeterpointInstance
+	WicedDefensiveFortificationInstance
+	WicedDropZoneInstance
+	WicedAmbientSoundInstance
+	WicedNPCWaypointInstance
+	WicedNPCSpawnpointInstance
+}
+
+SCRIPTCLASS WicedPropInstances
+{
+	WicedPropInstance
+}
+
+SCRIPTCLASS WicedAgentInstances
+{
+	WicedAgentInstance
+}
+
+SCRIPTCLASS WicedSpeedTreeInstances
+{
+	WicedPropInstance
+}
+
+SCRIPTCLASS WicedAreaInstances
+{
+	WicedAreaInstance
+	WicedCommandpointInstance
+	WicedPerimeterpointInstance
+	WicedDefensiveFortificationInstance
+	
+}
+
+SCRIPTCLASS WicedMiscInstances
+{
+	WicedCameraInstance
+	WicedDropZoneInstance
+	WicedAmbientSoundInstance
+	WicedNPCWaypointInstance
+	WicedNPCSpawnpointInstance
+}
+
+CLASS WicedInstanceData
+{
+	WicedPropInstances myPropInstances
+	WicedAgentInstances myAgentInstances
+	WicedSpeedTreeInstances mySpeedTreeInstances
+	WicedAreaInstances myAreaInstances
+	WicedMiscInstances myMiscInstances
+}

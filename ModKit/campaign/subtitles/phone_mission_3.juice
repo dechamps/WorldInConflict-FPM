@@ -1,0 +1,125 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText Yeah?
+		myStartTime 7.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Yeah?\nHey Earl..."
+		myStartTime 8.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Mark? It's about god damn time that you called. \nYour mother is worried sick, did you know that? "
+		myStartTime 10.0
+		myVisibleTime 4.5
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "I thought we agreed that you'd call at least once a week!"
+		myStartTime 14.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "I'm sorry. But you might have noticed there's an invasion going on and-"
+		myStartTime 18.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "Yeah. And you guys turned tail and ran. \nAnd that's what we get with a bunch of spoiled brats defending our country."
+		myStartTime 21.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "We didn't have any choice! You know how many men we lost?! We-"
+		myStartTime 27.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "In my day, we wouldn't have let those commie bastards come ashore in the first place! "
+		myStartTime 29.6
+		myVisibleTime 4.8
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "We would've fought them to the last man. With bayonets if we had to."
+		myStartTime 34.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "Yeah?! I don't remember you winning any wars!"
+		myStartTime 38.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "We won the battles, son."
+		myStartTime 41.5
+		myVisibleTime 2.5
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "And if your father were alive he'd cry to see what you've become!"
+		myStartTime 44.7
+		myVisibleTime 3.6
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "First that business in Europe and now you can't even hold your ground \nwhen the commies are in your own damn backyard?"
+		myStartTime 48.7
+		myVisibleTime 7.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "You're a god damn sissy... Mark."
+		myStartTime 56.8
+		myVisibleTime 4.1
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "Yeah I'll tell your mother you called..."
+		myStartTime 61.5
+		myVisibleTime 2.3
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText Earl!
+		myStartTime 64.2
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText Earl!\nDammit!
+		myStartTime 65.8
+		myVisibleTime 1.8
+	}
+
+}
+

@@ -1,0 +1,270 @@
+INCLUDE juice/wic_state.fruit
+
+AnimationTable AnimationTable
+{
+	myAnimations_STAND
+	{
+		AnimationStateMapping Idle
+		{
+			myAction NO_ACTION
+			myMovingAnimation WALK
+			myNotMovingAnimation STND
+		}
+
+		AnimationStateMapping Fire
+		{
+			myAction FIRE
+			myMovingAnimation WLFR
+			myNotMovingAnimation STFR
+		}
+
+		AnimationStateMapping Cower
+		{
+			myAction COWER
+			myMovingAnimation RNCW
+			myNotMovingAnimation STCW
+		}
+
+		AnimationStateMapping Wave
+		{
+			myAction WAVE
+			myMovingAnimation WLFR
+			myNotMovingAnimation STFR
+		}
+
+		AnimationStateMapping SecondaryFire
+		{
+			myAction SECONDARY_FIRE
+			myMovingAnimation WLF2
+			myNotMovingAnimation SEF1
+		}
+
+		AnimationStateMapping SpecialAbilityFire
+		{
+			myAction SPECIAL_ABILITY_FIRE
+			myMovingAnimation WLFR
+			myNotMovingAnimation SSAO
+		}
+
+		AnimationStateMapping TurnRight
+		{
+			myAction TURN_RIGHT
+			myMovingAnimation TRNR
+			myNotMovingAnimation TRNR
+		}
+
+		AnimationStateMapping TurnLeft
+		{
+			myAction TURN_LEFT
+			myMovingAnimation TRNL
+			myNotMovingAnimation TRNL
+		}
+
+		AnimationStateMapping Accelerate
+		{
+			myAction ACCELERATE
+			myMovingAnimation WSAD
+			myNotMovingAnimation STND
+		}
+
+		AnimationStateMapping Decelerate
+		{
+			myAction DECELERATE
+			myMovingAnimation WLTS
+			myNotMovingAnimation WLTS
+		}
+
+		AnimationStateMapping Repel
+		{
+			myAction REPEL
+			myMovingAnimation UNLD
+			myNotMovingAnimation UNLD
+		}
+
+		AnimationStateMapping Transion_WALKSTANDWALK
+		{
+			myAction NO_ACTION_SMOOTH
+			myMovingAnimation STTW
+			myNotMovingAnimation STND
+		}
+
+	}
+
+	myAnimations_CROUCH
+	{
+		AnimationStateMapping Idle
+		{
+			myAction NO_ACTION
+			myMovingAnimation WLCR
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping Fire
+		{
+			myAction FIRE
+			myMovingAnimation WCFR
+			myNotMovingAnimation CRFR
+		}
+
+		AnimationStateMapping Cower
+		{
+			myAction COWER
+			myMovingAnimation RNCW
+			myNotMovingAnimation CRCW
+		}
+
+		AnimationStateMapping Wave
+		{
+			myAction WAVE
+			myMovingAnimation WALK
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping AnimationStateMapping(0)
+		{
+			myAction SECONDARY_FIRE
+			myMovingAnimation WLF2
+			myNotMovingAnimation SEF1
+		}
+
+		AnimationStateMapping AnimationStateMapping(1)
+		{
+			myAction SPECIAL_ABILITY_FIRE
+			myMovingAnimation WLF2
+			myNotMovingAnimation SEF1
+		}
+
+		AnimationStateMapping TurnRight
+		{
+			myAction TURN_RIGHT
+			myMovingAnimation WLCR
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping TurnLeft
+		{
+			myAction TURN_LEFT
+			myMovingAnimation WLCR
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping Accelerate
+		{
+			myAction ACCELERATE
+			myMovingAnimation WLCR
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping Decelerate
+		{
+			myAction DECELERATE
+			myMovingAnimation WLCR
+			myNotMovingAnimation CRCH
+		}
+
+		AnimationStateMapping Repel
+		{
+			myAction REPEL
+			myMovingAnimation UNLD
+			myNotMovingAnimation UNLD
+		}
+
+		AnimationStateMapping SpecialAbilityFire
+		{
+			myAction SPECIAL_ABILITY_FIRE
+			myMovingAnimation WLFR
+			myNotMovingAnimation CSAO
+		}
+
+	}
+
+	myAnimations_PRONE
+	{
+		AnimationStateMapping Idle
+		{
+			myAction NO_ACTION
+			myMovingAnimation WALK
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping Fire
+		{
+			myAction FIRE
+			myMovingAnimation PRFR
+			myNotMovingAnimation PRFR
+		}
+
+		AnimationStateMapping Cower
+		{
+			myAction COWER
+			myMovingAnimation RNCW
+			myNotMovingAnimation PRCW
+		}
+
+		AnimationStateMapping Wave
+		{
+			myAction WAVE
+			myMovingAnimation WALK
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping AnimationStateMapping(0)
+		{
+			myAction SECONDARY_FIRE
+			myMovingAnimation WLF2
+			myNotMovingAnimation SEF1
+		}
+
+		AnimationStateMapping AnimationStateMapping(1)
+		{
+			myAction SPECIAL_ABILITY_FIRE
+			myMovingAnimation WLF2
+			myNotMovingAnimation SEF1
+		}
+
+		AnimationStateMapping TurnRight
+		{
+			myAction TURN_RIGHT
+			myMovingAnimation WALK
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping TurnLeft
+		{
+			myAction TURN_LEFT
+			myMovingAnimation WALK
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping Accelerate
+		{
+			myAction ACCELERATE
+			myMovingAnimation WSAD
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping Decelerate
+		{
+			myAction DECELERATE
+			myMovingAnimation WALK
+			myNotMovingAnimation PRON
+		}
+
+		AnimationStateMapping Repel
+		{
+			myAction REPEL
+			myMovingAnimation UNLD
+			myNotMovingAnimation UNLD
+		}
+
+		AnimationStateMapping SpecialAbilityFire
+		{
+			myAction SPECIAL_ABILITY_FIRE
+			myMovingAnimation WLFR
+			myNotMovingAnimation PSAO
+		}
+
+	}
+
+}
+

@@ -1,0 +1,86 @@
+INCLUDE editordata/wicmap.fruit
+INCLUDE editordata/wiced/fruit/wicedmetadata.fruit
+INCLUDE juice/waterdata.fruit
+INCLUDE juice/cloudsdata.fruit
+INCLUDE juice/sundata.fruit
+INCLUDE juice/posteffectdata.fruit
+
+CLASS WicedEnvironmentTemplate
+{
+	TEXT myTemplateName
+	FILE myTemplateThumbnailImage
+	WicedEnvData myEnvironment
+	WaterData myWaterData
+	SunData mySunData
+	CloudsData myCloudsData
+	FILE myBloomConfigFile
+	TEXT myBloomSetup
+	MoodFiles myMoodSetupFiles
+	TEXT myMoodSetup
+	WicedSunSettings mySunSettings // affects texture generation only
+	TEXT mySunFlareTemplate           // textual reference to a preset sun flare template, if <Custom> mySunData contains the sunflare to use
+	TEXT myWaterTemplate            // textual reference to a preset water template, if <Custom> myWaterData contains the water to use 
+	TEXT myCloudsTemplate		// textual reference to a preset clouds template, if <Custom> myCloudsData contains the water to use 	
+	FILE myCameraEffectObject
+	PostEffectData myHighendPostEffectData
+	PostEffectData myLowendPostEffectData
+	
+}
+
+CLASS WicedGroundTemplate
+{
+	TEXT myTemplateName
+	FILE myTemplateThumbnailImage
+	WicedTextureLayers myLayers
+	WicedBaseDetailTextures myBaseDetailTextures
+	TEXT myAutoPropSetName
+	WicedAutoPropTypes myAutoPropTypeList
+	WicedTerrainGenerationStack myWicedTerrainGenerationStack
+	WicedMassGrassTypes myMassGrassTypes
+	DECIMAL myDetailTexture1TileFactor	// tile factor for det1.r, det1.g, det1.b (1.0 = as now, 2.0 = tile more, 0.5 = tile less)
+	DECIMAL myDetailTexture2TileFactor	// tile factor for det2.r, det2.g
+	DECIMAL myDetailTexture3TileFactorX	// tile factor for det3.r
+	DECIMAL myDetailTexture3TileFactorY	// tile factor for det3.g
+	DECIMAL myDetailTexture3TileFactorZ	// tile factor for det3.b
+	DECIMAL myDetailTexture3TileFactorW	// tile factor for det3.a
+	NUMBER myHighendDetail3MappingX		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingY		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingZ		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	NUMBER myHighendDetail3MappingW		// 0=Ymapping, 1=Xmapping, 2=Zmapping
+	
+}
+
+CLASS WicedRoadPreset
+{
+	WicedSpline myWicedSpline
+}
+
+CLASS WicedRoadIntersectionPreset
+{
+	WicedRoadIntersection myWicedRoadIntersection
+}
+
+CLASS WicedTerrainGenerationPreset
+{
+	WicedTerrainGenerationStack myWicedTerrainGenerationStack
+}
+
+
+CLASS WicedSunFlarePreset
+{
+	FILE myTemplateThumbnailImage
+	SunData mySunData
+}
+
+CLASS WicedWaterPreset
+{
+	FILE myTemplateThumbnailImage
+	WaterData myWaterData
+}
+
+CLASS WicedCloudPreset
+{
+	FILE myTemplateThumbnailImage
+	CloudsData myCloudsData
+}
+

@@ -1,0 +1,104 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "No listen, you don't understand.\nI still have unfinished business in France."
+		myStartTime 1.0
+		myVisibleTime 4.3
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Sir, others can wrap that up. \nWe need you elsewhere, and we need you there now."
+		myStartTime 5.4
+		myVisibleTime 4.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Where? Germany? I thought we were..."
+		myStartTime 9.5
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Not Germany, colonel. We want you to go to Russia."
+		myStartTime 11.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "Russia? Now we're invading them?"
+		myStartTime 14.5
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "Not an invasion sir, reconnaissance."
+		myStartTime 17.1
+		myVisibleTime 2.3
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "We're sending you to Norway where you'll take command of Task Force Raven. "
+		myStartTime 19.7
+		myVisibleTime 3.3
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "Your mission is to infiltrate the Soviet border and retrieve intelligence from a downed aircraft. "
+		myStartTime 23.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "What about my men?"
+		myStartTime 27.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "You'll bring your officers with you and liaison with the Norwegian Rangers when you arrive."
+		myStartTime 28.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "I have some doubts about one of my captains."
+		myStartTime 33.1
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "There are no replacements to be had colonel. \nWe're losing officers every day just holding the Russians at bay in Germany."
+		myStartTime 35.9
+		myVisibleTime 5.3
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Alright. I'll make do. When do we leave?"
+		myStartTime 41.5
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "We're arranging a flight now. \nGodspeed, colonel."
+		myStartTime 44.7
+		myVisibleTime 3.0
+	}
+
+}
+

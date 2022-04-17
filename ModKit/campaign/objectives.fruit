@@ -1,0 +1,24 @@
+
+INCLUDE juice/vector3.fruit
+
+CLASS Objective
+{
+	LOCTEXT	myDescription
+	LOCTEXT	myLongDescription
+	FILE myOptionalImage // if exists, used instead of camera in objective browser
+	NUMBER myDontShowInPOLFlag
+	TEXT myOnClickPythonClientFunction
+	TEXT myOnClickPythonServerFunction
+
+	LOCTEXT myVisualisationText
+}
+
+SCRIPTCLASS PrimaryObjectives
+{
+	Objective
+}
+
+SCRIPTCLASS SecondaryObjectives
+{
+	Objective
+}

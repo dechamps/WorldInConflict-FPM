@@ -1,0 +1,9 @@
+TYPE AgentType
+{
+	Infantry_Agent
+	Tank_Agent
+	Air_Agent
+	Vehicle_Agent
+	Building_Agent
+	GenericAgent
+}

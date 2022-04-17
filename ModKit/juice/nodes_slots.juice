@@ -1,0 +1,113 @@
+INCLUDE juice/nodes_slots.fruit
+
+SlotRepGroups myGroups
+{
+	SlotRepGroup TestGrp1
+	{
+		SlotRep Test1
+		{
+			myMRB props/house/ustown_2/suburbs/suburbia_house_01/slot_placer/suburbia_house_01_slot.mrb
+		}
+
+		SlotRep Test2
+		{
+			myMRB props/house/ustown_2/suburbs/suburbia_house_01/slot_placer/suburbia_house_01_slot.mrb
+		}
+
+	}
+
+	SlotRepGroup Generic_Insides
+	{
+		SlotRep Generic_Inside_01
+		{
+			myMRB props/house_slot_insides/generic_inside_01/generic_inside_01.mrb
+		}
+
+		SlotRep Generic_Inside_02
+		{
+			myMRB props/house_slot_insides/generic_inside_02/generic_inside_02.mrb
+		}
+
+		SlotRep Generic_Inside_03
+		{
+			myMRB props/house_slot_insides/generic_inside_03/generic_inside_03.mrb
+		}
+
+		SlotRep Generic_Inside_04
+		{
+			myMRB props/house_slot_insides/generic_inside_04/generic_inside_04_open.mrb
+		}
+
+		SlotRep Generic_Inside_05
+		{
+			myMRB props/house_slot_insides/generic_inside_05/generic_inside_05_open.mrb
+		}
+
+		SlotRep Generic_Inside_06
+		{
+			myMRB props/house_slot_insides/generic_inside_06/generic_inside_06_open.mrb
+		}
+
+		SlotRep Generic_Inside_07
+		{
+			myMRB props/house_slot_insides/generic_inside_07/generic_inside_07.mrb
+		}
+
+		SlotRep Generic_Inside_08
+		{
+			myMRB props/house_slot_insides/generic_inside_08/generic_inside_08.mrb
+		}
+
+		SlotRep Generic_Inside_09
+		{
+			myMRB props/house_slot_insides/generic_inside_09/generic_inside_09.mrb
+		}
+
+		SlotRep Generic_Inside_10
+		{
+			myMRB props/house_slot_insides/generic_inside_10/generic_inside_10.mrb
+		}
+
+		SlotRep Generic_Inside_11(Wide)
+		{
+			myMRB props/house_slot_insides/generic_inside_11(wide)/generic_inside_11.mrb
+		}
+
+		SlotRep ExploWall_01
+		{
+			myMRB props/house_slot_insides/explowall_01/explowall_01.mrb
+		}
+
+		SlotRep ExploWall_02
+		{
+			myMRB props/house_slot_insides/explowall_02/explowall_02.mrb
+		}
+
+		SlotRep ExploWall_Wood_01
+		{
+			myMRB props/house_slot_insides/explowall_wood_01/explowall_wood_01.mrb
+		}
+
+		SlotRep ExploWall_Wood_02
+		{
+			myMRB props/house_slot_insides/explowall_wood_02/explowall_wood_02.mrb
+		}
+
+	}
+
+	SlotRepGroup NodeCover
+	{
+		SlotRep NodeCover_01
+		{
+			myMRB props/house_slot_insides/nodecover_01/nodecover_01.mrb
+		}
+
+		SlotRep NodeCover_02
+		{
+			myMRB props/house_slot_insides/nodecover_02/nodecover_02.mrb
+		}
+
+	}
+
+}
+

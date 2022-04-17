@@ -1,0 +1,16 @@
+INCLUDE juice/Vector3.fruit
+
+CLASS OneLinkTurret
+{
+	TEXT myChildName
+	Vector3 myFiringOffset
+}
+
+CLASS TwoLinkTurret
+{
+	TEXT myChildName
+	TEXT mySecondLinkName
+	Vector3 mySecondLinkOffset
+	Vector3 myFiringOffset
+
+}

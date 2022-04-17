@@ -1,0 +1,18 @@
+INCLUDE editordata/wiced/fruit/wicedtemplates.fruit
+
+WicedRoadIntersectionPreset myTemplate
+{
+	myWicedRoadIntersection
+	{
+		myIntersectionMRB editordata\presets\intersection\3Lane_Crossing\3lane_Crossing.mrb
+
+		myIsLockedFlag FALSE
+		myRenderToGroundFlag TRUE
+	
+		myInnerGroundAffectRadius 7
+		myOuterGroundAffectRadius 10
+		
+		myScaleFactor 1
+	}
+}
+

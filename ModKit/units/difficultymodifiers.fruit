@@ -1,0 +1,14 @@
+// Multiplayer only
+
+SCRIPTCLASS DifficultyDecimalList
+{
+	DECIMAL
+}
+
+CLASS DifficultyModifier
+{
+	DifficultyDecimalList myMultiPlayerBotTAGainRate
+	DifficultyDecimalList myMultiPlayerBotAPGainRate
+	DifficultyDecimalList myMultiPlayerBotXPGainRate
+	DifficultyDecimalList myMultiPlayerBotXPStartValue
+}

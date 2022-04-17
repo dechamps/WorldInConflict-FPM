@@ -1,0 +1,38 @@
+INCLUDE juicemaker.fruit
+
+TEXT DebugFile JuiceMaker.debug
+
+BrowseFilterSet myBrowseFilters
+{
+	BrowseFilter UnitReps
+	{
+		myTypeName UnitType::Rep
+		myMemberName myModelName
+		myExtension mrb
+	}
+
+	BrowseFilter UnitShadows
+	{
+		myTypeName UnitType::Rep
+		myMemberName myShadowFile
+		myExtension sdw
+	}
+
+	BrowseFilter UnitTracks
+	{
+		myTypeName UnitType::Rep
+		myMemberName myTracksTexture
+		myExtension tga
+	}
+
+}
+
+//CUSTOM EDITOR CONFIGS
+//SHOULD BE NAMED AFTER THE TYPE THAT INVOKES THE EDITOR
+//Exodus Agent editor (invoked for Agent)
+EXJE_AgentEditor Agent
+{
+	mySkinFile guis/guiskins.ice
+	mySkin skinOne
+	myBackgroundPrefab ToolTip
+}

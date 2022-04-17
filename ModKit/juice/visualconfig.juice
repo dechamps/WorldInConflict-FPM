@@ -1,0 +1,480 @@
+INCLUDE juice/visualconfig.fruit
+
+UnitMarker mySelfUnitMarkerSize
+{
+	mySmallSize 5
+	myBigSize 1.3
+}
+
+UnitMarker myFriendlyUnitMarkerSize
+{
+	mySmallSize 2.2
+	myBigSize 1.3
+}
+
+UnitMarker myEnemyUnitMarkerSize
+{
+	mySmallSize 2.2
+	myBigSize 1.3
+}
+
+PlayerColorStyle mySelfPlayerColors
+{
+	myDiscreteColor
+	{
+		myR 161
+		myG 167
+		myB 79
+		myA 192
+	}
+
+	myStandardColor
+	{
+		myR 161
+		myG 167
+		myB 79
+		myA 224
+	}
+
+	myHighlightColor
+	{
+		myR 161
+		myG 167
+		myB 79
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myFriendlyPlayerColors
+{
+	myDiscreteColor
+	{
+		myR 0
+		myG 100
+		myB 255
+		myA 192
+	}
+
+	myStandardColor
+	{
+		myR 0.0
+		myG 100
+		myB 255
+		myA 224
+	}
+
+	myHighlightColor
+	{
+		myR 0.0
+		myG 100
+		myB 255
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myEnemyPlayerColors
+{
+	myDiscreteColor
+	{
+		myR 220
+		myG 0.0
+		myB 0.0
+		myA 192
+	}
+
+	myStandardColor
+	{
+		myR 220
+		myG 0.0
+		myB 0.0
+		myA 224
+	}
+
+	myHighlightColor
+	{
+		myR 220
+		myG 0.0
+		myB 0.0
+		myA 255
+	}
+
+}
+
+PlayerColorStyle mySecondEnemyPlayerColors
+{
+	myDiscreteColor
+	{
+		myR 0
+		myG 100
+		myB 255
+		myA 192
+	}
+
+	myStandardColor
+	{
+		myR 0.0
+		myG 100
+		myB 255
+		myA 224
+	}
+
+	myHighlightColor
+	{
+		myR 0.0
+		myG 100
+		myB 255
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myNeutralPlayerColors
+{
+	myDiscreteColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 192
+	}
+
+	myStandardColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 224
+	}
+
+	myHighlightColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 255
+	}
+
+}
+
+XColorRGBA myFriendlyCommandPointColor
+{
+	myR 60
+	myG 170
+	myB 20
+	myA 255
+}
+
+XColorRGBA myEnemyCommandPointColor
+{
+	myR 220
+	myG 0
+	myB 0
+	myA 255
+}
+
+XColorRGBA mySecondEnemyCommandPointColor
+{
+	myR 0
+	myG 100
+	myB 255
+	myA 255
+}
+
+XColorRGBA myNeutralCommandPointColor
+{
+	myR 255
+	myG 255
+	myB 255
+	myA 255
+}
+
+PlayerColorStyle myCustomColors0
+{
+	myDiscreteColor
+	{
+		myR 255
+		myG 215
+		myB 141
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 255
+		myG 215
+		myB 141
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 255
+		myG 215
+		myB 141
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors1
+{
+	myDiscreteColor
+	{
+		myR 55
+		myG 237
+		myB 55
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 55
+		myG 237
+		myB 55
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 55
+		myG 237
+		myB 55
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors2
+{
+	myDiscreteColor
+	{
+		myR 155
+		myG 202
+		myB 255
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 155
+		myG 202
+		myB 255
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 155
+		myG 202
+		myB 255
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors3
+{
+	myDiscreteColor
+	{
+		myR 255
+		myG 255
+		myB 0
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 255
+		myG 255
+		myB 0
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 255
+		myG 255
+		myB 0
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors4
+{
+	myDiscreteColor
+	{
+		myR 192
+		myG 0
+		myB 255
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 192
+		myG 0
+		myB 255
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 192
+		myG 0
+		myB 255
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors5
+{
+	myDiscreteColor
+	{
+		myR 45
+		myG 235
+		myB 235
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 45
+		myG 235
+		myB 235
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 45
+		myG 235
+		myB 235
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors6
+{
+	myDiscreteColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 255
+		myG 255
+		myB 255
+		myA 255
+	}
+
+}
+
+PlayerColorStyle myCustomColors7
+{
+	myDiscreteColor
+	{
+		myR 255
+		myG 128
+		myB 181
+		myA 255
+	}
+
+	myStandardColor
+	{
+		myR 255
+		myG 128
+		myB 181
+		myA 255
+	}
+
+	myHighlightColor
+	{
+		myR 255
+		myG 128
+		myB 181
+		myA 255
+	}
+
+}
+
+XColorRGBA myHighlightedUnitMinimapColor
+{
+	myR 255
+	myG 255
+	myB 0
+	myA 255
+}
+
+XColorRGBA myProjectileMinimapColor
+{
+	myR 255
+	myG 119
+	myB 0
+	myA 255
+}
+
+XColorRGBA myAttackedUnitMinimapColor
+{
+	myR 0
+	myG 0
+	myB 0
+	myA 255
+}
+
+XColorRGBA myHealthAbove75Color
+{
+	myR 0
+	myG 255
+	myB 0
+	myA 255
+}
+
+XColorRGBA myHealthAbove50Color
+{
+	myR 255
+	myG 255
+	myB 0
+	myA 255
+}
+
+XColorRGBA myHealthAbove25Color
+{
+	myR 255
+	myG 153
+	myB 0
+	myA 255
+}
+
+XColorRGBA myHealthBelow25Color
+{
+	myR 255
+	myG 0
+	myB 0
+	myA 255
+}
+
+XColorRGBA myVOIPColor
+{
+	myR 0
+	myG 255
+	myB 0
+	myA 255
+}
+

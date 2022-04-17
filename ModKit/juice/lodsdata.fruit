@@ -1,0 +1,8 @@
+INCLUDE juice/shadowdata.fruit
+INCLUDE juice/autoloddata.fruit
+
+CLASS LodsData
+{
+	ShadowData myShadowData
+	AutolodData myAutolodData
+}

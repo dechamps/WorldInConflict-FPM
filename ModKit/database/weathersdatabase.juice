@@ -1,0 +1,55 @@
+INCLUDE xed/exodus_map_export.fruit
+
+Weathers myWeathers
+{
+	WeatherEffect Desert_Day
+	{
+		myFogBorderMRB <empty>
+		myCloudMRB <empty>
+		myCameraEffectMRB <empty>
+		myWorldSpawnMRB <empty>
+		myAmbientSound sound/ingame/ambient/amb_default_cloud_01.mp3
+		myMinimumWorldSpawnTime 0.0
+		myMaximumWorldSpawnTime 0.0
+		myWorldSpawnLiveTime 0.0
+		myFadeInTime 10
+		myFadeOutTime 10
+		myAmbientColorModifier
+		{
+			myX 1.0
+			myY 1.0
+			myZ 1.0
+		}
+
+		mySunColorModifier
+		{
+			myX 1.0
+			myY 1.0
+			myZ 1.0
+		}
+
+		myFogColorModifier
+		{
+			myX 1.0
+			myY 1.0
+			myZ 1.0
+		}
+
+		myFogFactor 0.5
+		myShadowFactor 0.5
+		myHaloFactor 1.0
+		myWindFactor 1.0
+		myWindSpeed 1
+		myViewRangeFactor 0.0
+		myWeaponRangeFactor 0.0
+		myPostFXBloomColor
+		{
+			myR 120
+			myG 120
+			myB 120
+		}
+
+	}
+
+}
+

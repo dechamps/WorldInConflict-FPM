@@ -1,0 +1,9 @@
+SCRIPTCLASS TextType
+{
+	LOCTEXT
+}
+
+SCRIPTCLASS MassgateText
+{
+	TextType
+}

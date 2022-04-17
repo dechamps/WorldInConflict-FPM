@@ -1,0 +1,56 @@
+INCLUDE benchmark/benchmarkfiles.fruit
+
+BenchmarkFiles DefaultBenchmarks
+{
+	myBenchmarks
+	{
+		BenchmarkTest BenchmarkTest(0)
+		{
+			myDemoFile benchmark/benchmark.wicdemo
+			myCameraFile benchmark/benchmark.campath
+		}
+
+		BenchmarkTest BenchmarkTest(1)
+		{
+			myDemoFile benchmark/bench_1.wicdemo
+			myCameraFile benchmark/bench_1.campath
+		}
+
+		BenchmarkTest DummyForCampath2
+		{
+			myDemoFile <empty>
+			myCameraFile benchmark/bench_2.campath
+		}
+
+		BenchmarkTest DummyForCampath3
+		{
+			myDemoFile <empty>
+			myCameraFile benchmark/bench_3.campath
+		}
+
+		BenchmarkTest DummyForCampath4
+		{
+			myDemoFile <empty>
+			myCameraFile benchmark/bench_4.campath
+		}
+
+		BenchmarkTest DummyForCampath5
+		{
+			myDemoFile <empty>
+			myCameraFile benchmark/bench_5.campath
+		}
+
+		BenchmarkTest DummyForCampath6
+		{
+			myDemoFile <empty>
+			myCameraFile benchmark/bench_6.campath
+		}
+
+	}
+
+	myLoadPicture benchmark/loading.dds
+	myFpsScale 100
+	myDrawcallsScale 3000
+	myParticlesScale 20000
+	myPhysicsScale 800
+}

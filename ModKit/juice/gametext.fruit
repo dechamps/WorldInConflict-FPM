@@ -1,0 +1,15 @@
+INCLUDE juice/gui/gui_defs.fruit
+
+
+SCRIPTCLASS TextType
+{
+	LOCTEXT
+	InformationBoxType
+	PopupBoxType
+	HelpBoxType
+}
+
+SCRIPTCLASS GameText
+{
+	TextType
+}

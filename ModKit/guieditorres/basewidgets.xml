@@ -1,0 +1,400 @@
+<GuiFile version="1">
+	<Items>
+		<Item name="Plate">
+			<Property type="STRING" name="Type" value="Plate" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="Button">
+			<Property type="STRING" name="Type" value="Button" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="BOOL" name="myHandleEscapeFlag" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myUpPrefab" value="Prefabs¤Standardbutton_up" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myInsidePrefab" value="Prefabs¤Standardbutton_over" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownPrefab" value="Prefabs¤Standardbutton_down" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myTargetGui" value="MG_NOTAGUI"/>
+			<Property type="BOOL" name="myCloseGuiOnClickFlag" value="0"/>
+			<Property type="LOCSTRING" name="myText" value=""/>
+			<Property type="ENUM" name="myHAlign" value="Center" enumtype="HAlign"/>
+			<Property type="ENUM" name="myVAlign" value="Center" enumtype="VAlign"/>
+			<Property type="INT" name="myTextOffset" value="10" />
+			<Property type="INT" name="myTextOffsetY" value="0" />
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="CheckBox">
+			<Property type="STRING" name="Type" value="CheckBox" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="LOCSTRING" name="myText" value=""/>
+			<Property type="STRING" name="myCheckedPrefab" value="Prefabs¤Checkbox_on" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUncheckedPrefab" value="Prefabs¤Checkbox_off" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="BOOL" name="myCheckedFlag" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="TextLabel">
+			<Property type="STRING" name="Type" value="TextLabel" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="LOCSTRING" name="myText" value=""/>
+			<Property type="ENUM" name="myHAlign" value="Left" enumtype="HAlign"/>
+			<Property type="ENUM" name="myVAlign" value="Top" enumtype="VAlign"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="TextInput">
+			<Property type="STRING" name="Type" value="TextInput" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="INT" name="myMaxLength" value="0"/>
+			<Property type="BOOL" name="myIsNumericFlag" value="0"/>
+			<Property type="BOOL" name="myPositiveNumbersOnlyFlag" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="TextList">
+			<Property type="STRING" name="Type" value="TextList" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="INT" name="myScrollBarWidth" value="250"/>
+			<Property type="STRING" name="mySelectionPrefab" value="Prefabs¤Combobox_SELECTED" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonUpPrefab" value="Prefabs¤UnselScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonInsidePrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonDownPrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonUpPrefab" value="Prefabs¤UnselScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonInsidePrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonDownPrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarUpPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarInsidePrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarDownPrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarBackgroundPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="STRING" name="myMouseOverPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="INT" name="myScrollUnitsPerSecond" value="2"/>
+			<Property type="STRING" name="mySelectionHighlightPrefab" value="" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="BOOL" name="myIsNumericFlag" value="0"/>
+			<Property type="BOOL" name="myPositiveNumbersOnlyFlag" value="0"/>
+			<Property type="INT" name="myMaxLength" value="2048"/>
+			<Property type="BOOL" name="myIsEditableFlag" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="OptionList">
+			<Property type="STRING" name="Type" value="OptionList" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myCheckedPrefab" value="Prefabs¤Checkbox_on" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUncheckedPrefab" value="Prefabs¤Checkbox_off" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myScrollBarWidth" value="250"/>
+			<Property type="STRING" name="mySelectionPrefab" value="Prefabs¤Combobox_SELECTED" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonUpPrefab" value="Prefabs¤UnselScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonInsidePrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonDownPrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonUpPrefab" value="Prefabs¤UnselScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonInsidePrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonDownPrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarUpPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarInsidePrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarDownPrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarBackgroundPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />		
+			<Property type="INT" name="myScrollUnitsPerSecond" value="2"/>
+			<Property type="STRING" name="myButtonUpPrefab" value="Prefabs¤Combobox" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myButtonInsidePrefab" value="Prefabs¤Combobox_inside" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myButtonDownPrefab" value="Prefabs¤Combobox_dwn" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myListHeight" value="1500"/>
+			<Property type="FLOAT" name="myCheckBoxWidth" value="500.0"/>
+			<Property type="FLOAT" name="myCheckBoxHeight" value="500.0"/>
+			<Property type="FLOAT" name="myItemWidth" value="2500.0"/>
+			<Property type="FLOAT" name="myItemHeight" value="500.0"/>
+			<Property type="FLOAT" name="myItemSpacing" value="50.0"/>
+			<Property type="STRING" name="myComboPrefab" value="Prefabs¤Combobox_BG" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="mySelectionHighlightPrefab" value="" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="STRING" name="myMouseOverPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>	
+		</Item>
+		<Item name="ComboBox">
+			<Property type="STRING" name="Type" value="ComboBox" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="INT" name="myMaxLength" value="0"/>
+			<Property type="BOOL" name="myIsNumericFlag" value="0"/>
+			<Property type="BOOL" name="myPositiveNumbersOnlyFlag" value="0"/>
+			<Property type="INT" name="myScrollBarWidth" value="250"/>
+			<Property type="STRING" name="mySelectionPrefab" value="Prefabs¤Combobox_SELECTED" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonUpPrefab" value="Prefabs¤UnselScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonInsidePrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonDownPrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonUpPrefab" value="Prefabs¤UnselScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonInsidePrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonDownPrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarUpPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarInsidePrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarDownPrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarBackgroundPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="STRING" name="myMouseOverPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="INT" name="myScrollUnitsPerSecond" value="2"/>
+			<Property type="STRING" name="myButtonUpPrefab" value="Prefabs¤Combobox" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myButtonInsidePrefab" value="Prefabs¤Combobox_inside" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myButtonDownPrefab" value="Prefabs¤Combobox_dwn" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myListHeight" value="1500"/>
+			<Property type="ENUM" name="myStyle" value="DropList" enumtype="ComboBoxStyle"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="ProgressBar">
+			<Property type="STRING" name="Type" value="ProgressBar" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myBarPrefab" value="Prefabs¤SelButtonRound" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="BOOL" name="myIsPieChartFlag" value="0"/>
+			<Property type="FILE" name="myPieSliceImage" value=""/>
+			<Property type="UINT" name="myPieStartColor" value="0xffffffff"/>
+			<Property type="UINT" name="myPieEndColor" value="0xffffffff"/>
+			<Property type="BOOL" name="myPieGradientFlag" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="MultiColumnTextList">
+			<Property type="STRING" name="Type" value="MultiColumnTextList" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="INT" name="myScrollBarWidth" value="250"/>
+			<Property type="STRING" name="mySelectionPrefab" value="Prefabs¤Combobox_SELECTED" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonUpPrefab" value="Prefabs¤UnselScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonInsidePrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myUpButtonDownPrefab" value="Prefabs¤SelScrollUp" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonUpPrefab" value="Prefabs¤UnselScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonInsidePrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownButtonDownPrefab" value="Prefabs¤SelScrollDown" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarUpPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarInsidePrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarDownPrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myScrollBarBackgroundPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="STRING" name="myMouseOverPrefab" value="Prefabs¤trans" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />				
+			<Property type="INT" name="myScrollUnitsPerSecond" value="2"/>
+			<Property type="INT" name="myTitleBarHeight" value="500"/>
+			<Property type="STRING" name="myTitleBarFont" value="StandardFont"/>
+			<Property type="LOCSTRING" name="myColumns" value=""/>
+			<Property type="STRING" name="myTitleBarUpPrefab" value="Prefabs¤Selected_Button" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myTitleBarInsidePrefab" value="Prefabs¤Selected_Button_Down" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myTitleBarDownPrefab" value="Prefabs¤Selected_Button_Down" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="mySelectionHighlightPrefab" value="" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR" />
+			<Property type="ENUM" name="myTitleBarAlign" value="Left" enumtype="HAlign"/>
+			<Property type="FLOAT" name="myTitleBarOffset" value="0" />
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="MiniMap">
+			<Property type="STRING" name="Type" value="MiniMap" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="DominationBar">
+			<Property type="STRING" name="Type" value="DominationBar" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="Model">
+			<Property type="STRING" name="Type" value="Model" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myUpPrefab" value="Prefabs¤Standardbutton_up" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myInsidePrefab" value="Prefabs¤Standardbutton_over" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownPrefab" value="Prefabs¤Standardbutton_down" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myTargetGui" value="MG_NOTAGUI"/>
+			<Property type="LOCSTRING" name="myText" value=""/>
+			<Property type="FILE" name="myModel" value=""/>
+			<Property type="FLOAT" name="myModelX" value="0.0"/>
+			<Property type="FLOAT" name="myModelY" value="0.0"/>
+			<Property type="FLOAT" name="myModelZ" value="0.0"/>
+			<Property type="FLOAT" name="myModelHeading" value="0.0"/>
+			<Property type="FLOAT" name="myCameraPitch" value="0.0"/>
+			<Property type="FLOAT" name="myCameraFOV" value="0.0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="Slider">
+			<Property type="STRING" name="Type" value="Slider" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myPrefab" value="Prefabs¤" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/>
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myLeftButtonUpPrefab" value="Prefabs¤Slider_Left" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myLeftButtonInsidePrefab" value="Prefabs¤Slider_left_over" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myLeftButtonDownPrefab" value="Prefabs¤Slider_Left" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myRightButtonUpPrefab" value="Prefabs¤Slider_right" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myRightButtonInsidePrefab" value="Prefabs¤Slider_right_over" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myRightButtonDownPrefab" value="Prefabs¤Slider_right" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="mySliderBarUpPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="mySliderBarInsidePrefab" value="Prefabs¤SelScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="mySliderBarDownPrefab" value="Prefabs¤UnselScrollDrag" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myMinValue" value="0"/>
+			<Property type="INT" name="myMaxValue" value="10"/>
+			<Property type="INT" name="myStepValue" value="1"/>
+			<Property type="INT" name="myDefaultValue" value="0"/>
+			<Property type="ENUM" name="myOrientation" value="Horizontal" enumtype="Orientation"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+		<Item name="Video">
+			<Property type="STRING" name="Type" value="Video" flags="PF_READONLY"/>
+			<Property type="STRING" name="Class" value="Widget"/>
+			<Property type="BOOL" name="Native" value="1" flags="PF_READONLY, PF_EDITOR_ONLY, PF_HIDDEN"/>
+			<Property type="STRING" name="myFont" value="Fonts¤StandardFont" flags="PF_FONT, PF_FIXUP_ITEM_PTR"/>
+			<Property type="INT" name="myXPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myYPos" value="0" flags="PF_RELATIVE"/>
+			<Property type="INT" name="myWidth" value="3600"/>
+			<Property type="INT" name="myHeight" value="600"/>
+			<Property type="LOCSTRING" name="myToolTip" value=""/>
+			<Property type="STRING" name="myToolTipRef" value=""/> 
+			<Property type="BOOL" name="myIgnoreEvents" value="0"/>
+			<Property type="ENUM" name="myStatus" value="Enabled" enumtype="Status"/>
+			<Property type="BOOL" name="myHiddenInEditor" value="0"/>
+			<Property type="STRING" name="myUpPrefab" value="Prefabs¤Standardbutton_up" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myInsidePrefab" value="Prefabs¤Standardbutton_over" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myDownPrefab" value="Prefabs¤Standardbutton_down" flags="PF_PREFAB, PF_FIXUP_ITEM_PTR"/>
+			<Property type="STRING" name="myTargetGui" value="MG_NOTAGUI"/>
+			<Property type="LOCSTRING" name="myText" value=""/>
+			<Property type="FILE" name="myVideo" value=""/>
+			<Property type="FLOAT" name="myVolume" value="1.0"/>
+			<Property type="BOOL" name="myInitialPauseState" value="0"/>
+			<Property type="BOOL" name="myKeepAspectRatioFlag" value="0"/>
+			<Property type="ENUM" name="myAspect" value="Stretch" enumtype="Aspect"/>
+		</Item>
+	</Items>
+</GuiFile>

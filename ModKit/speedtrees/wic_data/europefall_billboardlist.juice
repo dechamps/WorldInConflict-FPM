@@ -1,0 +1,374 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/europeFall/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/europeFall/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/europeFall/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/AmericanElm_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/AmericanElm_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/AmericanElm_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/AmericanElm_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/AmericanElm_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/AmericanElm_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Azalea_RT.spt
+	{
+		myFilename speedtrees/europeFall/Azalea_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Azalea_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Azalea_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Azalea_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Azalea_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Azalea_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Azalea_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Azalea_RT2.spt
+	{
+		myFilename speedtrees/europeFall/Azalea_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Azalea_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Azalea_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Azalea_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Azalea_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Azalea_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Azalea_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/BurfordHolly_RT_Square.spt
+	{
+		myFilename speedtrees/europeFall/BurfordHolly_RT_Square.spt
+		myBBSideTexture speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/BurfordHolly_RT_Square_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/BurfordHolly_RT_Square2.spt
+	{
+		myFilename speedtrees/europeFall/BurfordHolly_RT_Square2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/BurfordHolly_RT_Square2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/BurfordHollyCluster_Row.spt
+	{
+		myFilename speedtrees/europeFall/BurfordHollyCluster_Row.spt
+		myBBSideTexture speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/BurfordHollyCluster_Row_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/BurfordHollyCluster_Row2.spt
+	{
+		myFilename speedtrees/europeFall/BurfordHollyCluster_Row2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/BurfordHollyCluster_Row2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/ElmStocky_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/ElmStocky_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/ElmStocky_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/ElmStocky_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/ElmStocky_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/ElmStocky_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/EuropeanAspen_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/EuropeanAspen_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/EuropeanAspen_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/EuropeanAspen_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/EuropeanAspen_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Grapevine_RT.spt
+	{
+		myFilename speedtrees/europeFall/Grapevine_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Grapevine_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Grapevine_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Grapevine_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Grapevine_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Grapevine_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Grapevine_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Grapevine_RT2.spt
+	{
+		myFilename speedtrees/europeFall/Grapevine_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Grapevine_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Grapevine_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Grapevine_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Grapevine_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Grapevine_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Grapevine_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Grapevine_RT3.spt
+	{
+		myFilename speedtrees/europeFall/Grapevine_RT3.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Grapevine_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Grapevine_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Grapevine_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Grapevine_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Grapevine_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Grapevine_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Grapevine_RT_End.spt
+	{
+		myFilename speedtrees/europeFall/Grapevine_RT_End.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Grapevine_RT_End_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Grapevine_RT_End_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Grapevine_RT_End_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Grapevine_RT_End_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Grapevine_RT_End_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Grapevine_RT_End_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/GreenAsh_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/GreenAsh_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/GreenAsh_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/GreenAsh_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/GreenAsh_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/GreenAsh_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/HorseChestnut_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/HorseChestnut_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/HorseChestnut_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/HorseChestnut_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/HorseChestnut_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/HorseChestnut_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Katsura_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/Katsura_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Katsura_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Katsura_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Katsura_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Katsura_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Katsura_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Katsura_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Katsura_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/Katsura_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Katsura_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Linden_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/Linden_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Linden_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Linden_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Linden_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Linden_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Linden_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Linden_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/Linden_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/Linden_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/Linden_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/Linden_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/Linden_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/Linden_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/Linden_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/Linden_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/LiveOak_RT.spt
+	{
+		myFilename speedtrees/europeFall/LiveOak_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/LiveOak_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/LiveOak_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/LiveOak_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/LiveOak_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/LiveOak_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/LiveOak_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/LiveOak_RT2.spt
+	{
+		myFilename speedtrees/europeFall/LiveOak_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/LiveOak_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/LiveOak_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/LiveOak_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/LiveOak_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/LiveOak_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/LiveOak_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/LombardyPoplar_RT.spt
+	{
+		myFilename speedtrees/europeFall/LombardyPoplar_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/LombardyPoplar_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/LombardyPoplar_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/LombardyPoplar_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/LombardyPoplar_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/LombardyPoplar_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/LombardyPoplar_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/LombardyPoplar_RT2.spt
+	{
+		myFilename speedtrees/europeFall/LombardyPoplar_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/LombardyPoplar_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/RedMaple_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/RedMaple_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/RedMaple_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/RedMaple_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/RedMaple_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/RedMaple_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/WhiteBirch_RT_Fall.spt
+	{
+		myFilename speedtrees/europeFall/WhiteBirch_RT_Fall.spt
+		myBBSideTexture speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/WhiteBirch_RT_Fall_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/WhiteBirch_RT_Fall2.spt
+	{
+		myFilename speedtrees/europeFall/WhiteBirch_RT_Fall2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/WhiteBirch_RT_Fall2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/SouthernMagnolia_RT.spt
+	{
+		myFilename speedtrees/europeFall/SouthernMagnolia_RT.spt
+		myBBSideTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/SouthernMagnolia_RT2.spt
+	{
+		myFilename speedtrees/europeFall/SouthernMagnolia_RT2.spt
+		myBBSideTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/europeFall/SouthernMagnolia_RT3.spt
+	{
+		myFilename speedtrees/europeFall/SouthernMagnolia_RT3.spt
+		myBBSideTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/europeFall/billboards/SouthernMagnolia_RT3_bbtop_n.dds
+	}
+}

@@ -1,0 +1,22 @@
+INCLUDE juice/materials.fruit
+
+CLASS TerrainType
+{
+	MaterialID myMaterial
+
+	DECIMAL myBumpIntensity
+	DECIMAL myDiffuseIntensity
+	
+	TEXT myCrudColor
+	DECIMAL myCrudBuildup
+}
+
+SCRIPTCLASS TerrainTypes
+{
+	TerrainType
+}
+
+CLASS TrackEffects
+{
+	TerrainTypes myTerrainTypes
+}

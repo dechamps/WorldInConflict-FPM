@@ -1,0 +1,122 @@
+INCLUDE juice/default.fruit
+INCLUDE juice/materials.fruit
+
+CLASS WindEffect
+{
+	DECIMAL myWindSpeed
+	DECIMAL myWindExpandTime
+	DECIMAL myWindTime
+	DECIMAL myWindRadius
+	
+	DECIMAL myExploDebrisRadius
+	DECIMAL myExploDebrisForce
+	DECIMAL myExploDebrisSpreadSpeed
+	DECIMAL myExploDebrisTime
+}
+
+TYPE HitEffectTypes
+{
+	LowCaliberGun
+	HighCaliberGun
+	Tank_Default
+	50cal
+	Mortar
+	Support_SmallArtilleryBarrage
+	Support_EU_SmallArtrilleryBarrage
+	Support_Fallshirmsjaeger
+	Support_NATO_Fallshirmjaeger
+	Support_F15_Airstrike
+	Support_F15_Airstrike_US
+	Support_MiniNuke
+	Support_BulletTester
+	Rocket_Small
+	Mortar_Big
+	Mortar_Pion
+	Rocket_Big
+	Rocket_Artillery
+	Napalm
+	DaisyCutter
+	BunkerBuster_Us
+	A10_TankKiller
+	BunkerBuster_Ussr
+	Carpet_Bombing
+	Gas_Us
+	Gas_Ussr
+	MiniNuke_Ussr
+	Heavy_Artillery_Barrage
+	ClusterBomb
+	Carpet_Bombing_Nato
+	Tank_Medium
+	Tank_Small
+	Null
+	HeavyAirSupport
+	Tankbuster_Ussr
+	Daisycutter_Ussr
+	High_Explosive_AntiTank
+	PhosphorusExplosion
+	ArtillerySmoke
+	Heavy_Attack_Helicopter_SpecialAbility
+	Medium_Attack_Helicopter_SpecialAbility
+	50cal_SpecialAmmo
+	Mortar_Marines
+	PhosphorusBomb
+}
+
+TYPE HitEffectImpactOrientationTypes
+{
+	WORLD_Y_UP_RANDOM_ROT
+	HIT_ALIGNED_AND_DIRECTED
+	HIT_ALIGNED_RANDOM_ROT
+	WORLD_ALIGNED
+}
+
+CLASS UnitType::EffectType::ModelInfo
+{
+	DECIMAL myTimeToLive
+	FILE myFile
+	HitEffectImpactOrientationTypes myImpactOrientation
+	FILE myPhysFile
+	TEXTLIST myRandomStates
+	WindEffect myWindEffect
+}
+
+SCRIPTCLASS UnitType::EffectType::ModelInfoList
+{
+	UnitType::EffectType::ModelInfo
+}
+
+
+
+CLASS HitEffect
+{
+	MaterialID myMaterial
+	UnitType::EffectType::ModelInfoList myExplosions
+	UnitType::EffectType::ModelInfoList myPostEffects
+	DECIMAL myPostEffectsSpawningPercentage
+	DECIMAL myScorchMarkMinRadius
+	DECIMAL myScorchMarkMaxRadius
+	TEXTLIST myScorchMarkImages
+	DECIMAL myCraterMinRadius
+	DECIMAL myCraterMaxRadius
+	TEXTLIST myCraterImages
+	TEXTLIST myHitSounds
+	TEXTLIST myEffectScript
+}
+
+
+SCRIPTCLASS HitEffectList
+{
+	HitEffect
+}
+
+CLASS HitEffectSet
+{
+	HitEffectTypes	myName
+	HitEffectList myHitEffects
+
+}
+
+SCRIPTCLASS HitEffectSetList
+{
+	HitEffectSet
+}

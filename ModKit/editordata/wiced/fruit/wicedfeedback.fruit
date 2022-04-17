@@ -1,0 +1,45 @@
+CLASS FeedbackDomination
+{
+	FILE myCaptureSound
+	FILE myLostSound
+	FILE myEnemyCapturedSound
+}
+
+CLASS FeedbackTOW
+{	
+	FILE myLastFriendlyCPLostSound
+	
+	FILE myFriendlyCPCaptureSound
+	FILE myFriendlyCPLostSound
+	
+	FILE myMiddleCPCaptureSound
+	FILE myMiddleCPLostSound	
+	
+	FILE myEnemyCPCaptureSound
+	FILE myEnemyCPLostSound
+	
+	FILE myLastEnemyCPCaptureSound
+}
+
+CLASS FeedbackAssault
+{
+	FILE myRound1CaptureSound
+	FILE myRound1LostSound
+	FILE myRound1EnemyCapturedSound
+	
+	FILE myRound2CaptureSound
+	FILE myRound2LostSound
+	FILE myRound2EnemyCapturedSound	
+}
+
+CLASS FeedbackPrototype
+{			
+	FeedbackDomination myFeedbackDomination_US
+	FeedbackDomination myFeedbackDomination_USSR
+	
+	FeedbackTOW myFeedbackTOW_US
+	FeedbackTOW myFeedbackTOW_USSR
+	
+	FeedbackAssault myFeedbackAssault_US
+	FeedbackAssault myFeedbackAssault_USSR	
+}

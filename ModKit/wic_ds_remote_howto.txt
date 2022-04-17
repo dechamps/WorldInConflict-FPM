@@ -1,0 +1,115 @@
+WORLD IN CONFLICT
+REMOTE ADMINISTRATION PROTOCOL REFERENCE
+
+By Henrik Edin
+Massive Entertainment
+
+
+Version 1.0
+Last update NOVEMBER 2, 2007
+
+
+
+FILE REFERENCE
+
+Files relevant for use of remote administration of a dedicated server:
+
+wic_ds.ini		Configuration file of this server
+
+
+INTRODUCTION
+
+World in Conflict supports in-game server administration via the game console, various tasks can be done this way such as map change, kick/ban functionality and much more. This is a quick and easy method to moderate a World in Conflict game and solve issues when the administrator is already connected to the server.
+
+To be able to perform administration when there is no wish to play or spectate a World in Conflict game the need of starting the game client and connect to the server can be messy. 
+
+For this reason the World in Conflict dedicated server can be remotely administrated by connecting to a TCP socket and sending text based commands. This document explains how to set up remote administration and includes a reference for the server commands.
+
+SET UP REMOTE ADMINISTRATION
+
+The wic_ds.ini file in the World in Conflict directory contains two tags of interest for remote administration. The [AdminPassword] tag specifies the password a client needs to provide to authenticate itself with the dedicated server. [AdminPort] specifies a TCP port that the dedicated server uses to listen for incoming connections. A password must be set for the server to listen for connections.
+
+For more information of tags in the wic_ds.ini file, see the World in Conflict Dedicated Server Manual.
+
+CONNECTING TO A DEDICATED SERVER
+
+Any client that can connect to an arbitrary TCP port and send text commands, such as telnet, is supported. However a client with unicode support is recommended. When connection is established the first thing the client must send is the same password as specified in wic_ds.ini encoded in ASCII. After the password is verified the client can send text commands.
+ 
+PROTOCOL REFERENCE
+
+The commands are specified in the following way:
+
+<command> <argument> … <argument>
+
+Without < and > and with space as separator between command and argument and between argument and argument.
+
+/allowfreespec	
+Allows spectating of any team and spectate all.
+
+/allowspec	
+Allows spectating of any team
+
+/allowteamspec <team id>	
+Allows spectating of a specified team
+
+/ban <player id> <ban time> <reason>	
+Kicks and bans a player.
+<ban time> = -1 permanent ban
+<ban time> = 0 kick only
+Otherwise number of minutes player is banned.
+
+<reason> a text string to be displayed for the banned user. 
+
+/disallowfreespec	
+Disables all spectating
+
+/disallowspec	
+Disables team spectating
+
+/disallowspec <team id>	
+Disables spectating of team <team id>
+
+/exit	
+Closes the remote admin connection
+
+/exitmatchmode	
+Server exits match mode, this restarts current map
+
+/help	
+Displays a list of supported remote administration commands
+
+/kick <player id>	
+Disconnects the client with specified player id from the server
+
+
+/listmaps	
+Lists all maps in map cycle with their map id
+
+/listplayers	
+Lists all connected players with their player ids. Unicode is recommended to be enabled for this command to work properly.
+
+
+/listsettings	
+Lists the following server settings:
+"	Spectating allowed
+"	Team change allowed
+"	Match mode setting
+"	Current map
+
+/lockteams	
+Disables team change
+
+/mapcycle <map id>	
+Immediately change map to the one specified with map id
+
+/nick	
+Changes nickname used for chatting while remote administrating
+
+/setmatchmode	
+Server enables match mode, this restarts current map
+
+/toggleunicode	
+This toggles unicode input/output. If enabled everything must be sent in unicode encoding.
+
+/unlockteams	
+Enable team change

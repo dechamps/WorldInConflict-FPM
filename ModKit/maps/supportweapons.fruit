@@ -1,0 +1,199 @@
+INCLUDE units/unittype.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE juice/team/team.fruit
+INCLUDE juice/role.fruit
+INCLUDE juice/color.fruit
+INCLUDE juice/gui/gui_defs.fruit
+
+TYPE SupportProjectileType
+{
+	BALLISTIC
+	STRAIGHT
+	HOMING
+}
+
+TYPE SupportCategory
+{
+	CATEGORY_1
+	CATEGORY_2
+	CATEGORY_3
+}
+
+TYPE LOSAreaType
+{
+	NONE
+	CIRCLE
+	RECTANGLE
+}
+
+SCRIPTCLASS ChildSupportWeapons
+{
+	TEXT
+}
+
+CLASS LineOfSight
+{
+	LOSAreaType myType
+	DECIMAL myCircleRadius
+	DECIMAL myRectWidth
+	DECIMAL myRectHeight
+	DECIMAL myInitialDelay
+	DECIMAL myTimeToDie
+	
+}
+
+CLASS SupportCost
+{
+	Role myRole
+	NUMBER myCost1
+	NUMBER myCost2
+	NUMBER myCost3
+	Rebate myCostType
+}
+
+SCRIPTCLASS SupportCostList
+{
+	SupportCost
+}
+
+CLASS AirTargetMarker
+{
+	FILE myMarker
+	DECIMAL myMarkerScale
+	DECIMAL myWarningRadius
+	XColorRGBA myWarningColor
+	XColorRGBA myLethalColor
+}
+
+CLASS SupportMuteSoundsType
+{
+	NUMBER myMutePercent
+	DECIMAL myInitialDelay
+	DECIMAL myFadeOutTime
+	DECIMAL myMutedTime
+	DECIMAL myFadeInTime
+}
+
+CLASS SupportMarker
+{
+	FILE myGroundMarker
+	FILE myGroundPreviewMarker
+	XColorRGBA myGroundMarkerColor
+	NUMBER myGroundMarkerScale
+
+	NUMBER mySnapToBuildings
+	NUMBER mySnapToUnits
+	NUMBER mySnapToBridges
+	
+	FILE myAirMarker
+	NUMBER myAirMarkerSize
+	NUMBER myAirMarkerHeightOffset
+	XColorRGBA myAirMarkerDiscreteColor
+	XColorRGBA myAirMarkerHighlightColor
+
+	NUMBER myVisualCounterDiscreteAlpha
+	XColorRGBA myVisualCounterColor
+	
+	NUMBER myVisibleDistance
+
+	AirTargetMarker myAirTargetMarker
+}
+
+CLASS SupportMiniMapIcon
+{
+	FILE myIcon
+	DECIMAL myWidth
+	DECIMAL myLength
+	DECIMAL myBlinksPerSecond
+	DECIMAL myBlinkTime
+	NUMBER myShouldBeRotatedFlag
+}
+
+CLASS SupportFeedback
+{
+	FILEList myDeployedFeedback
+	FILEList myFriendlyDeployedFeedback
+	FILEList myEnemyDeployedFeedback
+	FILEList myEnemyKilledFeedback
+	FILEList myFriendlyKilledFeedback
+	FILEList myNothingHitFeedback
+	FILEList myGenericHitFeedback
+}
+
+CLASS SupportWeapon
+{
+	LOCTEXT myGuiName
+	LOCTEXT myGuiDescription
+	Teams myTeam
+	SupportCategory myCategory
+	DECIMAL myCost1
+	DECIMAL myCost2
+	DECIMAL myCost3
+	DECIMAL myTargetAreaLength
+	DECIMAL myTargetAreaWidth
+        SupportCostList myRoleCosts
+        RoleBlackList myRoleBlackList
+	DECIMAL myRechargeTime
+	DECIMAL myTimeBeforeActivation
+	DECIMAL myTimeVisibleForOpponents
+	DECIMAL myInitialTimeDelay
+	NUMBER myDoNotRechargeOnRoleChangeFlag
+	NUMBER myDeviationRadius
+	DECIMAL myRateOfFire
+	NUMBER myNumberOfProjectiles
+	SupportProjectileType myProjectileType
+	FILE myMarkerModel
+	DECIMAL myMarkerTimeToLive
+	DECIMAL myMarkerTimeDelay
+	FILE mySupportAnimation
+	DECIMAL mySupportAnimationTimeToLive
+	ProjectileType myProjectile
+	FILE mySplineObjectFile
+	ProjectileParasiteList myParasites
+	DECIMAL mySpeed
+	DECIMAL myStartHeight
+	FILE myGUIIconFileUp
+	FILE myGUIIconFileInside
+	FILE myGUIIconFileDown
+	TEXT myGuiIconPrefab
+	FILE myMarkerSoundFile
+	FILE mySpawnedSoundFile
+	SoundSource myAnimationSoundSource
+	SoundSource myFiringSound
+	NUMBER myCanTargetAirUnits
+	NUMBER myCanTargetGroundUnits
+	NUMBER myCanTargetInfantry
+	NUMBER myIgnoreForestDamageReductionFlag
+	SupportMuteSoundsType myMuteSound
+	SupportMarker myMarker
+	LineOfSight myLineOfSight
+	ChildSupportWeapons myChildSupportWeapons
+
+	DECIMAL myNumScoreToTriggerTaunt
+	LOCTEXT myTauntTextYouHitPlayer
+	LOCTEXT myTauntText
+	LOCTEXT myTauntTextPlayerHitPlayer
+	SupportFeedback myFeedback
+	HelpBoxType myHelpBox
+	
+	NUMBER myIsBridgeRepairerFlag
+	
+	SupportMiniMapIcon myMiniMapIcon
+}
+
+SCRIPTCLASS SupportWeaponList
+{
+	SupportWeapon
+}
+
+
+CLASS SupportWeapons
+{
+	SupportWeaponList US
+	SupportWeaponList USSR
+	SupportWeaponList NATO
+	SupportWeaponList SinglePlayer
+	SupportWeaponList SpecialAbilities
+	SupportWeaponList Cinematics
+	DECIMAL myShowAlliedSupportWeaponDistance
+}

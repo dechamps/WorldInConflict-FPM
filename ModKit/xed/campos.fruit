@@ -1,0 +1,13 @@
+INCLUDE juice/vector2.fruit
+INCLUDE juice/vector3.fruit
+
+CLASS XCamPos
+{
+	Vector3 myCameraPosition
+	Vector2 myCameraRotation
+}
+
+SCRIPTCLASS XCamPosList
+{
+	XCamPos
+}

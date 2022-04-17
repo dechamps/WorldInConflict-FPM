@@ -1,0 +1,21 @@
+
+
+
+
+
+CLASS SpeedTreeBillboardType
+{
+	FILE myFilename			// ".spt" filename
+	FILE myBBSideTexture
+	FILE myBBSideTextureMulti
+	FILE myBBSideNormalmap
+	FILE myBBSideNormalmapMulti
+	FILE myBBTopTexture
+	FILE myBBTopNormalmap
+}
+
+
+SCRIPTCLASS SpeedTreeBillboardList
+{
+	SpeedTreeBillboardType
+}

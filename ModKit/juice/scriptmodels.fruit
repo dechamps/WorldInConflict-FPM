@@ -1,0 +1,24 @@
+INCLUDE juice/art/alt_texture.fruit
+INCLUDE units/unittype.fruit
+
+CLASS ScriptModel
+{
+	FILE myMRB
+	FILE myShadowFile
+	AlternateTexture myAlternativeTexture
+}
+
+SCRIPTCLASS ScriptModelGroup
+{
+	ScriptModel
+}
+
+SCRIPTCLASS ScriptModelGroups
+{
+	ScriptModelGroup
+}
+
+SCRIPTCLASS ScriptSounds
+{
+	SoundSource
+}

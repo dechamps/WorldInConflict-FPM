@@ -1,0 +1,406 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Base01"
+		myMeshBone "MasterNull"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 2
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.015214
+			myY 1.417830
+			myZ 0.048668
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+			TEXT myState2 "FIR1"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "Base02"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.026785
+					myY 0.381168
+					myZ -2.664656
+				}
+				myRotHPB
+				{
+					myX -0.000986
+					myY 0.007002
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.325
+					myY 0.887
+					myZ 1.086
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 709.687378
+				myVerts
+				{
+				}
+			}
+			Element myElement17
+			{
+				myName "Base17"
+				myType 2
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -1.11721
+					myY -0.679827
+					myZ -0.270667
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.644
+					myY 0.644
+					myZ 3.695
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 3473.893555
+				myVerts
+				{
+				}
+			}
+			Element myElement18
+			{
+				myName "Base18"
+				myType 2
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.97721
+					myY -0.796827
+					myZ -0.254667
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.627
+					myY 0.627
+					myZ 1.867
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 1663.832886
+				myVerts
+				{
+				}
+			}
+			Element myElement14
+			{
+				myName "Base14"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.001214
+					myY -0.14583
+					myZ -0.074668
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.206
+					myY 1.561
+					myZ 4.203
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 3063.79541
+				myVerts
+				{
+				}
+			}
+			Element myElement15
+			{
+				myName "Base15"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.026785
+					myY 0.833166
+					myZ 2.278322
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.891
+					myY 1.288
+					myZ 1.977
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 5143.166016
+				myVerts
+				{
+				}
+			}
+			Element myElement16
+			{
+				myName "Base16"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.026785
+					myY 1.163165
+					myZ -2.446657
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.436
+					myY 1.289
+					myZ 2.204
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 2807.897705
+				myVerts
+				{
+				}
+			}
+			Element myElement19
+			{
+				myName "Base19"
+				myType 2
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 1.072781
+					myY -0.679827
+					myZ -0.270667
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.644
+					myY 0.644
+					myZ 3.695
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 3473.893555
+				myVerts
+				{
+				}
+			}
+			Element myElement20
+			{
+				myName "Base20"
+				myType 2
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.932781
+					myY -0.796827
+					myZ -0.254667
+				}
+				myRotHPB
+				{
+					myX -0.001002
+					myY -0.000998
+					myZ -1.568796
+				}
+				myExtents
+				{
+					myX 0.627
+					myY 0.627
+					myZ 1.867
+				}
+				myRestFriction 0.0
+				myMoveFriction 0.0
+				myElasticity 0.0
+				myMass 1663.832886
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+	Joint myJoint0
+	{
+		myType ANGULAR_JOINT_LIMIT
+		myRB1 "Base01"
+		myRB2 "myPhysWorld"
+		myPos
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myPos2
+		{
+			myX 0.0
+			myY 0.0
+			myZ 0.0
+		}
+		myBreakThreshold 0.0
+		mySeparationDistance 0.7
+		mySpringStrengthConst 0.0
+		mySpringDampenerConst 0.0
+		myRestStateLength 0.0
+		myVector1
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+		myVector2
+		{
+			myX 0.0
+			myY 1.0
+			myZ 0.0
+		}
+	}
+}
+
+DelayedExplosions myExplosions
+{
+}
+

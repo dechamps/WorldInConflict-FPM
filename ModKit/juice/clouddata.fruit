@@ -1,0 +1,21 @@
+INCLUDE juice/vector2.fruit
+
+
+CLASS WI3D_WindObject
+{
+	FILE myCloudMap
+	Vector2 myPosition
+	Vector2 myExtents
+	DECIMAL myAngle
+
+	DECIMAL myUVAngleChange
+	Vector2 myUVTranslation
+	Vector2 myPositionTranslation
+}
+
+
+SCRIPTCLASS windObjectList
+{
+	WI3D_WindObject
+}
+

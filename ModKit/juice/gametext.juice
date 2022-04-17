@@ -1,0 +1,1866 @@
+INCLUDE juice/gametext.fruit
+
+GameText myGameText
+{
+	TextType myToolTips
+	{
+		LOCTEXT myCancel Cancel
+
+		LOCTEXT myBack Back
+
+		LOCTEXT myOpenMegaMap "Open the objectives screen"
+
+		LOCTEXT myZoomIn "Zoom in"
+
+		LOCTEXT myZoomOut "Zoom out"
+
+		LOCTEXT myCloseMap "Close the screen"
+
+		LOCTEXT myMultiplayerLobby "Open the multiplayer lobby"
+
+		LOCTEXT myAPCost "AP cost"
+
+		LOCTEXT myPerception Perception
+
+		LOCTEXT myViewRange "View range"
+
+		LOCTEXT mySpeed Speed
+
+		LOCTEXT myFirepower Firepower
+
+		LOCTEXT myNeutralUnit Neutral
+
+		LOCTEXT myOrderMove Move
+
+		LOCTEXT myOrderAttack Attack
+
+		LOCTEXT myOrderGoToBase "Go to base"
+
+		LOCTEXT myOrderGoToLandingZone "Go to landing zone"
+
+		LOCTEXT myOrderToggleReturnToBase "Toggle return to base"
+
+		LOCTEXT myOrderSelectLandingZone "Select landing zone"
+
+		LOCTEXT myOrderLoad Load
+
+		LOCTEXT myOrderUnloadAll "Unload all"
+
+		LOCTEXT myOrderEnterBuilding "Enter building"
+
+		LOCTEXT myOrderExitBuilding "Exit building"
+
+		LOCTEXT myOrderBlow "Blow up"
+
+		LOCTEXT myOrderRepair Repair
+
+		LOCTEXT myOrderSwitchToSecondaryMode "Switch to secondary mode"
+
+		LOCTEXT myOrderSwitchToPrimaryMode "Switch to primary mode"
+
+		LOCTEXT myNotEnoughAP "Not enough AP"
+
+		LOCTEXT myOrderStop Stop
+
+		LOCTEXT myOrderFollow Follow
+
+		LOCTEXT myOrderStack "Order stacking mode"
+
+		LOCTEXT myUpgradeDropship "Upgrade dropship"
+
+		LOCTEXT myReinforcements "Call down reinforcements"
+
+		LOCTEXT myDropshipBehaviour "The dropship's LZ behaviour"
+
+		LOCTEXT mySelectSquad "Select squad"
+
+		LOCTEXT myCameraToggle "Toggles between Classic RTS camera and Free camera"
+
+		LOCTEXT myObjectives "Show mission objectives"
+
+		LOCTEXT myRechargeableEquipment "Deploy Rechargeable Equipment"
+
+		LOCTEXT myNotEnoughHonors "Not enough Tactical Aid points"
+
+		LOCTEXT myUpgradeSupportWeapon "Upgrade %s"
+
+		LOCTEXT myOrderLayBridge "Lay bridge"
+
+		LOCTEXT myNotAvailable N/A
+
+		LOCTEXT myChooseRole "Choose Role"
+
+		LOCTEXT myETAToBase "Time until C-130 ready for another drop"
+
+		LOCTEXT myDSComing "Time until C-130 will arrive with your new units"
+
+		LOCTEXT myRechargablePending " %s (PENDING) (Shortcut: %s)\n%s\n%us cooldown"
+
+		LOCTEXT myRechargableReady "%s (Shortcut: %s)\n%s\n%us cooldown"
+
+		LOCTEXT myRechargableCooldown "%s (ON COOLDOWN) (Shortcut: %s)\n%s\nUseable in %us"
+
+		LOCTEXT myRechargableProcessing "%s (PROCESSING) (Shortcut: %s)\n%s\nTime left: %us"
+
+		LOCTEXT myRechargableProcessingNoTime "%s (PROCESSING) (Shortcut: %s)\n%s"
+
+		LOCTEXT myLANChangeName "Change LAN Name"
+
+		LOCTEXT mySetCustomPlayerColor "Set custom color for player"
+
+		LOCTEXT myMute Mute
+
+		LOCTEXT myUnmute Unmute
+
+	}
+
+	TextType myTUIText
+	{
+		LOCTEXT myEchelonLeftFormation "Left echelon formation"
+
+		LOCTEXT myEchelonRightFormation "Right echelon formation"
+
+		LOCTEXT myWedgeFormation "Wedge formation"
+
+		LOCTEXT myLineFormation "Line formation"
+
+		LOCTEXT myColumnFormation "Column formation"
+
+		LOCTEXT myBoxFormation "Box formation"
+
+		LOCTEXT myHealth Health:
+
+		LOCTEXT myEnergy Energy:
+
+		LOCTEXT myCameraDistance "Distance from camera"
+
+		LOCTEXT myOrderQueue "Order queue:"
+
+		LOCTEXT myMove Move
+
+		LOCTEXT myMoveAdd "Move add"
+
+		LOCTEXT myDropshipReturns Return
+
+		LOCTEXT myDropshipStays Stay
+
+		LOCTEXT myInShadow "Shadow bonus active"
+
+		LOCTEXT myHighGround "High ground bonus active"
+
+		LOCTEXT myInForest "Forest bonus active"
+
+		LOCTEXT mySuppressed Suppressed
+
+		LOCTEXT myNoDropship "No Dropship"
+
+		LOCTEXT myStoreCamera "Stored camera position"
+
+		LOCTEXT myRestoreCamera "Restored camera position"
+
+		LOCTEXT myGamePaused "GAME IS PAUSED"
+
+		LOCTEXT myChangedName "%s changed name to %s"
+
+		LOCTEXT mySetCustomColorTitle "Set custom color for %s"
+
+		LOCTEXT myTeamPlayersText "%s - %u PLAYING"
+
+		LOCTEXT myPlayerDropZoneText "%s - %s"
+
+		LOCTEXT myPlayerDropTimeText "Seconds to deployment: %0d"
+
+		LOCTEXT myMOTDHeaderText "Server Information"
+
+		LOCTEXT myJoinTeamPenalty "PENALTY: %u"
+
+	}
+
+	TextType myFrontEnd
+	{
+		LOCTEXT myDifficultyEasy Easy
+
+		LOCTEXT myDifficultyNormal Normal
+
+		LOCTEXT myDifficultyHard Hard
+
+		LOCTEXT myDifficultyVeryHard "Very Hard"
+
+		LOCTEXT myCampaignCompleted Completed
+
+		LOCTEXT myCampaignInProgress "In progress"
+
+		LOCTEXT myCampaignNotStarted "Not started"
+
+		LOCTEXT myVersionText "WIC build"
+
+		LOCTEXT myAvailablePersonnelSlots "Available personnel slots: %u"
+
+		LOCTEXT myIPCost "IP COST: %u"
+
+		LOCTEXT myBotsEnabled "BOTS ENABLED"
+
+		LOCTEXT myBotsDisabled <empty>
+
+		LOCTEXT myRoundTimeSeveralSeconds "Debug: Several Seconds (x0.05)"
+
+		LOCTEXT myRoundTimeSeveralDays "Debug: Several Days (x99.99)"
+
+		LOCTEXT myRoundTimeVeryShort "Very Short (x0.25)"
+
+		LOCTEXT myRoundTimeShort "Short (x0.5)"
+
+		LOCTEXT myRoundTimeNormal "Normal (x1)"
+
+		LOCTEXT myRoundTimeLong "Long (x1.5)"
+
+		LOCTEXT myRoundTimeVeryLong "Very Long (x2)"
+
+		LOCTEXT myMapName "Map Name: %s"
+
+		LOCTEXT myGameMode "Game Mode: %s"
+
+		LOCTEXT myMatchTime "Match Time: %u Min"
+
+		LOCTEXT myCreditsName Credits
+
+		LOCTEXT myStartVolumeTest "START TEST"
+
+		LOCTEXT myEndVolumeTest "END TEST"
+
+	}
+
+	TextType myChat
+	{
+		LOCTEXT myChat Chat:
+
+		LOCTEXT myTeamChat "Team chat:"
+
+		LOCTEXT myVoipFrom "From: "
+
+		LOCTEXT myVoipTo "To: "
+
+		LOCTEXT myVoipSome "Multiple in Team"
+
+		LOCTEXT myVoipAll "All in Team"
+
+		LOCTEXT myChatToAllPrefix ALL
+
+		LOCTEXT myChatToTeamPrefix TEAM
+
+	}
+
+	TextType myStatus
+	{
+		LOCTEXT myGameWon "Mission Accomplished"
+
+		LOCTEXT myGameLost "Mission Failed"
+
+		LOCTEXT myObjectiveCompleted Completed
+
+		LOCTEXT myObjectiveFailed Failed
+
+		LOCTEXT myGameWonByTeam "- Game won by team"
+
+		LOCTEXT myWinnerText "%s - WINNER [TOTAL SCORE: %i]"
+
+		LOCTEXT myLoserText "%s - LOSER [TOTAL SCORE: %i]"
+
+		LOCTEXT myWinningSideText "%s WINS"
+
+		LOCTEXT myWinningSideTextWithTime "%s WINS [TIME LEFT: %u:%02u]"
+
+		LOCTEXT myCamPosDebugInfoReport "Report nr: %u / %u"
+
+		LOCTEXT myCamPosDebugInfoAdded "Added new camera position debug instance"
+
+		LOCTEXT mySPWonHeadline "MISSION ACCOMPLISHED"
+
+		LOCTEXT mySPWonDescription "YOU HAVE COMPLETED THE MISSION"
+
+		LOCTEXT mySPLostHeadline "MISSION FAILED"
+
+		LOCTEXT mySPLostDescription "YOU HAVE FAILED THE MISSION"
+
+	}
+
+	TextType mySaveText
+	{
+		LOCTEXT myNewSave "New save"
+
+		LOCTEXT myDeleteConfirm "Are you sure that you want to delete the saved game?"
+
+		LOCTEXT myReplaceConfirm "Are you sure that you want to replace the saved game?"
+
+		LOCTEXT myDelete Delete
+
+		LOCTEXT myReplace Replace
+
+		LOCTEXT myCampaignName "Campaign Name: %s"
+
+		LOCTEXT myDate "Date: %04u-%02u-%02u"
+
+		LOCTEXT myTime "Time: %02u:%02u:%02u"
+
+		LOCTEXT myMedalsEarned "Medals Earned: %u"
+
+		LOCTEXT myMissionsCompleted "Missions Completed: %u"
+
+	}
+
+	TextType myUnitInfo
+	{
+		LOCTEXT myViewRange "View range"
+
+		LOCTEXT mySpeed Speed
+
+		LOCTEXT myWeaponRange "Weapon range"
+
+	}
+
+	TextType myUnitBar
+	{
+		LOCTEXT myTransporting Transporting
+
+		LOCTEXT myTransported Transported
+
+		LOCTEXT myInBuilding "In Building"
+
+		LOCTEXT myInCover "In Cover"
+
+		LOCTEXT myHoldingFire "Holding Fire"
+
+		LOCTEXT myRightClickDesc <empty>
+
+	}
+
+	TextType myPlayer
+	{
+		LOCTEXT myPlayerCloseToLoosing "Enemy team is one Victory Location away from winning"
+
+		LOCTEXT myPlayerLoosing "The last Victory Location is about to fall"
+
+		LOCTEXT myPlayerCloseToWinning "Your team needs one more Victory Location to win"
+
+		LOCTEXT myPlayerEntersGame "enters the fray"
+
+		LOCTEXT myPlayerLeavesGame "runs home to mommy"
+
+		LOCTEXT myVictoryLocationTooltip VL
+
+		LOCTEXT myLandingZoneTooltip LZ
+
+		LOCTEXT myDropshipAspectCost "%d AP, %ds"
+
+		LOCTEXT myFrom "From %s: %s"
+
+		LOCTEXT myClient "Client: %s"
+
+		LOCTEXT myNewPrimaryObjective "NEW PRIMARY OBJECTIVE"
+
+		LOCTEXT myNewSecondaryObjective "NEW SECONDARY OBJECTIVE"
+
+		LOCTEXT myObjectiveCompletedString Completed
+
+		LOCTEXT myObjectiveCancelledString Cancelled
+
+		LOCTEXT myObjectiveFailedString Failed
+
+		LOCTEXT myCurrentMissionText "CURRENT MISSION: %s"
+
+		LOCTEXT myGiveTAMessage "%s gave TA points to %s. (%i points given)"
+
+		LOCTEXT myAlliedPlayerSwitchedRoleMessage "%s switched role to %s"
+
+		LOCTEXT mySelectTeamText "CHANGE TEAM (CURRENT TEAM: %s)"
+
+		LOCTEXT myMatchWaitingForPlayers "Waiting for additional players on teams: %s (%d/%d)  - %s (%d/%d)"
+
+		LOCTEXT myMatchCountdownToStart "Waiting for match to start"
+
+		LOCTEXT myMatchWaitingForReady "All players not yet ready"
+
+		LOCTEXT myReloadingResources "World In Conflict is reloading resources, please wait..."
+
+		LOCTEXT myAdmin |ADMIN|
+
+		LOCTEXT myInstantMessageEventString "You have recieved an instant message from %s"
+
+		LOCTEXT myTeamBalancedMessage "You were moved to the other faction to even the teams."
+
+		LOCTEXT myFriendlyFireWarning "WARNING: You are doing damage to friendly units"
+
+		LOCTEXT myMapCycleMessage "Map cycle will commence shortly. Please stand by."
+
+	}
+
+	TextType myMissionStats
+	{
+		LOCTEXT myColumn0 "AP value killed"
+
+		LOCTEXT myColumn1 "AP value Lost"
+
+		LOCTEXT myColumn2 "AP score"
+
+		LOCTEXT myColumn3 "Total score"
+
+		LOCTEXT myColumn4 "Units lost"
+
+		LOCTEXT myColumn5 "Units acquired"
+
+		LOCTEXT myColumn6 "AP value killed"
+
+		LOCTEXT myColumn7 "Largest army"
+
+		LOCTEXT myColumn8 "Experience levels"
+
+		LOCTEXT myColumn9 "Kill score"
+
+		LOCTEXT myColumn10 "Transport score"
+
+		LOCTEXT myColumn11 "AP spent on upgrades"
+
+		LOCTEXT myColumn12 "Dropships killed"
+
+		LOCTEXT myColumn13 "Dropships lost"
+
+		LOCTEXT myColumn14 "Battlefield time"
+
+		LOCTEXT myColumn15 "Total AP gained"
+
+		LOCTEXT myColumn16 "Kill AP gained"
+
+		LOCTEXT myColumn17 "Zone AP gained"
+
+		LOCTEXT myColumn18 "Other AP gained"
+
+		LOCTEXT myColumn19 "Total AP spent"
+
+		LOCTEXT myColumn20 "Unit spend"
+
+		LOCTEXT myColumn21 "Dropship spend"
+
+		LOCTEXT myColumn22 "Other spend"
+
+		LOCTEXT myColumn23 "AP lost to maintenance"
+
+		LOCTEXT myName Name
+
+		LOCTEXT myVictoryText Victory!
+
+		LOCTEXT myDefeatText Defeat!
+
+	}
+
+	TextType myMultiplayerFrontend
+	{
+		LOCTEXT myDefaultGameName "New game"
+
+		LOCTEXT myDefaultPlayerName <empty>
+
+		LOCTEXT myTeamName "Team "
+
+		LOCTEXT myLobbySlotOpen Open
+
+		LOCTEXT myLobbySlotClosed Closed
+
+		LOCTEXT myLobbySlotAI AI
+
+		LOCTEXT myAllowDropin "Drop-in allowed"
+
+		LOCTEXT myNoUnits "Lose on no Units"
+
+		LOCTEXT myNoPresence "Lose on no Presence"
+
+		LOCTEXT myNoLZ "Lose on no LZs"
+
+		LOCTEXT myAllVL "Win on VL domination"
+
+		LOCTEXT myIgnoreScripted "Ignoring scripted wins"
+
+		LOCTEXT myTimeLimit <empty>
+
+		LOCTEXT myScoreLimit "Score Limit"
+
+		LOCTEXT myNoScoreLimit "No score limit"
+
+		LOCTEXT myNoTimeLimit "No time limit"
+
+		LOCTEXT myGamenameHeader "Game name"
+
+		LOCTEXT myMapnameHeader Map
+
+		LOCTEXT myPasswordHeader Locked
+
+		LOCTEXT myGameStartedAgo "Game started %d:%02d minutes ago."
+
+		LOCTEXT myHostUnknownMap "The host has selected a map that you don't have"
+
+		LOCTEXT myDSEnRoute "ETA to drop:"
+
+		LOCTEXT myCentSign ¢
+
+		LOCTEXT myCargoSpace "CARGO SPACE:"
+
+		LOCTEXT myETAtoBase "ETA to base:"
+
+		LOCTEXT myGameMode "Game mode"
+
+		LOCTEXT myDomination Domination
+
+		LOCTEXT myAssault Assault
+
+		LOCTEXT myKingOfTheHill "King of the Hill"
+
+		LOCTEXT myPrisonerOfWar "Prisoner of War"
+
+		LOCTEXT myUnknown Unknown
+
+		LOCTEXT myUnknownMap "Unknown map"
+
+		LOCTEXT myPlayers Players
+
+		LOCTEXT mySpectators Spectators
+
+		LOCTEXT myRanked Ranked
+
+		LOCTEXT myYes Yes
+
+		LOCTEXT myNo No
+
+		LOCTEXT myTimeLeft "Time left"
+
+		LOCTEXT myIpNumber "IP number"
+
+		LOCTEXT myBotModeNone "No Bots"
+
+		LOCTEXT myBotModeAuto "Auto Even Teams"
+
+		LOCTEXT myBotModePvsB "Player(s) VS. Bots"
+
+		LOCTEXT myBotModeAdvanced "Advanced Mode"
+
+		LOCTEXT myTugOfWar "Tug of War"
+
+		LOCTEXT myTeamDeathmatch "Team Deathmatch"
+
+	}
+
+	TextType myErrors
+	{
+		LOCTEXT myServerConnectionLost "Connection to server lost."
+
+		LOCTEXT myErrorWhileLoading "Error while loading mission."
+
+		LOCTEXT myMissingMapError "Could not find map: %s"
+
+		LOCTEXT myMOSErrorOccured "A connection error occurred and you have been disconnected from Massgate."
+
+		LOCTEXT myTimeoutWhileConnecting "Timeout while connecting to server."
+
+		LOCTEXT myFailedToConnectToServer "Failed to connect to server."
+
+		LOCTEXT myUnknownCommand "Unknown command received from server. Connection closed."
+
+		LOCTEXT myWrongVersion "Failed to connect to server. Wrong version."
+
+		LOCTEXT myServerFull "Failed to connect to server. Server Full."
+
+		LOCTEXT myServerError "Failed to connect to server. Connection denied (possible server error)."
+
+		LOCTEXT myNoUDP "Failed to connect to server. Could not establish UDP connection."
+
+		LOCTEXT myGameClose "Failed to connect to server. Server closed."
+
+		LOCTEXT myBindFailed "Failed to bind local port. Unable to complete connection."
+
+		LOCTEXT myConnectionLostMessage "Server connection lost (%.0f seconds)."
+
+		LOCTEXT myGeneralNetworkError "General network error."
+
+		LOCTEXT myHostShutdown "The game host has shut down the game."
+
+		LOCTEXT myDataErrorClient "You don't have the same map data as the server."
+
+		LOCTEXT myDataErrorServer "%s does not have the same map data as the server. May be using a different version of the map."
+
+		LOCTEXT myWrongPassword "Failed to connect to server. Wrong password."
+
+		LOCTEXT myCamPosDebugInfoUploadFailed "Failed to upload content bug report set to server"
+
+		LOCTEXT myCamPosDebugInfoDownloadFailed "Failed to download content bug report set from server"
+
+		LOCTEXT myCamPosDebugInfoDownloadCorrupted "The downloaded content bug report set is corrupted"
+
+		LOCTEXT myDisconnectedIdleMessage "Disconnected because of idling."
+
+		LOCTEXT myDisconnectedFriendlyFireMessage "Disconnected because of too much friendly fire."
+
+		LOCTEXT myWarningSpamMessage "You have been muted in %i seconds. Reason: spamming"
+
+		LOCTEXT myWarningTeamBalanceMessage "Auto team balancing enabled. Forced team balance in %d"
+
+		LOCTEXT myWarningTeamBalancedMessage "%s has been transferred to the other team."
+
+		LOCTEXT myDx9ToDx10 "You have switched between dx9 and dx10 rendering, this will not take effect until after WIC has been restarted"
+
+		LOCTEXT myWarningRequestSpamMessage "You have been request muted in %i seconds. Reason: spamming"
+
+		LOCTEXT myBannedMessage "You are banned from this server."
+
+		LOCTEXT myDisconnectedKickMessage "You were kicked from the server due to a vote."
+
+		LOCTEXT myDisconnectedKickBanMessage_KickOnly "You were kicked from the server by an admin.\nReason: %s"
+
+		LOCTEXT myDisconnectedKickBanMessage_Indefinitely "You were banned from the server indefinitely by an admin.\nReason: %s"
+
+		LOCTEXT myDisconnectedKickBanMessage "You were banned from the server for %u minutes by an admin.\nReason: %s"
+
+	}
+
+	TextType myOptions
+	{
+		LOCTEXT MouseWheelUp "Wheel Up"
+
+		LOCTEXT MouseWheelDown "Wheel Down"
+
+		LOCTEXT PressKey "<press key>"
+
+		LOCTEXT FSAA_none None
+
+		LOCTEXT FSAA_2x 2x
+
+		LOCTEXT FSAA_4x 4x
+
+		LOCTEXT TexQual_low Low
+
+		LOCTEXT TexQual_med Medium
+
+		LOCTEXT TexQual_high High
+
+		LOCTEXT AF_none None
+
+		LOCTEXT AF_2x 2x
+
+		LOCTEXT AF_4x 4x
+
+		LOCTEXT AF_8x 8x
+
+		LOCTEXT AF_16x 16x
+
+		LOCTEXT Shad_none Off
+
+		LOCTEXT Shad_simple "(option not used)"
+
+		LOCTEXT Shad_complex On
+
+		LOCTEXT Refl_none None
+
+		LOCTEXT Refl_sky Sky
+
+		LOCTEXT Refl_skyground "Sky & ground"
+
+		LOCTEXT Refl_skygroundprops "Sky, ground & props"
+
+		LOCTEXT Refl_all Everything
+
+		LOCTEXT PS_LOW Low
+
+		LOCTEXT PS_HIGH High
+
+		LOCTEXT TexSharp_veryblurry "Very blurry"
+
+		LOCTEXT TexSharp_blurry Blurry
+
+		LOCTEXT TexSharp_normal Normal
+
+		LOCTEXT TexSharp_sharp Sharp
+
+		LOCTEXT TexSharp_verysharp "Very sharp"
+
+		LOCTEXT Subs_none None
+
+		LOCTEXT Subs_ingameonly Default
+
+		LOCTEXT Subs_allcutscenes "All cutscenes"
+
+		LOCTEXT GraphicsDetail_Low Low
+
+		LOCTEXT GraphicsDetail_Med Medium
+
+		LOCTEXT GraphicsDetail_High High
+
+		LOCTEXT GraphicsDetail_VeryHigh "Very high"
+
+		LOCTEXT GraphicsDetail_Custom Custom
+
+		LOCTEXT PhysicsDetail_Low Low
+
+		LOCTEXT PhysicsDetail_Med Medium
+
+		LOCTEXT PhysicsDetail_High High
+
+		LOCTEXT TQuality "Texture Quality"
+
+		LOCTEXT WQuality "Water Quality"
+
+		LOCTEXT SQuality Shadows
+
+		LOCTEXT OODLevel "(option not used)"
+
+		LOCTEXT FSAA "Fullscreen Anti-Alias"
+
+		LOCTEXT Aniso "Anisotropic Filtering"
+
+		LOCTEXT UnitTracks "Unit Tracks"
+
+		LOCTEXT Decals "Ground Scorch Marks"
+
+		LOCTEXT Autoprops "Flowers and Bushes"
+
+		LOCTEXT HQTerrain "High Quality Terrain"
+
+		LOCTEXT WRClouds "Water Reflects Clouds"
+
+		LOCTEXT WRUnits "Water Reflects Units"
+
+		LOCTEXT WRProps "Water Reflects Props"
+
+		LOCTEXT WREffects "Water Reflects Effects"
+
+		LOCTEXT WCrests "Water Crests"
+
+		LOCTEXT WTrails "Water Trails"
+
+		LOCTEXT Roads Roads
+
+		LOCTEXT Clouds Clouds
+
+		LOCTEXT ZF Z-Feather
+
+		LOCTEXT PostFX "Post Effects"
+
+		LOCTEXT PostFXSS "Soft Shadows"
+
+		LOCTEXT PostFXBloom Bloom
+
+		LOCTEXT PostFXHH "Heat Haze"
+
+		LOCTEXT TreeShad "Tree Shadows"
+
+		LOCTEXT VSync VSync
+
+		LOCTEXT PS "Pixel Shaders"
+
+		LOCTEXT RefreshRate "Refresh Rate"
+
+		LOCTEXT FSAA_6x 6x
+
+		LOCTEXT FSAA_8x 8xCSAA
+
+		LOCTEXT FSAA_16x 16xCSAA
+
+		LOCTEXT MouseButton "Mouse Button"
+
+		LOCTEXT PhysDetail "Physics Quality"
+
+		LOCTEXT TerrainTQuality "Terrain Texture Quality"
+
+		LOCTEXT TransAA "Transparency Antialiasing"
+
+		LOCTEXT WRefSize "Water Reflection Size"
+
+		LOCTEXT TreeHQShad "HQ Tree Shaders"
+
+		LOCTEXT MaxFPSNone None
+
+		LOCTEXT MaxFPS15 "15 FPS"
+
+		LOCTEXT MaxFPS20 "20 FPS"
+
+		LOCTEXT MaxFPS30 "30 FPS"
+
+		LOCTEXT MaxFPS "Framerate Cap (Power Saving)"
+
+		LOCTEXT ParticlePhys "Debris Physics"
+
+		LOCTEXT Display_Adapter "Display Adapter"
+
+		LOCTEXT DualScreen "Megamap on secondary screen"
+
+		LOCTEXT DX10Render "Use DX10 rendering"
+
+		LOCTEXT ObjectLODLevel "World Distance Detail"
+
+		LOCTEXT MeshLODLevel "Animation Quality"
+
+		LOCTEXT GraphicsDetail_VeryLow "Very Low"
+
+		LOCTEXT UseHighestLod "Full Object Geometry"
+
+		LOCTEXT RenderWindows "Windows on Buildings"
+
+		LOCTEXT RenderDetails "Extra Object Details"
+
+		LOCTEXT CloudShadows "Shadows from clouds"
+
+		LOCTEXT QuadCoreLineOfSight "High Line of Sight Resolution"
+
+		LOCTEXT QuadCoreWind "Improved Wind Simulation"
+
+		LOCTEXT UITexQual "UI Texture Quality"
+
+		LOCTEXT Compressed Compressed
+
+		LOCTEXT Uncompressed Uncompressed
+
+		LOCTEXT Grass Grass
+
+		LOCTEXT Craters Craters
+
+		LOCTEXT VeryShort "Very Short"
+
+		LOCTEXT Short Short
+
+		LOCTEXT Medium Medium
+
+		LOCTEXT Long Long
+
+		LOCTEXT VeryLong "Very Long"
+
+		LOCTEXT UnitTracksLength "Unit Tracks Length"
+
+		LOCTEXT UseWreckFx "Destruction Fx"
+
+		LOCTEXT DX9ToDX10 "You have switched between DirectX 9 and DirectX 10. This will not take effect until after you have restarted World in Conflict."
+
+		LOCTEXT MulticoreExplosionDebris "Extra debris on explosions"
+
+	}
+
+	TextType myContentDownload
+	{
+		LOCTEXT myAvailableFiles "Available Files"
+
+		LOCTEXT mySelectedFiles "Selected Files"
+
+		LOCTEXT mySize Size
+
+		LOCTEXT myStatusGettingFileList "Getting Filelist"
+
+		LOCTEXT myStatusDownloadStarting "Download Starting"
+
+		LOCTEXT myStatusDownloadingFile "Downloading file '%s'"
+
+		LOCTEXT myErrorDownloadingFile "Error while downloading file '%s'"
+
+		LOCTEXT myDownloadComplete "Download complete. You have to restart Ground Control 2 to use the downloaded file(s)."
+
+		LOCTEXT myTimeout "Timeout while receiving file. The server might be coming back though. Press Abort to stop download."
+
+	}
+
+	TextType myStrategicMap
+	{
+		LOCTEXT myTaunt1 "How do you like me now?"
+
+		LOCTEXT myTaunt2 "It's not gonna work!"
+
+		LOCTEXT myTaunt3 "You son of a..."
+
+		LOCTEXT myTaunt4 "I'm gonna get u for that! Watch out..."
+
+		LOCTEXT myWarnInf "%s warns for for infantry in %s%s"
+
+		LOCTEXT myWarnArmor "%s Warns for armor in %s%s"
+
+		LOCTEXT myWarnAir "%s warns for incoming aircraft in sector %s%s"
+
+		LOCTEXT myWarnArty "%s warns artillery in sector %s%s"
+
+		LOCTEXT myTacticsAA "%s needs AA in sector %s%s"
+
+		LOCTEXT myTacticsArmor "%s needs armor in sector %s%s"
+
+		LOCTEXT myTacticsRepair "%s needs repairs in sector %s%s"
+
+		LOCTEXT myTacticsArty "%s needs artillery support in sector %s%s"
+
+		LOCTEXT myStrategyBridge "%s: We need a bridge at %s%s"
+
+		LOCTEXT myStrategyClearForest "%s: Clear forest at %s%s"
+
+		LOCTEXT myStrategyAttack "Attack here!"
+
+		LOCTEXT myStrategyDefend "Defend here!"
+
+		LOCTEXT myAcceptRequest "%s has accepted request"
+
+	}
+
+	TextType myStrategicMapRequestToolTips
+	{
+		LOCTEXT myTauntTip Taunts
+
+		LOCTEXT myWarnTip Warnings
+
+		LOCTEXT myTacticsTip Tactics
+
+		LOCTEXT myStrategiesTip Strategies
+
+		LOCTEXT myTaunt1Tip "How do you like me now?"
+
+		LOCTEXT myTaunt2Tip "It's not gonna work"
+
+		LOCTEXT myTaunt3Tip "You son of a..."
+
+		LOCTEXT myTaunt4Tip "I'm gonna get you for that!"
+
+		LOCTEXT myWarnInfTip "Warning for infantery"
+
+		LOCTEXT myWarnArmorTip "Warning for armor"
+
+		LOCTEXT myWarnAirTip "Warning for air"
+
+		LOCTEXT myWarnArtyTip "Warning for artillery"
+
+		LOCTEXT myTacAATip "Request AA"
+
+		LOCTEXT myTacArmorTip "Request armor"
+
+		LOCTEXT myTacRepairsTip "Requst repairs"
+
+		LOCTEXT myTacArtyTip "Request artillery"
+
+		LOCTEXT myStratBridgeTip "Request a bridge"
+
+		LOCTEXT myStratForestTip "Request a forest"
+
+		LOCTEXT myStratAttackTip "Request an attack"
+
+		LOCTEXT myStratDefendTip "Request defence"
+
+	}
+
+	TextType myGameMode
+	{
+		LOCTEXT myAssaultFirstRoundStart "Assault Round One starting!"
+
+		LOCTEXT myAssaultSecondRoundStart "Assault Round Two starting!"
+
+		LOCTEXT myAssaultRoundOneOver "Assault Round One over."
+
+		LOCTEXT myAssaultGameOver "Assault over."
+
+		LOCTEXT myDominatingWin "Total Domination imminent. You are about to win!"
+
+		LOCTEXT myDominatingLose "Total Domination imminent. You are about to lose!"
+
+		LOCTEXT myKingStart "King of the Hill starting!"
+
+		LOCTEXT myKingGo "King of the Hill GO!"
+
+		LOCTEXT myKing10Seconds "King of the Hill will start in 10 seconds!"
+
+		LOCTEXT myAssaultRound1AttackHeading "PHASE ONE - YOU ARE ATTACKING"
+
+		LOCTEXT myAssaultRound1DefendHeading "PHASE ONE - YOU ARE DEFENDING"
+
+		LOCTEXT myAssaultRound2AttackHeading "PHASE TWO - YOU ARE ATTACKING"
+
+		LOCTEXT myAssaultRound2DefendHeading "PHASE TWO - YOU ARE DEFENDING"
+
+		LOCTEXT myAssaultAttackText "Take each Command Point as quickly as possible!"
+
+		LOCTEXT myAssaultDefendText "Defend each Command Point from the enemy attacks"
+
+	}
+
+	TextType myChatCommandTriggers
+	{
+		LOCTEXT myChatTrigger say
+
+		LOCTEXT myChatHelp "/say, usage: /say This is a chat message to all players!"
+
+		LOCTEXT myTeamChatTrigger team
+
+		LOCTEXT myTeamChatHelp "/team, usage: /team This is a chat message to your team mates!"
+
+		LOCTEXT myWhisperTrigger1 whisper
+
+		LOCTEXT myWhisperTrigger2 w
+
+		LOCTEXT myWhisperHelp "/whisper, /w usage: /w PlayerName This is a private chat message!"
+
+		LOCTEXT myWhisperPlayerDoesNotExist "The specified player does not exist"
+
+		LOCTEXT myWhisperSentToPlayerName "To %s: %s"
+
+		LOCTEXT myHelpTrigger help
+
+		LOCTEXT myHelpHelp "Available system commands:\n/help, /quit, /say, /team, /whisper.\nAny command can be combined with /command help"
+
+		LOCTEXT myQuitTrigger quit
+
+		LOCTEXT myQuitHelp "/quit. Optional argument: menu (exits to menu instead of quitting game)"
+
+		LOCTEXT myQuitAdditionalCommandMenu menu
+
+		LOCTEXT myEETrigger_DoNotTranslate fussball
+
+		LOCTEXT myEEHelp "From the developer team with mad love."
+
+	}
+
+	TextType myChatCommandTexts
+	{
+		LOCTEXT myOptionalHelpString help
+
+		LOCTEXT myNoCommandProvidedString "No command provided. Try /help for a few commands."
+
+		LOCTEXT myUsageString "Usage: %s"
+
+		LOCTEXT myFailedToExecuteCommandString "Failed to execute command /%s"
+
+		LOCTEXT myInvalidCommandString "Invalid command /%s"
+
+	}
+
+	TextType myServerMessages
+	{
+		LOCTEXT myShutdownWarningMins "This server will shut down in %d minutes."
+
+		LOCTEXT myShutdownWarningSecs "This server will shut down in %d seconds."
+
+		LOCTEXT myStatsReported "Your statistics were successfully reported to Massgate."
+
+		LOCTEXT myStatsPlayLonger "Your statistics were NOT reported to Massgate. You did not play long enough."
+
+		LOCTEXT myStatsNotRanked "Your statistics were NOT reported to Massgate. This server is not ranked."
+
+		LOCTEXT myRankedModeSet "This server will be set to RANKED after next map cycle."
+
+		LOCTEXT myRankedModeUnset "This server has been set to UNRANKED, no stats will be reported to Massgate."
+
+	}
+
+	TextType myVoteMessages
+	{
+		LOCTEXT myVoteYes "You voted yes."
+
+		LOCTEXT myVoteNo "You voted no."
+
+		LOCTEXT myVoteEndedYes "Vote ended YES."
+
+		LOCTEXT myVoteEndedNo "Vote ended NO."
+
+		LOCTEXT myVoteHelpText "(Press %s to vote yes and %s to vote no.)"
+
+		LOCTEXT myVoteStatsText "In favor: %d%% (%d of %d have voted)"
+
+		LOCTEXT myVoteLayoutHasVoted %s\n%s
+
+		LOCTEXT myVoteLayoutHasNotVoted "%s\n%s %s"
+
+		LOCTEXT myVoteNoSpectating "Admin decision by %s: No spectating allowed."
+
+		LOCTEXT myVoteLockFreeSpec "Admin decision by %s: Spectate All not allowed."
+
+		LOCTEXT myVoteLockTeamFromSpec "Admin decision by %s: Spectating of team %s not allowed."
+
+		LOCTEXT myVoteLockChatFromSpec "Vote initialized by %s: Vote to lock chat from spectating."
+
+		LOCTEXT myVoteUnlockChatFromSpec "Vote initialized by %s: Vote to unlock chat from spectating."
+
+		LOCTEXT myVoteLockTeams "Admin decision by %s: Teams are now locked."
+
+		LOCTEXT myVoteUnlockTeams "Admin decision by %s: Teams are no longer locked."
+
+		LOCTEXT myVoteKickClientFromServer "Vote initialized by %s: Vote to kick %s. "
+
+		LOCTEXT myVoteKickClientFromTeam "Vote initialized by %s: Vote to team kick %s."
+
+		LOCTEXT myVoteChangeMap "Vote initialized by %s: Vote to change map to %s."
+
+		LOCTEXT myVoteTimeLimit "Vote initialized by %s: Vote to change time to %i minutes."
+
+		LOCTEXT myVoteInvitePlayer "Vote initialized by %s: Vote to team invite %s."
+
+		LOCTEXT myVoteSetMatchMode "Admin decision by %s: Match mode enabled. Map will restart."
+
+		LOCTEXT myVoteExitMatchMode "Admin decision by %s: Match mode disabled. Map will restart."
+
+		LOCTEXT myVoteServerGameOver "Vote initialized by %s: Vote to end game."
+
+		LOCTEXT myVoteAllowSpectating "Admin decision by %s: Spectating allowed."
+
+		LOCTEXT myVoteAllowFreeSpec "Admin decision by %s: Spectate All allowed."
+
+		LOCTEXT myVoteUnlockTeamFromSpec "Admin decision by %s: Spectating of team %s allowed."
+
+		LOCTEXT myVoteSetClanMatch "Vote initialized by %s: Vote to set clan match."
+
+		LOCTEXT myVoteKickBanFromServer "Admin decision by %s: %s was banned from the server."
+
+		LOCTEXT myVoteKickBanFromServer_KickOnly "Admin decision by %s: %s was kicked from the server."
+
+		LOCTEXT myVoteInProgress "You are unable to initialize a new vote while another is in progress."
+
+		LOCTEXT myVoteTooFewVoteEntitled "You are unable to initialize new votes with fewer than %d players on the teams combined."
+
+		LOCTEXT myVoteCooldownInProgress "You have initiated a vote recently. You are unable to initialize votes for another %d seconds."
+
+		LOCTEXT myVoteMapNotFound "unknown map"
+
+		LOCTEXT myVotePause "Game paused by admin"
+
+		LOCTEXT myVoteResume "Game resumed by admin"
+
+	}
+
+	TextType myMinimap
+	{
+		LOCTEXT myDirectionNorth N
+
+		LOCTEXT myDirectionEast E
+
+		LOCTEXT myDirectionSouth S
+
+		LOCTEXT myDirectionWest W
+
+	}
+
+	TextType myInformationBoxes
+	{
+		InformationBoxType myPaletteStop
+		{
+			myHeadline STOP
+			myDescription "Issue a stop order to selected units."
+			myShortcutKey STOP_UNITS
+		}
+
+		InformationBoxType myPaletteMove
+		{
+			myHeadline MOVE
+			myDescription "Issue a move order to selected units. "
+			myShortcutKey MOVE
+		}
+
+		InformationBoxType myPaletteMoveBackwards
+		{
+			myHeadline "MOVE BACKWARDS"
+			myDescription "Issue a reverse move order. \n\nGood for keeping the front armor towards the enemy."
+			myShortcutKey BACKWARDS_MOVE_MODIFIER
+		}
+
+		InformationBoxType myPaletteUnloadAll
+		{
+			myHeadline UNLOAD
+			myDescription "Unload all infantry from selected transport or building."
+			myShortcutKey EXIT_UNITS
+		}
+
+		InformationBoxType myPaletteHoldFire
+		{
+			myHeadline "HOLD FIRE"
+			myDescription "Toggle hold fire. \n\nGood for micro managing reload times."
+			myShortcutKey CYCLE_BEHAVIOUR
+		}
+
+		InformationBoxType myPaletteAttackGround
+		{
+			myHeadline "ATTACK GROUND"
+			myDescription "Force fire on the selected position. \n\nVital for effective use of artillery units."
+			myShortcutKey ATTACK
+		}
+
+		InformationBoxType myPaletteRepair
+		{
+			myHeadline REPAIR
+			myDescription "Issue a repair order on one of your own or friendly units."
+			myShortcutKey REPAIR
+		}
+
+		InformationBoxType myPaletteStack
+		{
+			myHeadline WAYPOINTS
+			myDescription "Issue a move order with multiple waypoints."
+			myShortcutKey STACK
+		}
+
+		InformationBoxType myPaletteFollow
+		{
+			myHeadline "FOLLOW UNIT"
+			myDescription "Order one or multiple units to follow another unit."
+			myShortcutKey FOLLOW
+		}
+
+		InformationBoxType myPaletteEnterTransport
+		{
+			myHeadline "ENTER NEAREST TRANSPORT"
+			myDescription "Selected infantry will enter the nearest empty transport."
+			myShortcutKey ENTER_UNIT
+		}
+
+		InformationBoxType myPaletteEnterBuilding
+		{
+			myHeadline "ENTER NEAREST BUILDING"
+			myDescription "Selected infantry will enter the nearest empty building."
+			myShortcutKey ENTER_BUILDING
+		}
+
+		InformationBoxType myAbilityNext
+		{
+			myHeadline "NEXT SPECIAL ABILITY"
+			myDescription "Jump to the Special Abilities of the next unit type within your current selection."
+			myShortcutKey NEXT_ABILITY
+		}
+
+		InformationBoxType myAbilityCurrent
+		{
+			myHeadline "UNIT TYPE ABILITIES"
+			myDescription "This is the unit type, within your current selection, displaying its Special Abilities"
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myAbilityPrev
+		{
+			myHeadline "PREVIOUS SPECIAL ABILITY"
+			myDescription "Jump to the Special Abilities of the previous unit type within your current selection."
+			myShortcutKey PREV_ABILITY
+		}
+
+		InformationBoxType myResupply
+		{
+			myHeadline "RESUPPLY SQUAD"
+			myDescription "Restore your infantry squad back to full strength in numbers.\n\nCosts reinforcement points."
+			myShortcutKey RESUPPLY_SQUAD
+		}
+
+		InformationBoxType myMiniMapContacts
+		{
+			myHeadline CONTACTS
+			myDescription "Show your Massgate contacts."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myMiniMapObjectives
+		{
+			myHeadline OBJECTIVES
+			myDescription "Show your current objectives."
+			myShortcutKey OPEN_OBJECTIVES_SCREEN
+		}
+
+		InformationBoxType myMiniMapSwapUnitGroup
+		{
+			myHeadline "SWAP UNIT GROUP"
+			myDescription "Jump between your different units all over the battlefield."
+			myShortcutKey CAMERA_SWAP_UNITGROUP
+		}
+
+		InformationBoxType myMiniMapGoToDropZone
+		{
+			myHeadline "GO TO DROP ZONE"
+			myDescription "Move the camera to your drop zone.\n\nRight-click to select your last deployed units."
+			myShortcutKey CAMERA_TO_LZ
+		}
+
+		InformationBoxType myMiniMapHelp
+		{
+			myHeadline HELP
+			myDescription "Shows the help screen."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myMiniMapSelectTeam
+		{
+			myHeadline "CHANGE TEAM"
+			myDescription "Change the team you are playing for. \n\n<#f00>Changing team will make you lose all of your current units.</>"
+			myShortcutKey CHANGE_FACTION
+		}
+
+		InformationBoxType myMiniMapToggleFormation
+		{
+			myHeadline "CHANGE FORMATION"
+			myDescription "Change between the different movement formations."
+			myShortcutKey CYCLE_FORMATION
+		}
+
+		InformationBoxType myMiniMapZoomIn
+		{
+			myHeadline "ZOOM IN"
+			myDescription "Zoom in on the MiniMap."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myMiniMapZoomOut
+		{
+			myHeadline "ZOOM OUT"
+			myDescription "Zoom out on the MiniMap."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myMiniMapMegaMapToggle
+		{
+			myHeadline "TOGGLE MEGAMAP"
+			myDescription "Display a strategic top-down view of the entire battlefield."
+			myShortcutKey TOGGLE_MEGAMAP
+		}
+
+		InformationBoxType myMiniMapDisband
+		{
+			myHeadline "DISBAND SELECTED UNITS"
+			myDescription "<#f00>Remove your currently selected units from the battlefield.</>\n\nTheir points value will be refunded to your incoming Reinforcements Points."
+			myShortcutKey DISBAND_UNIT
+		}
+
+		InformationBoxType myTAToggle
+		{
+			myHeadline "TACTICAL AID MENU"
+			myDescription "Here you can call in off map support."
+			myShortcutKey TACTICAL_AID
+		}
+
+		InformationBoxType myTAPoints
+		{
+			myHeadline "TACTICAL AID POINTS"
+			myDescription "Your current total amount of Tactical Aid points.\n\nYou spend these points to call in different kinds of off map support."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myTAProgress
+		{
+			myHeadline "TACTICAL AID PROGRESS"
+			myDescription "Displays the progress towards your next full Tactical Aid point."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myTACategory0
+		{
+			myHeadline NON-DESTRUCTIVE
+			myDescription "A collection of useful non-destructive TAs."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myTACategory1
+		{
+			myHeadline "SELECTIVE STRIKES"
+			myDescription "TA's specialized to take out specific targets"
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myTACategory2
+		{
+			myHeadline "INDISCRIMINATE STRIKES"
+			myDescription "Destructive TA's without any regard of targets, within the area of effect."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementToggle
+		{
+			myHeadline "REINFORCEMENT MENU"
+			myDescription "Here you can order units and change role and team."
+			myShortcutKey REINFORCEMENTS
+		}
+
+		InformationBoxType myReinforcementPoints
+		{
+			myHeadline "REINFORCEMENT POINTS"
+			myDescription "The number to the left displays your current total of points.\n\nThe number to the right displays your current amount of incoming points."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementPointsPenalty
+		{
+			myHeadline "REINFORCEMENT POINTS"
+			myDescription "<#f00>You currently have a Balance Penalty to your Reinforcement Points.</>\n\nThe number to the left displays your current total of points.\n\nThe number to the right displays your current amount of incoming points."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myBalancePenalty
+		{
+			myHeadline "BALANCE PENALTY"
+			myDescription "You currently have a penalty to your Reinforcement Points for joining the more highly ranked team.\n\nThis penalty will decrease if the teams become more balanced."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementProgressIn
+		{
+			myHeadline "DROPSHIP ARRIVING"
+			myDescription "Time unitil your units arrive."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementProgressOut
+		{
+			myHeadline "DROPSHIP RETURNING"
+			myDescription "Time until the dropship is back at base. When it's back, new units can be ordered."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementDeploy
+		{
+			myHeadline "DEPLOY UNITS"
+			myDescription "Deploy your selected units."
+			myShortcutKey DEPLOY_SPAWNER
+		}
+
+		InformationBoxType myReinforcementSetDropZone
+		{
+			myHeadline "CHANGE DROP ZONE"
+			myDescription "Move your drop zone to another location."
+			myShortcutKey SET_SPAWN_POSITION
+		}
+
+		InformationBoxType myReinforcementChangeRole
+		{
+			myHeadline "CHANGE ROLE"
+			myDescription "Change to another role to get rebate on and access to different units. \n\n<#f00>Changing role will make you lose all of your current units.</>"
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleArmor
+		{
+			myHeadline "ARMOR <#f00>(OUTSIDE ROLE)</>"
+			myDescription "Contains units specific to the Armor role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleArmorActive
+		{
+			myHeadline "ARMOR (CURRENT ROLE)"
+			myDescription "Contains units specific to the Armor role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleArmorFPM
+		{
+			myHeadline ARMOR
+			myDescription "Contains Armor units."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleInfantry
+		{
+			myHeadline "INFANTRY <#f00>(OUTSIDE ROLE)</>"
+			myDescription "Contains units specific to the Infantry role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleInfantryActive
+		{
+			myHeadline "INFANTRY (CURRENT ROLE)"
+			myDescription "Contains units specific to the Infantry role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleInfantryFPM
+		{
+			myHeadline INFANTRY
+			myDescription "Contains Infantry units."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleAir
+		{
+			myHeadline "AIR <#f00>(OUTSIDE ROLE)</>"
+			myDescription "Contains units specific to the Air role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleAirActive
+		{
+			myHeadline "AIR (CURRENT ROLE)"
+			myDescription "Contains units specific to the Air role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleAirFPM
+		{
+			myHeadline AIR
+			myDescription "Contains Air units."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleSupport
+		{
+			myHeadline "SUPPORT <#f00>(OUTSIDE ROLE)</>"
+			myDescription "Contains units specific to the Support role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleSupportActive
+		{
+			myHeadline "SUPPORT (CURRENT ROLE)"
+			myDescription "Contains units specific to the Support role."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myReinforcementRoleSupportFPM
+		{
+			myHeadline SUPPORT
+			myDescription "Contains Support units."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myDominationBarFlags
+		{
+			myHeadline "TEAM DOMINATION"
+			myDescription "The flag of the winning team dominates the bar."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myDominationBarLeftPush
+		{
+			myHeadline "FRIENDLY DOMINANCE"
+			myDescription "Arrows, if present, indicate how many Perimeter Points you hold over your opponent.\n\nThe more arrows you have, the faster you will win."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myDominationBarRightPush
+		{
+			myHeadline "ENEMY DOMINANCE"
+			myDescription "Arrows, if present, indicate how many Perimiter Points your opponent holds over you.\n\nThe more arrows they have, the faster they will win."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myDominationBarTimeLeft
+		{
+			myHeadline "ROUND TIME"
+			myDescription "Time left of the current round."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType myAssultBarTimeLeft
+		{
+			myHeadline "ROUND TIME"
+			myDescription "Time left of the current phase."
+			myShortcutKey NONE
+		}
+
+		InformationBoxType mySelectSquad
+		{
+			myHeadline "SQUAD %u"
+			myDescription "Click to select all units in squad %u.\n\nDouble-click to move camera to squad."
+			myShortcutKey NONE
+		}
+
+	}
+
+	TextType myPopupBoxes
+	{
+		PopupBoxType myResetDefaults
+		{
+			myHeadline "RESET DEFAULTS"
+			myDescription "Are you sure you want reset to the default settings?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myRevert
+		{
+			myHeadline REVERT
+			myDescription "Are you sure you want revert to the original settings?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myDeleteReplay
+		{
+			myHeadline "DELETE REPLAY"
+			myDescription "Are you sure you want to delete this replay?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myDeleteSavedGame
+		{
+			myHeadline "DELETE SAVEGAME"
+			myDescription "Are you sure you want to delete this save game?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myDeleteCurrentCampaignSave
+		{
+			myHeadline "DELETE SAVEGAME"
+			myDescription "This save file contains your currently loaded campain data. It can not be deleted."
+			myIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		PopupBoxType myOverwriteSavedGame
+		{
+			myHeadline "OVERWRITE SAVEGAME"
+			myDescription "The specified name already exists. Are you sure you want to overwrite this save game?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myOverwriteCampaign
+		{
+			myHeadline "OVERWRITE CAMPAIGN"
+			myDescription "The specified campaign name already exists. Do you want to overwrite it?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myRestartMap
+		{
+			myHeadline "RESTART MAP"
+			myDescription "Are you sure you want to restart the mission?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myVoipMicWarning
+		{
+			myHeadline VOIP
+			myDescription "Microphone not selected as audio input, VOIP may not function. Check the Windows audio properties."
+			myIcon <empty>
+		}
+
+		PopupBoxType myStartTutorial
+		{
+			myHeadline "START TUTORIAL"
+			myDescription "This will start the Tutorial. Are you sure?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myResumeCampaign
+		{
+			myHeadline "RESUME CAMPAIGN"
+			myDescription "Are you sure you want to resume the active campaign?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myExitConfirmation
+		{
+			myHeadline "EXIT TO WINDOWS"
+			myDescription "Do you really want to exit World in Conflict?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myExitToMenuConfirmation
+		{
+			myHeadline "EXIT TO MAIN MENU"
+			myDescription "Do you really want to exit to the main menu?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myFirstRunTutorial
+		{
+			myHeadline "RUN TUTORIAL"
+			myDescription "If you are new to the game, we highly recommend that you play the Tutorial. Do you want to run the Tutorial now?"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+		PopupBoxType myNoChangeTeamLeft
+		{
+			myHeadline "MAX TEAMCHANGE LIMIT REACHED"
+			myDescription "No more team changes allowed in this match!"
+			myIcon ui/icons/gui/icon_questionmark.tga
+		}
+
+	}
+
+	TextType myHelpBoxes
+	{
+		HelpBoxType myFollowOrder
+		{
+			myLeftHandedDescription "Right click a unit to follow. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click a unit to follow. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myStackOrder
+		{
+			myLeftHandedDescription "Left click on the ground to stack move orders. Right click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Right click on the ground to stack move orders. Left click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myForceAttackOrder
+		{
+			myLeftHandedDescription "Right click to Attack Ground."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click to Attack Ground."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType mySetDropzoneOrder
+		{
+			myLeftHandedDescription "Right click in the blinking area to place your drop zone. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click in the blinking area to place your drop zone. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myRepairOrder
+		{
+			myLeftHandedDescription "Right click a unit to repair it. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click a unit to repair it. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myLayBridgeOrder
+		{
+			myLeftHandedDescription "Right click a riverbank to lay a bridge. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click a riverbank to lay a bridge. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myPlaceRequestOrder
+		{
+			myLeftHandedDescription "Right click to place the chosen request. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click to place the chosen request. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myOffensiveSpecialAbilityOrder
+		{
+			myLeftHandedDescription "Right click to place the special ability."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click to place the special ability."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myMoveBackwardsOrder
+		{
+			myLeftHandedDescription "Right click to move backwards. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click to move backwards. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+		HelpBoxType myMoveOrder
+		{
+			myLeftHandedDescription "Right click to move. Left click to cancel."
+			myLeftHandedIcon ui/icons/support_weapons/level_disabled.tga
+			myRightHandedDescription "Left click to move. Right click to cancel."
+			myRightHandedIcon ui/icons/gui/icon_exclamationmark.tga
+		}
+
+	}
+
+	TextType myGameModeAssault
+	{
+		LOCTEXT myAssaultingText ATTACKING
+
+		LOCTEXT myDefendingText DEFENDING
+
+		LOCTEXT myAssaultCapturedText <#0f0>CAPTURED</>
+
+		LOCTEXT myAssaultDefendedText <#f00>DEFENDED</>
+
+		LOCTEXT myDefendCapturedText <#f00>FALLEN</>
+
+		LOCTEXT myDefendDefendedText <#0f0>DEFENDED</>
+
+		LOCTEXT myCapTimeText <#0f0>%02d:%02d</>
+
+		LOCTEXT myDefTimeText <#f00>%02d:%02d</>
+
+		LOCTEXT myDisabledTimeText <#888>--:--</>
+
+		LOCTEXT myDisabledText "<#888>DISABLED IN PHASE TWO</>"
+
+		LOCTEXT myRoundCompletionText "Completed in %02d:%02d"
+
+		LOCTEXT myRoundStartsInText "Phase Two Starts in: %02d"
+
+		LOCTEXT myClickToContinueText "Click to Continue"
+
+		LOCTEXT myFullAttackingText "YOU ARE ATTACKING"
+
+		LOCTEXT myFullDefendingText "YOU ARE DEFENDING"
+
+		LOCTEXT myPhase1Text "- PHASE ONE -"
+
+		LOCTEXT myPhase2Text "- PHASE TWO -"
+
+		LOCTEXT myRoundLengthAttacking1Text "Capture each Command Point as quickly as possible!"
+
+		LOCTEXT myRoundLengthDefending1Text "Fight off the enemy attacks at each Command Point!"
+
+		LOCTEXT myRoundLengthAttacking2Text "Capture as many Command Points as possible in %02d:%02d!"
+
+		LOCTEXT myRoundLengthDefending2Text "Hold the enemy off for %02d:%02d!"
+
+		LOCTEXT myWaitScreenCountdownText "Phase Two Starts in:"
+
+		LOCTEXT myWaitScreenUnknownTimeText "Waiting for Phase Two to Start"
+
+	}
+
+	TextType mySPStats
+	{
+		LOCTEXT myMissionTime "MISSION TIME: %02u:%02u.%02u"
+
+		LOCTEXT myTotalScoreEarned "TOTAL SCORE EARNED: %u"
+
+		LOCTEXT myDamageScore "SCORE EARNED FROM DAMAGING UNITS: %u"
+
+		LOCTEXT myRepairScore "SCORE EARNED FROM REPAIRING: %u"
+
+		LOCTEXT myTransportingScore "SCORE EARNED FROM TRANSPORTING: %u"
+
+		LOCTEXT myTAScore "SCORE EARNED FROM TACTICAL AID: %u"
+
+		LOCTEXT myReinforcementPointsSpent "TOTAL REINFORCEMENT POINTS SPENT: %u"
+
+		LOCTEXT myUnitsLost "UNITS LOST: %u"
+
+		LOCTEXT myUnitsKilled "UNITS KILLED: %u"
+
+		LOCTEXT myFortificationsDestroyed "FORTIFICATIONS DESTROYED: %u"
+
+		LOCTEXT myTAPointsEarned "TACTICAL AID POINTS EARNED: %u"
+
+		LOCTEXT myTAPointsSpent "TACTICAL AID POINTS SPENT: %u"
+
+		LOCTEXT myTACrits "TACTICAL AID CRITICAL STRIKES: %u"
+
+		LOCTEXT myBestTACrit "BEST TACTICAL AID CRITICAL STRIKE: %u, %s"
+
+		LOCTEXT myBestTACritEmpty "BEST TACTICAL AID CRITICAL STRIKE: %u"
+
+		LOCTEXT myFavoriteTA "FAVORITE TACTICAL AID: %s"
+
+		LOCTEXT myMaxKillStreak "KILL STREAK: %u"
+
+		LOCTEXT myMaxDeathStreak "DEATH STREAK: %u"
+
+		LOCTEXT myUnitsRank2 "UNITS PROMOTED TO RANK 2: %u"
+
+		LOCTEXT myUnitsRank3 "UNITS PROMOTED TO RANK 3: %u"
+
+		LOCTEXT myUnitsRank4 "UNITS PROMOTED TO RANK 4: %u"
+
+		LOCTEXT myUnitsRank5 "UNITS PROMOTED TO RANK 5: %u"
+
+		LOCTEXT myMostUsedUnit "MOST USED UNIT: %s"
+
+	}
+
+	TextType myWirelessFrontend
+	{
+		LOCTEXT myStatusConnected CONNECTED
+
+		LOCTEXT myStatusNoConnection "NOT CONNECTED"
+
+		LOCTEXT myAdHocEnabled ENABLED
+
+		LOCTEXT myAdHocDisabled DISABLED
+
+		LOCTEXT myAdHocConnecting CONNECTING
+
+		LOCTEXT myAdhocEnable "ENABLE AD-HOC NETWORK"
+
+		LOCTEXT myAdHocDisable "DISABLE AD-HOC NETWORK"
+
+		LOCTEXT myAdHocFailedHeader "WIRELESS NETWORK PROBLEM"
+
+		LOCTEXT myAdHocFailed "World in Conflict failed to establish a wireless ad-hoc connection. Please ensure that your wireless network device is working properly."
+
+	}
+
+}
+

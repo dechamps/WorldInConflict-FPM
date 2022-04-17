@@ -1,0 +1,4096 @@
+INCLUDE directory.fruit
+
+WicData WicData
+{
+	myGuiMouse
+	{
+		mySkinFile guis/GUISkins.ice
+		mySkin skinOne
+		myToolTipPrefab ToolTip
+		myToolTipFont ToolTipFont
+		myStandard MOUSE_allowed_move
+		myExplicit MarkerCrosshair
+		myAttack MOUSE_attack_ground
+		myAttackOutOfRange MOUSE_attack_outofrange
+		myRepair MOUSE_repair
+		myEnter MOUSE_enter
+		myLZ MOUSE_select_LZ
+		myFollow MOUSE_follow
+		mySupportWeapon MOUSE_support_weapon
+		myCamLeft MOUSE_corners
+		myCamRight MOUSE_corners
+		myCamForward MOUSE_corners
+		myCamBackward MOUSE_corners
+		myCamRotateLeft MOUSE_corners
+		myCamRotateRight MOUSE_corners
+		myCamRotateUp MOUSE_corners
+		myCamRotateDown MOUSE_corners
+		myWait WAIT_icon
+		myStandardColor
+		{
+			myR 255
+			myG 255
+			myB 255
+			myA 255
+		}
+
+		myAttackColor
+		{
+			myR 255
+			myG 0
+			myB 0
+			myA 255
+		}
+
+		myAttackOutOfRangeColor
+		{
+			myR 255
+			myG 0
+			myB 0
+			myA 255
+		}
+
+		myRepairColor
+		{
+			myR 0
+			myG 255
+			myB 0
+			myA 255
+		}
+
+		myMeldColor
+		{
+			myR 0
+			myG 255
+			myB 0
+			myA 255
+		}
+
+		myEnterColor
+		{
+			myR 255
+			myG 255
+			myB 0
+			myA 255
+		}
+
+		myLZColor
+		{
+			myR 0
+			myG 255
+			myB 255
+			myA 255
+		}
+
+		myFollowColor
+		{
+			myR 255
+			myG 128
+			myB 0
+			myA 255
+		}
+
+		myCamColor
+		{
+			myR 0
+			myG 255
+			myB 0
+			myA 128
+		}
+
+		myIPCheckVal2IGNORE BBBBBBBBBBBBBBBB
+		myHardwareMouseCursors ui/mouse/hwmouse.ice
+	}
+
+	myCampaignFile campaign/campaign.ice
+	myDefaultProfileName Player
+	myDefaultGameName "World in Conflict Game"
+	myNoProfileName "No Profile"
+	myMultiplayerMissionsFile maps/multiplayer.ice
+	myDedicatedServerConfigFile wic_ds.ini
+	myGuiFiles
+	{
+		FILE Mos guis/gui_mos.ice
+
+		FILE Frontend guis/gui_frontend.ice
+
+		FILE IngameSlim guis/gui_ingame_slim.ice
+
+	}
+
+	myInitialGui Menu_Main
+	myGUISong
+	{
+		myAction MUSIC_PLAY
+		mySoundChannel CHANNEL_MUSIC
+		myFadeTime 1.0
+		myRevertState REVERT_TO_SILENCE
+		myNumLoops 0
+		myMusicFile music/main_menu.mp3
+	}
+
+	myGuiButtonDownSoundFile sound/interface/btn_down.wav
+	myGuiButtonReleaseSoundFile sound/interface/btn_up.wav
+	myGuiListSelectSoundFile sound/interface/click_list.wav
+	myGuiErrorSoundFile sound/interface/error.wav
+	myGuiMenuMainLogo ui/skins/MainMenu_Logo_01.TGA
+	myGuiMenuMainLogoSA ui/skins/mainmenu_logo_02.tga
+	myFont font/console_font.tga
+	myFontDefinition font/console_font.txt
+	myMotdFile juice/tips.ice
+	myRenderFiles
+	{
+		myErrorsFile errors.ice
+		myMRenderCapsFile mrendercaps.txt
+		myDefaultGfxOptionsFile wic_default_gfx.txt
+		myMinimapSurface ui/minimap/minimap.sur
+		myMinimapBlipSurface ui/minimap/minimap_blip.sur
+		myMinimapIconSurface ui/minimap/minimap_icon.sur
+		myMinimapCompassSurface ui/minimap/TestCompass.tga
+		myMinimapViewConeSurface ui/minimap/minimap_viewcone.tga
+		myMinimapEndOfWorldSurface ui/minimap/minimap_endofworld.tga
+		myMinimapLandingZoneTexture ui/skins/lz.tga
+		myMinimapUnitSpawnedIcon ui/markers/unitspawnicon.dds
+		myMinimapNotification ui/minimap/notification.tga
+		myMapLowendSurface surfaces/game/map_lowend.sur
+		myWaterSurface <empty>
+		myWaterSurfaceLow <empty>
+		myWaterShoreSurface <empty>
+		myLineSurface surfaces/game/line_surface.tga
+		my3DMarkerModel effects/marker/marker.mrb
+		myStencilSurface surfaces/game/stencil_poly.sur
+		myStencilShadowSurface surfaces/game/stencil_shadow.sur
+		myBlobSurface surfaces/shadow_blob.sur
+		myDefaultBlobTexture surfaces/blob_shadow_all.dds
+		outOfLosColor 80
+		myDecalsAtlasImage effects/decals/decalatlas.dds
+		myDecalsAtlasIce effects/decals/decalatlas.ice
+		myWicWaterShader surfaces/game/wicwater.sur
+		myWicWaterFoamShader surfaces/game/wicwater_foam.sur
+		myWicWaterTrailShader surfaces/game/wicwater_trail.sur
+		myWicWaterTrailAroundShader surfaces/game/wicwater_trail_around.sur
+		myShadowedTransparentShader surfaces/game/shadowed_transparent.sur
+		myCloudsShader surfaces/game/wicclouds.sur
+		myBloomDefaultConfig effects/bloom/defaultbloom.ini
+		myBloomSurface surfaces/game/bloom.sur
+		myWarFilterDefaultFile effects/bloom/warfilter.ini
+		myDesaturateSurface surfaces/game/desaturate.sur
+		myUnitTracksBumpSurface surfaces/game/unit_tracks_bump.sur
+		myUnitTracksDiffuseSurface surfaces/game/unit_tracks_diffuse.sur
+		myUnitTracksTerrainData juice/track_effects.Ice
+		myPauseBlurSurface surfaces/game/pauseblur.sur
+		myAlphaBlendColorTexSurface surfaces/alphablend_colortex.sur
+		mySparkEffect hit_set_effects/house_effects/ellectricsparks/sparkeffect.ice
+		myParticleDetailGenerator surfaces/system/particledetail.sur
+		myLightShaftSurface surfaces/game/wic_light_shafts.sur
+		myParticleShadowSurface surfaces/game/particle_shadows.sur
+	}
+
+	myZoneInfo
+	{
+		myBHPerMinizone 2
+		myScorePerMinizone 20
+		myTicketTime 10.0
+		myFortificatingBaseScoreValue 2000
+		myFortificatingBaseTeamPlayBonus 0.35
+		myFortificatingPerPlayerTeamPlayBonus 0.03
+	}
+
+	myDefaultSettingsFile ui/default_settings.ice
+	myIdleBackdrop ui/frontend/movie1/frontend_movie1.movie
+	myCreditsBackdrop ui/frontend/movie1/frontend_movie1.movie
+	myCreditsSong
+	{
+		myAction MUSIC_PLAY
+		mySoundChannel CHANNEL_MUSIC
+		myFadeTime 1.0
+		myRevertState REVERT_TO_BEGINNING
+		myNumLoops 0
+		myMusicFile music/end_credits.mp3
+	}
+
+	myCreditsTextFile ui/credits/credits.txt
+	myCreditsLogo1 ui/credits/bink.dds
+	myCreditsLogo2 ui/credits/miles.dds
+	myCreditsPrefab1 TopFade
+	myCreditsPrefab2 BottomFade
+	myCreditsTextScrollSpeed 2.74
+	myLobbyBackdrop ui/backgrounds/lobby_bg/lobby_bg.dds
+	myPlayState
+	{
+		myPlayer
+		{
+			myCameraManager
+			{
+				myWicCamera
+				{
+					myMoveSpeed 10
+					myHeightSpeed 95
+					myRotateSpeed 2.64
+					myPositionLerpSpeed 9.2
+					myOrientationLerpSpeed 8.1
+					myMinimumSurfaceClearance 1.75
+					myMaximumHeight 60
+					myFollowCameraMinimumDistanceToUnit 8
+					myFollowCameraAngleAboveUnit 15
+					myFollowCameraCameraAngleModifier 20
+					myFloatingLimit 15
+					myHeightMoveSpeedModifier 0.3
+					myLowMoveSpeed 8.5
+					myHighMoveSpeed 355
+					myLowRotateSpeed 2.63
+					myLowRotateSpeedX 2.63
+					myLowRotateSpeedY 1.2
+					myHighRotateSpeed 2.34
+					myHighRotateSpeedX 2.34
+					myHighRotateSpeedY 1.2
+					myLowFov 79
+					myHighFov 73
+					myFovLerpSpeed 120
+					myLowPitchDownLimit 0.6
+					myLowPitchUpLimit -0.85
+					myHighPitchDownLimit 1.1
+					myHighPitchUpLimit -0.3
+					myLowMoveAccelerationSpeed 3.5
+					myLowMoveDecaySpeed 1.0
+					myHighMoveAccelerationSpeed 0.76
+					myHighMoveDecaySpeed 2.5
+					myRotationAccelerationSpeed 0.42
+					myRotationDecaySpeed 2.57
+					myHeightInterpolationMiddleModifier 0.70
+					myFocusOrbitNudgeConfig
+					{
+						myFocusEnable 0
+						myFocusMinDist 2.0
+						myFocusMaxDist 60.0
+						myFocusDistScale 0.6
+					}
+
+					myFocusOrbitMLookConfig
+					{
+						myFocusEnable 0
+						myFocusMinDist 2.0
+						myFocusMaxDist 50.0
+						myFocusDistScale 0.5
+					}
+
+					myMegaMapFov 85
+					myMegaMapMinimumSurfaceClearance 600
+					myMegaMapMaximumHeight 1300
+					myMegaMapLowMoveSpeed 500
+					myMegaMapHighMoveSpeed 50
+				}
+
+				myRTSCamera
+				{
+					myMoveSpeed 10
+					myHeightSpeed 200
+					myRotateSpeed 1.75
+					myPositionLerpSpeed 3.2
+					myOrientationLerpSpeed 3
+					myMinimumSurfaceClearance 1.75
+					myMaximumHeight 2
+					myFollowCameraMinimumDistanceToUnit 8
+					myFollowCameraAngleAboveUnit 1
+					myFollowCameraCameraAngleModifier 1
+					myFloatingLimit 25
+					myHeightMoveSpeedModifier 0.3
+					myLowMoveSpeed 11
+					myHighMoveSpeed 30
+					myLowRotateSpeed 1.75
+					myHighRotateSpeed 1.75
+					myLowFov 75
+					myHighFov 75
+					myFovLerpSpeed 250
+					myLowPitchDownLimit 0.0
+					myLowPitchUpLimit 0.0
+					myHighPitchDownLimit 0.0
+					myHighPitchUpLimit 0.0
+					myLowMoveAccelerationSpeed 0.0
+					myLowMoveDecaySpeed 0.0
+					myHighMoveAccelerationSpeed 0.0
+					myHighMoveDecaySpeed 0.0
+					myRotationAccelerationSpeed 0.0
+					myRotationDecaySpeed 0.0
+				}
+
+				myDirectControlCameraKeyLook
+				{
+					myMoveSpeed 10
+					myHeightSpeed 200
+					myRotateSpeed 1.75
+					myPositionLerpSpeed 5
+					myOrientationLerpSpeed 5
+					myMinimumSurfaceClearance 1.75
+					myMaximumHeight 15
+					myFollowCameraMinimumDistanceToUnit 6
+					myFollowCameraAngleAboveUnit 25
+					myFollowCameraCameraAngleModifier 90
+					myFloatingLimit 2
+					myHeightMoveSpeedModifier 0.3
+					myLowMoveSpeed 11
+					myHighMoveSpeed 30
+					myLowRotateSpeed 4
+					myHighRotateSpeed 4
+					myLowFov 70
+					myHighFov 10
+					myFovLerpSpeed 250
+					myLowPitchDownLimit 0.8
+					myLowPitchUpLimit -0.85
+					myHighPitchDownLimit 0.8
+					myHighPitchUpLimit -0.85
+					myLowMoveAccelerationSpeed 0.0
+					myLowMoveDecaySpeed 0.0
+					myHighMoveAccelerationSpeed 3
+					myHighMoveDecaySpeed 3
+					myRotationAccelerationSpeed 3
+					myRotationDecaySpeed 1.5
+					myHighMouseSensitivity 1
+					myLowMouseSensitivity 0.01
+					myHighKeySensitivity 0.5
+					myLowKeySensitivity 1.0
+					myZoomSteps 40
+					myHighAccelerationRotationTime 1.0
+					myLowAccelerationRotationTime 2.0
+					myHighDecayRotationTime 1.0
+					myLowDecayRotationTime 2.0
+				}
+
+				myDirectControlCameraMouseLook
+				{
+					myMoveSpeed 10
+					myHeightSpeed 200
+					myRotateSpeed 1.75
+					myPositionLerpSpeed 5
+					myOrientationLerpSpeed 5
+					myMinimumSurfaceClearance 1.75
+					myMaximumHeight 15
+					myFollowCameraMinimumDistanceToUnit 6
+					myFollowCameraAngleAboveUnit 25
+					myFollowCameraCameraAngleModifier 20
+					myFloatingLimit 2
+					myHeightMoveSpeedModifier 0.3
+					myLowMoveSpeed 11
+					myHighMoveSpeed 30
+					myLowRotateSpeed 4
+					myHighRotateSpeed 4
+					myLowFov 70
+					myHighFov 10
+					myFovLerpSpeed 250
+					myLowPitchDownLimit 0.8
+					myLowPitchUpLimit -0.85
+					myHighPitchDownLimit 0.8
+					myHighPitchUpLimit -0.85
+					myLowMoveAccelerationSpeed 0.0
+					myLowMoveDecaySpeed 0.0
+					myHighMoveAccelerationSpeed 3
+					myHighMoveDecaySpeed 3
+					myRotationAccelerationSpeed 3
+					myRotationDecaySpeed 1.5
+					myHighMouseSensitivity 0.5
+					myLowMouseSensitivity 1.0
+					myHighKeySensitivity 0.5
+					myLowKeySensitivity 1.0
+					myZoomSteps 3
+					myHighAccelerationRotationTime 1.0
+					myLowAccelerationRotationTime 2.0
+					myHighDecayRotationTime 1.0
+					myLowDecayRotationTime 2.0
+				}
+
+				myDirectControlCameraKeyMouseLook
+				{
+					myMoveSpeed 10
+					myHeightSpeed 200
+					myRotateSpeed 1.75
+					myPositionLerpSpeed 5
+					myOrientationLerpSpeed 5
+					myMinimumSurfaceClearance 1.75
+					myMaximumHeight 15
+					myFollowCameraMinimumDistanceToUnit 6
+					myFollowCameraAngleAboveUnit 25
+					myFollowCameraCameraAngleModifier 20
+					myFloatingLimit 2
+					myHeightMoveSpeedModifier 0.3
+					myLowMoveSpeed 11
+					myHighMoveSpeed 30
+					myLowRotateSpeed 4
+					myHighRotateSpeed 4
+					myLowFov 70
+					myHighFov 10
+					myFovLerpSpeed 250
+					myLowPitchDownLimit 0.8
+					myLowPitchUpLimit -0.85
+					myHighPitchDownLimit 0.8
+					myHighPitchUpLimit -0.85
+					myLowMoveAccelerationSpeed 0.0
+					myLowMoveDecaySpeed 0.0
+					myHighMoveAccelerationSpeed 3
+					myHighMoveDecaySpeed 3
+					myRotationAccelerationSpeed 3
+					myRotationDecaySpeed 1.5
+					myHighMouseSensitivity 0.5
+					myLowMouseSensitivity 1.0
+					myHighKeySensitivity 0.5
+					myLowKeySensitivity 1.0
+					myZoomSteps 3
+					myHighAccelerationRotationTime 1.0
+					myLowAccelerationRotationTime 2.0
+					myHighDecayRotationTime 1.0
+					myLowDecayRotationTime 2.0
+				}
+
+				myLerpToLandigZoneTime 3
+				myActionCamSetup juice/actioncam/defaultcams.ice
+				myCameraMiniMapOffsetDistance 75.0
+			}
+
+			myEffects
+			{
+				myDrawerSkinFile guis/guiskins.ice
+				myDrawerSkin skinOne
+			}
+
+			myTangibleUI
+			{
+				mySkinFile guis/GUISkins.ice
+				mySkin skinOne
+				mySelectionLassoPrefab DragSelect2
+				mySelectionMarkerPrefab DragSelect2
+				mySelectionMouseOverPrefab DragSelect2
+				myHealthPrefab HealthBar
+				myHealthBGPrefab HealthBG
+				myHealthWorldPrefab HealthBarWorld
+				myHealthWorldBGPrefab HealthBGWorld
+				myInfantryContainedPrefab InfantryContained
+				myHealthLeft 0.1
+				myHealthTop 0
+				myHealthRight 0.9
+				myHealthBottom 0.05
+				myMinimapSignalMarkerFile ui/skins/ping.dds
+				myMinimapSignalRadius 80
+				myMinimapSignalFlashes 10
+				myVisualComponents
+				{
+					myMoveMarker
+					{
+						myMarkerMRB ui/Markers/Marker_Roundup/Direction/Marker_move.mrb
+						myMarkerMRBMegaMap ui/selection/wic_marker_megamap.mrb
+						myColor
+						{
+							myR 213
+							myG 223
+							myB 114
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 213
+							myG 223
+							myB 114
+							myA 255
+						}
+
+						myFadeOutTime 1.0
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myMoveDirectionMarker
+					{
+						myMarkerMRB ui/Markers/Marker_Roundup/Direction/Marker_direction.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 213
+							myG 223
+							myB 114
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myFadeOutTime 1.0
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myMoveFollowMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myFadeOutTime 1.0
+						myRadiusOffset 2.0
+						myHeightOffset 0.0
+						myBlinkTime 2.0
+						myBlinkFrequency 1.0
+						myBlinkAlpha 0.6
+					}
+
+					myMoveQueueMarker
+					{
+						myMarkerMRB ui/selection/wic_marker.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myDeniedMarker
+					{
+						myMarkerMRB ui/selection/wic_marker_denied.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myAttackMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.0
+						myRadiusOffset 2.0
+						myHeightOffset 0.0
+						myBlinkTime 2.0
+						myBlinkFrequency 2.0
+						myBlinkAlpha 0.6
+					}
+
+					myAttackPositionMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myAttackBuildingMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 1.0
+						myBlinkFrequency 2.0
+						myBlinkAlpha 0.6
+					}
+
+					myEnterUnitMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 2.0
+						myHeightOffset 0.0
+						myBlinkTime 2.0
+						myBlinkFrequency 1.0
+						myBlinkAlpha 0.6
+					}
+
+					myEnterBuildingMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 1.0
+						myBlinkFrequency 1.0
+						myBlinkAlpha 0.6
+					}
+
+					myTAPlacedMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 255
+							myG 0
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myRepairMarker
+					{
+						myMarkerMRB <empty>
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 2.0
+						myHeightOffset 0.0
+						myBlinkTime 2.0
+						myBlinkFrequency 1.0
+						myBlinkAlpha 0.6
+					}
+
+					myLaybridgeMarker
+					{
+						myMarkerMRB ui/selection/wic_marker.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 255
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 1.5
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myLoadPickupSpotMarker
+					{
+						myMarkerMRB ui/selection/wic_marker.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 0
+							myG 255
+							myB 0
+							myA 0
+						}
+
+						myCoverColor
+						{
+							myR 0
+							myG 0
+							myB 0
+							myA 0
+						}
+
+						myFadeOutTime 5.0
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myVisualCoverPositionPreviewMarker
+					{
+						myMarkerMRB ui/Markers/Marker_Roundup/Direction/Marker_move.mrb
+						myMarkerMRBMegaMap <empty>
+						myColor
+						{
+							myR 185
+							myG 185
+							myB 185
+							myA 200
+						}
+
+						myCoverColor
+						{
+							myR 185
+							myG 185
+							myB 185
+							myA 200
+						}
+
+						myFadeOutTime 0.05
+						myRadiusOffset 0.0
+						myHeightOffset 0.0
+						myBlinkTime 0.0
+						myBlinkFrequency 0.0
+						myBlinkAlpha 0.0
+					}
+
+					myOrderBuoy ui/selection/wic_marker.mrb
+					myOrderBuoyDirection ui/selection/wic_marker_direction.mrb
+					myOrderDeniedBouy ui/selection/wic_marker_denied.mrb
+					myBuoyFadeoutTime 1.5
+					myBuoyHeight 0.5
+					myViewRangeMarker ui/markers/rangeicon.mrb
+					myAttackRangeMarker ui/markers/rangeicon.mrb
+					myAttackGroundBuoy ui/selection/wic_marker.mrb
+					myAttackBuoy ui/selection/wic_marker.mrb
+					myEnterBuildingBuoy ui/selection/wic_marker.mrb
+					myLeaveBuildingBuoy ui/selection/wic_marker.mrb
+					myTacticalAidBuoy ui/selection/wic_marker.mrb
+					myRepairBuoy ui/selection/wic_marker.mrb
+				}
+
+				myVisualExperience
+				{
+					myMinSize 0.01
+					myMaxSize 0.0075
+					myRelativeSize 0.3
+					myScalingFactor 1
+					myOffset 0
+					myLevel_01 RANK_1
+					myLevel_02 RANK_2
+					myLevel_03 RANK_3
+					myLevel_04 RANK_4
+					myLevel_05 RANK_5
+				}
+
+				myGenericUnitMarkerPrefab ui/ingame/strategic_map/sm_generic.tga
+				myRadioButtonUnselectedPrefab CircleButtonOff
+				myRadioButtonSelectedPrefab CircleButtonOn
+				myGroupSelectRadius 80
+				myGroupSelectMarkerFadeoutTime 0.3
+				myGroupSelectMarkerHeight 0.5
+				myGroupSelectMarkerFile UI/Markers/Selection.mrb
+				myIPCheckVal4IGNORE DDDDDDDDDDDDDDDD
+				myBuildingSelectionModelFile ui/markers/enter_building.mrb
+				myDominationBar
+				{
+					myDominationBarUS ui/hud_flag/us/us_flag.mrb
+					myDominationBarNATO ui/hud_flag/nato/nato_flag.mrb
+					myDominationBarUSSR ui/hud_flag/nato/nato_flag.mrb
+					myModelPosition
+					{
+						myX 0.0
+						myY -2.0
+						myZ 8.0
+					}
+
+					myModelHeading 0
+					myCameraPitch 0
+					myCameraFOV 80
+					myDominationMarker ui/hud_flag/_info/info_dominationbar.mrb
+					myFriendlyZoneCountMarker ui/hud_flag/_info/info_dominationbar_friendly.mrb
+					myHostileZoneCountMarker ui/hud_flag/_info/info_dominationbar_hostile.mrb
+					myMarkerModelPosition
+					{
+						myX 0.0
+						myY 0.0
+						myZ 7
+					}
+
+					myMarkerModelHeading 0
+					myMarkerCameraPitch 0
+					myMarkerCameraFOV 80
+					myDestructionLevel2 0.20
+					myDestructionLevel3 0.50
+					myDestructionLevel4 1
+				}
+
+				myAssultBar
+				{
+					myInstantWinPrefab SpecialAbilityOverlay_Pending
+					myDefendArrowPrefab InGame_AssaultArrowRed
+					myAttackArrowPrefab InGame_AssaultArrowGreen
+					myDisabledFlagPrefab InGame_Flag_Disabled
+					myFlashSpeed 1.0
+					myToolTipTaken "Taken command point\n\nYou have captured this command point from the enemy."
+					myToolTipFallen "Fallen command point\n\nThis command point has been captured by the enemy."
+					myToolTipContested "Contested command point\n\nThis is the command point you are currently fighting for."
+					myToolTipFrendlyUncaptured "Uncaptured command point (friendly)\n\nYou are still in control of this command point."
+					myToolTipEnemyUncaptured "Uncaptured command point (enemy)\n\nThis command point is still held by the enemy."
+					myToolTipDisabled "Disabled in phase two\n\nThe assault in phase one was stopped before it reached this command point."
+					myToolTipTimeToHold "Time to defend\n\nThe timer indicates the time in which you captured this command point in phase one.\n\n<#b22>If the enemy captures it, before the time runs out, they will win.</>"
+					myToolTipTimeToWin "Time to capture\n\nThe timer indicates the time you managed to hold this command point in phase one.\n\n<#2b2>Capture it, before the time runs out, to win.</>"
+					myToolTipInstantLoose "<#b22>Instant loss!</>\n\nYou did not manage to capture this command point in phase one.\n\nIf the enemy captures it they will win instantly!"
+					myToolTipInstantWin "<#2b2>Instant win!</>\n\nYou successfully defended this command point in phase one.\n\nCapture it to win instantly!"
+				}
+
+				myDropZoneColor 2147548928
+				mySelectionMarker
+				{
+					myVisualRadiusMultiplier 4.0
+					myNumSegments 32
+					myLineWidth 0.8
+					myColor
+					{
+						myR 213
+						myG 223
+						myB 114
+						myA 255
+					}
+
+					myTexture ui/markers/marker_roundup/textures/unit_ring.tga
+				}
+
+				myIsHoldingFireIcon ui/icons/unit_functionality/holdfire_on_placeholder.dds
+				myIsNotHoldingFireIcon ui/icons/unit_functionality/holdfire_off_placeholder.dds
+				myMixedHoldingFireIcon ui/icons/exclamationmark.tga
+				myFormationLinePrefab InGame_MiniMap_ToggleFormation
+				myFormationBoxPrefab InGame_MiniMap_ToggleFormationSquare
+				myOffensiveAbilityBarStartColor
+				{
+					myR 255
+					myG 0
+					myB 0
+					myA 112
+				}
+
+				myOffensiveAbilityBarEndColor
+				{
+					myR 255
+					myG 128
+					myB 0
+					myA 112
+				}
+
+				myDefensiveAbilityBarStartColor
+				{
+					myR 255
+					myG 0
+					myB 0
+					myA 112
+				}
+
+				myDefensiveAbilityBarEndColor
+				{
+					myR 255
+					myG 128
+					myB 0
+					myA 112
+				}
+
+				myAbilityBarMaxRange 200
+				myRechargableReloadedBlinkInterval 1.25
+				myRechargableReloadedBlinkColor
+				{
+					myR 150
+					myG 255
+					myB 112
+					myA 255
+				}
+
+				mySupportThingPlacement
+				{
+					myPreviewLerpFactor 50.0
+					myPreviewDeadZoneSlowDistance 10.0
+					myPreviewDeadZoneStopDistance 2.0
+				}
+
+			}
+
+			myTacticalAidMenu
+			{
+				myCategoryPrefab0 InGame_Tab_NoneDestructive
+				myCategoryPrefab1 InGame_Tab_Precision
+				myCategoryPrefab2 InGame_Tab_Destruction
+				myCategoryTooltipRef0 myTACategory0
+				myCategoryTooltipRef1 myTACategory1
+				myCategoryTooltipRef2 myTACategory2
+				myPrice Price:
+				myDeploymentTime "Deployment Time:"
+				myRechargeTime "Recharge Time:"
+				myPlacementCount1 x1
+				myPlacementCount2 x2
+				myPlacementCount3 x3
+			}
+
+			myScoreSheet
+			{
+				myPlayerNameString Player
+				myScoreString Player
+				myTeamVictoryLocationsString Player
+				myPlayerColorPrefab NeutralButton
+				myIPCheckVal3IGNORE CCCCCCCCCCCCCCCC
+			}
+
+			myIPCheckVal1IGNORE AAAAAAAAAAAAAAAA
+			myMapPingIconFile ui/icons/movers/attack.tga
+			myDefaultGuiSkinTexture ui/skins/ui_01.dds
+			myGeneralFeedbackFile sound/generalfeedback.ice
+			myPhysicsWaterSplashMRB hit_set_effects/tank_default_set/myhiteffects/water_01/tankwaterhit.mrb
+			myGuiSounds
+			{
+				myCreditsUpSound sound/interface/counter_up.wav
+				myCreditsDownSound sound/interface/counter_down.wav
+				myGotBattleHonorsSound <empty>
+				myBhUpSound sound/interface/bh_up.wav
+				myBhDownSound sound/interface/bh_down.wav
+				myNewSupportAvailableSound sound/interface/bh_down.wav
+				myInstantMessageSound sound/interface/new_im.wav
+				myFriendlyFireWarningSound sound/sfx/ff_01.mp3
+			}
+
+		}
+
+		myGlobalCommandPointDefinitions
+		{
+			myMinimapIconFile ui/minimap/minimap_cp.dds
+			myCommandPointIconRadius 95
+			myPerimeterPointIconRadius 70
+			myCPNumberOfFlashes 5
+			myPPNumberOfFlashes 3
+		}
+
+		mySpawnerConfigFile juice/spawner/spawner.ice
+		myTeamConfigFile juice/team/team.ice
+		myGameModeFile juice/game/gamemodes.ice
+		myGlobalScriptEventsFile juice/globalscriptevents.ice
+		myVisualConfigDefinitionsFile juice/visualconfig.ice
+		myAlternativeVisualConfigDefinitionsFile juice/alternative_visualconfig.ice
+		myGenericUnitFeedbackFile units/genericunitfeedback.ice
+		myStrategicMap
+		{
+			myUnitIconWidth 0.03
+			myUnitIconHeight 0.03
+			myUnitDigitSize 20.0
+			myUnitArrowSize 60.0
+			myUnitIconSize 40.0
+			myIconHeavyArmor ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconMediumArmor ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconArtillery ui/ingame/strategic_map/sm_artillery_v2.tga
+			myIconHeli ui/ingame/strategic_map/sm_helicopter_v2.tga
+			myIconAttackHeli ui/ingame/strategic_map/sm_helicopter_v2.tga
+			myIconInfantry ui/ingame/strategic_map/sm_infantry_v2.tga
+			myIconAntiAir ui/ingame/strategic_map/sm_antiair_v2.tga
+			myIconEngineer ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconCombinedArms ui/ingame/strategic_map/sm_tank.tga
+			myIconTroopTransport ui/ingame/strategic_map/sm_apc.tga
+			myIconUnitGroupMarker ui/ingame/strategic_map/sm_unitgroupmarker.tga
+			myIconUnitCount1 ui/ingame/strategic_map/sm_1.tga
+			myIconUnitCount2 ui/ingame/strategic_map/sm_2.tga
+			myIconUnitCount3 ui/ingame/strategic_map/sm_3.tga
+			myIconUnitCount4 ui/ingame/strategic_map/sm_4.tga
+			myIconUnitCount5 ui/ingame/strategic_map/sm_5.tga
+			myIconUnitCount6 ui/ingame/strategic_map/sm_6.tga
+			myIconUnitCount7 ui/ingame/strategic_map/sm_6.tga
+			myIconUnitCount8 ui/ingame/strategic_map/sm_6.tga
+			myIconUnitCount9 ui/ingame/strategic_map/sm_6.tga
+			myIconUnitCount0 ui/ingame/strategic_map/sm_6.tga
+			myUnitIconScale 0.7
+			myDZIconScale 0.6
+			myArrowIconScale 0.7
+			myIconUnitDestinationArrow ui/ingame/strategic_map/megamap_arrow_base.tga
+			myIconUnitDestinationArrowHead ui/ingame/strategic_map/megamap_arrow_head.tga
+			myIconTauntsFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconWarningsFile ui/ingame/strategic_map/sm_order_attack.tga
+			myDZTextColor
+			{
+				myR 160
+				myG 160
+				myB 160
+				myA 255
+			}
+
+			myRequestTextColor
+			{
+				myR 255
+				myG 255
+				myB 255
+				myA 255
+			}
+
+			myIconStrategyFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTacticsFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTaunt1File ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTaunt2File ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTaunt3File ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTaunt4File ui/ingame/strategic_map/sm_order_attack.tga
+			myIconWarningInfFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconWarningArmorFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconWarningAirFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconWarningArtyFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTacticsAAFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTacticsArmorFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTacticsRepairFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconTacticsArtyFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconStrategyBridgeFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconStrategyClearForestFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconStrategyAttackFile ui/ingame/strategic_map/sm_order_attack.tga
+			myIconStrategyDefendFile ui/ingame/strategic_map/sm_order_attack.tga
+			myDZIcon ui/icons/units/primary_temp.tga
+		}
+
+		myCombinedTypes
+		{
+			myIconHeavyArmor ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconMediumArmor ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconArtillery ui/ingame/strategic_map/sm_artillery_v2.tga
+			myIconHeli ui/ingame/strategic_map/sm_helicopter_v2.tga
+			myIconAttackHeli ui/ingame/strategic_map/sm_helicopter_v2.tga
+			myIconInfantry ui/ingame/strategic_map/sm_infantry_v2.tga
+			myIconAntiAir ui/ingame/strategic_map/sm_antiair_v2.tga
+			myIconEngineer ui/ingame/strategic_map/sm_apc_v2.tga
+			myIconCombinedArms ui/ingame/strategic_map/sm_tank.tga
+			myIconTroopTransport ui/ingame/strategic_map/sm_apc.tga
+		}
+
+		myUnitWorldIcons
+		{
+			myUnitIconOffset 7.0
+			myUnitIconSourceSize
+			{
+				x 53
+				z 65
+			}
+
+			myUnitIconScaleMin 0.5
+			myUnitIconScaleMax 0.8
+			myUnitIconMegaMapScale 0.7
+			myUnitIconUnselectedOpacity 0.78
+			myUnitAttackedLitTime 0.5
+			myUnitAttackedFadeTime 1.5
+			myRequestIconScaleMin 0.8
+			myRequestIconScaleMax 0.8
+			myRequestIconMegaMapScale 0.8
+			myInfantryDotSpace 4
+			mySingleHealthOffset 40
+			mySingleHealthMegaMapScale 0.5
+			mySingleHealthScaleMin 0.5
+			mySingleHealthScaleMax 0.7
+			mySingleProgressOffset 6
+			mySingleProgressMegaMapScale 0.5
+			mySingleProgressScaleMin 0.8
+			mySingleProgressScaleMax 1.0
+			myBackgroundOffset
+			{
+				x 0
+				z 6
+			}
+
+			myTransportingOffset
+			{
+				x 0
+				z 0
+			}
+
+			myInBuildingOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInForestOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInTransportOffset
+			{
+				x 5
+				z 11
+			}
+
+			myHealthOffset
+			{
+				x 4
+				z 36
+			}
+
+			myHoldFireOffset
+			{
+				x 14
+				z 43
+			}
+
+			myRankOffset
+			{
+				x 20
+				z 43
+			}
+
+			myUnitTypeOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInfantryDotOffset
+			{
+				x 6
+				z 12
+			}
+
+			myReloadOffset
+			{
+				x 5
+				z 11
+			}
+
+			myBackgroundPrefab UnitIcon_BackgroundWorld
+			myBackgroundSelectedPrefab UnitIcon_BackgroundSelectedWorld
+			myTransportingPrefab UnitIcon_Transporting
+			myTransportingSelectedPrefab UnitIcon_TransportingSelected
+			myInBuildingPrefab UnitIcon_Building
+			myInForestPrefab UnitIcon_Forest
+			myInTransportPrefab UnitIcon_Transported
+			myHealthPrefab UnitIcon_Health
+			myHoldFirePrefab UnitIcon_HoldFireWorld
+			myInfantryDotPrefab UnitIcon_InfantryDot
+			myReloadPrefab UnitIcon_Reload
+			myRankPrefab_0 UnitIcon_Rank1
+			myRankPrefab_1 UnitIcon_Rank2
+			myRankPrefab_2 UnitIcon_Rank3
+			myRankPrefab_3 UnitIcon_Rank4
+			myRankPrefab_4 UnitIcon_Rank5
+			myCombinedType_0 myCombinedType_Armor
+			myCombinedType_1 myCombinedType_Transport
+			myCombinedType_2 myCombinedType_Artillery
+			myCombinedType_3 myCombinedType_Air
+			myCombinedType_4 myCombinedType_Air
+			myCombinedType_5 myCombinedType_Infantry
+			myCombinedType_6 myCombinedType_AntiAir
+			myCombinedType_7 myCombinedType_Repair
+			myCombinedType_8 myCombinedType_Transport
+			myCombinedType_9 myCombinedType_Transport
+			myBackgroundFriendlyDotPrefab UnitIcon_Dot
+			myBackgroundEnemyDotPrefab UnitIcon_DotEnemy
+			myBackgroundEmptyPrefab UnitIcon_BackgroundWorld
+			mySingleHealthPrefab WorldIcon_SingleHealth
+			mySingleHealthBGPrefab WorldIcon_SingleHealthBG
+			mySingleProgressPrefab WorldIcon_SingleProgress
+			mySingleProgressBGPrefab WorldIcon_SingleProgressBG
+		}
+
+		myUnitBarIcons
+		{
+			myColumnSpace 5
+			myRowSpace 8
+			myFocusSpace 6
+			myMaxColumns 10
+			myIconStartPosFloat
+			{
+				x 0.2
+				z 0.92
+			}
+
+			myIconSize
+			{
+				x 53
+				z 56
+			}
+
+			myInfantryDotSpace 4
+			myBackgroundOffset
+			{
+				x 0
+				z 6
+			}
+
+			myTransportingOffset
+			{
+				x 0
+				z 0
+			}
+
+			myInBuildingOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInForestOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInTransportOffset
+			{
+				x 5
+				z 11
+			}
+
+			myHealthOffset
+			{
+				x 4
+				z 36
+			}
+
+			myHoldFireOffset
+			{
+				x 14
+				z 43
+			}
+
+			myRankOffset
+			{
+				x 20
+				z 43
+			}
+
+			myUnitTypeOffset
+			{
+				x 5
+				z 11
+			}
+
+			myInfantryDotOffset
+			{
+				x 6
+				z 12
+			}
+
+			myReloadOffset
+			{
+				x 5
+				z 11
+			}
+
+			myBackgroundPrefab UnitIcon_BackgroundBar
+			myBackgroundSelectedPrefab UnitIcon_BackgroundSelectedBar
+			myTransportingPrefab UnitIcon_Transporting
+			myTransportingSelectedPrefab UnitIcon_TransportingSelected
+			myInBuildingPrefab UnitIcon_Building
+			myInForestPrefab UnitIcon_Forest
+			myInTransportPrefab UnitIcon_Transported
+			myHealthPrefab UnitIcon_Health
+			myHoldFirePrefab UnitIcon_HoldFireBar
+			myInfantryDotPrefab UnitIcon_InfantryDot
+			myReloadPrefab UnitIcon_Reload
+			myRankPrefab_0 UnitIcon_Rank1
+			myRankPrefab_1 UnitIcon_Rank2
+			myRankPrefab_2 UnitIcon_Rank3
+			myRankPrefab_3 UnitIcon_Rank4
+			myRankPrefab_4 UnitIcon_Rank5
+			myUnitTypePrefab_0 UnitIcon_UnitType_Test
+			myUnitTypePrefab_1 UnitIcon_UnitType_Test
+			myUnitTypePrefab_2 UnitIcon_UnitType_Test
+			myUnitTypePrefab_3 UnitIcon_UnitType_Test
+			myUnitTypePrefab_4 UnitIcon_UnitType_Test
+			myUnitTypePrefab_5 UnitIcon_UnitType_Test
+			myUnitTypePrefab_6 UnitIcon_UnitType_Test
+			myUnitTypePrefab_7 UnitIcon_UnitType_Test
+			myUnitTypePrefab_8 UnitIcon_UnitType_Test
+			myUnitTypePrefab_9 UnitIcon_UnitType_Test
+		}
+
+		myOrderPaletteIcons
+		{
+			myWaypointPrefab OrderPalette_Waypoint
+			myRepairPrefab OrderPalette_Repair
+			myFollowPrefab OrderPalette_Follow
+			myMovePrefab OrderPalette_Move
+			myMoveBackwardsPrefab OrderPalette_MoveBackwards
+			myStopPrefab OrderPalette_Stop
+			myAttackGroundPrefab OrderPalette_AttackGround
+			myUnloadPrefab OrderPalette_Unload
+			myHoldFirePrefab OrderPalette_HoldFire
+			myEnterTransportPrefab OrderPalette_EnterTransport
+			myEnterBuildingPrefab OrderPalette_EnterBuilding
+			myAbilityOverlayCooldown SpecialAbilityOverlay_Cooldown
+			myAbilityOverlayProcessing SpecialAbilityOverlay_Processing
+			myAbilityOverlayPending SpecialAbilityOverlay_Pending
+			myRechargeTime "Recharge Time:"
+			myDurationTime Duration:
+		}
+
+		myFirstTimeTips
+		{
+			myMoveCameraTime 30
+			myMoveCameraText "Move your camera position by using the W, A, S and D keys."
+			myDeployUnitsTime 100
+			myDeployUnitsText "Use the Reinforcement menu in the upper right corner to call down units."
+			myGiveOrderTime 60
+			myGiveOrderText "Select your units by left-clicking on their icon. Order them around by right-clicking in the world."
+			myDropTAPoints 20
+			myDropTAText "Use the Tactical Aid menu in the upper left corner to call in off-map support."
+			myTipVisibleTime 10
+		}
+
+		myFortificationInfo
+		{
+			myFortificationTextPixelOffset -10
+			myFortificationPositionEffect1 ui/markers/marker_roundup/perimiterpoint/fortificationpoint_antiinfantry.mrb
+			myFortificationPositionEffect2 ui/markers/marker_roundup/perimiterpoint/fortificationpoint_antitank.mrb
+			myFortificationPositionEffect3 ui/markers/marker_roundup/perimiterpoint/fortificationpoint_antiair.mrb
+			myTimeBeforeConsiderUnfortified 3.0
+			myFortificationPositionEffectDelay 0.2
+			myFortificationPositionStartStopDelay 0.5
+		}
+
+		myVoteSettings
+		{
+			myDuration 60
+			myPlayerCooldown 120
+			myYesWeight 1.0
+			myNoWeight -1.0
+			myBlankWeight -0.5
+			myKickTeamExtraWeight 0.5
+		}
+
+	}
+
+	myMilesInfo
+	{
+		myRedistDirectory miles_redist
+		myDll mss32.dll
+		my3 miles_redist/mssdsp.flt
+		my6 miles_redist/mssmp3.asi
+		my9 miles_redist/mssvoice.asi
+		my10 miles_redist/mssdolby.flt
+		my11 miles_redist/msssrs.flt
+		my12 miles_redist/mssds3d.flt
+		my13 miles_redist/msseax.flt
+	}
+
+	myGameTextFile juice/gametext.ice
+	myMassgateInfo
+	{
+		myMassgateTextFile juice/massgatetext.ice
+		myMassgateLogoFile ui/icons/massgate/massgateloggo.dds
+		myPrivacyPolicyFile juice/tos.txt
+		myCountryListFile juice/iso3166.txt
+		myTournamentRulesFile juice/tournamentrules.txt
+		myCountryCode US
+		myLanguageCode EN
+		myDistributionId 1
+		myGameIcons
+		{
+			myRankedIcon UI/Icons/Massgate/ranking.dds
+			myUnrankedIcon UI/Icons/Massgate/noicon.dds
+			myPasswordIcon UI/Icons/Massgate/password.dds
+			myNoPasswordIcon UI/Icons/Massgate/NOpassword.dds
+			myFriendIcon ui/icons/massgate/coop.dds
+			myNoFriendIcon ui/icons/massgate/noicon.dds
+			myNoIconIcon UI/Icons/Massgate/noicon.dds
+		}
+
+		myMessagingIcons
+		{
+			myFriendHeadingIcon ui/icons/massgate/coop.dds
+			myClanMemberHeadingIcon ui/icons/massgate/noicon.dds
+			myAcquaintanceHeadingIcon ui/icons/massgate/noicon.dds
+			myEveryoneHeadingIcon ui/icons/massgate/noicon.dds
+			myNoIconIcon ui/icons/massgate/noicon.dds
+			myPendingMessageIcon ui/icons/massgate/instantmessage.dds
+			myOfflineIcon ui/icons/massgate/onlinestatus_offline.dds
+			myOnlineIcon ui/icons/massgate/onlinestatus_online.dds
+			myPlayingIcon ui/icons/massgate/onlinestatus_playing.dds
+		}
+
+		myRankDefinitions
+		{
+			level0
+			{
+				myUiName Recruit
+				myIconFile ui/icons/massgate/rank_icons/small/00-recruit.dds
+			}
+
+			level1
+			{
+				myUiName Private
+				myIconFile ui/icons/massgate/rank_icons/small/01-private.dds
+			}
+
+			level2
+			{
+				myUiName "Private First Class"
+				myIconFile ui/icons/massgate/rank_icons/small/02-private_first_class.dds
+			}
+
+			level3
+			{
+				myUiName Corporal
+				myIconFile ui/icons/massgate/rank_icons/small/03-corporal.dds
+			}
+
+			level4
+			{
+				myUiName Sergeant
+				myIconFile ui/icons/massgate/rank_icons/small/04-sergeant.dds
+			}
+
+			level5
+			{
+				myUiName "Staff Sergeant"
+				myIconFile ui/icons/massgate/rank_icons/small/05-staff_sergeant.dds
+			}
+
+			level6
+			{
+				myUiName "Sergeant First Class"
+				myIconFile ui/icons/massgate/rank_icons/small/06-sergeant_first_class.dds
+			}
+
+			level7
+			{
+				myUiName "First Sergeant"
+				myIconFile ui/icons/massgate/rank_icons/small/07-first_sergeant.dds
+			}
+
+			level8
+			{
+				myUiName "Sergeant Major"
+				myIconFile ui/icons/massgate/rank_icons/small/08-sergeant_major.dds
+			}
+
+			level9
+			{
+				myUiName "2nd Lieutenant"
+				myIconFile ui/icons/massgate/rank_icons/small/09-2nd_lieutenant.dds
+			}
+
+			level10
+			{
+				myUiName "1st Lieutenant"
+				myIconFile ui/icons/massgate/rank_icons/small/10-1st_lieutenant.dds
+			}
+
+			level11
+			{
+				myUiName Captain
+				myIconFile ui/icons/massgate/rank_icons/small/11-captain.dds
+			}
+
+			level12
+			{
+				myUiName Major
+				myIconFile ui/icons/massgate/rank_icons/small/12-major.dds
+			}
+
+			level13
+			{
+				myUiName "Lieutenant Colonel"
+				myIconFile ui/icons/massgate/rank_icons/small/13-lieutenant_colonel.dds
+			}
+
+			level14
+			{
+				myUiName Colonel
+				myIconFile ui/icons/massgate/rank_icons/small/14-colonel.dds
+			}
+
+			level15
+			{
+				myUiName "Brigadier General"
+				myIconFile ui/icons/massgate/rank_icons/small/15-brigadier_general.dds
+			}
+
+			level16
+			{
+				myUiName "Major General"
+				myIconFile ui/icons/massgate/rank_icons/small/16-major_general.dds
+			}
+
+			level17
+			{
+				myUiName "Lieutenant General"
+				myIconFile ui/icons/massgate/rank_icons/small/17-lieutenant_general.dds
+			}
+
+			level18
+			{
+				myUiName General
+				myIconFile ui/icons/massgate/rank_icons/small/18-general.dds
+			}
+
+		}
+
+		myProfileColors
+		{
+			currentUserColor
+			{
+				myR 255
+				myG 100
+				myB 0
+				myA 0
+			}
+
+			friendOnlineColor
+			{
+				myR 255
+				myG 186
+				myB 0
+				myA 0
+			}
+
+			friendOfflineColor
+			{
+				myR 100
+				myG 100
+				myB 100
+				myA 0
+			}
+
+			clanmateOnlineColor
+			{
+				myR 43
+				myG 170
+				myB 52
+				myA 0
+			}
+
+			clanmateOfflineColor
+			{
+				myR 100
+				myG 100
+				myB 100
+				myA 0
+			}
+
+			acquaintanceOnlineColor
+			{
+				myR 237
+				myG 237
+				myB 237
+				myA 0
+			}
+
+			acquaintanceOfflineColor
+			{
+				myR 100
+				myG 100
+				myB 100
+				myA 0
+			}
+
+			anyoneOnlineColor
+			{
+				myR 237
+				myG 237
+				myB 237
+				myA 0
+			}
+
+			anyoneOfflineColor
+			{
+				myR 100
+				myG 100
+				myB 100
+				myA 0
+			}
+
+			clanSmurfOnline
+			{
+				myR 237
+				myG 0
+				myB 0
+				myA 0
+			}
+
+			clanSmurfOffline
+			{
+				myR 100
+				myG 0
+				myB 0
+				myA 0
+			}
+
+		}
+
+		myMedals
+		{
+			myStarImage1 ui/icons/massgate/medals/star3.dds
+			myStarImage2 ui/icons/massgate/medals/star3.dds
+			myStarImage3 ui/icons/massgate/medals/star3.dds
+			myMedal1
+			{
+				myName "Infantry Achievement Award"
+				myInfo "Awarded to the highest scoring Infantry player in a match."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe the best Infantry player in a match."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe the best Infantry player in 10 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe the best Infantry player in 10 matches in a row."
+				myStar1 "Honor Star:\nBe the best Infantry player in a match."
+				myStar2 "Honor Star:\nBe the best Infantry player in 10 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty1.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze1.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver1.dds
+				myImageGold ui/icons/massgate/medals/medal_gold1.dds
+			}
+
+			myMedal2
+			{
+				myName "Air Achievement Award"
+				myInfo "Awarded to the highest scoring Air player in a match."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe the best Air player in a match."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe the best Air player in 10 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe the best Air player in 10 matches in a row."
+				myStar1 "Honor Star:\nBe the best Air player in a match."
+				myStar2 "Honor Star:\nBe the best Air player in 10 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty2.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze2.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver2.dds
+				myImageGold ui/icons/massgate/medals/medal_gold2.dds
+			}
+
+			myMedal3
+			{
+				myName "Armor Achievement Award"
+				myInfo "Awarded to the highest scoring Armor player in a match."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe the best Armor player in a match."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe the best Armor player in 10 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe the best Armor player in 10 matches in a row."
+				myStar1 "Honor Star:\nBe the best Armor player in a match."
+				myStar2 "Honor Star:\nBe the best Armor player in 10 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty3.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze3.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver3.dds
+				myImageGold ui/icons/massgate/medals/medal_gold3.dds
+			}
+
+			myMedal4
+			{
+				myName "Support Achievement Award"
+				myInfo "Awarded to the highest scoring Support player in a match."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe the best Support player in a match."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe the best Support player in 10 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe the best Support player in 10 matches in row."
+				myStar1 "Honor Star:\nBe the best Support player in a match."
+				myStar2 "Honor Star:\nBe the best Support player in 10 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty4.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze4.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver4.dds
+				myImageGold ui/icons/massgate/medals/medal_gold4.dds
+			}
+
+			myMedal5
+			{
+				myName "Score Achievement Award"
+				myInfo "Awarded to the highest scoring player in a match."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe the best highest scoring player in a match."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe the best highest scoring player in 10 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe the best highest scoring player in 10 matches in a row."
+				myStar1 "Honor Star:\nBe the best highest scoring player in a match."
+				myStar2 "Honor Star:\nBe the best highest scoring player in 10 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty5.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze5.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver5.dds
+				myImageGold ui/icons/massgate/medals/medal_gold5.dds
+			}
+
+			myMedal6
+			{
+				myName "Tactical Aid Specialist"
+				myInfo "Awarded to players that delivers a crushing "critical" Tactical Aid strike."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nSuccessfully land 25 critical Tactical Aid strikes."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nSuccessfully land 125 critical Tactical Aid strikes."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nSuccessfully land 15 critical Tactical Aid strikes in the same match."
+				myStar1 "Honor Star:\nSuccessfully land 25 critical Tactical Aid strikes."
+				myStar2 "Honor Star:\nSuccessfully land 125 critical Tactical Aid strikes."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty6.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze6.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver6.dds
+				myImageGold ui/icons/massgate/medals/medal_gold6.dds
+			}
+
+			myMedal7
+			{
+				myName "Infantry Combat Excellency"
+				myInfo "Awarded to those who display combat excellence in the Infantry role."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nUse the Infantry role.\nEarn 500 points in a single round. "
+				myNextForSilver "You  have the Bronze Medal.\n\nTo receive the Silver Medal:\nUse the Infantry role\nEarn 1200 points in a single round."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nUse the Infantry role\nEarn 2000 points in a single round."
+				myStar1 "Honor Star:\nUse the Infantry role\nEarn 500 points in a single round."
+				myStar2 "Honor Star:\nUse the Infantry role\nEarn 1200 points in a single round."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty7.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze7.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver7.dds
+				myImageGold ui/icons/massgate/medals/medal_gold7.dds
+			}
+
+			myMedal8
+			{
+				myName "Air Combat Excellency"
+				myInfo "Awarded to those who display combat excellence in the Air role."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nUse the Air role.\nEarn 500 points in a single round. "
+				myNextForSilver "You  have the Bronze Medal.\n\nTo receive the Silver Medal:\nUse the Air role\nEarn 1200 points in a single round."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nUse the Air role\nEarn 2000 points in a single round."
+				myStar1 "Honor Star:\nUse the Air role\nEarn 500 points in a single round."
+				myStar2 "Honor Star:\nUse the Air role\nEarn 1200 points in a single round."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty8.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze8.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver8.dds
+				myImageGold ui/icons/massgate/medals/medal_gold8.dds
+			}
+
+			myMedal9
+			{
+				myName "Armor Combat Excellency"
+				myInfo "Awarded to those who display combat excellence as Armor players."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nUse the Armor role.\nEarn 500 points in a single round. "
+				myNextForSilver "You  have the Bronze Medal.\n\nTo receive the Silver Medal:\nUse the Armor role\nEarn 1200 points in a single round."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nUse the Armor role\nEarn 2000 points in a single round."
+				myStar1 "Honor Star:\nUse the Armor role\nEarn 500 points in a single round."
+				myStar2 "Honor Star:\nUse the Armor role\nEarn 1200 points in a single round."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty9.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze9.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver9.dds
+				myImageGold ui/icons/massgate/medals/medal_gold9.dds
+			}
+
+			myMedal10
+			{
+				myName "Support Combat Excellency"
+				myInfo "Awarded to those who display combat excellence as Support players."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nUse the Support role.\nEarn 500 points in a single round. "
+				myNextForSilver "You  have the Bronze Medal.\n\nTo receive the Silver Medal:\nUse the Support role\nEarn 1200 points in a single round."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nUse the Support role\nEarn 2000 points in a single round."
+				myStar1 "Honor Star:\nUse the Support role\nEarn 500 points in a single round."
+				myStar2 "Honor Star:\nUse the Support role\nEarn 1200 points in a single round."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty10.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze10.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver10.dds
+				myImageGold ui/icons/massgate/medals/medal_gold10.dds
+			}
+
+			myMedal11
+			{
+				myName "Winning Streak"
+				myInfo "Awarded to those who manage to win several matches in a row."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin five matches in a row."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 10 matches in a row."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 20 matches in a row."
+				myStar1 "Honor Star:\nWin five matches in a row."
+				myStar2 "Honor Star:\nWin 10 matches in a row."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty11.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze11.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver11.dds
+				myImageGold ui/icons/massgate/medals/medal_gold11.dds
+			}
+
+			myMedal12
+			{
+				myName "Domination Specialist Award"
+				myInfo "Given to players who have proven themselves masters of Domination."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin 10 Domination matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 100 Domination matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 10 Domination matches in a row."
+				myStar1 "Honor Star:\nWin 10 Domination matches."
+				myStar2 "Honor Star:\nWin 100 Domination matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty12.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze12.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver12.dds
+				myImageGold ui/icons/massgate/medals/medal_gold12.dds
+			}
+
+			myMedal13
+			{
+				myName "Domination Excellency"
+				myInfo "Awarded to players who humiliate their opponents by the means of a Total Domination."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin a Domination round by Total Domination."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 10 Domination rounds by Total Domination."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Domination rounds in a row by Total Domination."
+				myStar1 "Honor Star:\nWin a Domination round by Total Domination."
+				myStar2 "Honor Star:\nWin 10 Domination rounds by Total Domination."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty13.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze13.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver13.dds
+				myImageGold ui/icons/massgate/medals/medal_gold13.dds
+			}
+
+			myMedal14
+			{
+				myName "Assault Specialist Award"
+				myInfo "Given to players who have proven themselves masters of Assault."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin 10 Assault matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 100 Assault matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 10 Assault matches in a row."
+				myStar1 "Honor Star:\nWin 10 Assault matches."
+				myStar2 "Honor Star:\nWin 100 Assault matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty14.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze14.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver14.dds
+				myImageGold ui/icons/massgate/medals/medal_gold14.dds
+			}
+
+			myMedal15
+			{
+				myName "Assault Excellency"
+				myInfo "Awarded to the steadfast players who refused to give an inch to the enemy in Assault."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin an Assault match with a Perfect Defense."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 10 Assault matches with a Perfect Defense."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Assault matches in a row with a Perfect Defense."
+				myStar1 "Honor Star:\nWin an Assault match with a Perfect Defense."
+				myStar2 "Honor Star:\nWin 10 Assault matches with a Perfect Defense."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty15.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze15.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver15.dds
+				myImageGold ui/icons/massgate/medals/medal_gold15.dds
+			}
+
+			myMedal16
+			{
+				myName "Tug of War Specialist Award"
+				myInfo "Given to players who have proven themselves masters of Tug of War."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin 10 Tug of War matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 100 Tug of War matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 10 Tug of War matches in a row."
+				myStar1 "Honor Star:\nWin 10 Tug of War matches."
+				myStar2 "Honor Star:\nWin 100 Tug of War matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty16.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze16.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver16.dds
+				myImageGold ui/icons/massgate/medals/medal_gold16.dds
+			}
+
+			myMedal17
+			{
+				myName "Tug of War Excellency"
+				myInfo "Awarded to the juggernaut players who participated in a perfect push in Tug of War."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin a Tug of War round with a Perfect Push."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 10 Tug of War rounds with a Perfect Push."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Tug of War rounds in a row with a Perfect Push."
+				myStar1 "Honor Star:\nWin a Tug of War round with a Perfect Push."
+				myStar2 "Honor Star:\nWin 10 Tug of War rounds with a Perfect Push."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty17.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze17.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver17.dds
+				myImageGold ui/icons/massgate/medals/medal_gold17.dds
+			}
+
+			myMedal18
+			{
+				myName "Nuclear Specialist"
+				myInfo "Awarded to those players who have launched a nuclear strike."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nLaunch a Tactical Nuclear strike."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nLaunch 10 Tactical Nuclear strikes."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nLaunch a Tactical Nuclear strike in a match.\nDo it eight matches in a row."
+				myStar1 "Honor Star:\nLaunch a Tactical Nuclear strike."
+				myStar2 "Honor Star:\nLaunch 10 tactical Nuclear strikes."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty18.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze18.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver18.dds
+				myImageGold ui/icons/massgate/medals/medal_gold18.dds
+			}
+
+			myMedal19
+			{
+				myName "Highly Decorated"
+				myInfo "Awarded to players that have received all other available awards."
+				myNextForBronze "This award has not yet been earned.\n"
+				myNextForSilver "Some people climb mountains.\nSome people reach the stars\nThis Award was earned for true dedication."
+				myNextForGold <empty>
+				myStar1 <empty>
+				myStar2 <empty>
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty19.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze19.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver19.dds
+				myImageGold ui/icons/massgate/medals/medal_gold19.dds
+			}
+
+			myMedal20
+			{
+				myName "Clan Winning Streak Award"
+				myInfo "Awarded to clans for winning several matches in a row."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin three matches in a row."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin seven matches in a row."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 30 matches in a row."
+				myStar1 "Honor Star:\nWin three matches in a row."
+				myStar2 "Honor Star:\nWin seven matches in a row."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty20.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze20.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver20.dds
+				myImageGold ui/icons/massgate/medals/medal_gold20.dds
+			}
+
+			myMedal21
+			{
+				myName "Clan Domination Specialist Award"
+				myInfo "Awarded to clans for winning Domination matches."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin five Domination matches."
+				myNextForSilver "You have the Bronze Medal yet.\n\nTo receive the Silver Medal:\nWin 50 Domination matches."
+				myNextForGold "You have the Silver Medal yet.\n\nTo receive the Gold Medal:\nWin seven Domination matches in a row."
+				myStar1 "Honor Star:\nWin five Domination matches."
+				myStar2 "Honor Star: Win 50 Domination matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty21.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze21.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver21.dds
+				myImageGold ui/icons/massgate/medals/medal_gold21.dds
+			}
+
+			myMedal22
+			{
+				myName "Clan Domination Excellency"
+				myInfo "Awarded to clans for winning Domination matches by Total Domination."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin a Domination round by Total Domination."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin seven Domination rounds by Total Domination."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Domination rounds in a row by Total Domination."
+				myStar1 "Honor Star:\nWin a Domination round by Total Domination."
+				myStar2 "Honor Star:\nWin seven Domination rounds by Total Domination."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty22.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze22.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver22.dds
+				myImageGold ui/icons/massgate/medals/medal_gold22.dds
+			}
+
+			myMedal23
+			{
+				myName "Clan Assault Specialist"
+				myInfo "Awarded to clans for winning Assault matches."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin five Assault matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 50 Assault matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin seven Assault matches in a row."
+				myStar1 "Honor Star:\nWin five Assault matches."
+				myStar2 "Honor Star:\nWin 50 Assault matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty23.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze23.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver23.dds
+				myImageGold ui/icons/massgate/medals/medal_gold23.dds
+			}
+
+			myMedal24
+			{
+				myName "Clan Assault Excellency"
+				myInfo "Awarded to clans for winning Assault games with a perfect defense."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin an Assault match with a Perfect Defense."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin seven Assault matches with a Perfect Defense."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Assault matches in a row with a Perfect Defense."
+				myStar1 "Honor Star:\nWin an Assault match with a Perfect Defense."
+				myStar2 "Honor Star:\nWin seven Assault matches with a Perfect Defense."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty24.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze24.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver24.dds
+				myImageGold ui/icons/massgate/medals/medal_gold24.dds
+			}
+
+			myMedal25
+			{
+				myName "Clan Tug of War Specialist Award"
+				myInfo "Awarded to clans for winning Tug of War games."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin five Tug of War matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin 50 Tug of War matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin seven Tug of War matches in a row."
+				myStar1 "Honor Star:\nWin five Tug of War matches."
+				myStar2 "Honor Star:\nWin 50 Tug of War matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty25.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze25.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver25.dds
+				myImageGold ui/icons/massgate/medals/medal_gold25.dds
+			}
+
+			myMedal26
+			{
+				myName "Clan Tug of War Excellency"
+				myInfo "Awarded to clans for winning a Tug of War game with a perfect push."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nWin a Tug of War round with a Perfect Push."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin seven Tug of War rounds with a Perfect Push."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin five Tug of War rounds in a row with a Perfect Push."
+				myStar1 "Honor Star:\nWin a Tug of War round with a Perfect Push."
+				myStar2 "Honor Star:\nWin seven Tug of War rounds with a Perfect Push."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty26.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze26.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver26.dds
+				myImageGold ui/icons/massgate/medals/medal_gold26.dds
+			}
+
+			myMedal27
+			{
+				myName "Clan Highscore Award"
+				myInfo "Awarded to clans that reaches a certain amount of points."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn 25000 points."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn 300000 points."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn 2500000 points."
+				myStar1 "Honor Star:\n Earn another 25000 points."
+				myStar2 "Honor Star:\n Earn another 300000 points."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty27.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze27.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver27.dds
+				myImageGold ui/icons/massgate/medals/medal_gold27.dds
+			}
+
+			myMedal28
+			{
+				myName "Tournament Champion Award"
+				myInfo "Awarded to clans that participate in tournaments."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nParticipate in a tournament."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nWin a tournament."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nWin 50 tournaments."
+				myStar1 "Honor Star:\nParticipate in a tournament."
+				myStar2 "Honor Star:\nWin a tournament."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/medals/medal_empty28.dds
+				myImageBronze ui/icons/massgate/medals/medal_bronze28.dds
+				myImageSilver ui/icons/massgate/medals/medal_silver28.dds
+				myImageGold ui/icons/massgate/medals/medal_gold28.dds
+			}
+
+		}
+
+		myBadges
+		{
+			myStarImage1 ui/icons/massgate/badges/star1.dds
+			myStarImage2 ui/icons/massgate/badges/star2.dds
+			myStarImage3 ui/icons/massgate/badges/star3.dds
+			myBadge1
+			{
+				myName "Infantry specialist"
+				myInfo "Given to players that are good with Infantry units."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn a total of 8000 points in the Infantry role."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn a total of 50000 points in the Infantry role."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn a total of 400000 points in the infantry role."
+				myStar1 "Honor Star:\nEarn another 8000 points in the Infantry role."
+				myStar2 "Honor Star:\nEarn another 50000 points in the Infantry role."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty1.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze1.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver1.dds
+				myImageGold ui/icons/massgate/badges/badge_gold1.dds
+			}
+
+			myBadge2
+			{
+				myName "Air specialist"
+				myInfo "Given to players that are good with Air units."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn a total of 8000 points in the Air role."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn a total of 50000 points in the Air role."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn a total of 400000 points in the Air role."
+				myStar1 "Honor Star:\nEarn another 8000 points in the Air role."
+				myStar2 "Honor Star:\nEarn another 50000 points in the Air role."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty2.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze2.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver2.dds
+				myImageGold ui/icons/massgate/badges/badge_gold2.dds
+			}
+
+			myBadge3
+			{
+				myName "Armor specialist"
+				myInfo "Given to players that are good with Armor units."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn a total of 8000 points in the Armor role."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn a total of 50000 points in the Armor role."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn a total of 400000 points in the Armor role."
+				myStar1 "Honor Star:\nEarn another 8000 points in the Armor role."
+				myStar2 "Honor Star:\nEarn another 50000 points in the Armor role."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty3.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze3.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver3.dds
+				myImageGold ui/icons/massgate/badges/badge_gold3.dds
+			}
+
+			myBadge4
+			{
+				myName "Support specialist"
+				myInfo "Given to players that are good with Support units."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn a total of 8000 points in the Support role."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn a total of 50000 points in the Support role."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn a total of 400000 points in the Support role."
+				myStar1 "Honor Star:\nEarn another 8000 points in the Support role."
+				myStar2 "Honor Star:\nEarn another 50000 points in the Support role."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty4.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze4.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver4.dds
+				myImageGold ui/icons/massgate/badges/badge_gold4.dds
+			}
+
+			myBadge5
+			{
+				myName "Score achievement"
+				myInfo "Given to players for reaching a certain score."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn a total of 10000 points."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn a total of 100000 points."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn a total of 800000 points."
+				myStar1 "Honor Star:\nEarn another 10000 points."
+				myStar2 "Honor Star:\nEarn another 100000 points."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty5.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze5.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver5.dds
+				myImageGold ui/icons/massgate/badges/badge_gold5.dds
+			}
+
+			myBadge6
+			{
+				myName "Command Point achievement"
+				myInfo "Given to players for capturing Command Points."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nCapture 25 Command Points."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nCapture 250 Command Points."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nCapture 1200 Command Points."
+				myStar1 "Honor Star:\nCapture 25 Command Points."
+				myStar2 "Honor Star:\nCapture 250 Command Points."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty6.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze6.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver6.dds
+				myImageGold ui/icons/massgate/badges/badge_gold6.dds
+			}
+
+			myBadge7
+			{
+				myName "Fortification achievement"
+				myInfo "Given to players for fortifying Command Points."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nEarn 500 score by fortifying Command Points."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nEarn 3500 score by fortifying Command Points."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nEarn 15000 score by fortifying Command Points."
+				myStar1 "Honor Star:\nEarn 500 score by fortifying Command Points."
+				myStar2 "Honor Star:\nEarn 3500 score by fortifying Command Points."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty7.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze7.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver7.dds
+				myImageGold ui/icons/massgate/badges/badge_gold7.dds
+			}
+
+			myBadge8
+			{
+				myName "Massgate achievement"
+				myInfo "Given to long time Massgate members."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nBe a Massgate Member for 30 days."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nBe a Massgate Member for 90 days."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nBe a Massgate Member for a year."
+				myStar1 "Honor Star:\nBe a Massgate member for another 30 days."
+				myStar2 "Honor Star:\nBe a Massgate member for another 90 days."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty8.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze8.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver8.dds
+				myImageGold ui/icons/massgate/badges/badge_gold8.dds
+			}
+
+			myBadge9
+			{
+				myName "Match achievement"
+				myInfo "Given to players for playing matches."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nPlay 10 matches."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nPlay 200 matches."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nPlay 1500 matches."
+				myStar1 "Honor Star:\nPlay an additional 10 matches."
+				myStar2 "Honor Star:\nPlay an additional 200 matches."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty9.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze9.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver9.dds
+				myImageGold ui/icons/massgate/badges/badge_gold9.dds
+			}
+
+			myBadge10
+			{
+				myName "US achievement"
+				myInfo "Given to faithful US commanders"
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nCommand the US forces.\nPlay a total of 1 hour."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nCommand the US forces.\nPlay a total of 24 hours."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nCommand the US forces.\nPlay a total of 100 hours."
+				myStar1 "Honor Star:\nPlay another 1 hour."
+				myStar2 "Honor Star:\nPlay another 24 hours."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty10.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze10.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver10.dds
+				myImageGold ui/icons/massgate/badges/badge_gold10.dds
+			}
+
+			myBadge11
+			{
+				myName "USSR achievement"
+				myInfo "Given to faithful USSR commanders."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nCommand the Soviet forces.\nPlay a total of 1 hour."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nCommand the Soviet forces.\nPlay a total of 24 hours."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nCommand the Soviet forces.\nPlay a total of 100 hours."
+				myStar1 "Honor Star:\nPlay another 1 hour."
+				myStar2 "Honor Star:\nPlay another 24 hours."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty11.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze11.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver11.dds
+				myImageGold ui/icons/massgate/badges/badge_gold11.dds
+			}
+
+			myBadge12
+			{
+				myName "NATO achievement"
+				myInfo "Given to faithful NATO commanders."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nCommand the NATO forces.\nPlay a total of 1 hour."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nCommand the NATO forces.\nPlay a total of 24 hours."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nCommand the NATO forces.\nPlay a total of 100 hours."
+				myStar1 "Honor Star:\nPlay another 1 hour."
+				myStar2 "Honor Star:\nPlay another 24 hours."
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty12.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze12.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver12.dds
+				myImageGold ui/icons/massgate/badges/badge_gold12.dds
+			}
+
+			myBadge13
+			{
+				myName "Pre-order achievement"
+				myInfo "Given to World in Conflict pre-order customers."
+				myNextForBronze "This award has not yet been earned."
+				myNextForSilver "This award was given as a "Thank you!" from the Massive team for pre-ordering."
+				myNextForGold <empty>
+				myStar1 <empty>
+				myStar2 <empty>
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty13.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze13.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver13.dds
+				myImageGold ui/icons/massgate/badges/badge_gold13.dds
+			}
+
+			myBadge14
+			{
+				myName "Recruit-a-friend achievement."
+				myInfo "Given to players for recruiting a friend to play World in Conflict."
+				myNextForBronze "This award has not yet been earned.\n\nTo receive the Bronze Award:\nRecruit a friend to play World in Conflict."
+				myNextForSilver "The Bronze Award.\n\nTo receive the Silver Award:\nRecruit 5 friends to World in Conflict."
+				myNextForGold "The Silver Award.\n\nTo receive the Gold Award:\nRecruit 10 friends to World in Conflict."
+				myStar1 <empty>
+				myStar2 <empty>
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty14.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze14.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver14.dds
+				myImageGold ui/icons/massgate/badges/badge_gold14.dds
+			}
+
+			myBadge15
+			{
+				myName Unknown
+				myInfo "Badge 15"
+				myNextForBronze <empty>
+				myNextForSilver <empty>
+				myNextForGold <empty>
+				myStar1 <empty>
+				myStar2 <empty>
+				myStar3 <empty>
+				myImageEmpty ui/icons/massgate/badges/badge_empty15.dds
+				myImageBronze ui/icons/massgate/badges/badge_bronze15.dds
+				myImageSilver ui/icons/massgate/badges/badge_silver15.dds
+				myImageGold ui/icons/massgate/badges/badge_gold15.dds
+			}
+
+		}
+
+		myDefaultPlayerPcc ui/icons/massgate/profile_image.dds
+		myDefaultClanPcc ui/icons/massgate/clan_image.dds
+	}
+
+	mySkirmishAIDefs commanderai/multiplayerais/skirmish_ais.ice
+	myIntroMovies
+	{
+		Cutscene UbisoftLogo
+		{
+			myCutsceneFile movies/ubisoftlogo.bik
+			mySubtitlesFile <empty>
+		}
+
+		Cutscene MassiveLogo
+		{
+			myCutsceneFile movies/massivelogo_silhouette.bik
+			mySubtitlesFile <empty>
+		}
+
+		Cutscene Splashscreen
+		{
+			myCutsceneFile movies/splashscreen_ubi_en.bik
+			mySubtitlesFile <empty>
+		}
+
+		Cutscene WicIntro
+		{
+			myCutsceneFile movies/wicintro.bik
+			mySubtitlesFile <empty>
+		}
+
+	}
+
+	myExitImage <empty>
+	myWebLink www.worldinconflict.com
+	myBuyLink www.worldinconflict.com
+	myCustomMissionsDirectory custom_maps
+	myUpkeepLevels
+	{
+		UpkeepLevel Level1
+		{
+			myMaintenance 20
+			myAPFactor 1.0
+		}
+
+		UpkeepLevel Level2
+		{
+			myMaintenance 40
+			myAPFactor 1.0
+		}
+
+		UpkeepLevel Level3
+		{
+			myMaintenance 60
+			myAPFactor 1.0
+		}
+
+		UpkeepLevel Level4
+		{
+			myMaintenance 80
+			myAPFactor 1.0
+		}
+
+		UpkeepLevel LevelMax
+		{
+			myMaintenance 100
+			myAPFactor 1.0
+		}
+
+	}
+
+	myAutoPropDefinitionFile ground/autoprop.ice
+	myUnitExperienceLevelsFile units/unit_experience.ice
+	myHitEffectsFile juice/hiteffects.ice
+	myMaterials
+	{
+		myWaterMaterial WATER
+		myGroundMaterials
+		{
+			GroundMaterialSet GroundMaterialSet(0)
+			{
+				myAlphaMap hit_set_effects/temp_alpha.tga
+				myMaterial GROUND_DEFAULT
+			}
+
+		}
+
+	}
+
+	myCNMH_Fortifications
+	{
+		CNMH_Fortification CNMH_Fortification(0)
+		{
+			myDynamicDelayTime 5
+			myUnitName NATO_Gepard_AA
+			myTimerModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 3
+			}
+
+			myArrivalModel
+			{
+				myModelFile effects/marker/marker.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myDeliveryModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myLandAndDeployTime 3.0
+			myAbortModel
+			{
+				myModelFile effects/mushroomsmoke/smoke_2.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+		}
+
+		CNMH_Fortification CNMH_Fortification(1)
+		{
+			myDynamicDelayTime 5
+			myUnitName M198Howitzer
+			myTimerModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 3
+			}
+
+			myArrivalModel
+			{
+				myModelFile effects/marker/marker.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myDeliveryModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myLandAndDeployTime 3.0
+			myAbortModel
+			{
+				myModelFile effects/mushroomsmoke/smoke_2.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+		}
+
+		CNMH_Fortification CNMH_Fortification(2)
+		{
+			myDynamicDelayTime 5
+			myUnitName M198Howitzer
+			myTimerModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 3
+			}
+
+			myArrivalModel
+			{
+				myModelFile effects/marker/marker.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myDeliveryModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myLandAndDeployTime 3.0
+			myAbortModel
+			{
+				myModelFile effects/mushroomsmoke/smoke_2.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+		}
+
+		CNMH_Fortification CNMH_Fortification(3)
+		{
+			myDynamicDelayTime 5
+			myUnitName NATO_Gepard_AA
+			myTimerModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 3
+			}
+
+			myArrivalModel
+			{
+				myModelFile effects/marker/marker.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myDeliveryModel
+			{
+				myModelFile effects/fire/large_fire_01.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+			myLandAndDeployTime 3.0
+			myAbortModel
+			{
+				myModelFile effects/mushroomsmoke/smoke_2.mrb
+				mySplineFile <empty>
+				myTimeToLive 5
+				myFadeOutTime 0.0
+			}
+
+		}
+
+	}
+
+	myPlayerRolesDefinitionFile juice/roles.ice
+	myRoleSelectWaitTime 3
+	myUnitBlinkBeforeDeathTime 12
+	GLOBAL_ExperienceLevelMultipliers
+	{
+		ExperienceLevel ExperienceLevel(0)
+		{
+			myExperienceLimit 0
+			myLeadPercentageMultiplier 1
+			myDevianceMultiplier 1
+			myMovementPenaltyMultiplier 1
+			myReloadTimeMultiplier 1
+			myViewRangeMultiplier 1
+			myMaxSpeedMultiplier 1
+			myRepairTimeIntervalMultiplier 1
+		}
+
+		ExperienceLevel ExperienceLevel(1)
+		{
+			myExperienceLimit 0
+			myLeadPercentageMultiplier 1
+			myDevianceMultiplier 1
+			myMovementPenaltyMultiplier 1
+			myReloadTimeMultiplier 1
+			myViewRangeMultiplier 1
+			myMaxSpeedMultiplier 1
+			myRepairTimeIntervalMultiplier 1
+		}
+
+		ExperienceLevel ExperienceLevel(2)
+		{
+			myExperienceLimit 0
+			myLeadPercentageMultiplier 1
+			myDevianceMultiplier 1
+			myMovementPenaltyMultiplier 1
+			myReloadTimeMultiplier 1
+			myViewRangeMultiplier 1
+			myMaxSpeedMultiplier 1
+			myRepairTimeIntervalMultiplier 1
+		}
+
+		ExperienceLevel ExperienceLevel(3)
+		{
+			myExperienceLimit 0
+			myLeadPercentageMultiplier 1
+			myDevianceMultiplier 1
+			myMovementPenaltyMultiplier 1
+			myReloadTimeMultiplier 1
+			myViewRangeMultiplier 1
+			myMaxSpeedMultiplier 1
+			myRepairTimeIntervalMultiplier 1
+		}
+
+		ExperienceLevel ExperienceLevel(4)
+		{
+			myExperienceLimit 0
+			myLeadPercentageMultiplier 1
+			myDevianceMultiplier 1
+			myMovementPenaltyMultiplier 1
+			myReloadTimeMultiplier 1
+			myViewRangeMultiplier 1
+			myMaxSpeedMultiplier 1
+			myRepairTimeIntervalMultiplier 1
+		}
+
+	}
+
+	myHelpInfo
+	{
+		myTutorialMovieBeginner <empty>
+		myTutorialMovieIntermediate <empty>
+		myTutorialMovieAdvanced <empty>
+	}
+
+	myEEPicFile ui/backgrounds/maingui/ee.dds
+	myMessageBoxTalkingMarkerFile ui/icons/exclamationmark.tga
+	myGlobalTweakParamsFile juice/globaltweakparams.ice
+	myEnterBuildingMarker
+	{
+		myEffectMRB ui/markers/marker_enter_building/marker_enter_building.mrb
+		myTimetolive 2
+	}
+
+	myResupplyInfo
+	{
+		myDropAnimation effects/supportweapons/markers/_test/white_marker.mrb
+		myDropAnimationFadeOutTime 8
+		myDropDelay 10.0
+		myReadyDelay 10.0
+	}
+
+	myDominationTickRateSpline
+	{
+		myMiddlePoint
+		{
+			x 0.0
+			z 1.0
+		}
+
+		myInsidePoint1
+		{
+			x 0.33
+			z 0.9
+		}
+
+		myInsidePoint2
+		{
+			x 0.67
+			z 0.85
+		}
+
+		myEdgePoint
+		{
+			x 1.0
+			z 0.6
+		}
+
+	}
+
+	myObjectiveGuiInfo
+	{
+		myObjectiveVisualisationMarker ui/icons/objectives/ingameobjring.tga
+		myObjectiveVisualisationMarkerMouseOver ui/icons/objectives/ingameobjringmouseover.tga
+		myObjectiveArrowMarkerFile ui/icons/objectives/ingameobjarrowup.tga
+		myObjectiveArrowMarkerMouseOverFile ui/icons/objectives/ingameobjarrowmouseoverup.tga
+		myObjectiveVisualisationMiniMapMarkerFile ui/icons/objectives/ingameobjring.tga
+		myObjectiveVisualisationSecondaryMarker ui/icons/objectives/ingamesecondary.tga
+		myObjectiveVisualisationSecondaryMarkerMouseOver ui/icons/objectives/ingamesecondarymouseover.tga
+		myObjectiveVisualisationMiniMapSecondaryMarkerFile ui/icons/objectives/ingamesecondary.tga
+		myObjectiveVisualisationAttackCPMarker ui/icons/objectives/ingameobjring.tga
+		myObjectiveVisualisationAttackCPMarkerMouseOver ui/icons/objectives/ingameobjringmouseover.tga
+		myObjectiveVisualisationMiniMapAttackCPMarkerFile ui/icons/objectives/ingameobjring.tga
+		myObjectiveVisualisationDefendCPMarker ui/icons/objectives/ingameobjring.tga
+		myObjectiveVisualisationDefendCPMarkerMouseOver ui/icons/objectives/ingameobjringmouseover.tga
+		myObjectiveVisualisationMiniMapDefendCPMarkerFile ui/icons/objectives/ingameobjring.tga
+		myObjectiveLetterAppearingSound sound/interface/text_draw.wav
+		myTargetIndicatorScale 1.0
+		myMinTargetDistanceForIndicator 50.0
+		myTargetIndicatorFont 29
+		myTargetIndicatorLetterDelayTime 0.008
+		myTargetIndicatorStartAlpha 0.75
+		myTargetIndicatorAlphaFadeTime 0.4
+		myTargetString %uM
+		myTargetFadeLevel 0.5
+		myFadeDownTime 1.0
+		myTargetBlurLevel 8.0
+		myBlurDownTime 1.0
+		myGuiFade 1.0
+		myGuiFadeTime 0.0
+		myDimmedVolumePercentage 60.0
+		myNewObjectiveColor
+		{
+			myR 255
+			myG 255
+			myB 255
+			myA 255
+		}
+
+		myCompletedObjectiveColor
+		{
+			myR 150
+			myG 150
+			myB 150
+			myA 255
+		}
+
+		myFailedObjectiveColor
+		{
+			myR 255
+			myG 0
+			myB 0
+			myA 255
+		}
+
+		myCanceledObjectiveColor
+		{
+			myR 100
+			myG 80
+			myB 80
+			myA 255
+		}
+
+		myNewObjectiveIcon ui/icons/objectives/objectivestandard.tga
+		myCompletedObjectiveIcon ui/icons/objectives/objectivecomplete.tga
+		myFailedObjectiveIcon ui/icons/objectives/objectivefailed.tga
+		myCanceledObjectiveIcon ui/icons/objectives/objectivecanceled.tga
+		myVOIPPostTalkTimeToLive 1.0
+		myEventSound sound/sfx/new_objective.wav
+		myEventPythonClientFunction ActivateObjectiveBrowser
+		myEventPythonServerFunction <empty>
+		myObjectiveBrowserClosedPythonClientFunction ObjectiveCameraRelease
+		myCounterStringFormatting "%s (%u/%u)"
+		myNewPrimaryEventStringFormatting "New primary objective: %s"
+		myUpdatedPrimaryEventStringFormatting "Primary objective updated: %s"
+		myCompletedPrimaryEventStringFormatting "Primary objective completed: %s"
+		myFailedPrimaryEventStringFormatting "Primary objective failed: %s"
+		myCanceledPrimaryEventStringFormatting "Primary objective canceled: %s"
+		myNewPrimaryEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myUpdatedPrimaryEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myCompletedPrimaryEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myFailedPrimaryEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myCanceledPrimaryEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myNewSecondaryEventStringFormatting "New secondary objective: %s"
+		myUpdatedSecondaryEventStringFormatting "Secondary objective updated: %s"
+		myCompletedSecondaryEventStringFormatting "Secondary objective completed: %s"
+		myFailedSecondaryEventStringFormatting "Secondary objective failed: %s"
+		myCanceledSecondaryEventStringFormatting "Secondary objective canceled: %s"
+		myNewSecondaryEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myUpdatedSecondaryEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myCompletedSecondaryEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myFailedSecondaryEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myCanceledSecondaryEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myNewAttackCPEventStringFormatting "Assault the %s"
+		myUpdatedAttackCPEventStringFormatting %s
+		myCompletedAttackCPEventStringFormatting "We captured the %s"
+		myFailedAttackCPEventStringFormatting "We lost the %s"
+		myCanceledAttackCPEventStringFormatting %s
+		myNewAttackCPEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myUpdatedAttackCPEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myCompletedAttackCPEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myFailedAttackCPEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myCanceledAttackCPEventIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		myNewDefendCPEventStringFormatting "Defend the %s"
+		myUpdatedDefendCPEventStringFormatting %s
+		myCompletedDefendCPEventStringFormatting "We have defended the %s"
+		myFailedDefendCPEventStringFormatting "We lost the %s"
+		myCanceledDefendCPEventStringFormatting %s
+		myNewDefendCPEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myUpdatedDefendCPEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myCompletedDefendCPEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myFailedDefendCPEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myCanceledDefendCPEventIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		myScriptEventRollInStopTime 1.0
+		myScriptEventTimeToLive 6
+		myScriptEventFadeOutTime 1
+	}
+
+	myVirtualUIResolution
+	{
+		x 1600
+		z 1200
+	}
+
+	myRequestAcceptedStringAtGrid "%s (%s) accepted the request from %s. (%s at %s)"
+	myAlliedUnitString "Allied Unit"
+	myEnemyUnitString "Enemy Unit"
+	myRequests
+	{
+		Request REQ_IMGOINGHERE
+		{
+			myName "I'm going here"
+			myInfoString "%s (%s) - I'm going here"
+			myInfoStringAtGrid "%s (%s) - I am going here (%s)"
+			myInfoStringAtUnit <empty>
+			myGlobalScriptedEventName myReqImGoingHereEvent
+			myIconPrefab InGame_Request_GoingHere
+			myMinimapFlashIcon ui/icons/request_icons/goinghere.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_ADVANCEHERE
+		{
+			myName "Advance here"
+			myInfoString "%s (%s) - Please ADVANCE here!"
+			myInfoStringAtGrid "%s (%s) - Please ADVANCE here! (%s)"
+			myInfoStringAtUnit <empty>
+			myGlobalScriptedEventName myReqAdvanceHereEvent
+			myIconPrefab InGame_Request_Advance
+			myMinimapFlashIcon ui/icons/request_icons/advance.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_DEFENDHERE
+		{
+			myName "Defend here"
+			myInfoString "%s (%s) - Please DEFEND here!"
+			myInfoStringAtGrid "%s (%s) - Please DEFEND here! (%s)"
+			myInfoStringAtUnit <empty>
+			myGlobalScriptedEventName myReqDefendHereEvent
+			myIconPrefab InGame_Request_Defend
+			myMinimapFlashIcon ui/icons/request_icons/defend.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_CEASEFIRE
+		{
+			myName "Cease fire"
+			myInfoString "%s (%s) - Cease fire!"
+			myInfoStringAtGrid "%s (%s) - Cease Fire! (%s)"
+			myInfoStringAtUnit "%s (%s) - Cease Fire! (%s at %s)"
+			myGlobalScriptedEventName myReqCeaseFireEvent
+			myIconPrefab InGame_Request_CeaseFire
+			myMinimapFlashIcon ui/icons/request_icons/ceasefire.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_SORRY
+		{
+			myName Sorry
+			myInfoString "%s (%s) - Sorry!"
+			myInfoStringAtGrid "%s (%s) - Sorry!"
+			myInfoStringAtUnit "%s (%s) - Sorry! (%s at %s)"
+			myGlobalScriptedEventName mySorryEvent
+			myIconPrefab InGame_Request_Talk
+			myMinimapFlashIcon ui/icons/request_icons/thankyou_sorry.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 2
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 1
+		}
+
+		Request REQ_THANKYOU
+		{
+			myName "Thank you"
+			myInfoString "%s (%s) - Thank you!"
+			myInfoStringAtGrid "%s (%s) - Thank you!"
+			myInfoStringAtUnit "%s (%s) - Thank you! (%s at %s)"
+			myGlobalScriptedEventName myReqThankYouEvent
+			myIconPrefab InGame_Request_Talk
+			myMinimapFlashIcon ui/icons/request_icons/thankyou_sorry.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 2
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 1
+		}
+
+		Request REQ_ATTENTION
+		{
+			myName Attention
+			myInfoString "%s (%s) - Attention here!"
+			myInfoStringAtGrid "%s (%s) - Attention here! (%s)"
+			myInfoStringAtUnit "%s (%s) - Attention here! (%s at %s)"
+			myGlobalScriptedEventName myReqAttentionEvent
+			myIconPrefab InGame_Request_Attention
+			myMinimapFlashIcon ui/icons/request_icons/attention.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/andys_purple.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_NEEDARTILLERY
+		{
+			myName Artillery
+			myInfoString "%s (%s) - I need ARTILLERY!"
+			myInfoStringAtGrid "%s (%s) - I need ARTILLERY! (%s)"
+			myInfoStringAtUnit "%s (%s) - I need ARTILLERY! (%s at %s)"
+			myGlobalScriptedEventName myReqNeedArtilleryEvent
+			myIconPrefab InGame_Request_Artillery
+			myMinimapFlashIcon ui/icons/request_icons/need_artillery.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_NEEDANTIAIR
+		{
+			myName Antiair
+			myInfoString "%s (%s) - I need ANTI-AIR!"
+			myInfoStringAtGrid "%s (%s) - I need ANTI-AIR! (%s)"
+			myInfoStringAtUnit "%s (%s) - I need ANTI-AIR! (%s at %s)"
+			myGlobalScriptedEventName myReqNeedAntiairEvent
+			myIconPrefab InGame_Request_AntiAir
+			myMinimapFlashIcon ui/icons/request_icons/need_antiair.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 3
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_NEEDGROUNDSUPPORT
+		{
+			myName "Ground support"
+			myInfoString "%s (%s) - I need a GROUND ASSAULT!"
+			myInfoStringAtGrid "%s (%s) - I need a GROUND ASSAULT! (%s)"
+			myInfoStringAtUnit "%s (%s) - I need a GROUND ASSAULT! (%s at %s)"
+			myGlobalScriptedEventName myReqNeedGroundSupportEvent
+			myIconPrefab InGame_Request_GroundSupport
+			myMinimapFlashIcon ui/icons/request_icons/need_armor.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_NEEDAIRSUPPORT
+		{
+			myName "Air support"
+			myInfoString "%s (%s) - I need AIR SUPPORT!"
+			myInfoStringAtGrid "%s (%s) - I need AIR SUPPORT! (%s)"
+			myInfoStringAtUnit "%s (%s) - I need AIR SUPPORT! (%s at %s)"
+			myGlobalScriptedEventName myReqNeedAirSupportEvent
+			myIconPrefab InGame_Request_AirSupport
+			myMinimapFlashIcon ui/icons/request_icons/need_air.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 0
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_NEEDREPAIRS
+		{
+			myName Repair
+			myInfoString "%s (%s) - I need REPAIRS!"
+			myInfoStringAtGrid "%s (%s) - I need REPAIRS! (%s)"
+			myInfoStringAtUnit "%s (%s) - I need REPAIRS! (%s at %s)"
+			myGlobalScriptedEventName myReqNeedRepairsEvent
+			myIconPrefab InGame_Request_Repair
+			myMinimapFlashIcon ui/icons/request_icons/need_repair.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 0
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_TACAID
+		{
+			myName "Tactical aid"
+			myInfoString "%s (%s) - Requesting: %s"
+			myInfoStringAtGrid "%s (%s) - Requesting: %s (%s)"
+			myInfoStringAtUnit "%s (%s) - Requesting: %s (%s at %s)"
+			myGlobalScriptedEventName myReqTacAidEvent
+			myIconPrefab InGame_Request_TacticalAid
+			myMinimapFlashIcon ui/icons/request_icons/ta.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+		Request REQ_WRITETOPOS
+		{
+			myName Message
+			myInfoString "%s (%s): '%s'"
+			myInfoStringAtGrid "%s (%s) says: '%s' (%s)"
+			myInfoStringAtUnit "%s (%s) says: '%s' (%s at %s)"
+			myGlobalScriptedEventName myReqWriteToPosEvent
+			myIconPrefab InGame_Request_WriteToPos
+			myMinimapFlashIcon ui/icons/request_icons/write.tga
+			myMinimapFlashTime 0.5
+			myNumberOfMinimapFlashes 5
+			myIconScale 1
+			myMegaMapIconScale 0.8
+			myMiniMapIconSize 105.0
+			myModel effects/supportweapons/markers/_test/request_smoke_type_yellow.mrb
+			myModelScale 1.0
+			myColor
+			{
+				myR 230
+				myG 230
+				myB 0
+				myA 255
+			}
+
+			myIsPersistingFlag 1
+			myCanBePlacedOnAlliesFlag 1
+			myCanBePlacedOnEnemiesFlag 1
+			mySoloIfPlacedOnAllyFlag 0
+		}
+
+	}
+
+	myRequestDistanceToCommandPointRange 50
+	myRequestDistanceToPerimeterPointRange 100
+	mySupportWeaponDatabase maps/supportweapons.ice
+	myBuildingTemplateFile juice/buildingtemplate.ice
+	myDefensiveFortificationTypeFile juice/defensivefortificationtype.ice
+	myNoRankIcon ui/icons/massgate/rank_icons/small/00-recruit.dds
+	myDestructionGridSettings
+	{
+		myForestRadiusMax 40
+		myMaxCellDestruction 23
+	}
+
+	myAutoSaveName Autosave
+	myNewSavedGame "New Saved Game"
+	mySPHealthModifier 1
+	myRequestTimeToLive 15
+	myCamPosDebugUploadPath \\msv-fs-03\wic_russia\
+	myCamPosDebugInfoFruitFile juice/cameraposdebuginfo.fruit
+	myUnitStatesFile juice/wic_states.ice
+	myUnitAnimationTablesFile juice/wic_animationtable.ice
+	myScreenMessageColors
+	{
+		mySystemMessage
+		{
+			myR 196
+			myG 60
+			myB 60
+			myA 255
+		}
+
+		myGameMessage
+		{
+			myR 255
+			myG 126
+			myB 0
+			myA 255
+		}
+
+		myChatAll
+		{
+			myR 255
+			myG 249
+			myB 76
+			myA 255
+		}
+
+		myChatTeam
+		{
+			myR 255
+			myG 255
+			myB 255
+			myA 255
+		}
+
+		myTauntMessage
+		{
+			myR 254
+			myG 209
+			myB 0
+			myA 255
+		}
+
+		myVoteMessage
+		{
+			myR 179
+			myG 30
+			myB 0
+			myA 200
+		}
+
+		myCommandPointMessageColor
+		{
+			myR 255
+			myG 126
+			myB 0
+			myA 255
+		}
+
+		myRequestMessageColor
+		{
+			myR 255
+			myG 78
+			myB 0
+			myA 255
+		}
+
+		myDebugMessage
+		{
+			myR 141
+			myG 33
+			myB 33
+			myA 255
+		}
+
+	}
+
+	mySoundBudgetGroups
+	{
+		NUMBER Group_0_Default 200
+
+		NUMBER Group_1_Engine 30
+
+		NUMBER Group_2_Ambience 30
+
+		NUMBER Group_3_Guns 30
+
+		NUMBER Group_4_TA_Explosions 100
+
+		NUMBER Group_5_Hit_Effects 30
+
+	}
+
+	myStereoSeparationInterpolators
+	{
+		DECIMAL myAngle0 1.0
+
+		DECIMAL myAngle45 0.85
+
+		DECIMAL myAngle90 0.3
+
+	}
+
+	myMobileOverlay
+	{
+		myBatteryIcon0 ui/skins/mobile/battery0.tga
+		myBatteryIcon1 ui/skins/mobile/battery1.tga
+		myBatteryIcon2 ui/skins/mobile/battery2.tga
+		myBatteryIcon3 ui/skins/mobile/battery3.tga
+		myBatteryIcon4 ui/skins/mobile/battery4.tga
+		myBatteryIcon5 ui/skins/mobile/battery5.tga
+		myHighBatteryIcon ui/skins/ping.dds
+		myMediumBatteryIcon ui/skins/ping.dds
+		myLowBatteryIcon ui/skins/ping.dds
+		myBatteryPosX 0.27
+		myBatteryPosY 0.037
+		myBatterySizeX 0.0075
+		myBatterySizeY 0.015
+		myWlanIcon0 ui/skins/mobile/wlan0.tga
+		myWlanIcon1 ui/skins/mobile/wlan1.tga
+		myWlanIcon2 ui/skins/mobile/wlan2.tga
+		myWlanIcon3 ui/skins/mobile/wlan3.tga
+		myWlanIcon4 ui/skins/mobile/wlan4.tga
+		myWlanIcon5 ui/skins/mobile/wlan5.tga
+		myHighWlanIcon ui/skins/ping.dds
+		myMediumWlanIcon ui/skins/ping.dds
+		myLowWlanIcon ui/skins/ping.dds
+		myWlanPosX 0.218
+		myWlanPosY 0.037
+		myWlanSizeX 0.015
+		myWlanSizeY 0.015
+		myTextPosX 0.279
+		myTextPosY 0.0415
+		myFont StandardFontBright
+	}
+
+	myPlayfieldBorder
+	{
+		myWidth 18
+		myColor
+		{
+			myR 113
+			myG 10
+			myB 19
+		}
+
+		myFadeTime 0.1
+		myTexture ui/ingame/outofbounds_02.tga
+	}
+
+	myForestBorder
+	{
+		myWidth 6.0
+		myColor
+		{
+			myR 201
+			myG 203
+			myB 52
+		}
+
+		myTexture ui/ingame/forest_dot1.tga
+	}
+
+	myFireRangeBorders
+	{
+		myBallisticMinRangeBorder
+		{
+			myWidth 0.6
+			myColor
+			{
+				myR 20
+				myG 145
+				myB 20
+			}
+
+			myAnimationTime 0.5
+		}
+
+		myBallisticMaxRangeBorder
+		{
+			myWidth 0.6
+			myColor
+			{
+				myR 145
+				myG 20
+				myB 20
+			}
+
+			myAnimationTime 0.85
+		}
+
+		myLineOfFireBorder
+		{
+			myWidth 0.5
+			myColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myTexture ui/ingame/line_double_yellow.tga
+		}
+
+	}
+
+	myDeploymentPulseSpeed 1.0
+	myDeploymentPulseDepth 0.8
+	myDeploymentMask
+	{
+		myTilingFactor 500
+		myColor
+		{
+			myR 197
+			myG 255
+			myB 121
+		}
+
+		myTexture ui/ingame/deploytex.tga
+	}
+
+	myDeploymentMaskMM
+	{
+		myTilingFactor 9
+		myColor
+		{
+			myR 197
+			myG 255
+			myB 121
+		}
+
+		myTexture ui/ingame/deploytexmm.dds
+	}
+
+	myTreeLOSHeight 15.0
+	myCoverSystemRadius 0.0
+	myCoverSystemDelay 3.0
+	myCoverSystemForestRadius 18
+	myCoverSystemForestDelay 5.0
+	myGroundExplosionBrushes
+	{
+		FILE Brush01_CoderArt ground/explosionbrushes/brush01.tga
+
+		FILE Brush02_MapTeamArt ground/explosionbrushes/brush02.tga
+
+		FILE Brush03_MapTeamArt ground/explosionbrushes/brush03.tga
+
+	}
+
+	myMatchStartDelayTime 30
+	spStatusImages
+	{
+		myUSSRWonImage ui/campaign/winloose/winmap_ussr.tga
+		myUSSRLostImage ui/campaign/winloose/loosemap_ussr.tga
+		myUSWonImage ui/campaign/winloose/winmap.tga
+		myUSLostImage ui/campaign/winloose/loosemap.tga
+		myUSBannerImage ui/skins/flag_us.tga
+		myUSSRBannerImage ui/skins/flag_ussr.tga
+	}
+
+	myMapWonImage ui/campaign/winloose/winmap.tga
+	myMapLostImage ui/campaign/winloose/loosemap.tga
+	myFPMSupportRechargeModifier 0.4
+	myToWFronlineFile ui/skins/TugOfWarLine.tga
+	myTutorialMap maps/usdesert2/usdesert2.ice
+	myBenchmarkFile benchmark/bench_1.wicdemo
+	myEndSplashScreenTimeToLive 15
+	myEndSplashScreenClosingInText "CLOSING IN %u SECONDS"
+	myEndSplashScreenPreOrderLink www.worldinconflict.com/trial
+	myEndSplashScreenBGPic splash.tga
+	myBinkSoundtrackId 0
+	myNumAllowedPlayersPerRole 3
+	mySinglePlayerNames
+	{
+		LOCTEXT parker Parker
+
+		LOCTEXT vlad Vlad
+
+		LOCTEXT romanov Romanov
+
+	}
+
+	mySinglePlayerSounds
+	{
+		FILE Berlin1_Alarm sound/specials/alarm_3_times.mp3
+
+		FILE Oilrig_explosion sound/specials/oilrig_explosion.mp3
+
+		FILE UsFarmland4_Thunder sound/specials/thunder.mp3
+
+		FILE UsFarmland4_Thunder_Big sound/specials/thunder_big.mp3
+
+	}
+
+	myLauncherData
+	{
+		myForumLink www.massgate.net/from_ingame/redirect_forum.php?lang=%s&product=%d
+		mySupportLink www.massgate.net/from_ingame/redirect_bugs_forum.php?lang=%s&product=%d
+		myPurchaseCDKeyLink www.massgate.net/from_ingame/redirect_key_store.php?lang=%s&product=%d
+		myInvalidCDKeyLink www.massgate.net/texts/gettext.php?lang=%s&type=invalidkey
+		myBannerLink www.massgate.net/from_ingame/redirect_banner.php?lang=%s&product=%d
+		myPurchaseBannerLink www.massgate.net/from_ingame/redirect_fail_banner.php?lang=%s&product=%d
+		myPurchaseBannerLogoURL www.massgate.net/buy_cdkey_banner/buy_cdkey_banner_%s.tga
+		myBackground ui/launcher/background_wic.tga
+		myBackgroundSA ui/launcher/background_wic_sa.tga
+		myButtonSmall_Normal ui/launcher/buttonsmall_default.tga
+		myButtonSmall_Focused ui/launcher/buttonsmall_mouseover.tga
+		myButtonSmall_Disabled ui/launcher/buttonsmall_disabled.tga
+		myButtonBig_Normal ui/launcher/buttonbig_default.tga
+		myButtonBig_Focused ui/launcher/buttonbig_mouseover.tga
+		myCloseButton_Normal ui/launcher/x_default.tga
+		myCloseButton_Focused ui/launcher/x_mouseover.tga
+		myNewsHeader News
+		myStartGame "Start Game"
+		myPlayOnline "Play Online"
+		myRegisterCDKey "Enter CD Key"
+		myPurchaseCDKey "Purchase CD Key"
+		mySupport Support
+		myVisitForums "Visit Forums"
+		myNewsOffline "\nMassgate is currently unreachable.\n\nNews and updates are unavailable."
+		myDownloadingNews "\nDownloading news from Massgate, please wait..."
+		myBackground_RegisterCdKey ui/launcher/background_key.tga
+		myRegisterButton OK
+		myCancelButton Cancel
+		myBackground_Message ui/launcher/background_feedback.tga
+		myOKButton OK
+		mySuccessHeader Success
+		mySuccessText "Your CD key has been successfully stored."
+	}
+
+}
+
+FILEList GetFilesIncludes
+{
+	FILE SovietAssaultChecker assault.dat
+
+	FILE Berlin1MaskCamp maps/berlin1/deploymentareamasks/OrderMaskCamp.tga
+
+	FILE Berlin1MaskAA maps/berlin1/deploymentareamasks/OrderMaskAA.tga
+
+	FILE Berlin1MaskBridge maps/berlin1/deploymentareamasks/OrderMaskBridge.tga
+
+	FILE Game wic.exe
+
+	FILE bink32_dll binkw32.dll
+
+	FILE commanderai_constants_ice commanderai/constants.ice
+
+	FILE WDS wic_ds.exe
+
+	FILE DefaultBackground ui/backgrounds/loading_default/loading_default01.dds
+
+	FILE FILE(4) landscapes/desert/props/new_desert/palm/shadows/palm_shadow.dds
+
+	FILE Detail_texture ground/wic_mp1_detailmapper.tga
+
+	FILE FILE(5) ground/wic_mp2_shadowmap.tga
+
+	FILE startingunits startingunits.ice
+
+	FILE myMinimapUnitSpawnTexture ui/skins/vl.dds
+
+	FILE Autoprop0 ground/autoprop0.tga
+
+	FILE AutoPropGrass0 props/autoprops/grass_01.mrb
+
+	FILE AutoPropGrass1 props/autoprops/grass_02.mrb
+
+	FILE Sunset props/skys/sunset/sunset.mrb
+
+	FILE usWon ui/score_sheet/us_wins.dds
+
+	FILE euWon ui/score_sheet/eu_wins.dds
+
+	FILE Metal_Hit_01 sound/sfx/hits/metal_01_1.wav
+
+	FILE Metal_Hit_02 sound/sfx/hits/metal_01_2.wav
+
+	FILE Metal_Hit_03 sound/sfx/hits/metal_01_3.wav
+
+	FILE waiting_for_players ui/backgrounds/ingame/waiting_for_players.dds
+
+	FILE strategic_map_512 ui/ingame/strategic_map/strategic_map_512.tga
+
+	FILE autoprop surfaces/autoprop.sur
+
+	FILE SpeedTreeSurface01 surfaces/game/speedtree.sur
+
+	FILE DecalSurface surfaces/game/decal.sur
+
+	FILE postfx_heathaze surfaces/game/postfx_heathaze.sur
+
+	FILE postfx_heathazeTex1 surfaces/textures/heatparticlemask.tga
+
+	FILE postfx_heathazeTex2 surfaces/textures/heatparticledudv.tga
+
+	FILE SoftShadowSurface1 surfaces/game/stencil_softshad1.sur
+
+	FILE SoftShadowSurface2 surfaces/game/stencil_softshad2.sur
+
+	FILE RoadsSurface surfaces/roads.sur
+
+	FILE DefaultCubemap surfaces/textures/defaultcubemap.cube
+
+	FILE ErrorView errorview.exe
+
+	FILE OurSoundDatabase maps/soundsdatabase.ice
+
+	FILE postfx_softshadows surfaces/game/postfx_softshadows.sur
+
+	FILE CableTexture effects/cables/cable_diff.dds
+
+	FILE CableTexture2 effects/cables/cable_diff_2.dds
+
+	FILE Grass_Surface surfaces/game/grass.sur
+
+	FILE DebugHelpDll dbghelp.dll
+
+	FILE WhiteBoxMRB props/system/whitebox.mrb
+
+	FILE MapRenderer surfaces/game/map_renderer.sur
+
+	FILE MapRendererMegamap surfaces/game/map_renderer_megamap.sur
+
+	FILE ContentDownloadTest1 maps/cd_test/python/server.py
+
+	FILE ContentDownloadTest2 maps/cd_test/python/server_autogen.py
+
+	FILE FOW surfaces/game/fow.sur
+
+	FILE SpeedtreeEditorSurface surfaces/game/speedtree_editors.sur
+
+	FILE DepthTextureSurface surfaces/depthtex.sur
+
+	FILE LineAATexture ui/skins/line.tga
+
+	FILE WicDsCycle wic_ds_cycle.txt
+
+	FILE BenchmarkInclude benchmark/benchmarkfiles.ice
+
+	FILE FogOfWarInternalSurface surfaces/game/fow2.sur
+
+	FILE xinput1_3 xinput1_3.dll
+
+	FILE errview_techteam errorview/techteam.tga
+
+	FILE errview_codeteam errorview/codeteam.tga
+
+	FILE errview_artteam errorview/artteam.tga
+
+	FILE errview_mapteam errorview/mapteam.tga
+
+	FILE errview_unknown errorview/unknown.tga
+
+	FILE Showbox_SurfaceList surfaces/showbox_surface_list.txt
+
+	FILE Showbox_PESurfaceList surfaces/showbox_particle_surface_list.txt
+
+	FILE BadTexture surfaces/textures/bad.tga
+
+	FILE RenderSurfaceSolid surfaces/system/systeminternalsolid.sur
+
+	FILE RenderSurfaceAlpha surfaces/system/systeminternalalpha.sur
+
+	FILE RenderSurfaceNull surfaces/system/systemnullsurface.sur
+
+	FILE Surface surfaces/normalmap_units.sur
+
+	FILE FILE(0) juice/cameraposdebuginfo.fruit
+
+	FILE FILE(1) juice/vector3.fruit
+
+	FILE FILE(2) juice/vector2.fruit
+
+	FILE WireSurface surfaces/game/wires.sur
+
+	FILE UnitClanSurface surfaces/game/unit_pcc.sur
+
+	FILE postfx_heathaze_particle surfaces/game/postfx_heathaze_particle.sur
+
+	FILE GrassWindSurface surfaces/game/grasswind.sur
+
+	FILE FOW2 surfaces/game/fowblur.sur
+
+	FILE conesurface ui/minimap/minimap_cone.sur
+
+	FILE explbrush_tex ground/explosionbrushes/explosion_atlas_texture.tga
+
+	FILE explbrush_normals ground/explosionbrushes/explosion_atlas_normals.tga
+
+	FILE explbrush_gety ground/explosionbrushes/explosion_atlas_gety.tga
+
+	FILE ground_default_objwreck ground/default_housewrecktexture.dds
+
+	FILE explosion_atlasUVs ground/explosionbrushes/explosion_atlas.txt
+
+	FILE explosion_types ground/explosionbrushes/explosion_types.txt
+
+	FILE d3dx10dll d3dx10_33.dll
+
+	FILE d3dx9dll31 d3dx9_31.dll
+
+	FILE d3dx9dll33 d3dx9_33.dll
+
+	FILE road_dummy_box props/system/whitebox_roads.mrb
+
+	FILE GenericMPSounds sound/genericmpsounds.ice
+
+	FILE dsBanList wic_ds_banlist.txt
+
+	FILE wic_ds_remote_howto wic_ds_remote_howto.txt
+
+	FILE RankBalanceIni wic_rank_balance.ini
+
+	FILE DepricatedScripts depricated/depricated.ice
+
+	FILE madhoc madhoc.dll
+
+	FILE intelgamingxp laptopgamingxp.dll
+
+	FILE intelgamingvista laptopgamingvista.dll
+
+	FILE wlan_profile massive_worldinconflict.xml
+
+	FILE Berlin1MaskCamp1 maps/berlin1/deploymentareamasks/ordermaskcamp1.tga
+
+	FILE Berlin1MaskCamp2 maps/berlin1/deploymentareamasks/ordermaskcamp2.tga
+
+	FILE Berlin1MaskCamp3 maps/berlin1/deploymentareamasks/ordermaskcamp3.tga
+
+	FILE Berlin1MaskCamp4 maps/berlin1/deploymentareamasks/ordermaskcamp4.tga
+
+	FILE ExplosionDebrisIce juice/explosiondebris.ice
+
+	FILE Berlin1MaskPreAA maps/berlin1/deploymentareamasks/ordermaskpreaa.tga
+
+}
+
+FILEList PythonStandardLib
+{
+	FILE FILE(0) python/copy_reg.py
+
+	FILE FILE(1) python/linecache.py
+
+	FILE FILE(2) python/ntpath.py
+
+	FILE FILE(3) python/os.py
+
+	FILE FILE(4) python/random.py
+
+	FILE FILE(5) python/stat.py
+
+	FILE FILE(6) python/types.py
+
+	FILE FILE(7) python/userdict.py
+
+	FILE FILE(8) python/warnings.py
+
+}
+
+FILEList WicPythonLib
+{
+	FILE FILE(0) python/building.py
+
+	FILE FILE(1) python/common.py
+
+	FILE FILE(2) python/debug.py
+
+	FILE FILE(3) python/game.py
+
+	FILE FILE(4) python/globals.py
+
+	FILE FILE(5) python/instance.py
+
+	FILE FILE(6) python/player.py
+
+	FILE FILE(7) python/position.py
+
+	FILE FILE(8) python/team.py
+
+	FILE FILE(9) python/trigger.py
+
+	FILE FILE(10) python/unit.py
+
+	FILE FILE(11) python/command.py
+
+	FILE FILE(12) python/gameobject.py
+
+	FILE FILE(13) python/stringedmethod.py
+
+	FILE FILE(14) python/camera.py
+
+	FILE FILE(15) python/ccamera.py
+
+	FILE FILE(16) python/clientincludes.py
+
+	FILE FILE(17) python/persistence.py
+
+}
+
+SpecialSpeedModifier mySpecialSpeedModifier
+{
+	myMoverSpeedModifier 1.2
+	myTurretSpeedModifier 1
+}
+
+FILEList PythonDebugger
+{
+	FILE FILE(0) mpythondebugger.exe
+
+	FILE FILE(1) python/_debugger/atexit.py
+
+	FILE FILE(2) python/_debugger/bdb.py
+
+	FILE FILE(3) python/_debugger/cmd.py
+
+	FILE FILE(4) python/_debugger/complete.py
+
+	FILE FILE(5) python/_debugger/copy.py
+
+	FILE FILE(6) python/_debugger/dis.py
+
+	FILE FILE(7) python/_debugger/disassemble.py
+
+	FILE FILE(8) python/_debugger/display.py
+
+	FILE FILE(9) python/_debugger/fns.py
+
+	FILE FILE(10) python/_debugger/gdb.py
+
+	FILE FILE(11) python/_debugger/gettext.py
+
+	FILE FILE(12) python/_debugger/info.py
+
+	FILE FILE(13) python/_debugger/inspect.py
+
+	FILE FILE(14) python/_debugger/locale.py
+
+	FILE FILE(15) python/_debugger/mpydbupdater.py
+
+	FILE FILE(16) python/_debugger/opcode.py
+
+	FILE FILE(17) python/_debugger/optparse.py
+
+	FILE FILE(18) python/_debugger/pprint.py
+
+	FILE FILE(19) python/_debugger/pydb.py
+
+	FILE FILE(20) python/_debugger/pydbbdb.py
+
+	FILE FILE(21) python/_debugger/pydbcmd.py
+
+	FILE FILE(22) python/_debugger/pydoc.py
+
+	FILE FILE(23) python/_debugger/re.py
+
+	FILE FILE(24) python/_debugger/repr.py
+
+	FILE FILE(25) python/_debugger/set.py
+
+	FILE FILE(26) python/_debugger/shlex.py
+
+	FILE FILE(27) python/_debugger/show.py
+
+	FILE FILE(28) python/_debugger/sighandler.py
+
+	FILE FILE(29) python/_debugger/sre.py
+
+	FILE FILE(30) python/_debugger/sre_compile.py
+
+	FILE FILE(31) python/_debugger/sre_constants.py
+
+	FILE FILE(32) python/_debugger/sre_parse.py
+
+	FILE FILE(33) python/_debugger/string.py
+
+	FILE FILE(34) python/_debugger/subcmd.py
+
+	FILE FILE(35) python/_debugger/textwrap.py
+
+	FILE FILE(36) python/_debugger/threaddbg.py
+
+	FILE FILE(37) python/_debugger/threadinfo.py
+
+	FILE FILE(38) python/_debugger/threading.py
+
+	FILE FILE(39) python/_debugger/token.py
+
+	FILE FILE(40) python/_debugger/tokenize.py
+
+	FILE FILE(41) python/_debugger/traceback.py
+
+	FILE FILE(42) mpythondebugger/mpythondebugger.chm
+
+	FILE FILE(43) mpythondebugger/mpythondebugger.xml
+
+}
+

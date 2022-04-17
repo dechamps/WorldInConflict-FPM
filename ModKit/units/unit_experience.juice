@@ -1,0 +1,36 @@
+INCLUDE units/unittype.fruit
+
+ExperienceList ExperienceLevels
+{
+	ExperienceInfo ExperienceInfo(0)
+	{
+		myExperienceLimit 1000
+		myDamageFactor 0.5
+	}
+
+	ExperienceInfo ExperienceInfo(1)
+	{
+		myExperienceLimit 2000
+		myDamageFactor 0.6
+	}
+
+	ExperienceInfo ExperienceInfo(2)
+	{
+		myExperienceLimit 4000
+		myDamageFactor 0.7
+	}
+
+	ExperienceInfo ExperienceInfo(3)
+	{
+		myExperienceLimit 8000
+		myDamageFactor 0.8
+	}
+
+	ExperienceInfo ExperienceInfo(4)
+	{
+		myExperienceLimit -1
+		myDamageFactor 0.9
+	}
+
+}
+

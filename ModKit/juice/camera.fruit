@@ -1,0 +1,21 @@
+SCRIPTCLASS FloatList
+{
+	DECIMAL
+}
+
+CLASS Camera
+{
+	DECIMAL myRotationSlideFactor
+	DECIMAL myMovementSlideFactor
+	DECIMAL myCameraSpeed
+	DECIMAL myHeightSpeedAdjustment
+	DECIMAL myAngleSpeed
+	FloatList myHeightTable
+	NUMBER myDefaultHeight
+	DECIMAL myMass
+	DECIMAL myForceFactor
+	DECIMAL myFriction
+	DECIMAL myRotationalFadeOutSize
+	DECIMAL myRenormalisationFactor
+	DECIMAL myRenormalisationSize
+}

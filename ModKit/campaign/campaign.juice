@@ -1,0 +1,1861 @@
+INCLUDE campaign/campaign.fruit
+
+CampaignList myCampaigns
+{
+	Campaign cmp1
+	{
+		myCampaignName WIC
+		myImageFile <empty>
+		myBackdropFile <empty>
+		myBulletUpPrefab Campaign_Up
+		myBulletInsidePrefab Campaign_Over
+		myBulletDownPrefab Campaign_dwn
+		myItems
+		{
+			Cutscene Cinematic_Seattle
+			{
+				myFile movies/cutscene_seattle.bik
+				mySubtitleFile campaign/subtitles/intro_cinematic.ice
+				myName Seattle
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission1-Seattle2
+			{
+				myFile maps/seattle2/seattle2.ice
+				myMedalsForCompletion
+				{
+					Medal primary1
+					{
+						myName "National Defense Service Ribbon"
+						myDescription "Awarded for honorable conduct during the retreat from Seattle."
+						myImage ui/icons/campaign/medals/primary/campaign_primary1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary1
+					{
+						myName "Army Achievement Medal"
+						myDescription "Awarded for excellent performance when repairing a stranded Bradley. "
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission2_PhoneCall
+			{
+				myFile movies/phonecalls/mission02_president.bik
+				mySubtitleFile campaign/subtitles/phone_mission_2.ice
+				myName "A Rude Awakening"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission2-Seattle3
+			{
+				myFile maps/seattle3/seattle3.ice
+				myMedalsForCompletion
+				{
+					Medal primary2
+					{
+						myName "Humanitarian Service Ribbon"
+						myDescription "Awarded for meritorious participation in the evacuation of civilians from the Seattle suburbs during combat operations against the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary2
+					{
+						myName "Bronze Star"
+						myDescription "Awarded for heroic performance in combat operations against the Soviet Union. Due to your diligence a Soviet paratrooper operation was thwarted and the I-90 Bridge could be destroyed as planned, thereby delaying the Soviet advance out of Seattle."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission3_PhoneCall
+			{
+				myFile movies/phonecalls/mission03_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_3.ice
+				myName "Calling Home"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission3-Ustown4
+			{
+				myFile maps/ustown4/ustown4.ice
+				myMedalsForCompletion
+				{
+					Medal primary3
+					{
+						myName "Army Meritorious Unit Commendation"
+						myDescription "Your battalion has been awarded this commendation for exceptionally meritorious conduct and valorous actions against the Soviet invaders during the defense of Pine Valley."
+						myImage ui/icons/campaign/medals/primary/campaign_primary3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary3
+					{
+						myName "Silver Star"
+						myDescription "Awarded for exceptional gallantry and extraordinary heroism during the defense of Pine Valley. Due to your diligence and bravery, friendly forces were able to hold the town against an overwhelming Soviet attack. "
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission4_PhoneCall
+			{
+				myFile movies/phonecalls/mission04_mike.bik
+				mySubtitleFile campaign/subtitles/phone_mission_4.ice
+				myName "Land of the Free"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission4-Usfarmland3
+			{
+				myFile maps/usfarmland3/usfarmland3.ice
+				myMedalsForCompletion
+				{
+					Medal primary4
+					{
+						myName "Officer Professional Development Ribbon"
+						myDescription "You have been awarded this ribbon for showing professional dedication and promising development as a commissioned officer in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary4.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary4
+					{
+						myName "Army Distinguished Service Medal"
+						myDescription "Awarded for exceptionally meritorious service in a duty of great responsibility. Due to your impeccable performance Soviet forces were held at bay and their advance toward Cascade Falls and Fort Teller delayed so that the defenders there had time to prepare."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary4.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission5_PhoneCall
+			{
+				myFile movies/phonecalls/mission05_anton.bik
+				mySubtitleFile campaign/subtitles/phone_mission_5.ice
+				myName "Family Ties"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission5-Ustown3
+			{
+				myFile maps/ustown3/ustown3.ice
+				myMedalsForCompletion
+				{
+					Medal primary5
+					{
+						myName "Army Valorous Unit Award"
+						myDescription "Your battalion has been given this award to commemorate your extraordinary heroism, uncommon valor and selfless sacrifice during the defense of Cascade Falls."
+						myImage ui/icons/campaign/medals/primary/campaign_primary5.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary5
+					{
+						myName "Distinguished Service Cross"
+						myDescription "Awarded for extreme gallantry and risk of life in actual combat with the armed forces of the Soviet Union. Due to your extraordinary bravery during the defense of Cascade Falls, where you repeatedly acted above and beyond the call of duty, the Soviet assault was stalled and the secret of Fort Teller kept safe."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary5.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission6_PhoneCall
+			{
+				myFile movies/phonecalls/mission06_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_6.ice
+				myName "Colonel Sawyer "
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission6-Europe4
+			{
+				myFile maps/europe4/europe4.ice
+				myMedalsForCompletion
+				{
+					Medal primary6
+					{
+						myName "Combat Infantryman Badge"
+						myDescription "The recipient was personally present and under hostile fire while serving in a unit actively engaged in ground combat with the enemy during operations in Southern France."
+						myImage ui/icons/campaign/medals/primary/campaign_primary6.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary6
+					{
+						myName "Army Commendation medal"
+						myDescription "Awarded for heroism in combat against the Soviet Union. Due to your actions the initial battle of Southern France was won and the offensive could proceed as planned."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary6.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission7_PhoneCall
+			{
+				myFile movies/phonecalls/mission07_sabatier.bik
+				mySubtitleFile campaign/subtitles/phone_mission_7.ice
+				myName Tête-à-tête
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission7-Europe2
+			{
+				myFile maps/europe2/europe2.ice
+				myMedalsForCompletion
+				{
+					Medal primary7
+					{
+						myName "Armed Forces Expeditionary Ribbon"
+						myDescription "Awarded for meritorious conduct in combat operations on foreign soil against the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary7.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary7
+					{
+						myName "Legion of Merit"
+						myDescription "Awarded for exceptionally meritorious conduct during the NATO offensive against the Soviet Union in Southern France. Despite personal risk of life you acted with merit while completing the final assault on the Soviet divisional command post."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary7.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra1
+					{
+						myName "French Campaign Ribbon"
+						myDescription "Awarded for the successful conclusion of combat operations aimed to end the Soviet occupation of Southern France."
+						myImage ui/icons/campaign/medals/extra/campaign_extra1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission8_PhoneCall
+			{
+				myFile movies/phonecalls/mission08_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_8.ice
+				myName "Task Force Raven"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission8-Russia2
+			{
+				myFile maps/russia2/russia2.ice
+				myMedalsForCompletion
+				{
+					Medal primary8
+					{
+						myName "Rank Insignia: 1st Lieutenant"
+						myDescription "Due to the promise you show as an officer and leader of men you have been promoted to the rank of 1st Lieutenant in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary8.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary8
+					{
+						myName "Joint Service Commendation Medal"
+						myDescription "Awarded for exceptional heroism during operations undertaken within the Soviet Union. Due to your actions, the difficult operation to rescue the downed pilots and salvage important intelligence could be completed."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary8.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission9_PhoneCall
+			{
+				myFile movies/phonecalls/mission09_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_9.ice
+				myName Forgiveness
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission9-Russia4
+			{
+				myFile maps/russia4/russia4.ice
+				myMedalsForCompletion
+				{
+					Medal primary9
+					{
+						myName "NATO Ribbon"
+						myDescription "Awarded for commendable conduct while serving in a NATO-attached unit engaged in combat operations against hostile forces."
+						myImage ui/icons/campaign/medals/primary/campaign_primary9.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary9
+					{
+						myName "Defense Distinguished Service Medal"
+						myDescription "Awarded for distinguished service while conducting operations together with a NATO unit on Soviet soil. Due to your commendable leadership and heroic actions several Soviet submarines were sunk and their plan to launch an attack on the US East Coast was partly thwarted."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary9.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra2
+					{
+						myName "Soviet Campaign Ribbon"
+						myDescription "Awarded for the successful conclusion of combat operations within the Soviet Union."
+						myImage ui/icons/campaign/medals/extra/campaign_extra2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission10_PhoneCall
+			{
+				myFile movies/phonecalls/mission10_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_10.ice
+				myName Reorganizing
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Cutscene Cinematic_NewYork
+			{
+				myFile movies/cutscene_newyork.bik
+				mySubtitleFile <empty>
+				myName "New York"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission10-Newyork1
+			{
+				myFile maps/newyork1/newyork1.ice
+				myMedalsForCompletion
+				{
+					Medal primary10
+					{
+						myName "Air Assault Badge"
+						myDescription "Awarded for professional conduct during air assault operations against hostile forces"
+						myImage ui/icons/campaign/medals/primary/campaign_primary10.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary10
+					{
+						myName "Distinguished Service Cross"
+						myDescription "For your extreme gallantry and risk of life in actual combat with the armed forces of the Soviet Union you have been awarded a second Distinguished Service Cross. Your actions helped turn back the Soviet incursion in New York, free the hostages held there and cleanse the Soviet insurgents from the islands south of Manhattan."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary10.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission11_PhoneCall
+			{
+				myFile movies/phonecalls/mission11_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_11.ice
+				myName Redemption
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission11-Usfarmland2
+			{
+				myFile maps/usfarmland2/usfarmland2.ice
+				myMedalsForCompletion
+				{
+					Medal primary11
+					{
+						myName "Combat Medical Badge"
+						myDescription "The recipient was personally present and under hostile fire while serving in a medical and engineering capacity in a unit actively engaged in ground combat with the enemy."
+						myImage ui/icons/campaign/medals/primary/campaign_primary11.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary11
+					{
+						myName "Joint Service Achievement Medal"
+						myDescription "Awarded for your sustained exceptional performance during prolonged combat actions against the Soviet Union. Due to your leadership skills and personal bravery US forces were rallied after the battle for Cascade Falls and scattered Soviet units remaining in the area were destroyed."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary11.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission12_PhoneCall
+			{
+				myFile movies/phonecalls/mission12_president.bik
+				mySubtitleFile campaign/subtitles/phone_mission_12.ice
+				myName "A Hard Call"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission12-Ustown1
+			{
+				myFile maps/ustown1/ustown1.ice
+				myMedalsForCompletion
+				{
+					Medal primary12
+					{
+						myName "Rank Insignia: Captain"
+						myDescription "Due to your proficiency as an army officer you have now been fast-tracked for promotion to the rank of Captain in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary12.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary12
+					{
+						myName "Silver Star"
+						myDescription "For showing exceptional gallantry and extraordinary heroism during the counteroffensive toward Seattle you have been awarded a second Silver Star. Thanks to your impeccable performance and outstanding heroic actions the entire operation could move ahead of schedule, increasing the chance of retaking Seattle in time."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary12.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission13_PhoneCall
+			{
+				myFile movies/phonecalls/mission13_webb.bik
+				mySubtitleFile campaign/subtitles/phone_mission_13.ice
+				myName "The Price of Duty"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission13-Seattle4
+			{
+				myFile maps/seattle4/seattle4.ice
+				myMedalsForCompletion
+				{
+					Medal primary13
+					{
+						myName "Joint Meritorious Unit Award"
+						myDescription "Your company has been given this award for exceptional performance during the recapture of Sandfish Island from Soviet forces."
+						myImage ui/icons/campaign/medals/primary/campaign_primary13.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary13
+					{
+						myName "Legion of Merit"
+						myDescription "For displaying exceptionally meritorious conduct during amphibious actions in the Puget Sound you have been awarded a second Legion of Merit. Due to your superlative performance Sandfish Island was taken expediently and with minimum loss of life."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary13.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission14_PhoneCall
+			{
+				myFile movies/phonecalls/mission14_mike.bik
+				mySubtitleFile campaign/subtitles/phone_mission_14.ice
+				myName "Have to Get Out"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission14-Seattle1
+			{
+				myFile maps/seattle1/seattle1.ice
+				myMedalsForCompletion
+				{
+					Medal primary14
+					{
+						myName "American Defense Medal"
+						myDescription "You have been awarded this ribbon for successful participation in the defense of the United States of America against the invasion and subsequent occupation attempt made by the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary14.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary14
+					{
+						myName "Congressional Medal of Honor"
+						myDescription "For distinguishing yourself conspicuously by gallantry above and beyond the call of duty in combat against Soviet forces, you have been awarded the Congressional Medal of Honor. Knowingly risking your own life, you went into the very heart of enemy-held territory and destroyed their ability to command. This caused the immediate collapse of Soviet forces defending Seattle and set an example of  selfless sacrifice and impeccable behavior for other soldiers to aspire to."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary14.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra3
+					{
+						myName "Army Presidential Unit Citation"
+						myDescription "Your battalion has been given this award for exceptional displays of gallantry, determination, and esprit de corps in accomplishing its mission under extremely difficult and hazardous conditions."
+						myImage ui/icons/campaign/medals/extra/campaign_extra3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+		}
+
+	}
+
+	Campaign WIC_SA
+	{
+		myCampaignName WIC_SA
+		myImageFile <empty>
+		myBackdropFile <empty>
+		myBulletUpPrefab Campaign_Up
+		myBulletInsidePrefab Campaign_Over
+		myBulletDownPrefab Campaign_dwn
+		myItems
+		{
+			Cutscene Prelude
+			{
+				myFile movies/pre_prelude.bik
+				mySubtitleFile campaign/subtitles/pre_prelude.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Mission Mission1-Berlin1
+			{
+				myFile maps/berlin1/berlin1.ice
+				myMedalsForCompletion
+				{
+					Medal primary15
+					{
+						myName "Order for Service of the Homeland"
+						myDescription "Bestowed for exemplary service to the Motherland during the liberation of West Berlin."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission1_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary15
+					{
+						myName "Order of Bogdan Khmelnitsky"
+						myDescription "Bestowed for a display of exceptional bravery and resourcefulness when aiding a comrade with much needed anti-aircraft support during the battle for West Berlin."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission1_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal extra4
+					{
+						myName "For the Liberation of Berlin"
+						myDescription "Awarded to those fortunate comrades who participated in the liberation of Berlin - an act which has led to the unification of the once divided German capital."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/campaign_medal_berlin.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_01.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_01.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Cinematic_SA_Seattle
+			{
+				myFile movies/cutscene_seattle.bik
+				mySubtitleFile campaign/subtitles/intro_cinematic.ice
+				myName Seattle
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission2-Seattle2
+			{
+				myFile maps/seattle2/seattle2.ice
+				myMedalsForCompletion
+				{
+					Medal primary1
+					{
+						myName "National Defense Service Ribbon"
+						myDescription "Awarded for honorable conduct during the retreat from Seattle."
+						myImage ui/icons/campaign/medals/primary/campaign_primary1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary1
+					{
+						myName "Army Achievement Medal"
+						myDescription "Awarded for excellent performance when repairing a stranded Bradley. "
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission3_PhoneCall
+			{
+				myFile movies/phonecalls/mission02_president.bik
+				mySubtitleFile campaign/subtitles/phone_mission_2.ice
+				myName "A Rude Awakening"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission3-Seattle3
+			{
+				myFile maps/seattle3/seattle3.ice
+				myMedalsForCompletion
+				{
+					Medal primary2
+					{
+						myName "Humanitarian Service Ribbon"
+						myDescription "Awarded for meritorious participation in the evacuation of civilians from the Seattle suburbs during combat operations against the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary2
+					{
+						myName "Bronze Star"
+						myDescription "Awarded for heroic performance in combat operations against the Soviet Union. Due to your diligence a Soviet paratrooper operation was thwarted and the I-90 Bridge could be destroyed as planned, thereby delaying the Soviet advance out of Seattle."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene SwitchSide_US-RU
+			{
+				myFile movies/switch_sides_us-ru_02.bik
+				mySubtitleFile campaign/subtitles/switch_sides_us-ru_02.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission4-Letter
+			{
+				myFile movies/phonecalls/ussr_mission_02_letter.bik
+				mySubtitleFile campaign/subtitles/ussr_mission_02_letter.ice
+				myName Tractors
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission4-UsFarmland1
+			{
+				myFile maps/usfarmland1/usfarmland1.ice
+				myMedalsForCompletion
+				{
+					Medal primary16
+					{
+						myName "Excellent Reconnaissance Scout Badge"
+						myDescription "Bestowed for excellent performance as a motorized rifle scout during combat maneuvers in America."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission4_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary16
+					{
+						myName "Medal for Combat Service"
+						myDescription "Due to your exceptional conduct when dealing with a strong adversary you have been awarded this medal. Your expedient use of firepower and small unit tactics contributed to the successful destruction of enemy forces outside Seattle. "
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission4_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_03.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_03.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission5_PhoneCall
+			{
+				myFile movies/phonecalls/mission03_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_3.ice
+				myName "Calling Home"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission5-Ustown4
+			{
+				myFile maps/ustown4/ustown4.ice
+				myMedalsForCompletion
+				{
+					Medal primary3
+					{
+						myName "Army Meritorious Unit Commendation"
+						myDescription "Your battalion has been awarded this commendation for exceptionally meritorious conduct and valorous actions against the Soviet invaders during the defense of Pine Valley."
+						myImage ui/icons/campaign/medals/primary/campaign_primary3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary3
+					{
+						myName "Silver Star"
+						myDescription "Awarded for exceptional gallantry and extraordinary heroism during the defense of Pine Valley. Due to your diligence and bravery, friendly forces were able to hold the town against an overwhelming Soviet attack. "
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission6_PhoneCall
+			{
+				myFile movies/phonecalls/mission04_mike.bik
+				mySubtitleFile campaign/subtitles/phone_mission_4.ice
+				myName "Land of the Free"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission6-Usfarmland3
+			{
+				myFile maps/usfarmland3/usfarmland3.ice
+				myMedalsForCompletion
+				{
+					Medal primary4
+					{
+						myName "Officer Professional Development Ribbon"
+						myDescription "You have been awarded this ribbon for showing professional dedication and promising development as a commissioned officer in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary4.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary4
+					{
+						myName "Army Distinguished Service Medal"
+						myDescription "Awarded for exceptionally meritorious service in a duty of great responsibility. Due to your impeccable performance Soviet forces were held at bay and their advance toward Cascade Falls and Fort Teller delayed so that the defenders there had time to prepare."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary4.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene SwitchSide_US-RU
+			{
+				myFile movies/switch_sides_us-ru_04.bik
+				mySubtitleFile campaign/subtitles/switch_sides_us-ru_04.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission7-Interview
+			{
+				myFile movies/phonecalls/ussr_mission_03_interview.bik
+				mySubtitleFile campaign/subtitles/ussr_mission_03_interview.ice
+				myName "Extreme measures"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission7-UsFarmland5
+			{
+				myFile maps/usfarmland5/usfarmland5.ice
+				myMedalsForCompletion
+				{
+					Medal primary17
+					{
+						myName "Excellent Infantryman Badge "
+						myDescription "For showing diligence and focus when commanding an infantry unit in battle you have been awarded this badge of excellence."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission7_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary17
+					{
+						myName "For Combat Merits"
+						myDescription "Bestowed for meritorious conduct during the battle. Your swift destruction of enemy supplies and the elimination of enemy officers and engineers will prove to the enemy that the Red Army's might is not to be questioned."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission7_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_05.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_05.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission8_PhoneCall
+			{
+				myFile movies/phonecalls/mission05_anton.bik
+				mySubtitleFile campaign/subtitles/phone_mission_5.ice
+				myName "Family Ties"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission8-Ustown3
+			{
+				myFile maps/ustown3/ustown3.ice
+				myMedalsForCompletion
+				{
+					Medal primary5
+					{
+						myName "Army Valorous Unit Award"
+						myDescription "Your battalion has been given this award to commemorate your extraordinary heroism, uncommon valor and selfless sacrifice during the defense of Cascade Falls."
+						myImage ui/icons/campaign/medals/primary/campaign_primary5.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary5
+					{
+						myName "Distinguished Service Cross"
+						myDescription "Awarded for extreme gallantry and risk of life in actual combat with the armed forces of the Soviet Union. Due to your extraordinary bravery during the defense of Cascade Falls, where you repeatedly acted above and beyond the call of duty, the Soviet assault was stalled and the secret of Fort Teller kept safe."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary5.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission9_PhoneCall
+			{
+				myFile movies/phonecalls/mission06_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_6.ice
+				myName "Colonel Sawyer "
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission9-Europe4
+			{
+				myFile maps/europe4/europe4.ice
+				myMedalsForCompletion
+				{
+					Medal primary6
+					{
+						myName "Combat Infantryman Badge"
+						myDescription "The recipient was personally present and under hostile fire while serving in a unit actively engaged in ground combat with the enemy during operations in Southern France."
+						myImage ui/icons/campaign/medals/primary/campaign_primary6.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary6
+					{
+						myName "Army Commendation Medal"
+						myDescription "Awarded for heroism in combat against the Soviet Union. Due to your actions the initial battle of Southern France was won and the offensive could proceed as planned."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary6.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission10_PhoneCall
+			{
+				myFile movies/phonecalls/mission07_sabatier.bik
+				mySubtitleFile campaign/subtitles/phone_mission_7.ice
+				myName Tête-à-tête
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission10-Europe2
+			{
+				myFile maps/europe2/europe2.ice
+				myMedalsForCompletion
+				{
+					Medal primary7
+					{
+						myName "Armed Forces Expeditionary Ribbon"
+						myDescription "Awarded for meritorious conduct in combat operations on foreign soil against the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary7.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary7
+					{
+						myName "Legion of Merit"
+						myDescription "Awarded for exceptionally meritorious conduct during the NATO offensive against the Soviet Union in Southern France. Despite personal risk of life you acted with merit while completing the final assault on the Soviet divisional command post."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary7.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra1
+					{
+						myName "French Campaign Ribbon"
+						myDescription "Awarded for the successful conclusion of combat operations aimed to end the Soviet occupation of Southern France."
+						myImage ui/icons/campaign/medals/extra/campaign_extra1.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene SwitchSide_US-RU
+			{
+				myFile movies/switch_sides_us-ru_06.bik
+				mySubtitleFile campaign/subtitles/switch_sides_us-ru_06.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission11-Letter
+			{
+				myFile movies/phonecalls/ussr_mission_04_letter.bik
+				mySubtitleFile campaign/subtitles/ussr_mission_04_letter.ice
+				myName "Good news!"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission11-Norway1
+			{
+				myFile maps/norway1/norway1.ice
+				myMedalsForCompletion
+				{
+					Medal primary18
+					{
+						myName "Distinguished Military Service"
+						myDescription "For your participation in the successful raid into enemy territory you have been awarded the Distinguished Military Service Medal 1st Class."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission11_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary18
+					{
+						myName "Order of Alexander Nevsky"
+						myDescription "Awarded for outstanding heroism when repelling an incoming Norwegian air strike. If it hadn't been for your excellent maneuvering and expediency when capturing the SAM-launchers, many comrades on the beach would have perished in the incoming strike."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission11_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_07.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_07.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission12_PhoneCall
+			{
+				myFile movies/phonecalls/mission08_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_8.ice
+				myName "Task Force Raven"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission12-Russia2
+			{
+				myFile maps/russia2/russia2.ice
+				myMedalsForCompletion
+				{
+					Medal primary8
+					{
+						myName "Rank Insignia: 1st Lieutenant"
+						myDescription "Due to the promise you show as an officer and leader of men you have been promoted to the rank of 1st Lieutenant in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary8.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary8
+					{
+						myName "Joint Service Commendation Medal"
+						myDescription "Awarded for exceptional heroism during operations undertaken within the Soviet Union. Due to your actions, the difficult operation to rescue the downed pilots and salvage important intelligence could be completed."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary8.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission13_PhoneCall
+			{
+				myFile movies/phonecalls/mission09_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_9.ice
+				myName Forgiveness
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission13-Russia4
+			{
+				myFile maps/russia4/russia4.ice
+				myMedalsForCompletion
+				{
+					Medal primary9
+					{
+						myName "NATO Ribbon"
+						myDescription "Awarded for commendable conduct while serving in a NATO-attached unit engaged in combat operations against hostile forces."
+						myImage ui/icons/campaign/medals/primary/campaign_primary9.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary9
+					{
+						myName "Defense Distinguished Service Medal"
+						myDescription "Awarded for distinguished service while conducting operations together with a NATO unit on Soviet soil. Due to your commendable leadership and heroic actions several Soviet submarines were sunk and their plan to launch an attack on the US East Coast was partly thwarted."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary9.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra2
+					{
+						myName "Soviet Campaign Ribbon"
+						myDescription "Awarded for the successful conclusion of combat operations within the Soviet Union."
+						myImage ui/icons/campaign/medals/extra/campaign_extra2.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene SwitchSide_US-RU
+			{
+				myFile movies/switch_sides_us-ru_08.bik
+				mySubtitleFile campaign/subtitles/switch_sides_us-ru_08.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission14-Letter
+			{
+				myFile movies/phonecalls/ussr_mission_05_letter.bik
+				mySubtitleFile campaign/subtitles/ussr_mission_05_letter.ice
+				myName Missives
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission14-Russia3
+			{
+				myFile maps/russia3/russia3.ice
+				myMedalsForCompletion
+				{
+					Medal primary19
+					{
+						myName "Excellent Artillery Man Badge "
+						myDescription "Awarded for your skillful use of artillery when defending the Motherland against enemy raiders."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission14_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary19
+					{
+						myName "Order of the Red Star"
+						myDescription "For your successful protection of the prison camp you have been awarded the Order of the Red Star. Your skill in the use of both artillery and Frontal Aviation assets proved invaluable during the battle and helped save the lives of both the NATO prisoners and your comrades in the battle group. "
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission14_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_09.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_09.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission15_PhoneCall
+			{
+				myFile movies/phonecalls/mission10_sawyer.bik
+				mySubtitleFile campaign/subtitles/phone_mission_10.ice
+				myName Reorganizing
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Cutscene Cinematic_SA_NewYork
+			{
+				myFile movies/cutscene_newyork.bik
+				mySubtitleFile <empty>
+				myName "New York"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission15-Newyork1
+			{
+				myFile maps/newyork1/newyork1.ice
+				myMedalsForCompletion
+				{
+					Medal primary10
+					{
+						myName "Air Assault Badge"
+						myDescription "Awarded for professional conduct during air assault operations against hostile forces"
+						myImage ui/icons/campaign/medals/primary/campaign_primary10.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary10
+					{
+						myName "Distinguished Service Cross"
+						myDescription "For your extreme gallantry and risk of life in actual combat with the armed forces of the Soviet Union you have been awarded a second Distinguished Service Cross. Your actions helped turn back the Soviet incursion in New York, free the hostages held there and cleanse the Soviet insurgents from the islands south of Manhattan."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary10.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission16_PhoneCall
+			{
+				myFile movies/phonecalls/mission11_bannon.bik
+				mySubtitleFile campaign/subtitles/phone_mission_11.ice
+				myName Redemption
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission16-Usfarmland2
+			{
+				myFile maps/usfarmland2/usfarmland2.ice
+				myMedalsForCompletion
+				{
+					Medal primary11
+					{
+						myName "Combat Medical Badge"
+						myDescription "The recipient was personally present and under hostile fire while serving in a medical and engineering capacity in a unit actively engaged in ground combat with the enemy."
+						myImage ui/icons/campaign/medals/primary/campaign_primary11.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary11
+					{
+						myName "Joint Service Achievement Medal"
+						myDescription "Awarded for your sustained exceptional performance during prolonged combat actions against the Soviet Union. Due to your leadership skills and personal bravery US forces were rallied after the battle for Cascade Falls and scattered Soviet units remaining in the area were destroyed."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary11.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission17_PhoneCall
+			{
+				myFile movies/phonecalls/mission12_president.bik
+				mySubtitleFile campaign/subtitles/phone_mission_12.ice
+				myName "A Hard Call"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission17-Ustown1
+			{
+				myFile maps/ustown1/ustown1.ice
+				myMedalsForCompletion
+				{
+					Medal primary12
+					{
+						myName "Rank Insignia: Captain"
+						myDescription "Due to your proficiency as an army officer you have now been fast-tracked for promotion to the rank of Captain in the United States Army."
+						myImage ui/icons/campaign/medals/primary/campaign_primary12.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary12
+					{
+						myName "Silver Star"
+						myDescription "For showing exceptional gallantry and extraordinary heroism during the counteroffensive toward Seattle you have been awarded a second Silver Star. Thanks to your impeccable performance and outstanding heroic actions the entire operation could move ahead of schedule, increasing the chance of retaking Seattle in time."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary12.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene SwitchSide_US-RU
+			{
+				myFile movies/switch_sides_us-ru_10.bik
+				mySubtitleFile campaign/subtitles/switch_sides_us-ru_10.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission18-Interview
+			{
+				myFile movies/phonecalls/ussr_mission_06_interview.bik
+				mySubtitleFile campaign/subtitles/ussr_mission_06_interview.ice
+				myName Comrades
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission18-UsFarmland4
+			{
+				myFile maps/usfarmland4/usfarmland4.ice
+				myMedalsForCompletion
+				{
+					Medal primary20
+					{
+						myName "Combined Arms Specialist"
+						myDescription "Awarded for the display of extraordinary skill in combined arms warfare against a superior force during the American campaign. "
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission18_primary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal secondary20
+					{
+						myName "For Valor "
+						myDescription "Awarded for exceptional heroism during maneuvers in America. Due to your exemplary actions, often performed with complete disregard for your own life, many wounded comrades were saved from certain death by American hands. If all the sons of the state carried themselves with such valor this war would already have been won."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/mission18_secondary.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+					Medal extra5
+					{
+						myName "KGB Medal "
+						myDescription "Awarded for meritorious action in the service of the KGB. For your unwavering faith in the policies of the state, your sound political sense and high moral standards you are hereby commended with this medal."
+						myImage ui/icons/campaign/medals/russian_campaign_medals/campaign_medal.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed 0
+						myRequiredMaxReinforcementLosses 0
+						myRequiredMaxFriendlyReinforcementLosses 0
+					}
+
+				}
+
+				myFaction USSR
+			}
+
+			Cutscene SwitchSide_RU-US
+			{
+				myFile movies/switch_sides_ru-us_11.bik
+				mySubtitleFile campaign/subtitles/switch_sides_ru-us_11.ice
+				myName <empty>
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 1
+			}
+
+			Cutscene Mission19_PhoneCall
+			{
+				myFile movies/phonecalls/mission13_webb.bik
+				mySubtitleFile campaign/subtitles/phone_mission_13.ice
+				myName "The Price of Duty"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission19-Seattle4
+			{
+				myFile maps/seattle4/seattle4.ice
+				myMedalsForCompletion
+				{
+					Medal primary13
+					{
+						myName "Joint Meritorious Unit Award"
+						myDescription "Your company has been given this award for exceptional performance during the recapture of Sandfish Island from Soviet forces."
+						myImage ui/icons/campaign/medals/primary/campaign_primary13.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary13
+					{
+						myName "Legion of Merit"
+						myDescription "For displaying exceptionally meritorious conduct during amphibious actions in the Puget Sound you have been awarded a second Legion of Merit. Due to your superlative performance Sandfish Island was taken expediently and with minimum loss of life."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary13.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+			Cutscene Mission20_PhoneCall
+			{
+				myFile movies/phonecalls/mission14_mike.bik
+				mySubtitleFile campaign/subtitles/phone_mission_14.ice
+				myName "Have to Get Out"
+				myDescription <empty>
+				myExcludeOnCinematicsScreenFlag 0
+			}
+
+			Mission Mission20-Seattle1
+			{
+				myFile maps/seattle1/seattle1.ice
+				myMedalsForCompletion
+				{
+					Medal primary14
+					{
+						myName "American Defense Medal"
+						myDescription "You have been awarded this ribbon for successful participation in the defense of the United States of America against the invasion and subsequent occupation attempt made by the Soviet Union."
+						myImage ui/icons/campaign/medals/primary/campaign_primary14.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal secondary14
+					{
+						myName "Congressional Medal of Honor"
+						myDescription "For distinguishing yourself conspicuously by gallantry above and beyond the call of duty in combat against Soviet forces, you have been awarded the Congressional Medal of Honor. Knowingly risking your own life, you went into the very heart of enemy-held territory and destroyed their ability to command. This caused the immediate collapse of Soviet forces defending Seattle and set an example of  selfless sacrifice and impeccable behavior for other soldiers to aspire to."
+						myImage ui/icons/campaign/medals/secondary/campaign_secondary14.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+					Medal extra3
+					{
+						myName "Army Presidential Unit Citation"
+						myDescription "Your battalion has been given this award for exceptional displays of gallantry, determination, and esprit de corps in accomplishing its mission under extremely difficult and hazardous conditions."
+						myImage ui/icons/campaign/medals/extra/campaign_extra3.dds
+						myCanOnlyBeCompletedViaPythonFlag 1
+						myRequiredScore 0.0
+						myRequiredKillDeathRatio 0.0
+						myRequiredScoreWithTA 0.0
+						myRequiredMaximumReinforcementsUsed -1
+						myRequiredMaxReinforcementLosses -1
+						myRequiredMaxFriendlyReinforcementLosses -1
+					}
+
+				}
+
+				myFaction US
+			}
+
+		}
+
+	}
+
+}
+

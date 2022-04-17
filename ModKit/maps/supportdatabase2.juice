@@ -1,0 +1,6 @@
+INCLUDE xed/supportthings.fruit
+
+SupportThings mySupportThings
+{
+}
+

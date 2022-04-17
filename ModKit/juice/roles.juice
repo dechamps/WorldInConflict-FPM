@@ -1,0 +1,493 @@
+INCLUDE juice/role.fruit
+
+RoleDefList Roles
+{
+	RoleDefinition Army
+	{
+		myRole ARMY_ROLE
+		myUIName INFANTRY
+		myUIIcon InGame_Tab_Infantry
+		myUIChangeRoleIcon InGame_ChangeRole_Infantry
+		myUISelectRoleIcon SelectRole_Infantry
+		myDZIcon ui/icons/droplocation/dz_infantry.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription "The Infantry Role is slow and vulnerable in the open, but deadly when transported to houses and forests. "
+		myToolTipRef myReinforcementRoleInfantry
+		myToolTipRefActive myReinforcementRoleInfantryActive
+		myToolTipRefFPM myReinforcementRoleInfantryFPM
+		myAIRoleDefinitions
+		{
+			AIRoleTeamDefinitions US
+			{
+				myTeam US
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/army/balanced/skirmish1_usa_army.ice
+
+					FILE Aggressive commanderai/multiplayerais/army/aggressive/skirmish1_usa_army.ice
+
+					FILE Defensive commanderai/multiplayerais/army/defensive/skirmish1_usa_army.ice
+
+					FILE Obedient commanderai/multiplayerais/army/obedient/skirmish1_usa_army.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions USSR
+			{
+				myTeam USSR
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/army/balanced/skirmish1_ussr_army.ice
+
+					FILE Aggressive commanderai/multiplayerais/army/aggressive/skirmish1_ussr_army.ice
+
+					FILE Defensive commanderai/multiplayerais/army/defensive/skirmish1_ussr_army.ice
+
+					FILE Obedient commanderai/multiplayerais/army/obedient/skirmish1_ussr_army.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions NATOArmy
+			{
+				myTeam NATO
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/army/balanced/skirmish1_nato_army.ice
+
+					FILE Aggressive commanderai/multiplayerais/army/aggressive/skirmish1_nato_army.ice
+
+					FILE Defensive commanderai/multiplayerais/army/defensive/skirmish1_nato_army.ice
+
+					FILE Obedient commanderai/multiplayerais/army/obedient/skirmish1_nato_army.ice
+
+				}
+
+			}
+
+		}
+
+		myAIRoleType AIROLE_INFANTRY
+	}
+
+	RoleDefinition Engineer
+	{
+		myRole ENGINEER_ROLE
+		myUIName SUPPORT
+		myUIIcon InGame_Tab_Support
+		myUIChangeRoleIcon InGame_ChangeRole_Support
+		myUISelectRoleIcon SelectRole_Support
+		myDZIcon ui/icons/droplocation/dz_support.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription "The Support Role provides repairs, artillery support and anti-air cover, but is very weak in close combat."
+		myToolTipRef myReinforcementRoleSupport
+		myToolTipRefActive myReinforcementRoleSupportActive
+		myToolTipRefFPM myReinforcementRoleSupportFPM
+		myAIRoleDefinitions
+		{
+			AIRoleTeamDefinitions USEngineer
+			{
+				myTeam US
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/engineer/balanced/skirmish1_usa_engineer.ice
+
+					FILE Aggressive commanderai/multiplayerais/engineer/aggressive/skirmish1_usa_engineer.ice
+
+					FILE Defensive commanderai/multiplayerais/engineer/defensive/skirmish1_usa_engineer.ice
+
+					FILE Obedient commanderai/multiplayerais/engineer/obedient/skirmish1_usa_engineer.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions USSREngineer
+			{
+				myTeam USSR
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/engineer/balanced/skirmish1_ussr_engineer.ice
+
+					FILE Aggressive commanderai/multiplayerais/engineer/aggressive/skirmish1_ussr_engineer.ice
+
+					FILE Defensive commanderai/multiplayerais/engineer/defensive/skirmish1_ussr_engineer.ice
+
+					FILE Obedient commanderai/multiplayerais/engineer/obedient/skirmish1_ussr_engineer.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions NATOEngineer
+			{
+				myTeam NATO
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/engineer/balanced/skirmish1_nato_engineer.ice
+
+					FILE Aggressive commanderai/multiplayerais/engineer/aggressive/skirmish1_nato_engineer.ice
+
+					FILE Defensive commanderai/multiplayerais/engineer/defensive/skirmish1_nato_engineer.ice
+
+					FILE Obedient commanderai/multiplayerais/engineer/obedient/skirmish1_nato_engineer.ice
+
+				}
+
+			}
+
+		}
+
+		myAIRoleType AIROLE_SUPPORT
+	}
+
+	RoleDefinition Armor
+	{
+		myRole ARMOR_ROLE
+		myUIName ARMOR
+		myUIIcon InGame_Tab_Armor
+		myUIChangeRoleIcon InGame_ChangeRole_Armor
+		myUISelectRoleIcon SelectRole_Armor
+		myDZIcon ui/icons/droplocation/dz_armor.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription "The Armor Role is the main provider of ground power, but vulnerable to helicopters and hidden infantry."
+		myToolTipRef myReinforcementRoleArmor
+		myToolTipRefActive myReinforcementRoleArmorActive
+		myToolTipRefFPM myReinforcementRoleArmorFPM
+		myAIRoleDefinitions
+		{
+			AIRoleTeamDefinitions USArmor
+			{
+				myTeam US
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/armor/balanced/skirmish1_usa_armor.ice
+
+					FILE Aggressive commanderai/multiplayerais/armor/aggressive/skirmish1_usa_armor.ice
+
+					FILE Defensive commanderai/multiplayerais/armor/defensive/skirmish1_usa_armor.ice
+
+					FILE Obedient commanderai/multiplayerais/armor/obedient/skirmish1_usa_armor.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions USSRArmor
+			{
+				myTeam USSR
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/armor/balanced/skirmish1_ussr_armor.ice
+
+					FILE Aggressive commanderai/multiplayerais/armor/aggressive/skirmish1_ussr_armor.ice
+
+					FILE Defensive commanderai/multiplayerais/armor/defensive/skirmish1_ussr_armor.ice
+
+					FILE Obedient commanderai/multiplayerais/armor/obedient/skirmish1_ussr_armor.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions NATOArmor
+			{
+				myTeam NATO
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/armor/balanced/skirmish1_nato_armor.ice
+
+					FILE Aggressive commanderai/multiplayerais/armor/aggressive/skirmish1_nato_armor.ice
+
+					FILE Defensive commanderai/multiplayerais/armor/defensive/skirmish1_nato_armor.ice
+
+					FILE Obedient commanderai/multiplayerais/armor/obedient/skirmish1_nato_armor.ice
+
+				}
+
+			}
+
+		}
+
+		myAIRoleType AIROLE_ARMOR
+	}
+
+	RoleDefinition Air
+	{
+		myRole AIR_ROLE
+		myUIName AIR
+		myUIIcon InGame_Tab_Air
+		myUIChangeRoleIcon InGame_ChangeRole_Air
+		myUISelectRoleIcon SelectRole_Air
+		myDZIcon ui/icons/droplocation/dz_air.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription "The Air Role provides extreme and mobile firepower, but cannot easily capture Command Points. "
+		myToolTipRef myReinforcementRoleAir
+		myToolTipRefActive myReinforcementRoleAirActive
+		myToolTipRefFPM myReinforcementRoleAirFPM
+		myAIRoleDefinitions
+		{
+			AIRoleTeamDefinitions USAir
+			{
+				myTeam US
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/air/balanced/skirmish1_usa_air.ice
+
+					FILE Aggressive commanderai/multiplayerais/air/aggressive/skirmish1_usa_air.ice
+
+					FILE Defensive commanderai/multiplayerais/air/defensive/skirmish1_usa_air.ice
+
+					FILE Obedient commanderai/multiplayerais/air/obedient/skirmish1_usa_air.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions USSRAir
+			{
+				myTeam USSR
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/air/balanced/skirmish1_ussr_air.ice
+
+					FILE Aggressive commanderai/multiplayerais/air/aggressive/skirmish1_ussr_air.ice
+
+					FILE Defensive commanderai/multiplayerais/air/defensive/skirmish1_ussr_air.ice
+
+					FILE Obedient commanderai/multiplayerais/air/obedient/skirmish1_ussr_air.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions NATOAir
+			{
+				myTeam NATO
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/air/balanced/skirmish1_nato_air.ice
+
+					FILE Aggressive commanderai/multiplayerais/air/aggressive/skirmish1_nato_air.ice
+
+					FILE Defensive commanderai/multiplayerais/air/defensive/skirmish1_nato_air.ice
+
+					FILE Obedient commanderai/multiplayerais/air/obedient/skirmish1_nato_air.ice
+
+				}
+
+			}
+
+		}
+
+		myAIRoleType AIROLE_AIR
+	}
+
+	RoleDefinition FPM
+	{
+		myRole FPM_ROLE
+		myUIName <empty>
+		myUIIcon <empty>
+		myUIChangeRoleIcon <empty>
+		myUISelectRoleIcon <empty>
+		myDZIcon ui/icons/droplocation/dz_generic.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription <empty>
+		myToolTipRef <empty>
+		myToolTipRefActive <empty>
+		myToolTipRefFPM <empty>
+		myAIRoleDefinitions
+		{
+			AIRoleTeamDefinitions USFPM
+			{
+				myTeam US
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/fpm/balanced/skirmish1_usa_fpm.ice
+
+					FILE Aggressive commanderai/multiplayerais/fpm/aggressive/skirmish1_usa_fpm.ice
+
+					FILE Defensive commanderai/multiplayerais/fpm/defensive/skirmish1_usa_fpm.ice
+
+					FILE Obedient commanderai/multiplayerais/fpm/obedient/skirmish1_usa_fpm.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions USSRFPM
+			{
+				myTeam USSR
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/fpm/balanced/skirmish1_ussr_fpm.ice
+
+					FILE Aggressive commanderai/multiplayerais/fpm/aggressive/skirmish1_ussr_fpm.ice
+
+					FILE Defensive commanderai/multiplayerais/fpm/defensive/skirmish1_ussr_fpm.ice
+
+					FILE Obedient commanderai/multiplayerais/fpm/obedient/skirmish1_ussr_fpm.ice
+
+				}
+
+			}
+
+			AIRoleTeamDefinitions NATOFPM
+			{
+				myTeam NATO
+				myList
+				{
+					FILE Balanced commanderai/multiplayerais/fpm/balanced/skirmish1_nato_fpm.ice
+
+					FILE Aggressive commanderai/multiplayerais/fpm/aggressive/skirmish1_nato_fpm.ice
+
+					FILE Defensive commanderai/multiplayerais/fpm/defensive/skirmish1_nato_fpm.ice
+
+					FILE Obedient commanderai/multiplayerais/fpm/obedient/skirmish1_nato_fpm.ice
+
+				}
+
+			}
+
+		}
+
+		myAIRoleType AIROLE_ARMOR
+	}
+
+	RoleDefinition SINGLEPLAYER
+	{
+		myRole SINGLEPLAYER_ROLE
+		myUIName <empty>
+		myUIIcon <empty>
+		myUIChangeRoleIcon <empty>
+		myUISelectRoleIcon <empty>
+		myDZIcon ui/icons/droplocation/dz_generic.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription <empty>
+		myToolTipRef <empty>
+		myToolTipRefActive <empty>
+		myToolTipRefFPM <empty>
+		myAIRoleDefinitions
+		{
+		}
+
+		myAIRoleType AIROLE_ARMOR
+	}
+
+	RoleDefinition SINGLEPLAYER_USSR
+	{
+		myRole SINGLEPLAYER_ROLE_USSR
+		myUIName <empty>
+		myUIIcon <empty>
+		myUIChangeRoleIcon <empty>
+		myUISelectRoleIcon <empty>
+		myDZIcon ui/icons/droplocation/dz_generic_ussr.tga
+		myMarkerModelFile props/base/dropzone/dropzone.mrb
+		myDescription <empty>
+		myToolTipRef <empty>
+		myToolTipRefActive <empty>
+		myToolTipRefFPM <empty>
+		myAIRoleDefinitions
+		{
+		}
+
+		myAIRoleType AIROLE_ARMOR
+	}
+
+}
+
+RebateColorList RebateColors
+{
+	RebateColor RebateColor(0)
+	{
+		myColor
+		{
+			myX 255
+			myY 255
+			myZ 255
+		}
+
+		myRoleName Unique
+	}
+
+	RebateColor RebateColor(1)
+	{
+		myColor
+		{
+			myX 255
+			myY 255
+			myZ 255
+		}
+
+		myRoleName Rebated
+	}
+
+	RebateColor RebateColor(2)
+	{
+		myColor
+		{
+			myX 224
+			myY 31
+			myZ 38
+		}
+
+		myRoleName Normal
+	}
+
+	RebateColor RebateColor(3)
+	{
+		myColor
+		{
+			myX 224
+			myY 31
+			myZ 38
+		}
+
+		myRoleName Premium
+	}
+
+	RebateColor RebateColor(4)
+	{
+		myColor
+		{
+			myX 161
+			myY 167
+			myZ 79
+		}
+
+		myRoleName Limited
+	}
+
+}
+
+AIRoleDescriptionList AIRoleDescriptions
+{
+	AIRoleDescription Balanced
+	{
+		myUISelectionName Balanced
+		myDescription "This is a well balanced AI."
+	}
+
+	AIRoleDescription Aggressive
+	{
+		myUISelectionName Aggressive
+		myDescription "This AI is aggressive."
+	}
+
+	AIRoleDescription Defensive
+	{
+		myUISelectionName Defensive
+		myDescription "This AI is defensive."
+	}
+
+	AIRoleDescription Obedient
+	{
+		myUISelectionName Obedient
+		myDescription "This AI is very obedient."
+	}
+
+}
+

@@ -1,0 +1,215 @@
+INCLUDE units/unittype.fruit
+
+TYPE TargetType
+{
+	UnitInfantry
+	UnitHelicopter
+	UnitArtillery
+	UnitVehicle
+	TANuke
+	TAPlane
+	TAArtillery
+	CommandPoint
+}
+
+TYPE TAType
+{
+	RadarScan
+	Paratrooper
+	Artillery
+	AirStrike
+	AAStrike
+	Napalm
+	Bunker
+	AntiTankStrafe
+	Daisy
+	Nuke
+}
+
+CLASS TA2TAType
+{
+	TEXT myTAName
+	TAType myTAType
+}
+
+SCRIPTCLASS TA2TATypes
+{
+	TA2TAType	
+}
+
+TYPE CameraModeType
+{
+	Chase
+	Airplane
+	Artillery
+	Rotating
+	Fixed
+}
+
+CLASS CamPhysics
+{
+	DECIMAL myMaxSpeed
+	DECIMAL myMaxAcceleration
+	
+	DECIMAL myAngularElasticity
+	DECIMAL myAngularDrag
+	
+	DECIMAL myZoomElasticity
+	DECIMAL myZoomDrag
+	
+	DECIMAL myPosElasticity
+	DECIMAL myPosDrag
+}
+
+CLASS CMTargetTypePrio
+{
+	TargetType myType
+	DECIMAL myPrio
+}
+
+SCRIPTCLASS TargetList
+{
+	CMTargetTypePrio
+}
+
+CLASS ExtraCMParam
+{
+	TEXT myName
+	TEXT myValue
+}
+
+SCRIPTCLASS ExtraCMParamList
+{
+	ExtraCMParam
+}
+
+CLASS CMPriorities
+{
+	TargetList myPossibleTargets
+
+	DECIMAL myTargetMoveSpeedBonus
+	DECIMAL myTargetHasTargetBonus
+}
+
+CLASS CameraMode
+{
+	CameraModeType myType
+	CMPriorities myPriorities
+	
+	CamPhysics myCamPhysics	
+	DECIMAL myCamPhysicsFadeInTime
+	
+	DECIMAL myMinTime
+	DECIMAL myMaxTime
+	
+	DECIMAL myBeforeMinTimeBonus
+	DECIMAL myAfterMaxTimeBonus
+	
+	DECIMAL myMaxOutOfLosTime
+	
+	NUMBER myClipIn
+	NUMBER myClipOut
+	
+	ExtraCMParamList myTypeSpecificParams
+}
+
+SCRIPTCLASS CameraModeList
+{
+	CameraMode
+}
+
+
+CLASS CameraModes
+{
+	CameraModeList myCameras
+}
+
+CLASS GlobalParams
+{
+	CamPhysics myDefaultPhysics	
+
+	DECIMAL myNewCamDistanceBonus
+
+	DECIMAL myTargetViewedBeforeBonus
+	DECIMAL myTargetVievedBeforeHalftime
+
+	TA2TATypes myTABindings
+}
+
+CLASS UnitTypePriority
+{
+	UnitType::CombinedType myType
+	DECIMAL myPriority
+}
+
+SCRIPTCLASS UnitTypePriorities
+{
+	UnitTypePriority	
+}
+
+CLASS TATypePriority
+{
+	TAType myType
+	DECIMAL myPriority
+}
+
+SCRIPTCLASS TATypePriorities
+{
+	TATypePriority	
+}
+
+CLASS UnitPriorities
+{
+	DECIMAL myCloseUnitsBonus
+	DECIMAL myCloseUnitsRange
+	
+	DECIMAL myLowHealthBonus
+	DECIMAL myMaxLowHealth
+	
+	DECIMAL myTargetedByEnemyBonus
+	NUMBER myMaxTargetedCount
+	
+	DECIMAL myTargettingEnemyBonus
+	
+	DECIMAL myMovingBonus
+	DECIMAL myMovingBonusMaxSpeed
+	
+	DECIMAL myTypeNotSeenBeforeBonus
+
+	DECIMAL myPlayerHighScoreBonus
+	
+	DECIMAL myCloseToEnemyCPBonus
+	DECIMAL myMaxCloseToEnemyCPRange
+	
+	DECIMAL myCloseIncommingTABonus
+	
+	DECIMAL myCloseIncommingArtyBonus
+	DECIMAL myMaxIncommingArtyRange
+	
+	DECIMAL myTargetedByPreviousBonus
+	DECIMAL myTargettingPreviousBonus
+	
+	UnitTypePriorities myUnitTypePriorities
+	
+	DECIMAL myUnitTypeSeenRecentlyBonus
+	DECIMAL myUnitSeenRecentlyHalftime
+	
+	DECIMAL myUnitJustDiedBonus
+	DECIMAL myUnitJustDiedTime
+}
+
+CLASS TAPriorities
+{
+	DECIMAL myCloseUnitsBonus
+	
+	DECIMAL myTypeNotSeenBeforeBonus
+
+	DECIMAL myPlayerHighScoreBonus
+	
+	TATypePriorities myTATypePriorities
+	
+	DECIMAL myTATypeSeenRecentlyBonus
+	DECIMAL myTASeenRecentlyHalftime
+	
+	DECIMAL myTimeToImpactBonus
+}

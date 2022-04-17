@@ -1,0 +1,219 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody3
+	{
+		myName "BoxIsCutting03"
+		myMeshBone "BoxIsCutting"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 1
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -3.525774
+			myY 8.190998
+			myZ -7.851717
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "BoxIsCutting04"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 1
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 0
+					NUMBER myBlockingFlag1 0
+					NUMBER myBlockingFlag2 0
+					NUMBER myBlockingFlag3 1
+					NUMBER myBlockingFlag4 0
+					NUMBER myBlockingFlag5 0
+				}
+				myPos
+				{
+					myX -5.734225
+					myY 0.000002
+					myZ 4.077717
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 10.259999
+					myY 13.743999
+					myZ 3.755
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2968.509033
+				myVerts
+				{
+				}
+			}
+			Element myElement5
+			{
+				myName "BoxIsCutting05"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 1
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 0
+					NUMBER myBlockingFlag1 0
+					NUMBER myBlockingFlag2 0
+					NUMBER myBlockingFlag3 1
+					NUMBER myBlockingFlag4 0
+					NUMBER myBlockingFlag5 0
+				}
+				myPos
+				{
+					myX 3.400774
+					myY 0.000002
+					myZ 0.940718
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 7.776
+					myY 13.743999
+					myZ 7.363
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 4411.55957
+				myVerts
+				{
+				}
+			}
+			Element myElement6
+			{
+				myName "BoxIsCutting06"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 1
+				myUseForCollisions 0
+				myIsFence 0
+				myPathingHullFlag 1
+				myIsAimTarget 0
+				myIsCutting 1
+				myIsBlocking
+				{
+					NUMBER myBlockingFlag0 0
+					NUMBER myBlockingFlag1 0
+					NUMBER myBlockingFlag2 0
+					NUMBER myBlockingFlag3 1
+					NUMBER myBlockingFlag4 0
+					NUMBER myBlockingFlag5 0
+				}
+				myPos
+				{
+					myX 0.770774
+					myY 0.000002
+					myZ -6.204282
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 3.935
+					myY 13.743999
+					myZ 8.641
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2619.930908
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

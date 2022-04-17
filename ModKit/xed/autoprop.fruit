@@ -1,0 +1,55 @@
+TYPE DrawTypes
+{
+	NORMAL
+	WIND
+}
+
+CLASS AutoPropFile
+{
+	FILE myFile
+	DECIMAL myFadeDistance
+	DrawTypes myDrawType
+	NUMBER myCameraFacingValue
+}
+
+SCRIPTCLASS AutoPropFileList
+{
+	AutoPropFile
+}
+
+CLASS AutoPropType
+{
+	FILE myPropAppearanceMap	// ADDED!
+	NUMBER myNumPropsOnTile
+	AutoPropFileList myFiles
+}
+
+SCRIPTCLASS AutoProps
+{
+	AutoPropType
+}
+
+//this is a simplified version of the above AutoProp class
+//this is used by the landscape definitions, as the texture file is implicit in the structure
+TYPE AutoPropPropDrawType
+{
+	NORMAL
+	BLOWING_IN_THE_WIND
+}
+
+CLASS AutoPropProp
+{
+	FILE myFile
+	DECIMAL myFadeDistance
+	AutoPropPropDrawType myDrawType
+} 
+SCRIPTCLASS AutoPropProps
+{
+	AutoPropProp
+}
+
+CLASS XAutoProp
+{
+	NUMBER myNumPropsOnTile
+	AutoPropProps myProps
+} 

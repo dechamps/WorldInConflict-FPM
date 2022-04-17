@@ -1,0 +1,23 @@
+CLASS ColorRGB
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+}
+
+CLASS Character
+{
+	FILE myModel
+	DECIMAL myModelX
+	DECIMAL myModelY
+	DECIMAL myModelZ
+	DECIMAL myModelHeading
+	DECIMAL myCameraPitch
+	DECIMAL myCameraFOV
+	ColorRGB myAmbientLight
+}
+
+SCRIPTCLASS CharacterList
+{
+	Character
+}

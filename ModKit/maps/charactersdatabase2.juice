@@ -1,0 +1,6 @@
+INCLUDE messagebox_characters/character.fruit
+
+CharacterList myCharacters
+{
+}
+

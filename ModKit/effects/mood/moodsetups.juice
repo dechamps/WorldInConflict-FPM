@@ -1,0 +1,19 @@
+INCLUDE effects/mood/moodsetups.fruit
+
+MoodSetups myMoodSetups
+{
+	MoodSetup <None>
+	{
+	}
+	
+	MoodSetup <Default>
+	{
+		
+		FILE mood0 effects/mood/iminagoodmood.ice
+
+		FILE mood1 effects/mood/destruction.ice
+	
+	}
+
+
+}

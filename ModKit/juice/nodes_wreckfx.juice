@@ -1,0 +1,842 @@
+INCLUDE juice/nodes_wreckfx.fruit
+
+WreckFxGroups myGroups
+{
+	WreckFxGroup FxGroup1
+	{
+		WreckFx Fx01
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/househurtstate_decal_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Fx02
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/househurtstate_decal_2.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Fx03
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/househurtstate_ver1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Fx04
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/househurtstate_ver1_2secdelay.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Corner
+	{
+		WreckFx Corner Explosion
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/househurtstate_decalconer.mrb
+			myPhysSpawnState HUR1
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup WorkTesting_DONTUSE
+	{
+		WreckFx BlackDecal_SootUp
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/blackdecal_sootup.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx BlackDecal_SootUp_Corner
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/blackdecal_sootup_corner.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx ConcreteDecal_24m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/concretedecal_24m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Fire_1
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/concrete_fire_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Fire_Smoke_1
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/concrete_fire_smoke_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_Fire_1
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/steel_fire_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Glass_12x12m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/glass_12x12m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Crack_1
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/crack_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx BrickDecal_6m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/brickdecal_6m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx BrickDecal_6m_Corner
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/brickdecal_6m_corner.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx BrickDecal_12m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/brickdecal_12m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx WoodDecal_12m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/wooddecal_12m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx WoodDecal_24m
+		{
+			myMRB hit_set_effects/house_effects/house_hurtstates/mrb_export/wooddecal_24m.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup GroundDecals
+	{
+		WreckFx GD_1
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/gd_1.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GD_2
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/gd_2.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GD_3
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/gd_3.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GD_4
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/gd_4.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GroundDirt_1
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/dirt_1.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GroundDirt_2
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/dirt_2.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GroundDirt_3
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/dirt_3.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx GroundDirt_Coner
+		{
+			myMRB hit_set_effects/house_effects/house_grounddecals/mrb_export/dirt_coner.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Metall
+	{
+		WreckFx Steel_Fire_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_fire_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_Fire_ConerEnd
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_fire_conerend.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_CutTop_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_CutTop_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_Fire_Coner
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_fire_coner.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel_Fire_Coner2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_fire_coner2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Steel1 Slim
+		{
+			myMRB hit_set_effects/house_effects/house_decals/metall/steel_1(slim).mrb
+			myPhysSpawnState HUR1
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Fire
+	{
+		WreckFx AgressiveFire_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/agressivefire_1.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx FireAndSmoke_8M
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/fireandsmoke_8m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx FireAndSmoke_12M.mrb
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/fireandsmoke_12m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx FireAndSmokeAndSparks_8M
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/fireandsmokeandsparks_8m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx FireAndSmokeAndSparks_12M
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/fireandsmokeandsparks_12m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Smoke_8M
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/smoke_8m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Smoke_12M
+		{
+			myMRB hit_set_effects/house_effects/house_decals/fire/smoke_12m.mrb
+			myPhysSpawnState NONE
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup Wood
+	{
+		WreckFx wood_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx wood_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx wood_corner_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_corner_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx wood_corner_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_corner_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Cutoff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Cutoff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Cutoff_3
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_3.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Cutoff_4
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_4.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Corner_CutOff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_corner_cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Corner_CutOff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_corner_cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx WreckFx Wood1_Slim
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_1(slim).mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood2_slim
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_2(slim).mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx WoodCutoff_2 Slim
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_2(slim).mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Wood_Cutoff_3 Slim
+		{
+			myMRB hit_set_effects/house_effects/house_decals/wood/wood_cutoff_3(slim).mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Brick
+	{
+		WreckFx Brick_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_corner_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_corner_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_corner_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_corner_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Cutoff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Cutoff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Cutoff_3
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_cutoff_3.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Cutoff_4
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_cutoff_4.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Corner_Cutoff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_corner_cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Brick_Corner_Cutoff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/brick_corner_cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Canalbridge_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/brick/canalbridge_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Concrete
+	{
+		WreckFx Concrete_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_corner_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_corner_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_corner_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_corner_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Cutoff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Cutoff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Cutoff_3
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_cutoff_3.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_Cutoff_4
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_cutoff_4.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx ConcreteAndFire_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/concrete_fire_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_corner_Cutoff_1
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/Concrete_corner_Cutoff_1.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+		WreckFx Concrete_corner_Cutoff_2
+		{
+			myMRB hit_set_effects/house_effects/house_decals/concrete/Concrete_corner_Cutoff_2.mrb
+			myPhysSpawnState HUR2
+			myWreckPhysGroupName PhysGroup1
+		}
+
+	}
+
+	WreckFxGroup Slots
+	{
+		WreckFx Slot_test_1
+		{
+			myMRB props/house/ustown_2/suburbs/suburbia_house_01/slot_placer/suburbia_house_01_slot.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup UnitHurtStates
+	{
+		WreckFx Fire_Medium
+		{
+			myMRB hit_set_effects/unit_effects/hurtstates/tankhurtfire_medium.mrb
+			myPhysSpawnState HUR1
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Fire_Small
+		{
+			myMRB hit_set_effects/unit_effects/hurtstates/tankhurtfire_small.mrb
+			myPhysSpawnState HUR1
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Fire_Large
+		{
+			myMRB hit_set_effects/unit_effects/hurtstates/tankhurtfire_large.mrb
+			myPhysSpawnState HUR1
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx ShellHole1
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_shellhole.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Shellhole2
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_shellhole2.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Tracks
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_tracks.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Rip
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_rip.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Engine
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_engine.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Plates
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_plates.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx BigCrack
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_bigcrack.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Vent
+		{
+			myMRB units/us/us_m1a1/wrecknodes/wfx_vent.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup UnitAddons
+	{
+		WreckFx Bags_N_STuff
+		{
+			myMRB units/us/us_m1a1/addons/test.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx 3_bags
+		{
+			myMRB units/us/us_m1a1/addons/addon_3bags_states/addon_3bags.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx sideGastanks
+		{
+			myMRB units/us/us_m1a1/addons/addon_sidegastanks_states/addon_sidegastanks.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx backrailbags
+		{
+			myMRB units/us/us_m1a1/addons/addon_backrailbags_states/addon_backrailbags.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx backturretpacking
+		{
+			myMRB units/us/us_m1a1/addons/addon_backturretpacking/addon_backturretpacking.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup Helicopter_Specials
+	{
+		WreckFx Russian_Pilot
+		{
+			myMRB units/warzaw/ussr_heli_parachute/ussr_heli_null.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName Helicopter_Specials_Phys
+		}
+
+	}
+
+	WreckFxGroup Glass
+	{
+		WreckFx Glass_S
+		{
+			myMRB hit_set_effects/house_effects/glas/glas_s.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Glass_M
+		{
+			myMRB hit_set_effects/house_effects/glas/glas_M.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Glass_L
+		{
+			myMRB hit_set_effects/house_effects/glas/glas_L.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Glass_L_Horizontal20M
+		{
+			myMRB hit_set_effects/house_effects/glas/glas_l_horizontal20m.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx Glass_L_Vertical20M
+		{
+			myMRB hit_set_effects/house_effects/glas/glas_l_vertical20m.mrb
+			myPhysSpawnState HUR3
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup TankWreckEffects
+	{
+		WreckFx TankExplosion_Ussr_Large
+		{
+			myMRB units/genericwreckparts/effectstoaddtotankswreck/tankexplosion_6substates_ussr_large.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+	WreckFxGroup BridgeHurtStates
+	{
+		WreckFx BridgeHurt_01
+		{
+			myMRB props/ustown_props/bridges/bridge_hurtnodes/hurtnode01.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx BridgeHurt_02
+		{
+			myMRB props/ustown_props/bridges/bridge_hurtnodes/hurtnode02.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx BridgeHurt_03
+		{
+			myMRB props/ustown_props/bridges/bridge_hurtnodes/hurtnode03.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+		WreckFx BridgeHurt_04
+		{
+			myMRB props/ustown_props/bridges/bridge_hurtnodes/hurtnode04.mrb
+			myPhysSpawnState STND
+			myWreckPhysGroupName <empty>
+		}
+
+	}
+
+}
+
+WreckPhysFxGroups myPhysFxGroups
+{
+	WreckPhysFxGroup PhysGroup1
+	{
+		WreckPhysFx Phys01
+		{
+			myPhysMRB hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver1.mrb
+			myPhysFile hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver1_rb.ice
+			myPhysTimeToLive 30.0
+			mySoundName <empty>
+		}
+
+		WreckPhysFx Phys02
+		{
+			myPhysMRB hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver2.mrb
+			myPhysFile hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver2_rb.ice
+			myPhysTimeToLive 10
+			mySoundName <empty>
+		}
+
+		WreckPhysFx Phys03
+		{
+			myPhysMRB hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver3.mrb
+			myPhysFile hit_set_effects/house_effects/house_hurtfysobj/house_hurtfysobj_ver3_rb.ice
+			myPhysTimeToLive 20.0
+			mySoundName <empty>
+		}
+
+	}
+
+	WreckPhysFxGroup Helicopter_Specials_Phys
+	{
+		WreckPhysFx Russian_Pilot
+		{
+			myPhysMRB units/warzaw/ussr_heli_parachute/ussr_heli_parachute_stand.mrb
+			myPhysFile units/warzaw/ussr_heli_parachute/ussr_heli_parachute_stand_rb.ice
+			myPhysTimeToLive 15
+			mySoundName <empty>
+		}
+
+	}
+
+}
+

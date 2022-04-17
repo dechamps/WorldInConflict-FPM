@@ -1,0 +1,103 @@
+INCLUDE units/unittype.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE juice/team/team.fruit
+INCLUDE juice/role.fruit
+INCLUDE juice/color.fruit
+
+TYPE SupportProjectileType
+{
+	BALLISTIC
+	STRAIGHT
+	HOMING
+}
+
+CLASS SupportMuteSoundsType
+{
+	NUMBER myMutePercent
+	DECIMAL myInitialDelay
+	DECIMAL myFadeOutTime
+	DECIMAL myMutedTime
+	DECIMAL myFadeInTime
+}
+
+CLASS SupportMarker
+{
+	FILE myGroundMarker
+	XColorRGBA myGroundMarkerColor
+	NUMBER myGroundMarkerScale
+
+	NUMBER mySnapToBuildings
+	NUMBER mySnapToUnits
+
+	FILE myAirMarker
+	NUMBER myAirMarkerSize
+	NUMBER myAirMarkerHeightOffset
+	XColorRGBA myAirMarkerDiscreteColor
+	XColorRGBA myAirMarkerHighlightColor
+
+	NUMBER myVisualCounterDiscreteAlpha
+	XColorRGBA myVisualCounterColor
+	
+	NUMBER myVisibleDistance
+}
+
+CLASS SupportThing
+{
+	LOCTEXT myGuiName
+	Teams myTeam
+	DECIMAL myTargetAreaLength
+	DECIMAL myTargetAreaWidth
+	DECIMAL myBhCost
+        RoleCostList myRoleCosts
+        RoleBlackList myRoleBlackList
+	DECIMAL myRechargeTime
+	DECIMAL myTimeBeforeActivation
+	DECIMAL myInitialTimeDelay
+	NUMBER myDeviationRadius
+	DECIMAL myRateOfFire
+	NUMBER myNumberOfProjectiles
+	SupportProjectileType myProjectileType
+	FILE myMarkerModel
+	DECIMAL myMarkerTimeToLive
+	DECIMAL myMarkerTimeDelay
+	FILE mySupportAnimation
+	DECIMAL mySupportAnimationTimeToLive
+	ProjectileType myProjectile
+	FILE mySplineObjectFile
+	ProjectileParasiteList myParasites
+	DECIMAL mySpeed
+	DECIMAL myStartHeight
+	FILE myGUIIconFileUp
+	FILE myGUIIconFileInside
+	FILE myGUIIconFileDown
+	FILE myMarkerSoundFile
+	FILE mySpawnedSoundFile
+	SoundSource myAnimationSoundSource
+	SoundSource myFiringSound
+	NUMBER myCanTargetAirUnits
+	NUMBER myCanTargetGroundUnits
+	NUMBER myCanTargetInfantry
+	SupportMuteSoundsType myMuteSound
+	SupportMarker myMarker
+
+	DECIMAL myNumScoreToTriggerTaunt
+	LOCTEXT myTauntText
+}
+
+CLASS UpgradeableSupportCombo
+{
+	SupportThing mySupportThing
+	NUMBER myCostToUpgrade
+	NUMBER myCampaignIPCost
+}
+
+SCRIPTCLASS UpgradeableSupportThing
+{
+	UpgradeableSupportCombo
+}
+
+SCRIPTCLASS SupportThings
+{
+	SupportThing
+	UpgradeableSupportThing
+}

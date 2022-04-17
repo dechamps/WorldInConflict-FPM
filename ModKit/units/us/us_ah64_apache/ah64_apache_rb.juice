@@ -1,0 +1,262 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "BodyBone01"
+		myMeshBone "BodyBone"
+		myObjectIsCg 1
+		myIsDynamic 0
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.015193
+			myY -1.795220
+			myZ -1.258967
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+			TEXT myState1 "WALK"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "BodyBone02"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.005786
+					myY 0.101656
+					myZ 1.057887
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.604
+					myY 1.045
+					myZ 3.009015
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 3800.602051
+				myVerts
+				{
+				}
+			}
+			Element myElement9
+			{
+				myName "BodyBone09"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.002214
+					myY -0.028046
+					myZ 4.807123
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.375
+					myY 0.682298
+					myZ 0.788
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 403.465515
+				myVerts
+				{
+				}
+			}
+			Element myElement10
+			{
+				myName "BodyBone10"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.006786
+					myY -0.139344
+					myZ -5.052876
+				}
+				myRotHPB
+				{
+					myX -0.002
+					myY 0.068031
+					myZ -0.000136
+				}
+				myExtents
+				{
+					myX 0.385
+					myY 0.622
+					myZ 3.283
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1573.246704
+				myVerts
+				{
+				}
+			}
+			Element myElement11
+			{
+				myName "BodyBone11"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.019786
+					myY -0.371344
+					myZ 0.959123
+				}
+				myRotHPB
+				{
+					myX -0.002
+					myY -0.011999
+					myZ 0.000024
+				}
+				myExtents
+				{
+					myX 2.459
+					myY 0.59
+					myZ 0.969
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 2813.255127
+				myVerts
+				{
+				}
+			}
+			Element myElement12
+			{
+				myName "BodyBone12"
+				myType 0
+				myMaterial "METAL"
+				myNoPhysicsFlag 1
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.062039
+					myY 0.630656
+					myZ -0.50301
+				}
+				myRotHPB
+				{
+					myX -0.002
+					myY -0.011999
+					myZ 0.000024
+				}
+				myExtents
+				{
+					myX 1.121258
+					myY 0.425
+					myZ 1.478
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1409.430298
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

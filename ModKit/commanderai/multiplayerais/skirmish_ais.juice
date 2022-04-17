@@ -1,0 +1,24 @@
+INCLUDE commanderai/multiplayerais/skirmish_ais.fruit
+
+AI_List myAIs
+{
+	SkirmishAI AI1
+	{
+		myAI_Constants commanderai/constants.ice
+		myArtilleryBarageText "I will artillery barrage area."
+		myAttackAreaText "I will attack and hold area."
+		myDefendAreaText "I will defend area."
+		myAntiAirText "I am on my way - choppers will soon be gone."
+		myAttentionText "I am on my way."
+		myBackupText "I am on my way - stay in there."
+		myTABarrageText "Placing TA barrage - stay clear."
+		myTAOtherText "Deploying Tactical Aid."
+		myDefaultText "Ok - hang in there."
+		myActiveAIsNumberOfPlatoonsForFPM 3
+		myActiveAIsNumberOfPlatoonsForToW 1
+		myActiveAIsNumberOfPlatoonsForAssault 1
+		myActiveAIsNumberOfPlatoonsForTeamDeathMatch 1
+	}
+
+}
+

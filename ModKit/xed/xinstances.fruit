@@ -1,0 +1,141 @@
+INCLUDE xed/scriptlist.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE juice/vector2.fruit
+
+
+CLASS XColor
+{
+        NUMBER myR
+        NUMBER myG
+        NUMBER myB
+}
+
+TYPE XFlag
+{
+	TRUE
+	FALSE
+}
+
+//UTILITY INSTANCES
+CLASS XPositionInstance
+{
+        Vector3 myPosition
+}
+
+CLASS XSphereInstance
+{
+        Vector3 myPosition
+        DECIMAL myRadius
+}
+
+CLASS XBoxInstance
+{
+        Vector3 myMin
+        Vector3 myMax
+}
+
+//MODEL INSTANCES (props, ...)
+CLASS XPropInstance
+{
+        TEXT myType
+        Vector3 myPosition
+        Vector3 myOrientation
+        XFlag myGridobjectVisibleInMinimapFlag
+}
+
+CLASS XThingInstance
+{
+        TEXT myType
+        Vector3 myPosition
+        Vector3 myOrientation
+}
+
+CLASS XAgentInstance
+{
+        TEXT myType
+        Vector3 myPosition
+        Vector3 myOrientation   
+}
+
+// SOUND INSTANCES
+CLASS XSoundInstance
+{
+        Vector3 myPosition
+        TEXT mySoundID
+}
+
+// ROAD INSTANCES
+CLASS RoadSegment
+{
+        Vector3 myRightPos
+        Vector3 myLeftPos
+}
+
+SCRIPTCLASS RoadSegments
+{
+        RoadSegment
+}
+
+CLASS XRoadInstance
+{
+        NUMBER myRoadID
+        RoadSegments myRoad
+}
+
+// CAMERA LOCATION INSTANCES
+CLASS XCameraInstance
+{
+        Vector3 myPosition
+        Vector2 myRotation
+}
+
+// CHOKEPOINT INSTANCE
+CLASS XTile
+{
+	NUMBER myX
+	NUMBER myZ
+}
+
+SCRIPTCLASS XZoneList
+{
+	XSphereInstance*
+}
+
+SCRIPTCLASS XTileList
+{
+	XTile
+}
+
+CLASS XChokePoint
+{
+	XTileList myTiles
+	XZoneList myRightZones
+	XZoneList myLeftZones
+}
+
+CLASS XChokePointInstance
+{
+			Vector3 myPosition
+			DECIMAL myRadius
+			XChokePoint myChokePoint
+}
+
+//THE INSTANCES STRUCTURE
+SCRIPTCLASS InstanceList
+{
+        XPositionInstance
+        XSphereInstance
+        XBoxInstance
+        XPropInstance
+        XAgentInstance
+        XThingInstance
+        XSoundInstance
+        XCameraInstance
+        XChokePointInstance
+}
+
+CLASS XInstances_0002
+{
+        ScriptList myScripts
+        InstanceList myInstances
+}

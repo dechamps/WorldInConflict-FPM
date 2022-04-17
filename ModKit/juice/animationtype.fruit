@@ -1,0 +1,25 @@
+TYPE AnimationID
+{
+	DEFAULT
+	WALK
+	RUN
+	STAND
+	CRAWL
+	SIEGE
+
+	FIRE
+
+	HIT
+	ENTER_SIEGE
+	EXIT_SIEGE
+
+
+
+}
+
+TYPE AnimationType
+{
+	NORMAL
+	INSTANT
+	TRANSITION
+}

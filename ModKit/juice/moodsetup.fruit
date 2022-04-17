@@ -1,0 +1,31 @@
+TYPE MoodDataType
+{
+	MOOD_DATATYPE_DECIMAL
+	MOOD_DATATYPE_RGB
+	MOOD_DATATYPE_FILE_AND_TEXT
+}
+
+CLASS MoodVariable
+{
+	TEXT myName
+	MoodDataType myType
+	NUMBER myEnableFlag
+	NUMBER myUseEnvParamsFlag // if enabled, the parameters are fetched from the environment instead of this instance
+
+	DECIMAL myDecimal0
+	DECIMAL myDecimal1
+	DECIMAL myDecimal2
+	FILE myFile0
+	TEXT myText0
+}
+
+SCRIPTCLASS MoodVariableList
+{
+	MoodVariable
+}
+
+CLASS MoodSetup
+{
+	MoodVariableList myMoodVariables
+}
+

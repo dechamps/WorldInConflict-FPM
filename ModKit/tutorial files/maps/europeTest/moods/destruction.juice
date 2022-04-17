@@ -1,0 +1,530 @@
+INCLUDE juice/moodsetup.fruit
+
+MoodSetup myMoodSetup
+{
+	myMoodVariables
+	{
+		MoodVariable MoodVariable(myCloud.myWindSpeedScale)
+		{
+			myName myCloud.myWindSpeedScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.857545
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightAlphaInvertBase)
+		{
+			myName myClouds.myLayer0.myBacklightAlphaInvertBase
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.003800
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightAlphaInvertScale)
+		{
+			myName myClouds.myLayer0.myBacklightAlphaInvertScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.010600
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightAlphaScale)
+		{
+			myName myClouds.myLayer0.myBacklightAlphaScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.010200
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightBase)
+		{
+			myName myClouds.myLayer0.myBacklightBase
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.017000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightColor)
+		{
+			myName myClouds.myLayer0.myBacklightColor
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.012000
+			myDecimal1 0.012400
+			myDecimal2 0.012600
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightExponent)
+		{
+			myName myClouds.myLayer0.myBacklightExponent
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.012800
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightSideFactor)
+		{
+			myName myClouds.myLayer0.myBacklightSideFactor
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.019000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBacklightTopLightScale)
+		{
+			myName myClouds.myLayer0.myBacklightTopLightScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.009200
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myBottomShade)
+		{
+			myName myClouds.myLayer0.myBottomShade
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.327845
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myClusterShade)
+		{
+			myName myClouds.myLayer0.myClusterShade
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.017600
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myColorDark)
+		{
+			myName myClouds.myLayer0.myColorDark
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 114.693764
+			myDecimal1 123.248726
+			myDecimal2 137.265152
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myColorLight)
+		{
+			myName myClouds.myLayer0.myColorLight
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 129.132736
+			myDecimal1 141.892502
+			myDecimal2 140.435318
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.mySideScale)
+		{
+			myName myClouds.myLayer0.mySideScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.034600
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.mySunOcclusionExponent)
+		{
+			myName myClouds.myLayer0.mySunOcclusionExponent
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.031000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myClouds.myLayer0.myTransparency)
+		{
+			myName myClouds.myLayer0.myTransparency
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.156983
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myColor)
+		{
+			myName myFog.myColor
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 60.428761
+			myDecimal1 65.240150
+			myDecimal2 82.621468
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myColor2Sun)
+		{
+			myName myFog.myColor2Sun
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 121.197433
+			myDecimal1 134.519089
+			myDecimal2 136.823761
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myFogEnd)
+		{
+			myName myFog.myFogEnd
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 1671.572632
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myFogExponent)
+		{
+			myName myFog.myFogExponent
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myFogStart)
+		{
+			myName myFog.myFogStart
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 331.781342
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myFog.myFogThreshold)
+		{
+			myName myFog.myFogThreshold
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.001128
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySky.myColor)
+		{
+			myName mySky.myColor
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 78.375587
+			myDecimal1 86.814110
+			myDecimal2 98.673561
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myAmbientColor)
+		{
+			myName mySun.myAmbientColor
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 35.477188
+			myDecimal1 48.361073
+			myDecimal2 69.618698
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myCoinSizeScale)
+		{
+			myName mySun.myCoinSizeScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 1.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myColor)
+		{
+			myName mySun.myColor
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 180.000000
+			myDecimal1 170.000000
+			myDecimal2 100.000000
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myGlobalSpecularModifier)
+		{
+			myName mySun.myGlobalSpecularModifier
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myMaxSizeScale)
+		{
+			myName mySun.myMaxSizeScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 1.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(mySun.myOverbrightFactor)
+		{
+			myName mySun.myOverbrightFactor
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.941905
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.myLevels)
+		{
+			myName myWarFilter.myLevels
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.962011
+			myDecimal1 0.913248
+			myDecimal2 0.872553
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.myLevels.High)
+		{
+			myName myWarFilter.myLevels.High
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 255.090591
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.myLevels.Low)
+		{
+			myName myWarFilter.myLevels.Low
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.myNoise)
+		{
+			myName myWarFilter.myNoise
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.mySaturation)
+		{
+			myName myWarFilter.mySaturation
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0.618995
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWarFilter.myStrength)
+		{
+			myName myWarFilter.myStrength
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 1.000000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWater.myColorScale)
+		{
+			myName myWater.myColorScale
+			myType MOOD_DATATYPE_RGB
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 220.498444
+			myDecimal1 214.442978
+			myDecimal2 208.158203
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWater.myRippleSoftener)
+		{
+			myName myWater.myRippleSoftener
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.001800
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWater.mySpecExponent)
+		{
+			myName myWater.mySpecExponent
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.004200
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myWater.mySunReflectionScale)
+		{
+			myName myWater.mySunReflectionScale
+			myType MOOD_DATATYPE_DECIMAL
+			myEnableFlag 0
+			myUseEnvParamsFlag 0
+			myDecimal0 0.006000
+			myDecimal1 0.0
+			myDecimal2 0.0
+			myFile0 <empty>
+			myText0 <empty>
+		}
+
+		MoodVariable MoodVariable(myBloom.mySetup)
+		{
+			myName myBloom.mySetup
+			myType MOOD_DATATYPE_FILE_AND_TEXT
+			myEnableFlag 1
+			myUseEnvParamsFlag 0
+			myDecimal0 0
+			myDecimal1 40
+			myDecimal2 180
+			myFile0 <empty>
+			myText0 mood03
+		}
+
+	}
+
+}
+

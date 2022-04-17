@@ -1,0 +1,226 @@
+INCLUDE editordata/wicmap.fruit
+
+WicedSinglePlayerData mySinglePlayerData
+{
+	mySinglePlayerScriptFiles
+	{
+	}
+
+	mySinglePlayerMissionStats
+	{
+		myGameModeSinglePlayer Domination
+		myInitialApSinglePlayerTeam1 0
+		myInitialApSinglePlayerTeam2 0
+		myMaxApSinglePlayerTeam1 0
+		myMaxApSinglePlayerTeam2 0
+		myGameLengthSinglePlayer 0
+		myMMBFileToPreload <empty>
+		myScriptModelsToPreload
+		{
+		}
+
+		myLoadingBriefing
+		{
+			myLoadingSlides
+			{
+			}
+
+			myVoiceOvers
+			{
+			}
+
+			myLoadingScreenMusic
+			{
+				myAction MUSIC_PLAY
+				mySoundChannel CHANNEL_VOICE
+				myFadeTime 0.0
+				myRevertState REVERT_TO_SILENCE
+				myNumLoops 0
+				myMusicFile <empty>
+			}
+
+		}
+
+		myPlayers
+		{
+			PLAYER1
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER2
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER3
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER4
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER5
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER6
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER7
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER8
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER9
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER10
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER11
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER12
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER13
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER14
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+			PLAYER15
+			{
+				myType HUMAN
+				myTeam TEAM_1
+				myAIConfigFile <empty>
+			}
+
+			PLAYER16
+			{
+				myType HUMAN
+				myTeam TEAM_2
+				myAIConfigFile <empty>
+			}
+
+		}
+
+		myDisallowedUnits
+		{
+		}
+
+		myDisallowedSupportthings
+		{
+		}
+
+		mySinglePlayerDeploymentAreaMask
+		{
+		}
+
+		myPrimaryObjectives
+		{
+		}
+
+		mySecondaryObjectives
+		{
+		}
+
+		myScriptEvents
+		{
+		}
+
+		myTipTexts
+		{
+		}
+
+		myMessageBoxList
+		{
+		}
+
+		mySinglePlayerMusicEvents <empty>
+		myWonText <empty>
+		myLostText <empty>
+		myLocStrings
+		{
+		}
+
+	}
+
+	mySinglePlayerInstanceData
+	{
+		myPropInstances
+		{
+		}
+
+		myAgentInstances
+		{
+		}
+
+		mySpeedTreeInstances
+		{
+		}
+
+		myAreaInstances
+		{
+		}
+
+		myMiscInstances
+		{
+		}
+
+	}
+
+}
+

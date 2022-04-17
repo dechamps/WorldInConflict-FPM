@@ -1,0 +1,424 @@
+INCLUDE ui/mouse/hwmouse.fruit
+
+MouseCursorList MouseCursors
+{
+	MouseCursor Standard
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Explicit
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_move.tga
+		myAnimationTime 0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Attack
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_attack.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+			MouseCursorOverride accuracy_outofrange
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/new_mouse/mouse_outoflof.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_10
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_10.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_20
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_20.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_30
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_30.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_40
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_40.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_50
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_50.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_60
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_60.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_70
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_70.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_80
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_80.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_90
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_90.tga
+				myAnimationTime 0.0
+			}
+
+			MouseCursorOverride accuracy_100
+			{
+				myType TOP_LEFT
+				myFilename ui/mouse/mouse_attack_accuracy_100.tga
+				myAnimationTime 0.0
+			}
+
+		}
+
+	}
+
+	MouseCursor AttackOOR
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_outoflof.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Repair
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_healrepair.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Enter
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_enter.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor SetLZ
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/select_LZ.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor SetLZOOZ
+	{
+		myType CENTER
+		myFilename ui/mouse/new_mouse/mouse_denied.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Follow
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_follow.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Backwards
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_movebackwards.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor SupportWeapon
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_placeta.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor SupportWeaponOOZ
+	{
+		myType CENTER
+		myFilename ui/mouse/new_mouse/mouse_denied.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Cancel
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamLeft
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamRight
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamForward
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamBackward
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamRotateLeft
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamRotateRight
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamRotateUp
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CamRotateDown
+	{
+		myType CENTER
+		myFilename ui/mouse/corners_green.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Wait
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_wait.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Hidden
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor DirectControl
+	{
+		myType CENTER
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor MoveAllowed
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor MoveNotAllowed
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_denied.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor PossibleToSelect
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_pointer.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor CoverPosition
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_cover.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor Deploy
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_placesa.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor AttackOOLOF
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_outoflof.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+	MouseCursor SupportWeaponNotAllowed
+	{
+		myType TOP_LEFT
+		myFilename ui/mouse/new_mouse/mouse_denied.tga
+		myAnimationTime 0.0
+		myOverrides
+		{
+		}
+
+	}
+
+}
+

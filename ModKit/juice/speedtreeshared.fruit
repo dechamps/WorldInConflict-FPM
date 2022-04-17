@@ -1,0 +1,8 @@
+CLASS BirdEffect
+{
+	FILE myBirdFilename
+	NUMBER myDistanceToUnit
+	NUMBER myOffsetPercOfTreeHeight
+	NUMBER myFadeTime
+}
+

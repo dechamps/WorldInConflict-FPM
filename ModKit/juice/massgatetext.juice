@@ -1,0 +1,1228 @@
+INCLUDE juice/massgatetext.fruit
+
+MassgateText myMassgateText
+{
+	TextType myChatRooms
+	{
+		LOCTEXT Name Name
+
+		LOCTEXT Users Users
+
+		LOCTEXT PlayerJoin "__RANKNAME__ __PLAYERNAME__ entered the chat"
+
+		LOCTEXT PlayerLeave "__RANKNAME__ __PLAYERNAME__ left the chat"
+
+		LOCTEXT PlayerLeaveForServer "__RANKNAME__ __PLAYERNAME__ left the chat and joined server SERVERNAME"
+
+		LOCTEXT ChatJoinFail_RoomFull "You cannot join the room because it is full."
+
+		LOCTEXT ChatJoinFail_WrongPass "You cannot join the room because you supplied an incorrect password."
+
+		LOCTEXT ChatJoinFail_Other "An error occured while trying to join the requested room."
+
+		LOCTEXT ReceivedInstantMessage "You have received an Instant Message from __PLAYERNAME__."
+
+		LOCTEXT DefaultRoomName "General chat (English)"
+
+		LOCTEXT NotConnected ...
+
+		LOCTEXT ClanChatRoom "Clan chat"
+
+		LOCTEXT GangChatRoom "Group chat"
+
+		LOCTEXT ClanWarRoom "Clan War"
+
+		LOCTEXT FPMLobbyRoom "FPM Lobby"
+
+		LOCTEXT SpamMessage "Your message has been suppressed for spamming reasons, please wait __SECONDS__ before submitting it again."
+
+	}
+
+	TextType myConnect
+	{
+		LOCTEXT Connecting Connecting...
+
+		LOCTEXT CouldNotConnect "Could not connect to Massgate."
+
+		LOCTEXT Authenticating "Authenticating client..."
+
+		LOCTEXT AuthenticationFailed "Authentication failed. Press OK to return to Main Menu."
+
+		LOCTEXT CheckingForUpdates "Checking for updates..."
+
+		LOCTEXT UpdateFound "An update was found. Press OK to download it."
+
+		LOCTEXT DownloadFailed "Failed to download update."
+
+		LOCTEXT DownloadComplete "Download complete. Press OK to install the update."
+
+		LOCTEXT UpdateConnectFailed "Could not connect to update server."
+
+		LOCTEXT ClosingGame "Closing game..."
+
+		LOCTEXT LoggingIn "Logging in"
+
+		LOCTEXT CreatingAccount "Creating account"
+
+		LOCTEXT RetrievingProfiles "Retrieving available profiles"
+
+		LOCTEXT CreatingProfile "Creating profile"
+
+		LOCTEXT ModifyingProfile "Renaming profile"
+
+		LOCTEXT DeletingProfile "Deleting profile"
+
+		LOCTEXT ManageHeadline <empty>
+
+		LOCTEXT ConfirmDeleteProfile "Are you sure you want to remove __PROFILENAME__?"
+
+		LOCTEXT AlertStrangeProfileName "It looks like the name you entered contains a clan-tag. Please note that a clan-tag is automatically added once you join a clan in Massgate. Please remove any clan-tags from the name."
+
+		LOCTEXT CreatingClan "Creating clan"
+
+		LOCTEXT ManagingClan "Managing clan"
+
+		LOCTEXT LeavingClan "Leaving clan"
+
+		LOCTEXT PasswordReminderHeadline "Forgot your password?"
+
+		LOCTEXT PasswordReminder "This will close World in Conflict and open a web page with instruction on how to retrieve your password. Do you want to continue?"
+
+		LOCTEXT myPasswordReminderWebpage www.massgate.net/recover_password/?__INSERTEMAIL__
+
+		LOCTEXT primaryDiaUrl www.massgate.net/texts/gettext.php?type=welcome&lang=EN
+
+		LOCTEXT secondaryDiaUrl www.massive.se/massgate/dia.txt
+
+		LOCTEXT newsDiaUrl www.massgate.net/texts/gettext.php?type=news&lang=EN
+
+		LOCTEXT gettingDia "Retrieving Massgate status"
+
+		LOCTEXT failedToGetDia "Could not retrieve Massgate status. Please check your internet connection."
+
+		LOCTEXT failedToGetNews "Failed to get the latest news."
+
+		LOCTEXT gettingNews "Loading latest news..."
+
+		LOCTEXT myTosUrl www.massgate.net/texts/gettext.php?type=tos&lang=EN
+
+		LOCTEXT myPrivacyUrl www.massgate.net/texts/gettext.php?type=privacy&lang=EN
+
+		LOCTEXT myEulaUrl www.massgate.net/texts/gettext.php?type=eula&lang=EN
+
+		LOCTEXT myTournamentRulesUrl www.massgate.net/texts/gettext.php?type=tournamentrules&lang=EN
+
+		LOCTEXT myTosUnavailableError "Can not connect to massgate and create account."
+
+		LOCTEXT GettingTos Preparing...
+
+		LOCTEXT myTimeLimitedKeyExpired "Your time limited CD-Key will expire in __REPLACE__ days."
+
+		LOCTEXT PleaseWait "Please wait..."
+
+		LOCTEXT HangOnLockHeader "ENTER SERVER QUEUE?"
+
+		LOCTEXT HangOnLockMessage "This server is full.\n\nYou can enter the server queue to automatically join the server when a slot becomes available. Do you want to wait for a slot?"
+
+		LOCTEXT HangOnTheLockLeaveHeader "LEAVE SERVER QUEUE?"
+
+		LOCTEXT HangOnTheLockLeaveMessage "Are you sure that you want to leave the server queue?"
+
+		LOCTEXT RecruitedQuestion "Did a friend recruit you to this game?"
+
+		LOCTEXT YouAreRecruiter "You have recruited a friend. Thank you!"
+
+		LOCTEXT RecruitHeader "RECRUITMENT OFFICE"
+
+		LOCTEXT RecruitNoSuch "No account found with that email address. Please double-check the spelling and try again."
+
+		LOCTEXT ValidRecruiter "Thank you!"
+
+		LOCTEXT buttonURLURL http://www.massgate.net/massgatebutton/button_url_LANG_REPLACE.txt
+
+		LOCTEXT buttonImageURL http://www.massgate.net/massgatebutton/button_image_LANG_REPLACE.tga
+
+	}
+
+	TextType myCreateAccount
+	{
+		LOCTEXT IllegalNicknameFailure "Failed to create account. Illegal nickname."
+
+		LOCTEXT IllegalPasswordFailure "Failed to create account. Illegal password."
+
+		LOCTEXT NicknameOccupiedFailure "The selected nickname is occupied."
+
+		LOCTEXT CreateAccountFailed "Failed to create account with the selected nickname."
+
+		LOCTEXT PasswordsNotMatching "Passwords do not match!"
+
+	}
+
+	TextType myFilters
+	{
+		LOCTEXT NoFilter "No Filter"
+
+		LOCTEXT NoPassword "No Password"
+
+		LOCTEXT NeedPassword "Need Password"
+
+		LOCTEXT NotFull "Not Full"
+
+		LOCTEXT NotEmpty "Not Empty"
+
+		LOCTEXT NotFullNotEmpty "Not Empty or Full"
+
+		LOCTEXT Dedicated Dedicated
+
+		LOCTEXT NonDedicated "Not Dedicated"
+
+		LOCTEXT Ranked Ranked
+
+		LOCTEXT Unranked "Not Ranked"
+
+		LOCTEXT FriendsOnServer "Friend(s) on Server"
+
+		LOCTEXT ContactOnServer "Contact(s) on Server"
+
+		LOCTEXT NoFriendsOnServer "No Friend(s) on Server"
+
+		LOCTEXT VoipOnServer "VOIP Enabled"
+
+		LOCTEXT VoipNotOnServer "VOIP Disabled"
+
+		LOCTEXT modOnServer "No mods"
+
+		LOCTEXT modNotOnServer "Only mods"
+
+		LOCTEXT rankBalanced "Rank Balanced"
+
+		LOCTEXT notRankBalanced "Not Rank Balanced"
+
+		LOCTEXT domination "Domination Only"
+
+		LOCTEXT assault "Assault Only"
+
+		LOCTEXT tow "Tug of War Only"
+
+	}
+
+	TextType myGames
+	{
+		LOCTEXT Name Name
+
+		LOCTEXT Map Map
+
+		LOCTEXT Players Players
+
+		LOCTEXT Ping Ping
+
+		LOCTEXT Type Type
+
+		LOCTEXT Mode Mode
+
+		LOCTEXT Dedicated Dedicated/Local
+
+		LOCTEXT Ranked Ranked/Unranked
+
+		LOCTEXT Open Open/Closed
+
+		LOCTEXT Password Password
+
+		LOCTEXT Cooperative Cooperative
+
+		LOCTEXT ServerDetailsLabel "Server details"
+
+		LOCTEXT ServerDetailsValue Setting
+
+		LOCTEXT PlayerDetails_Playername "Player name"
+
+		LOCTEXT PlayerDetails_Playerscore Score
+
+		LOCTEXT ServerDetails_Servername "Server name"
+
+		LOCTEXT ServerDetails_Gametime "Game time"
+
+		LOCTEXT ServerDetails_IP IP
+
+		LOCTEXT ServerDetails_MaxPlayers "Max players"
+
+		LOCTEXT ServerDetails_Ping Ping
+
+		LOCTEXT ServerDetails_Numplayers "Number of players"
+
+		LOCTEXT ServerDetails_Numspectators "Number of spectators"
+
+		LOCTEXT ServerDetails_GameVersion "Game version"
+
+		LOCTEXT ServerDetails_IsDedicated Dedicated
+
+		LOCTEXT ServerDetails_IsCooperative Cooperative
+
+		LOCTEXT ServerDetails_IsRanked Ranked
+
+		LOCTEXT ServerDetails_RequiresPassword "Password protected"
+
+		LOCTEXT ServerDetails_map Map
+
+		LOCTEXT ServerDetails_ReliablePort "Reliable port"
+
+		LOCTEXT ServerDetails_UnreliablePort "Unreliable port"
+
+		LOCTEXT ServerDetails_MassgateCommPort "Massgate port"
+
+		LOCTEXT ServerDetails_RankBalanced "Rank Balanced"
+
+		LOCTEXT Yes Yes
+
+		LOCTEXT No No
+
+		LOCTEXT Unknown Unknown
+
+		LOCTEXT TimeDisplayFormat __MINUTES__'__SECONDS__''
+
+		LOCTEXT ServerDetails_ModName "Running mod"
+
+		LOCTEXT JoinSame_Searching "Locating server..."
+
+		LOCTEXT JoinSame_Found "Confirm join same server"
+
+		LOCTEXT JoinSame_Error "Could not connect to server"
+
+		LOCTEXT JoinLast_Found "Last server played"
+
+		LOCTEXT MapRotation "Maps on server:"
+
+		LOCTEXT CantPlayLobby "You can not join a server while you are in the match lobby"
+
+	}
+
+	TextType myLadder
+	{
+		LOCTEXT Rank Rank
+
+		LOCTEXT Level Level
+
+		LOCTEXT XP XP
+
+		LOCTEXT PlayerName "Player Name"
+
+		LOCTEXT Wins Wins
+
+		LOCTEXT Defeats Defeats
+
+		LOCTEXT Ties Ties
+
+		LOCTEXT Kills Kills
+
+		LOCTEXT Losses Losses
+
+		LOCTEXT KillRatio "Kill Ratio"
+
+		LOCTEXT ProfileNotInLadder "__PLAYERNAME__ has not played enough to be seen in the ladder."
+
+		LOCTEXT PlayerNotInLadder "You have not played enough to gain a ladder position. Remember that to advance in the ladder you must play on ranked servers!"
+
+		LOCTEXT NotEnoughPos "Unable to jump to position __REQUESTEDPOS__ since there are only __NUMPOS__ players in the ladder."
+
+		LOCTEXT NoSearch "Please enter either a position to go to or (part of) the playername you'd like to jump to."
+
+		LOCTEXT NotFound "No playernames match the search criteria."
+
+		LOCTEXT ClanNotInLadder "The clan has not played enough to be qualify for the ladder."
+
+		LOCTEXT YourClanNotInLadder "Your clan has not played enough clan-matches to qualify for the ladder."
+
+	}
+
+	TextType myPlayerInfo
+	{
+		LOCTEXT Loading Loading...
+
+		LOCTEXT AbuseReported "Your report of abusive behavior has been sent to the Massive Community Team and will be investigated."
+
+	}
+
+	TextType myGameInfo
+	{
+		LOCTEXT Name Name
+
+		LOCTEXT Team Team
+
+		LOCTEXT Score Score
+
+		LOCTEXT NotStarted "Not started"
+
+		LOCTEXT NotResponding "Not responding"
+
+	}
+
+	TextType myStatus
+	{
+		LOCTEXT Offline offline
+
+		LOCTEXT Online online
+
+		LOCTEXT Playing playing
+
+		LOCTEXT Away away
+
+	}
+
+	TextType myMassgateStatusMessages
+	{
+		LOCTEXT AuthFailed_AccountBanned "This account has been banned by the Massgate administrators."
+
+		LOCTEXT AuthFailed_BadCredentials "Wrong password. Make sure you used the correct capitalization."
+
+		LOCTEXT AuthFailed_General "General authentication failure."
+
+		LOCTEXT AuthFailed_IllegalCDKey "There is a problem with the CD-Key. Please contact customer support."
+
+		LOCTEXT AuthFailed_CdKeyInUse "The CD-Key is in use by another player, or your previous lease is still active. Please try again in a few minutes. If the problem persists, please contact customer support."
+
+		LOCTEXT AuthFailed_ProfileInUse "Your profile is already logged in from another computer."
+
+		LOCTEXT AuthFailed_AccountInUse "Your account is already logged in from another computer."
+
+		LOCTEXT AuthFailed_NoSuchAccount "No such account. You need to create an account before you can access Massgate."
+
+		LOCTEXT AuthFailed_CdKeyExpired "Your time limited CD-Key has expired. Please visit www.worldinconflict.com for information on how to purchase the game."
+
+		LOCTEXT ServerError "The Massgate servers are being reconfigured. Please try again later."
+
+		LOCTEXT CreateSuccess "Your account has been created."
+
+		LOCTEXT CreateFailed_General "General account creation error"
+
+		LOCTEXT CreateFailed_EmailExists "You have already registered an account to that email. If you'd like, you can create another profile instead (log in to Massgate first)."
+
+		LOCTEXT CreateFailed_UsernameExists "Someone else has registered that profile name. Please choose another."
+
+		LOCTEXT CreateFailed_CdKeyExhausted "Can not create account. Your CD-Key may not be used to create more accounts."
+
+		LOCTEXT InvalidServer "Could not connect to Massgate. Please check your internet connection and firewall settings."
+
+		LOCTEXT IncorrectProtocolVersion "Incorrect protocol version"
+
+		LOCTEXT ProbableFirewall "A firewall may be interfering with World In Conflict and preventing online games. Please examine your firewall software and enable UDP and TCP for World in Conflict."
+
+		LOCTEXT DeleteFailed_Clanned "That profile is a member of a clan. Please leave the clan before deleting the profile."
+
+		LOCTEXT AbuseKicked "You have been disconnected due to an abuse report from a moderator. Repeated offenses will cause your CD-Key to be temporarily or permanently banned from online play. You may log in again. If you'd like to protest this decision, please go to www.massgate.net."
+
+		LOCTEXT MassgateMaintenance "Massgate maintenance underway. You may experience connection problems. "
+
+	}
+
+	TextType GenericStrings
+	{
+		LOCTEXT NotAvailable N/A
+
+		LOCTEXT invalidCdKey "The CD-Key you entered is not valid. Please double check that you have entered it exactly as shown on the box"
+
+		LOCTEXT yes Yes
+
+		LOCTEXT no No
+
+		LOCTEXT true True
+
+		LOCTEXT false False
+
+		LOCTEXT on On
+
+		LOCTEXT off Off
+
+		LOCTEXT unknownMap "Unknown map"
+
+		LOCTEXT timeLimitedKeyWarning "The CD-Key you have entered is time limited and will eventually expire. Are you sure you want to continue? Press YES if you want to use this key. Press NO if you want to enter another key instead."
+
+		LOCTEXT cdKeyAttention ATTENTION
+
+		LOCTEXT systemMessage "SYSTEM MESSAGE"
+
+		LOCTEXT preorderHeadline PRE-ORDER
+
+		LOCTEXT preorderBody "This bonus map is only available to players who have pre-ordered World In Conflict. (If you have pre-ordered already please go to the login page and press ENTER ACCESS CODE). Would you like to pre-order World In Conflict?"
+
+		LOCTEXT gotoWebsite "GOTO WEBSITE"
+
+		LOCTEXT ok OK
+
+		LOCTEXT Resume RESUME
+
+		LOCTEXT Cancel CANCEL
+
+		LOCTEXT Later LATER
+
+		LOCTEXT NotNow "NOT NOW"
+
+	}
+
+	TextType myFriendsStrings
+	{
+		LOCTEXT Friends Friends
+
+		LOCTEXT Acquaintances Acquaintances
+
+		LOCTEXT Online online
+
+		LOCTEXT Offline offline
+
+		LOCTEXT Playing playing
+
+		LOCTEXT ClanMembers "Clan mates"
+
+		LOCTEXT FriendsHeader "People I know"
+
+		LOCTEXT NotAFriend Others
+
+		LOCTEXT Ignored Ignored
+
+	}
+
+	TextType myProfilePage
+	{
+		LOCTEXT neverPlayedWith "You have never played with __PROFILENAME__ in the last month"
+
+		LOCTEXT playedMultipleTimes "You have played __NUMTIMES__ times with __PROFILENAME__ in the last month"
+
+		LOCTEXT playedOnce "You have played once with __PROFILENAME__ in the last month"
+
+		LOCTEXT NotFound "No matching players found. If you are unsure of the spelling of the name, then enter part of the name you are searching for."
+
+		LOCTEXT MessageTooLong "Message too long."
+
+		LOCTEXT GoToProfilePageQuestion "Do you want to go to your profile page?"
+
+	}
+
+	TextType myProfilePageStats
+	{
+		LOCTEXT lastMatchPlayed "Last match played"
+
+		LOCTEXT numberOfMatches "Number of matches played"
+
+		LOCTEXT numberOfMatchesWon "Number of matches won"
+
+		LOCTEXT numberOfMatchesLost "Number of matches lost"
+
+		LOCTEXT bestWinningStreak "Best winning streak"
+
+		LOCTEXT currentWinningStreak "Current winning streak"
+
+		LOCTEXT currentLadderPosition "Current leaderboard position"
+
+		LOCTEXT bestLadderPosition "Best leaderboard position"
+
+		LOCTEXT avgMatchLength "Average match length"
+
+		LOCTEXT numberOfDominationMatchesWon "Domination matches won"
+
+		LOCTEXT numberOfDominationMatchesLost "Domination matches lost"
+
+		LOCTEXT numberOfMatchesWonByTotalDomination "Matches won by Total Domination"
+
+		LOCTEXT numberOfAssaultMatchesWon "Assault matches won"
+
+		LOCTEXT numberOfAssaultMatchesLost "Assault matches lost"
+
+		LOCTEXT numberOfPerfectDefandsInAssaultMatch "Perfect Defenses in Assault matches"
+
+		LOCTEXT numberOfTowMatchesWon "Tug of War matches won"
+
+		LOCTEXT numberOfTowMatchesLost "Tug of War matches lost"
+
+		LOCTEXT numberOfPerfectPushesInTowMatch "Perfect Pushes in Tug of War matches"
+
+		LOCTEXT avgNumberOfReinforcementPointsSpent "Average number of Reinforcement Points spent"
+
+		LOCTEXT avgNumberOfTAPointsSpent "Average number of Tactical Aid points spent"
+
+		LOCTEXT avgNumberOfUnitsKilled "Average number of units killed"
+
+		LOCTEXT avgNumberOfUnitsLost "Average number of units lost"
+
+		LOCTEXT totalScore "Total score"
+
+		LOCTEXT avgScore "Average score"
+
+		LOCTEXT highestScoreInAMatch "Highest score in a match"
+
+		LOCTEXT scoreByDamagingenemies "Score from damaging enemy units"
+
+		LOCTEXT scoreByRepairing "Score from repairing"
+
+		LOCTEXT scoreByTransporting "Score from transporting"
+
+		LOCTEXT scoreByUsingTacticalAids "Score from Tactical Aid"
+
+		LOCTEXT scoreByCapturingCommandPoints "Score from capturing Command Points"
+
+		LOCTEXT scoreByFortifying "Score from fortifying"
+
+		LOCTEXT scoreAsInfantry "Score as Infantry"
+
+		LOCTEXT scoreAsAir "Score as Air"
+
+		LOCTEXT scoreAsArmor "Score as Armor"
+
+		LOCTEXT scoreAsSupport "Score as Support"
+
+		LOCTEXT highScoreAsInfantry "Highest score as Infantry"
+
+		LOCTEXT highScoreAsAir "Highest score as Air"
+
+		LOCTEXT highScoreAsArmor "Highest score as Armor"
+
+		LOCTEXT highScoreAsSupport "Highest score as Support"
+
+		LOCTEXT numberOfUnitsKilled "Number of units killed"
+
+		LOCTEXT numberOfUnitsLost "Number of units lost"
+
+		LOCTEXT numberOfNukesDeployed "Number of Tactical Nukes deployed"
+
+		LOCTEXT numberOfTacticalAidCriticalHits "Number of Tactical Aid critical hits"
+
+		LOCTEXT timePlayedAsUSA "Time playing as USA"
+
+		LOCTEXT timePlayedAsUSSR "Time playing as USSR"
+
+		LOCTEXT timePlayedAsNATO "Time playing as NATO"
+
+		LOCTEXT timePlayedAsInfantry "Time playing as Infantry"
+
+		LOCTEXT timePlayedAsAir "Time playing as Air"
+
+		LOCTEXT timePlayedAsArmor "Time playing as Armor"
+
+		LOCTEXT timePlayedAsSupport "Time playing as Support"
+
+		LOCTEXT avgSpecialAbilitiesPerMatch "Average number of Special Abilities"
+
+	}
+
+	TextType myInstantMessaging
+	{
+		LOCTEXT InstantMessageHeading "Instant message conversation with __RANKNAME__ __PEERPROFILENAME__"
+
+		LOCTEXT MessageCapReached "You have reached your outgoing message limit. Try again in a few minutes."
+
+	}
+
+	TextType myClanStrings
+	{
+		LOCTEXT ClanMembers "Clan members"
+
+		LOCTEXT ClanLeader "Clan leader"
+
+		LOCTEXT Officers Officers
+
+		LOCTEXT Grunts Grunts
+
+		LOCTEXT Recruits Recruits
+
+		LOCTEXT ConfirmLeaveQuestion "Are you sure you want to leave the clan?"
+
+		LOCTEXT ConfirmInviteQuestion "Are you sure you want to invite this player to your clan?"
+
+		LOCTEXT FAIL_INVALID_NAME "The requested name of the clan is invalid. Please try another name."
+
+		LOCTEXT FAIL_TAG_TAKEN "Another clan already has the tag you requested. Please choose another tag."
+
+		LOCTEXT FAIL_OTHER "Could not create clan. Clan name and tag may be invalid."
+
+		LOCTEXT FAIL_ALREADY_IN_CLAN "The player is already in a clan and can not be invited to your clan."
+
+		LOCTEXT FAIL_DUPLICATE "The player is already invited to a clan."
+
+		LOCTEXT FAIL_INVALID_PRIVILIGES "You do not have the right to invite players to your clan."
+
+		LOCTEXT FAIL_MASSGATE "Cannot modify clan: An internal massgate error occured."
+
+		LOCTEXT AskYouHaveBeenInvited "__PLAYERNAME__ has invited you to join the clan __CLANNAME__. Do you accept?"
+
+		LOCTEXT ManageClan "Updating clan data"
+
+		LOCTEXT PromoteToLeader "Assign clan leadership"
+
+		LOCTEXT KickPlayer "Kick from clan"
+
+		LOCTEXT ConfirmPromoteNewLeaderQuestion "Are you sure you want to give leadership to __PLAYERNAME__?"
+
+		LOCTEXT MODIFY_FAIL_INVALID_PRIVILIGES "You must be clan leader to modify the clan"
+
+		LOCTEXT MODIFY_FAIL_TOO_FEW_MEMBERS "The operation requires more members. If you want to quit the clan - select leave on the clan page instead of kicking yourself from the clan"
+
+		LOCTEXT MODIFY_FAIL_OTHER "Could not modify clan."
+
+		LOCTEXT MODIFY_FAIL_MASSGATE "A massgate error occured while modifying clan. Try again later."
+
+		LOCTEXT INVITE_FAIL_PLAYER_IGNORE_MESSAGES "Can not invite player. The player ignores messages and invites from you."
+
+		LOCTEXT SetRecruitment "Set player of the week"
+
+		LOCTEXT confirmLaunchWebsite "Do you want to go to the website?"
+
+		LOCTEXT Demote Demote
+
+		LOCTEXT Promote Promote
+
+		LOCTEXT NotFound "No clan found that matches the name or clantag."
+
+		LOCTEXT GuestBookMsgTooLong "Message too long"
+
+		LOCTEXT MatchChallenge8x8 "8 vs 8"
+
+		LOCTEXT MatchChallenge5x5 "5 vs 5"
+
+		LOCTEXT MatchChallenge4x4 "4 vs 4"
+
+		LOCTEXT MatchChallenge2x2 "2 vs 2"
+
+		LOCTEXT MatchChallengeNoSuitable "The opponent clan does not have an online clan member that can or will accept the challenge."
+
+		LOCTEXT MatchChallengeServerTimeout "The challenge took too long, server has been allocated to someone else."
+
+		LOCTEXT MatchChallengeOpCancel "Your opponent has cancelled the challenge"
+
+		LOCTEXT MatchChallengeRecv "__CLANNAME__ is challenging your clan!"
+
+		LOCTEXT MatchChallengeRecvNotifBut "Respond to challenge"
+
+		LOCTEXT BUSY "Opponent busy"
+
+		LOCTEXT CHALLENGE_DECLINED "Challenge declined"
+
+		LOCTEXT MISSING_MAP "Your opponent doesn't have the map"
+
+		LOCTEXT NOT_INITIATED "Unknown error."
+
+		LOCTEXT CHALLENGE_CANCELED "Challenge was cancelled by the other clan"
+
+		LOCTEXT ChallengePreparing "Preparing challenge"
+
+		LOCTEXT NoChallengeServer "No clan match servers are available at the moment. Please try again later."
+
+		LOCTEXT InviteSent "Invite sent!"
+
+		LOCTEXT preOrderOnlyMap "PRE-ORDER ONLY MAP"
+
+		LOCTEXT ChallengeClan "Clan Challenge"
+
+		LOCTEXT noOfficerOnline "There is no officer online that can accept your challenge."
+
+		LOCTEXT UseProRulesDontCare "Don't care"
+
+		LOCTEXT UseProRulesYes Yes
+
+		LOCTEXT UseProRulesNo No
+
+		LOCTEXT CWNumPlayers "Num players: __REPLACE__"
+
+		LOCTEXT CWProRules "Pro rules: __REPLACE__"
+
+		LOCTEXT CWLadderPos "Ladder position: __FROM__ to __TO__"
+
+		LOCTEXT CWMaps Maps:
+
+		LOCTEXT CWAddClan "ADD CLAN"
+
+		LOCTEXT CWUpdateClan "UPDATE CLAN"
+
+		LOCTEXT DontCare Any
+
+		LOCTEXT CWRemoveClanConfirmText "This will remove your signup, are you sure?"
+
+		LOCTEXT AntiSmurfYouCantPlay "You can't play a clan match with this profile since you have played in another clan in the last __REPLACE__ days."
+
+		LOCTEXT AntiSmurfOpCantPlay "You can't challenge this player since he has played in another clan in the last __REPLACE__ days."
+
+		LOCTEXT AntiSmurfPlayerCantPlay "This player can't join the clan match since he has played in another clan in the last __REPLACE__ days."
+
+		LOCTEXT GoToClanPageQuestion "Do you want to go to your clan page?"
+
+	}
+
+	TextType myGangStrings
+	{
+		LOCTEXT AskYouHaveBeenInvited "You have been invited to a group by __PLAYERNAME__. This will make it easier for you to join servers together. Do you accept?"
+
+		LOCTEXT InfoPlayerDeclined "__PLAYERNAME__ has declined to be part of your group."
+
+		LOCTEXT InfoPlayerJoined "__PLAYERNAME__ has joined your group"
+
+		LOCTEXT InfoPlayerLeft "__PLAYERNAME__ has left your group."
+
+		LOCTEXT InfoGangFull "You cannot join the group as it has reached it's maximum number of members."
+
+		LOCTEXT AskLeaveWithGang "The groupmember __PLAYERNAME__ has left the server and would like you to follow. Do you accept? \nPress yes to leave the server\nPress no to leave the group."
+
+		LOCTEXT AskLeaveServer "Would you like to ask the other groupmembers to leave the server?\nPress yes to ask them\nPress no to leave the group."
+
+		LOCTEXT InfoCannotCreateServer "You can not create a server when you are in a group."
+
+		LOCTEXT InfoGangDivided "Some groupmembers are still in the previous server. Please wait until they have  left the server or the group."
+
+		LOCTEXT GettingGangServer "Your groupmember __PLAYERNAME__ found a server."
+
+		LOCTEXT DoGangJoin "Follow groupmember __PLAYERNAME__ in __SECONDS__.."
+
+		LOCTEXT NotificationDetails Answer...
+
+		LOCTEXT GroupChatroom "Group chatroom"
+
+		LOCTEXT cannotJoinPreOrder "I don't have the pre-order map so I have left the group"
+
+		LOCTEXT NotSupportedForGroups "Server queuing is not supported for groups."
+
+	}
+
+	TextType myPatchText
+	{
+		LOCTEXT QueryDownloadPatch "An updated version of World In Conflict is required to play online. Do you want to download it now?"
+
+		LOCTEXT downloadStatus "Time left: __HOUR__h __MIN__m __SEC__s. (__KBSEC__ Kb/s)"
+
+		LOCTEXT downloadFailed "Download failed."
+
+		LOCTEXT downloadComplete "Download complete"
+
+		LOCTEXT downloadStarting "Initializing download"
+
+	}
+
+	TextType myContextMenuStrings
+	{
+		LOCTEXT SendIm "Send instant message"
+
+		LOCTEXT InviteToGang "Invite to group"
+
+		LOCTEXT GotoProfile "View profile"
+
+		LOCTEXT GotoClan "View clan"
+
+		LOCTEXT InviteToClan "Invite to my clan"
+
+		LOCTEXT AddFriend "Add friend"
+
+		LOCTEXT RemoveFriend "Remove friend"
+
+		LOCTEXT JoinSameServer "Join same server"
+
+		LOCTEXT InviteToServer "Invite to server"
+
+		LOCTEXT ChallengeClanMatch "Challenge to clan-match"
+
+		LOCTEXT InviteToClanMatch "Invite to join clan match"
+
+		LOCTEXT Report "abuse <empty>"
+
+		LOCTEXT ReportAbuse "Report abuse"
+
+		LOCTEXT Ignore Ignore
+
+		LOCTEXT UnIgnore Unignore
+
+		LOCTEXT RemoveAllByProfile "Remove all posts by this player"
+
+	}
+
+	TextType myClanStats
+	{
+		LOCTEXT lastMatchPlayed "Last match played"
+
+		LOCTEXT matchesPlayed "Matches played"
+
+		LOCTEXT matchesWon "Matches won"
+
+		LOCTEXT matchesLost "Matches lost"
+
+		LOCTEXT currentLadderPosition "Current leaderboard position"
+
+		LOCTEXT bestWinningStreak "Best winning streak"
+
+		LOCTEXT currentWinningStreak "Current winning streak"
+
+		LOCTEXT bestLadderPosition "Best leaderboard position"
+
+		LOCTEXT tournamentsPlayed "Tournaments played"
+
+		LOCTEXT tournamentsWon "Tournaments won"
+
+		LOCTEXT avgMatchLength "Average match length"
+
+		LOCTEXT dominationMatchesWon "Domination matches won"
+
+		LOCTEXT dominationMatchesLost "Domination matches lost"
+
+		LOCTEXT dominationMatchesWonByTotalDomination "Matches won by Total Domination"
+
+		LOCTEXT assaultMatchesWon "Assault matches won"
+
+		LOCTEXT assaultMatchesLost "Assault matches lost"
+
+		LOCTEXT assaultMatchesPerfectsDefends "Perfect Defenses in Assault matches"
+
+		LOCTEXT towMatchesWon "Tug of War matches won"
+
+		LOCTEXT towMatchesLost "Tug of War matches lost"
+
+		LOCTEXT towMatchesPerfectPushes "Perfect Pushes in Tug of War match"
+
+		LOCTEXT totalScore "Total score"
+
+		LOCTEXT avgScore "Average score"
+
+		LOCTEXT highestScoreInAMatch "Highest score in a match"
+
+		LOCTEXT scoreByDamagingEnemies "Score from damaging enemy units"
+
+		LOCTEXT scoreByRepairing "Score from repairing"
+
+		LOCTEXT scoreByTransporting "Score from transporting"
+
+		LOCTEXT scoreByTacticalAid "Score from Tactical Aid"
+
+		LOCTEXT scoreByFortifying "Score from fortifying"
+
+		LOCTEXT scoreByInfantry "Score as Infantry"
+
+		LOCTEXT scoreByAir "Score as Air"
+
+		LOCTEXT scoreByArmor "Score as Armor"
+
+		LOCTEXT scoreBySupport "Score as Support"
+
+		LOCTEXT highestScoreAsInfantry "Highest score as Infantry"
+
+		LOCTEXT highestScoreAsAir "Highest score as Air"
+
+		LOCTEXT highestScoreAsArmor "Highest score as Armor"
+
+		LOCTEXT highestScoreAsSupport "Highest score as Support"
+
+		LOCTEXT avgNumberOfUnitsKilledInAMatch "Average number of units killed"
+
+		LOCTEXT avgNumberOfUnitsLostInAMatch "Average number of units lost"
+
+		LOCTEXT numberOfNukesDeployed "Number of Tactical Nukes deployed"
+
+		LOCTEXT numberOfTacticalAidCriticalHits "Number of Tactical Aid critical hits"
+
+		LOCTEXT timePlayedAsUSA "Time playing as USA"
+
+		LOCTEXT timePlayedAsUSSR "Time playing as USSR"
+
+		LOCTEXT timePlayedAsNATO "Time playing as NATO"
+
+	}
+
+	TextType myTournaments
+	{
+		LOCTEXT gt_domination Domination
+
+		LOCTEXT gt_assault Assault
+
+		LOCTEXT gt_koth "King of the hill"
+
+		LOCTEXT gt_varied Varied
+
+		LOCTEXT st_completed Completed
+
+		LOCTEXT st_scheduled Scheduled
+
+		LOCTEXT st_ongoing Ongoing
+
+		LOCTEXT st_applied Applied
+
+		LOCTEXT st_joined Joined
+
+		LOCTEXT st_invited Invited
+
+		LOCTEXT st_rejected Full
+
+		LOCTEXT txt_TournamentWinner "TOURNAMENT WINNER"
+
+		LOCTEXT txt_FinalRound "FINAL ROUND"
+
+		LOCTEXT txt_r1 "ROUND 1"
+
+		LOCTEXT txt_r2 "ROUND 2"
+
+		LOCTEXT txt_r3 "ROUND 3"
+
+		LOCTEXT txt_r4 "ROUND 4"
+
+		LOCTEXT txt_Winner (WINNER)
+
+		LOCTEXT txt_Loser (LOSER)
+
+		LOCTEXT txt_Bye (BYE)
+
+		LOCTEXT txt_vs vs.
+
+		LOCTEXT DefaultTeamName "__PLAYERNAME__'s team"
+
+		LOCTEXT modal_Applying "Applying to join tournament"
+
+		LOCTEXT modal_Leaving "Leaving tournament"
+
+		LOCTEXT modal_Retrieving "Retrieving full tournament information"
+
+		LOCTEXT status_Applied_OK "You have now applied to the tournament"
+
+		LOCTEXT status_Applied_DupName "Application failed. The team name is taken in this tournament. Please choose another."
+
+		LOCTEXT status_Applied_Full "Application failed. The tournament is full."
+
+		LOCTEXT status_Applied_Noright "Application failed. Insufficient rights."
+
+		LOCTEXT status_Applied_General "Application failed - general error."
+
+		LOCTEXT modal_StartMatch "Finding tournament match server..."
+
+		LOCTEXT status_Left "You have left the tournament. Any scheduled opponents will receive a bye and automatically advance one step."
+
+		LOCTEXT status_NoServer "No tournamentserver found. Please try again soon!"
+
+		LOCTEXT info_WasAccepted "Your request to participate in tournament __TOURNAMENTNAME__ was accepted."
+
+		LOCTEXT info_WasRejected "The tournament __TOURNAMENTNAME__ is full so your application was rejected."
+
+		LOCTEXT warn_MatchImminent "A tournament match is imminent. Please go to the tournament screen for more information."
+
+		LOCTEXT info_MatchMissed "You missed the match start for tournament __TOURNAMENTNAME__."
+
+		LOCTEXT confirmApply "Are you sure you want to signup for the tournament on behalf of your clan?"
+
+		LOCTEXT noprivileges "Only clan leaders can apply for tournaments. If you're not in a clan, please create one on the home screen."
+
+	}
+
+	TextType myContentStrings
+	{
+		LOCTEXT AskMapDownload "The server is using a map that you don't have, which means you cannot play on this server. Do you want Massgate to search for the map online?"
+
+		LOCTEXT MapNotFound "The map was not found"
+
+		LOCTEXT NotImplemented "Not implemented"
+
+		LOCTEXT myMapDLPending pending
+
+		LOCTEXT myMapDLSkipped skipped
+
+		LOCTEXT myMapDLWaiting waiting
+
+		LOCTEXT myMapDLPaused paused
+
+		LOCTEXT myMapDLCompleted completed
+
+		LOCTEXT myMapDLFailed failed
+
+		LOCTEXT myMapAvailable "Massgate has new maps available, would you like to download them?"
+
+		LOCTEXT myMapDownloading "Download started"
+
+		LOCTEXT myMapFinished "Download __REPLACE__ finished"
+
+		LOCTEXT NoMap "The server is using a map that you don't have, so you can't join the server."
+
+		LOCTEXT MissingMapDialogHeader "MISSING MAP"
+
+		LOCTEXT MissingMapDialogBody "The server you are trying to join have some maps (__REPLACE__) that you don't have. Press FORUMS to look for the map on-line. Press JOIN to join the server, you will get kicked from the server if the missing map is played. Press CANCEL to cancel."
+
+		LOCTEXT MissingModDialogHeader "MISSING MOD"
+
+		LOCTEXT MissingModDialogBody "The server you are trying to join is using a mod you don't have. Do you want to look for it online? Click YES to proceed to our forums, click NO to cancel."
+
+	}
+
+	TextType myClanChallengeStrings
+	{
+		LOCTEXT WaitingForServer "Waiting for server"
+
+		LOCTEXT ServerUnavailable "No available Clan Match Server was found. Please try again later."
+
+		LOCTEXT WaitingForPlayer "Challenge sent. Waiting for opponent."
+
+		LOCTEXT AcceptChallenge Accept
+
+		LOCTEXT DeclineChallenge Decline
+
+		LOCTEXT SendChallenge Send
+
+		LOCTEXT CancelChallenge Cancel
+
+		LOCTEXT UnknownMap "Unknown Map"
+
+		LOCTEXT Connecting "Connecting to server."
+
+		LOCTEXT InviteeNotOfficer "Other player is not clan officer and cannot accept challenges"
+
+		LOCTEXT InviterNotOfficer "You are not allowed to challenge other clans, since you are not an officer in your clan"
+
+		LOCTEXT OpponentDeclined "Opponent clan declined your challenge"
+
+		LOCTEXT LobbyAcceptedPleaseWait "Opponent clan has accepted you challenge, please wait. "
+
+		LOCTEXT wentOffline "The person you are challenging went off-line."
+
+		LOCTEXT inviteString "__PLAYERNAME__ would like you to join a clan match against __CLANNAME__"
+
+		LOCTEXT details Details...
+
+		LOCTEXT challengeDetailsStartedthis "__PLAYERNAME__ has challenged the members of __CLANNAME__. Will you join the match?"
+
+		LOCTEXT challengeDetailsJoin "The __CLANNAME__ is challenging your clan and __PLAYERNAME__ has requested your assistance. Will you join the match?"
+
+	}
+
+	TextType myQuestionDialog
+	{
+		LOCTEXT buttonOk OK
+
+		LOCTEXT buttonCancel CANCEL
+
+		LOCTEXT buttonYes YES
+
+		LOCTEXT buttonNo NO
+
+		LOCTEXT buttonAccept ACCEPT
+
+		LOCTEXT buttonDecline DECLINE
+
+		LOCTEXT buttonSave SAVE
+
+		LOCTEXT buttonPreorder "PRE-ORDER NOW"
+
+		LOCTEXT buttonLater LATER
+
+		LOCTEXT buttonInstall INSTALL
+
+		LOCTEXT buttonJoin JOIN
+
+		LOCTEXT buttonForums FORUMS
+
+	}
+
+	TextType AccessCodes
+	{
+		LOCTEXT Activating "Activating code..."
+
+		LOCTEXT Invalid "The code is invalid. Please try again."
+
+		LOCTEXT Error "There was an error activaing the code. Please try again later. Code NOT activated."
+
+		LOCTEXT AuthFailure "No account matches that email and password. Code NOT activated."
+
+		LOCTEXT Presell "Your access code has been accepted. The pre-order benefits have been activated!"
+
+		LOCTEXT Guest "Thank you for purchasing World in Conflict Multiplayer. Your CD-Key has been unlocked."
+
+		LOCTEXT cdkeyWasNotTimebombed "You can not upgrade this CD-Key. It already has unlimited online access. Please use this access code with a different CD-Key."
+
+		LOCTEXT timebombedAlreadyUpgraded "This CD-Key has already been upgraded. Please use this access code with a different CD-Key."
+
+	}
+
+	TextType Options
+	{
+		LOCTEXT download1 Disabled
+
+		LOCTEXT download2 "Not while playing"
+
+		LOCTEXT download3 Always
+
+		LOCTEXT internet1 ADSL
+
+		LOCTEXT internet2 Cable
+
+		LOCTEXT internet3 Ethernet
+
+		LOCTEXT likeMap (enabled)
+
+		LOCTEXT dislikeMap (disabled)
+
+		LOCTEXT rankBalanceAny Any
+
+		LOCTEXT rankBalanceYes Yes
+
+		LOCTEXT rankBalanceNo No
+
+	}
+
+	TextType MatchLobby
+	{
+		LOCTEXT invitePending (invited)
+
+		LOCTEXT MaximizeText "Back to match lobby"
+
+		LOCTEXT declinedMatchInvitation "__PLAYERNAME__ declined your match invitation"
+
+		LOCTEXT unknownMap unknown
+
+		LOCTEXT maxPlayers "%u vs. %u"
+
+		LOCTEXT clanType Clan
+
+		LOCTEXT tournamentType Tournament
+
+		LOCTEXT playerEntersRoom "%s enters lobby"
+
+		LOCTEXT bossLeft "The match initiator left the match lobby, match cancelled"
+
+		LOCTEXT playerLeftRoom "%s left the lobby"
+
+		LOCTEXT preparingLobby "Preparing match lobby"
+
+		LOCTEXT declinedMissingMap "__PLAYERNAME__ doesn't have the map for this clan match"
+
+		LOCTEXT declinedMissingPreOrderMap "__PLAYERNAME__ hasn't pre-ordered the game and does not have the map to participate in this clan match"
+
+		LOCTEXT declinedServerError "Something went wrong when inviting __PLAYERNAME__"
+
+		LOCTEXT declinedPlayerNotAvailable "__PLAYERNAME__ is either offline or playing and cannot be invited to this clanmatch"
+
+		LOCTEXT startingServer "<#ff0>Starting clan match server, please wait...</>"
+
+	}
+
+	TextType myClanMatchLogStrings
+	{
+		LOCTEXT gameModeDomination DOMINATION
+
+		LOCTEXT gameModeAssault ASSAULT
+
+		LOCTEXT gameModeTugOfWar "TUG OF WAR"
+
+		LOCTEXT gameModeUnknown UNKNOWN
+
+		LOCTEXT datePlayed "Date Played: __REPLACE__"
+
+		LOCTEXT map "Map: __REPLACE__"
+
+		LOCTEXT gameMode "Game Mode: __REPLACE__"
+
+		LOCTEXT gameTime "Game Time: __REPLACE__"
+
+		LOCTEXT winner "Winner: __REPLACE__"
+
+		LOCTEXT loser "Loser: __REPLACE__"
+
+		LOCTEXT clanDeleted "DELETED CLAN"
+
+		LOCTEXT score "__CLAN__ Score: __REPLACE__"
+
+		LOCTEXT numCriticalHits "__CLAN__ Number of Critical TA Hits: __REPLACE__"
+
+		LOCTEXT domination "__CLAN__ Domination: __REPLACE__"
+
+		LOCTEXT assaultiness "__CLAN__ Captured __NUMCOMMANDPOINTS__ Command Points in __MINUTES__:__SECONDS__"
+
+		LOCTEXT tugOfWariness "__CLAN__ Captured __NUMLINES__ lines and __NUMPERIMITERPOINTS__ Perimeter Points"
+
+	}
+
+}
+

@@ -1,0 +1,34 @@
+INCLUDE juice/AgentClassID.fruit
+
+TYPE NodeType
+{
+	BRANCHING_NODE
+	MANAGING_NODE
+}
+
+TYPE ManagerType
+{
+	AGENT_MANAGER
+	DROPSHIP_MANAGER
+	SCOUT_MANAGER
+	VP_MANAGER
+	OFFENSIVE_SUPPORTWEAPON_MANAGER	
+	RADAR_SUPPORTWEAPON_MANAGER	
+	DROPPOD_SUPPORTWEAPON_MANAGER	
+}
+
+SCRIPTCLASS DecisionTreeNodeList
+{
+	DecisionTreeNode
+}
+
+CLASS DecisionTreeNode
+{
+	NodeType myNodeType
+	TEXT myNodeName
+	DECIMAL myWeight
+	ManagerType myManager
+	TEXT myManagedAgentType
+	NUMBER myLevel
+	DecisionTreeNodeList myChilds
+}

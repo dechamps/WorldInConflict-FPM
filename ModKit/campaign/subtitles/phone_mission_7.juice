@@ -1,0 +1,125 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText <empty>
+		myStartTime 2.9
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText <empty>
+		myStartTime 4.5
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText <empty>
+		myStartTime 9.2
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText <empty>
+		myStartTime 12.2
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText <empty>
+		myStartTime 16.5
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText <empty>
+		myStartTime 20.1
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText <empty>
+		myStartTime 22.1
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText <empty>
+		myStartTime 23.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText <empty>
+		myStartTime 29.8
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText <empty>
+		myStartTime 31.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText <empty>
+		myStartTime 37.2
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText <empty>
+		myStartTime 41.4
+		myVisibleTime 5.4
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText <empty>
+		myStartTime 47.3
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText <empty>
+		myStartTime 49.5
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText <empty>
+		myStartTime 55.4
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText <empty>
+		myStartTime 57.3
+		myVisibleTime 4.1
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText <empty>
+		myStartTime 62.0
+		myVisibleTime 1.0
+	}
+
+}
+

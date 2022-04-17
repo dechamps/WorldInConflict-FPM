@@ -1,0 +1,202 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "Harriet Bannon."
+		myStartTime 6.5
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Hey mom. It's Mark."
+		myStartTime 7.8
+		myVisibleTime 1.4
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Markie! Are you okay? Where are you?"
+		myStartTime 9.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Look, I know I haven't called in a while."
+		myStartTime 12.0
+		myVisibleTime 2.5
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "I'm sorry. We've been kind of isolated."
+		myStartTime 14.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "But, where are you?"
+		myStartTime 17.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Not in France."
+		myStartTime 18.6
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "Is Earl around?"
+		myStartTime 20.8
+		myVisibleTime 1.4
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "He's out hunting rabbits with Frank and Emmet.\nListen, how are you, Mark? Really? Your letters, well..."
+		myStartTime 22.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "I wish I could come home, mom. I thought I'd do some good here, you know... "
+		myStartTime 28.8
+		myVisibleTime 3.8
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "Something dad would've been proud of. But it's all just kind of screwed up."
+		myStartTime 33.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "Listen honey, I'm proud of you."
+		myStartTime 37.3
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "And I'm sure your father would've been too."
+		myStartTime 39.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Yeah, well you shouldn't be."
+		myStartTime 41.8
+		myVisibleTime 1.8
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "I've done wrong..."
+		myStartTime 44.0
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "some... things..."
+		myStartTime 45.8
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "If you did, you didn't have any choice...."
+		myStartTime 47.7
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "I don't know, mom...."
+		myStartTime 49.8
+		myVisibleTime 1.4
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "Hey! Eh..."
+		myStartTime 52.1
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub20
+	{
+		myText "Earl always drinks when he hunts. He hasn't..."
+		myStartTime 54.5
+		myVisibleTime 2.8
+	}
+
+	MovieSubtitle Sub21
+	{
+		myText "A little."
+		myStartTime 57.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub22
+	{
+		myText "A little.\nGod damn it mom. You'd said you'd leave him if he did!"
+		myStartTime 58.3
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub23
+	{
+		myText "Mark...it's not easy...Where would I go...?"
+		myStartTime 60.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub24
+	{
+		myText "Anywhere he's not. That son of a..."
+		myStartTime 63.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub25
+	{
+		myText "He's my husband, Mark."
+		myStartTime 66.2
+		myVisibleTime 1.4
+	}
+
+	MovieSubtitle Sub26
+	{
+		myText "Okay mom, whatever."
+		myStartTime 68.0
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub27
+	{
+		myText "Look... I got to go. Gonna kill some more commies and make Earl proud. Take care."
+		myStartTime 70.3
+		myVisibleTime 5.3
+	}
+
+	MovieSubtitle Sub28
+	{
+		myText Mark!
+		myStartTime 76.2
+		myVisibleTime 2.0
+	}
+
+}
+

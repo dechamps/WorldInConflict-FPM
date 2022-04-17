@@ -1,0 +1,112 @@
+INCLUDE juice/vector3.fruit
+INCLUDE juice/team/team.fruit
+TYPE Role
+{
+	ARMY_ROLE
+	ENGINEER_ROLE
+	ARMOR_ROLE
+	AIR_ROLE
+	ROLE_5
+	ROLE_6
+	ROLE_7
+	ROLE_8
+	ROLE_9
+	ROLE_10
+	SINGLEPLAYER_ROLE
+	SINGLEPLAYER_ROLE_USSR
+	FPM_ROLE
+}
+
+TYPE Rebate
+{
+	REBATE_UNIQUE
+	REBATE_REBATED
+	REBATE_NORMAL
+	REBATE_PREMIUM
+	REBATE_LIMITED
+}
+
+SCRIPTCLASS AIRoleDefinitionList
+{
+	FILE
+}
+CLASS AIRoleTeamDefinitions
+{
+	Teams myTeam
+	AIRoleDefinitionList myList
+}
+
+SCRIPTCLASS AIRoleDefinitions
+{
+	AIRoleTeamDefinitions
+}
+
+
+TYPE AIRoleType
+{
+	AIROLE_ARMOR
+	AIROLE_INFANTRY
+	AIROLE_SUPPORT
+	AIROLE_AIR
+}
+
+CLASS RoleDefinition
+{
+	Role myRole
+	LOCTEXT myUIName
+	TEXT myUIIcon
+	TEXT myUIChangeRoleIcon
+	TEXT myUISelectRoleIcon
+	FILE myDZIcon
+	FILE myMarkerModelFile
+	LOCTEXT myDescription
+	TEXT myToolTipRef
+	TEXT myToolTipRefActive
+	TEXT myToolTipRefFPM
+	AIRoleDefinitions myAIRoleDefinitions
+	AIRoleType myAIRoleType
+}
+
+CLASS AIRoleDescription
+{
+	LOCTEXT myUISelectionName
+	LOCTEXT myDescription
+}
+SCRIPTCLASS AIRoleDescriptionList
+{
+	AIRoleDescription
+}
+
+SCRIPTCLASS RoleDefList
+{
+	RoleDefinition
+}
+
+CLASS RoleCost
+{
+	Role myRole
+	NUMBER myPrice
+	Rebate myPriceType
+}
+
+SCRIPTCLASS RoleCostList
+{
+	RoleCost
+}
+
+SCRIPTCLASS RoleBlackList
+{
+	Role
+}
+
+CLASS RebateColor
+{
+    Vector3 myColor
+    LOCTEXT myRoleName
+}
+
+SCRIPTCLASS RebateColorList
+{
+    RebateColor
+}
+

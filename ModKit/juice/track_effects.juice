@@ -1,0 +1,82 @@
+INCLUDE juice/track_effects.fruit
+
+TrackEffects DefaultTracks
+{
+	myTerrainTypes
+	{
+		TerrainType Snow
+		{
+			myMaterial SNOW
+			myBumpIntensity 0.85
+			myDiffuseIntensity 0.50
+			myCrudColor "0.32 0.28 0.25"
+			myCrudBuildup 0.75
+		}
+
+		TerrainType Dirt
+		{
+			myMaterial GROUND_DIRT
+			myBumpIntensity 0.7
+			myDiffuseIntensity 0.16
+			myCrudColor "0.72 0.64 0.49"
+			myCrudBuildup 1
+		}
+
+		TerrainType Rock
+		{
+			myMaterial GROUND_ROCK
+			myBumpIntensity 0.22
+			myDiffuseIntensity 1
+			myCrudColor "0.1 0.1 0.1"
+			myCrudBuildup 0.0
+		}
+
+		TerrainType Default
+		{
+			myMaterial GROUND_DEFAULT
+			myBumpIntensity 0.45
+			myDiffuseIntensity 0.09
+			myCrudColor "0.2 0.2 0.2"
+			myCrudBuildup 1
+		}
+
+		TerrainType Grass
+		{
+			myMaterial GROUND_GRASS
+			myBumpIntensity 0.65
+			myDiffuseIntensity 0.40
+			myCrudColor "0.35 0.28 0.25"
+			myCrudBuildup 1
+		}
+
+		TerrainType Metal
+		{
+			myMaterial METAL
+			myBumpIntensity 0.0
+			myDiffuseIntensity 0.3
+			myCrudColor "0 0 0"
+			myCrudBuildup 0.0
+		}
+
+		TerrainType Concrete
+		{
+			myMaterial CONCRETE
+			myBumpIntensity 0.22
+			myDiffuseIntensity 1
+			myCrudColor "0.1 0.1 0.1"
+			myCrudBuildup 0.0
+		}
+
+		TerrainType Small_Concrete
+		{
+			myMaterial SMALL_CONCRETE
+			myBumpIntensity 0.22
+			myDiffuseIntensity 1
+			myCrudColor "0.1 0.1 0.1"
+			myCrudBuildup 0.0
+		}
+
+	}
+
+}
+

@@ -1,0 +1,105 @@
+INCLUDE juice/defensivefortificationtype.fruit
+
+DefensiveFortificationTypeList myDefensiveFortificationTypeList
+{
+	DefensiveFortificationType fortification_machinegun
+	{
+		mySpawnedAgentTypeTeam0 US_fortification_machinegun
+		mySpawnedAgentTypeTeam1 US_fortification_machinegun
+		mySpawnedAgentTypeTeam2 NATO_fortification_machinegun
+		mySpawnedAgentTypeTeam3 USSR_fortification_machinegun
+		mySpawnedAgentTypeTeam4 <empty>
+		mySpawnedAgentTypeTeam5 <empty>
+		mySpawnedAgentTypeTeam6 <empty>
+		mySpawnedAgentTypeTeam7 <empty>
+		mySpawnedAgentTypeTeam8 <empty>
+		myTimerModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 10.0
+			myFadeOutTime 5.0
+		}
+
+		myDropperModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 0.0
+			myFadeOutTime 0.0
+		}
+
+		myLevel 1
+		myInitialDelay 60
+		myDropDelay 0.1
+		myFortificationScore 10
+	}
+
+	DefensiveFortificationType fortification_antitank
+	{
+		mySpawnedAgentTypeTeam0 US_fortification_antitank
+		mySpawnedAgentTypeTeam1 US_fortification_antitank
+		mySpawnedAgentTypeTeam2 NATO_fortification_antitank
+		mySpawnedAgentTypeTeam3 USSR_fortification_antitank
+		mySpawnedAgentTypeTeam4 <empty>
+		mySpawnedAgentTypeTeam5 <empty>
+		mySpawnedAgentTypeTeam6 <empty>
+		mySpawnedAgentTypeTeam7 <empty>
+		mySpawnedAgentTypeTeam8 <empty>
+		myTimerModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 10.0
+			myFadeOutTime 5.0
+		}
+
+		myDropperModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 0.0
+			myFadeOutTime 0.0
+		}
+
+		myLevel 2
+		myInitialDelay 60.0
+		myDropDelay 0.1
+		myFortificationScore 15
+	}
+
+	DefensiveFortificationType fortification_antiair
+	{
+		mySpawnedAgentTypeTeam0 US_fortification_antiair
+		mySpawnedAgentTypeTeam1 US_fortification_antiair
+		mySpawnedAgentTypeTeam2 NATO_fortification_antiair
+		mySpawnedAgentTypeTeam3 USSR_fortification_antiair
+		mySpawnedAgentTypeTeam4 <empty>
+		mySpawnedAgentTypeTeam5 <empty>
+		mySpawnedAgentTypeTeam6 <empty>
+		mySpawnedAgentTypeTeam7 <empty>
+		mySpawnedAgentTypeTeam8 <empty>
+		myTimerModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 10.0
+			myFadeOutTime 5.0
+		}
+
+		myDropperModel
+		{
+			myModelFile <empty>
+			mySplineFile <empty>
+			myTimeToLive 0.0
+			myFadeOutTime 0.0
+		}
+
+		myLevel 3
+		myInitialDelay 60.0
+		myDropDelay 0.1
+		myFortificationScore 15
+	}
+
+}
+

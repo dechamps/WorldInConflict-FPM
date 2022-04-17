@@ -1,0 +1,3037 @@
+INCLUDE sound/ms_sound.fruit
+
+MS_SoundGroup mySoundTypes
+{
+	MS_Sound Water_river_medium_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_river_medium_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.525000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 35.000000
+						myVolume 0.195000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 110.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_river_small_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_river_small_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.555000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 35.000000
+						myVolume 0.245000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 128.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_river_small_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_river_small_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.520000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 36.000000
+						myVolume 0.190000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 121.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_grass_light_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_grass_light_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 220.000000
+						myVolume 0.380000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 599.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_grass_light_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_grass_light_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.310000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 252.000000
+						myVolume 0.345000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 581.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_light_3
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_light_3.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.365000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 212.000000
+						myVolume 0.320000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_light_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_light_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.270000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 209.000000
+						myVolume 0.285000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_light_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_light_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.330000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 222.000000
+						myVolume 0.280000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_1aL
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1al.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_1aR
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1ar.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_1bl
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1bl.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_1br
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1br.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_1ar
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_1ar.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_1al
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_1al.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Dark_L
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_01l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Dark_R
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_01r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_light_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_light_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 245.000000
+						myVolume 0.325000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 610.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_light_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_light_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.360000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 254.000000
+						myVolume 0.300000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 584.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_medium_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_medium_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.370000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 256.000000
+						myVolume 0.305000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 593.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_medium_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_medium_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.350000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 252.000000
+						myVolume 0.295000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 577.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound electro_machine_150
+	{
+		myNumChannels 4
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/electro_machine_02.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.960000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 62.000000
+						myVolume 0.305000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 152.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 0
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_1l
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_1l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_1r
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_1r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_2l
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_2l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_2r
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_2r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_3l
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_3l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_light_3r
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_light_3r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Smalltown_Std_01a
+	{
+		myNumChannels 2
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/smalltown_std_01a.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.235000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 265.000000
+						myVolume 0.335000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 903.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Smalltown_Std_01b
+	{
+		myNumChannels 2
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/smalltown_std_01b.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.260000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 262.000000
+						myVolume 0.340000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 915.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound War_Reverse_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/war_reverse_01a.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.405000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 447.000000
+						myVolume 0.915000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 966.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound War_Reverse_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/war_reverse_01b.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.400000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 371.000000
+						myVolume 0.770000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 950.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Forrest_Birds_Large_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/forrest_birds_large_01a.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.420000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 410.000000
+						myVolume 0.430000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 0
+			}
+
+		}
+
+	}
+
+	MS_Sound Forrest_Birds_Large_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/forrest_birds_large_01b.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.495000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 366.000000
+						myVolume 0.420000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 967.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 0
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Beach_Large_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_large_01a.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 892.000000
+						myVolume 0.555000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 988.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Beach_Large_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_large_01b.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 889.000000
+						myVolume 0.590000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 984.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Beach_Small_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_small_01a.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 1.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 116.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 594.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Beach_Small_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_small_01b.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 1.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 116.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 594.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Rocky_Small_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_rocky_01a.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 1.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 116.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 594.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Waves_Rocky_Small_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/waves_beach_rocky_01b.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 1.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 116.000000
+						myVolume 0.390000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 594.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound installation_large_350
+	{
+		myNumChannels 4
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/installation_large_01.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 1.000000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 88.000000
+						myVolume 0.300000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 194.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 0
+			}
+
+			MS_SoundSpec MS_SoundSpec(1)
+			{
+				myFileName sound/ingame/ambient/installation_large_01_2.wav
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.260000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 97.000000
+						myVolume 0.475000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 357.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 0
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_light_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_heavy_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.590000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 164.000000
+						myVolume 0.410000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_light_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_heavy_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.590000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 164.000000
+						myVolume 0.410000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Crickets_light
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/crickets_light.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.225000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 168.000000
+						myVolume 0.250000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 459.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Crickets_medium
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/crickets_medium.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.235000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 177.000000
+						myVolume 0.240000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 486.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_river_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_river_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.525000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 51.000000
+						myVolume 0.160000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 195.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_2l
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_2l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_2r
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_2r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_heavy_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_heavy_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.385000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 164.000000
+						myVolume 0.410000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 579.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_medium_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_medium_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.280000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 203.000000
+						myVolume 0.270000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 432.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_medium_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_medium_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.330000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 175.000000
+						myVolume 0.310000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 505.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Ocean_L
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_03l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Ocean_R
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_03r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_desert_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_desert_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.200000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 223.000000
+						myVolume 0.215000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 512.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_desert_light
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_desert_light.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.345000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 278.000000
+						myVolume 0.385000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 780.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_desert_medium
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_desert_medium.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.300000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 287.000000
+						myVolume 0.345000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 568.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Snow_L
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_04l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_Snow_R
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_04r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Crickets_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/crickets_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.160000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 132.000000
+						myVolume 0.155000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 407.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_winter_heavy_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_winter_heavy_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.320000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 219.000000
+						myVolume 0.290000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 524.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_heavy_1
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_heavy_1.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.280000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 214.000000
+						myVolume 0.315000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 521.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Wind_trees_heavy_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/wind_trees_heavy_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.275000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 235.000000
+						myVolume 0.250000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 556.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_ocean_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_ocean_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.470000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 229.000000
+						myVolume 0.490000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 491.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_ocean_light
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_ocean_light.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.425000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 210.000000
+						myVolume 0.425000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 519.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_ocean_rocks_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_ocean_rocks_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.905000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 65.000000
+						myVolume 0.555000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 379.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Ocean_Reverse_01a
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/ocean_reverse_01a.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.340000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 239.000000
+						myVolume 0.340000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 836.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Ocean_Reverse_01b
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ingame/ambient/ocean_reverse_01b.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.375000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 294.000000
+						myVolume 0.375000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 825.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_ocean_heavy
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_ocean_heavy.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 230.000000
+						myVolume 0.640000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 514.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_ocean_medium
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_ocean_medium.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.770000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 268.000000
+						myVolume 0.555000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 533.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_ocean_light
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_ocean_light.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 306.000000
+						myVolume 0.545000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 557.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_river_medium_2
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/water_river_medium_2.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.560000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 36.000000
+						myVolume 0.225000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 145.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_2al
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1bl.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_3al
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_3al.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_City_R
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_02r.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound 1.3k_City_L
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/1.3k_02l.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.680000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 314.000000
+						myVolume 0.510000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 450.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_heavy_2ar
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_heavy_1br.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.755000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 408.000000
+						myVolume 0.745000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_1bl
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_1bl.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Amb_war_medium_1br
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/amb_war_medium_1br.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.870000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 560.000000
+						myVolume 0.675000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 978.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Water_boats
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/boats.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.480000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 62.000000
+						myVolume 0.145000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 153.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+	MS_Sound Birds_ocean_light_short
+	{
+		myNumChannels 1
+		mySpecs
+		{
+			MS_SoundSpec MS_SoundSpec(0)
+			{
+				myFileName sound/ambience/positional/birds_ocean_light.mp3
+				myEnvelope
+				{
+					MS_DistanceVolume MS_DistanceVolume(0)
+					{
+						myDistance 0.000000
+						myVolume 0.460000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(1)
+					{
+						myDistance 127.000000
+						myVolume 0.380000
+					}
+
+					MS_DistanceVolume MS_DistanceVolume(2)
+					{
+						myDistance 194.000000
+						myVolume 0.000000
+					}
+
+				}
+
+				myBaseFrequency 0
+				mySoundBudgetGroup 2
+			}
+
+		}
+
+	}
+
+}
+

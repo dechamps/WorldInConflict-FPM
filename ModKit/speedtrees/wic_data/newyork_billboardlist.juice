@@ -1,0 +1,254 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/newYork/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/newYork/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/newYork/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/newYork/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/AmericanBoxwood_RT3.spt
+	{
+		myFilename speedtrees/newYork/AmericanBoxwood_RT3.spt
+		myBBSideTexture speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/AmericanBoxwood_RT_Row.spt
+	{
+		myFilename speedtrees/newYork/AmericanBoxwood_RT_Row.spt
+		myBBSideTexture speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/AmericanBoxwood_RT_Row_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/BurfordHolly_RT.spt
+	{
+		myFilename speedtrees/newYork/BurfordHolly_RT.spt
+		myBBSideTexture speedtrees/newYork/billboards/BurfordHolly_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/BurfordHolly_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/BurfordHolly_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/BurfordHolly_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/BurfordHolly_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/BurfordHolly_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/BurfordHolly_RT2.spt
+	{
+		myFilename speedtrees/newYork/BurfordHolly_RT2.spt
+		myBBSideTexture speedtrees/newYork/billboards/BurfordHolly_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/BurfordHolly_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/BurfordHolly_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/BurfordHolly_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/BurfordHolly_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/BurfordHolly_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ColumnarEnglishOak_RT_Winter.spt
+	{
+		myFilename speedtrees/newYork/ColumnarEnglishOak_RT_Winter.spt
+		myBBSideTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ColumnarEnglishOak_RT_Winter2.spt
+	{
+		myFilename speedtrees/newYork/ColumnarEnglishOak_RT_Winter2.spt
+		myBBSideTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ColumnarEnglishOak_RT_Winter3.spt
+	{
+		myFilename speedtrees/newYork/ColumnarEnglishOak_RT_Winter3.spt
+		myBBSideTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ColumnarEnglishOak_RT_Winter4.spt
+	{
+		myFilename speedtrees/newYork/ColumnarEnglishOak_RT_Winter4.spt
+		myBBSideTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ColumnarEnglishOak_RT_Winter4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/CrabApple_RT_Winter.spt
+	{
+		myFilename speedtrees/newYork/CrabApple_RT_Winter.spt
+		myBBSideTexture speedtrees/newYork/billboards/CrabApple_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/CrabApple_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/CrabApple_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/CrabApple_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/CrabApple_RT_Winter2.spt
+	{
+		myFilename speedtrees/newYork/CrabApple_RT_Winter2.spt
+		myBBSideTexture speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/CrabApple_RT_Winter3.spt
+	{
+		myFilename speedtrees/newYork/CrabApple_RT_Winter3.spt
+		myBBSideTexture speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/CrabApple_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/FraserFir_RT_Snow.spt
+	{
+		myFilename speedtrees/newYork/FraserFir_RT_Snow.spt
+		myBBSideTexture speedtrees/newYork/billboards/FraserFir_RT_Snow_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/FraserFir_RT_Snow_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/FraserFir_RT_Snow_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/FraserFir_RT_Snow_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/FraserFir_RT_Snow2.spt
+	{
+		myFilename speedtrees/newYork/FraserFir_RT_Snow2.spt
+		myBBSideTexture speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/FraserFir_RT_Snow3.spt
+	{
+		myFilename speedtrees/newYork/FraserFir_RT_Snow3.spt
+		myBBSideTexture speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/FraserFir_RT_Snow3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/GrayBirch_RT_Winter.spt
+	{
+		myFilename speedtrees/newYork/GrayBirch_RT_Winter.spt
+		myBBSideTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/GrayBirch_RT_Winter2.spt
+	{
+		myFilename speedtrees/newYork/GrayBirch_RT_Winter2.spt
+		myBBSideTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/GrayBirch_RT_Winter3.spt
+	{
+		myFilename speedtrees/newYork/GrayBirch_RT_Winter3.spt
+		myBBSideTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/GrayBirch_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ManchurianAngelicaTree_RT.spt
+	{
+		myFilename speedtrees/newYork/ManchurianAngelicaTree_RT.spt
+		myBBSideTexture speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ManchurianAngelicaTree_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/ManchurianAngelicaTree_RT2.spt
+	{
+		myFilename speedtrees/newYork/ManchurianAngelicaTree_RT2.spt
+		myBBSideTexture speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/ManchurianAngelicaTree_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/RussianOlive_RT_Winter.spt
+	{
+		myFilename speedtrees/newYork/RussianOlive_RT_Winter.spt
+		myBBSideTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/RussianOlive_RT_Winter2.spt
+	{
+		myFilename speedtrees/newYork/RussianOlive_RT_Winter2.spt
+		myBBSideTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/RussianOlive_RT_Winter3.spt
+	{
+		myFilename speedtrees/newYork/RussianOlive_RT_Winter3.spt
+		myBBSideTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/newYork/RussianOlive_RT_Winter4.spt
+	{
+		myFilename speedtrees/newYork/RussianOlive_RT_Winter4.spt
+		myBBSideTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbside.dds
+		myBBSideTextureMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbtop.dds
+		myBBTopNormalmap speedtrees/newYork/billboards/RussianOlive_RT_Winter4_bbtop_n.dds
+	}
+}

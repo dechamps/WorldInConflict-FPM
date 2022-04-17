@@ -1,0 +1,36 @@
+CLASS WireAttach
+{
+	TEXT myBone
+	NUMBER myExternalFlag
+}
+
+SCRIPTCLASS WireAttachList
+{
+	WireAttach
+}
+
+SCRIPTCLASS WirePointList
+{
+	TEXT
+}
+
+CLASS InternalWire
+{
+	WirePointList myPoints
+	DECIMAL myMass
+	DECIMAL myDivisions
+	DECIMAL myStiffness
+	DECIMAL myElasticLimit
+	NUMBER myMaterial
+}
+
+SCRIPTCLASS InternalWireList
+{
+	InternalWire
+}
+
+CLASS ShowboxWireExport
+{
+	WireAttachList myAttachPoints
+	InternalWireList myInternalWires
+}

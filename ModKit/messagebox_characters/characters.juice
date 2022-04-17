@@ -1,0 +1,60 @@
+INCLUDE messagebox_characters/character.fruit
+
+CharacterList Characters
+{
+	Character IMP_Centurion_Cezarus
+	{
+		myModel messagebox_characters/imp_centurion_cezarus/imp_centurion_cezarus.mrb
+		myModelX 0.0
+		myModelY 0.0
+		myModelZ 0.0
+		myModelHeading 0.0
+		myCameraPitch 0.0
+		myCameraFOV 10
+		myAmbientLight
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+	}
+
+	Character IMP_Commander_Dracus
+	{
+		myModel messagebox_characters/imp_commander_dracus/imp_commander_dracus.mrb
+		myModelX 0.0
+		myModelY 0.0
+		myModelZ 0.0
+		myModelHeading 0.0
+		myCameraPitch 0.0
+		myCameraFOV 10
+		myAmbientLight
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+	}
+
+	Character IMP_Legionaire
+	{
+		myModel messagebox_characters/imp_legionaire/imp_legionaire.mrb
+		myModelX 0.0
+		myModelY 0.0
+		myModelZ 0.0
+		myModelHeading 0.0
+		myCameraPitch 0.0
+		myCameraFOV 10
+		myAmbientLight
+		{
+			myR 0
+			myG 0
+			myB 0
+		}
+
+	}
+
+}
+

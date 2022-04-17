@@ -1,0 +1,181 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "Thompson residence. Martha Thompson speaking."
+		myStartTime 7.1
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Mom?\nMichael is that you?!"
+		myStartTime 10.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Where are you? How are-"
+		myStartTime 11.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Listen mom, we don't have much time. This is my fourth try, we might get cut off at any second."
+		myStartTime 13.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "I thought the phones didn't work since the attack."
+		myStartTime 17.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "They do sometimes, mom... listen, listen... you have to get out of Seattle."
+		myStartTime 19.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "How, Michael?"
+		myStartTime 24.3
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "...foreign soldiers on the streets."
+		myStartTime 27.1
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "There's a curfew after five and they shoot anyone who breaks it! "
+		myStartTime 28.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "They shot at Mrs. Flanagan and all she was doing was-"
+		myStartTime 31.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "Not now mom! You have to get out."
+		myStartTime 34.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "I-I-I don't care how."
+		myStartTime 36.9
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Maybe you could... maybe you could sneak out through the sewers or something!"
+		myStartTime 38.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Good God! Through the sewers?"
+		myStartTime 41.1
+		myVisibleTime 1.9
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "This is my home, Michael..."
+		myStartTime 43.1
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "and I'm not leaving it for those Russian pigs to loot."
+		myStartTime 45.1
+		myVisibleTime 2.5
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "If your father was alive, he'd say the same thing."
+		myStartTime 47.9
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "Mom, the president has ordered that <scrambled>-"
+		myStartTime 50.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "What? Michael?!"
+		myStartTime 53.4
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub20
+	{
+		myText "I can't hear you.\nIf we fail the-"
+		myStartTime 55.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub21
+	{
+		myText "damn it! Just try to get out, mom!"
+		myStartTime 57.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub22
+	{
+		myText "No Michael. You won't fail, whatever it is."
+		myStartTime 59.5
+		myVisibleTime 2.5
+	}
+
+	MovieSubtitle Sub23
+	{
+		myText "And I'm going to stay here, until this thing is over and done with <scrambled>-"
+		myStartTime 62.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub24
+	{
+		myText "Mom?! Mom!"
+		myStartTime 66.0
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub25
+	{
+		myText "Damn it!"
+		myStartTime 68.1
+		myVisibleTime 2.0
+	}
+
+}
+

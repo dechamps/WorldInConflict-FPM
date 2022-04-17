@@ -1,0 +1,66 @@
+INCLUDE juice/color.fruit
+INCLUDE juice/vector2.fruit
+
+CLASS CloudsSystemData
+{
+	NUMBER myDisableFlag
+
+	NUMBER myDistributionType
+	NUMBER myBillboadType
+	NUMBER myCount
+	NUMBER myRandomSeed
+
+	NUMBER myGroupCountBase
+	NUMBER myGroupCountSpread
+	
+	DECIMAL myGroupSpacingBaseRelSize
+	DECIMAL myGroupSpacingSpreadRelSize
+
+	FILE myCloudsMasksFile
+	FILE myCloudsNoiseFile
+	
+	FILE myStandardSurface
+	FILE myFlatSurface
+
+	DECIMAL myBacklightBase
+	DECIMAL myBacklightTopLightScale
+	DECIMAL myBacklightAlphaInvertBase
+	DECIMAL myBacklightAlphaInvertScale
+	DECIMAL myBacklightAlphaScale
+	DECIMAL myBacklightExponent
+	DECIMAL myBacklightSideFactor
+	XColorRGB myBacklightColor
+
+	DECIMAL myTransparency
+	XColorRGB myColorLight
+	XColorRGB myColorDark
+
+	DECIMAL myBottomShade
+	DECIMAL mySideScale
+	DECIMAL myClusterShade
+
+	DECIMAL myFarDist
+	DECIMAL myFarFadeStartRelative
+
+	DECIMAL myYBase
+	DECIMAL myYSpread
+
+	Vector2 mySizeBase
+	DECIMAL mySizeSpread
+
+	DECIMAL myWindSpeedScale
+	
+	DECIMAL mySunOcclusionScale
+	DECIMAL mySunOcclusionExponent
+}
+
+SCRIPTCLASS CloudsSystemDataList
+{
+	CloudsSystemData
+}
+
+CLASS CloudsData
+{
+	CloudsSystemDataList mySystemList
+}
+

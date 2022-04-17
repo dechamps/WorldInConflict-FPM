@@ -1,0 +1,28 @@
+//main directory fruit file for JuiceMaker
+
+CLASS TransformerConfig
+{
+	DECIMAL myZoomStep
+	DECIMAL myPanStep
+}
+
+//BROWSE FILTER
+CLASS BrowseFilter
+{
+	TEXT myTypeName
+	TEXT myMemberName
+	TEXT myExtension
+}
+
+SCRIPTCLASS BrowseFilterSet
+{
+	BrowseFilter
+}
+
+//custom editor configs
+CLASS EXJE_AgentEditor
+{
+	TEXT mySkinFile
+	TEXT mySkin
+	TEXT myBackgroundPrefab
+}

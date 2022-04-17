@@ -1,0 +1,167 @@
+INCLUDE juice/buildingtemplate.fruit
+
+BuildingTemplateList myBuildingTemplates
+{
+	BuildingTemplate BuildingTemplate(0)
+	{
+		myBuildingTemplateType SMALL
+		myHealth 100.0
+		myArmor 100.0
+	}
+
+	BuildingTemplate BuildingTemplate(1)
+	{
+		myBuildingTemplateType MEDIUM
+		myHealth 200.0
+		myArmor 200.0
+	}
+
+	BuildingTemplate BuildingTemplate(2)
+	{
+		myBuildingTemplateType LARGE
+		myHealth 300.0
+		myArmor 300.0
+	}
+
+	BuildingTemplate Prop_Small
+	{
+		myBuildingTemplateType Prop_Small
+		myHealth 50
+		myArmor 25
+	}
+
+	BuildingTemplate Prop_Medium
+	{
+		myBuildingTemplateType Prop_Medium
+		myHealth 200
+		myArmor 50
+	}
+
+	BuildingTemplate Prop_Large
+	{
+		myBuildingTemplateType Prop_Large
+		myHealth 500
+		myArmor 100
+	}
+
+	BuildingTemplate Small_House_Weak
+	{
+		myBuildingTemplateType Small_House_Weak
+		myHealth 3500
+		myArmor 300
+	}
+
+	BuildingTemplate Small_House_Strong
+	{
+		myBuildingTemplateType Small_House_Strong
+		myHealth 3500
+		myArmor 400
+	}
+
+	BuildingTemplate Medium_House_Weak
+	{
+		myBuildingTemplateType Medium_House_Weak
+		myHealth 5000
+		myArmor 300
+	}
+
+	BuildingTemplate Medium_House_Strong
+	{
+		myBuildingTemplateType Medium_House_Strong
+		myHealth 5000
+		myArmor 400
+	}
+
+	BuildingTemplate Large_House_Weak
+	{
+		myBuildingTemplateType Large_House_Weak
+		myHealth 7000
+		myArmor 300
+	}
+
+	BuildingTemplate Large_House_Strong
+	{
+		myBuildingTemplateType Large_House_Strong
+		myHealth 7000
+		myArmor 400
+	}
+
+	BuildingTemplate Big_House_Weak
+	{
+		myBuildingTemplateType Big_House_Weak
+		myHealth 9700
+		myArmor 300
+	}
+
+	BuildingTemplate Big_House_Strong
+	{
+		myBuildingTemplateType Big_House_Strong
+		myHealth 9700
+		myArmor 400
+	}
+
+	BuildingTemplate High_Rise
+	{
+		myBuildingTemplateType High_Rise
+		myHealth 13500
+		myArmor 400
+	}
+
+	BuildingTemplate Huge_Construction
+	{
+		myBuildingTemplateType Huge_Construction
+		myHealth 17000
+		myArmor 400
+	}
+
+	BuildingTemplate Bridge_Small
+	{
+		myBuildingTemplateType Bridge_Small
+		myHealth 100000
+		myArmor 1000
+	}
+
+	BuildingTemplate Bridge_Medium
+	{
+		myBuildingTemplateType Bridge_Medium
+		myHealth 150000
+		myArmor 1000
+	}
+
+	BuildingTemplate Bridge_Large
+	{
+		myBuildingTemplateType Bridge_Large
+		myHealth 200000
+		myArmor 1000
+	}
+
+	BuildingTemplate Bridge_Seattle3
+	{
+		myBuildingTemplateType Bridge_Seattle3
+		myHealth 100000000
+		myArmor 1000000
+	}
+
+	BuildingTemplate Special_KingDome
+	{
+		myBuildingTemplateType Special_KingDome
+		myHealth 50000
+		myArmor 400
+	}
+
+	BuildingTemplate Special_Chimney
+	{
+		myBuildingTemplateType Special_Chimney
+		myHealth 2200
+		myArmor 590
+	}
+
+	BuildingTemplate Special_Guardtower
+	{
+		myBuildingTemplateType Special_Guardtower
+		myHealth 1000
+		myArmor 300
+	}
+
+}
+

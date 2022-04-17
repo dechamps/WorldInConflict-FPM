@@ -1,0 +1,14 @@
+CLASS XColorRGB
+{
+	DECIMAL myR
+	DECIMAL myG
+	DECIMAL myB
+}
+
+CLASS XColorRGBA
+{
+	DECIMAL myR
+	DECIMAL myG
+	DECIMAL myB
+	DECIMAL myA
+}

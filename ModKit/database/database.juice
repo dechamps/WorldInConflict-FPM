@@ -1,0 +1,24 @@
+INCLUDE database/database.fruit
+
+WicDatabase myDatabase
+{
+	myPropTypes database/propsdatabase.juice
+	myAltPropTypes database/altpropsdatabase.juice
+	myAgentTypes units/unittypes_wic.juice
+	myAgentTypesSinglePlayer units/unittypes_wic_singleplayer.juice
+	myWeathers database/weathersdatabase.juice
+	myCharacters messagebox_characters/characters.juice
+	mySupportThings database/supportdatabase.juice
+	mySpeedTrees speedtrees/speedtreeset.juice
+	myAmbientSounds sound/ambientsounds.juice
+	myAmbientSoundsIce sound/ambientsounds.ice
+	myAddOnPropTypes juice/nodes_props.juice
+	myDefFortTypes juice/defensivefortificationtype.juice
+	
+	myGamePropTypesFile maps/propsdatabase2.juice
+	myGameSupportThingsFile maps/supportdatabase2.juice
+	myGameWeathersFile maps/weathersdatabase2.juice
+	myGameCharactersFile maps/charactersdatabase2.juice
+	myGameSoundFile maps/soundsdatabase2.juice
+	myAgentSoundsFile sound/agentsounds.ice
+}

@@ -1,0 +1,481 @@
+INCLUDE juice/nodes_props.fruit
+
+AddonPropGroups myGroups
+{
+	AddonPropGroup Signs
+	{
+		AddonProp EUR_Banner01
+		{
+			myMRB russian/berlin/props/propaddons/eur_banner01/eur_banner01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Banner02
+		{
+			myMRB russian/berlin/props/propaddons/eur_banner02/eur_banner02.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Banner03
+		{
+			myMRB russian/berlin/props/propaddons/eur_banner03/eur_banner03.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Roof_Sign01
+		{
+			myMRB russian/berlin/props/propaddons/eur_roof_sign01/eur_roof_sign01.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Roof_Sign02
+		{
+			myMRB russian/berlin/props/propaddons/eur_roof_sign02/eur_roof_sign02.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Roof_Sign03
+		{
+			myMRB russian/berlin/props/propaddons/eur_roof_sign03/eur_roof_sign03.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Roof_Sign04
+		{
+			myMRB russian/berlin/props/propaddons/eur_roof_sign04/eur_roof_sign04.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp Wall_BillBoard_01
+		{
+			myMRB props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Wall_BillBoard_01_v2
+		{
+			myMRB props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Wall_BillBoard_01_v3
+		{
+			myMRB props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/wallbillboard_01/wallbillboard_01.sdw
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp Roof_BillBoard_01
+		{
+			myMRB props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.mrb
+			myShadowFile props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Roof_BillBoard_01_v2
+		{
+			myMRB props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.mrb
+			myShadowFile props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Roof_BillBoard_01_v3
+		{
+			myMRB props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.mrb
+			myShadowFile props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.sdw
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp Roof_BillBoard_01_v4
+		{
+			myMRB props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.mrb
+			myShadowFile props/usseattle_props/billboards/roofbillboard_01/roofbillboard_1.sdw
+			myAlternativeTexture Version_4
+		}
+
+		AddonProp BillBoard_01
+		{
+			myMRB props/usseattle_props/billboards/billboard_01/billboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_01/billboard_01.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp BillBoard_01_v2
+		{
+			myMRB props/usseattle_props/billboards/billboard_01/billboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_01/billboard_01.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp BillBoard_01_v3
+		{
+			myMRB props/usseattle_props/billboards/billboard_01/billboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_01/billboard_01.sdw
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp BillBoard_01_v4
+		{
+			myMRB props/usseattle_props/billboards/billboard_01/billboard_01.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_01/billboard_01.sdw
+			myAlternativeTexture Version_4
+		}
+
+		AddonProp BillBoard_02
+		{
+			myMRB props/usseattle_props/billboards/billboard_02/billboard_02.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_02/billboard_02.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp BillBoard_03
+		{
+			myMRB props/usseattle_props/billboards/billboard_03/billboard_03.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_03/billboard_03.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp BillBoard_03_v2
+		{
+			myMRB props/usseattle_props/billboards/billboard_03/billboard_03.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_03/billboard_03.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp BillBoard_03_v3
+		{
+			myMRB props/usseattle_props/billboards/billboard_03/billboard_03.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_03/billboard_03.sdw
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp BillBoard_03_v4
+		{
+			myMRB props/usseattle_props/billboards/billboard_03/billboard_03.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_03/billboard_03.sdw
+			myAlternativeTexture Version_4
+		}
+
+		AddonProp BillBoard_03_v5
+		{
+			myMRB props/usseattle_props/billboards/billboard_03/billboard_03.mrb
+			myShadowFile props/usseattle_props/billboards/billboard_03/billboard_03.sdw
+			myAlternativeTexture Version_5
+		}
+
+		AddonProp SickleRose
+		{
+			myMRB props/russia_props/sicklerose/sicklerose.mrb
+			myShadowFile props/russia_props/sicklerose/sicklerose.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp RoofSign_Cinema
+		{
+			myMRB props/usseattle_props/seattle_roofsigns/roofsign_cinema/roofsign_cinema.mrb
+			myShadowFile props/usseattle_props/seattle_roofsigns/roofsign_cinema/roofsign_cinema.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp RoofSign_CCCP
+		{
+			myMRB props/usseattle_props/seattle_roofsigns/roofsign_cccp/roofsign_cccp.mrb
+			myShadowFile props/usseattle_props/seattle_roofsigns/roofsign_cccp/roofsign_cccp.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp RoofSign_UnionCenter
+		{
+			myMRB props/usseattle_props/seattle_roofsigns/roofsign_unioncenter/roofsign_unioncenter.mrb
+			myShadowFile props/usseattle_props/seattle_roofsigns/roofsign_unioncenter/roofsign_unioncenter.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp HospitalSign_Emergency
+		{
+			myMRB props/usseattle_props/hospitalsign/hospitalsign_emergency/hospitalsign_emergency.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp HospitalSign_HeliPad
+		{
+			myMRB props/usseattle_props/hospitalsign/hospitalsign_helipad/hospitalsign_helipad.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp HospitalSign_SmallSign
+		{
+			myMRB props/usseattle_props/hospitalsign/hospitalsign_smallsign/hospitalsign_smallsign.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp HospitalSign_LargeSign
+		{
+			myMRB props/usseattle_props/hospitalsign/hospitalsign_largesign/hospitalsign_largesign.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp Viaduct_Sign_01
+		{
+			myMRB props/usseattle_props/signs/viaduct_sign_01/viaduct_sign_01_node.mrb
+			myShadowFile props/usseattle_props/signs/viaduct_sign_01/viaduct_sign_01.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Viaduct_Sign_02
+		{
+			myMRB props/usseattle_props/signs/viaduct_sign_02/viaduct_sign_02_node.mrb
+			myShadowFile props/usseattle_props/signs/viaduct_sign_02/viaduct_sign_02.sdw
+			myAlternativeTexture Original
+		}
+
+	}
+
+	AddonPropGroup Awnings
+	{
+		AddonProp Awning_01
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_01.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_01.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_02
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_02.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_02.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_03
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_03.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_03.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_04
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_04.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_04.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_05
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_05.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_05.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_06
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_06.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_06.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Awning_01_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_01.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_01.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Awning_02_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_02.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_02.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Awning_03_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_03.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_03.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Awning_04_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_04.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_04.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Awning_05_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_05.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_05.sdw
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Awning_06_v2
+		{
+			myMRB props/house/europe/cityhouse/markis/awning_06.mrb
+			myShadowFile props/house/europe/cityhouse/markis/awning_06.sdw
+			myAlternativeTexture Version_2
+		}
+
+	}
+
+	AddonPropGroup Christmas
+	{
+		AddonProp ChristmasSign
+		{
+			myMRB props/ustown_props/christmas_props/christmassign/christmassign_node.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp Reindeer
+		{
+			myMRB props/ustown_props/christmas_props/reindeer/reindeer_node.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp SantaRopeLights
+		{
+			myMRB props/ustown_props/christmas_props/santaropelights/santaropelights_node.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+	}
+
+	AddonPropGroup Props
+	{
+		AddonProp EUR_Generic_Stair
+		{
+			myMRB russian/berlin/props/propaddons/eur_genericb_stair/eur_genericb_stair.mrb
+			myShadowFile russian/berlin/props/propaddons/eur_genericb_stair/eur_genericb_stair.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp MonorailTrain
+		{
+			myMRB props/usseattle_props/monorailtrain/monorailtrain_node.mrb
+			myShadowFile props/usseattle_props/monorailtrain/monorailtrain_node.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Highway_Light
+		{
+			myMRB props/ustown_props/roadway_lights/roadwaylight_01/roadwaylight_01.mrb
+			myShadowFile props/ustown_props/roadway_lights/roadwaylight_01/roadwaylight_01.sdw
+			myAlternativeTexture Original
+		}
+
+		AddonProp Generic_Flag_45deg
+		{
+			myMRB props/poles_generic/generic_flag/generic_flag_scene_45deg.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp Generic_Flag_45deg_v2
+		{
+			myMRB props/poles_generic/generic_flag/generic_flag_scene_45deg.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp Generic_Flag_45deg_v3
+		{
+			myMRB props/poles_generic/generic_flag/generic_flag_scene_45deg.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp Generic_Flag_45deg_v4
+		{
+			myMRB props/poles_generic/generic_flag/generic_flag_scene_45deg.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_4
+		}
+
+		AddonProp Generic_Flag_45deg_v5
+		{
+			myMRB props/poles_generic/generic_flag/generic_flag_scene_45deg.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_5
+		}
+
+		AddonProp EUR_Generic_Flag
+		{
+			myMRB russian/berlin/props/eur_flagpropnode/eur_flagpropsnode.mrb
+			myShadowFile russian/berlin/props/eur_flagpropnode/shadow/eur_flagpropnode_shadow.lwo
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_Generic_Flag_v2
+		{
+			myMRB russian/berlin/props/eur_flagpropnode/eur_flagpropsnode.mrb
+			myShadowFile russian/berlin/props/eur_flagpropnode/shadow/eur_flagpropnode_shadow.lwo
+			myAlternativeTexture Version_2
+		}
+
+	}
+
+	AddonPropGroup Europe5
+	{
+		AddonProp EUR_FenceAdvert_9m
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert_9m.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_FenceAdvert
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Original
+		}
+
+		AddonProp EUR_FenceAdvert_v2
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_2
+		}
+
+		AddonProp EUR_FenceAdvert_v3
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_3
+		}
+
+		AddonProp EUR_FenceAdvert_v4
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_4
+		}
+
+		AddonProp EUR_FenceAdvert_v5
+		{
+			myMRB russian/europe/props/eur_fenceadvert/eur_fenceadvert.mrb
+			myShadowFile <empty>
+			myAlternativeTexture Version_5
+		}
+
+	}
+
+}
+

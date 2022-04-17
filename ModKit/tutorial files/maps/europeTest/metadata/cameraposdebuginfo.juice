@@ -1,0 +1,804 @@
+INCLUDE juice/cameraposdebuginfo.fruit
+
+CameraPosDebugInfoList myCameraPosDebugInfoList
+{
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 297.451996
+			myY 107.191338
+			myZ 131.399994
+		}
+
+		myOri
+		{
+			x 0.280358
+			z 1.946795
+		}
+
+		myDescription "semes between map and surroundmesh is more or less showing all around the map. "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 337.510345
+			myY 114.099907
+			myZ 132.488510
+		}
+
+		myOri
+		{
+			x 0.240358
+			z 2.966794
+		}
+
+		myDescription "rough lines along the shoreline. "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 434.157135
+			myY 81.720345
+			myZ 131.399994
+		}
+
+		myOri
+		{
+			x 0.420358
+			z -2.806392
+		}
+
+		myDescription "the large rock tha lies under the watersurface catches the eye in "buggy" way "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1385.898071
+			myY 166.688736
+			myZ 1365.542725
+		}
+
+		myOri
+		{
+			x 0.280358
+			z 0.546796
+		}
+
+		myDescription "semes are showing "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1380.494019
+			myY 163.968918
+			myZ 160.023422
+		}
+
+		myOri
+		{
+			x 0.350358
+			z 2.316795
+		}
+
+		myDescription "semes are showing "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1313.248413
+			myY 95.828201
+			myZ 588.394043
+		}
+
+		myOri
+		{
+			x 0.482644
+			z 2.353606
+		}
+
+		myDescription "perhaps clearing the area near the house from the long grass "
+		myConsideredToBeFixedFlag 0
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1270.031250
+			myY 90.343948
+			myZ 662.047791
+		}
+
+		myOri
+		{
+			x 0.252644
+			z 2.877230
+		}
+
+		myDescription "doubble parking \n\n\nI think this is a Art bug!\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1184.363647
+			myY 96.240143
+			myZ 566.768250
+		}
+
+		myOri
+		{
+			x 0.302644
+			z -0.279145
+		}
+
+		myDescription "anal delux... but this door could have the ground a bit flattened under it \n\n\nnah\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1107.592407
+			myY 107.059654
+			myZ 487.668030
+		}
+
+		myOri
+		{
+			x 0.503729
+			z 1.864043
+		}
+
+		myDescription "sunken concrete base "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1089.034912
+			myY 108.263611
+			myZ 483.010590
+		}
+
+		myOri
+		{
+			x 0.600000
+			z -0.055957
+		}
+
+		myDescription "what what in the but, when using this swing "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1079.766846
+			myY 110.717056
+			myZ 492.977234
+		}
+
+		myOri
+		{
+			x 0.610239
+			z -0.585958
+		}
+
+		myDescription "sunken bike "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1075.446045
+			myY 111.818848
+			myZ 493.277222
+		}
+
+		myOri
+		{
+			x 0.230239
+			z -2.595957
+		}
+
+		myDescription "high doorsteps \n\n\n\n\nActually the house is floating. >(\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1072.977417
+			myY 112.155052
+			myZ 473.575562
+		}
+
+		myOri
+		{
+			x 0.300239
+			z 0.003310
+		}
+
+		myDescription "high doorstep on this side aswell "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1047.468872
+			myY 114.846657
+			myZ 498.183685
+		}
+
+		myOri
+		{
+			x 0.610239
+			z 1.723309
+		}
+
+		myDescription "sunken doorstep "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1066.595825
+			myY 112.662117
+			myZ 493.821533
+		}
+
+		myOri
+		{
+			x 0.280239
+			z -2.069879
+		}
+
+		myDescription "high doorstep "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1077.799194
+			myY 113.560860
+			myZ 511.600372
+		}
+
+		myOri
+		{
+			x 0.310239
+			z -0.999879
+		}
+
+		myDescription "high steps "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1048.973389
+			myY 113.393196
+			myZ 509.548370
+		}
+
+		myOri
+		{
+			x 0.357608
+			z 0.783308
+		}
+
+		myDescription "ja ja! den skojjar man inte bort! "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1098.897705
+			myY 108.882904
+			myZ 529.421326
+		}
+
+		myOri
+		{
+			x 0.297608
+			z -2.466693
+		}
+
+		myDescription "hmm... nice texture \n\n\n\n$$$$$$$$$$$$$$\nthose artists!\n\n\n\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1094.818848
+			myY 109.133186
+			myZ 528.899902
+		}
+
+		myOri
+		{
+			x 0.267608
+			z -2.446693
+		}
+
+		myDescription "doubble \n\n\nnot here\nprobably art\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1055.871948
+			myY 114.442215
+			myZ 526.480225
+		}
+
+		myOri
+		{
+			x -0.062392
+			z 2.096495
+		}
+
+		myDescription "not the worlds biggest problem, but the connection looks kinda simple \n\n\n\nThis is art\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1081.290894
+			myY 119.660782
+			myZ 579.475830
+		}
+
+		myOri
+		{
+			x 0.037608
+			z 2.829683
+		}
+
+		myDescription "standing on these rocks would in my world be kinda risky \n\nthen dont stand there.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 924.238159
+			myY 111.717972
+			myZ 661.963074
+		}
+
+		myOri
+		{
+			x -0.012392
+			z -2.883503
+		}
+
+		myDescription "cutting objects "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 853.607605
+			myY 119.503883
+			myZ 656.025024
+		}
+
+		myOri
+		{
+			x 0.127612
+			z -2.493505
+		}
+
+		myDescription "stuck in the rock... \n\n\nthe romans had great architects\n\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 583.425842
+			myY 137.319138
+			myZ 991.792603
+		}
+
+		myOri
+		{
+			x 0.317612
+			z 2.749681
+		}
+
+		myDescription "placed here on purpose?\n "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 869.360413
+			myY 109.239143
+			myZ 797.868958
+		}
+
+		myOri
+		{
+			x 0.600000
+			z 2.981845
+		}
+
+		myDescription "sunken corner "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 874.277954
+			myY 109.482582
+			myZ 824.504089
+		}
+
+		myOri
+		{
+			x 0.380487
+			z 2.706494
+		}
+
+		myDescription "bent on purpose? \n\nThis is Art\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 893.802673
+			myY 107.552818
+			myZ 818.154358
+		}
+
+		myOri
+		{
+			x 0.335197
+			z 1.866495
+		}
+
+		myDescription "car needs alignment "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 888.562988
+			myY 108.244911
+			myZ 819.478577
+		}
+
+		myOri
+		{
+			x 0.365197
+			z -2.456692
+		}
+
+		myDescription "same car with the supertexture \n\n\nsame artists\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 872.558899
+			myY 110.878868
+			myZ 802.511597
+		}
+
+		myOri
+		{
+			x 0.385197
+			z -3.106692
+		}
+
+		myDescription "what is the purpose of these two disbled signs? \n\n\nhandicap parking or handicap toilets, use your imagination.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1006.117798
+			myY 113.579994
+			myZ 880.578491
+		}
+
+		myOri
+		{
+			x 0.235197
+			z 1.643306
+		}
+
+		myDescription "supercar!\n\nno, just poor texturing.\nart.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 976.871704
+			myY 113.368240
+			myZ 908.545715
+		}
+
+		myOri
+		{
+			x 0.325197
+			z -2.616693
+		}
+
+		myDescription "corner of shed is floating "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 998.072998
+			myY 115.523178
+			myZ 898.925598
+		}
+
+		myOri
+		{
+			x 0.624553
+			z 0.763307
+		}
+
+		myDescription "issitating line of ligh at the bottom of building \n\n\n\nnothing I can do about it,\nreport to art in devtrack.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1024.967285
+			myY 113.636032
+			myZ 860.352600
+		}
+
+		myOri
+		{
+			x 0.270597
+			z 0.193307
+		}
+
+		myDescription "missing a support pole in the fence here "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1033.449585
+			myY 112.274948
+			myZ 904.491638
+		}
+
+		myOri
+		{
+			x 0.120597
+			z -2.546692
+		}
+
+		myDescription "fence not connected \n\nart should tweak the bones or get y stuff.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 996.119873
+			myY 113.034164
+			myZ 940.806580
+		}
+
+		myOri
+		{
+			x 0.400597
+			z 1.263308
+		}
+
+		myDescription "hovering doorstep\nsom vanligt i framtiden\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1013.978638
+			myY 110.266640
+			myZ 957.775452
+		}
+
+		myOri
+		{
+			x 0.090597
+			z -2.929879
+		}
+
+		myDescription "doubble \n\nnope\nart\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1011.349304
+			myY 112.818344
+			myZ 997.693726
+		}
+
+		myOri
+		{
+			x 0.220597
+			z -3.109880
+		}
+
+		myDescription "flatten surface below door "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1028.815308
+			myY 112.610161
+			myZ 978.247742
+		}
+
+		myOri
+		{
+			x 0.272331
+			z 0.790119
+		}
+
+		myDescription "hovering doorstep "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1046.974609
+			myY 110.985847
+			myZ 954.250061
+		}
+
+		myOri
+		{
+			x 0.182331
+			z -2.029882
+		}
+
+		myDescription "supercar "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1059.090088
+			myY 111.009171
+			myZ 954.908997
+		}
+
+		myOri
+		{
+			x 0.272331
+			z -0.076695
+		}
+
+		myDescription "perhaps lowering this gravestone a bit "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 1096.312622
+			myY 109.477654
+			myZ 955.673584
+		}
+
+		myOri
+		{
+			x 0.252331
+			z -2.676694
+		}
+
+		myDescription "ha ha ha, har inte sett detta innan "
+		myConsideredToBeFixedFlag 1
+	}
+
+	CameraPosDebugInfo myCameraPosDebugInfo
+	{
+		myPos
+		{
+			myX 925.739807
+			myY 115.654083
+			myZ 1333.089966
+		}
+
+		myOri
+		{
+			x 0.432331
+			z 1.163306
+		}
+
+		myDescription "stuck in the mountain \n\nperhaps a spring shit stuff....\nby design I guess.\n"
+		myConsideredToBeFixedFlag 1
+	}
+
+}
+

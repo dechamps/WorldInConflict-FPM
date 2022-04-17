@@ -1,0 +1,27 @@
+INCLUDE juice/vector2.fruit
+INCLUDE juice/vector3.fruit
+
+CLASS WicedBrushInstance
+{
+	TEXT myInstanceDBType
+	Vector3 myPositionRelFocus
+	Vector3 myHPBRelFocus
+}
+
+SCRIPTCLASS WicedBrushInstanceList
+{
+	WicedBrushInstance
+}
+
+CLASS WicedInstanceBrush
+{
+	TEXT myBrushName
+	TEXT myBelongsToSpeeTreeSetName
+	TEXT myAllowedWicedInstanceType
+	WicedBrushInstanceList myBrushInstanceList
+}
+
+SCRIPTCLASS WicedInstanceBrushes
+{
+	WicedInstanceBrush
+}

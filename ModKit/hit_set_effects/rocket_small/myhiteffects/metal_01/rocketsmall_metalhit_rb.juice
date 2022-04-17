@@ -1,0 +1,348 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Bone101"
+		myMeshBone "Bone1"
+		myObjectIsCg 1
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.057226
+			myY 0.268771
+			myZ 0.201749
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement2
+			{
+				myName "Bone102"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.182385
+					myY -0.014771
+					myZ 0.013486
+				}
+				myRotHPB
+				{
+					myX 1.498596
+					myY 0.081812
+					myZ 1.742166
+				}
+				myExtents
+				{
+					myX 0.036
+					myY 0.129
+					myZ 0.143
+				}
+				myRestFriction 1.0
+				myMoveFriction 0.2
+				myElasticity 0.1
+				myMass 71.559631
+				myVerts
+				{
+				}
+			}
+			Element myElement7
+			{
+				myName "Bone107"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX -0.101615
+					myY 0.008229
+					myZ -0.007514
+				}
+				myRotHPB
+				{
+					myX 1.498596
+					myY 0.081812
+					myZ 1.742166
+				}
+				myExtents
+				{
+					myX 0.036
+					myY 0.129
+					myZ 0.143
+				}
+				myRestFriction 1.0
+				myMoveFriction 0.2
+				myElasticity 0.1
+				myMass 128.440353
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody5
+	{
+		myName "Bone305"
+		myMeshBone "Bone3"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.191457
+			myY 0.283000
+			myZ -0.199458
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement6
+			{
+				myName "Bone306"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.1386
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.126
+					myY 0.035
+					myZ 0.099
+				}
+				myRestFriction 1.0
+				myMoveFriction 0.2
+				myElasticity 0.1
+				myMass 120.0
+				myVerts
+				{
+				}
+			}
+			Element myElement8
+			{
+				myName "Bone308"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ -0.0594
+				}
+				myRotHPB
+				{
+					myX 0.0
+					myY -0.0
+					myZ 0.0
+				}
+				myExtents
+				{
+					myX 0.126
+					myY 0.035
+					myZ 0.099
+				}
+				myRestFriction 1.0
+				myMoveFriction 0.2
+				myElasticity 0.1
+				myMass 279.999969
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody3
+	{
+		myName "Bone203"
+		myMeshBone "Bone2"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.170628
+			myY 0.267000
+			myZ -0.136150
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "Bone204"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myPos
+				{
+					myX 0.0
+					myY 0.0
+					myZ 0.0
+				}
+				myRotHPB
+				{
+					myX 0.95138
+					myY -0.01571
+					myZ 1.591806
+				}
+				myExtents
+				{
+					myX 0.024
+					myY 0.1
+					myZ 0.168
+				}
+				myRestFriction 1.0
+				myMoveFriction 0.2
+				myElasticity 0.1
+				myMass 299.999969
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+}
+

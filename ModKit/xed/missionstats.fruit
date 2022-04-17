@@ -1,0 +1,191 @@
+INCLUDE juice/vector3.fruit
+INCLUDE xed/script.fruit
+INCLUDE juice/genericmodel.fruit
+
+TYPE MissionType
+{
+	SINGLEPLAYER
+	MULTIPLAYER
+}
+
+TYPE XPlayer::Type
+{
+	HUMAN
+	AI
+	SCRIPT
+}
+
+CLASS XPlayer::Color
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+}
+
+TYPE XPlayer::Team
+{
+	TEAM_1
+	TEAM_2
+}
+
+CLASS XPlayer::DropshipLevels
+{
+	NUMBER myArmorLevel
+	NUMBER myWeaponLevel
+	NUMBER myEngineLevel
+	NUMBER mySensorLevel
+	NUMBER myCargoLevel
+	NUMBER myFuelLevel
+}
+
+TYPE DeploymentOrientation
+{
+    Horizontal
+    Vertical
+}
+
+TYPE LandscapeTexture
+{
+    Normal
+    Desert
+    Winter
+    Easter
+}
+
+TYPE GameMode
+{
+    Domination
+    Assault
+    KingOfTheHill
+    PrisonerOfWar
+}
+
+SCRIPTCLASS XPlayer::AllowedSupportThings
+{
+	TEXT
+}
+
+
+SCRIPTCLASS DisallowedSupportThings
+{
+	TEXT
+}
+
+SCRIPTCLASS DisallowedUnits
+{
+	TEXT
+}
+
+CLASS XPlayer
+{
+	XPlayer::Type myType
+	XPlayer::Team myTeam
+	XPlayer::Color myColor
+	LOCTEXT myName
+	FILE myAIConfigFile
+	Vector3 myBasePosition
+	XPlayer::DropshipLevels myDropshipStartLevels
+	XPlayer::DropshipLevels myDropshipMaxLevels
+	NUMBER myDropshipMaxTotalAttributeLevels
+	Flag myDropshipIsAvailableFlag
+	NUMBER myDropshipRespawnTime
+}
+
+CLASS XPlayers
+{
+	XPlayer PLAYER1
+	XPlayer PLAYER2
+	XPlayer PLAYER3
+	XPlayer PLAYER4
+	XPlayer PLAYER5
+	XPlayer PLAYER6
+	XPlayer PLAYER7
+	XPlayer PLAYER8
+	XPlayer PLAYER9
+	XPlayer PLAYER10
+	XPlayer PLAYER11
+	XPlayer PLAYER12
+	XPlayer PLAYER13
+	XPlayer PLAYER14
+	XPlayer PLAYER15
+	XPlayer PLAYER16
+}
+
+SCRIPTCLASS StartingUnitPositions
+{
+	Vector3
+}
+
+CLASS StartingUnitPositionsForTeam
+{
+	StartingUnitPositions myPositions
+	XPlayer::Team myTeam
+}
+
+SCRIPTCLASS StartingUnitPositionsPerTeamList
+{
+	StartingUnitPositionsForTeam
+}
+
+CLASS OffensiveFortification
+{
+    NUMBER myFortificationId
+    NUMBER myDynamicDelayTime
+    TEXT myUnitName
+    GenericModel myTimerModel
+    GenericModel myArrivalModel
+    GenericModel myDeliveryModel
+    DECIMAL myLandAndDeployTime
+    GenericModel myAbortModel    
+}
+
+SCRIPTCLASS OffensiveFortificationList
+{
+    OffensiveFortification
+}
+
+CLASS XMissionStats
+{
+	LOCTEXT myName
+	LOCTEXT myDescription
+	MissionType myMissionType
+	GameMode myGameMode
+	NUMBER myMissionVersion
+	NUMBER myInitialAp
+	NUMBER myInitialTickets
+	NUMBER myScoreLimit
+	DECIMAL myTimeLimit
+	Vector3 myWindDirection
+	XPlayers myPlayers
+	DisallowedUnits myDisallowedUnits
+	DisallowedSupportThings myDisallowedSupportthings
+	FILE myLoadingScreenImage
+	LOCTEXT myLoadingScreenText
+	LandscapeTexture myLandscapeTextureSet
+	Flag myAllowScriptedVictory
+	Flag myAllowDominationVictory
+	Flag myAllowNoLZDefeat
+	Flag myAllowNoVLDefeat
+	Flag myAllowNoUnitsDefeat
+	Flag myAllowNoPresenceDefeat
+	DECIMAL myScriptedAPFactor
+	DECIMAL myZoneTickAPFactor
+	DECIMAL myUnitKilledAPFactor
+	DECIMAL myUnitLostAPFactor
+	DECIMAL myDeploymentZoneStartingSizeTeam1
+	DECIMAL myDeploymentZoneStartingSizeTeam2 	
+	DeploymentOrientation myDeploymentZoneOrientation
+	Teams myAllowedTeam1
+	Teams myAllowedTeam2
+	Vector2 myLandingAreaTeam1Start
+	Vector2 myLandingAreaTeam1End
+	Vector2 myLandingAreaTeam2Start
+	Vector2 myLandingAreaTeam2End	
+	DECIMAL myAPRegrowthRate
+	NUMBER myNumberOfBalanceTicksPerTeam
+	StartingUnitPositionsPerTeamList myStartingUnitPositionsPerTeam
+	FILE myStartingUnitsPositionMarker
+	DECIMAL myCNMH_SpawnDelayMultiplier
+	NUMBER myCNMH_MaxLevel       
+	OffensiveFortificationList myOffensiveFortifications 
+}

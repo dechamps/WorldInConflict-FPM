@@ -1,0 +1,30 @@
+CLASS DifficultyValuesType
+{
+	DECIMAL PlayerDamageDealMultiplier
+	DECIMAL PlayerDamageReceiveMultiplier
+	DECIMAL BotVsBotDamageDealMultiplier // Multiplayer only
+}
+
+CLASS DamageModel1
+{
+	DECIMAL myHighGroundMinAngle		// angle at which slope bonus kicks in
+	DECIMAL myHighGroundMaxAngle		// angle at which max slope bonus is achieved
+	DECIMAL mySlopeBonusMinMultiplier	// minimum slope bonus
+	DECIMAL mySlopeBonusMaxMultiplier	// maximum slope bonus
+
+	DECIMAL myHighGroundAvoidDamageChance
+	DECIMAL myBuildingDamageMultiplier
+	DECIMAL myForestDamageMultiplier
+	DECIMAL myArmorVariance
+	DECIMAL myVarianceDices
+	DECIMAL myDamageCalcAbortTreshold
+	DECIMAL myDamageCalcRandomMakeUpRange
+	DECIMAL myAccuracyPenaltyWhenMovingFastMultiplier
+	DECIMAL myAccuracyPenaltyWhenMovingSlowMultiplier
+
+	DifficultyValuesType myDifficultyVeryEasy
+	DifficultyValuesType myDifficultyEasy
+	DifficultyValuesType myDifficultyNormal
+	DifficultyValuesType myDifficultyHard
+	DifficultyValuesType myDifficultyVeryHard
+}

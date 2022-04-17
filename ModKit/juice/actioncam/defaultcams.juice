@@ -1,0 +1,140 @@
+INCLUDE juice/ActionCam/ActionCam.fruit
+
+CameraModes myCamModes
+{
+	myCameras
+	{
+		CameraMode CameraMode(0)
+		{
+			myType Chase
+			myPriorities
+			{
+				myPossibleTargets
+				{
+				}
+
+				myTargetMoveSpeedBonus 0.0
+				myTargetHasTargetBonus 0.0
+			}
+
+			myCamPhysics
+			{
+				myMaxSpeed 0.0
+				myMaxAcceleration 0.0
+				myAngularElasticity 0.0
+				myAngularDrag 0.0
+				myZoomElasticity 0.0
+				myZoomDrag 0.0
+				myPosElasticity 0.0
+				myPosDrag 0.0
+			}
+
+			myCamPhysicsFadeInTime 0.0
+			myMinTime 0.0
+			myMaxTime 0.0
+			myBeforeMinTimeBonus 0.0
+			myAfterMaxTimeBonus 0.0
+			myMaxOutOfLosTime 0.0
+			myClipIn 0
+			myClipOut 0
+			myTypeSpecificParams
+			{
+				ExtraCMParam ExtraCMParam(0)
+				{
+					myName Distance
+					myValue 10
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+GlobalParams myGlobalParams
+{
+	myDefaultPhysics
+	{
+		myMaxSpeed 1000
+		myMaxAcceleration 100
+		myAngularElasticity 30
+		myAngularDrag 10
+		myZoomElasticity 30
+		myZoomDrag 10
+		myPosElasticity 30
+		myPosDrag 10
+	}
+
+	myNewCamDistanceBonus -0.01
+	myTargetViewedBeforeBonus -10
+	myTargetVievedBeforeHalftime 10
+	myTABindings
+	{
+	}
+
+}
+
+UnitPriorities myUnitPriorities
+{
+	myCloseUnitsBonus 0.5
+	myCloseUnitsRange 30
+	myLowHealthBonus 2
+	myMaxLowHealth 0.2
+	myTargetedByEnemyBonus 2
+	myMaxTargetedCount 2
+	myTargettingEnemyBonus 3
+	myMovingBonus 0.1
+	myMovingBonusMaxSpeed 10
+	myTypeNotSeenBeforeBonus 3
+	myPlayerHighScoreBonus 2
+	myCloseToEnemyCPBonus 4
+	myMaxCloseToEnemyCPRange 60
+	myCloseIncommingTABonus 4
+	myCloseIncommingArtyBonus 2
+	myMaxIncommingArtyRange 50
+	myTargetedByPreviousBonus 2
+	myTargettingPreviousBonus 2
+	myUnitTypePriorities
+	{
+	}
+
+	myUnitTypeSeenRecentlyBonus -4
+	myUnitSeenRecentlyHalftime 20
+	myUnitJustDiedBonus 15
+	myUnitJustDiedTime 2
+}
+
+TAPriorities myTAPriorities
+{
+	myCloseUnitsBonus 2
+	myTypeNotSeenBeforeBonus 2
+	myPlayerHighScoreBonus 5
+	myTATypePriorities
+	{
+		TATypePriority TATypePriority(1)
+		{
+			myType RadarScan
+			myPriority -50
+		}
+
+		TATypePriority TATypePriority(2)
+		{
+			myType AirStrike
+			myPriority 15
+		}
+
+		TATypePriority TATypePriority(0)
+		{
+			myType Nuke
+			myPriority 100
+		}
+
+	}
+
+	myTATypeSeenRecentlyBonus -30
+	myTASeenRecentlyHalftime 30
+	myTimeToImpactBonus -0.5
+}
+

@@ -1,0 +1,246 @@
+INCLUDE juice/tips.fruit
+
+tips myMessages
+{
+	LOCTEXT LOCTEXT(5) "All units have a reload time which is represented as a moving highlight of the unit's icon in the Unit Icon Bar. The unit will not fire on its own until fully reloaded."
+
+	LOCTEXT LOCTEXT(6) "When you lose a unit you will regain the credits you spend on it, but they will take some time to trickle back to you. Don't forget to call down new units regularly."
+
+	LOCTEXT LOCTEXT(23) "You can destroy forests to the degree that vehicles can pass. The Napalm Strike Tactical Aid is the best tool for this job."
+
+	LOCTEXT LOCTEXT(7) "Units have different armor strengths on the front, rear, sides and top. Flanking the enemy and attacking the rear is a good idea."
+
+	LOCTEXT LOCTEXT(9) "Infantry is very vulnerable in the open. Transport them to buildings and forests for added protection and concealment."
+
+	LOCTEXT LOCTEXT(10) "The bar with the two flags is called the Domination Bar. The small arrows indicate the side that currently has the upper hand."
+
+	LOCTEXT LOCTEXT(17) "The Tactical Aid points needed to call in off-map support are earned by performing well in battle. Many different actions can award you points."
+
+	LOCTEXT LOCTEXT(0) "Helicopters cannot capture Command Points."
+
+	LOCTEXT LOCTEXT(11) "Use the Repair Tank (available only to the Support role) and Troop Transports to repair other units."
+
+	LOCTEXT LOCTEXT(13) "Infantry is the only ground unit that can enter and travel through forests. While in a forest they are nearly invisible to enemy units."
+
+	LOCTEXT LOCTEXT(14) "Bring up the Score Sheet (default "TAB") to view your current score during a multiplayer round."
+
+	LOCTEXT LOCTEXT(24) "The same units cost different amounts of Reinforcement Points depending on which Role you have chosen. Units that lie at the heart of your role are the cheapest."
+
+	LOCTEXT LOCTEXT(1) "Use artillery to deal with enemy infantry hidden in buildings and forests, and to take out bridges."
+
+	LOCTEXT LOCTEXT(12) "Order your infantry into transport vehicles and buildings by first selecting the infantry (left click) and then right-clicking on the building or transport unit."
+
+	LOCTEXT LOCTEXT(15) "Attack helicopters are devastating against tanks, but are very easy targets for anti-air vehicles."
+
+	LOCTEXT LOCTEXT(16) "Every player that has a unit inside a Perimeter Point of a Command Point that is captured will get the score and TA point bonus. It is a good teamplay tactic to have a different player in each Perimeter Point."
+
+	LOCTEXT LOCTEXT(18) "If your Drop Zone is overrun by the enemy, remember that you can move it anywhere within the deployment zone."
+
+	LOCTEXT LOCTEXT(19) "You can force a unit to face a certain direction by giving it a move order where you press and hold the right mouse button down."
+
+	LOCTEXT LOCTEXT(8) "Some units have a long reload time. You can press the "Hold Fire" button (Default "G") to have complete control over its targets."
+
+	LOCTEXT LOCTEXT(20) "If one team controls all Command Points the speed of the domination process doubles! This is called Total Domination and an alarm will sound to indicate this."
+
+	LOCTEXT LOCTEXT(21) "You can change roles at any time, but doing so will remove all of your units on the map and turn them into Reinforcement Points."
+
+	LOCTEXT LOCTEXT(22) "Press the SPACE bar to quickly focus your view on the Drop Zone."
+
+	LOCTEXT LOCTEXT(27) "If a bridge gets destroyed you can call in a Repair Bridge Tactical Aid to fix it up."
+
+	LOCTEXT LOCTEXT(25) "To quickly load several infantry units into transports you can select them and press the "Load infantry into vehicles" button (default "Y")."
+
+	LOCTEXT LOCTEXT(26) "Press "Ctrl+Z" to undo your latest selection. Great for when you accidentally deselect your units!"
+
+	LOCTEXT LOCTEXT(29) "Right-clicking on a transport with infantry in it will issue an unload order."
+
+	LOCTEXT LOCTEXT(30) "Don't forget that you can zoom in closer in the Mega-map view. This helps you set your drop zone in tight spaces."
+
+	LOCTEXT LOCTEXT(31) "Pressing and holding the mouse look (default middle mouse button) and the right mouse button at the same time will allow you to slide the camera around."
+
+	LOCTEXT LOCTEXT(28) "You can right-click on a players name in the Score Sheet (default TAB) and choose to customize the color of their units. This helps you tell your team-mates apart."
+
+	LOCTEXT LOCTEXT(32) "Double-clicking with the right mouse button on one of your unit icons in the bottom of the screen will attach the camera to that unit (follow mode)."
+
+	LOCTEXT LOCTEXT(33) "Don't forget that you can use the Smoke Screen special ability to protect units other than your own."
+
+	LOCTEXT LOCTEXT(34) "The defensive Flare ability for helicopters will only work against heat-seeking missiles - it's useless against bullets."
+
+	LOCTEXT LOCTEXT(47) "The "Unit Icon Bar" (bottom middle of the screen) displays all the units you have, and their current status."
+
+	LOCTEXT LOCTEXT(35) "You can right-click on player names on the Score Sheet (TAB) to access many useful options."
+
+	LOCTEXT LOCTEXT(36) "If you don't like receiving instant messages from strangers you can change your communication options in the Massgate options."
+
+	LOCTEXT LOCTEXT(37) "Left clicking on a teammate's request marker will send a confirmation from you to that player."
+
+	LOCTEXT LOCTEXT(38) "Left clicking on a teammate's "Tactical Aid" request will pre-select the requested "Tactical Aid", ready for you to place."
+
+	LOCTEXT LOCTEXT(40) "You can filter the information shown in the "Mega Map" using the filter settings available in "Mega Map" mode."
+
+	LOCTEXT LOCTEXT(41) "Right-click, hold and drag with the right mouse button to give your units a directional move order. Continue to drag to space your units wider in the desired direction."
+
+	LOCTEXT LOCTEXT(42) "You can open the "Request Menu" by pressing 'Q' (default). The "Request Menu" is a powerful tool for communicating with your teammates."
+
+	LOCTEXT LOCTEXT(43) "The "Laser Guided Bomb" is great for taking out buildings, bridges and fortifications, but you will have a hard time hitting mobile units."
+
+	LOCTEXT LOCTEXT(44) "Write to Position" in the "Request Menu" (Default 'Q') enables you to place a text message anywhere on the battlefield."
+
+	LOCTEXT LOCTEXT(45) "Because the "Heavy Air Support" (Tactical Aid) only targets enemy units, you can place it over your own (or teammates') units with little risk of damaging them."
+
+	LOCTEXT LOCTEXT(46) "Don't waste points on a "Heavy Artillery Barrage" if you are going to take out infantry and light vehicles, a "Light Artillery Barrage" will do the job."
+
+	LOCTEXT LOCTEXT(39) "Left clicking on a teammate's request (animated text and icon, to the left of the screen) will teleport the camera to the location of the specific request."
+
+	LOCTEXT LOCTEXT(48) "Right-clicking on a "Unit Icon" in the "Unit Icon Bar" (bottom middle of the screen) will teleport the camera to that specific unit."
+
+	LOCTEXT LOCTEXT(49) "The "Tactical Nuke" is not only the most powerful weapon in your arsenal, it also neutralizes the enemy's hold of Perimeter Points."
+
+	LOCTEXT LOCTEXT(50) "Press "Ctrl + #" (where # is any of the numbers keys) to group your selected units into a control group. To select the control group, press the corresponding number key or group button (above the mini-map)."
+
+	LOCTEXT LOCTEXT(51) "You get score and Tactical Aid Points for repairing, both your own and those of your allies."
+
+	LOCTEXT LOCTEXT(52) "You can adapt to a changing battlefield situation by changing role and altering your tactics. Knowing when to do this is an important skill in WiC."
+
+	LOCTEXT LOCTEXT(53) "You can place up to three identical Tactical Aid at the same time by clicking that TA's button several times in the menu, but this usually comes at a premium cost."
+
+	LOCTEXT LOCTEXT(54) "Infantry units can ride in an allied player's transport vehicles. Large airborne insertions are almost impossible without this kind of teamplay."
+
+	LOCTEXT LOCTEXT(55) "You can send Tactical Aid points to another player with the numbered buttons next to their name in the score sheet. Very useful when your team really needs a nuke."
+
+	LOCTEXT LOCTEXT(56) "Infantry units inside forests and buildings will take reduced damage from incoming fire."
+
+	LOCTEXT LOCTEXT(57) "The Chemical Strike Tactical Aid will quickly kill infantry units, even when hidden inside forests and buildings."
+
+	LOCTEXT LOCTEXT(58) "The Smoke Screen special ability will block line of sight for both teams - be careful when using it, or you could blind yourself."
+
+	LOCTEXT LOCTEXT(59) "Be careful when placing your artillery strikes - if you damage your own team too much, you may be kicked from the server."
+
+	LOCTEXT LOCTEXT(60) "Airborne Infantry units may seem weak, but their special ability is very useful for ambushes and assaults on Command Points."
+
+	LOCTEXT LOCTEXT(61) "You can use the Sprint ability to quickly move your infantry squads, but any attack orders you give will abort the sprint."
+
+	LOCTEXT LOCTEXT(63) "Disruptive players can be voted off the server with the "Kick" button, available from the Score Sheet (default "TAB")."
+
+	LOCTEXT LOCTEXT(64) "You can initiate a vote for a map change with the "Map" button, available on the Score Sheet (default "TAB")."
+
+	LOCTEXT LOCTEXT(65) "You can reinforce a decimated infantry squad with fresh soldiers by clicking the "Re-supply" button. You need to pay part of their Reinforcement Points cost, though."
+
+	LOCTEXT LOCTEXT(66) "If you have the points to pay for it, the Aerial Recon Tactical Aid can really help when placing your Tactical Aid."
+
+	LOCTEXT LOCTEXT(67) "Scout Helicopters have very little armament, but they have a huge view range and a Special Ability that allows them to detect hidden units."
+
+	LOCTEXT LOCTEXT(68) "Infantry get a large stealth bonus when placed in forests and buildings, but it will be negated when they fire. Tell them to Hold Fire (default "G") to ambush the enemy!"
+
+	LOCTEXT LOCTEXT(69) "You can add or remove units from your current selection by holding Shift and left-clicking on them."
+
+	LOCTEXT LOCTEXT(70) "If you double-click a unit in the world, you will select all nearby units of the same type."
+
+	LOCTEXT LOCTEXT(71) "Since tanks have weaker armor in the rear, it may be a good idea to use the Move Backwards command (default "Shift+N") when retreating."
+
+	LOCTEXT LOCTEXT(73) "You can fortify captured Command Points by simply leaving some of your units inside a Perimeter Point. Fortifications will make it harder for the enemy to recapture the Command Point."
+
+	LOCTEXT LOCTEXT(74) "You get score and Tactical Aid points when fortifying Perimeter Points."
+
+	LOCTEXT LOCTEXT(75) "Remember that World in Conflict has integrated Voice-Over-IP support. If you have a headset, use it!"
+
+	LOCTEXT LOCTEXT(76) "Always remember that World in Conflict is a team-based game - communication, coordination and cooperation are the keys to victory!"
+
+	LOCTEXT LOCTEXT(77) "Some of the medals and awards on Massgate are only possible to earn through clan matches."
+
+	LOCTEXT LOCTEXT(79) "Be careful if you are the attacker in the first round of an Assault match - those defenses you're razing will be yours in the next round!"
+
+	LOCTEXT LOCTEXT(80) "Always stay mobile and don't stay too long in one spot or you'll get hit by an airstrike before long."
+
+	LOCTEXT LOCTEXT(81) "In some situations it is easier to run infantry over than try to shoot them. The "Force Move" command (default "N") can make this easier."
+
+	LOCTEXT LOCTEXT(82) "If you want to get rid of units you have no further use of, you can disband them (default "Delete")."
+
+	LOCTEXT LOCTEXT(83) "To improve your Massgate rank beyond the first officer level (2nd Lieutenant) you need to advance on the Leaderboard as well as improve your Total Score."
+
+	LOCTEXT LOCTEXT(84) "You can send and receive IMs to other people on Massgate with the Contacts menu (default "O")."
+
+	LOCTEXT LOCTEXT(85) "Blowing up bridges is an effective way to block the enemy's approach. Laser Guided Bombs are useful for this."
+
+	LOCTEXT LOCTEXT(86) "When capturing Command Points, all participating players will get the full score and TA point bonus. Try to take them together with your teammates!"
+
+	LOCTEXT LOCTEXT(87) "You can toggle between Box Formation and Line Formation with the Toggle Formation button (default "Z")."
+
+	LOCTEXT LOCTEXT(2) "Even though it's more expensive and less efficient, you shouldn't be afraid to experiment with combining units from different roles."
+
+	LOCTEXT LOCTEXT(3) "You can send chat messages both to your team (default "Enter") and to everyone on the server (default "Backspace")."
+
+	LOCTEXT LOCTEXT(4) "Different maps call for different tactics. Don't get too comfortable with any one role - adaptation is the key to mastering World in Conflict."
+
+	LOCTEXT LOCTEXT(72) "Tanks have long fire ranges, but their view ranges are limited. Their effectiveness can often be greatly improved with a forward observer."
+
+	LOCTEXT LOCTEXT(88) "Most units suffer from decreased accuracy while firing on the move. When you really need that next shot to hit the enemy, order you units to Stop (default "T")."
+
+	LOCTEXT LOCTEXT(89) "Infantry units have a very long perception range. This makes it possible for them to spot hidden enemies from a farther distance than most units."
+
+	LOCTEXT LOCTEXT(90) "If your units take cover behind a buildings or hill, they will be hidden from sight - unless the enemy gets close enough to detect them anyway."
+
+	LOCTEXT LOCTEXT(91) "Some buildings can be driven over once demolished, granting ground units new avenues of approach."
+
+	LOCTEXT LOCTEXT(92) "You can create a Group with other players on Massgate. These Groups temporarily bind players together, making it much easier to find and join a server together with your friends."
+
+	LOCTEXT LOCTEXT(93) "The "Play Now" button on Massgate can be customized in the Massgate Options, ensuring that it always finds the kind of server you want to play on."
+
+	LOCTEXT LOCTEXT(94) "Helicopters can't detect or fire on hidden enemy infantry without assistance. Use a Scout Helicopter or Aerial Recon to reveal them."
+
+	LOCTEXT LOCTEXT(78) "Don't forget you can always change your role! If the enemy is pestering you with choppers - switch to the Support role and call in anti-air."
+
+	LOCTEXT LOCTEXT(95) "When playing on Massgate you can right click on player names and send an abuse report if that player is behaving inappropriately."
+
+	LOCTEXT LOCTEXT(96) "The speed with which you fortify depends on the amount of hardware you and your team has within the Perimeter Point circle."
+
+	LOCTEXT LOCTEXT(97) "Damaged fortifications will be repaired when you or your team has units within the Perimeter Point circle. The repairs will be faster the more units are present inside the circle."
+
+	LOCTEXT LOCTEXT(98) "The Massgate Leaderboard score will decay over time, so players new to the game will always have a chance to reach the top positions."
+
+	LOCTEXT LOCTEXT(99) "If you right-click, hold and drag on an enemy unit when giving an attack order, you can give your units a combined move and attack order."
+
+	LOCTEXT LOCTEXT(100) "Light Tanks and Armored Transports are fast, cheap and useful, but their primary armaments can not even scratch the thick front armor of Heavy Tanks."
+
+	LOCTEXT LOCTEXT(101) "Heavy Helicopters and Heavy Anti-Air Vehicles can be very effective when supporting and covering each other. Coordinate your attacks through VoIP for maximum efficiency!"
+
+	LOCTEXT LOCTEXT(102) "Certain Tactical Aid is much cheaper for some roles than others. Help your teammates by deploying the Tactical Aid they cannot afford to get the most value out of your team's TA points."
+
+	LOCTEXT LOCTEXT(103) "Units that stay alive for a long time will earn experience and improve in several areas, like movement speed, reload time and Special Ability recharge time."
+
+	LOCTEXT LOCTEXT(104) "Using Transport Trucks to ferry your infantry squads to the frontline can greatly improve your mobility on the battlefield - just be prepared to abandon the vehicle if ambushed."
+
+	LOCTEXT LOCTEXT(105) "The blast from a Tactical Nuke is incredibly powerful, but the radiation it leaves behind can be even deadlier. Using the Nuke as an area denial weapon can buy your team time to regroup in a desperate situation."
+
+	LOCTEXT LOCTEXT(106) "The Assault and Tug of War game modes are all about thinking ahead. If you can anticipate the fall of a Command Point you can stay one step ahead of the enemy by reaching the next Command Point first."
+
+	LOCTEXT LOCTEXT(107) "Tactical Aid and artillery fire will raze most buildings quickly. Infantry commanders should try to stay on the move and sprint from cover to cover to keep their soldiers alive."
+
+	LOCTEXT LOCTEXT(108) "Helicopters are swift and deadly, but beware - staying in one spot for too long will make you an easy target for an Air-to-Air Strike."
+
+	LOCTEXT LOCTEXT(109) "Most actions in World in Conflict can be executed more quickly with a keyboard shortcut. Even casual players can find their performance improving quickly if they learn some of the Advanced Controls."
+
+	LOCTEXT LOCTEXT(110) "Paratroopers and other infantry units can be very useful as forward observers. By remaining hidden and reporting enemy movements they can be just as valuable to the team as any offensive force."
+
+	LOCTEXT LOCTEXT(111) "Always remember: If you see the flash, Duck and Cover."
+
+	LOCTEXT LOCTEXT(112) "When visiting Sweden, never go outside without a loaded rifle. Polar bears are not to be taken lightly."
+
+	LOCTEXT LOCTEXT(62) "You can choose to ignore a person in Massgate by right-clicking on their name and choosing "Ignore"."
+
+	LOCTEXT LOCTEXT(114) "You can select all units delivered in the latest drop by right-clicking on the "Go to Drop Zone" icon (default "Shift + Space")."
+
+	LOCTEXT LOCTEXT(115) "You can change the size of the unit icons in the Options if you find them too large or small."
+
+	LOCTEXT LOCTEXT(116) "Remember, you get more score from repairing other players' units than you get from repairing your own."
+
+	LOCTEXT LOCTEXT(117) "Every clan has both a public and a private Clan Forum on www.massgate.net. Send a greeting to your favorite enemies."
+
+	LOCTEXT LOCTEXT(118) "If you get disconnected from a clan match, you can use the "Connect to Last Server Played" button to get back into the match."
+
+	LOCTEXT LOCTEXT(119) "Infantry is soft, tanks are hard."
+
+	LOCTEXT LOCTEXT(120) "Want to compare your stats to those of your friends? Go to www.massgate.net and use the Compare feature."
+
+}
+

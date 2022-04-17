@@ -1,0 +1,1052 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+	RigidBody myRigidBody1
+	{
+		myName "Body01"
+		myMeshBone "Body"
+		myObjectIsCg 1
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.029277
+			myY -1.677875
+			myZ -0.748760
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement16
+			{
+				myName "Body16"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.077724
+					myY 0.035873
+					myZ -2.066239
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.618
+					myY 0.469
+					myZ 0.431
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 694.657776
+				myVerts
+				{
+				}
+			}
+			Element myElement15
+			{
+				myName "Body15"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -1.394734
+					myY 0.421838
+					myZ -4.766239
+				}
+				myRotHPB
+				{
+					myX -0.20009
+					myY -0.250032
+					myZ -0.649312
+				}
+				myExtents
+				{
+					myX 0.04
+					myY 0.669
+					myZ 0.659
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 98.062698
+				myVerts
+				{
+				}
+			}
+			Element myElement2
+			{
+				myName "Body02"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.022285
+					myY -0.320125
+					myZ 0.36776
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.018971
+				}
+				myExtents
+				{
+					myX 0.836
+					myY 0.851
+					myZ 1.532
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 6060.757324
+				myVerts
+				{
+				}
+			}
+			Element myElement17
+			{
+				myName "Body17"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.031254
+					myY 0.850875
+					myZ 0.84476
+				}
+				myRotHPB
+				{
+					myX 0.000001
+					myY 0.022996
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.618
+					myY 0.409
+					myZ 1.244
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 1748.495239
+				myVerts
+				{
+				}
+			}
+			Element myElement18
+			{
+				myName "Body18"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.024255
+					myY 0.810875
+					myZ -0.47724
+				}
+				myRotHPB
+				{
+					myX -0.000002
+					myY -0.062045
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.357
+					myY 0.397
+					myZ 0.598
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 471.294342
+				myVerts
+				{
+				}
+			}
+			Element myElement19
+			{
+				myName "Body19"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.017724
+					myY 0.014874
+					myZ -1.392239
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.704
+					myY 0.583
+					myZ 0.343
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 782.830322
+				myVerts
+				{
+				}
+			}
+			Element myElement21
+			{
+				myName "Body21"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.024278
+					myY -0.053125
+					myZ -3.394239
+				}
+				myRotHPB
+				{
+					myX -0.000001
+					myY -0.032021
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.161
+					myY 0.178
+					myZ 0.903
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.05
+				myMass 143.901703
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody5
+	{
+		myName "rotor05"
+		myMeshBone "rotor"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 0.021888
+			myY 0.730528
+			myZ 0.000145
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement6
+			{
+				myName "rotor06"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.266093
+					myY 0.698478
+					myZ 0.353855
+				}
+				myRotHPB
+				{
+					myX 0.540255
+					myY -0.213596
+					myZ -0.163465
+				}
+				myExtents
+				{
+					myX 0.074
+					myY 0.062
+					myZ 0.305
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.4
+				myMass 173.241104
+				myVerts
+				{
+				}
+			}
+			Element myElement14
+			{
+				myName "rotor14"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.273875
+					myY -0.509536
+					myZ -0.432145
+				}
+				myRotHPB
+				{
+					myX 0.573941
+					myY 0.170049
+					myZ 0.062847
+				}
+				myExtents
+				{
+					myX 0.074
+					myY 0.062
+					myZ 0.305
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.4
+				myMass 125.537033
+				myVerts
+				{
+				}
+			}
+			Element myElement13
+			{
+				myName "rotor13"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.006887
+					myY -0.033529
+					myZ -0.004145
+				}
+				myRotHPB
+				{
+					myX -0.0
+					myY -0.0
+					myZ -0.036994
+				}
+				myExtents
+				{
+					myX 0.178
+					myY 0.715
+					myZ 0.149
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.4
+				myMass 1701.221802
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody9
+	{
+		myName "wing09"
+		myMeshBone "wing"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 1.768723
+			myY -1.388572
+			myZ -5.279460
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement20
+			{
+				myName "wing20"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.228277
+					myY -0.034422
+					myZ -0.01954
+				}
+				myRotHPB
+				{
+					myX -0.093104
+					myY 0.000002
+					myZ 0.000026
+				}
+				myExtents
+				{
+					myX 0.04
+					myY 0.823
+					myZ 0.478
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 1034.762207
+				myVerts
+				{
+				}
+			}
+			Element myElement10
+			{
+				myName "wing10"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.507725
+					myY 0.076559
+					myZ 0.04346
+				}
+				myRotHPB
+				{
+					myX -0.000637
+					myY -0.091115
+					myZ 1.566806
+				}
+				myExtents
+				{
+					myX 0.028
+					myY 0.724
+					myZ 0.349
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.0
+				myMass 465.237671
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody3
+	{
+		myName "pit03"
+		myMeshBone "pit"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX -0.077886
+			myY -2.132094
+			myZ 2.182011
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement4
+			{
+				myName "pit04"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.021107
+					myY -0.241907
+					myZ 0.185989
+				}
+				myRotHPB
+				{
+					myX 0.003128
+					myY -0.135321
+					myZ -0.023388
+				}
+				myExtents
+				{
+					myX 0.447
+					myY 0.343
+					myZ 0.772
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.25
+				myMass 1237.921021
+				myVerts
+				{
+				}
+			}
+			Element myElement25
+			{
+				myName "pit25"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.021119
+					myY 0.189093
+					myZ 0.159989
+				}
+				myRotHPB
+				{
+					myX 0.020458
+					myY 1.11508
+					myZ 0.022383
+				}
+				myExtents
+				{
+					myX 0.611
+					myY 0.343
+					myZ 0.772
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.25
+				myMass 1692.102173
+				myVerts
+				{
+				}
+			}
+			Element myElement26
+			{
+				myName "pit26"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.029886
+					myY -0.009905
+					myZ -0.242011
+				}
+				myRotHPB
+				{
+					myX 0.597944
+					myY 1.519727
+					myZ 0.604342
+				}
+				myExtents
+				{
+					myX 0.825
+					myY 0.392
+					myZ 0.612
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.25
+				myMass 2069.976563
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody7
+	{
+		myName "door07"
+		myMeshBone "door"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 1.186818
+			myY -1.817570
+			myZ 1.989393
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement8
+			{
+				myName "door08"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.026823
+					myY 0.19057
+					myZ -0.089393
+				}
+				myRotHPB
+				{
+					myX 0.013448
+					myY 0.002072
+					myZ -2.99595
+				}
+				myExtents
+				{
+					myX 0.026
+					myY 0.376
+					myZ 0.233
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.35
+				myMass 296.833221
+				myVerts
+				{
+				}
+			}
+			Element myElement27
+			{
+				myName "door27"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.039189
+					myY -0.278428
+					myZ 0.130607
+				}
+				myRotHPB
+				{
+					myX 0.043498
+					myY 0.002613
+					myZ -3.040198
+				}
+				myExtents
+				{
+					myX 0.015
+					myY 0.224
+					myZ 0.464
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.35
+				myMass 203.166763
+				myVerts
+				{
+				}
+			}
+		}
+	}
+	RigidBody myRigidBody11
+	{
+		myName "tube11"
+		myMeshBone "tube"
+		myObjectIsCg 0
+		myIsDynamic 1
+		myHasPathing 0
+		myInteractionLayer 1
+		myCenterOfMass
+		{
+			myX 0.000000
+			myY 0.000000
+			myZ 0.000000
+		}
+		myWaterDepth 2
+		myTouchOfDeathTime 1000000.000000
+		myRootPosition
+		{
+			myX 1.211500
+			myY -2.690908
+			myZ 0.621911
+		}
+		myStates
+		{
+			TEXT myState0 "STND"
+		}
+		myEvents
+		{
+			Event myEvent0
+			{
+				myType 0
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+			Event myEvent1
+			{
+				myType 1
+				mySoundFilename ""
+				myTriggerState "NONE"
+				myRadius 0.000000
+				myStrength 0.000000
+				myCount 0
+				myDelay 0.000000
+				myProbability 1.000000
+			}
+		}
+		myElements
+		{
+			Element myElement12
+			{
+				myName "tube12"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX -0.0
+					myY 0.006808
+					myZ -0.160911
+				}
+				myRotHPB
+				{
+					myX 0.046015
+					myY 0.041065
+					myZ -0.000086
+				}
+				myExtents
+				{
+					myX 0.111
+					myY 0.114
+					myZ 0.419
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.45
+				myMass 95.27774
+				myVerts
+				{
+				}
+			}
+			Element myElement28
+			{
+				myName "tube28"
+				myType 0
+				myMaterial "none"
+				myNoPhysicsFlag 0
+				myUseForCollisions 1
+				myIsFence 0
+				myPathingHullFlag 0
+				myIsAimTarget 0
+				myPos
+				{
+					myX 0.0
+					myY -0.004192
+					myZ 0.099089
+				}
+				myRotHPB
+				{
+					myX -0.005
+					myY -0.019997
+					myZ 0.000126
+				}
+				myExtents
+				{
+					myX 0.138
+					myY 0.164
+					myZ 0.525
+				}
+				myRestFriction 1.0
+				myMoveFriction 1.0
+				myElasticity 0.45
+				myMass 154.722244
+				myVerts
+				{
+				}
+			}
+		}
+	}
+}
+
+RagDolls myRagDolls
+{
+}
+
+RagDolls2 myRagDolls2
+
+{
+}
+
+Joints myJoints
+{
+}
+
+DelayedExplosions myExplosions
+{
+	DelayedExplosion myExplosion0
+	{
+		myDelay 0.000000
+		myDelayRndLo 0.000000
+		myDelayRndHi 0.000000
+		myBone "nullExpl"
+		myState "STND"
+		myRadius 7.000000
+		myStrength 5000.000000
+		mySoundFile ""
+		myProbability 1.000000
+	}
+}
+

@@ -1,0 +1,555 @@
+﻿myMassgateText.myChatRooms.Name	Name
+myMassgateText.myChatRooms.Users	Users
+myMassgateText.myChatRooms.PlayerJoin	__RANKNAME__ __PLAYERNAME__ entered the chat
+myMassgateText.myChatRooms.PlayerLeave	__RANKNAME__ __PLAYERNAME__ left the chat
+myMassgateText.myChatRooms.PlayerLeaveForServer	__RANKNAME__ __PLAYERNAME__ left the chat and joined server SERVERNAME
+myMassgateText.myChatRooms.ChatJoinFail_RoomFull	You cannot join the room because it is full.
+myMassgateText.myChatRooms.ChatJoinFail_WrongPass	You cannot join the room because you supplied an incorrect password.
+myMassgateText.myChatRooms.ChatJoinFail_Other	An error occured while trying to join the requested room.
+myMassgateText.myChatRooms.ReceivedInstantMessage	You have received an Instant Message from __PLAYERNAME__.
+myMassgateText.myChatRooms.DefaultRoomName	General chat (English)
+myMassgateText.myChatRooms.NotConnected	...
+myMassgateText.myChatRooms.ClanChatRoom	Clan chat
+myMassgateText.myChatRooms.GangChatRoom	Group chat
+myMassgateText.myChatRooms.ClanWarRoom	Clan War
+myMassgateText.myChatRooms.FPMLobbyRoom	FPM Lobby
+myMassgateText.myChatRooms.SpamMessage	Your message has been suppressed for spamming reasons, please wait __SECONDS__ before submitting it again.
+myMassgateText.myConnect.Connecting	Connecting...
+myMassgateText.myConnect.CouldNotConnect	Could not connect to Massgate.
+myMassgateText.myConnect.Authenticating	Authenticating client...
+myMassgateText.myConnect.AuthenticationFailed	Authentication failed. Press OK to return to Main Menu.
+myMassgateText.myConnect.CheckingForUpdates	Checking for updates...
+myMassgateText.myConnect.UpdateFound	An update was found. Press OK to download it.
+myMassgateText.myConnect.DownloadFailed	Failed to download update.
+myMassgateText.myConnect.DownloadComplete	Download complete. Press OK to install the update.
+myMassgateText.myConnect.UpdateConnectFailed	Could not connect to update server.
+myMassgateText.myConnect.ClosingGame	Closing game...
+myMassgateText.myConnect.LoggingIn	Logging in
+myMassgateText.myConnect.CreatingAccount	Creating account
+myMassgateText.myConnect.RetrievingProfiles	Retrieving available profiles
+myMassgateText.myConnect.CreatingProfile	Creating profile
+myMassgateText.myConnect.ModifyingProfile	Renaming profile
+myMassgateText.myConnect.DeletingProfile	Deleting profile
+myMassgateText.myConnect.ManageHeadline	<empty>
+myMassgateText.myConnect.ConfirmDeleteProfile	Are you sure you want to remove __PROFILENAME__?
+myMassgateText.myConnect.AlertStrangeProfileName	It looks like the name you entered contains a clan-tag. Please note that a clan-tag is automatically added once you join a clan in Massgate. Please remove any clan-tags from the name.
+myMassgateText.myConnect.CreatingClan	Creating clan
+myMassgateText.myConnect.ManagingClan	Managing clan
+myMassgateText.myConnect.LeavingClan	Leaving clan
+myMassgateText.myConnect.PasswordReminderHeadline	Forgot your password?
+myMassgateText.myConnect.PasswordReminder	This will close World in Conflict and open a web page with instruction on how to retrieve your password. Do you want to continue?
+myMassgateText.myConnect.myPasswordReminderWebpage	www.massgate.net/recover_password/?__INSERTEMAIL__
+myMassgateText.myConnect.primaryDiaUrl	www.massgate.net/texts/gettext.php?type=welcome&lang=EN
+myMassgateText.myConnect.secondaryDiaUrl	www.massive.se/massgate/dia.txt
+myMassgateText.myConnect.newsDiaUrl	www.massgate.net/texts/gettext.php?type=news&lang=EN
+myMassgateText.myConnect.gettingDia	Retrieving Massgate status
+myMassgateText.myConnect.failedToGetDia	Could not retrieve Massgate status. Please check your internet connection.
+myMassgateText.myConnect.failedToGetNews	Failed to get the latest news.
+myMassgateText.myConnect.gettingNews	Loading latest news...
+myMassgateText.myConnect.myTosUrl	www.massgate.net/texts/gettext.php?type=tos&lang=EN
+myMassgateText.myConnect.myPrivacyUrl	www.massgate.net/texts/gettext.php?type=privacy&lang=EN
+myMassgateText.myConnect.myEulaUrl	www.massgate.net/texts/gettext.php?type=eula&lang=EN
+myMassgateText.myConnect.myTournamentRulesUrl	www.massgate.net/texts/gettext.php?type=tournamentrules&lang=EN
+myMassgateText.myConnect.myTosUnavailableError	Can not connect to massgate and create account.
+myMassgateText.myConnect.GettingTos	Preparing...
+myMassgateText.myConnect.myTimeLimitedKeyExpired	Your time limited CD-Key will expire in __REPLACE__ days.
+myMassgateText.myConnect.PleaseWait	Please wait...
+myMassgateText.myConnect.HangOnLockHeader	ENTER SERVER QUEUE?
+myMassgateText.myConnect.HangOnLockMessage	This server is full.\n\nYou can enter the server queue to automatically join the server when a slot becomes available. Do you want to wait for a slot?
+myMassgateText.myConnect.HangOnTheLockLeaveHeader	LEAVE SERVER QUEUE?
+myMassgateText.myConnect.HangOnTheLockLeaveMessage	Are you sure that you want to leave the server queue?
+myMassgateText.myConnect.RecruitedQuestion	Did a friend recruit you to this game?
+myMassgateText.myConnect.YouAreRecruiter	You have recruited a friend. Thank you!
+myMassgateText.myConnect.RecruitHeader	RECRUITMENT OFFICE
+myMassgateText.myConnect.RecruitNoSuch	No account found with that email address. Please double-check the spelling and try again.
+myMassgateText.myConnect.ValidRecruiter	Thank you!
+myMassgateText.myConnect.buttonURLURL	http://www.massgate.net/massgatebutton/button_url_LANG_REPLACE.txt
+myMassgateText.myConnect.buttonImageURL	http://www.massgate.net/massgatebutton/button_image_LANG_REPLACE.tga
+myMassgateText.myCreateAccount.IllegalNicknameFailure	Failed to create account. Illegal nickname.
+myMassgateText.myCreateAccount.IllegalPasswordFailure	Failed to create account. Illegal password.
+myMassgateText.myCreateAccount.NicknameOccupiedFailure	The selected nickname is occupied.
+myMassgateText.myCreateAccount.CreateAccountFailed	Failed to create account with the selected nickname.
+myMassgateText.myCreateAccount.PasswordsNotMatching	Passwords do not match!
+myMassgateText.myFilters.NoFilter	No Filter
+myMassgateText.myFilters.NoPassword	No Password
+myMassgateText.myFilters.NeedPassword	Need Password
+myMassgateText.myFilters.NotFull	Not Full
+myMassgateText.myFilters.NotEmpty	Not Empty
+myMassgateText.myFilters.NotFullNotEmpty	Not Empty or Full
+myMassgateText.myFilters.Dedicated	Dedicated
+myMassgateText.myFilters.NonDedicated	Not Dedicated
+myMassgateText.myFilters.Ranked	Ranked
+myMassgateText.myFilters.Unranked	Not Ranked
+myMassgateText.myFilters.FriendsOnServer	Friend(s) on Server
+myMassgateText.myFilters.ContactOnServer	Contact(s) on Server
+myMassgateText.myFilters.NoFriendsOnServer	No Friend(s) on Server
+myMassgateText.myFilters.VoipOnServer	VOIP Enabled
+myMassgateText.myFilters.VoipNotOnServer	VOIP Disabled
+myMassgateText.myFilters.modOnServer	No mods
+myMassgateText.myFilters.modNotOnServer	Only mods
+myMassgateText.myFilters.rankBalanced	Rank Balanced
+myMassgateText.myFilters.notRankBalanced	Not Rank Balanced
+myMassgateText.myFilters.domination	Domination Only
+myMassgateText.myFilters.assault	Assault Only
+myMassgateText.myFilters.tow	Tug of War Only
+myMassgateText.myGames.Name	Name
+myMassgateText.myGames.Map	Map
+myMassgateText.myGames.Players	Players
+myMassgateText.myGames.Ping	Ping
+myMassgateText.myGames.Type	Type
+myMassgateText.myGames.Mode	Mode
+myMassgateText.myGames.Dedicated	Dedicated/Local
+myMassgateText.myGames.Ranked	Ranked/Unranked
+myMassgateText.myGames.Open	Open/Closed
+myMassgateText.myGames.Password	Password
+myMassgateText.myGames.Cooperative	Cooperative
+myMassgateText.myGames.ServerDetailsLabel	Server details
+myMassgateText.myGames.ServerDetailsValue	Setting
+myMassgateText.myGames.PlayerDetails_Playername	Player name
+myMassgateText.myGames.PlayerDetails_Playerscore	Score
+myMassgateText.myGames.ServerDetails_Servername	Server name
+myMassgateText.myGames.ServerDetails_Gametime	Game time
+myMassgateText.myGames.ServerDetails_IP	IP
+myMassgateText.myGames.ServerDetails_MaxPlayers	Max players
+myMassgateText.myGames.ServerDetails_Ping	Ping
+myMassgateText.myGames.ServerDetails_Numplayers	Number of players
+myMassgateText.myGames.ServerDetails_Numspectators	Number of spectators
+myMassgateText.myGames.ServerDetails_GameVersion	Game version
+myMassgateText.myGames.ServerDetails_IsDedicated	Dedicated
+myMassgateText.myGames.ServerDetails_IsCooperative	Cooperative
+myMassgateText.myGames.ServerDetails_IsRanked	Ranked
+myMassgateText.myGames.ServerDetails_RequiresPassword	Password protected
+myMassgateText.myGames.ServerDetails_map	Map
+myMassgateText.myGames.ServerDetails_ReliablePort	Reliable port
+myMassgateText.myGames.ServerDetails_UnreliablePort	Unreliable port
+myMassgateText.myGames.ServerDetails_MassgateCommPort	Massgate port
+myMassgateText.myGames.ServerDetails_RankBalanced	Rank Balanced
+myMassgateText.myGames.Yes	Yes
+myMassgateText.myGames.No	No
+myMassgateText.myGames.Unknown	Unknown
+myMassgateText.myGames.TimeDisplayFormat	__MINUTES__'__SECONDS__''
+myMassgateText.myGames.ServerDetails_ModName	Running mod
+myMassgateText.myGames.JoinSame_Searching	Locating server...
+myMassgateText.myGames.JoinSame_Found	Confirm join same server
+myMassgateText.myGames.JoinSame_Error	Could not connect to server
+myMassgateText.myGames.JoinLast_Found	Last server played
+myMassgateText.myGames.MapRotation	Maps on server:
+myMassgateText.myGames.CantPlayLobby	You can not join a server while you are in the match lobby
+myMassgateText.myLadder.Rank	Rank
+myMassgateText.myLadder.Level	Level
+myMassgateText.myLadder.XP	XP
+myMassgateText.myLadder.PlayerName	Player Name
+myMassgateText.myLadder.Wins	Wins
+myMassgateText.myLadder.Defeats	Defeats
+myMassgateText.myLadder.Ties	Ties
+myMassgateText.myLadder.Kills	Kills
+myMassgateText.myLadder.Losses	Losses
+myMassgateText.myLadder.KillRatio	Kill Ratio
+myMassgateText.myLadder.ProfileNotInLadder	__PLAYERNAME__ has not played enough to be seen in the ladder.
+myMassgateText.myLadder.PlayerNotInLadder	You have not played enough to gain a ladder position. Remember that to advance in the ladder you must play on ranked servers!
+myMassgateText.myLadder.NotEnoughPos	Unable to jump to position __REQUESTEDPOS__ since there are only __NUMPOS__ players in the ladder.
+myMassgateText.myLadder.NoSearch	Please enter either a position to go to or (part of) the playername you'd like to jump to.
+myMassgateText.myLadder.NotFound	No playernames match the search criteria.
+myMassgateText.myLadder.ClanNotInLadder	The clan has not played enough to be qualify for the ladder.
+myMassgateText.myLadder.YourClanNotInLadder	Your clan has not played enough clan-matches to qualify for the ladder.
+myMassgateText.myPlayerInfo.Loading	Loading...
+myMassgateText.myPlayerInfo.AbuseReported	Your report of abusive behavior has been sent to the Massive Community Team and will be investigated.
+myMassgateText.myGameInfo.Name	Name
+myMassgateText.myGameInfo.Team	Team
+myMassgateText.myGameInfo.Score	Score
+myMassgateText.myGameInfo.NotStarted	Not started
+myMassgateText.myGameInfo.NotResponding	Not responding
+myMassgateText.myStatus.Offline	offline
+myMassgateText.myStatus.Online	online
+myMassgateText.myStatus.Playing	playing
+myMassgateText.myStatus.Away	away
+myMassgateText.myMassgateStatusMessages.AuthFailed_AccountBanned	This account has been banned by the Massgate administrators.
+myMassgateText.myMassgateStatusMessages.AuthFailed_BadCredentials	Wrong password. Make sure you used the correct capitalization.
+myMassgateText.myMassgateStatusMessages.AuthFailed_General	General authentication failure.
+myMassgateText.myMassgateStatusMessages.AuthFailed_IllegalCDKey	There is a problem with the CD-Key. Please contact customer support.
+myMassgateText.myMassgateStatusMessages.AuthFailed_CdKeyInUse	The CD-Key is in use by another player, or your previous lease is still active. Please try again in a few minutes. If the problem persists, please contact customer support.
+myMassgateText.myMassgateStatusMessages.AuthFailed_ProfileInUse	Your profile is already logged in from another computer.
+myMassgateText.myMassgateStatusMessages.AuthFailed_AccountInUse	Your account is already logged in from another computer.
+myMassgateText.myMassgateStatusMessages.AuthFailed_NoSuchAccount	No such account. You need to create an account before you can access Massgate.
+myMassgateText.myMassgateStatusMessages.AuthFailed_CdKeyExpired	Your time limited CD-Key has expired. Please visit www.worldinconflict.com for information on how to purchase the game.
+myMassgateText.myMassgateStatusMessages.ServerError	The Massgate servers are being reconfigured. Please try again later.
+myMassgateText.myMassgateStatusMessages.CreateSuccess	Your account has been created.
+myMassgateText.myMassgateStatusMessages.CreateFailed_General	General account creation error
+myMassgateText.myMassgateStatusMessages.CreateFailed_EmailExists	You have already registered an account to that email. If you'd like, you can create another profile instead (log in to Massgate first).
+myMassgateText.myMassgateStatusMessages.CreateFailed_UsernameExists	Someone else has registered that profile name. Please choose another.
+myMassgateText.myMassgateStatusMessages.CreateFailed_CdKeyExhausted	Can not create account. Your CD-Key may not be used to create more accounts.
+myMassgateText.myMassgateStatusMessages.InvalidServer	Could not connect to Massgate. Please check your internet connection and firewall settings.
+myMassgateText.myMassgateStatusMessages.IncorrectProtocolVersion	Incorrect protocol version
+myMassgateText.myMassgateStatusMessages.ProbableFirewall	A firewall may be interfering with World In Conflict and preventing online games. Please examine your firewall software and enable UDP and TCP for World in Conflict.
+myMassgateText.myMassgateStatusMessages.DeleteFailed_Clanned	That profile is a member of a clan. Please leave the clan before deleting the profile.
+myMassgateText.myMassgateStatusMessages.AbuseKicked	You have been disconnected due to an abuse report from a moderator. Repeated offenses will cause your CD-Key to be temporarily or permanently banned from online play. You may log in again. If you'd like to protest this decision, please go to www.massgate.net.
+myMassgateText.myMassgateStatusMessages.MassgateMaintenance	Massgate maintenance underway. You may experience connection problems. 
+myMassgateText.GenericStrings.NotAvailable	N/A
+myMassgateText.GenericStrings.invalidCdKey	The CD-Key you entered is not valid. Please double check that you have entered it exactly as shown on the box
+myMassgateText.GenericStrings.yes	Yes
+myMassgateText.GenericStrings.no	No
+myMassgateText.GenericStrings.true	True
+myMassgateText.GenericStrings.false	False
+myMassgateText.GenericStrings.on	On
+myMassgateText.GenericStrings.off	Off
+myMassgateText.GenericStrings.unknownMap	Unknown map
+myMassgateText.GenericStrings.timeLimitedKeyWarning	The CD-Key you have entered is time limited and will eventually expire. Are you sure you want to continue? Press YES if you want to use this key. Press NO if you want to enter another key instead.
+myMassgateText.GenericStrings.cdKeyAttention	ATTENTION
+myMassgateText.GenericStrings.systemMessage	SYSTEM MESSAGE
+myMassgateText.GenericStrings.preorderHeadline	PRE-ORDER
+myMassgateText.GenericStrings.preorderBody	This bonus map is only available to players who have pre-ordered World In Conflict. (If you have pre-ordered already please go to the login page and press ENTER ACCESS CODE). Would you like to pre-order World In Conflict?
+myMassgateText.GenericStrings.gotoWebsite	GOTO WEBSITE
+myMassgateText.GenericStrings.ok	OK
+myMassgateText.GenericStrings.Resume	RESUME
+myMassgateText.GenericStrings.Cancel	CANCEL
+myMassgateText.GenericStrings.Later	LATER
+myMassgateText.GenericStrings.NotNow	NOT NOW
+myMassgateText.myFriendsStrings.Friends	Friends
+myMassgateText.myFriendsStrings.Acquaintances	Acquaintances
+myMassgateText.myFriendsStrings.Online	online
+myMassgateText.myFriendsStrings.Offline	offline
+myMassgateText.myFriendsStrings.Playing	playing
+myMassgateText.myFriendsStrings.ClanMembers	Clan mates
+myMassgateText.myFriendsStrings.FriendsHeader	People I know
+myMassgateText.myFriendsStrings.NotAFriend	Others
+myMassgateText.myFriendsStrings.Ignored	Ignored
+myMassgateText.myProfilePage.neverPlayedWith	You have never played with __PROFILENAME__ in the last month
+myMassgateText.myProfilePage.playedMultipleTimes	You have played __NUMTIMES__ times with __PROFILENAME__ in the last month
+myMassgateText.myProfilePage.playedOnce	You have played once with __PROFILENAME__ in the last month
+myMassgateText.myProfilePage.NotFound	No matching players found. If you are unsure of the spelling of the name, then enter part of the name you are searching for.
+myMassgateText.myProfilePage.MessageTooLong	Message too long.
+myMassgateText.myProfilePage.GoToProfilePageQuestion	Do you want to go to your profile page?
+myMassgateText.myProfilePageStats.lastMatchPlayed	Last match played
+myMassgateText.myProfilePageStats.numberOfMatches	Number of matches played
+myMassgateText.myProfilePageStats.numberOfMatchesWon	Number of matches won
+myMassgateText.myProfilePageStats.numberOfMatchesLost	Number of matches lost
+myMassgateText.myProfilePageStats.bestWinningStreak	Best winning streak
+myMassgateText.myProfilePageStats.currentWinningStreak	Current winning streak
+myMassgateText.myProfilePageStats.currentLadderPosition	Current leaderboard position
+myMassgateText.myProfilePageStats.bestLadderPosition	Best leaderboard position
+myMassgateText.myProfilePageStats.avgMatchLength	Average match length
+myMassgateText.myProfilePageStats.numberOfDominationMatchesWon	Domination matches won
+myMassgateText.myProfilePageStats.numberOfDominationMatchesLost	Domination matches lost
+myMassgateText.myProfilePageStats.numberOfMatchesWonByTotalDomination	Matches won by Total Domination
+myMassgateText.myProfilePageStats.numberOfAssaultMatchesWon	Assault matches won
+myMassgateText.myProfilePageStats.numberOfAssaultMatchesLost	Assault matches lost
+myMassgateText.myProfilePageStats.numberOfPerfectDefandsInAssaultMatch	Perfect Defenses in Assault matches
+myMassgateText.myProfilePageStats.numberOfTowMatchesWon	Tug of War matches won
+myMassgateText.myProfilePageStats.numberOfTowMatchesLost	Tug of War matches lost
+myMassgateText.myProfilePageStats.numberOfPerfectPushesInTowMatch	Perfect Pushes in Tug of War matches
+myMassgateText.myProfilePageStats.avgNumberOfReinforcementPointsSpent	Average number of Reinforcement Points spent
+myMassgateText.myProfilePageStats.avgNumberOfTAPointsSpent	Average number of Tactical Aid points spent
+myMassgateText.myProfilePageStats.avgNumberOfUnitsKilled	Average number of units killed
+myMassgateText.myProfilePageStats.avgNumberOfUnitsLost	Average number of units lost
+myMassgateText.myProfilePageStats.totalScore	Total score
+myMassgateText.myProfilePageStats.avgScore	Average score
+myMassgateText.myProfilePageStats.highestScoreInAMatch	Highest score in a match
+myMassgateText.myProfilePageStats.scoreByDamagingenemies	Score from damaging enemy units
+myMassgateText.myProfilePageStats.scoreByRepairing	Score from repairing
+myMassgateText.myProfilePageStats.scoreByTransporting	Score from transporting
+myMassgateText.myProfilePageStats.scoreByUsingTacticalAids	Score from Tactical Aid
+myMassgateText.myProfilePageStats.scoreByCapturingCommandPoints	Score from capturing Command Points
+myMassgateText.myProfilePageStats.scoreByFortifying	Score from fortifying
+myMassgateText.myProfilePageStats.scoreAsInfantry	Score as Infantry
+myMassgateText.myProfilePageStats.scoreAsAir	Score as Air
+myMassgateText.myProfilePageStats.scoreAsArmor	Score as Armor
+myMassgateText.myProfilePageStats.scoreAsSupport	Score as Support
+myMassgateText.myProfilePageStats.highScoreAsInfantry	Highest score as Infantry
+myMassgateText.myProfilePageStats.highScoreAsAir	Highest score as Air
+myMassgateText.myProfilePageStats.highScoreAsArmor	Highest score as Armor
+myMassgateText.myProfilePageStats.highScoreAsSupport	Highest score as Support
+myMassgateText.myProfilePageStats.numberOfUnitsKilled	Number of units killed
+myMassgateText.myProfilePageStats.numberOfUnitsLost	Number of units lost
+myMassgateText.myProfilePageStats.numberOfNukesDeployed	Number of Tactical Nukes deployed
+myMassgateText.myProfilePageStats.numberOfTacticalAidCriticalHits	Number of Tactical Aid critical hits
+myMassgateText.myProfilePageStats.timePlayedAsUSA	Time playing as USA
+myMassgateText.myProfilePageStats.timePlayedAsUSSR	Time playing as USSR
+myMassgateText.myProfilePageStats.timePlayedAsNATO	Time playing as NATO
+myMassgateText.myProfilePageStats.timePlayedAsInfantry	Time playing as Infantry
+myMassgateText.myProfilePageStats.timePlayedAsAir	Time playing as Air
+myMassgateText.myProfilePageStats.timePlayedAsArmor	Time playing as Armor
+myMassgateText.myProfilePageStats.timePlayedAsSupport	Time playing as Support
+myMassgateText.myProfilePageStats.avgSpecialAbilitiesPerMatch	Average number of Special Abilities
+myMassgateText.myInstantMessaging.InstantMessageHeading	Instant message conversation with __RANKNAME__ __PEERPROFILENAME__
+myMassgateText.myInstantMessaging.MessageCapReached	You have reached your outgoing message limit. Try again in a few minutes.
+myMassgateText.myClanStrings.ClanMembers	Clan members
+myMassgateText.myClanStrings.ClanLeader	Clan leader
+myMassgateText.myClanStrings.Officers	Officers
+myMassgateText.myClanStrings.Grunts	Grunts
+myMassgateText.myClanStrings.Recruits	Recruits
+myMassgateText.myClanStrings.ConfirmLeaveQuestion	Are you sure you want to leave the clan?
+myMassgateText.myClanStrings.ConfirmInviteQuestion	Are you sure you want to invite this player to your clan?
+myMassgateText.myClanStrings.FAIL_INVALID_NAME	The requested name of the clan is invalid. Please try another name.
+myMassgateText.myClanStrings.FAIL_TAG_TAKEN	Another clan already has the tag you requested. Please choose another tag.
+myMassgateText.myClanStrings.FAIL_OTHER	Could not create clan. Clan name and tag may be invalid.
+myMassgateText.myClanStrings.FAIL_ALREADY_IN_CLAN	The player is already in a clan and can not be invited to your clan.
+myMassgateText.myClanStrings.FAIL_DUPLICATE	The player is already invited to a clan.
+myMassgateText.myClanStrings.FAIL_INVALID_PRIVILIGES	You do not have the right to invite players to your clan.
+myMassgateText.myClanStrings.FAIL_MASSGATE	Cannot modify clan: An internal massgate error occured.
+myMassgateText.myClanStrings.AskYouHaveBeenInvited	__PLAYERNAME__ has invited you to join the clan __CLANNAME__. Do you accept?
+myMassgateText.myClanStrings.ManageClan	Updating clan data
+myMassgateText.myClanStrings.PromoteToLeader	Assign clan leadership
+myMassgateText.myClanStrings.KickPlayer	Kick from clan
+myMassgateText.myClanStrings.ConfirmPromoteNewLeaderQuestion	Are you sure you want to give leadership to __PLAYERNAME__?
+myMassgateText.myClanStrings.MODIFY_FAIL_INVALID_PRIVILIGES	You must be clan leader to modify the clan
+myMassgateText.myClanStrings.MODIFY_FAIL_TOO_FEW_MEMBERS	The operation requires more members. If you want to quit the clan - select leave on the clan page instead of kicking yourself from the clan
+myMassgateText.myClanStrings.MODIFY_FAIL_OTHER	Could not modify clan.
+myMassgateText.myClanStrings.MODIFY_FAIL_MASSGATE	A massgate error occured while modifying clan. Try again later.
+myMassgateText.myClanStrings.INVITE_FAIL_PLAYER_IGNORE_MESSAGES	Can not invite player. The player ignores messages and invites from you.
+myMassgateText.myClanStrings.SetRecruitment	Set player of the week
+myMassgateText.myClanStrings.confirmLaunchWebsite	Do you want to go to the website?
+myMassgateText.myClanStrings.Demote	Demote
+myMassgateText.myClanStrings.Promote	Promote
+myMassgateText.myClanStrings.NotFound	No clan found that matches the name or clantag.
+myMassgateText.myClanStrings.GuestBookMsgTooLong	Message too long
+myMassgateText.myClanStrings.MatchChallenge8x8	8 vs 8
+myMassgateText.myClanStrings.MatchChallenge5x5	5 vs 5
+myMassgateText.myClanStrings.MatchChallenge4x4	4 vs 4
+myMassgateText.myClanStrings.MatchChallenge2x2	2 vs 2
+myMassgateText.myClanStrings.MatchChallengeNoSuitable	The opponent clan does not have an online clan member that can or will accept the challenge.
+myMassgateText.myClanStrings.MatchChallengeServerTimeout	The challenge took too long, server has been allocated to someone else.
+myMassgateText.myClanStrings.MatchChallengeOpCancel	Your opponent has cancelled the challenge
+myMassgateText.myClanStrings.MatchChallengeRecv	__CLANNAME__ is challenging your clan!
+myMassgateText.myClanStrings.MatchChallengeRecvNotifBut	Respond to challenge
+myMassgateText.myClanStrings.BUSY	Opponent busy
+myMassgateText.myClanStrings.CHALLENGE_DECLINED	Challenge declined
+myMassgateText.myClanStrings.MISSING_MAP	Your opponent doesn't have the map
+myMassgateText.myClanStrings.NOT_INITIATED	Unknown error.
+myMassgateText.myClanStrings.CHALLENGE_CANCELED	Challenge was cancelled by the other clan
+myMassgateText.myClanStrings.ChallengePreparing	Preparing challenge
+myMassgateText.myClanStrings.NoChallengeServer	No clan match servers are available at the moment. Please try again later.
+myMassgateText.myClanStrings.InviteSent	Invite sent!
+myMassgateText.myClanStrings.preOrderOnlyMap	PRE-ORDER ONLY MAP
+myMassgateText.myClanStrings.ChallengeClan	Clan Challenge
+myMassgateText.myClanStrings.noOfficerOnline	There is no officer online that can accept your challenge.
+myMassgateText.myClanStrings.UseProRulesDontCare	Don't care
+myMassgateText.myClanStrings.UseProRulesYes	Yes
+myMassgateText.myClanStrings.UseProRulesNo	No
+myMassgateText.myClanStrings.CWNumPlayers	Num players: __REPLACE__
+myMassgateText.myClanStrings.CWProRules	Pro rules: __REPLACE__
+myMassgateText.myClanStrings.CWLadderPos	Ladder position: __FROM__ to __TO__
+myMassgateText.myClanStrings.CWMaps	Maps:
+myMassgateText.myClanStrings.CWAddClan	ADD CLAN
+myMassgateText.myClanStrings.CWUpdateClan	UPDATE CLAN
+myMassgateText.myClanStrings.DontCare	Any
+myMassgateText.myClanStrings.CWRemoveClanConfirmText	This will remove your signup, are you sure?
+myMassgateText.myClanStrings.AntiSmurfYouCantPlay	You can't play a clan match with this profile since you have played in another clan in the last __REPLACE__ days.
+myMassgateText.myClanStrings.AntiSmurfOpCantPlay	You can't challenge this player since he has played in another clan in the last __REPLACE__ days.
+myMassgateText.myClanStrings.AntiSmurfPlayerCantPlay	This player can't join the clan match since he has played in another clan in the last __REPLACE__ days.
+myMassgateText.myClanStrings.GoToClanPageQuestion	Do you want to go to your clan page?
+myMassgateText.myGangStrings.AskYouHaveBeenInvited	You have been invited to a group by __PLAYERNAME__. This will make it easier for you to join servers together. Do you accept?
+myMassgateText.myGangStrings.InfoPlayerDeclined	__PLAYERNAME__ has declined to be part of your group.
+myMassgateText.myGangStrings.InfoPlayerJoined	__PLAYERNAME__ has joined your group
+myMassgateText.myGangStrings.InfoPlayerLeft	__PLAYERNAME__ has left your group.
+myMassgateText.myGangStrings.InfoGangFull	You cannot join the group as it has reached it's maximum number of members.
+myMassgateText.myGangStrings.AskLeaveWithGang	The groupmember __PLAYERNAME__ has left the server and would like you to follow. Do you accept? \nPress yes to leave the server\nPress no to leave the group.
+myMassgateText.myGangStrings.AskLeaveServer	Would you like to ask the other groupmembers to leave the server?\nPress yes to ask them\nPress no to leave the group.
+myMassgateText.myGangStrings.InfoCannotCreateServer	You can not create a server when you are in a group.
+myMassgateText.myGangStrings.InfoGangDivided	Some groupmembers are still in the previous server. Please wait until they have  left the server or the group.
+myMassgateText.myGangStrings.GettingGangServer	Your groupmember __PLAYERNAME__ found a server.
+myMassgateText.myGangStrings.DoGangJoin	Follow groupmember __PLAYERNAME__ in __SECONDS__..
+myMassgateText.myGangStrings.NotificationDetails	Answer...
+myMassgateText.myGangStrings.GroupChatroom	Group chatroom
+myMassgateText.myGangStrings.cannotJoinPreOrder	I don't have the pre-order map so I have left the group
+myMassgateText.myGangStrings.NotSupportedForGroups	Server queuing is not supported for groups.
+myMassgateText.myPatchText.QueryDownloadPatch	An updated version of World In Conflict is required to play online. Do you want to download it now?
+myMassgateText.myPatchText.downloadStatus	Time left: __HOUR__h __MIN__m __SEC__s. (__KBSEC__ Kb/s)
+myMassgateText.myPatchText.downloadFailed	Download failed.
+myMassgateText.myPatchText.downloadComplete	Download complete
+myMassgateText.myPatchText.downloadStarting	Initializing download
+myMassgateText.myContextMenuStrings.SendIm	Send instant message
+myMassgateText.myContextMenuStrings.InviteToGang	Invite to group
+myMassgateText.myContextMenuStrings.GotoProfile	View profile
+myMassgateText.myContextMenuStrings.GotoClan	View clan
+myMassgateText.myContextMenuStrings.InviteToClan	Invite to my clan
+myMassgateText.myContextMenuStrings.AddFriend	Add friend
+myMassgateText.myContextMenuStrings.RemoveFriend	Remove friend
+myMassgateText.myContextMenuStrings.JoinSameServer	Join same server
+myMassgateText.myContextMenuStrings.InviteToServer	Invite to server
+myMassgateText.myContextMenuStrings.ChallengeClanMatch	Challenge to clan-match
+myMassgateText.myContextMenuStrings.InviteToClanMatch	Invite to join clan match
+myMassgateText.myContextMenuStrings.Report	abuse <empty>
+myMassgateText.myContextMenuStrings.ReportAbuse	Report abuse
+myMassgateText.myContextMenuStrings.Ignore	Ignore
+myMassgateText.myContextMenuStrings.UnIgnore	Unignore
+myMassgateText.myContextMenuStrings.RemoveAllByProfile	Remove all posts by this player
+myMassgateText.myClanStats.lastMatchPlayed	Last match played
+myMassgateText.myClanStats.matchesPlayed	Matches played
+myMassgateText.myClanStats.matchesWon	Matches won
+myMassgateText.myClanStats.matchesLost	Matches lost
+myMassgateText.myClanStats.currentLadderPosition	Current leaderboard position
+myMassgateText.myClanStats.bestWinningStreak	Best winning streak
+myMassgateText.myClanStats.currentWinningStreak	Current winning streak
+myMassgateText.myClanStats.bestLadderPosition	Best leaderboard position
+myMassgateText.myClanStats.tournamentsPlayed	Tournaments played
+myMassgateText.myClanStats.tournamentsWon	Tournaments won
+myMassgateText.myClanStats.avgMatchLength	Average match length
+myMassgateText.myClanStats.dominationMatchesWon	Domination matches won
+myMassgateText.myClanStats.dominationMatchesLost	Domination matches lost
+myMassgateText.myClanStats.dominationMatchesWonByTotalDomination	Matches won by Total Domination
+myMassgateText.myClanStats.assaultMatchesWon	Assault matches won
+myMassgateText.myClanStats.assaultMatchesLost	Assault matches lost
+myMassgateText.myClanStats.assaultMatchesPerfectsDefends	Perfect Defenses in Assault matches
+myMassgateText.myClanStats.towMatchesWon	Tug of War matches won
+myMassgateText.myClanStats.towMatchesLost	Tug of War matches lost
+myMassgateText.myClanStats.towMatchesPerfectPushes	Perfect Pushes in Tug of War match
+myMassgateText.myClanStats.totalScore	Total score
+myMassgateText.myClanStats.avgScore	Average score
+myMassgateText.myClanStats.highestScoreInAMatch	Highest score in a match
+myMassgateText.myClanStats.scoreByDamagingEnemies	Score from damaging enemy units
+myMassgateText.myClanStats.scoreByRepairing	Score from repairing
+myMassgateText.myClanStats.scoreByTransporting	Score from transporting
+myMassgateText.myClanStats.scoreByTacticalAid	Score from Tactical Aid
+myMassgateText.myClanStats.scoreByFortifying	Score from fortifying
+myMassgateText.myClanStats.scoreByInfantry	Score as Infantry
+myMassgateText.myClanStats.scoreByAir	Score as Air
+myMassgateText.myClanStats.scoreByArmor	Score as Armor
+myMassgateText.myClanStats.scoreBySupport	Score as Support
+myMassgateText.myClanStats.highestScoreAsInfantry	Highest score as Infantry
+myMassgateText.myClanStats.highestScoreAsAir	Highest score as Air
+myMassgateText.myClanStats.highestScoreAsArmor	Highest score as Armor
+myMassgateText.myClanStats.highestScoreAsSupport	Highest score as Support
+myMassgateText.myClanStats.avgNumberOfUnitsKilledInAMatch	Average number of units killed
+myMassgateText.myClanStats.avgNumberOfUnitsLostInAMatch	Average number of units lost
+myMassgateText.myClanStats.numberOfNukesDeployed	Number of Tactical Nukes deployed
+myMassgateText.myClanStats.numberOfTacticalAidCriticalHits	Number of Tactical Aid critical hits
+myMassgateText.myClanStats.timePlayedAsUSA	Time playing as USA
+myMassgateText.myClanStats.timePlayedAsUSSR	Time playing as USSR
+myMassgateText.myClanStats.timePlayedAsNATO	Time playing as NATO
+myMassgateText.myTournaments.gt_domination	Domination
+myMassgateText.myTournaments.gt_assault	Assault
+myMassgateText.myTournaments.gt_koth	King of the hill
+myMassgateText.myTournaments.gt_varied	Varied
+myMassgateText.myTournaments.st_completed	Completed
+myMassgateText.myTournaments.st_scheduled	Scheduled
+myMassgateText.myTournaments.st_ongoing	Ongoing
+myMassgateText.myTournaments.st_applied	Applied
+myMassgateText.myTournaments.st_joined	Joined
+myMassgateText.myTournaments.st_invited	Invited
+myMassgateText.myTournaments.st_rejected	Full
+myMassgateText.myTournaments.txt_TournamentWinner	TOURNAMENT WINNER
+myMassgateText.myTournaments.txt_FinalRound	FINAL ROUND
+myMassgateText.myTournaments.txt_r1	ROUND 1
+myMassgateText.myTournaments.txt_r2	ROUND 2
+myMassgateText.myTournaments.txt_r3	ROUND 3
+myMassgateText.myTournaments.txt_r4	ROUND 4
+myMassgateText.myTournaments.txt_Winner	(WINNER)
+myMassgateText.myTournaments.txt_Loser	(LOSER)
+myMassgateText.myTournaments.txt_Bye	(BYE)
+myMassgateText.myTournaments.txt_vs	vs.
+myMassgateText.myTournaments.DefaultTeamName	__PLAYERNAME__'s team
+myMassgateText.myTournaments.modal_Applying	Applying to join tournament
+myMassgateText.myTournaments.modal_Leaving	Leaving tournament
+myMassgateText.myTournaments.modal_Retrieving	Retrieving full tournament information
+myMassgateText.myTournaments.status_Applied_OK	You have now applied to the tournament
+myMassgateText.myTournaments.status_Applied_DupName	Application failed. The team name is taken in this tournament. Please choose another.
+myMassgateText.myTournaments.status_Applied_Full	Application failed. The tournament is full.
+myMassgateText.myTournaments.status_Applied_Noright	Application failed. Insufficient rights.
+myMassgateText.myTournaments.status_Applied_General	Application failed - general error.
+myMassgateText.myTournaments.modal_StartMatch	Finding tournament match server...
+myMassgateText.myTournaments.status_Left	You have left the tournament. Any scheduled opponents will receive a bye and automatically advance one step.
+myMassgateText.myTournaments.status_NoServer	No tournamentserver found. Please try again soon!
+myMassgateText.myTournaments.info_WasAccepted	Your request to participate in tournament __TOURNAMENTNAME__ was accepted.
+myMassgateText.myTournaments.info_WasRejected	The tournament __TOURNAMENTNAME__ is full so your application was rejected.
+myMassgateText.myTournaments.warn_MatchImminent	A tournament match is imminent. Please go to the tournament screen for more information.
+myMassgateText.myTournaments.info_MatchMissed	You missed the match start for tournament __TOURNAMENTNAME__.
+myMassgateText.myTournaments.confirmApply	Are you sure you want to signup for the tournament on behalf of your clan?
+myMassgateText.myTournaments.noprivileges	Only clan leaders can apply for tournaments. If you're not in a clan, please create one on the home screen.
+myMassgateText.myContentStrings.AskMapDownload	The server is using a map that you don't have, which means you cannot play on this server. Do you want Massgate to search for the map online?
+myMassgateText.myContentStrings.MapNotFound	The map was not found
+myMassgateText.myContentStrings.NotImplemented	Not implemented
+myMassgateText.myContentStrings.myMapDLPending	pending
+myMassgateText.myContentStrings.myMapDLSkipped	skipped
+myMassgateText.myContentStrings.myMapDLWaiting	waiting
+myMassgateText.myContentStrings.myMapDLPaused	paused
+myMassgateText.myContentStrings.myMapDLCompleted	completed
+myMassgateText.myContentStrings.myMapDLFailed	failed
+myMassgateText.myContentStrings.myMapAvailable	Massgate has new maps available, would you like to download them?
+myMassgateText.myContentStrings.myMapDownloading	Download started
+myMassgateText.myContentStrings.myMapFinished	Download __REPLACE__ finished
+myMassgateText.myContentStrings.NoMap	The server is using a map that you don't have, so you can't join the server.
+myMassgateText.myContentStrings.MissingMapDialogHeader	MISSING MAP
+myMassgateText.myContentStrings.MissingMapDialogBody	The server you are trying to join have some maps (__REPLACE__) that you don't have. Press FORUMS to look for the map on-line. Press JOIN to join the server, you will get kicked from the server if the missing map is played. Press CANCEL to cancel.
+myMassgateText.myContentStrings.MissingModDialogHeader	MISSING MOD
+myMassgateText.myContentStrings.MissingModDialogBody	The server you are trying to join is using a mod you don't have. Do you want to look for it online? Click YES to proceed to our forums, click NO to cancel.
+myMassgateText.myClanChallengeStrings.WaitingForServer	Waiting for server
+myMassgateText.myClanChallengeStrings.ServerUnavailable	No available Clan Match Server was found. Please try again later.
+myMassgateText.myClanChallengeStrings.WaitingForPlayer	Challenge sent. Waiting for opponent.
+myMassgateText.myClanChallengeStrings.AcceptChallenge	Accept
+myMassgateText.myClanChallengeStrings.DeclineChallenge	Decline
+myMassgateText.myClanChallengeStrings.SendChallenge	Send
+myMassgateText.myClanChallengeStrings.CancelChallenge	Cancel
+myMassgateText.myClanChallengeStrings.UnknownMap	Unknown Map
+myMassgateText.myClanChallengeStrings.Connecting	Connecting to server.
+myMassgateText.myClanChallengeStrings.InviteeNotOfficer	Other player is not clan officer and cannot accept challenges
+myMassgateText.myClanChallengeStrings.InviterNotOfficer	You are not allowed to challenge other clans, since you are not an officer in your clan
+myMassgateText.myClanChallengeStrings.OpponentDeclined	Opponent clan declined your challenge
+myMassgateText.myClanChallengeStrings.LobbyAcceptedPleaseWait	Opponent clan has accepted you challenge, please wait. 
+myMassgateText.myClanChallengeStrings.wentOffline	The person you are challenging went off-line.
+myMassgateText.myClanChallengeStrings.inviteString	__PLAYERNAME__ would like you to join a clan match against __CLANNAME__
+myMassgateText.myClanChallengeStrings.details	Details...
+myMassgateText.myClanChallengeStrings.challengeDetailsStartedthis	__PLAYERNAME__ has challenged the members of __CLANNAME__. Will you join the match?
+myMassgateText.myClanChallengeStrings.challengeDetailsJoin	The __CLANNAME__ is challenging your clan and __PLAYERNAME__ has requested your assistance. Will you join the match?
+myMassgateText.myQuestionDialog.buttonOk	OK
+myMassgateText.myQuestionDialog.buttonCancel	CANCEL
+myMassgateText.myQuestionDialog.buttonYes	YES
+myMassgateText.myQuestionDialog.buttonNo	NO
+myMassgateText.myQuestionDialog.buttonAccept	ACCEPT
+myMassgateText.myQuestionDialog.buttonDecline	DECLINE
+myMassgateText.myQuestionDialog.buttonSave	SAVE
+myMassgateText.myQuestionDialog.buttonPreorder	PRE-ORDER NOW
+myMassgateText.myQuestionDialog.buttonLater	LATER
+myMassgateText.myQuestionDialog.buttonInstall	INSTALL
+myMassgateText.myQuestionDialog.buttonJoin	JOIN
+myMassgateText.myQuestionDialog.buttonForums	FORUMS
+myMassgateText.AccessCodes.Activating	Activating code...
+myMassgateText.AccessCodes.Invalid	The code is invalid. Please try again.
+myMassgateText.AccessCodes.Error	There was an error activaing the code. Please try again later. Code NOT activated.
+myMassgateText.AccessCodes.AuthFailure	No account matches that email and password. Code NOT activated.
+myMassgateText.AccessCodes.Presell	Your access code has been accepted. The pre-order benefits have been activated!
+myMassgateText.AccessCodes.Guest	Thank you for purchasing World in Conflict Multiplayer. Your CD-Key has been unlocked.
+myMassgateText.AccessCodes.cdkeyWasNotTimebombed	You can not upgrade this CD-Key. It already has unlimited online access. Please use this access code with a different CD-Key.
+myMassgateText.AccessCodes.timebombedAlreadyUpgraded	This CD-Key has already been upgraded. Please use this access code with a different CD-Key.
+myMassgateText.Options.download1	Disabled
+myMassgateText.Options.download2	Not while playing
+myMassgateText.Options.download3	Always
+myMassgateText.Options.internet1	ADSL
+myMassgateText.Options.internet2	Cable
+myMassgateText.Options.internet3	Ethernet
+myMassgateText.Options.likeMap	(enabled)
+myMassgateText.Options.dislikeMap	(disabled)
+myMassgateText.Options.rankBalanceAny	Any
+myMassgateText.Options.rankBalanceYes	Yes
+myMassgateText.Options.rankBalanceNo	No
+myMassgateText.MatchLobby.invitePending	(invited)
+myMassgateText.MatchLobby.MaximizeText	Back to match lobby
+myMassgateText.MatchLobby.declinedMatchInvitation	__PLAYERNAME__ declined your match invitation
+myMassgateText.MatchLobby.unknownMap	unknown
+myMassgateText.MatchLobby.maxPlayers	%u vs. %u
+myMassgateText.MatchLobby.clanType	Clan
+myMassgateText.MatchLobby.tournamentType	Tournament
+myMassgateText.MatchLobby.playerEntersRoom	%s enters lobby
+myMassgateText.MatchLobby.bossLeft	The match initiator left the match lobby, match cancelled
+myMassgateText.MatchLobby.playerLeftRoom	%s left the lobby
+myMassgateText.MatchLobby.preparingLobby	Preparing match lobby
+myMassgateText.MatchLobby.declinedMissingMap	__PLAYERNAME__ doesn't have the map for this clan match
+myMassgateText.MatchLobby.declinedMissingPreOrderMap	__PLAYERNAME__ hasn't pre-ordered the game and does not have the map to participate in this clan match
+myMassgateText.MatchLobby.declinedServerError	Something went wrong when inviting __PLAYERNAME__
+myMassgateText.MatchLobby.declinedPlayerNotAvailable	__PLAYERNAME__ is either offline or playing and cannot be invited to this clanmatch
+myMassgateText.MatchLobby.startingServer	<#ff0>Starting clan match server, please wait...</>
+myMassgateText.myClanMatchLogStrings.gameModeDomination	DOMINATION
+myMassgateText.myClanMatchLogStrings.gameModeAssault	ASSAULT
+myMassgateText.myClanMatchLogStrings.gameModeTugOfWar	TUG OF WAR
+myMassgateText.myClanMatchLogStrings.gameModeUnknown	UNKNOWN
+myMassgateText.myClanMatchLogStrings.datePlayed	Date Played: __REPLACE__
+myMassgateText.myClanMatchLogStrings.map	Map: __REPLACE__
+myMassgateText.myClanMatchLogStrings.gameMode	Game Mode: __REPLACE__
+myMassgateText.myClanMatchLogStrings.gameTime	Game Time: __REPLACE__
+myMassgateText.myClanMatchLogStrings.winner	Winner: __REPLACE__
+myMassgateText.myClanMatchLogStrings.loser	Loser: __REPLACE__
+myMassgateText.myClanMatchLogStrings.clanDeleted	DELETED CLAN
+myMassgateText.myClanMatchLogStrings.score	__CLAN__ Score: __REPLACE__
+myMassgateText.myClanMatchLogStrings.numCriticalHits	__CLAN__ Number of Critical TA Hits: __REPLACE__
+myMassgateText.myClanMatchLogStrings.domination	__CLAN__ Domination: __REPLACE__
+myMassgateText.myClanMatchLogStrings.assaultiness	__CLAN__ Captured __NUMCOMMANDPOINTS__ Command Points in __MINUTES__:__SECONDS__
+myMassgateText.myClanMatchLogStrings.tugOfWariness	__CLAN__ Captured __NUMLINES__ lines and __NUMPERIMITERPOINTS__ Perimeter Points

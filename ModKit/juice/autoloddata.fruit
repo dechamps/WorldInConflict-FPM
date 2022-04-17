@@ -1,0 +1,54 @@
+
+CLASS AutolodData
+{
+	DECIMAL myOverrideAutolodSettings
+	DECIMAL myPropsLargeDetailScale
+	DECIMAL myPropsLargeWindowScale
+	DECIMAL myPropsLargeScale
+	DECIMAL myPropsLargeLod2Percent
+	DECIMAL myPropsLargeLod3Percent
+	DECIMAL myPropsLargeLod4Percent
+	DECIMAL myPropsLargeThreshhold
+	DECIMAL myAddonPropScale
+	DECIMAL myPropsMaxLod4Distance
+	DECIMAL myPropsSmallDetailScale
+	DECIMAL myPropsSmallWindowScale
+	DECIMAL myPropsSmallScale
+	DECIMAL myPropsSmallLod2Percent
+	DECIMAL myPropsSmallLod3Percent
+	DECIMAL myPropsSmallLod4Percent
+	DECIMAL myPropsParticleScale
+	DECIMAL myPropsWiresScale
+	DECIMAL myWreckFxScale
+	DECIMAL myWreckFxParticleScale
+	DECIMAL myProjectileScale
+	DECIMAL myProjectileParticleScale
+	DECIMAL myExplosionScale
+	DECIMAL myExplosionParticleScale
+	DECIMAL mySlotRepScale
+	DECIMAL mySlotRepParticleScale
+	DECIMAL myUnitDetailScale
+	DECIMAL myUnitWindowScale
+	DECIMAL myUnitScale
+	DECIMAL myUnitLod2Percent
+	DECIMAL myUnitLod3Percent
+	DECIMAL myUnitLod4Percent
+	DECIMAL myUnitParticleScale
+	DECIMAL myInfantryDetailScale
+	DECIMAL myInfantryWindowScale
+	DECIMAL myInfantryScale
+	DECIMAL myInfantryLod2Percent
+	DECIMAL myInfantryLod3Percent
+	DECIMAL myInfantryLod4Percent
+	DECIMAL myDeathLargeScale
+	DECIMAL myDeathSmallScale
+	DECIMAL myDeathLargeThreshold
+	DECIMAL myDeathParticleScale
+	DECIMAL myOtherLod2Percent
+	DECIMAL myOtherLod3Percent
+	DECIMAL myOtherLod4Percent
+	DECIMAL mySpeedTreeDistanceScale
+	DECIMAL myLandscapeScale
+	DECIMAL myUseRadiusFlag
+}
+

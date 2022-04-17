@@ -1,0 +1,194 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/usWinter/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/usWinter/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/usWinter/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/AmericanElm_RT_Winter.spt
+	{
+		myFilename speedtrees/usWinter/AmericanElm_RT_Winter.spt
+		myBBSideTexture speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/AmericanElm_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/AmericanElm_RT_Winter2.spt
+	{
+		myFilename speedtrees/usWinter/AmericanElm_RT_Winter2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/AmericanElm_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/BurfordHolly_RT.spt
+	{
+		myFilename speedtrees/usWinter/BurfordHolly_RT.spt
+		myBBSideTexture speedtrees/usWinter/billboards/BurfordHolly_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/BurfordHolly_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/BurfordHolly_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/BurfordHolly_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/BurfordHolly_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/BurfordHolly_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/BurfordHolly_RT2.spt
+	{
+		myFilename speedtrees/usWinter/BurfordHolly_RT2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/BurfordHolly_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/BurfordHolly_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/BurfordHolly_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/BurfordHolly_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/BurfordHolly_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/BurfordHolly_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/FraserFir_RT_Snow.spt
+	{
+		myFilename speedtrees/usWinter/FraserFir_RT_Snow.spt
+		myBBSideTexture speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/FraserFir_RT_Snow_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/FraserFir_RT_Snow2.spt
+	{
+		myFilename speedtrees/usWinter/FraserFir_RT_Snow2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/FraserFir_RT_Snow2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/GreenAsh_RT_Winter.spt
+	{
+		myFilename speedtrees/usWinter/GreenAsh_RT_Winter.spt
+		myBBSideTexture speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/GreenAsh_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/GreenAsh_RT_Winter2.spt
+	{
+		myFilename speedtrees/usWinter/GreenAsh_RT_Winter2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/GreenAsh_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/HorseChestnut_RT_Winter.spt
+	{
+		myFilename speedtrees/usWinter/HorseChestnut_RT_Winter.spt
+		myBBSideTexture speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/HorseChestnut_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/HorseChestnut_RT_Winter2.spt
+	{
+		myFilename speedtrees/usWinter/HorseChestnut_RT_Winter2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/HorseChestnut_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/SugarPine_RT_Winter.spt
+	{
+		myFilename speedtrees/usWinter/SugarPine_RT_Winter.spt
+		myBBSideTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/SugarPine_RT_Winter2.spt
+	{
+		myFilename speedtrees/usWinter/SugarPine_RT_Winter2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/SugarPine_RT_Winter3.spt
+	{
+		myFilename speedtrees/usWinter/SugarPine_RT_Winter3.spt
+		myBBSideTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/SugarPine_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/WesternRedCedar_RT_Winter.spt
+	{
+		myFilename speedtrees/usWinter/WesternRedCedar_RT_Winter.spt
+		myBBSideTexture speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usWinter/WesternRedCedar_RT_Winter2.spt
+	{
+		myFilename speedtrees/usWinter/WesternRedCedar_RT_Winter2.spt
+		myBBSideTexture speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/WesternRedCedar_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/uswinter/fraserfir_rt_christmas.spt
+	{
+		myFilename speedtrees/uswinter/fraserfir_rt_christmas.spt
+		myBBSideTexture speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/uswinter/fraserfir_rt_christmas.spt
+	{
+		myFilename speedtrees/uswinter/fraserfir_rt_christmas.spt
+		myBBSideTexture speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside.dds
+		myBBSideTextureMulti speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbtop.dds
+		myBBTopNormalmap speedtrees/usWinter/billboards/fraserfir_rt_christmas_bbtop_n.dds
+	}
+}

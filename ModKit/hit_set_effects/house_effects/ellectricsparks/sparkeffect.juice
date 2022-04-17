@@ -1,0 +1,40 @@
+INCLUDE units/unittype.fruit
+
+UnitType::DeathEffects SparkEffect
+{
+	myDeathEffects
+	{
+		DeathEffect DeathEffect(0)
+		{
+			myFileName hit_set_effects/house_effects/ellectricsparks/ellectricsparks.mrb
+			myShadowFileName <empty>
+			myPhysFile <empty>
+			myStates
+			{
+				myFrontStateId STND
+				myLeftStateId STND
+				myBackStateId STND
+				myRightStateId STND
+			}
+
+			myStatesDependOnHitDirectionFlag 0
+			myLifeTime 12
+			myHasRagdollFlag 0
+			myRagdollData
+			{
+				myRagdollModel <empty>
+				myRagdollPhysFile <empty>
+				myGibModel <empty>
+				myGibPhysFile <empty>
+			}
+
+		}
+
+	}
+
+	mySounds
+	{
+	}
+
+}
+

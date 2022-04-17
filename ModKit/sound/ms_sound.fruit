@@ -1,0 +1,47 @@
+CLASS MS_DistanceVolume
+{
+	DECIMAL myDistance
+	DECIMAL myVolume
+}
+
+SCRIPTCLASS MS_DVEnvelope
+{
+	MS_DistanceVolume
+}
+
+CLASS MS_SoundSpec
+{
+	FILE myFileName
+	MS_DVEnvelope myEnvelope
+	NUMBER myBaseFrequency
+	NUMBER mySoundBudgetGroup
+}
+
+SCRIPTCLASS MS_SoundSpecList
+{
+	MS_SoundSpec
+}
+
+CLASS MS_Sound
+{
+	NUMBER myNumChannels
+	MS_SoundSpecList mySpecs
+}
+
+CLASS MS_MultiSoundTransition
+{
+	TEXT mySoundName
+	NUMBER myTransition
+}
+
+SCRIPTCLASS MS_MultiSound
+{
+	MS_MultiSoundTransition
+}
+
+SCRIPTCLASS MS_SoundGroup
+{
+	MS_Sound
+	MS_SoundGroup
+	MS_MultiSound
+}

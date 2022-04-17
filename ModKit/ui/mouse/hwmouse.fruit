@@ -1,0 +1,31 @@
+TYPE Cursor_Type
+{
+	TOP_LEFT
+	CENTER
+}
+
+
+CLASS MouseCursorOverride
+{
+	Cursor_Type myType
+	FILE myFilename
+	DECIMAL myAnimationTime
+}
+
+SCRIPTCLASS MouseCursorOverrideList
+{
+	MouseCursorOverride
+}
+
+CLASS MouseCursor
+{
+	Cursor_Type myType
+	FILE myFilename
+	DECIMAL myAnimationTime
+	MouseCursorOverrideList myOverrides
+}
+
+SCRIPTCLASS MouseCursorList
+{
+	MouseCursor
+}

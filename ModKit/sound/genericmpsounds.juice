@@ -1,0 +1,70 @@
+INCLUDE sound/genericmpsounds.fruit
+
+GenericMPSounds GenericMPSounds
+{
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_adv_assault.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_cap_assault.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_cap_domination.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_ecap_assault.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_ecap_domination.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_los_assault.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_lost_domination.mp3
+
+	FILE FILE(0) sound/feedback/ru/mission/generic/ru_generic_ret_assault.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_adv_assault.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_cap_assault.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_cap_domination.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_ecap_assault.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_ecap_domination.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_los_assault.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_lost_domination.mp3
+
+	FILE FILE(0) sound/feedback/us/mission/generic/us_generic_ret_assault.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_adv_assault1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_cap_assault1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_cap_domination1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ecap_assault1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ecap_domination1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_los_assault1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_lost_domination1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ret_assault1.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_adv_assault2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_cap_assault2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_cap_domination2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ecap_assault2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ecap_domination2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_los_assault2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_lost_domination2.mp3
+
+	FILE FILE(0) sound/feedback/eu/mission/generic/eu_generic_ret_assault2.mp3
+
+}
+

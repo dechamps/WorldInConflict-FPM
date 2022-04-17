@@ -1,0 +1,35 @@
+INCLUDE editordata/wiced/fruit/wicedtemplates.fruit
+
+WicedRoadPreset myTemplate
+{
+	myWicedSpline
+	{
+		myName "New Spline"
+		myWidth 12.000000
+		mySegmentation 30
+		mySmoothness 3
+		myElasticity 0
+		mySideFlatteningWidth 0
+		mySide1InterpolationLength 1.5
+		mySide2InterpolationLength 1.5
+		myHeightModifier 0.0
+		myGenerateMeshFlag TRUE
+		myFlattenHeightMapFlag TRUE
+		myRemoveAutopropsFlag TRUE
+		myRenderToGroundFlag TRUE
+		myGroundDetailTextureID 0
+		myGroundDetailTextureIntensity 0.000000
+		myMaterialID METAL
+		myTextureFile editordata/presets/road/CountrysideRoad/Countryside_2lane_diffuse.dds
+		mySpecMapFile editordata/presets/road/CountrysideRoad/Countryside_2lane_specular.dds
+		myNormalMapFile editordata/presets/road/CountrysideRoad/Countryside_2lane_bump.dds
+		myVariationFile editordata/presets/road/CountrysideRoad/Countryside_patch_diffuse.dds
+		myIsOverlayFlag FALSE
+		myWayPoints
+		{
+		}
+
+	}
+
+}
+

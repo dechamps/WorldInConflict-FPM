@@ -1,0 +1,737 @@
+// Wiced.fruit
+// Config file header for WICEd
+// Created 050422 by Peen
+
+INCLUDE editordata/wicmap.fruit
+INCLUDE editordata/wiced/fruit/wicedinstances.fruit
+INCLUDE editordata/wiced/fruit/wicedmetadata.fruit
+
+CLASS WicedRenderConfig
+{
+        NUMBER myWidth
+        NUMBER myHeight
+        DECIMAL myMinCameraHeight
+        DECIMAL myMaxCameraHeight
+        DECIMAL myCameraLerpSpeed
+        DECIMAL mySurrMeshYOffset
+
+}
+
+CLASS WicedDefaultOptions
+{
+        NUMBER myTextureQuality
+        NUMBER myShadowQuality
+	NUMBER myWaterReflection
+	NUMBER myVsVersion
+	NUMBER myPsVersion
+	NUMBER myHQTerrainFlag
+	NUMBER myAutopropsFlag
+	NUMBER myObjectLod
+	NUMBER myParticleLevel
+	NUMBER myAnisotropicFiltering
+	NUMBER myContinuousRenderingFlag
+	NUMBER myAmbientSoundsFlag
+	NUMBER myLockedInstanceHighlightFlag
+	DECIMAL my2DMapScaleFactor
+	NUMBER myReplaceHeadingOffset
+	NUMBER myReplacePitchOffset
+	NUMBER myReplaceBankOffset
+	DECIMAL myReplaceHeightOffset
+	NUMBER myReplaceAbsHeadingOffsetFlag
+	NUMBER myReplaceAbsPitchOffsetFlag
+	NUMBER myReplaceAbsBankOffsetFlag
+	NUMBER myReplaceHeightOffsetMode
+	TEXT myDefaultEnvironmentTemplate
+	TEXT myDefaultGroundTemplate
+}
+
+SCRIPTCLASS WicedBrushList
+{
+	FILE
+}
+
+CLASS WicedBrushData
+{
+	WicedBrushList myBrushes
+	DECIMAL myDefaultTargetHeight
+	DECIMAL myDefaultStepValue
+	NUMBER myDefaultPressure
+	NUMBER myDefaultBrushIndex
+} 
+
+SCRIPTCLASS WicedWireMaterials
+{
+	FILE
+}
+
+CLASS WicedWireType
+{
+	
+	DECIMAL myDefaultMass // 0.25 - 1.5
+	DECIMAL myStiffness // 0.9 - 1.1
+	DECIMAL myResolution // beror på längd, antal splits mellan två punkter
+	DECIMAL myElasticLimit  // 1 - infinity
+	NUMBER myMaterial
+}
+
+SCRIPTCLASS WicedWireTypes
+{
+	WicedWireType
+}
+
+SCRIPTCLASS WicedAllowedModelFolders
+{
+	TEXT
+}
+
+SCRIPTCLASS WicedDummyModelFolders
+{
+	TEXT
+}
+
+CLASS WicedWireData
+{
+	WicedWireTypes myWireTypes
+	WicedWireMaterials myWireMaterials
+	
+	NUMBER myDefaultWireTypeIndex
+
+}
+
+CLASS WicedInstanceContainerConfig
+{
+        FILE myTextLabelFont
+        NUMBER myTextLabelFontSize
+        WicedColor myTextLabelColor
+}
+
+CLASS WicedMapEditorConfig
+{
+        FILE mySurfaceOne
+        FILE mySurfaceTwo
+        FILE mySurfaceThree
+        FILE myLightSurface
+}
+
+CLASS WicedGroundToolsConfig
+{
+        DECIMAL myFineUpAdjustPressureValue
+        DECIMAL myCoarseUpAdjustPressureValue
+        DECIMAL myFineDownAdjustPressureValue
+        DECIMAL myCoarseDownAdjustPressureValue
+        DECIMAL myFineUpAdjustHeightValue
+        DECIMAL myCoarseUpAdjustHeightValue
+        DECIMAL myFineDownAdjustHeightValue
+        DECIMAL myCoarseDownAdjustHeightValue
+        DECIMAL myCoarseUpAdjustStepValue
+        DECIMAL myCoarseDownAdjustStepValue
+        DECIMAL myFineDownAdjustStepValue
+        DECIMAL myFineUpAdjustStepValue
+}
+
+CLASS WicedReplaceCommandConfig
+{
+	
+	NUMBER myCoarseDownAdjustReplaceHeadingOffset
+	NUMBER myFineDownAdjustReplaceHeadingOffset
+	NUMBER myCoarseUpAdjustReplaceHeadingOffset
+	NUMBER myFineUpAdjustReplaceHeadingOffset
+	NUMBER myCoarseDownAdjustReplacePitchOffset
+	NUMBER myFineDownAdjustReplacePitchOffset
+	NUMBER myCoarseUpAdjustReplacePitchOffset
+	NUMBER myFineUpAdjustReplacePitchOffset
+	NUMBER myCoarseDownAdjustReplaceBankOffset
+	NUMBER myFineDownAdjustReplaceBankOffset
+	NUMBER myCoarseUpAdjustReplaceBankOffset
+	NUMBER myFineUpAdjustReplaceBankOffset
+
+	DECIMAL myCoarseDownAdjustReplaceHeightOffset
+        DECIMAL myFineDownAdjustReplaceHeightOffset
+        DECIMAL myCoarseUpAdjustReplaceHeightOffset
+        DECIMAL myFineUpAdjustReplaceHeightOffset
+	
+}
+
+SCRIPTCLASS WicedAreaTypes
+{
+	WicedAreaType
+}
+
+CLASS WicedAreaType
+{
+	TEXT myName
+	DECIMAL myRadius
+}
+
+CLASS WicedMissionStatsConfig
+{
+	StartingUnitsPositionMarkerList myDefaultStartingUnitsPositionMarkerList
+	NUMBER myDeployAreaCommandPointRadius
+}
+
+CLASS WicedTool
+{
+        DECIMAL myCameraMoveSpeed
+        DECIMAL myCameraHeightSpeed
+        DECIMAL myCameraRotateSpeed
+        DECIMAL mySlowDownRate 	
+}
+
+CLASS WicedCommand
+{
+	TEXT myCommandGUIName
+        NUMBER myShortcutKey
+        NUMBER myShiftFlag
+        NUMBER myCtrlFlag
+        NUMBER myGestureId 
+        NUMBER myOnlyInternalCommandFlag
+}
+
+CLASS WicedPaintToHeightTool
+{
+        WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedPaintPlusMinusTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedRampTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedPinchTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedSmoothTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedRulerTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedMaskEditTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedDetailTextureEditTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+
+CLASS WicedPlaceInstanceTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+	DECIMAL myHeightStepvalue
+}
+
+CLASS WicedEditInstanceTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+	DECIMAL myHeightStepvalue
+	FILE myDragSelectionMarker
+}
+
+CLASS WicedCopyInstanceTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedPickInstanceTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedGrepInstanceTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedInspectTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedGroundTextureGenerationTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedTerrainGenerationTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedRoadTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedEnvironmentTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedGameplayTool
+{
+	WicedTool myTool
+	WicedCommand myCommand
+}
+
+CLASS WicedUndoCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedDeleteCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedEditMissionStatsCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedFinalizeCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedImportHeightmapCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedImportGroundTemplateCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedImportEnvironmentTemplateCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedSnapToGroundCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedReplaceCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedLockCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedUnlockCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedUnlockAllCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedSpeedTreeSetOptionCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedExportToLWOCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedTakeScreenshotCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedBugReportsCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedWireFrameCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedDeploymentAreaMasksCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedPropOptionsCommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedMapSettingsommand
+{
+	WicedCommand myCommand
+}
+
+CLASS WicedExportTopDownRaytraceMapCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedCameraForwardCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedSurroundFadeCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedSubmitCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedExportSurroundMeshesToLWOCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedReloadAllTexturesCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedReloadAllRoadsCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedExportCubemapCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedEditForestBrushCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedExportPathfindingMapsCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedTerrainTextureShadeCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedTerrainGouraudShadeCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedTerrainWireframeOverlayCommand
+{
+	WicedCommand myCommand	
+}
+
+CLASS WicedTerrainPathmapOverlayCommand
+{
+	WicedCommand myCommand	
+}
+
+SCRIPTCLASS WicedToolsAndCommands
+{
+	// Tools
+	WicedPaintToHeightTool
+	WicedPaintPlusMinusTool
+	WicedRampTool
+	WicedRulerTool
+	WicedMaskEditTool
+	WicedDetailTextureEditTool
+	WicedPinchTool
+	WicedSmoothTool
+	WicedPlaceInstanceTool
+	WicedEditInstanceTool
+	WicedCopyInstanceTool	
+	WicedPickInstanceTool	
+	WicedGrepInstanceTool
+	WicedInspectTool
+	WicedGroundTextureGenerationTool
+	WicedTerrainGenerationTool
+	WicedRoadTool
+	WicedEnvironmentTool
+	WicedGameplayTool
+
+
+	// Commands
+	WicedUndoCommand
+	WicedDeleteCommand
+	WicedEditMissionStatsCommand
+	WicedFinalizeCommand
+	WicedSnapToGroundCommand
+	WicedReplaceCommand
+	WicedLockCommand
+	WicedUnlockCommand
+	WicedUnlockAllCommand
+	WicedImportHeightmapCommand
+	WicedImportGroundTemplateCommand
+	WicedImportEnvironmentTemplateCommand
+	WicedExportToLWOCommand
+	WicedExportSurroundMeshesToLWOCommand
+	WicedTakeScreenshotCommand
+	WicedBugReportsCommand
+	WicedDeploymentAreaMasksCommand
+	WicedExportTopDownRaytraceMapCommand
+	WicedSurroundFadeCommand
+	WicedSubmitCommand
+	WicedReloadAllTexturesCommand
+	WicedReloadAllRoadsCommand
+	WicedExportCubemapCommand
+	WicedEditForestBrushCommand
+	WicedExportPathfindingMapsCommand
+	WicedTerrainTextureShadeCommand
+	WicedTerrainGouraudShadeCommand
+	WicedTerrainWireframeOverlayCommand
+	WicedTerrainPathmapOverlayCommand
+}
+
+SCRIPTCLASS FileList
+{
+	FILE
+}
+
+SCRIPTCLASS WicedFortificationLevelUnitNames
+{
+	TEXT 
+}
+
+CLASS WicedFortificationSet
+{
+	WicedFortificationLevelUnitNames myFortificationLevelUnitNames
+}
+
+
+SCRIPTCLASS WicedFortificationSets
+{
+	WicedFortificationSet
+}
+
+CLASS WicedPerimeterPointSizeData
+{
+	WicedPerimeterPointSize mySizeName
+	DECIMAL myRadiusSize
+	DECIMAL myFortificationRadiusSize
+}
+
+SCRIPTCLASS WicedPerimeterPointSizeDataList
+{
+	WicedPerimeterPointSizeData
+}
+
+CLASS WicedCommandPointsConfig
+{
+	WicedPerimeterPointSizeDataList myPerimeterPointSizeDataList
+	WicedFortificationSets myFortificationSets
+}
+
+SCRIPTCLASS WicedTemplateDirs
+{
+	TEXT
+}
+
+CLASS WicedPaths
+{
+	// base dirs
+	TEXT myMapBaseDir
+	TEXT myTempContentCreationDir
+	TEXT myCinematicsMapsDir	
+	TEXT myTextureDir
+	TEXT myMountedTextureArchiveDir
+	WicedTemplateDirs myTemplateDirs
+
+	// juice files
+	FILE myPrototypeJuice
+	FILE myEnvironmentTemplatesJuice
+	FILE myAutopropDefinitionJuice	// juice file of editordata/wicmap.fruit->myAutoPropFile (ice), so that editor can display it
+	FILE myMassGrassDefinitionJuice // juice for mass grass type definitions if map misses mass grass file in meta data
+	FILE myMaterialsListFruit	// separate fruit of types referenced by editordata/wicmap.fruit->myHitEffectsFile (ice), so that editor can display it
+	FILE mySpeedTreeSetsJuice
+	FILE myInstanceBrushesJuice
+
+	// files
+	FILE myDefaultHeightMap	// todo: remove, initiate via grounded.juice instead
+
+	FILE myDefaultRoadTexture
+	FILE myDefaultRoadSpecularityTexture
+	FILE myDefaultRoadNormalMapTexture
+
+	FILE mySurrMeshTemplate1x1
+	FILE mySurrMeshTemplate2x1
+	FILE mySurrMeshTemplate3x1
+	FILE mySurrMeshTemplate1x2
+	FILE mySurrMeshTemplate3x2
+	FILE mySurrMeshTemplate1x3
+	FILE mySurrMeshTemplate2x3
+	FILE mySurrMeshTemplate3x3
+	
+	FILE myInstanceInfoTypeFile
+
+	FILE myMapTypeFile
+	FILE myMetadataTypeFile
+	FILE myInstancesTypeFile
+	FILE myDatabaseFile
+	FILE myDirectoryFile
+	FILE myServerPythonFileTemplate
+	FILE myClientPythonFileTemplate
+	FILE myXPropTypeFile
+	FILE mySupportTypeFile
+	FILE myWeatherTypeFile
+	FILE myCharacterTypeFile
+	FILE myMultiplayerFile
+	FILE mySoundTypeFile
+	TEXT myMilesPath	
+	FILE myRendererFile
+	FILE myImageNotFoundReplacement
+	FILE mySurroundFadeMaskImage
+	
+	TEXT myUploadServerPath
+	TEXT mySplashScreenImagesPath
+	
+	FILE myAddonIcon
+	FILE myAddonHighlightedIcon
+	FILE myBrushToolIcon
+	FILE mySelectionIcon
+	FILE myWireIcon
+	FILE myWireHighlightedIcon
+	FILE myRotatePointIcon
+
+	FILE myMoodSetupFile
+	
+	FILE myTileFadeTop
+	FILE myTileFadeLeft
+	FILE myTileFadeTopLeft
+}
+
+
+TYPE JuiceFileType
+{
+	MAP_JUICE
+	MAP_SP_JUICE
+	MAP_CINEMATIC_JUICE
+	MAP_METADATA_JUICE
+}
+
+TYPE FinalizerType
+{
+	AI_ANALYSIS
+	CUBE_MAP
+	DATABASE
+	DEPLOYMENT_AREA
+	EXTRA_HEIGHTMAP
+	HIT_EFFECT
+	LODS
+	MAP_REVIEW
+	NAV_PATH
+	SPEED_TREE
+}
+
+SCRIPTCLASS NeededFinalizers
+{
+	FinalizerType
+}
+
+SCRIPTCLASS ExtraSubmitFilters
+{
+	TEXT
+}
+
+CLASS ScriptclassFilter
+{
+	TEXT myJuiceClassName
+	TEXT myVariableToFilterOn
+	TEXT myFilterValue
+}
+
+SCRIPTCLASS ScriptClassFilters
+{
+	ScriptclassFilter
+}
+
+SCRIPTCLASS SubmitAreaDependencyList
+{
+	TEXT
+}
+
+CLASS JuiceSubmitType
+{
+	JuiceFileType myJuiceFile
+	TEXT myJuiceName
+	BOOLEAN mySubmitReferencedFilesFlag
+	ScriptClassFilters myScriptClassFilters
+	BOOLEAN mySyncWithRemoteFirstFlag
+	BOOLEAN myDoNotDiffFilesIfSyncRemoteFlag
+	SubmitAreaDependencyList mySubmitAreaDependencyList
+	
+}
+
+SCRIPTCLASS JuiceSubmitTypeList
+{
+	JuiceSubmitType
+}
+
+SCRIPTCLASS WicedSubmitAreas
+{
+	WicedSubmitArea
+}
+
+CLASS WicedSubmitArea
+{
+	TEXT myName
+	TEXT myDescription
+	JuiceSubmitTypeList myJuiceTypesToSubmit	// Names of juicetypes in mapjuice to submit, wiced scans these juicetypes for FILE references
+	NeededFinalizers myNeededFinalizers
+	ExtraSubmitFilters myExtraSubmitFilters
+	WicedSubmitAreas mySubSubmitAreas
+	
+}
+
+
+
+
+

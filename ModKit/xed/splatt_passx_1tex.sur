@@ -1,0 +1,26 @@
+Version 2
+
+DefaultTextures
+{
+	texture surfaces/dummy
+}
+
+Config Normal PS1.1
+{
+	NormalPass
+	{
+		blend = one one
+		zWrite = off
+		alphatest = off
+		fogColor = default
+				
+		Code
+		{
+			ps_1_1
+
+			tex t0
+			
+			mul_sat r0, t0, v0
+		}
+	}
+}

@@ -1,0 +1,71 @@
+INCLUDE editordata/wiced/fruit/wicedinstances.fruit
+INCLUDE editordata/wiced/fruit/wicedmetadata.fruit
+INCLUDE editordata/wiced/fruit/wicedtemplates.fruit
+INCLUDE editordata/wiced/fruit/wicedfeedback.fruit
+INCLUDE editordata/wicmap.fruit
+INCLUDE juice/cameraposdebuginfo.fruit
+INCLUDE editordata/wiced/fruit/wicedinstancebrushes.fruit
+INCLUDE juice/moodsetup.fruit
+
+CLASS WicedMetaDataPrototypes
+{
+	// metadata prototypes
+	WicedTextureLayer myLayerPrototype
+
+	WicedSpline mySplinePrototype
+	WicedImportedRoadModel myImportedRoadPrototype
+	WicedImportedSurroundMesh myImportedSurroundMeshPrototype
+
+	WicedSplineWayPoint mySplineWayPointPrototype
+	
+	WicedTerrainGenerationStack myTerrainGenerationStackPrototype
+	WicedTerrainGenerationPass myTerrainGenerationPassPrototype
+	WicedTerrainGenerationPreset myWicedTerrainGenerationPresetPrototype
+
+	WicedEnvironmentTemplate myEnvironmentTemplatePrototype
+	WicedGroundTemplate myGroundTemplatePrototype
+	WicedSunFlarePreset mySunFlarePresetPrototype
+	WicedWaterPreset myWaterPresetPrototype
+	WicedCloudPreset myCloudPresetPrototype
+	
+	WicedAutoPropType myAutoPropTypePrototype
+	WicedSpecMesh mySpecMeshPrototype
+	WicedMassGrassType myMassGrassTypePrototype
+	
+	WicedCommandPointDeploymentAreaMask myWicedCommandPointDeploymentAreaMaskPrototype
+	
+	WicedMetaData myWicedMetaDataPrototype
+		
+	WicedTextureGenerationPreSet myTextureGenerationPreSetPrototype
+	
+	CameraPosDebugInfo myCamPosDebugInfoPrototype
+	
+	WicedInstanceBrush myInstanceBrushPrototype
+	WicedBrushInstance myBrushInstancePrototype
+	WicedInstanceGroup myInstanceGroupPrototype
+	WicedGroupedInstance myGroupedInstancePrototype
+	
+	FeedbackPrototype myFeedbackPrototype
+	
+	BloomConfig myBloomConfigPrototype
+	BloomSetup myBloomSetupPrototype
+	
+	MoodSetup myMoodSetupPrototype
+	MoodVariable myMoodVariablePrototype
+}
+
+CLASS WicedInstancePrototypes
+{
+	WicedPropInstance myPropInstancePrototype
+	WicedAgentInstance myAgentInstancePrototype
+	WicedCameraInstance myCameraInstancePrototype
+	WicedAreaInstance myAreaInstancePrototype
+	WicedCommandpointInstance myCommandpointInstancePrototype
+	WicedPerimeterpointInstance myPerimeterpointInstancePrototype
+	WicedDefensiveFortificationInstance myDefensiveFortificationInstancePrototype
+	WicedDropZoneInstance myDropZoneInstancePrototype
+	WicedAmbientSoundInstance myAmbientSoundInstancePrototype
+	WicedNPCWaypointInstance myNPCWaypointInstancePrototype
+	WicedNPCSpawnpointInstance myNPCSpawnpointInstancePrototype
+}
+

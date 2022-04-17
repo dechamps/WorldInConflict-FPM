@@ -1,0 +1,59 @@
+Version 2
+
+
+DefaultTextures
+{
+	texture surfaces/dummy
+	cubemap surfaces/textures/noon_town
+}
+
+SurfaceSettings
+{
+}
+
+Config Normal PS1.1
+{
+
+	VertexShader
+	{
+		shader = NORMAL_MESH
+
+		oT0 = uv0
+		oT1 = wsReflectionVector
+	}
+	
+	NormalPass
+	{
+		blend = one zero
+		
+		Code
+		{
+			ps_1_1
+			
+			tex t0				// diffuse texture
+			tex t1				// environment cubemap
+			
+			mul_sat r1, t0, v0		// r1  = diffusetex * lightcalc
+			mul_sat r0, v0, t0.a		// lightcalc * texture0.a
+			mad_sat r0, t1, r0, r1		// out = (envmap * lightcalc) + r1
+		}
+	}
+	
+	FadePass
+	{
+		blend = alphaBlend
+		
+		Code
+		{
+			ps_1_1
+			
+			tex t0				// diffuse texture
+			tex t1				// environment cubemap
+			
+			mul_sat r1, t0, v0		// r1  = diffusetex * lightcalc
+			mul_sat r0, v0, t0.a		// lightcalc * texture0.a
+			mad_sat r0, t1, r0, r1		// out = (envmap * lightcalc) + r1
+			mov_sat r0.a, c0.a		// out.alpha = constant0.alpha
+		}
+	}
+}

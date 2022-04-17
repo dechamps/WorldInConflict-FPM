@@ -1,0 +1,424 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/russiaWinter/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/russiaWinter/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/russiaWinter/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/AmericanBoxwood_RT3.spt
+	{
+		myFilename speedtrees/russiaWinter/AmericanBoxwood_RT3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/AmericanBoxwood_RT_Row.spt
+	{
+		myFilename speedtrees/russiaWinter/AmericanBoxwood_RT_Row.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/AmericanBoxwood_RT_Row_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/BurfordHolly_RT.spt
+	{
+		myFilename speedtrees/russiaWinter/BurfordHolly_RT.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/BurfordHolly_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/BurfordHolly_RT2.spt
+	{
+		myFilename speedtrees/russiaWinter/BurfordHolly_RT2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/BurfordHolly_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter4.spt
+	{
+		myFilename speedtrees/russiaWinter/ColumnarEnglishOak_RT_Winter4.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ColumnarEnglishOak_RT_Winter4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/CrabApple_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/CrabApple_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/CrabApple_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/CrabApple_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/CrabApple_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/CrabApple_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/CrabApple_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/DouglasFir_RT.spt
+	{
+		myFilename speedtrees/russiaWinter/DouglasFir_RT.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/DouglasFir_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/DouglasFir_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/DouglasFir_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/DouglasFir_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/DouglasFir_RT2.spt
+	{
+		myFilename speedtrees/russiaWinter/DouglasFir_RT2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/DouglasFir_RT3.spt
+	{
+		myFilename speedtrees/russiaWinter/DouglasFir_RT3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/DouglasFir_RT4.spt
+	{
+		myFilename speedtrees/russiaWinter/DouglasFir_RT4.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/DouglasFir_RT5.spt
+	{
+		myFilename speedtrees/russiaWinter/DouglasFir_RT5.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/DouglasFir_RT5_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/FraserFir_RT_Snow.spt
+	{
+		myFilename speedtrees/russiaWinter/FraserFir_RT_Snow.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/FraserFir_RT_Snow2.spt
+	{
+		myFilename speedtrees/russiaWinter/FraserFir_RT_Snow2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/FraserFir_RT_Snow3.spt
+	{
+		myFilename speedtrees/russiaWinter/FraserFir_RT_Snow3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/FraserFir_RT_Snow3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/GhostGum_RT_Dead.spt
+	{
+		myFilename speedtrees/russiaWinter/GhostGum_RT_Dead.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/GhostGum_RT_Dead_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/GhostGum_RT_Dead2.spt
+	{
+		myFilename speedtrees/russiaWinter/GhostGum_RT_Dead2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/GhostGum_RT_Dead2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/GrayBirch_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/GrayBirch_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/GrayBirch_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/GrayBirch_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/GrayBirch_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/GrayBirch_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/GrayBirch_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ManchurianAngelicaTree_RT.spt
+	{
+		myFilename speedtrees/russiaWinter/ManchurianAngelicaTree_RT.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/ManchurianAngelicaTree_RT2.spt
+	{
+		myFilename speedtrees/russiaWinter/ManchurianAngelicaTree_RT2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/ManchurianAngelicaTree_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/RussianOlive_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/RussianOlive_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/RussianOlive_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/RussianOlive_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/RussianOlive_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/RussianOlive_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/RussianOlive_RT_Winter4.spt
+	{
+		myFilename speedtrees/russiaWinter/RussianOlive_RT_Winter4.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/RussianOlive_RT_Winter4_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/SugarMaple_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/SugarMaple_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/SugarMaple_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/SugarMaple_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/SugarMaple_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/Tamarind_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/Tamarind_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/Tamarind_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/Tamarind_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/Tamarind_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/Tamarind_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WesternRedCedar_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/WesternRedCedar_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WesternRedCedar_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/WesternRedCedar_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WesternRedCedar_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/WesternRedCedar_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WesternRedCedar_RT_Winter3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WhiteBirch_RT_Winter.spt
+	{
+		myFilename speedtrees/russiaWinter/WhiteBirch_RT_Winter.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WhiteBirch_RT_Winter2.spt
+	{
+		myFilename speedtrees/russiaWinter/WhiteBirch_RT_Winter2.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/russiaWinter/WhiteBirch_RT_Winter3.spt
+	{
+		myFilename speedtrees/russiaWinter/WhiteBirch_RT_Winter3.spt
+		myBBSideTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbside.dds
+		myBBSideTextureMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbtop.dds
+		myBBTopNormalmap speedtrees/russiaWinter/billboards/WhiteBirch_RT_Winter3_bbtop_n.dds
+	}
+}

@@ -1,0 +1,22 @@
+CLASS BenchmarkTest
+{
+	FILE myDemoFile
+	FILE myCameraFile
+}
+
+SCRIPTCLASS Benchmarks
+{
+	BenchmarkTest
+}
+
+CLASS BenchmarkFiles
+{
+	Benchmarks myBenchmarks
+
+	FILE myLoadPicture
+
+	NUMBER myFpsScale
+	NUMBER myDrawcallsScale
+	NUMBER myParticlesScale
+	NUMBER myPhysicsScale
+}

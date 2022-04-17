@@ -1,0 +1,76 @@
+INCLUDE juice/lodsdata.fruit
+
+LodsData myLodsData
+{
+	myShadowData
+	{
+		myOverrideShadowLodSettings 0.0
+		mySmallObjectSoftPercent 0.0
+		mySmallObjectLod1Percent 0.0
+		mySmallRemoveDistanceScale 0.0
+		mySmallForceCapRendering 0.0
+		myLargeObjectSoftPercent 0.0
+		myLargeObjectLod1Percent 0.0
+		myLargeRemoveDistanceScale 0.0
+		myLargeObjectThreshold 0.0
+		myUseShadowOffset 0.0
+		myUseDistanceFromShadowEdge 0.0
+		myShadowUseVolume 0.0
+		myShadowUseHeight 0.0
+	}
+
+	myAutolodData
+	{
+		myOverrideAutolodSettings 1.0000
+		myPropsLargeDetailScale 15
+		myPropsLargeWindowScale 45
+		myPropsLargeScale 85
+		myPropsLargeLod2Percent 0.15
+		myPropsLargeLod3Percent 0.25
+		myPropsLargeLod4Percent 0.50
+		myPropsLargeThreshhold 14.00000
+		myAddonPropScale 0.0
+		myPropsMaxLod4Distance 650
+		myPropsSmallDetailScale 25
+		myPropsSmallWindowScale 10.0
+		myPropsSmallScale 240
+		myPropsSmallLod2Percent 0.056
+		myPropsSmallLod3Percent 0.15
+		myPropsSmallLod4Percent 0.31
+		myPropsParticleScale 4
+		myPropsWiresScale 327
+		myWreckFxScale 65
+		myWreckFxParticleScale 20
+		myProjectileScale 2000
+		myProjectileParticleScale 1600
+		myExplosionScale 35
+		myExplosionParticleScale 65
+		mySlotRepScale 180
+		mySlotRepParticleScale 30
+		myUnitDetailScale 10
+		myUnitWindowScale 35
+		myUnitScale 150
+		myUnitLod2Percent 0.29
+		myUnitLod3Percent 0.45
+		myUnitLod4Percent 0.70
+		myUnitParticleScale 30.0000
+		myInfantryDetailScale 1.5
+		myInfantryWindowScale 15
+		myInfantryScale 250
+		myInfantryLod2Percent 0.05
+		myInfantryLod3Percent 0.40
+		myInfantryLod4Percent 0.65
+		myDeathLargeScale 35
+		myDeathSmallScale 150
+		myDeathLargeThreshold 10.0000
+		myDeathParticleScale 15
+		myOtherLod2Percent 0.0700
+		myOtherLod3Percent 0.2500
+		myOtherLod4Percent 0.5600
+		mySpeedTreeDistanceScale 3.0
+		myLandscapeScale 0.0
+		myUseRadiusFlag 0.0
+	}
+
+}
+

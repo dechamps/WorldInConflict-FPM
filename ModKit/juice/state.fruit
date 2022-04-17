@@ -1,0 +1,9 @@
+INCLUDE juice/MessageResponse.fruit
+INCLUDE juice/VitalStats.fruit
+
+CLASS State
+{
+	AIState myID
+	FILE myMessageResponseFile
+	FILE myDataFile
+}

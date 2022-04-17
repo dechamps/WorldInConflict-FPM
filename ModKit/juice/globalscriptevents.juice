@@ -1,0 +1,511 @@
+INCLUDE editordata/wiced/fruit/wicedmissionstats.fruit
+
+ScriptEvents myGlobalScriptEvents
+{
+	ScriptEvent NameOfEvent
+	{
+		myString "Test event"
+		myIcon ui/hud_flag/nato/nato_flag.tga
+		mySound sound/guns/25mm_01.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent BuildingDestroyed
+	{
+		myString "A Building was destroyed"
+		myIcon ui/ingame/strategic_map/sm_infantry_test.tga
+		mySound sound/ingame/noise/energyhit1.wav
+		myGuiElementToFlash reinforcements
+		myOnClickPythonClientFunction DropshipAtBaseClicked
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myGlobalRequestAcceptedEvent
+	{
+		myString <empty>
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 1
+	}
+
+	ScriptEvent mySorryEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/thankyou_sorry.tga
+		mySound sound/feedback/noise/noise_07.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 1
+	}
+
+	ScriptEvent myReqImGoingHereEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/goinghere.tga
+		mySound sound/feedback/noise/noise_06.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqAdvanceHereEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/advance.tga
+		mySound sound/feedback/noise/noise_05.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqDefendHereEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/defend.tga
+		mySound sound/feedback/noise/noise_04.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqCeaseFireEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/ceasefire.tga
+		mySound sound/feedback/noise/noise_03.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqThankYouEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/thankyou_sorry.tga
+		mySound sound/feedback/noise/noise_02.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 1
+	}
+
+	ScriptEvent myReqAttentionEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/attention.tga
+		mySound sound/feedback/noise/noise_01.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqNeedArtilleryEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/need_artillery.tga
+		mySound sound/feedback/noise/noise_07.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqNeedAntiairEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/need_antiair.tga
+		mySound sound/feedback/noise/noise_06.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqNeedGroundSupportEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/need_armor.tga
+		mySound sound/feedback/noise/noise_05.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqNeedAirSupportEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/need_air.tga
+		mySound sound/feedback/noise/noise_04.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqNeedRepairsEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/need_repair.tga
+		mySound sound/feedback/noise/noise_03.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqTacAidEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/ta.tga
+		mySound sound/feedback/noise/noise_02.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReqWriteToPosEvent
+	{
+		myString <empty>
+		myIcon ui/icons/request_icons/write.tga
+		mySound sound/feedback/noise/noise_01.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectivePrimaryNew
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveSecondaryNew
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveAttackCpNew
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveDefendCpNew
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectivePrimaryUpdated
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveSecondaryUpdated
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectivePrimaryCompleted
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveSecondaryCompleted
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveAttackCPCompleted
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveDefendCPCompleted
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectivePrimaryFailed
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveSecondaryFailed
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveAttackCPFailed
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveDefendCPFailed
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectivePrimaryCanceled
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingameobjring_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myObjectiveSecondaryCanceled
+	{
+		myString <empty>
+		myIcon ui/icons/objectives/ingamesecondary_eventstring.tga
+		mySound sound/sfx/new_objective.wav
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateObjectiveBrowser
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myTAMenu
+	{
+		myString "You can now use tactical aid."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateSupport
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myNewTA
+	{
+		myString "New tactical aid added."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateSupport
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myTACapRaised
+	{
+		myString "Your maximum amount of tactical aid points has been raised."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateSupport
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myTADisabled
+	{
+		myString "Your tactical aid menu has been disabled."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReinforcementMenu
+	{
+		myString "You can now use the reinforcement menu."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateReinforcements
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReinforcementCapRaised
+	{
+		myString "You have received more reinforcement points."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateReinforcements
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myNewUnits
+	{
+		myString "New units have been added to your reinforcement menu."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ActivateReinforcements
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myReinforcementDisabled
+	{
+		myString "Your reinforcement menu has been disabled."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myDropZoneExpanded
+	{
+		myString "Your drop zone has expanded."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ChooseDropZone
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myDropzoneChanged
+	{
+		myString "Your drop zone has changed."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction ChooseDropZone
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myUnitReward
+	{
+		myString "You have been given control over new units."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myMedalAwarded
+	{
+		myString "You have been awarded with a medal."
+		myIcon <empty>
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+
+	ScriptEvent myInstantMessageRecieved
+	{
+		myString "Someone wants to speak with you."
+		myIcon ui/icons/request_icons/write.tga
+		mySound <empty>
+		myGuiElementToFlash <empty>
+		myOnClickPythonClientFunction <empty>
+		myOnClickPythonServerFunction <empty>
+		myShowAsSysMessageFlag 0
+	}
+}
+

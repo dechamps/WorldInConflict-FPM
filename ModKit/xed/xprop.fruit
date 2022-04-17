@@ -1,0 +1,105 @@
+INCLUDE juice/agent.fruit
+INCLUDE juice/materials.fruit
+INCLUDE xed/xkeybuildingparasites.fruit
+INCLUDE units/unittype.fruit
+INCLUDE juice/art/alt_texture.fruit
+INCLUDE juice/buildingtemplate.fruit
+
+TYPE XPropGraphicalImportance
+{
+	ALWAYS_VISIBLE
+	VISIBLE_NO_REFLECTION
+	NOT_VISIBLE_IN_LOWEND
+	WIC_FORCE_VISIBLE_ON_VERYLOW
+}
+
+TYPE XPropDeformBehaviour
+{
+	DEFAULT
+	DONT_MOVE_DOWN
+	PUT_IN_RIGIDMAP
+}
+
+CLASS PropCaptureReward
+{
+	TEXT myRewardUnit
+	NUMBER myRewardAp
+}
+
+CLASS ChildProperties
+{
+	NUMBER myIsPitchable
+	NUMBER myIsWreckable
+	DECIMAL myTimeToSecondHurtState
+	DECIMAL myTimeToThirdHurtState
+}
+
+CLASS RepairLink
+{
+	TEXT myFaction
+	TEXT myRepairProp
+}
+
+SCRIPTCLASS RepairLinks
+{
+	RepairLink
+}
+
+CLASS PropSoundSource
+{
+	NUMBER myBaseFrequency
+	NUMBER mySpeedShiftFlag
+	NUMBER myDopplerShiftFlag
+	TEXT mySound
+}
+
+CLASS XPropType
+{
+	FILE myVisualModel
+	FILE myShadowModel
+	FILE myGetYModel
+	AlternateTexture myAlternativeTexture
+	NUMBER myAutoGenerateGetYFlag
+	NUMBER myDecalLodNumber
+	FILE myPhysModel
+	XLightType myLightType
+	NUMBER myUnitsAreVisibleThroughMeFlag
+	NUMBER myBlocksPathFlag
+	FILE myGridFile
+	FILE mySlotFile
+	NUMBER myMaxNumSquads
+	NUMBER myDeathAffectsPathFindingFlag
+	MaterialID myMaterial
+	XPropGraphicalImportance myGraphicalImportance
+	XPropDeformBehaviour myGroundDeformBehaviour
+	PropCaptureReward myPropCaptureReward
+	NUMBER myReactToCollisionFlag
+	DECIMAL myFallOverRadius
+	DECIMAL myPhysBreakLimit
+	TEXT myDestructionSound
+	NUMBER myIsDestroyableFlag
+	NUMBER myArmor
+	NUMBER myHealth
+	BuildingTemplateType myTemplate
+	FILE myAreaFile
+	DECIMAL myTimeBeforeOvertake
+	XKeyBuildingParasites myParasites
+	UnitType::DeathEffects myDeathEffects
+	NUMBER myOnlyAffectsLosFlag
+	NUMBER myCreatesForestFlag
+	DECIMAL mySize
+	DECIMAL mySpeedTreeHeight
+	DECIMAL mySpeedTreeRadius
+	FILE myWireFile
+	NUMBER myIsBlastableFlag
+	ChildProperties myChildProperties
+	RepairLinks myRepairLinks
+	PropSoundSource myConstantSoundSource
+}
+
+SCRIPTCLASS XPropTypeList
+{
+        XPropType
+        XPropTypeList
+}
+

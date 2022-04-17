@@ -1,0 +1,56 @@
+INCLUDE maps/multiplayer.fruit
+
+MultiPlayerMaps MultiplayerMaps
+{
+	FILE mp3 maps/ustown1/ustown1.ice
+
+	FILE mp5 maps/ustown3/ustown3.ice
+
+	FILE mp6 maps/ustown4/ustown4.ice
+
+	FILE mp7 maps/usfarmland1/usfarmland1.ice
+
+	FILE mp8 maps/usfarmland2/usfarmland2.ice
+
+	FILE mp9 maps/usfarmland3/usfarmland3.ice
+
+	FILE mp10 maps/usfarmland4/usfarmland4.ice
+
+	FILE mp11 maps/usdesert1/usdesert1.ice
+
+	FILE mp12 maps/usdesert2/usdesert2.ice
+
+	FILE mp15 maps/russia1/russia1.ice
+
+	FILE mp16 maps/russia2/russia2.ice
+
+	FILE mp17 maps/russia3/russia3.ice
+
+	FILE mp18 maps/russia4/russia4.ice
+
+	FILE mp19 maps/europe1/europe1.ice
+
+	FILE mp20 maps/europe2/europe2.ice
+
+	FILE mp22 maps/europe4/europe4.ice
+
+	FILE mp25 maps/seattle1/seattle1.ice
+
+	FILE mp26 maps/seattle2/seattle2.ice
+
+	FILE mp27 maps/seattle3/seattle3.ice
+
+	FILE mp28 maps/seattle4/seattle4.ice
+
+	FILE mp31 maps/europe3/europe3.ice
+
+	FILE mp32 maps/usfarmland5/usfarmland5.ice
+
+	FILE mp46 maps/berlin1/berlin1.ice
+
+	FILE mp76 maps/norway1/norway1.ice
+
+	FILE mp77 maps/newyork1/newyork1.ice
+
+}
+

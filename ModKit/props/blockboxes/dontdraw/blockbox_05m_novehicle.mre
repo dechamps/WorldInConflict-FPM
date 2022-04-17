@@ -1,0 +1,11 @@
+VERSION_NUMBER 17
+OPENMODEL "props\singelplayer_objects\dontdraw\blockbox_05m_novehicle.lwo" "props\singelplayer_objects\dontdraw\blockbox_05m_novehicle.mrb" "STND"
+SELECTSURFACE "surfaces/envmap_ob_3d_diff_alpha.sur" 0 0
+EDITMESH "PROPS/SINGELPLAYER_OBJECTS/DONTDRAW/BLOCKBOX_05M_NOVEHICLE.LWO:0" 0 "NORMAL_MESH" 0 0 1 0 1 0 0 1 0 0 31622776.000 999999986991104.000 999999986991104.000 999999986991104.000 16.000 0.000 0.000 0.000 0.000 0.000 0.000 0 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0 0.000 67616 0 0.250 0.250 255 255 255 255 0
+CHANGETEXTURE "PROPS/SINGELPLAYER_OBJECTS/DONTDRAW/BLOCKBOX_NOHOUSE" 0 0
+CHANGETEXTURE "PROPS/BLOCKBOXES/DONTDRAW/BLOCKBOX_NOHOUSE" 0 0
+RB2EditRB 1 "props\singelplayer_objects\dontdraw\blockbox_05m_novehicle.mrb01" 0 0 1 10000.000 0.000 1.000 4527699514876462400000.000 "props\singelplayer_objects\dontdraw\blockbox_05m_novehicle.mrb" 1 "" 2 255 1000000.000
+RB2EditState 1 1 "STND"
+RB2EditEvent 1 1 0 "" "NONE" 0.000 0.000 0 0.000 1.000 0
+RB2EditEvent 1 1 1 "" "NONE" 0.000 0.000 0 0.000 1.000 0
+RB2EditElement 0 2 1 "props\singelplayer_objects\dontdraw\blockbox_05m_novehicle.mrb02" 0.000 2.500 2.500 2.500 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 2.489 0.000 "none" 1 1 0 -10 0 0 0

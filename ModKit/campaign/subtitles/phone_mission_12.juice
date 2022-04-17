@@ -1,0 +1,167 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "You people told me they would sit this one out!"
+		myStartTime 1.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "That was based on the intelligence that we had at the time, Mr. President."
+		myStartTime 4.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "I don't think anyone in this damn government has any intelligence. "
+		myStartTime 7.4
+		myVisibleTime 3.2
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "So they're coming here?  What do you propose we do to stop them?"
+		myStartTime 10.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "We have two options, sir."
+		myStartTime 14.1
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "Pull two divisions from Europe and send them to \nretake Seattle before the Chinese arrive."
+		myStartTime 16.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "But then we lose Europe - and the war."
+		myStartTime 20.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "In all probability, yes."
+		myStartTime 22.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "What's the other option?"
+		myStartTime 24.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "We wait until the Chinese come ashore..."
+		myStartTime 26.0
+		myVisibleTime 2.2
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "and hit them, with a B83 strategic nuclear device."
+		myStartTime 28.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "Hit them after they're ashore? Ashore in Seattle?"
+		myStartTime 32.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Yes, sir."
+		myStartTime 35.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Yes, sir.\nSo... you're suggesting we wipe one of our major cities off the map?"
+		myStartTime 36.5
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "It's our cleanest shot to destroy the Chinese, Mr. President. \nOtherwise, we risk losing everything.  "
+		myStartTime 40.8
+		myVisibleTime 7.1
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "What forces do we have around Seattle now?"
+		myStartTime 48.4
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "A couple of battered battalions. \nThe ones who stopped the Russians at Cascade Falls."
+		myStartTime 51.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "But not enough to retake the city?"
+		myStartTime 55.4
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "We could order them to try, but I wouldn't get my hopes up, sir."
+		myStartTime 57.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub20
+	{
+		myText "Order those battalions to attack, general."
+		myStartTime 60.2
+		myVisibleTime 2.3
+	}
+
+	MovieSubtitle Sub21
+	{
+		myText "And if they fail... as a last resort... order the nuclear strike."
+		myStartTime 63.1
+		myVisibleTime 5.3
+	}
+
+	MovieSubtitle Sub22
+	{
+		myText "Mr. President... I'm sorry that it's come to this."
+		myStartTime 68.9
+		myVisibleTime 3.5
+	}
+
+	MovieSubtitle Sub23
+	{
+		myText "'Sorry'... yeah... that's all general."
+		myStartTime 72.7
+		myVisibleTime 5.2
+	}
+
+}
+

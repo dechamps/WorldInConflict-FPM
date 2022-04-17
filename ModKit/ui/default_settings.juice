@@ -1,0 +1,776 @@
+INCLUDE ui/default_settings.fruit
+
+NUMBER myFontScaleFactor 1
+
+NUMBER myRotatingMinimapFlag 0
+
+NUMBER myStandardRTSCameraFlag 1
+
+CutsceneSubtitleType myShowCutsceneSubtitles INGAME_ONLY
+
+NUMBER mySoundEffectsVolume 0.9
+
+NUMBER myMusicVolume 0.7
+
+NUMBER myMovieVolume 1
+
+NUMBER myVoiceVolume 0.7
+
+NUMBER myAutoActivateVoipFlag 0
+
+NUMBER myMuteVOIPFlag 0
+
+NUMBER myHighlightOnVOIPFlag 1
+
+DECIMAL myVoipInVolume 1.0
+
+DECIMAL myVoipOutVolume 1.0
+
+DECIMAL myVoipThreshold 0.076
+
+NUMBER myShowAllHealthbarsFlag 0
+
+NUMBER myDisableHelpTipsFlag 0
+
+MegaMapFilters myMegaMapFilterDefaults
+{
+	NUMBER FILTER_SHOW_DEST_ARROWS 1
+
+	NUMBER FILTER_SHOW_GRID 1
+
+	NUMBER FILTER_NUM_GRID_ELEMENTS 4
+
+	NUMBER FILTER_SHOW_ENEMIES 1
+
+	NUMBER FILTER_SHOW_ALLIES 1
+
+	NUMBER FILTER_SHOW_PLAYER_NAMES 0
+
+	NUMBER FILTER_SHOW_DZ 0
+
+	NUMBER FILTER_SHOW_ALLY_DZ 0
+
+	NUMBER FIlTER_SHOW_DZ_INFO 0
+
+	NUMBER FILTER_SHOW_TAS 1
+
+	NUMBER FILTER_SHOW_TA_INFO 0
+
+	NUMBER FILTER_SHOW_GRID 1
+
+	NUMBER FILTER_SHOW_CPS 1
+
+	NUMBER FILTER_SHOW_CP_NAMES 1
+
+	NUMBER FILTER_SHOW_REQUESTS 1
+
+	NUMBER FILTER_SHOW_REQUEST_NAMES 0
+
+}
+
+KeyboardActionList myKeyboardActions
+{
+	KeyboardAction Exit_Close
+	{
+		myAction CLOSE_OR_SKIP
+		myLocName <empty>
+		myKey1 1
+		myKey2 0
+	}
+
+	KeyboardAction Attack
+	{
+		myAction ATTACK
+		myLocName "Attack Ground"
+		myKey1 33
+		myKey2 0
+	}
+
+	KeyboardAction Back
+	{
+		myAction CONTROL_BACK
+		myLocName "Camera Backwards"
+		myKey1 31
+		myKey2 0
+	}
+
+	KeyboardAction CameraToLZ
+	{
+		myAction CAMERA_TO_LZ
+		myLocName "Go to Drop Zone"
+		myKey1 57
+		myKey2 0
+	}
+
+	KeyboardAction CameraSwapUnitGroup
+	{
+		myAction CAMERA_SWAP_UNITGROUP
+		myLocName "Swap Unit Group"
+		myKey1 45
+		myKey2 0
+	}
+
+	KeyboardAction ChangeFaction
+	{
+		myAction CHANGE_FACTION
+		myLocName "Change Faction"
+		myKey1 199
+		myKey2 0
+	}
+
+	KeyboardAction Chat
+	{
+		myAction CHAT
+		myLocName "Chat to All"
+		myKey1 14
+		myKey2 0
+	}
+
+	KeyboardAction ChatTeam
+	{
+		myAction CHAT_TEAM
+		myLocName "Chat to Team"
+		myKey1 28
+		myKey2 0
+	}
+
+	KeyboardAction CreateSquadModifier
+	{
+		myAction CREATE_SQUAD_MODIFIER
+		myLocName <empty>
+		myKey1 258
+		myKey2 0
+	}
+
+	KeyboardAction CycleBehaviour
+	{
+		myAction CYCLE_BEHAVIOUR
+		myLocName "Hold Fire"
+		myKey1 34
+		myKey2 0
+	}
+
+	KeyboardAction CycleFormation
+	{
+		myAction CYCLE_FORMATION
+		myLocName "Change Formation"
+		myKey1 44
+		myKey2 0
+	}
+
+	KeyboardAction DeploySpawner
+	{
+		myAction DEPLOY_SPAWNER
+		myLocName "Deploy Units"
+		myKey1 156
+		myKey2 0
+	}
+
+	KeyboardAction EnterBuilding
+	{
+		myAction ENTER_BUILDING
+		myLocName "Enter Nearest Building"
+		myKey1 35
+		myKey2 0
+	}
+
+	KeyboardAction EnterUnit
+	{
+		myAction ENTER_UNIT
+		myLocName "Enter Nearest Transport"
+		myKey1 21
+		myKey2 0
+	}
+
+	KeyboardAction ExitUnits
+	{
+		myAction EXIT_UNITS
+		myLocName Unload
+		myKey1 22
+		myKey2 0
+	}
+
+	KeyboardAction Follow
+	{
+		myAction FOLLOW
+		myLocName Follow
+		myKey1 23
+		myKey2 0
+	}
+
+	KeyboardAction Forward
+	{
+		myAction CONTROL_FORWARD
+		myLocName "Camera Forward"
+		myKey1 17
+		myKey2 0
+	}
+
+	KeyboardAction Left
+	{
+		myAction CONTROL_LEFT
+		myLocName "Camera Left"
+		myKey1 30
+		myKey2 0
+	}
+
+	KeyboardAction Move
+	{
+		myAction MOVE
+		myLocName Move
+		myKey1 49
+		myKey2 0
+	}
+
+	KeyboardAction MoveBackwards
+	{
+		myAction BACKWARDS_MOVE_MODIFIER
+		myLocName "Move Backwards"
+		myKey1 42
+		myKey2 49
+	}
+
+	KeyboardAction OpenObjectivesScreen
+	{
+		myAction OPEN_OBJECTIVES_SCREEN
+		myLocName "Objectives Menu"
+		myKey1 24
+		myKey2 0
+	}
+
+	KeyboardAction Pause
+	{
+		myAction PAUSE
+		myLocName Pause
+		myKey1 197
+		myKey2 0
+	}
+
+	KeyboardAction Right
+	{
+		myAction CONTROL_RIGHT
+		myLocName "Camera Right"
+		myKey1 32
+		myKey2 0
+	}
+
+	KeyboardAction Reinforcements
+	{
+		myAction REINFORCEMENTS
+		myLocName "Reinforcements Menu"
+		myKey1 48
+		myKey2 0
+	}
+
+	KeyboardAction Repair
+	{
+		myAction REPAIR
+		myLocName Repair
+		myKey1 36
+		myKey2 0
+	}
+
+	KeyboardAction Screenshot
+	{
+		myAction GRAB_SCREENSHOT
+		myLocName "Take Screenshot"
+		myKey1 183
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad1
+	{
+		myAction SELECT_SQUAD_0
+		myLocName <empty>
+		myKey1 2
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad2
+	{
+		myAction SELECT_SQUAD_1
+		myLocName <empty>
+		myKey1 3
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad3
+	{
+		myAction SELECT_SQUAD_2
+		myLocName <empty>
+		myKey1 4
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad4
+	{
+		myAction SELECT_SQUAD_3
+		myLocName <empty>
+		myKey1 5
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad5
+	{
+		myAction SELECT_SQUAD_4
+		myLocName <empty>
+		myKey1 6
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad6
+	{
+		myAction SELECT_SQUAD_5
+		myLocName <empty>
+		myKey1 7
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad7
+	{
+		myAction SELECT_SQUAD_6
+		myLocName <empty>
+		myKey1 8
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad8
+	{
+		myAction SELECT_SQUAD_7
+		myLocName <empty>
+		myKey1 9
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad9
+	{
+		myAction SELECT_SQUAD_8
+		myLocName <empty>
+		myKey1 10
+		myKey2 0
+	}
+
+	KeyboardAction SelectSquad10
+	{
+		myAction SELECT_SQUAD_9
+		myLocName <empty>
+		myKey1 11
+		myKey2 0
+	}
+
+	KeyboardAction SetSpawnPosition
+	{
+		myAction SET_SPAWN_POSITION
+		myLocName "Change Drop Zone"
+		myKey1 38
+		myKey2 0
+	}
+
+	KeyboardAction ShowAllHealth
+	{
+		myAction SHOW_ALL_HEALTH_MARKERS
+		myLocName <empty>
+		myKey1 257
+		myKey2 0
+	}
+
+	KeyboardAction ShowScore
+	{
+		myAction SHOW_SCORE
+		myLocName Scoreboard
+		myKey1 15
+		myKey2 0
+	}
+
+	KeyboardAction Stack
+	{
+		myAction STACK
+		myLocName <empty>
+		myKey1 256
+		myKey2 0
+	}
+
+	KeyboardAction StackModifer
+	{
+		myAction STACK_MODIFIER
+		myLocName <empty>
+		myKey1 256
+		myKey2 0
+	}
+
+	KeyboardAction Stop
+	{
+		myAction STOP_UNITS
+		myLocName Stop
+		myKey1 20
+		myKey2 0
+	}
+
+	KeyboardAction TacticalAid
+	{
+		myAction TACTICAL_AID
+		myLocName "Tactical Aid Menu"
+		myKey1 47
+		myKey2 0
+	}
+
+	KeyboardAction ToggleConsole
+	{
+		myAction TOGGLE_CONSOLE
+		myLocName <empty>
+		myKey1 41
+		myKey2 0
+	}
+
+	KeyboardAction ToggleGUI
+	{
+		myAction TOGGLE_GUI_DRAWING
+		myLocName "Toggle GUI Drawing"
+		myKey1 68
+		myKey2 0
+	}
+
+	KeyboardAction ToggleMegamap
+	{
+		myAction TOGGLE_MEGAMAP
+		myLocName "Mega Map"
+		myKey1 50
+		myKey2 0
+	}
+
+	KeyboardAction VOIP_Talkbutton
+	{
+		myAction VOIP_TALKBUTTON
+		myLocName "VOIP Talk Button"
+		myKey1 46
+		myKey2 0
+	}
+
+	KeyboardAction VoteYes
+	{
+		myAction VOTE_YES
+		myLocName "Vote YES"
+		myKey1 201
+		myKey2 0
+	}
+
+	KeyboardAction VoteNo
+	{
+		myAction VOTE_NO
+		myLocName "Vote NO"
+		myKey1 209
+		myKey2 0
+	}
+
+	KeyboardAction ToggleRequest
+	{
+		myAction TOGGLE_REQUEST
+		myLocName "Request Menu"
+		myKey1 16
+		myKey2 0
+	}
+
+	KeyboardAction OffensiveRechargable
+	{
+		myAction OFFENSIVE_RECHARGABLE
+		myLocName "Offensive Special Ability"
+		myKey1 18
+		myKey2 0
+	}
+
+	KeyboardAction DefensiveRechargable
+	{
+		myAction DEFENSIVE_RECHARGABLE
+		myLocName "Defensive Special Ability"
+		myKey1 19
+		myKey2 0
+	}
+
+	KeyboardAction myNextAbility
+	{
+		myAction NEXT_ABILITY
+		myLocName "Next Special Ability"
+		myKey1 256
+		myKey2 19
+	}
+
+	KeyboardAction myPrevAbility
+	{
+		myAction PREV_ABILITY
+		myLocName "Prev Special Ability"
+		myKey1 256
+		myKey2 18
+	}
+
+	KeyboardAction UndoSelection
+	{
+		myAction UNDO_SELECTION
+		myLocName "Undo Selection Change"
+		myKey1 258
+		myKey2 44
+	}
+
+	KeyboardAction SelectTypeModifier
+	{
+		myAction SELECT_TYPE_MODIFIER
+		myLocName <empty>
+		myKey1 258
+		myKey2 0
+	}
+
+	KeyboardAction DisbandUnit
+	{
+		myAction DISBAND_UNIT
+		myLocName "Disband Selected Units"
+		myKey1 211
+		myKey2 0
+	}
+
+	KeyboardAction myResupply
+	{
+		myAction RESUPPLY_SQUAD
+		myLocName "Resupply Squad"
+		myKey1 210
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut1
+	{
+		myAction SHORTCUT_1
+		myLocName "Ingame Menu Shortcut 1"
+		myKey1 79
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut2
+	{
+		myAction SHORTCUT_2
+		myLocName "Ingame Menu Shortcut 2"
+		myKey1 80
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut3
+	{
+		myAction SHORTCUT_3
+		myLocName "Ingame Menu Shortcut 3"
+		myKey1 81
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut4
+	{
+		myAction SHORTCUT_4
+		myLocName "Ingame Menu Shortcut 4"
+		myKey1 75
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut5
+	{
+		myAction SHORTCUT_5
+		myLocName "Ingame Menu Shortcut 5"
+		myKey1 76
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut6
+	{
+		myAction SHORTCUT_6
+		myLocName "Ingame Menu Shortcut 6"
+		myKey1 77
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut7
+	{
+		myAction SHORTCUT_7
+		myLocName "Ingame Menu Shortcut 7"
+		myKey1 71
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut8
+	{
+		myAction SHORTCUT_8
+		myLocName "Ingame Menu Shortcut 8"
+		myKey1 72
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut9
+	{
+		myAction SHORTCUT_9
+		myLocName "Ingame Menu Shortcut 9"
+		myKey1 73
+		myKey2 0
+	}
+
+	KeyboardAction Shortcut10
+	{
+		myAction SHORTCUT_10
+		myLocName "Ingame Menu Shortcut 10"
+		myKey1 82
+		myKey2 0
+	}
+
+	KeyboardAction ShortcutTab
+	{
+		myAction SHORTCUT_TAB
+		myLocName "Cycle Ingame Menu Tab"
+		myKey1 78
+		myKey2 0
+	}
+
+	KeyboardAction SelectCat1
+	{
+		myAction SELECT_CAT_1
+		myLocName "Select Ingame Menu Tab 1"
+		myKey1 256
+		myKey2 79
+	}
+
+	KeyboardAction SelectCat2
+	{
+		myAction SELECT_CAT_2
+		myLocName "Select Ingame Menu Tab 2"
+		myKey1 256
+		myKey2 80
+	}
+
+	KeyboardAction SelectCat3
+	{
+		myAction SELECT_CAT_3
+		myLocName "Select Ingame Menu Tab 3"
+		myKey1 256
+		myKey2 81
+	}
+
+	KeyboardAction SelectCat4
+	{
+		myAction SELECT_CAT_4
+		myLocName "Select Ingame Menu Tab 4"
+		myKey1 256
+		myKey2 75
+	}
+
+	KeyboardAction SelectCat5
+	{
+		myAction SELECT_CAT_5
+		myLocName "Select Ingame Menu Tab 5"
+		myKey1 256
+		myKey2 76
+	}
+
+	KeyboardAction StoreCamera0
+	{
+		myAction STORE_CAMERA_0
+		myLocName "Store Camera 1"
+		myKey1 258
+		myKey2 63
+	}
+
+	KeyboardAction StoreCamera1
+	{
+		myAction STORE_CAMERA_1
+		myLocName "Store Camera 2"
+		myKey1 258
+		myKey2 64
+	}
+
+	KeyboardAction StoreCamera2
+	{
+		myAction STORE_CAMERA_2
+		myLocName "Store Camera 3"
+		myKey1 258
+		myKey2 65
+	}
+
+	KeyboardAction StoreCamera3
+	{
+		myAction STORE_CAMERA_3
+		myLocName "Store Camera 4"
+		myKey1 258
+		myKey2 66
+	}
+
+	KeyboardAction RestoreCamera0
+	{
+		myAction RESTORE_CAMERA_0
+		myLocName "Restore Camera 1"
+		myKey1 63
+		myKey2 0
+	}
+
+	KeyboardAction RestoreCamera1
+	{
+		myAction RESTORE_CAMERA_1
+		myLocName "Restore Camera 2"
+		myKey1 64
+		myKey2 0
+	}
+
+	KeyboardAction RestoreCamera2
+	{
+		myAction RESTORE_CAMERA_2
+		myLocName "Restore Camera 3"
+		myKey1 65
+		myKey2 0
+	}
+
+	KeyboardAction RestoreCamera3
+	{
+		myAction RESTORE_CAMERA_3
+		myLocName "Restore Camera 4"
+		myKey1 66
+		myKey2 0
+	}
+
+	KeyboardAction Camera_Height_Up
+	{
+		myAction CONTROL_UP
+		myLocName "Raise Camera Height"
+		myKey1 0
+		myKey2 0
+	}
+
+	KeyboardAction Camera_Height_Down
+	{
+		myAction CONTROL_DOWN
+		myLocName "Lower Camera Height"
+		myKey1 0
+		myKey2 0
+	}
+
+	KeyboardAction MouseLook
+	{
+		myAction SWITCH_MOUSELOOK
+		myLocName "Mouse Look"
+		myKey1 0
+		myKey2 0
+	}
+
+	KeyboardAction SelectDeployed
+	{
+		myAction SELECT_DEPLOYED
+		myLocName "Select Last Deployed Units"
+		myKey1 256
+		myKey2 57
+	}
+
+}
+
+NUMBER myAlwaysShowObjectiveTextFlag 1
+
+NUMBER myShowBatteryLevelsFlag 0
+
+NUMBER myShowWirelessFlag 0
+
+NUMBER myMaximumCameraHeight 60
+
+DECIMAL myUnitWorldIconScale 1.0
+
+DECIMAL myUnitBarIconScale 1.0
+
+NUMBER myUseMoodChangesFlag 1
+

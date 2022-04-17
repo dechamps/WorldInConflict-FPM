@@ -1,0 +1,6 @@
+CLASS Vector3
+{
+	DECIMAL myX
+	DECIMAL myY
+	DECIMAL myZ
+}

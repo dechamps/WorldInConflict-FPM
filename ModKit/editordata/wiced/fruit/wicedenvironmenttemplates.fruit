@@ -1,0 +1,61 @@
+INCLUDE editordata/wicmap.fruit
+INCLUDE editordata/wiced/fruit/wicedmetadata.fruit
+INCLUDE juice/waterdata.fruit
+INCLUDE juice/cloudsdata.fruit
+INCLUDE juice/sundata.fruit
+
+CLASS WicedEnvironmentTemplate
+{
+	TEXT myTemplateName
+	WicedEnvData myEnvironment
+	WaterData myWaterData
+	SunData mySunData
+	CloudsData myCloudsData
+	FILE myBloomConfigFile
+	TEXT myBloomSetup
+	WicedSunSettings mySunSettings // affects texture generation only
+	TEXT mySunFlareTemplate           // textual reference to a preset sun flare template, if <Custom> mySunData contains the sunflare to use
+	TEXT myWaterTemplate            // textual reference to a preset water template, if <Custom> myWaterData contains the water to use 
+	TEXT myCloudsTemplate		// textual reference to a preset clouds template, if <Custom> myCloudsData contains the water to use 	
+}
+
+CLASS WicedTerrainGenerationPreset
+{
+	WicedTerrainGenerationStack myWicedTerrainGenerationStack
+}
+
+SCRIPTCLASS WicedEnvironmentTemplates
+{
+	WicedEnvironmentTemplate
+}
+
+SCRIPTCLASS WicedSunFlareTemplates
+{
+	WicedSunFlareTemplate
+}
+
+CLASS WicedSunFlareTemplate
+{
+	SunData mySunData
+}
+
+SCRIPTCLASS WicedWaterTemplates
+{
+	WicedWaterTemplate
+}
+
+CLASS WicedWaterTemplate
+{
+	WaterData myWaterData
+}
+
+SCRIPTCLASS WicedCloudsTemplates
+{
+	WicedCloudsTemplate
+}
+
+CLASS WicedCloudsTemplate
+{
+	CloudsData myCloudsData
+}
+

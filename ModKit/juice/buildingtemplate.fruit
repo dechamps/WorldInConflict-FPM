@@ -1,0 +1,40 @@
+
+TYPE BuildingTemplateType
+{
+	SMALL
+	MEDIUM
+	LARGE
+	Prop_Small		//Smallest prop. Destroyed instantly by one small-arms fire bullet. Flower pot, road sign, wooden fence etc.
+	Prop_Medium		//Medium prop. Destroyed instantly by blast damage or repeated small-arms fire. Park bench, Street light, fire hydrant etc.
+	Prop_Large		//Large prop. Takes a fair amount of damage before breaking. Water tower, bus, big statue.
+	Small_House_Weak	//Small domestic house or similar structure made from wood or drywall. Ex: One story suburbian house on UsTown1.
+	Small_House_Strong	//Small house or structure made from stone, concrete or brick. Ex: Construction machine on Russia3.
+	Medium_House_Weak	//Medium house or structure made from wood or drywall. Ex: Diner on UsTown1, two story suburbian house.
+	Medium_House_Strong	//Medium house or structure made from stone, concrete, steel or brick. Ex: Two-story smaller townhouse on UsTown1.
+	Large_House_Weak	//Large house or structure made from wood or drywall. Ex: Church on UsTown1.
+	Large_House_Strong	//Large house or structure made from stone, concrete, steel or brick. Ex: Three story townhouse on UsTown1, bunker on Russia4.
+	Big_House_Weak		//Big mansion, city block or industrial structure made from drywall or of similar weak constitution. Ex: Chateau on Europe1, Mall on UsTown4/3.
+	Big_House_Strong	//Big mansion, city block or industrial structure made from stone, concrete, steel or brick. Ex: City block on UsTown1, High School on Ustown3.
+	High_Rise		//Multi-story (5 to 25 floors) high-rise. Ex: Apartment buildings on Russia4, East Office building on UsTown2.
+	Huge_Construction	//Huge structure of epic proportions. Ex: Seattle skyscraper, Space Needle.
+	Special_KingDome	//King Dome on Seattle2.
+	Bridge_Small		//Small frail wooden bridge
+	Bridge_Medium		//Medium stone or steel bridge. Ex: UsTown1 bridges
+	Bridge_Large		//Large stone or steel bridge.
+	Bridge_Seattle3		//Big-ass bridge in the Seattle3 map.
+	Special_Chimney		//Smoke stack in NE part of ustown4.
+	Special_Guardtower	//Small guard towers on russia4 (and other maps)
+}
+
+
+CLASS BuildingTemplate
+{
+	BuildingTemplateType myBuildingTemplateType
+	DECIMAL myHealth
+	DECIMAL myArmor
+}
+
+SCRIPTCLASS BuildingTemplateList
+{
+	BuildingTemplate
+}

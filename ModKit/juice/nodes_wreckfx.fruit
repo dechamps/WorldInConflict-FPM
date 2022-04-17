@@ -1,0 +1,51 @@
+
+CLASS WreckPhysFx
+{
+	FILE myPhysMRB
+	FILE myPhysFile
+	DECIMAL myPhysTimeToLive
+	TEXT mySoundName		// e.g. "WreckSound03"
+}
+
+
+TYPE State
+{
+	STND
+	HUR1
+	HUR2
+	HUR3
+	NONE
+}
+
+
+SCRIPTCLASS WreckPhysFxGroup
+{
+	WreckPhysFx
+}
+
+SCRIPTCLASS WreckPhysFxGroups
+{
+	WreckPhysFxGroup
+}
+
+
+
+
+
+CLASS WreckFx
+{
+	FILE myMRB
+	State myPhysSpawnState
+	TEXT myWreckPhysGroupName
+}
+
+SCRIPTCLASS WreckFxGroup
+{
+	WreckFx
+}
+
+SCRIPTCLASS WreckFxGroups
+{
+	WreckFxGroup
+}
+

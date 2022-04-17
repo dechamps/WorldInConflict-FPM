@@ -1,0 +1,22 @@
+CLASS SkirmishAI
+{
+	FILE myAI_Constants
+	LOCTEXT myArtilleryBarageText
+	LOCTEXT myAttackAreaText
+	LOCTEXT myDefendAreaText
+	LOCTEXT myAntiAirText
+	LOCTEXT myAttentionText
+	LOCTEXT myBackupText
+	LOCTEXT myTABarrageText
+	LOCTEXT myTAOtherText
+	LOCTEXT myDefaultText
+	NUMBER myActiveAIsNumberOfPlatoonsForFPM
+	NUMBER myActiveAIsNumberOfPlatoonsForToW
+	NUMBER myActiveAIsNumberOfPlatoonsForAssault
+	NUMBER myActiveAIsNumberOfPlatoonsForTeamDeathMatch
+}
+
+SCRIPTCLASS AI_List
+{
+	SkirmishAI
+}

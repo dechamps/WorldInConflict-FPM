@@ -1,0 +1,3856 @@
+INCLUDE editordata/wiced/fruit/wiced.fruit
+INCLUDE editordata/wiced/fruit/wicedmissionstats.fruit
+
+FILE myRendererFile editordata/wiced/wicedrenderfiles.ice
+
+WicedRenderConfig myRendererConfig
+{
+	myWidth 800
+	myHeight 600
+	myMinCameraHeight -100
+	myMaxCameraHeight 2000
+	myCameraLerpSpeed 10
+	mySurrMeshYOffset -0.5
+}
+
+WicedDefaultOptions myDefaultOptions
+{
+	myTextureQuality 2
+	myShadowQuality 2
+	myWaterReflection 3
+	myVsVersion 1
+	myPsVersion 1
+	myHQTerrainFlag 1
+	myAutopropsFlag 1
+	myObjectLod 3
+	myParticleLevel 3
+	myAnisotropicFiltering 0
+	myContinuousRenderingFlag 1
+	myAmbientSoundsFlag 1
+	myLockedInstanceHighlightFlag 1
+	my2DMapScaleFactor 0.66
+	myReplaceHeadingOffset 0.0
+	myReplacePitchOffset 0.0
+	myReplaceBankOffset 0.0
+	myReplaceHeightOffset 0.0
+	myReplaceAbsHeadingOffsetFlag 0
+	myReplaceAbsPitchOffsetFlag 0
+	myReplaceAbsBankOffsetFlag 0
+	myReplaceHeightOffsetMode 0
+	myDefaultEnvironmentTemplate dev_default
+	myDefaultGroundTemplate dev_default
+}
+
+WicedInstanceContainerConfig myInstanceContainerConfig
+{
+	myTextLabelFont font/Eurostib.ttf
+	myTextLabelFontSize 8
+	myTextLabelColor
+	{
+		myR 128
+		myG 255
+		myB 255
+	}
+
+}
+
+WicedGroundToolsConfig myWicedGroundToolsConfig
+{
+	myFineUpAdjustPressureValue 1.0
+	myCoarseUpAdjustPressureValue 10.0
+	myFineDownAdjustPressureValue 1.0
+	myCoarseDownAdjustPressureValue 10.0
+	myFineUpAdjustHeightValue 0.5
+	myCoarseUpAdjustHeightValue 10.0
+	myFineDownAdjustHeightValue 0.5
+	myCoarseDownAdjustHeightValue 10.0
+	myCoarseUpAdjustStepValue 5.0
+	myCoarseDownAdjustStepValue 5.0
+	myFineDownAdjustStepValue 0.5
+	myFineUpAdjustStepValue 0.5
+}
+
+WicedReplaceCommandConfig myWicedReplaceCommandConfig
+{
+	myCoarseDownAdjustReplaceHeadingOffset 10
+	myFineDownAdjustReplaceHeadingOffset 1
+	myCoarseUpAdjustReplaceHeadingOffset 10
+	myFineUpAdjustReplaceHeadingOffset 1
+	myCoarseDownAdjustReplacePitchOffset 10
+	myFineDownAdjustReplacePitchOffset 1
+	myCoarseUpAdjustReplacePitchOffset 10
+	myFineUpAdjustReplacePitchOffset 1
+	myCoarseDownAdjustReplaceBankOffset 10
+	myFineDownAdjustReplaceBankOffset 1
+	myCoarseUpAdjustReplaceBankOffset 10
+	myFineUpAdjustReplaceBankOffset 1
+	myCoarseDownAdjustReplaceHeightOffset 10
+	myFineDownAdjustReplaceHeightOffset 0.5
+	myCoarseUpAdjustReplaceHeightOffset 10
+	myFineUpAdjustReplaceHeightOffset 0.5
+}
+
+WicedMissionStatsConfig myWicedMissionStatsConfig
+{
+	myDefaultStartingUnitsPositionMarkerList
+	{
+		StartingUnitsPositionMarker infantryRole
+		{
+			myModelFile props/base/dropzone/dropzone.mrb
+			myRole ARMY_ROLE
+		}
+
+		StartingUnitsPositionMarker supportRole
+		{
+			myModelFile props/base/dropzone/dropzone.mrb
+			myRole ENGINEER_ROLE
+		}
+
+		StartingUnitsPositionMarker armorRole
+		{
+			myModelFile props/base/dropzone/dropzone.mrb
+			myRole ARMOR_ROLE
+		}
+
+		StartingUnitsPositionMarker airRole
+		{
+			myModelFile props/base/dropzone/dropzone.mrb
+			myRole AIR_ROLE
+		}
+
+	}
+
+	myDeployAreaCommandPointRadius 60
+}
+
+WicedBrushData myWicedBrushData
+{
+	myBrushes
+	{
+		FILE 1x1 editordata/wiced/brushes/brush_1x1.tga
+
+		FILE 2x2 editordata/wiced/brushes/brush_2x2.tga
+
+		FILE 4x4 editordata/wiced/brushes/brush_4x4.tga
+
+		FILE 7x7 editordata/wiced/brushes/brush_7x7.tga
+
+		FILE 8x8 editordata/wiced/brushes/brush_8x8.tga
+
+		FILE 9x9 editordata/wiced/brushes/brush_9x9.tga
+
+		FILE 11x11 editordata/wiced/brushes/brush_11x11.tga
+
+		FILE 16x16 editordata/wiced/brushes/brush_16x16.tga
+
+		FILE 32x32 editordata/wiced/brushes/brush_32x32.tga
+
+		FILE 64x64 editordata/wiced/brushes/brush_64x64.tga
+
+		FILE 128x128 editordata/wiced/brushes/brush_128x128.tga
+
+	}
+
+	myDefaultTargetHeight 30
+	myDefaultStepValue 50
+	myDefaultPressure 20
+	myDefaultBrushIndex 8
+}
+
+WicedAreaTypes myWicedAreaTypes
+{
+	WicedAreaType area_variabel
+	{
+		myName "Variabel Size"
+		myRadius -1
+	}
+
+}
+
+WicedWireData myWicedWireData
+{
+	myWireTypes
+	{
+		WicedWireType powerLine
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 0
+		}
+
+		WicedWireType telephoneLine
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 1
+		}
+
+		WicedWireType trainCable
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 2
+		}
+
+		WicedWireType rope
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 2.0
+			myElasticLimit 6.0
+			myMaterial 3
+		}
+
+		WicedWireType Xmas_RED
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 4
+		}
+
+		WicedWireType Xmas_BLUE
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 5
+		}
+
+		WicedWireType Xmas_GREEN
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 6
+		}
+
+		WicedWireType Xmas_PURPLE
+		{
+			myDefaultMass 0.75
+			myStiffness 1.0
+			myResolution 5.0
+			myElasticLimit 6.0
+			myMaterial 7
+		}
+
+	}
+
+	myWireMaterials
+	{
+		FILE Cable_Diff effects/cables/cable_diff.dds
+
+		FILE Cable_phone effects/cables/cable_phone.dds
+
+		FILE Cable_train effects/cables/cable_train.dds
+
+		FILE Cable_rope effects/cables/cable_rope.dds
+
+		FILE Cable_Xmas effects/cables/cable_xmasRED.dds
+
+		FILE Cable_Xmas2 effects/cables/cable_xmasGREEN.dds
+
+		FILE Cable_Xmas3 effects/cables/cable_xmasBLUE.dds
+
+		FILE Cable_Xmas4 effects/cables/cable_xmasPURPLE.dds
+
+	}
+
+	myDefaultWireTypeIndex 0
+}
+
+WicedPaths myWicedPaths
+{
+	myMapBaseDir maps
+	myTempContentCreationDir editordata/wiced/temp
+	myCinematicsMapsDir cutscenes/maps
+	myTextureDir editordata/templates/ground
+	myMountedTextureArchiveDir editordata/grounded/texturearchives
+	myTemplateDirs
+	{
+		TEXT TEXT(36) editordata/templates/environment
+
+		TEXT TEXT(37) editordata/templates/ground
+
+		TEXT TEXT(38) editordata/presets/terraingenerator
+
+		TEXT TEXT(29) editordata/presets/road
+
+		TEXT TEXT(30) editordata/presets/sunflare
+
+		TEXT TEXT(31) editordata/presets/cloud
+
+		TEXT TEXT(32) editordata/presets/water
+
+		TEXT TEXT(32) editordata/presets/intersection
+	}
+
+	myPrototypeJuice editordata/wiced/wicedprototypes.juice
+	myEnvironmentTemplatesJuice editordata/wiced/wicedenvironmenttemplates.juice
+	myAutopropDefinitionJuice autopropsets/autopropset_01.juice
+	myMassGrassDefinitionJuice autopropsets/massgrasstypes.juice
+	myMaterialsListFruit juice/materials.fruit
+	mySpeedTreeSetsJuice speedtrees/speedtreeset.juice
+	myInstanceBrushesJuice editordata/wiced/wicedinstancebrushes.juice
+	myDefaultHeightMap editordata/wiced/defaultdata/wiced_defaultheightmap.raw
+	myDefaultRoadTexture editordata/wiced/defaultdata/road.dds
+	myDefaultRoadSpecularityTexture editordata/wiced/defaultdata/roadspecmap.dds
+	myDefaultRoadNormalMapTexture surfaces/dummy_normalmap_flat.dds
+	mySurrMeshTemplate1x1 editordata/wiced/templates/surrmeshes/01x01.mrb
+	mySurrMeshTemplate2x1 editordata/wiced/templates/surrmeshes/02x01.mrb
+	mySurrMeshTemplate3x1 editordata/wiced/templates/surrmeshes/03x01.mrb
+	mySurrMeshTemplate1x2 editordata/wiced/templates/surrmeshes/01x02.mrb
+	mySurrMeshTemplate3x2 editordata/wiced/templates/surrmeshes/03x02.mrb
+	mySurrMeshTemplate1x3 editordata/wiced/templates/surrmeshes/01x03.mrb
+	mySurrMeshTemplate2x3 editordata/wiced/templates/surrmeshes/02x03.mrb
+	mySurrMeshTemplate3x3 editordata/wiced/templates/surrmeshes/03x03.mrb
+	myInstanceInfoTypeFile juice/commandpoints.fruit
+	myMapTypeFile editordata/wicmap.fruit
+	myMetadataTypeFile editordata/wiced/fruit/wicedmetadata.fruit
+	myInstancesTypeFile editordata/wiced/fruit/wicedinstances.fruit
+	myDatabaseFile database/database.juice
+	myDirectoryFile directory.ice
+	myServerPythonFileTemplate editordata/wiced/python/templates/server.py
+	myClientPythonFileTemplate editordata/wiced/python/templates/client.py
+	myXPropTypeFile xed/xprop.fruit
+	mySupportTypeFile xed/supportthings.fruit
+	myWeatherTypeFile xed/weathers.fruit
+	myCharacterTypeFile messagebox_characters/character.fruit
+	myMultiplayerFile maps/multiplayer.juice
+	mySoundTypeFile sound/MS_Sound.fruit
+	myMilesPath miles_redist
+	myRendererFile editordata/wiced/wicedrenderfiles.ice
+	myImageNotFoundReplacement surfaces/textures/bad.tga
+	mySurroundFadeMaskImage editordata/wiced/surroundfade.tga
+	myUploadServerPath \\msv-fs-03\wic_russia\
+	mySplashScreenImagesPath editordata/wiced/images/splashscreen/
+	myAddonIcon editordata/wiced/images/toolicons/addonIcon.dds
+	myAddonHighlightedIcon editordata/wiced/images/toolicons/addonIconHighlighted.dds
+	myBrushToolIcon editordata/wiced/images/toolicons/brushIcon.dds
+	mySelectionIcon editordata/wiced/images/toolicons/selectionIcon.dds
+	myWireIcon editordata/wiced/images/toolicons/wireIcon.dds
+	myWireHighlightedIcon editordata/wiced/images/toolicons/wireIconHighlighted.dds
+	myRotatePointIcon editordata/wiced/images/toolicons/rotatepoint.tga
+	myMoodSetupFile effects/mood/moodsetups.juice
+	
+	myTileFadeTop editordata/wiced/fademaps/fademapbordertop.tga
+	myTileFadeLeft editordata/wiced/fademaps/fademapborderleft.tga
+	myTileFadeTopLeft editordata/wiced/fademaps/fademapbordertopleft.tga
+}
+
+WicedAllowedModelFolders myAllowedModelFolders
+{
+	TEXT TEXT(18) props/house/GenericMilitary
+
+	TEXT TEXT(19) props/house/Europe
+
+	TEXT TEXT(20) props/Europe_Props
+
+	TEXT TEXT(21) Props/House/GenericMilitary
+
+	TEXT TEXT(22) props/GenericMilitary
+
+	TEXT TEXT(23) props/house/Russia
+
+	TEXT TEXT(24) props/Russia_Props
+
+	TEXT TEXT(25) props/house/USDesert
+
+	TEXT TEXT(26) props/USDesert_Props
+
+	TEXT TEXT(27) Props/House/USFarmland
+
+	TEXT TEXT(28) Props/usFarmland_Props
+
+	TEXT TEXT(29) props/house/USSeattle
+
+	TEXT TEXT(30) Props/USSeattle_Props
+
+	TEXT TEXT(31) props/house/USTown_2
+
+	TEXT TEXT(32) props/ustown_props
+
+	TEXT TEXT(33) Props/Poles_Generic
+
+	TEXT TEXT(34) props/CityProps
+
+	TEXT TEXT(35) Props/Critters
+
+	TEXT TEXT(36) Props/bridges
+
+	TEXT TEXT(37) Props/Civilians
+
+	TEXT TEXT(38) Props/Specials/Missouri_Convoy
+
+	TEXT TEXT(39) Props/Generic_Containers
+
+	TEXT TEXT(40) Props/House/USTown/Suburbs/SubHouse_Fence
+
+	TEXT TEXT(41) props/Vehicles/Digger
+
+	TEXT TEXT(42) props/Vehicles/Forestry_Machines
+
+	TEXT TEXT(43) props/Vehicles/HotAirBallon
+
+	TEXT TEXT(44) props/Vehicles/Trucks
+
+	TEXT TEXT(45) props/Vehicles/Generic
+
+	TEXT TEXT(46) props/Vehicles/Train
+
+	TEXT TEXT(47) props/Vehicles/Boats
+
+	TEXT TEXT(48) props/Dummy/SurroundObjects
+
+	TEXT TEXT(49) props/Specials/NewYork_House
+
+	TEXT TEXT(50) speedtrees
+
+	TEXT TEXT(51) units/Fortification/
+
+	TEXT TEXT(52) units/US/US_Support_Battleship_Missouri
+
+	TEXT TEXT(53) effects/waterwaves/
+
+	TEXT TEXT(54) hit_set_effects/
+
+	TEXT TEXT(55) effects/surroundeffects/
+
+	TEXT TEXT(56) _Dummy_objects/Sphere
+
+	TEXT TEXT(57) props/blockboxes/dontdraw/
+
+	TEXT TEXT(0) Props/House/hawaii/
+
+	TEXT TEXT(1) props/Hawaii_props/
+
+	TEXT TEXT(2) effects/
+
+	TEXT TEXT(3) Russian/
+
+	TEXT TEXT(4) props/racetrack/
+
+	TEXT TEXT(10) usFarmland5/
+
+	TEXT TEXT(101) maps/do_tequila/
+
+	TEXT TEXT(102) maps/do_studio/
+
+	TEXT TEXT(103) maps/do_apocalypse/
+
+	TEXT TEXT(104) maps/europe5/
+
+}
+
+WicedDummyModelFolders myDummyModelFolders
+{
+	TEXT TEXT(1) props/dummy
+
+	TEXT TEXT(2) props/house/usnewyork
+
+	TEXT TEXT(3) props/usnewyork_props
+
+}
+
+WicedMapEditorConfig myMapEditorConfig
+{
+	mySurfaceOne xed/splatt_pass1.sur
+	mySurfaceTwo xed/splatt_passX_1tex.sur
+	mySurfaceThree xed/splatt_passX.sur
+	myLightSurface xed/splatt_passlight.sur
+}
+
+WicedToolsAndCommands myToolsAndCommands
+{
+	WicedPaintToHeightTool myPaintToHeightTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Set Height Tool"
+			myShortcutKey 72
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedPaintPlusMinusTool myPaintPlusMinusTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Brush Tool"
+			myShortcutKey 66
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedRampTool myRampTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Ramp Tool"
+			myShortcutKey 82
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedPinchTool myPinchTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Pinch Tool"
+			myShortcutKey 80
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedSmoothTool mySmoothTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Smooth Tool"
+			myShortcutKey 79
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedRulerTool myRulerTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Ruler Tool"
+			myShortcutKey 82
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+	
+	WicedMaskEditTool myMaskEditTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Mask Edit Tool"
+			myShortcutKey 82
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+	
+	WicedDetailTextureEditTool myDetailTextureEditTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Detail Texture Edit Tool"
+			myShortcutKey 82
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+
+	WicedPlaceInstanceTool myPlaceInstanceTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Place Tool"
+			myShortcutKey 70
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+		myHeightStepvalue 0.1
+	}
+
+	WicedEditInstanceTool myEditInstanceTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Edit Tool"
+			myShortcutKey 32
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+		myHeightStepvalue 0.1
+		myDragSelectionMarker editordata/wiced/256_marker.tga
+	}
+
+	WicedCopyInstanceTool myCopyInstanceTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Copy Tool"
+			myShortcutKey 67
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedPickInstanceTool myPickInstanceTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName <empty>
+			myShortcutKey 80
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedGrepInstanceTool myGrepInstanceTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Grep Tool"
+			myShortcutKey 71
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedGroundTextureGenerationTool myGroundTextureGenerationTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Texture Generator"
+			myShortcutKey 82
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTerrainGenerationTool myTerrainGenerationTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Terrain Generator"
+			myShortcutKey 84
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedRoadTool myRoadTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName <empty>
+			myShortcutKey 0
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedEnvironmentTool myEnvironmentTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName Environment
+			myShortcutKey 69
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedGameplayTool myGameplayTool
+	{
+		myTool
+		{
+			myCameraMoveSpeed 500
+			myCameraHeightSpeed 5
+			myCameraRotateSpeed 20
+			mySlowDownRate 0.1
+		}
+
+		myCommand
+		{
+			myCommandGUIName "Gameplay Editor"
+			myShortcutKey 71
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedUndoCommand myUndoCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Undo
+			myShortcutKey 90
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedDeleteCommand myDeleteCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Delete
+			myShortcutKey 46
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedFinalizeCommand myFinalizeCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Compile Map"
+			myShortcutKey 67
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedImportHeightmapCommand myImportHeightmapCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Import heightmap"
+			myShortcutKey 73
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedImportGroundTemplateCommand myImportGroundTemplateCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Import Ground Template"
+			myShortcutKey 73
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedImportEnvironmentTemplateCommand myImportEnvironmentTemplateCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Import Environment Template"
+			myShortcutKey 73
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedSnapToGroundCommand mySnapToGroundCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Snap to Ground"
+			myShortcutKey 66
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedReplaceCommand myReplaceCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Replace
+			myShortcutKey 88
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedLockCommand myLockCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Lock
+			myShortcutKey 76
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedUnlockCommand myUnlockCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Unlock
+			myShortcutKey 85
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedUnlockAllCommand myUnlockAllCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Unlock All"
+			myShortcutKey 85
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedExportToLWOCommand myExportToLWOCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "LWO Model Export"
+			myShortcutKey 69
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedExportSurroundMeshesToLWOCommand myExportSurroundMeshesToLWOCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "LWO Surround Meshes Export"
+			myShortcutKey 89
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTakeScreenshotCommand myTakeScreenshotCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Take Screenshot"
+			myShortcutKey 120
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedBugReportsCommand myBugReportsCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Bug Reports"
+			myShortcutKey 66
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedDeploymentAreaMasksCommand myDeploymentAreaMasksCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Generate Deployment Area Masks"
+			myShortcutKey 68
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedExportTopDownRaytraceMapCommand myExportTopDownRaytraceMapCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Export Top Down Raytrace Map"
+			myShortcutKey 69
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedSurroundFadeCommand mySurroundFadeCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Run Surround Mesh Fader"
+			myShortcutKey 77
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedSubmitCommand mySubmitCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Submit Map"
+			myShortcutKey 77
+			myShiftFlag 1
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedReloadAllTexturesCommand myReloadAllTexturesCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Reload All Textures"
+			myShortcutKey 81
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedReloadAllRoadsCommand myReloadAllRoadsCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Reload All Roads"
+			myShortcutKey 81
+			myShiftFlag 0
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedExportCubemapCommand myExportCubemapCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Export Cubemap"
+			myShortcutKey 67
+			myShiftFlag 1
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedEditForestBrushCommand myEditForestBrushCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Edit Forest Brush"
+			myShortcutKey 0
+			myShiftFlag 0
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 1
+		}
+
+	}
+
+	WicedExportPathfindingMapsCommand myExportPathfindingMapsCommand
+	{
+		myCommand
+		{
+			myCommandGUIName "Export Pathfinding maps"
+			myShortcutKey 80
+			myShiftFlag 1
+			myCtrlFlag 1
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTerrainTextureShadeCommand myTerrainTextureShadeCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Textured
+			myShortcutKey 84
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTerrainGouraudShadeCommand myTerrainGouraudShadeCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Gouraud
+			myShortcutKey 71
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTerrainWireframeOverlayCommand myTerrainWireframeOverlayCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Wireframe
+			myShortcutKey 87
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+	WicedTerrainPathmapOverlayCommand myTerrainPathmapOverlayCommand
+	{
+		myCommand
+		{
+			myCommandGUIName Pathmap
+			myShortcutKey 80
+			myShiftFlag 1
+			myCtrlFlag 0
+			myGestureId -1
+			myOnlyInternalCommandFlag 0
+		}
+
+	}
+
+}
+
+FileList myGetFilesIncludes
+{
+	FILE exe WICEd.exe
+
+	FILE jed ed_juiceeditor.dll
+
+	FILE jedd ed_juiceeditor_d.dll
+
+	FILE bink32_dll binkw32.dll
+
+	FILE meqdll meqsdk.dll
+
+	FILE meqdllkd meqsdkd.dll
+
+	FILE SpeedTreeDLL speedtreert.dll
+
+	FILE SpeedTreeExtra01 msvcp71.dll
+
+	FILE SpeedTreeExtra02 msvcr71.dll
+
+	FILE D3DXDLL d3dx9_27.dll
+
+	FILE grounded editordata/grounded/grounded_paths.juice
+
+	FILE dxttool ddstools/nvdxt.exe
+
+	FILE vc8CRTdll01 msvcp80.dll
+
+	FILE vc8CRTdll02 msvcr80.dll
+
+	FILE vc8MFCdll mfc80.dll
+
+	FILE vc8MFCManifest Microsoft.VC80.MFC.manifest
+
+	FILE vc8CRTManifest Microsoft.VC80.CRT.manifest
+
+	FILE speedtreebb_dds_config ddstools/profiles_for_tools/speedtree_billboards.dpf
+
+	FILE speedtreebb_dds_config_n ddstools/profiles_for_tools/speedtree_billboards_normalmaps.dpf
+
+	FILE cubemap_dds_config ddstools/profiles_for_tools/cubemap_standard.dpf
+
+	FILE general_dxt1 ddstools/profiles_for_tools/general_dxt1.dpf
+
+	FILE groundalpha_dds_config ddstools/profiles_for_tools/groundtexturesalpha.dpf
+
+	FILE nvcompress ddstools/nvcompress.exe
+
+	FILE cudadll ddstools/cuda.dll
+
+	FILE cudartdll ddstools/cudart.dll
+
+	FILE fatzipdll ddstools/fatZip.dll
+
+	FILE jpeg62dll ddstools/jpeg62.dll
+
+	FILE libpng13dll ddstools/libpng13.dll
+
+	FILE libtiff3dll ddstools/libtiff3.dll
+
+	FILE nvttdll ddstools/nvtt.dll
+
+	FILE ptxcompdll ddstools/ptxcomp.dll
+
+	FILE zlib1dll ddstools/zlib1.dll
+
+	FILE FILE(162) editordata/wiced/gridtoolcircle.dds
+
+	FILE FILE(163) editordata/wiced/images/gameplayeditor/assaultstart1.dds
+
+	FILE FILE(164) editordata/wiced/images/gameplayeditor/assaultstart2.dds
+
+	FILE FILE(165) editordata/wiced/images/gameplayeditor/perimeterpoint.dds
+
+	FILE FILE(166) editordata/wiced/images/splashscreen/splashscreens.sdf
+
+	FILE FILE(167) editordata/wiced/images/splashscreen/wiced_mainscreen_bg_random_01.bmp
+
+	FILE FILE(168) editordata/wiced/images/splashscreen/wiced_mainscreen_bg_random_02.bmp
+
+	FILE FILE(169) editordata/wicedtemplates.ice
+
+	FILE FILE(170) editordata/wicedpresets.ice
+
+	FILE FILE(171) editordata/wiced/wicedsplashscreens.ice
+
+	FILE FILE(172) editordata/wiced/wicedtoolicons.ice
+
+	FILE showbox_dds_profile01 ddstools/profiles_for_tools/diffbake_dxt1.dpf
+
+	FILE showbox_dds_profile02 ddstools/profiles_for_tools/diffbake_dxt1a.dpf
+
+	FILE showbox_dds_profile03 ddstools/profiles_for_tools/diffbake_dxt5.dpf
+
+	FILE pythoncompiler editordata/wiced/Compyle.exe
+
+	FILE wicedtrackerasis editordata/wiced/wicedtracker_asis.txt
+
+	FILE help "editordata/wiced/help/WicEd Manual.chm"
+
+	FILE defaultextbloom editordata/wiced/defaultdata/defaultbloom.ini
+
+	FILE wicedinit editordata/wiced/wicedconfig.ini
+
+}
+
+FileList Metadata
+{
+	FILE meta1 maps/delivery/MetaData/delivery_wiced_metadata.juice
+
+	FILE meta2 maps/europe1/MetaData/europe1_wiced_metadata.juice
+
+	FILE meta3 maps/europe2/MetaData/europe2_wiced_metadata.juice
+
+	FILE meta4 maps/europe3/MetaData/europe3_wiced_metadata.juice
+
+	FILE meta5 maps/europe4/MetaData/europe4_wiced_metadata.juice
+
+	FILE meta6 maps/libya1/MetaData/libya1_wiced_metadata.juice
+
+	FILE meta7 maps/libya2/MetaData/libya2_wiced_metadata.juice
+
+	FILE meta8 maps/russia3/MetaData/russia3_wiced_metadata.juice
+
+	FILE meta9 maps/russia4/MetaData/russia4_wiced_metadata.juice
+
+	FILE meta10 maps/russia1/MetaData/russia1_wiced_metadata.juice
+
+	FILE meta11 maps/russia2/MetaData/russia2_wiced_metadata.juice
+
+	FILE meta12 maps/seattle1/MetaData/seattle1_wiced_metadata.juice
+
+	FILE meta13 maps/seattle2/MetaData/seattle2_wiced_metadata.juice
+
+	FILE meta14 maps/seattle3/MetaData/seattle3_wiced_metadata.juice
+
+	FILE meta15 maps/usdesert1/MetaData/usdesert1_wiced_metadata.juice
+
+	FILE meta16 maps/usdesert2/MetaData/usdesert2_wiced_metadata.juice
+
+	FILE meta17 maps/usfarmland1/MetaData/usfarmland1_wiced_metadata.juice
+
+	FILE meta18 maps/usfarmland2/MetaData/usfarmland2_wiced_metadata.juice
+
+	FILE meta19 maps/usfarmland3/MetaData/usfarmland3_wiced_metadata.juice
+
+	FILE meta20 maps/usfarmland4/MetaData/usfarmland4_wiced_metadata.juice
+
+	FILE meta23 maps/ustown1/MetaData/ustown1_wiced_metadata.juice
+
+	FILE meta24 maps/ustown2/MetaData/ustown2_wiced_metadata.juice
+
+	FILE meta25 maps/ustown3/MetaData/ustown3_wiced_metadata.juice
+
+	FILE meta25 maps/ustown4/MetaData/ustown4_wiced_metadata.juice
+
+	FILE meta26 maps/newyork1/MetaData/newyork1_wiced_metadata.juice
+
+	FILE meta27 maps/seattle4/MetaData/seattle4_wiced_metadata.juice
+
+	FILE meta28 maps/berlin1/MetaData/berlin1_wiced_metadata.juice
+	
+	FILE meta29 maps/norway1/MetaData/norway1_wiced_metadata.juice
+	
+	FILE meta30 maps/usfarmland5/MetaData/usfarmland5_wiced_metadata.juice
+
+	FILE meta31 maps/berlin1war/MetaData/berlin1war_wiced_metadata.juice
+
+}
+
+FileList Maps
+{
+	FILE testmap maps/editortestmap3/editortestmap3.juice
+
+}
+
+FileList PythonStandardLib
+{
+	FILE FILE(0) python/copy_reg.py
+
+	FILE FILE(1) python/linecache.py
+
+	FILE FILE(2) python/ntpath.py
+
+	FILE FILE(3) python/os.py
+
+	FILE FILE(4) python/random.py
+
+	FILE FILE(5) python/stat.py
+
+	FILE FILE(6) python/types.py
+
+	FILE FILE(7) python/userdict.py
+
+	FILE FILE(8) python/warnings.py
+
+}
+
+FileList WicPythonLib
+{
+	FILE FILE(0) python/common.py
+
+	FILE FILE(1) python/sys.py
+
+	FILE FILE(3) python/wicg.py
+
+	FILE FILE(4) python/wicp.py
+
+	FILE FILE(2) python/trigger.py
+
+}
+
+WicedCommandPointsConfig myCommandPointsConfig
+{
+	myPerimeterPointSizeDataList
+	{
+		WicedPerimeterPointSizeData LARGE
+		{
+			mySizeName LARGE
+			myRadiusSize 21.0
+			myFortificationRadiusSize 27
+		}
+
+		WicedPerimeterPointSizeData SMALL
+		{
+			mySizeName SMALL
+			myRadiusSize 14.0
+			myFortificationRadiusSize 20
+		}
+		
+		WicedPerimeterPointSizeData SP_SIZE1
+		{
+			mySizeName SP_SIZE1
+			myRadiusSize 10
+			myFortificationRadiusSize 15
+		}
+		
+		WicedPerimeterPointSizeData SP_SIZE2
+		{
+			mySizeName SP_SIZE2
+			myRadiusSize 8
+			myFortificationRadiusSize 10
+		}
+		
+		WicedPerimeterPointSizeData SP_SIZE3
+		{
+			mySizeName SP_SIZE3
+			myRadiusSize 6
+			myFortificationRadiusSize 8
+		}
+		
+		WicedPerimeterPointSizeData SP_SIZE4
+		{
+			mySizeName SP_SIZE4
+			myRadiusSize 5
+			myFortificationRadiusSize 7
+		}
+
+	}
+
+	myFortificationSets
+	{
+		WicedFortificationSet default
+		{
+			myFortificationLevelUnitNames
+			{
+				TEXT level1 fortification_machinegun
+
+				TEXT level2 fortification_antitank
+
+				TEXT level3 fortification_antiair
+
+			}
+
+		}
+
+	}
+
+}
+
+WicedSubmitAreas mySubmitAreas
+{
+	WicedSubmitArea entry0
+	{
+		myName "Ground Textures"
+		myDescription "Contains data generated with GroundTextureTool"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType groundtextures
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMapTiles
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType massgrass
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myGrassData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType groundspectga
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myGroundSpecWeightMap
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType groundspecdds
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myGroundSpecWeightMapDDS
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType autopropfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAutoPropFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType autopropsetname
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAutoPropSetName
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType autoproptypelist
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAutoPropTypeList
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType autopropcolortint
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAutoPropColorTintFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType autopropcolormap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAutoPropColorMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType hiteffectsspawn
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHitEffectsSpawnFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType hiteffectscolortint
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHitEffectsColorTintFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTextureFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture2
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTextureFile2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture1tilefactor
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture1TileFactor
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture2tilefactor
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture2TileFactor
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailmap2
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailMapFile2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetailMapFile1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmap2
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetailMapFile2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmap3
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetailMapFile3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture3highend
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTextureFile3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture3tilefactorX
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture3TileFactorX
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture3tilefactorY
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture3TileFactorY
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture3tilefactorZ
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture3TileFactorZ
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType detailtexture3tilefactorW
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myDetailTexture3TileFactorW
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmappingX
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetail3MappingX
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmappingY
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetail3MappingY
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmappingZ
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetail3MappingZ
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highenddetailmappingW
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendDetail3MappingW
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailoverridemap1
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myOverrideHighendDetailMask1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailoverridemap2
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myOverrideHighendDetailMask2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailoverridemap3
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myOverrideHighendDetailMask3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailnonoverriddenlowend1
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myNonOverriddenDetailMask1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailnonoverriddenlowend2
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myNonOverriddenDetailMask2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailnonoverridden1
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myNonOverriddenHighendDetailMask1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailnonoverridden2
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myNonOverriddenHighendDetailMask2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType detailnonoverridden3
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myNonOverriddenHighendDetailMask3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType terraincutoutmask
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myTerrainCutoutAlphaMask
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType overviewmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myOverViewMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType overviewmapextended
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myOverViewMapExtendedFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType massgrassdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myGrassData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType groundlowrestexture
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myGroundLowResTextureFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType heightmaplodsfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHeightmapLodsFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType speedtreeforest
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySpeedTreeForest
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType metadatalayers
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myLayers
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType metadatbasedetail
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myBaseDetailTextures
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType cachedtexturemap
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myCachedTextureMap512
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType massgrassmetadata
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myMassGrassTypes
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType generatedshadowmap
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myGeneratedShadowMap
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType generatedshadowmapsurround
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myGeneratedShadowSurroundMap
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType raycastoptions
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myRaycastOptions
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType texgenstack
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myTextureGenerationStack
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType heightmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHeightMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag TRUE
+				myDoNotDiffFilesIfSyncRemoteFlag FALSE
+				mySubmitAreaDependencyList
+				{
+					TEXT dep0 "Terrain & Multiplayer Prop Placement"
+
+				}
+
+			}
+
+			JuiceSubmitType invisibleheightmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInvisibleHeightmapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag TRUE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+					TEXT dep0 "Terrain & Multiplayer Prop Placement"
+
+				}
+
+			}
+
+			JuiceSubmitType rigidgroundfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myRigidGroundFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+					TEXT dep0 "Terrain & Multiplayer Prop Placement"
+
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+			FinalizerType FinalizerType(228) LODS
+
+			FinalizerType FinalizerType(229) SPEED_TREE
+
+		}
+
+		myExtraSubmitFilters
+		{
+			TEXT speedtreeshadows treeshadows/
+
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry1
+	{
+		myName "Terrain & Multiplayer Prop Placement"
+		myDescription "Contains multiplayer prop placement and heightmap data"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType heightmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHeightMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType invisibleheightmap
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInvisibleHeightmapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType rigidgroundfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myRigidGroundFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType heightmaplodsfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHeightmapLodsFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType props
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInstanceData.myPropInstances
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType speedtrees
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInstanceData.mySpeedTreeInstances
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType agents
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInstanceData.myAgentInstances
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathfile1
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathFile1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathfile2
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathFile2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathfile3
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathFile3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathfile4
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathFile4
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathblockfile1
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathBlockFile1
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathblockfile2
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathBlockFile2
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathblockfile3
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathBlockFile3
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType pathblockfile4
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPathBlockFile4
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType analysisfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myAnalysisFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType forestmapfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myForestMapFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType terrainanalysisfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myTerrainAnalysisFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType buildinganalysisfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myBuildingAnalysisFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType cabledata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCableData
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType speedtreeforestfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySpeedTreeForest
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType speedtreeset
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySpeedTreeSet
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType lodsdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myLodsDataFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType groundtextures
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMapTiles
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag TRUE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+					TEXT dep0 "Ground Textures"
+
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+			FinalizerType FinalizerType(251) LODS
+
+			FinalizerType FinalizerType(252) AI_ANALYSIS
+
+			FinalizerType FinalizerType(253) NAV_PATH
+
+			FinalizerType FinalizerType(254) SPEED_TREE
+
+			FinalizerType FinalizerType(255) MAP_REVIEW
+
+			FinalizerType FinalizerType(256) HIT_EFFECT
+
+		}
+
+		myExtraSubmitFilters
+		{
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry2
+	{
+		myName Environment
+		myDescription "Contains data modified from environment editor"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType environment
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myEnvironment
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType waterdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myWaterData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag FALSE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType sundata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySunData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType cloudsdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCloudsData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType bloomsetup
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myBloomSetup
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType bloomconfigfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myBloomConfigFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType sunsettings
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySunSettings
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType waterenvtemplate
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myWaterTemplate
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType sunenvtemplate
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySunFlareTemplate
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType cloudenvtemplate
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myCloudsTemplate
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType cameraeffectobject
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCameraEffectObject
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType warfilterfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myWarFilterFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType highendposteffetsdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myHighendPostEffectData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType lowendposteffetsdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myLowendPostEffectData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType minimapdata
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMinimapData
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType moodsetupfiles
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMoodSetupFiles
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType moodsetupoverrides
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMoodSetupOverrides
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+			FinalizerType FinalizerType(267) HIT_EFFECT
+
+		}
+
+		myExtraSubmitFilters
+		{
+			TEXT TEXT(293) mapenvmap_NX.tga
+
+			TEXT TEXT(294) mapenvmap_NY.tga
+
+			TEXT TEXT(295) mapenvmap_NZ.tga
+
+			TEXT TEXT(296) mapenvmap_PX.tga
+
+			TEXT TEXT(297) mapenvmap_PY.tga
+
+			TEXT TEXT(298) mapenvmap_PZ.tga
+
+			TEXT TEXT(299) mapenvmap_NX.dds
+
+			TEXT TEXT(300) mapenvmap_NY.dds
+
+			TEXT TEXT(301) mapenvmap_NZ.dds
+
+			TEXT TEXT(302) mapenvmap_PX.dds
+
+			TEXT TEXT(303) mapenvmap_PY.dds
+
+			TEXT TEXT(304) mapenvmap_PZ.dds
+
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry3
+	{
+		myName "Multiplayer Gameplay"
+		myDescription "Contains multiplayer specific gameplay data. i.e. command point info, drop zones and mission stats"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType areas
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInstanceData.myAreaInstances
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType missionstats
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myMissionStats
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType playfieldmincoord
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPlayfieldMinCoord
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType playfieldmaxcoord
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPlayfieldMaxCoord
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType camplayfieldmincoord
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCameraPlayfieldMinCoord
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType camplayfieldmaxcoord
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCameraPlayfieldMaxCoord
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType serverautogenpython
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myPythonServerAutogenScript
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType locfiles
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myLocFiles
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType coverfile
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myCoverFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+		}
+
+		myExtraSubmitFilters
+		{
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry4
+	{
+		myName "Roads data"
+		myDescription "Contains generated and imported road meshes, and also spline metadata"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType splineeditordisabled
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySplineEditorDisabled
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType importedroadmodels
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myImportedRoadModels
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType splinedata
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySplines
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+			
+			JuiceSubmitType intersectiondata
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myRoadIntersections
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType specmeshesroads
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySpecMeshes
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+					ScriptclassFilter roadsfilter
+					{
+						myJuiceClassName WicedSpecMesh
+						myVariableToFilterOn myType
+						myFilterValue WIC_ROAD
+					}
+
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+			FinalizerType FinalizerType(279) EXTRA_HEIGHTMAP
+
+		}
+
+		myExtraSubmitFilters
+		{
+			TEXT roads roads/
+
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry5
+	{
+		myName Surroundmesh
+		myDescription "Contains generated and imported surround mesh data and metadata "
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType surrmeshfile
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySurrMeshFile
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType surrmeshtranslength
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySurrMeshTransitionLength
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType surrmeshheightmod
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySurrMeshHeightModifier
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType surrmeshesimported
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySurroundMeshesImported
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType importedsurrmeshes
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName myImportedSurroundMeshes
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType savedsurroundmeshtextures
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySavedSurrMeshTextures
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType savedsurroundmeshdetail
+			{
+				myJuiceFile MAP_METADATA_JUICE
+				myJuiceName mySavedSurrMeshDetailTexture
+				mySubmitReferencedFilesFlag TRUE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+			JuiceSubmitType specmeshessurrmeshes
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName mySpecMeshes
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+					ScriptclassFilter surrmeshfilter
+					{
+						myJuiceClassName WicedSpecMesh
+						myVariableToFilterOn myType
+						myFilterValue WIC_SURRMESH
+					}
+
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+		}
+
+		myExtraSubmitFilters
+		{
+			TEXT surrmeshes surroundmeshes/
+
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry6
+	{
+		myName "Ambient Sounds"
+		myDescription "Contains only ambient sound instances for now, but could later contain misc instances."
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType miscinstances
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myInstanceData.myMiscInstances
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+		}
+
+		myExtraSubmitFilters
+		{
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+	WicedSubmitArea entry7
+	{
+		myName "Singleplayer Data"
+		myDescription "Contains singleplayer specific gameplay data and prop placement"
+		myJuiceTypesToSubmit
+		{
+			JuiceSubmitType locstrings
+			{
+				myJuiceFile MAP_JUICE
+				myJuiceName myLocStrings
+				mySubmitReferencedFilesFlag FALSE
+				myScriptClassFilters
+				{
+				}
+
+				mySyncWithRemoteFirstFlag FALSE
+				myDoNotDiffFilesIfSyncRemoteFlag TRUE
+				mySubmitAreaDependencyList
+				{
+				}
+
+			}
+
+		}
+
+		myNeededFinalizers
+		{
+		}
+
+		myExtraSubmitFilters
+		{
+		}
+
+		mySubSubmitAreas
+		{
+		}
+
+	}
+
+}
+

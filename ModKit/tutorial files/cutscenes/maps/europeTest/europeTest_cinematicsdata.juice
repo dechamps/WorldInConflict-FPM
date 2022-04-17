@@ -1,0 +1,34 @@
+INCLUDE editordata/wicmap.fruit
+
+WicedCinematicsData myCinematicsData
+{
+	myCinematicsInstanceData
+	{
+		myPropInstances
+		{
+		}
+
+		myAgentInstances
+		{
+		}
+
+		mySpeedTreeInstances
+		{
+		}
+
+		myAreaInstances
+		{
+		}
+
+		myMiscInstances
+		{
+		}
+
+	}
+
+	myCinematicScriptCameraFiles
+	{
+	}
+
+}
+

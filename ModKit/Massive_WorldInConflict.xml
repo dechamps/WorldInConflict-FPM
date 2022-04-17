@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name>Massive_WorldInConflict-adhoc</name>
+  <SSIDConfig>
+    <SSID>
+      <hex>4D6173736976655F576F726C64496E436F6E666C696374</hex>
+      <name>Massive_WorldInConflict</name>
+    </SSID>
+  </SSIDConfig>
+  <connectionType>IBSS</connectionType>
+  <MSM>
+    <security>
+      <authEncryption>
+        <authentication>open</authentication>
+        <encryption>none</encryption>
+        <useOneX>false</useOneX>
+      </authEncryption>
+    </security>
+  </MSM>
+</WLANProfile>

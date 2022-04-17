@@ -1,0 +1,2591 @@
+INCLUDE editordata/wiced/fruit/wicedenvironmenttemplates.fruit
+
+WicedEnvironmentTemplates myEnvironmentTemplates
+{
+	WicedEnvironmentTemplate Bright_Day
+	{
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 161
+				myG 188
+				myB 207
+			}
+
+			mySunFogColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myFogFactor 0.0
+			myFogStart 1625.0
+			myFogEnd 2500.0
+			myFogThreshold 0.0
+			myFogExponent 0.0
+			myGlobalSpecModifier 0.0
+			mySkyModel "landscapes/global/sky_n_weather/desert_day/copy of skybox_desert_day.mrb"
+			myWaterLevel 8
+			myLightAmbient
+			{
+				myR 140
+				myG 100
+				myB 90
+			}
+
+			myDirectionalLight
+			{
+				myDirection 225
+				myElevation 30
+				myColor
+				{
+					myR 255
+					myG 255
+					myB 180
+				}
+
+				myOverbrightFactor 0.1
+			}
+
+			myWaterTexture0 props/nature/skane_water/w_0000.dds
+			myWaterTexture1 props/nature/skane_water/w_0000.dds
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture surfaces/temp_distort_test.dds
+			myCloudMap surfaces/testcloudmap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap <empty>
+			myPostFXBloomColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myShadowFactor 0.5
+			myShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myHighendSpecularExponent 8.0
+			myGammaBrightnessColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGammaValue 0.0
+			myGammaContrast 0.0
+			myTreeOverrideLighting 1
+			myTreeDirectionalColor
+			{
+				myR 50
+				myG 50
+				myB 50
+			}
+
+			myTreeAmbientColor
+			{
+				myR 80
+				myG 80
+				myB 80
+			}
+
+			myTreeOverbrightFactor 0.5
+			myTreeOverrideShadows 1
+			myTreeShadowColor
+			{
+				myR 80
+				myG 80
+				myB 80
+			}
+
+			myTreeShadowFactor 0.5
+			myTreeOverrideStemDarkening 1
+			myTreeStemUpperMaxDarkness 0.5
+			myTreeStemRootMaxDarkness 0.5
+			myTreeStemRootHeightInMeters 5.0
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.0
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 0.0
+			mySunReflectionScale 0.0
+			myRippleSoftener 0.0
+			myRippleReflectionScale 0.0
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.0
+			myRippleScaler2 0.0
+			myRippleScaler3 0.0
+			myRippleScaler4 0.0
+			myWaterAngle1 0.0
+			myRelDir2 0.0
+			myRelDir3 0.0
+			myRelDir4 0.0
+			myWaterScale1 0.0
+			myWaterScale2 0.0
+			myWaterScale3 0.0
+			myWaterScale4 0.0
+			myWaterSpeed1 0.0
+			myWaterSpeed2 0.0
+			myWaterSpeed3 0.0
+			myWaterSpeed4 0.0
+			myRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myFresnelBase 0.0
+			myFresnelExponent 0.0
+			myFresnelScale 0.0
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0
+			myFoamAlphaScale 0.0
+			myFoamScaleU1 0.0
+			myFoamScaleV1 0.0
+			myFoamScaleU2 0.0
+			myFoamScaleV2 0.0
+			myFoamSpeedU1 0.0
+			myFoamSpeedV1 0.0
+			myFoamSpeedU2 0.0
+			myFoamSpeedV2 0.0
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 0.0
+			myCrestMaxYTravel 0.0
+			myCrestMaxGroundTravelDist 0.0
+			myCrestMinmumSpacing 0.0
+			myCrestFadeInTime 0.0
+			myCrestFadeOutTime 0.0
+			myCrestLifeTime 0.0
+			myCrestSecondLayerSpeed 0.0
+			myCrestSecondLayerUScale 0.0
+			myCrestSecondLayerVScale 0.0
+			myCrestSpeedScale 0.0
+			myCrestShrinkFactor 0.0
+			myCrestWidth 0.0
+			myCrestLength 0.0
+			myCrestAlphaScale 0.0
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight <empty>
+			myWaterSurface_NormalMask <empty>
+			myWaterSurface_Foam <empty>
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 <empty>
+			myCrest_Foam2 <empty>
+			myAroundVessel_Foam <empty>
+			myAroundVessel_Side <empty>
+			myAroundVessel_BoatShape <empty>
+			myTrail_Foam <empty>
+			myTrail_Noise <empty>
+			myWaterMeshFile <empty>
+		}
+
+		mySunData
+		{
+			myCoinFile <empty>
+			myCoinSizeX 0.0
+			myCoinSizeY 0.0
+			myEarlyFlareSetupList
+			{
+			}
+
+			myPreBloomFlareSetupList
+			{
+			}
+
+			myFlareSetupList
+			{
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+		myBloomConfigFile <empty>
+		myBloomSetup default
+		mySunSettings
+		{
+			myGroundOverrideLighting 1
+			myGroundDirectionalColor
+			{
+				myR 100
+				myG 100
+				myB 100
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundElevation 55.0
+			myShadowDetail 0
+			myOverbrightFactor 0.45
+			myOverbrightFactorCap 0.45
+			myShadowStretch 1.0
+			myShadowSoftness 0.50
+		}
+
+		mySunFlareTemplate <empty>
+		myWaterTemplate <empty>
+		myCloudsTemplate <empty>
+	}
+
+	WicedEnvironmentTemplate Red_Dawn
+	{
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 155
+				myG 78
+				myB 50
+			}
+
+			mySunFogColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myFogFactor 0.0
+			myFogStart 1625.0
+			myFogEnd 2500.0
+			myFogThreshold 0.0
+			myFogExponent 0.0
+			myGlobalSpecModifier 0.0
+			mySkyModel landscapes/global/sky_n_weather/desert_day/skybox_desert_day.mrb
+			myWaterLevel 19.0
+			myLightAmbient
+			{
+				myR 170
+				myG 130
+				myB 120
+			}
+
+			myDirectionalLight
+			{
+				myDirection 260.0
+				myElevation 17.0
+				myColor
+				{
+					myR 210
+					myG 160
+					myB 100
+				}
+
+				myOverbrightFactor 0.2
+			}
+
+			myWaterTexture0 props/nature/water/w_0000.dds
+			myWaterTexture1 props/nature/water/w_0000.dds
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture surfaces/temp_distort_test.dds
+			myCloudMap surfaces/testcloudmap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap <empty>
+			myPostFXBloomColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myShadowFactor 0.5
+			myShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myHighendSpecularExponent 8.0
+			myGammaBrightnessColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGammaValue 0.0
+			myGammaContrast 0.0
+			myTreeOverrideLighting 0
+			myTreeDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeOverbrightFactor 0.0
+			myTreeOverrideShadows 0
+			myTreeShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeShadowFactor 0.0
+			myTreeOverrideStemDarkening 0
+			myTreeStemUpperMaxDarkness 0.0
+			myTreeStemRootMaxDarkness 0.0
+			myTreeStemRootHeightInMeters 0.0
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.0
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 0.0
+			mySunReflectionScale 0.0
+			myRippleSoftener 0.0
+			myRippleReflectionScale 0.0
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.0
+			myRippleScaler2 0.0
+			myRippleScaler3 0.0
+			myRippleScaler4 0.0
+			myWaterAngle1 0.0
+			myRelDir2 0.0
+			myRelDir3 0.0
+			myRelDir4 0.0
+			myWaterScale1 0.0
+			myWaterScale2 0.0
+			myWaterScale3 0.0
+			myWaterScale4 0.0
+			myWaterSpeed1 0.0
+			myWaterSpeed2 0.0
+			myWaterSpeed3 0.0
+			myWaterSpeed4 0.0
+			myRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myFresnelBase 0.0
+			myFresnelExponent 0.0
+			myFresnelScale 0.0
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0
+			myFoamAlphaScale 0.0
+			myFoamScaleU1 0.0
+			myFoamScaleV1 0.0
+			myFoamScaleU2 0.0
+			myFoamScaleV2 0.0
+			myFoamSpeedU1 0.0
+			myFoamSpeedV1 0.0
+			myFoamSpeedU2 0.0
+			myFoamSpeedV2 0.0
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 0.0
+			myCrestMaxYTravel 0.0
+			myCrestMaxGroundTravelDist 0.0
+			myCrestMinmumSpacing 0.0
+			myCrestFadeInTime 0.0
+			myCrestFadeOutTime 0.0
+			myCrestLifeTime 0.0
+			myCrestSecondLayerSpeed 0.0
+			myCrestSecondLayerUScale 0.0
+			myCrestSecondLayerVScale 0.0
+			myCrestSpeedScale 0.0
+			myCrestShrinkFactor 0.0
+			myCrestWidth 0.0
+			myCrestLength 0.0
+			myCrestAlphaScale 0.0
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight <empty>
+			myWaterSurface_NormalMask <empty>
+			myWaterSurface_Foam <empty>
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 <empty>
+			myCrest_Foam2 <empty>
+			myAroundVessel_Foam <empty>
+			myAroundVessel_Side <empty>
+			myAroundVessel_BoatShape <empty>
+			myTrail_Foam <empty>
+			myTrail_Noise <empty>
+			myWaterMeshFile <empty>
+		}
+
+		mySunData
+		{
+			myCoinFile <empty>
+			myCoinSizeX 0.0
+			myCoinSizeY 0.0
+			myEarlyFlareSetupList
+			{
+			}
+
+			myPreBloomFlareSetupList
+			{
+			}
+
+			myFlareSetupList
+			{
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+		myBloomConfigFile <empty>
+		myBloomSetup default
+		mySunSettings
+		{
+			myGroundOverrideLighting 0
+			myGroundDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundElevation 0.0
+			myShadowDetail 0
+			myOverbrightFactor 0.77
+			myOverbrightFactorCap 0.77
+			myShadowStretch 1.0
+			myShadowSoftness 0.33
+		}
+
+		mySunFlareTemplate <empty>
+		myWaterTemplate <empty>
+		myCloudsTemplate <empty>
+	}
+
+	WicedEnvironmentTemplate US_TOWN1
+	{
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 183
+				myG 193
+				myB 193
+			}
+
+			mySunFogColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myFogFactor 0.000000
+			myFogStart 100
+			myFogEnd 2800
+			myFogThreshold 0.0
+			myFogExponent 0.0
+			myGlobalSpecModifier 0.0
+			mySkyModel Landscapes/Global/sky_n_weather/morningHaze01/morningHaze01.mrb
+			myWaterLevel 11
+			myLightAmbient
+			{
+				myR 135
+				myG 145
+				myB 150
+			}
+
+			myDirectionalLight
+			{
+				myDirection 226.000000
+				myElevation 20.000000
+				myColor
+				{
+					myR 255
+					myG 200
+					myB 160
+				}
+
+				myOverbrightFactor 0.9
+			}
+
+			myWaterTexture0 <empty>
+			myWaterTexture1 <empty>
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture <empty>
+			myCloudMap maps/usTown1/CloudMap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap maps/usTown1/mapenvmap.cube
+			myPostFXBloomColor
+			{
+				myR 255
+				myG 255
+				myB 255
+			}
+
+			myShadowFactor 0.330000
+			myShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myHighendSpecularExponent 8.000000
+			myGammaBrightnessColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGammaValue 0.0
+			myGammaContrast 0.0
+			myTreeOverrideLighting 0
+			myTreeDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeOverbrightFactor 0.0
+			myTreeOverrideShadows 0
+			myTreeShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeShadowFactor 0.0
+			myTreeOverrideStemDarkening 0
+			myTreeStemUpperMaxDarkness 0.0
+			myTreeStemRootMaxDarkness 0.0
+			myTreeStemRootHeightInMeters 0.0
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.0
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 442.1237
+			mySunReflectionScale 2.3172
+			myRippleSoftener 0.6956
+			myRippleReflectionScale 0.5000
+			myWaveReflectionScale 0.0001
+			myReflectedColorScale
+			{
+				myR 0.6305
+				myG 0.6259
+				myB 0.6076
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.3704
+			myRippleScaler2 1.0218
+			myRippleScaler3 1.0000
+			myRippleScaler4 0.4769
+			myWaterAngle1 -17.1023
+			myRelDir2 65.5012
+			myRelDir3 -73.6305
+			myRelDir4 92.3102
+			myWaterScale1 0.0340
+			myWaterScale2 0.0430
+			myWaterScale3 0.0342
+			myWaterScale4 0.4875
+			myWaterSpeed1 1.1579
+			myWaterSpeed2 2.1844
+			myWaterSpeed3 2.0170
+			myWaterSpeed4 0.4875
+			myRefractShallowColor
+			{
+				myR 1.3200
+				myG 1.3200
+				myB 1.3200
+				myA 0.6000
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.1787
+				myG 0.1787
+				myB 0.1787
+				myA 0.6000
+			}
+
+			myFresnelBase 0.9772
+			myFresnelExponent 0.6648
+			myFresnelScale 0.7372
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0061
+			myFoamDepthScale 0.8356
+			myFoamDepthOffset 0.1419
+			myFoamAlphaScale 0.0000
+			myFoamScaleU1 0.0807
+			myFoamScaleV1 0.0807
+			myFoamScaleU2 0.0750
+			myFoamScaleV2 0.0750
+			myFoamSpeedU1 0.0394
+			myFoamSpeedV1 -0.4700
+			myFoamSpeedU2 -0.6343
+			myFoamSpeedV2 0.2708
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 30.0000
+			myCrestMaxYTravel 0.5000
+			myCrestMaxGroundTravelDist 2.0000
+			myCrestMinmumSpacing 6.1000
+			myCrestFadeInTime 0.7000
+			myCrestFadeOutTime 0.7000
+			myCrestLifeTime -0.0276
+			myCrestSecondLayerSpeed 0.7500
+			myCrestSecondLayerUScale 4.0000
+			myCrestSecondLayerVScale 1.5000
+			myCrestSpeedScale 5.0000
+			myCrestShrinkFactor 0.4000
+			myCrestWidth 5.0000
+			myCrestLength 4.0000
+			myCrestAlphaScale 210.0000
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight effects/water/Water_Normal_And_Height.tga
+			myWaterSurface_NormalMask maps/usTown1/normalMask.dds
+			myWaterSurface_Foam effects/water/Water_Foam.tga
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 effects/water/water_foam_1.tga
+			myCrest_Foam2 effects/water/water_foam_2.tga
+			myAroundVessel_Foam effects/water/water_around_foam.tga
+			myAroundVessel_Side effects/water/water_around_side.tga
+			myAroundVessel_BoatShape effects/water/water_around_boat_shape.tga
+			myTrail_Foam effects/water/water_trail_foam.tga
+			myTrail_Noise effects/water/water_trail_noise.tga
+			myWaterMeshFile <empty>
+		}
+
+		mySunData
+		{
+			myCoinFile EFFECTS/HALO/MRB/COIN01/COIN01.MRB
+			myCoinSizeX 5.510
+			myCoinSizeY 5.501
+			myEarlyFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO03/HALO03.MRB
+					myLowLimit 0.007
+					myHighLimit 0.601
+					myMinSizeX 0.157
+					myMinSizeY 0.157
+					myMaxSizeX 1.001
+					myMaxSizeY 1.019
+					myMinAlpha 0.000
+					myMaxAlpha 0.163
+					myGrowSpeed 347.425
+					myDecaySpeed 20.078
+					myExponent 1.000
+					myDazzleFactor 1.642
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 13.5
+				}
+
+			}
+
+			myPreBloomFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.505
+					myHighLimit 0.518
+					myMinSizeX 0.081
+					myMinSizeY 0.084
+					myMaxSizeX 0.010
+					myMaxSizeY 0.010
+					myMinAlpha 0.000
+					myMaxAlpha 0.000
+					myGrowSpeed 28.119
+					myDecaySpeed 40.078
+					myExponent 1.000
+					myDazzleFactor 8.653
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 7
+				}
+
+			}
+
+			myFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.525
+					myHighLimit 0.861
+					myMinSizeX 0.049
+					myMinSizeY 0.050
+					myMaxSizeX 0.857
+					myMaxSizeY 0.834
+					myMinAlpha -0.255
+					myMaxAlpha 0.733
+					myGrowSpeed 139.092
+					myDecaySpeed 424.192
+					myExponent 1.000
+					myDazzleFactor 0.270
+					myShimmerMagnitude 0.03
+					myShimmerSpeed 11.4
+				}
+
+				SunFlareSetup b
+				{
+					myFile EFFECTS/HALO/MRB/HALO03YELLOW/HALO03YELLOW.MRB
+					myLowLimit 0.537
+					myHighLimit 0.993
+					myMinSizeX 0.004
+					myMinSizeY 0.005
+					myMaxSizeX 0.258
+					myMaxSizeY 0.257
+					myMinAlpha 0.154
+					myMaxAlpha 0.162
+					myGrowSpeed 9.325
+					myDecaySpeed 30.000
+					myExponent 1.000
+					myDazzleFactor 2.492
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 19.9
+				}
+
+				SunFlareSetup c
+				{
+					myFile EFFECTS/HALO/MRB/SUN01/SUN01.MRB
+					myLowLimit 0.552
+					myHighLimit 0.929
+					myMinSizeX -0.047
+					myMinSizeY -0.042
+					myMaxSizeX -0.065
+					myMaxSizeY -0.064
+					myMinAlpha 0.195
+					myMaxAlpha 0.991
+					myGrowSpeed 138.523
+					myDecaySpeed 1362.407
+					myExponent 0.992
+					myDazzleFactor 0.050
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 13.6
+				}
+
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+		myBloomConfigFile <empty>
+		myBloomSetup default
+		mySunSettings
+		{
+			myGroundOverrideLighting 0
+			myGroundDirectionalColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGroundElevation 0.0
+			myShadowDetail 0
+			myOverbrightFactor 0.500000
+			myOverbrightFactorCap 0.500000
+			myShadowStretch 1.000000
+			myShadowSoftness 0.980000
+		}
+
+		mySunFlareTemplate <Custom>
+		myWaterTemplate <Custom>
+		myCloudsTemplate <empty>
+	}
+
+	WicedEnvironmentTemplate test4711
+	{
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 162
+				myG 157
+				myB 129
+			}
+
+			mySunFogColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myFogFactor 0.140000
+			myFogStart 0.0
+			myFogEnd 3000
+			myFogThreshold 0.0
+			myFogExponent 0.0
+			myGlobalSpecModifier 0.0
+			mySkyModel landscapes/global/skies/sunSet01/sunSet01.mrb
+			myWaterLevel 4.000000
+			myLightAmbient
+			{
+				myR 85
+				myG 90
+				myB 85
+			}
+
+			myDirectionalLight
+			{
+				myDirection 277.000000
+				myElevation 8.w000
+				myColor
+				{
+					myR 255
+					myG 230
+					myB 150
+				}
+
+				myOverbrightFactor 0.1
+			}
+
+			myWaterTexture0 maps/usdesert2_SPLATTING/WaterTexture0.dds
+			myWaterTexture1 maps/usdesert2_SPLATTING/WaterTexture1.dds
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture maps/usdesert2_SPLATTING/WaterReflectionTexture.dds
+			myCloudMap maps/physicsTestMap/CloudMap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap maps/physicsTestMap/mapenvmap.cube
+			myPostFXBloomColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myShadowFactor 0.0
+			myShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myHighendSpecularExponent 8.000000
+			myGammaBrightnessColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myGammaValue 0.0
+			myGammaContrast 0.0
+			myTreeOverrideLighting 0
+			myTreeDirectionalColor
+			{
+				myR 255
+				myG 230
+				myB 150
+			}
+
+			myTreeAmbientColor
+			{
+				myR 85
+				myG 90
+				myB 85
+			}
+
+			myTreeOverbrightFactor 0.1
+			myTreeOverrideShadows 0
+			myTreeShadowColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myTreeShadowFactor 0.0
+			myTreeOverrideStemDarkening 0
+			myTreeStemUpperMaxDarkness 0.0
+			myTreeStemRootMaxDarkness 0.0
+			myTreeStemRootHeightInMeters 0.0
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.0
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 0.0
+			mySunReflectionScale 0.0
+			myRippleSoftener 0.0
+			myRippleReflectionScale 0.0
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.0
+			myRippleScaler2 0.0
+			myRippleScaler3 0.0
+			myRippleScaler4 0.0
+			myWaterAngle1 0.0
+			myRelDir2 0.0
+			myRelDir3 0.0
+			myRelDir4 0.0
+			myWaterScale1 0.0
+			myWaterScale2 0.0
+			myWaterScale3 0.0
+			myWaterScale4 0.0
+			myWaterSpeed1 0.0
+			myWaterSpeed2 0.0
+			myWaterSpeed3 0.0
+			myWaterSpeed4 0.0
+			myRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myFresnelBase 0.0
+			myFresnelExponent 0.0
+			myFresnelScale 0.0
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0
+			myFoamAlphaScale 0.0
+			myFoamScaleU1 0.0
+			myFoamScaleV1 0.0
+			myFoamScaleU2 0.0
+			myFoamScaleV2 0.0
+			myFoamSpeedU1 0.0
+			myFoamSpeedV1 0.0
+			myFoamSpeedU2 0.0
+			myFoamSpeedV2 0.0
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 0.0
+			myCrestMaxYTravel 0.0
+			myCrestMaxGroundTravelDist 0.0
+			myCrestMinmumSpacing 0.0
+			myCrestFadeInTime 0.0
+			myCrestFadeOutTime 0.0
+			myCrestLifeTime 0.0
+			myCrestSecondLayerSpeed 0.0
+			myCrestSecondLayerUScale 0.0
+			myCrestSecondLayerVScale 0.0
+			myCrestSpeedScale 0.0
+			myCrestShrinkFactor 0.0
+			myCrestWidth 0.0
+			myCrestLength 0.0
+			myCrestAlphaScale 0.0
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight <empty>
+			myWaterSurface_NormalMask <empty>
+			myWaterSurface_Foam <empty>
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 <empty>
+			myCrest_Foam2 <empty>
+			myAroundVessel_Foam <empty>
+			myAroundVessel_Side <empty>
+			myAroundVessel_BoatShape <empty>
+			myTrail_Foam <empty>
+			myTrail_Noise <empty>
+			myWaterMeshFile <empty>
+		}
+
+		mySunData
+		{
+			myCoinFile EFFECTS/HALO/MRB/COIN01/COIN01.MRB
+			myCoinSizeX 5.338
+			myCoinSizeY 5.383
+			myEarlyFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/SUN01/SUN01.MRB
+					myLowLimit 0.156
+					myHighLimit 0.929
+					myMinSizeX 0.043
+					myMinSizeY 0.043
+					myMaxSizeX 0.086
+					myMaxSizeY 0.087
+					myMinAlpha 0.074
+					myMaxAlpha 0.144
+					myGrowSpeed 138.523
+					myDecaySpeed 1362.407
+					myExponent 0.992
+					myDazzleFactor 0.050
+					myShimmerMagnitude 0.885
+					myShimmerSpeed 1.492
+				}
+
+			}
+
+			myPreBloomFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.492
+					myHighLimit 0.721
+					myMinSizeX 0.081
+					myMinSizeY 0.084
+					myMaxSizeX 0.480
+					myMaxSizeY 0.489
+					myMinAlpha 0.312
+					myMaxAlpha 8.637
+					myGrowSpeed 28.119
+					myDecaySpeed 553.264
+					myExponent 1.000
+					myDazzleFactor 2.475
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 7.000
+				}
+
+			}
+
+			myFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.525
+					myHighLimit 0.971
+					myMinSizeX 0.049
+					myMinSizeY 0.050
+					myMaxSizeX 0.462
+					myMaxSizeY 0.464
+					myMinAlpha -0.255
+					myMaxAlpha 0.733
+					myGrowSpeed 139.092
+					myDecaySpeed 424.192
+					myExponent 1.000
+					myDazzleFactor 3.159
+					myShimmerMagnitude 0.142
+					myShimmerSpeed 5.074
+				}
+
+				SunFlareSetup b
+				{
+					myFile EFFECTS/HALO/MRB/HALO05YELLOW/HALO05YELLOW.MRB
+					myLowLimit 0.318
+					myHighLimit 0.911
+					myMinSizeX 0.005
+					myMinSizeY 0.005
+					myMaxSizeX 0.167
+					myMaxSizeY 0.161
+					myMinAlpha 0.571
+					myMaxAlpha 0.512
+					myGrowSpeed 9.325
+					myDecaySpeed 903.599
+					myExponent 1.000
+					myDazzleFactor 0.780
+					myShimmerMagnitude 0.177
+					myShimmerSpeed 2.793
+				}
+
+				SunFlareSetup c
+				{
+					myFile EFFECTS/HALO/MRB/HALO03YELLOW/HALO03YELLOW.MRB
+					myLowLimit 0.552
+					myHighLimit 0.929
+					myMinSizeX 0.098
+					myMinSizeY 0.063
+					myMaxSizeX 0.557
+					myMaxSizeY 0.570
+					myMinAlpha 0.077
+					myMaxAlpha 0.123
+					myGrowSpeed 138.523
+					myDecaySpeed 1362.407
+					myExponent 0.992
+					myDazzleFactor 3.040
+					myShimmerMagnitude 0.300
+					myShimmerSpeed 3.461
+				}
+
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+			}
+
+		}
+
+		myBloomConfigFile effects/bloom/defaultbloom.ini
+		myBloomSetup <empty>
+		mySunSettings
+		{
+			myGroundOverrideLighting 1
+			myGroundDirectionalColor
+			{
+				myR 255
+				myG 200
+				myB 150
+			}
+
+			myGroundAmbientColor
+			{
+				myR 80
+				myG 84w
+				myB 90
+			}
+
+			myGroundElevation 20.000000
+			myShadowDetail 1
+			myOverbrightFactor 0.570000
+			myOverbrightFactorCap 0.520000
+			myShadowStretch 0.530000
+			myShadowSoftness 0.190000
+		}
+
+		mySunFlareTemplate <Custom>
+		myWaterTemplate <Custom>
+		myCloudsTemplate <empty>
+	}
+
+	WicedEnvironmentTemplate apa
+	{
+		myEnvironment
+		{
+			myFogColor
+			{
+				myR 183.000000
+				myG 193.000000
+				myB 193.000000
+			}
+
+			mySunFogColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myFogFactor 0.000000
+			myFogStart 100
+			myFogEnd 2800
+			myFogThreshold 0.000000
+			myFogExponent 0.000000
+			myGlobalSpecModifier 0.0
+			mySkyModel Landscapes/Global/sky_n_weather/morningHaze01/morningHaze01.mrb
+			myWaterLevel 11.000000
+			myLightAmbient
+			{
+				myR 135.000000
+				myG 145.000000
+				myB 150.000000
+			}
+
+			myDirectionalLight
+			{
+				myDirection 226.000000
+				myElevation 20.000000
+				myColor
+				{
+					myR 255.000000
+					myG 200.000000
+					myB 160.000000
+				}
+
+				myOverbrightFactor 0.900000
+			}
+
+			myWaterTexture0 <empty>
+			myWaterTexture1 <empty>
+			myWaterEdgeTexture <empty>
+			myWaterReflectionTexture <empty>
+			myCloudMap maps/PatrikTest/CloudMap.tga
+			mySkyDomeTexture <empty>
+			myMapEnvmap maps/patriktest/mapenvmap.cube
+			myPostFXBloomColor
+			{
+				myR 255
+				myG 255
+				myB 255
+			}
+
+			myShadowFactor 0.330000
+			myShadowColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myHighendSpecularExponent 8.000000
+			myGammaBrightnessColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myGammaValue 0.000000
+			myGammaContrast 0.000000
+			myTreeOverrideLighting 1
+			myTreeDirectionalColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myTreeAmbientColor
+			{
+				myR 0.000000
+				myG 255.000000
+				myB 0.000000
+			}
+
+			myTreeOverbrightFactor 0.834
+			myTreeOverrideShadows 1
+			myTreeShadowColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myTreeShadowFactor 0.597
+			myTreeOverrideStemDarkening 0
+			myTreeStemUpperMaxDarkness 0.000000
+			myTreeStemRootMaxDarkness 0.000000
+			myTreeStemRootHeightInMeters 0.000000
+			myFillLightOverrideDirection 0
+			myFillLightDirection 0.000000
+			myFillLightOverrideColor 0
+			myFillLightColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myOverrideBacklight 0
+			myBackLightColor
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+			myBackLightStrength 0.0
+			myOverrideGlobalShadowing 0
+			myGlobalShadowingMinValueAtBottom 0.0
+			myGlobalShadowingMinValueAtTop 0.0
+			myCloudShadowDensity 0.0
+			myCloudShadowExtraClouds 0
+			myLightShaftIntensity 0.0
+			myLightShaftMultiplier 0.0
+			myLightShaftCutoff 0.0
+			myLightShaftCloudAltitude 0.0
+			myLightShaftSunDirDependency 0.0
+			myLightShaftDarkening 0.0
+			myRelativeSunLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightCrater
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeSunLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+			myRelativeAmbLightParticle
+			{
+				myX 0.0
+				myY 0.0
+				myZ 0.0
+			}
+
+		}
+
+		myWaterData
+		{
+			mySpecExponent 442.1237
+			mySunReflectionScale 2.3172
+			myRippleSoftener 0.6956
+			myRippleReflectionScale 0.5000
+			myWaveReflectionScale 0.0
+			myReflectedColorScale
+			{
+				myR 0.701961
+				myG 0.956863
+				myB 0.945098
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.3704
+			myRippleScaler2 1.0218
+			myRippleScaler3 1.0000
+			myRippleScaler4 0.4769
+			myWaterAngle1 -17.1023
+			myRelDir2 65.5012
+			myRelDir3 -73.6305
+			myRelDir4 92.3102
+			myWaterScale1 0.0340
+			myWaterScale2 0.0430
+			myWaterScale3 0.0342
+			myWaterScale4 0.4875
+			myWaterSpeed1 1.1579
+			myWaterSpeed2 2.1844
+			myWaterSpeed3 2.0170
+			myWaterSpeed4 0.4875
+			myRefractShallowColor
+			{
+				myR 1.000000
+				myG 1.000000
+				myB 1.000000
+				myA 0.6000
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.000000
+				myG 1.000000
+				myB 0.250980
+				myA 0.6000
+			}
+
+			myFresnelBase 3.170
+			myFresnelExponent 1.095
+			myFresnelScale 2.845
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.1419
+			myFoamAlphaScale 0.0000
+			myFoamScaleU1 0.0807
+			myFoamScaleV1 0.0807
+			myFoamScaleU2 0.0750
+			myFoamScaleV2 0.0750
+			myFoamSpeedU1 0.0394
+			myFoamSpeedV1 -0.4700
+			myFoamSpeedU2 -0.6343
+			myFoamSpeedV2 0.2708
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 30.0000
+			myCrestMaxYTravel 0.5000
+			myCrestMaxGroundTravelDist 2.0000
+			myCrestMinmumSpacing 6.1000
+			myCrestFadeInTime 0.7000
+			myCrestFadeOutTime 0.7000
+			myCrestLifeTime -0.0276
+			myCrestSecondLayerSpeed 0.7500
+			myCrestSecondLayerUScale 4.0000
+			myCrestSecondLayerVScale 1.5000
+			myCrestSpeedScale 5.0000
+			myCrestShrinkFactor 0.4000
+			myCrestWidth 5.0000
+			myCrestLength 4.0000
+			myCrestAlphaScale 210.0000
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight effects/water/Water_Normal_And_Height.tga
+			myWaterSurface_NormalMask maps/usTown1/normalMask.dds
+			myWaterSurface_Foam effects/water/Water_Foam.tga
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 effects/water/water_foam_1.tga
+			myCrest_Foam2 effects/water/water_foam_2.tga
+			myAroundVessel_Foam effects/water/water_around_foam.tga
+			myAroundVessel_Side effects/water/water_around_side.tga
+			myAroundVessel_BoatShape effects/water/water_around_boat_shape.tga
+			myTrail_Foam effects/water/water_trail_foam.tga
+			myTrail_Noise effects/water/water_trail_noise.tga
+			myWaterMeshFile maps/PatrikTest/WaterMesh.txt
+		}
+
+		mySunData
+		{
+			myCoinFile EFFECTS/HALO/MRB/COIN01/COIN01.MRB
+			myCoinSizeX 5.510000
+			myCoinSizeY 5.501000
+			myEarlyFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO03/HALO03.MRB
+					myLowLimit 0.007
+					myHighLimit 0.601
+					myMinSizeX 0.157
+					myMinSizeY 0.157
+					myMaxSizeX 1.001
+					myMaxSizeY 1.019
+					myMinAlpha 0.000
+					myMaxAlpha 0.163
+					myGrowSpeed 347.425
+					myDecaySpeed 20.078
+					myExponent 1.000
+					myDazzleFactor 1.642
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 13.5
+				}
+
+			}
+
+			myPreBloomFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.505
+					myHighLimit 0.518
+					myMinSizeX 0.081
+					myMinSizeY 0.084
+					myMaxSizeX 0.010
+					myMaxSizeY 0.010
+					myMinAlpha 0.000
+					myMaxAlpha 0.000
+					myGrowSpeed 28.119
+					myDecaySpeed 40.078
+					myExponent 1.000
+					myDazzleFactor 8.653
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 7
+				}
+
+			}
+
+			myFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.525
+					myHighLimit 0.861
+					myMinSizeX 0.049
+					myMinSizeY 0.050
+					myMaxSizeX 0.857
+					myMaxSizeY 0.834
+					myMinAlpha -0.255
+					myMaxAlpha 0.733
+					myGrowSpeed 139.092
+					myDecaySpeed 424.192
+					myExponent 1.000
+					myDazzleFactor 0.270
+					myShimmerMagnitude 0.03
+					myShimmerSpeed 11.4
+				}
+
+				SunFlareSetup b
+				{
+					myFile EFFECTS/HALO/MRB/HALO03YELLOW/HALO03YELLOW.MRB
+					myLowLimit 0.537
+					myHighLimit 0.993
+					myMinSizeX 0.004
+					myMinSizeY 0.005
+					myMaxSizeX 0.258
+					myMaxSizeY 0.257
+					myMinAlpha 0.154
+					myMaxAlpha 0.162
+					myGrowSpeed 9.325
+					myDecaySpeed 30.000
+					myExponent 1.000
+					myDazzleFactor 2.492
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 19.9
+				}
+
+				SunFlareSetup c
+				{
+					myFile EFFECTS/HALO/MRB/SUN01/SUN01.MRB
+					myLowLimit 0.552
+					myHighLimit 0.929
+					myMinSizeX -0.047
+					myMinSizeY -0.042
+					myMaxSizeX -0.065
+					myMaxSizeY -0.064
+					myMinAlpha 0.195
+					myMaxAlpha 0.991
+					myGrowSpeed 138.523
+					myDecaySpeed 1362.407
+					myExponent 0.992
+					myDazzleFactor 0.050
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 13.6
+				}
+
+			}
+
+		}
+
+		myCloudsData
+		{
+			mySystemList
+			{
+				CloudsSystemData CloudsSystemData(0)
+				{
+					myDisableFlag 0
+					myDistributionType 0
+					myBillboadType 0
+					myCount 190
+					myRandomSeed 0
+					myGroupCountBase 13
+					myGroupCountSpread 3
+					myGroupSpacingBaseRelSize 1
+					myGroupSpacingSpreadRelSize 0.3
+					myCloudsMasksFile effects/clouds/DefaultCloudsMasks.tga
+					myCloudsNoiseFile effects/clouds/DefaultCloudsNoise.tga
+					myStandardSurface surfaces/game/wicclouds.sur
+					myFlatSurface surfaces/game/wicclouds_flat.sur
+					myBacklightBase 1.05
+					myBacklightTopLightScale 0.78
+					myBacklightAlphaInvertBase 1.41
+					myBacklightAlphaInvertScale 1
+					myBacklightAlphaScale 0.41
+					myBacklightExponent 118
+					myBacklightSideFactor 0.5
+					myBacklightColor
+					{
+						myR 264
+						myG 228
+						myB 130
+					}
+
+					myTransparency 0.0
+					myColorLight
+					{
+						myR 150
+						myG 150
+						myB 150
+					}
+
+					myColorDark
+					{
+						myR 122
+						myG 129
+						myB 139
+					}
+
+					myBottomShade 0.47
+					mySideScale 0.1
+					myClusterShade 0.99
+					myFarDist 2300
+					myFarFadeStartRelative 0.9
+					myYBase 200
+					myYSpread 110
+					mySizeBase
+					{
+						x 135
+						z 82
+					}
+
+					mySizeSpread 0.5
+					myWindSpeedScale 2.0
+					mySunOcclusionScale 1
+					mySunOcclusionExponent 3
+				}
+
+			}
+
+		}
+
+		myBloomConfigFile <empty>
+		myBloomSetup default
+		mySunSettings
+		{
+			myGroundOverrideLighting 0
+			myGroundDirectionalColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myGroundAmbientColor
+			{
+				myR 0.000000
+				myG 0.000000
+				myB 0.000000
+			}
+
+			myGroundElevation 0.000000
+			myShadowDetail 0
+			myOverbrightFactor 0.500000
+			myOverbrightFactorCap 0.500000
+			myShadowStretch 1.000000
+			myShadowSoftness 0.980000
+		}
+
+		mySunFlareTemplate <Custom>
+		myWaterTemplate <Custom>
+		myCloudsTemplate <Custom>
+	}
+
+}
+
+WicedSunFlareTemplates mySunFlareTemplates
+{
+	WicedSunFlareTemplate US_Town1
+	{
+		mySunData
+		{
+			myCoinFile EFFECTS/HALO/MRB/COIN01/COIN01.MRB
+			myCoinSizeX 5.510
+			myCoinSizeY 5.501
+			myEarlyFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO03/HALO03.MRB
+					myLowLimit 0.007
+					myHighLimit 0.601
+					myMinSizeX 0.157
+					myMinSizeY 0.157
+					myMaxSizeX 1.001
+					myMaxSizeY 1.019
+					myMinAlpha 0.000
+					myMaxAlpha 0.163
+					myGrowSpeed 347.425
+					myDecaySpeed 20.078
+					myExponent 1.000
+					myDazzleFactor 1.642
+					myShimmerMagnitude 0.025
+					myShimmerSpeed 13.5
+				}
+
+			}
+
+			myPreBloomFlareSetupList
+			{
+			}
+
+			myFlareSetupList
+			{
+				SunFlareSetup a
+				{
+					myFile EFFECTS/HALO/MRB/HALO01/HALO01.MRB
+					myLowLimit 0.525
+					myHighLimit 0.861
+					myMinSizeX 0.049
+					myMinSizeY 0.050
+					myMaxSizeX 0.857
+					myMaxSizeY 0.834
+					myMinAlpha -0.255
+					myMaxAlpha 0.733
+					myGrowSpeed 139.092
+					myDecaySpeed 424.192
+					myExponent 1.000
+					myDazzleFactor 0.270
+					myShimmerMagnitude 0.03
+					myShimmerSpeed 11.4
+				}
+
+				SunFlareSetup b
+				{
+					myFile EFFECTS/HALO/MRB/HALO03YELLOW/HALO03YELLOW.MRB
+					myLowLimit 0.537
+					myHighLimit 0.993
+					myMinSizeX 0.004
+					myMinSizeY 0.005
+					myMaxSizeX 0.258
+					myMaxSizeY 0.257
+					myMinAlpha 0.154
+					myMaxAlpha 0.162
+					myGrowSpeed 9.325
+					myDecaySpeed 30.000
+					myExponent 1.000
+					myDazzleFactor 2.492
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 19.9
+				}
+
+				SunFlareSetup c
+				{
+					myFile EFFECTS/HALO/MRB/SUN01/SUN01.MRB
+					myLowLimit 0.552
+					myHighLimit 0.929
+					myMinSizeX -0.047
+					myMinSizeY -0.042
+					myMaxSizeX -0.065
+					myMaxSizeY -0.064
+					myMinAlpha 0.195
+					myMaxAlpha 0.991
+					myGrowSpeed 138.523
+					myDecaySpeed 1362.407
+					myExponent 0.992
+					myDazzleFactor 0.050
+					myShimmerMagnitude 0.25
+					myShimmerSpeed 13.6
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+WicedWaterTemplates myWaterTemplates
+{
+	WicedWaterTemplate example
+	{
+		myWaterData
+		{
+			mySpecExponent 500.0
+			mySunReflectionScale 0.7
+			myRippleSoftener 0.2
+			myRippleReflectionScale 0.3
+			myWaveReflectionScale 0.3
+			myReflectedColorScale
+			{
+				myR 200.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myMeanReflectionDist 0.0
+			myWaveHeight1 0.0
+			myWaveHeight2 0.0
+			myWaveLength1 0.0
+			myWaveLength2 0.0
+			myTravelSpeed1 0.0
+			myTravelSpeed2 0.0
+			myRippleScaler1 0.1
+			myRippleScaler2 0.1
+			myRippleScaler3 0.2
+			myRippleScaler4 0.3
+			myWaterAngle1 0.0
+			myRelDir2 0.0
+			myRelDir3 0.0
+			myRelDir4 0.0
+			myWaterScale1 0.0
+			myWaterScale2 0.0
+			myWaterScale3 0.0
+			myWaterScale4 0.0
+			myWaterSpeed1 0.0
+			myWaterSpeed2 0.0
+			myWaterSpeed3 0.0
+			myWaterSpeed4 0.0
+			myRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myFresnelBase 0.0
+			myFresnelExponent 0.0
+			myFresnelScale 0.0
+			myAlphaExponent 0.0
+			myAlphaBase 0.0
+			myReflectionStrength 0.0
+			myWaveReflection 0.0
+			myReflectedColorScaleAlpha 0.0
+			myFoamHeightOffset 0.0
+			myFoamDepthScale 0.0
+			myFoamDepthOffset 0.0
+			myFoamAlphaScale 0.0
+			myFoamScaleU1 0.0
+			myFoamScaleV1 0.0
+			myFoamScaleU2 0.0
+			myFoamScaleV2 0.0
+			myFoamSpeedU1 0.0
+			myFoamSpeedV1 0.0
+			myFoamSpeedU2 0.0
+			myFoamSpeedV2 0.0
+			myWaveFoamScale1 0.0
+			myWaveFoamScale2 0.0
+			myWaveFoamScale3 0.0
+			myWaveFoamScale4 0.0
+			myWaveFoamScrollingMaskRelDir1 0.0
+			myWaveFoamScrollingMaskScale1 0.0
+			myWaveFoamScrollingMaskSpeed1 0.0
+			myWaveFoamScrollingMaskRelDir2 0.0
+			myWaveFoamScrollingMaskScale2 0.0
+			myWaveFoamScrollingMaskSpeed2 0.0
+			myCrestMaxStartDist 0.0
+			myCrestMaxYTravel 0.0
+			myCrestMaxGroundTravelDist 0.0
+			myCrestMinmumSpacing 0.0
+			myCrestFadeInTime 0.0
+			myCrestFadeOutTime 0.0
+			myCrestLifeTime 0.1
+			myCrestSecondLayerSpeed 0.0
+			myCrestSecondLayerUScale 0.0
+			myCrestSecondLayerVScale 0.0
+			myCrestSpeedScale 0.0
+			myCrestShrinkFactor 0.0
+			myCrestWidth 0.0
+			myCrestLength 0.0
+			myCrestAlphaScale 0.0
+			myCrestWaveDirLimit 0.0
+			myLowEndValuesOverride 0.0
+			myLowWaterScale1 0.0
+			myLowWaterScale2 0.0
+			myLowWaterSpeed1 0.0
+			myLowWaterSpeed2 0.0
+			myLowWaterAngle1 0.0
+			myLowRelDir2 0.0
+			myLowRefractShallowColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowRefractDeepColor
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+				myA 0.0
+			}
+
+			myLowReflectedColorScale
+			{
+				myR 0.0
+				myG 0.0
+				myB 0.0
+			}
+
+			myLowFresnelBase 0.0
+			myLowFresnelExponent 0.0
+			myLowFresnelScale 0.0
+			myLowAlphaExponent 0.0
+			myLowAlphaBase 0.0
+			myLowReflectionStrength 0.0
+			myLowReflectedColorScaleAlpha 0.0
+			myWaterSurface_NormalAndHeight <empty>
+			myWaterSurface_NormalMask <empty>
+			myWaterSurface_Foam <empty>
+			myWaterSurface_FoamMask <empty>
+			myWaterSurface_WaveFoamScrollingMask <empty>
+			myCrestMask <empty>
+			myCrest_Foam1 <empty>
+			myCrest_Foam2 <empty>
+			myAroundVessel_Foam <empty>
+			myAroundVessel_Side <empty>
+			myAroundVessel_BoatShape <empty>
+			myTrail_Foam <empty>
+			myTrail_Noise <empty>
+			myWaterMeshFile <empty>
+		}
+
+	}
+
+}
+
+WicedCloudsTemplates myCloudsTemplates
+{
+	WicedCloudsTemplate US_TOWN1_Clouds
+	{
+		myCloudsData
+		{
+			mySystemList
+			{
+				CloudsSystemData CloudsSystemData(0)
+				{
+					myDisableFlag 0
+					myDistributionType 0
+					myBillboadType 0
+					myCount 190
+					myRandomSeed 0
+					myGroupCountBase 13
+					myGroupCountSpread 3
+					myGroupSpacingBaseRelSize 1
+					myGroupSpacingSpreadRelSize 0.3
+					myCloudsMasksFile effects/clouds/DefaultCloudsMasks.tga
+					myCloudsNoiseFile effects/clouds/DefaultCloudsNoise.tga
+					myStandardSurface surfaces/game/wicclouds.sur
+					myFlatSurface surfaces/game/wicclouds_flat.sur
+					myBacklightBase 1.05
+					myBacklightTopLightScale 0.78
+					myBacklightAlphaInvertBase 1.41
+					myBacklightAlphaInvertScale 1
+					myBacklightAlphaScale 0.41
+					myBacklightExponent 118
+					myBacklightSideFactor 0.5
+					myBacklightColor
+					{
+						myR 264
+						myG 228
+						myB 130
+					}
+
+					myTransparency 0.0
+					myColorLight
+					{
+						myR 150
+						myG 150
+						myB 150
+					}
+
+					myColorDark
+					{
+						myR 122
+						myG 129
+						myB 139
+					}
+
+					myBottomShade 0.47
+					mySideScale 0.1
+					myClusterShade 0.99
+					myFarDist 2300
+					myFarFadeStartRelative 0.9
+					myYBase 200
+					myYSpread 110
+					mySizeBase
+					{
+						x 135
+						z 82
+					}
+
+					mySizeSpread 0.5
+					myWindSpeedScale 2.0
+					mySunOcclusionScale 1
+					mySunOcclusionExponent 3
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

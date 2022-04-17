@@ -1,0 +1,24 @@
+CLASS GameMode
+{
+	LOCTEXT myName
+	DECIMAL myKillBattleHonorFactor
+	DECIMAL myGameLength
+	DECIMAL myMaxDeploymentZoneSize	
+	DECIMAL myKotHGameStartDelay // REMOVE?
+	NUMBER myDomTotalDominationFactor
+	FILE myWarningSoundFile
+	NUMBER myMaxTeamImbalanceCount
+	LOCTEXT myGameExtendedText
+	DECIMAL myGameExtendedTextDisplayTime
+	FILE myGameExtendedSoundFile
+	NUMBER myGameExtendedSoundLoopCount
+	DECIMAL myExtendGameTime // GAME -> how long will we extend the game, 0 equals infinite!
+	LOCTEXT myDescription
+	TEXT myPythonClass
+	TEXT myPythonModule
+}
+
+SCRIPTCLASS GameModeList
+{
+    GameMode
+}

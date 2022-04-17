@@ -1,0 +1,30 @@
+
+INCLUDE juice/music.fruit
+
+CLASS LoadingSlide
+{
+	FILE myImage
+	LOCTEXT myText
+
+	DECIMAL myTimeToShow
+	DECIMAL myFadeInTime
+	DECIMAL myFadeOutTime
+}
+
+SCRIPTCLASS LoadingSlides
+{
+	LoadingSlide
+}
+
+SCRIPTCLASS VoiceOvers
+{
+	MusicEvent
+}
+
+CLASS LoadingBriefing
+{
+	LoadingSlides myLoadingSlides
+	VoiceOvers myVoiceOvers
+
+	MusicEvent myLoadingScreenMusic
+}

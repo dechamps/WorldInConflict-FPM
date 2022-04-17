@@ -1,0 +1,9 @@
+<Root>
+	<Setup name=House shadows=1 shadows2=1 lods=1 slots=1 wires=1 physics=1 dynamicsprop=0 dynamicshouse=1/>
+	<Setup name=Unit shadows=1 shadows2=1 lods=1 slots=0 wires=0 physics=1 dynamicsprop=1 dynamicshouse=0/>
+	<Setup name=Marine shadows=1 shadows2=1 lods=1 slots=0 wires=0 physics=0 dynamicsprop=0 dynamicshouse=0/>
+	<Setup name=Prop shadows=1 shadows2=1 lods=1 slots=0 wires=0 physics=1 dynamicsprop=1 dynamicshouse=0/>
+	<Setup name=Medium_prop shadows=1 shadows2=1 lods=0 slots=0 wires=0 physics=1 dynamicsprop=1 dynamicshouse=0/>
+	<Setup name=all(house) shadows=1 shadows2=1 lods=1 slots=1 wires=1 physics=1 dynamicsprop=0 dynamicshouse=1/>
+	<Setup name=none shadows=0 shadows2=0 lods=0 slots=0 wires=0 physics=0 dynamicsprop=0 dynamicshouse=0/>
+</Root>

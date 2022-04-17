@@ -1,0 +1,25 @@
+INCLUDE juice/rigidbody.fruit
+
+
+
+
+RigidBodies myRigidBodies
+{
+}
+
+Joints myJoints
+{
+}
+
+RagDolls myRagDolls
+{
+	RagDoll myRagDoll0
+	{
+		myName "RagDoll0"
+	}
+	RagDoll myRagDoll1
+	{
+		myName "RagDoll1"
+	}
+}
+

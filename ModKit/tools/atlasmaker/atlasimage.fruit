@@ -1,0 +1,14 @@
+CLASS SubImage
+{
+	TEXT myName
+	NUMBER myX
+	NUMBER myY
+	NUMBER myWidth
+	NUMBER myHeight
+}
+
+SCRIPTCLASS AtlasImage
+{
+	SubImage
+}
+

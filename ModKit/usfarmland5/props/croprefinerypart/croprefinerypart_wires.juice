@@ -1,0 +1,42 @@
+INCLUDE juice/ShowboxWireExport.fruit
+
+
+ShowboxWireExport myExports
+{
+	myAttachPoints
+	{
+		WireAttach myAttachPoint0
+		{
+			myBone "GN_WireConn_0"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint1
+		{
+			myBone "GN_WireConn_1"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint2
+		{
+			myBone "GN_WireConn_2"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint3
+		{
+			myBone "GN_WireConn_3"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint4
+		{
+			myBone "GN_WireConn_4"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint5
+		{
+			myBone "GN_WireConn_5"
+			myExternalFlag 1
+		}
+	}
+	myInternalWires
+	{
+	}
+}

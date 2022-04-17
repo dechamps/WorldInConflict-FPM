@@ -1,0 +1,86 @@
+INCLUDE juice/game/gamemode.fruit
+
+GameModeList GameModes
+{
+	GameMode Domination
+	{
+		myName DOMINATION
+		myKillBattleHonorFactor 1
+		myGameLength 20
+		myMaxDeploymentZoneSize 30
+		myKotHGameStartDelay 0.0
+		myDomTotalDominationFactor 3.3
+		myWarningSoundFile sound/sfx/alarm_domination.mp3
+		myMaxTeamImbalanceCount 2
+		myGameExtendedText "Game is extended"
+		myGameExtendedTextDisplayTime 15.0
+		myGameExtendedSoundFile sound/sfx/hits/basket_01_1.wav
+		myGameExtendedSoundLoopCount 3
+		myExtendGameTime 0.0
+		myDescription "Capture Command Points by controlling all circles (Perimeter Points). If you control more than the enemy your flag will start to dominate (visible in the Domination bar at the top of the screen)."
+		myPythonClass <empty>
+		myPythonModule <empty>
+	}
+
+	GameMode Assault
+	{
+		myName ASSAULT
+		myKillBattleHonorFactor 1
+		myGameLength 10
+		myMaxDeploymentZoneSize 30
+		myKotHGameStartDelay 0.0
+		myDomTotalDominationFactor 0
+		myWarningSoundFile sound/sfx/alarm_domination.mp3
+		myMaxTeamImbalanceCount 2
+		myGameExtendedText <empty>
+		myGameExtendedTextDisplayTime 0.0
+		myGameExtendedSoundFile <empty>
+		myGameExtendedSoundLoopCount 0
+		myExtendGameTime 0.0
+		myDescription "In the Assault mode there is one defending team and one attacking. Both teams get to defend and attack during one half of the match each. You only fight over one Command Point at a time."
+		myPythonClass <empty>
+		myPythonModule <empty>
+	}
+
+	GameMode TugOfWar
+	{
+		myName "TUG OF WAR"
+		myKillBattleHonorFactor 0.0
+		myGameLength 20
+		myMaxDeploymentZoneSize 30
+		myKotHGameStartDelay 0.0
+		myDomTotalDominationFactor 0
+		myWarningSoundFile <empty>
+		myMaxTeamImbalanceCount 2
+		myGameExtendedText <empty>
+		myGameExtendedTextDisplayTime 0.0
+		myGameExtendedSoundFile <empty>
+		myGameExtendedSoundLoopCount 0
+		myExtendGameTime 0.0
+		myDescription "In Tug of War one extended Command Point acts as a frontline. Your team needs to control all Perimeter Points (circles) to push the frontline forward."
+		myPythonClass <empty>
+		myPythonModule <empty>
+	}
+
+	GameMode TeamDeathmatch
+	{
+		myName "TEAM DEATHMATCH"
+		myKillBattleHonorFactor 0.0
+		myGameLength 10
+		myMaxDeploymentZoneSize 40
+		myKotHGameStartDelay 0.0
+		myDomTotalDominationFactor 0
+		myWarningSoundFile <empty>
+		myMaxTeamImbalanceCount 1
+		myGameExtendedText <empty>
+		myGameExtendedTextDisplayTime 0.0
+		myGameExtendedSoundFile <empty>
+		myGameExtendedSoundLoopCount 0
+		myExtendGameTime 0.0
+		myDescription "Kill. Other. Team."
+		myPythonClass <empty>
+		myPythonModule <empty>
+	}
+
+}
+

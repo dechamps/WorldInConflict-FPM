@@ -1,0 +1,148 @@
+INCLUDE units/unittype.fruit
+INCLUDE sound/ms_sound.fruit
+
+CLASS SelectUnitFeedback
+{
+	FILEList myShortList
+	FILEList myMediumList
+}
+
+CLASS MoveUnitFeedback
+{
+	FILEList myPPList
+	FILEList myCoverList
+	FILEList myShortList
+	FILEList myMediumList
+	FILEList myRepairFeedbackList
+	FILEList myEnterBuildingFeedbackList
+	FILEList myEnterContainerFeedbackList
+	FILEList myAllAboardContainerFeedbackList
+	FILEList myResupplyFeedbackList
+}
+
+CLASS AttackUnitFeedback
+{
+	FILEList myShortList
+	FILEList myMediumList
+	FILEList myInfantrySpecificFeedbackList
+	FILEList myVehicleSpecificFeedbackList
+	FILEList myTanksSpecificFeedbackList
+	FILEList myHelicopterSpecificFeedbackList
+	FILEList myMiscellaneousSpecificFeedbackList
+	FILEList myAntiAirSpecificFeedbackList
+	FILEList myBuildingSpecificFeedbackList
+	FILEList myFortificationSpecificFeedbackList
+}
+
+CLASS UnderFireUnitFeedback
+{
+	FILEList myGenericList
+	FILEList myInfantrySpecificFeedbackList
+	FILEList myVehicleSpecificFeedbackList
+	FILEList myTanksSpecificFeedbackList
+	FILEList myHelicopterSpecificFeedbackList
+	FILEList myMiscellaneousSpecificFeedbackList	
+	FILEList myAntiAirSpecificFeedbackList
+	FILEList myBuildingSpecificFeedbackList
+	FILEList myFortificationSpecificFeedbackList
+	FILEList myAAWarningFeedbackList
+}
+
+CLASS ContainerUnitFeedback
+{
+	FILEList myBuildingSelectList
+	FILEList myBuildingUnderFireList
+	FILEList myVehicleList
+}
+
+CLASS KillShotUnitFeedback
+{
+	FILEList myGenericList
+	FILEList myInfantrySpecificFeedbackList
+	FILEList myVehicleSpecificFeedbackList
+	FILEList myTanksSpecificFeedbackList
+	FILEList myHelicopterSpecificFeedbackList
+	FILEList myMiscellaneousSpecificFeedbackList
+	FILEList myAntiAirSpecificFeedbackList
+	FILEList myBuildingSpecificFeedbackList
+	FILEList myFortificationSpecificFeedbackList
+}
+
+CLASS ErrorFeedback
+{
+	FILEList myGenericList
+}
+
+SCRIPTCLASS SoundList
+{
+	MS_Sound
+}
+
+CLASS CeasarFeedback
+{
+	SoundList myUnderFireFeedbackList
+	SoundList myEnemyKilledFeedbackList
+	SoundList myFriendlyKilledFeedbackList
+	SoundList myNearDeathFeedbackList
+	SoundList myIdleFeedbackList
+}
+
+CLASS UnitFeedback
+{
+	SelectUnitFeedback mySelectFeedback
+	MoveUnitFeedback myMoveFeedback
+	AttackUnitFeedback myAttackFeedback
+	UnderFireUnitFeedback myUnderFireFeedback
+	KillShotUnitFeedback myKillShotCombatFeedback
+	ContainerUnitFeedback myContainerFeedback
+	ErrorFeedback myErrorFeedback
+	CeasarFeedback myCeasarFeedback
+}
+
+SCRIPTCLASS UnitFeedbacks
+{
+	UnitFeedback 
+}
+
+CLASS UnitFeedbackModifier
+{
+	DECIMAL myDirectFeedbackVolumeModifier
+	DECIMAL myIndirectFeedbackVolumeModifier
+	DECIMAL myGlobalLongCooldown
+
+	DECIMAL myGlobalCooldown
+	DECIMAL myDecreasingValuePerSecond
+
+	DECIMAL myUnitCooldown
+	DECIMAL myUnitSpecificCategoryCooldown
+	DECIMAL myUnitSpecificActiveCategoryCooldown
+	
+	DECIMAL myStressLevelClickIncrease
+	DECIMAL myMediumThreshold
+	DECIMAL myShortThreshold
+	DECIMAL myStaticThreshold
+	
+	DECIMAL myNumSimultaneousCaesarSounds
+	DECIMAL myCeasarGlobalCooldown
+	DECIMAL myCeasarTypeColldown
+	DECIMAL myCeasarUnitCooldown
+	DECIMAL myCeasarDistanceTrigger
+	DECIMAL myCeasarHeightTrigger
+	DECIMAL myCeasarIdleDelay
+	
+	DECIMAL myCeasarUnderFireDelay
+	DECIMAL myCeasarEnemyKillDelay
+	DECIMAL myCeasarFriendlyKillDelay
+	DECIMAL myCeasarIdleTimeDelay
+	DECIMAL myCaesarIdleRandomLow
+	DECIMAL myCaesarIdleRandomHight
+	
+	FILEList myNoices
+}
+
+CLASS Feedback
+{
+	UnitFeedbackModifier myModifiers
+	UnitFeedbacks myNormalFeedback
+	UnitFeedbacks myInCombatFeedback
+}

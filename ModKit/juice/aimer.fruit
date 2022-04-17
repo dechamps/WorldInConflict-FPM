@@ -1,0 +1,66 @@
+INCLUDE juice/Vector3.fruit
+INCLUDE juice/default.fruit
+
+CLASS Vector2f
+{
+	DECIMAL myX
+	DECIMAL myY
+}
+
+
+CLASS Restriction
+{
+	DECIMAL myX
+	DECIMAL myXDown
+	DECIMAL myY
+}
+
+TYPE AimerType
+{
+	AIMER_INFANTERY
+	AIMER_FIXED
+	AIMER_TURRET
+	AIMER_BALLISTIC
+
+}
+
+SCRIPTCLASS VectorList
+{
+	Vector3
+}
+
+CLASS FiringRound
+{
+	VectorList myFiringOffsets
+	TEXTLIST mySoundList
+	
+}
+
+SCRIPTCLASS FiringRoundList
+{
+	FiringRound
+}
+
+CLASS TurretLink
+{
+	TEXT myLinkName
+	Restriction myRestrictions
+}
+
+SCRIPTCLASS LinkList
+{
+	TurretLink
+}
+
+CLASS Aimer
+{
+	AimerType myAimerType
+	Vector2f myAimingLeeway
+	FiringRoundList myFiringRounds
+	LinkList myLinkList
+	DECIMAL myAimerScanSize
+	DECIMAL myAimerScanSpeed
+	DECIMAL myAimingSpeed
+}
+
+	

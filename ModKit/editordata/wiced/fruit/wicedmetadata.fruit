@@ -1,0 +1,650 @@
+// Wiced Metadata .fruit file
+INCLUDE editordata/wicmap.fruit
+INCLUDE autopropsets/wic_autoprop.fruit
+INCLUDE juice/materials.fruit
+
+SCRIPTCLASS NameBases
+{
+	NUMBER
+}
+
+// SPLINES
+CLASS WicedSplineWayPoint
+{
+	Vector2 myPos
+	DECIMAL myHeightModifier		// -inf - inf
+	
+	DECIMAL myBrightness			// 0.0f - 1.0f
+	DECIMAL myOpacity 			// 0.0f - 1.0f
+}
+SCRIPTCLASS WicedSplineWayPoints
+{
+	WicedSplineWayPoint
+}
+
+CLASS WicedSpline
+{
+	TEXT myName
+	DECIMAL myWidth				// >= 0.0
+	NUMBER mySegmentation			// > 0
+	NUMBER mySmoothness			// > 0
+	NUMBER myElasticity			// >= 0 LEGACY - todo: remove
+	NUMBER mySideFlatteningWidth		// >= 0 (pixels in height map, 3m per pixel) LEGACY - todo: remove
+	DECIMAL mySide1InterpolationLength	// >= 0.0
+	DECIMAL mySide2InterpolationLength	// >= 0.0
+	DECIMAL myHeightModifier		// -inf - inf
+	BOOLEAN myGenerateMeshFlag
+	BOOLEAN myFlattenHeightMapFlag
+	BOOLEAN myRemoveAutopropsFlag
+	BOOLEAN myRenderToGroundFlag
+	FILE myLockedRoad		 	// NULL = autogenerate mesh, valid link = use this mesh always instead!
+	NUMBER myGroundDetailTextureID
+	DECIMAL myGroundDetailTextureIntensity	// 0.0-1.0
+	MaterialID myMaterialID			// for hit effect particles
+		
+	FILE myTextureFile
+	FILE mySpecMapFile
+	FILE myNormalMapFile
+	FILE myVariationFile
+	
+	FILE myGlobalBrightnessMask
+	FILE myGlobalOpacityMask
+	
+	BOOLEAN myIsOverlayFlag
+
+	WicedSplineWayPoints myWayPoints
+}
+SCRIPTCLASS WicedSplines
+{
+	WicedSpline
+}
+
+CLASS WicedTileBlendmap
+{
+	FILE myBlendMapFile	//File containing the blended image of the tile
+	
+	//The coordinates for this tile on the blended map file (one blended map can contain several tiles)
+	NUMBER myTop
+	NUMBER myBottom
+	NUMBER myLeft
+	NUMBER myRight		
+}
+
+SCRIPTCLASS WicedTileBlendmaps
+{
+	WicedTileBlendmap
+}
+
+//These are matched by juice-name to the specmeshes they belong to
+CLASS WicedRoadIntersection
+{
+	//Untransformed, unshaded intersection mrb 
+	FILE myIntersectionMRB
+
+	BOOLEAN myIsLockedFlag
+	BOOLEAN myRenderToGroundFlag
+	
+	DECIMAL myInnerGroundAffectRadius
+	DECIMAL myOuterGroundAffectRadius
+	
+	
+	FILE myTextureFile
+	FILE mySpecMapFile
+	FILE myNormalMapFile
+	FILE myVariationFile
+	
+	FILE myGlobalBrightnessMask
+	FILE myGlobalOpacityMask
+	
+	NUMBER myGroundDetailTextureID
+
+	BOOLEAN myRemoveAutopropsFlag
+	
+	DECIMAL myScaleFactor
+}
+
+SCRIPTCLASS WicedRoadIntersections 
+{
+	WicedRoadIntersection
+}
+
+CLASS WicedImportedRoadModel
+{
+	FILE myImportedModel
+	FILE myAlphaMask
+	FILE myBrightnessMask
+	BOOLEAN myAffectedByMasksFlag
+	BOOLEAN myRenderToGroundFlag
+}
+
+CLASS WicedImportedSurroundMesh
+{
+	NUMBER myNumber
+	NUMBER myBoneNbrContainingHeightMapData
+	FILE myHeightMap
+}
+
+SCRIPTCLASS WicedImportedSurroundMeshes
+{
+	WicedImportedSurroundMesh
+}
+
+SCRIPTCLASS WicedImportedRoadModels
+{
+	WicedImportedRoadModel
+}
+
+CLASS WicedMassGrassType
+{
+	WicedColor myColorTint
+}
+
+SCRIPTCLASS WicedMassGrassTypes
+{
+	WicedMassGrassType
+}
+
+// SOFT SHADOWS
+CLASS WicedSoftShadowsSettings
+{
+	BOOLEAN myEnabledFlag
+
+	DECIMAL myPropShadowStrength		// 0.0-1.0
+	DECIMAL myPropShadowSoftness		// 0.0-1.0
+	DECIMAL myPropShadowMinSizeMeters	// 0.0-inf
+
+	DECIMAL myTreeShadowDarkness		// 0.0-1.0
+	DECIMAL myTreeShadowSizeMeters		// 0.0-inf
+	DECIMAL myTreeShadowDarknessCap		// 0.0-1.0
+
+	DECIMAL myOnRoadsFactor			// 0.0-1.0
+}
+
+// SUN SETTINGS
+CLASS WicedSunSettings
+{
+	// Ground overrides
+	NUMBER myGroundOverrideLighting
+	NUMBER myGroundOverrideDirCol
+	WicedColor myGroundDirectionalColor     // can differ from global directional lighting color
+	NUMBER myGroundOverrideAmbCol
+	WicedColor myGroundAmbientColor         // can differ from global ambient lighting color
+	NUMBER myGroundOverrideElevation
+	DECIMAL myGroundElevation		// suns elevation can differ when shading ground
+	
+	NUMBER myShadowDetail			// 0 (off) - 4 (INSANELY slow)
+	DECIMAL myOverbrightFactor		// 0.0 - 1.0  (%)
+	DECIMAL myOverbrightFactorCap		// 0.0 - 1.0  (%)
+	DECIMAL myShadowStretch			// 0.0 - 2.0  (%)
+	DECIMAL myShadowSoftness		// 0.0 - 1.0  (%)
+
+	DECIMAL myOnRoadsFactorRaytrace		// 0.0-1.0
+	WicedSoftShadowsSettings mySoftShadowsSettings
+}
+
+// LAYER -> MASK
+CLASS WicedTextureLayerMask
+{
+	BOOLEAN myUseFractalNoise
+	BOOLEAN myUseMaxAltitude
+	BOOLEAN myUseMinAltitude
+	BOOLEAN myUseMaxSlope
+	BOOLEAN myUseMinSlope
+	BOOLEAN myUseDirection
+
+	DECIMAL myOpacity			// 0.0 - 1.0 (%)
+
+	NUMBER myFractalNoiseSeed		// >= 0
+	DECIMAL myFractalNoiseRoughness		// 0.0 - 1.0 (%)
+	DECIMAL myFractalNoiseCoverage		// 0.0 - 1.0 (%)
+	DECIMAL myFractalNoiseContrast		// 0.0 - 1.0 (%)
+
+	NUMBER myMaxAltitude			// 0.0 - 128 (m)
+	NUMBER myMinAltitude			// 0.0 - 128 (m)
+	NUMBER myMaxSlope			// 0.0 - 90  (degrees)
+	NUMBER myMinSlope			// 0.0 - 90  (degrees)
+	NUMBER myDirection			// 0.0 - 360 (degrees)
+	DECIMAL myMaxAltitudeSharpness		// 0.0 - 1.0 (%)
+	DECIMAL myMinAltitudeSharpness		// 0.0 - 1.0 (%)
+	DECIMAL myMaxSlopeSharpness		// 0.0 - 1.0 (%)
+	DECIMAL myMinSlopeSharpness		// 0.0 - 1.0 (%)
+	DECIMAL myDirectionCutoff		// 0.0 - 0.5 (%)
+	DECIMAL myDirectionSharpness		// 0.0 - 1.0 (%)
+}
+
+// LAYER -> SURFACE
+TYPE WicedTextureLayerBlendingType
+{
+	Base_Layer
+	Normal
+	Lighten
+	Burn
+	Mutate
+	Screen
+	Soft_Fill
+	Medium_Fill
+	Hard_Fill
+	Solarize
+	Shadow
+}
+
+CLASS WicedTextureLayerSurface
+{
+	BOOLEAN myUseTextureFlag
+	FILE myTexture
+	WicedTextureLayerBlendingType myBlendingType
+	WicedColor myTextureColorTint		// -255 - 255 per color
+	DECIMAL myTextureXScaleFactor
+	DECIMAL myTextureYScaleFactor
+	DECIMAL myBrightnessModifier		// -1.0 - 1.0 (%) (*255). affects myTextureColorTint and detail texture
+	DECIMAL myTextureIntensity		// 0.0 - 2.0
+	BOOLEAN myTileTextureFlag
+	DECIMAL myUVProjAxis			// 0-2 where 0 = Y, 1 = X and 2 = Z
+	BOOLEAN myUseSideSplattingFlag		// obsolete!!
+	BOOLEAN myDontUseSideSplattingFlag
+	NUMBER mySideSplattingDir
+
+	BOOLEAN myUseDetailTextureFlag
+	NUMBER myDetailTextureID		// 0 - 8 for proper texture, -1 for blank
+	DECIMAL myDetailTextureIntensity	// 0.0 - 2.0
+	BOOLEAN myDetailTextureEnabledInLowendFlag	// only meaningful if myDetailTextureID <= 4 (lowend pass)
+	BOOLEAN myDetailTextureEnabledInHighendFlag	// only meaningful if myDetailTextureID <= 4 (lowend pass)
+
+	BOOLEAN myUseSpecularityFlag
+	DECIMAL mySpecularity
+
+	BOOLEAN myUseMaterialFlag
+	MaterialID myMaterialID			// for hit effect particles
+	WicedColor myMaterialParticleColor
+	BOOLEAN myCombineParticleColorWithGroundFlag
+
+	BOOLEAN myUseAutopropFlag
+	TEXT myAutopropName			// autoprop type
+	DECIMAL myAutopropIntensity		// 0.0 - 2.0
+	WicedColor myAutopropColor		// LEGACY - todo: remove
+	
+	BOOLEAN myUseMassGrassFlag
+	TEXT myMassGrassType			// mass grass type
+	DECIMAL myMassGrassIntensity		
+
+	BOOLEAN myUseNormalMapFlag
+	FILE myNormalMap
+}
+
+// LAYER
+CLASS WicedTextureLayer
+{
+	TEXT myName
+
+	BOOLEAN myEnabledFlag
+	BOOLEAN myEnabledInPlayAreaFlag
+	BOOLEAN myEnabledInSurroundFlag
+
+	WicedTextureLayerMask myMask
+	WicedTextureLayerSurface mySurface
+
+	TEXT myGeneratedMask			// path to temporary mask (session data)
+	TEXT myGeneratedSurroundMask
+	FILE myMaskOverride			// overrides myGeneratedMask
+	FILE myMaskOverrideOriginal		// original import path, not copied to map. used for reload of masks
+	BOOLEAN myGeneratedMaskDirtyFlag	// whether temporary mask needs to be reloaded (session data)
+	BOOLEAN myGeneratedSurroundMaskDirtyFlag
+}
+
+SCRIPTCLASS WicedTextureLayers
+{
+	WicedTextureLayer
+}
+
+CLASS WicedBaseDetailTexture
+{
+	FILE myImageFile
+	BOOLEAN myUseInSurrMeshFlag
+}
+
+SCRIPTCLASS WicedBaseDetailTextures
+{
+	WicedBaseDetailTexture
+}
+
+SCRIPTCLASS WicedSavedSurrMeshTextures
+{
+	FILE
+}
+
+CLASS WicedRaycastOptions
+{
+	BOOLEAN myIncludeSpeedtreesFlag
+	BOOLEAN myIncludePropsFlag
+	BOOLEAN myIncludeWaterFlag
+	BOOLEAN myIncludeRoadsFlag
+	BOOLEAN myIncludeCutoutsFlag
+	BOOLEAN myIncludePerimeterPointsFlag
+	BOOLEAN myShowTexturesFlag
+	NUMBER myGeneratedMapQuality
+	FILE myGeneratedMapPath
+}
+
+
+CLASS WicedTextureGenerationPreSet
+
+{
+	BOOLEAN myBlendFlag
+	BOOLEAN myShadeFlag
+	BOOLEAN myPropertiesFlag
+	BOOLEAN myInPlayfieldFlag
+	BOOLEAN myInSurroundFlag
+	BOOLEAN myKeepAlphaFlag
+	NUMBER myGeneratedTextureResolution
+	BOOLEAN myApplyToTerrainFlag
+	BOOLEAN myLaunchImageFlag
+	
+	BOOLEAN myMarkedForGenerationFlag
+	
+	NUMBER mySelectLeft
+	NUMBER mySelectTop
+	NUMBER mySelectRight
+	NUMBER mySelectBottom
+}
+
+SCRIPTCLASS WicedTextureGenerationStack
+{
+	WicedTextureGenerationPreSet
+}
+
+CLASS WicedGroupedInstance
+ {
+	TEXT myInstanceName
+	TEXT myInstanceType
+	TEXT myWicedInstanceType
+	Vector3 myPositionRelFocusInstance
+	Vector3 myHPBRelFocusInstance
+}
+SCRIPTCLASS WicedGroupedInstances
+{
+	WicedGroupedInstance
+}
+
+TYPE InstanceDivisionType
+{
+	ALL
+	COMMON
+	SINGLE_PLAYER
+	CINEMATICS
+}
+
+CLASS WicedInstanceGroup
+{
+	TEXT myInstanceGroupName
+	TEXT myBrushOriginName
+	TEXT myAllowedWicedInstanceType
+	Vector3 myMidPosition
+	Vector3 myMidHPB
+	NUMBER myLockedFlag
+	NUMBER myWarnedFlag
+	InstanceDivisionType myInstanceDivisionType
+	WicedGroupedInstances myGroupedInstances
+
+}
+SCRIPTCLASS WicedInstanceGroups
+{
+	WicedInstanceGroup
+}
+
+CLASS WicedTerrainGenerationPassFaultData
+{
+	//Fault 
+	NUMBER myNumberOfIterations
+	NUMBER myMinDelta
+	NUMBER myMaxDelta
+	NUMBER myFilterValue
+	NUMBER myFilterIterations
+}
+
+CLASS WicedTerrainGenerationPassPerlinNoiseData
+{
+	//Perlin Noise 
+	NUMBER myHalvingSteps
+	NUMBER myStartFrequency
+	BOOLEAN myIsRidgedPerlin
+	BOOLEAN myIsMultiPerlin
+}
+
+CLASS WicedTerrainGenerationPassFilterData
+{
+	//Filter
+	NUMBER myExtensionValue
+	NUMBER myFilterValue
+	NUMBER myCenterValue
+	BOOLEAN myAutoFindCenterFlag
+	NUMBER myLevelValue
+	BOOLEAN myInvertHeightfieldFlag
+	NUMBER myHeightfieldmultiplier
+}
+
+CLASS WicedTerrainGenerationPassFluidData
+{
+	//Fluid simulation
+	NUMBER myNumberOfIterations
+	NUMBER mySpeed
+	NUMBER myNodeDistance
+	NUMBER myFluidViscosity
+	NUMBER myTimeStep
+}
+CLASS WicedTerrainGenerationPassMidpointData
+{
+	//Midpoint displacement
+	NUMBER myRoughnessValue
+}
+CLASS WicedTerrainGenerationParticleData
+{
+	//Particle deposition
+	NUMBER myNumberOfPiles
+	NUMBER myWalkingPeakValue
+	NUMBER myMinNumberOfParticles
+	NUMBER myMaxNumberOfParticles
+	NUMBER myCalderaPercentage
+	NUMBER myFilterValue
+}
+
+CLASS WicedTerrainGenerationPass
+{
+	//Generator specific data
+	WicedTerrainGenerationPassFaultData myFaultData
+	WicedTerrainGenerationPassFilterData myFilterData
+	WicedTerrainGenerationPassFluidData myFluidSimulationData
+	WicedTerrainGenerationPassMidpointData myMidpointDisplacementData
+	WicedTerrainGenerationParticleData myParticleDepositionData
+	WicedTerrainGenerationPassPerlinNoiseData myPerlinNoiseData
+		
+	//Common Pass settings	
+	NUMBER myBlendFactor
+	BOOLEAN myClearHeightmapFlag
+		
+	NUMBER myActivePass
+	TEXT myPassName	
+}
+
+SCRIPTCLASS WicedTerrainGenerationStack
+{
+	WicedTerrainGenerationPass
+}
+
+CLASS WicedCommandPointDeploymentAreaMask
+{
+	TEXT myCommandPointInstance
+	FILE myDeploymentAreaMask
+}
+
+SCRIPTCLASS WicedCommandPointDeploymentAreaMasks
+{
+	WicedCommandPointDeploymentAreaMask
+}
+
+//Contains single player source masks (will be punched in save/update deploy masks)
+SCRIPTCLASS WicedSinglePlayerDeploymentAreaMasks
+{
+	FILE
+}
+
+CLASS BloomColorRamp
+{
+	Vector3 myCenter
+	Vector3 myScale
+	WicedColor myInvertFlag
+	Vector3 myExponent
+	Vector3 myMinClampAt
+	WicedColor myMinClampValue
+	Vector3 myMaxClampAt
+	WicedColor myMaxClampValue
+}
+
+CLASS BloomPhase
+{
+	TEXT myBloomType
+	BOOLEAN myEnabledFlag
+	NUMBER myNumBlurPasses
+	DECIMAL myBlurExtraPunch
+	TEXT myBlurMode
+	BOOLEAN myBlurMasking
+	DECIMAL myBlurMaskFactor
+	TEXT myColorMode
+	TEXT mySourceBlend
+	TEXT myDestBlend
+	WicedColor myColor
+	DECIMAL myAlpha
+	
+	BOOLEAN myColorRampFlag
+	BloomColorRamp myBloomColorRamp
+}
+
+CLASS BloomSetup
+{
+	TEXT myName
+	BloomPhase myBloomPhase
+}
+
+SCRIPTCLASS BloomSetups
+{
+	BloomSetup
+}
+
+CLASS BloomConfig
+{
+	BloomSetups myBloomSetups
+}
+
+CLASS WicedMetaData
+{
+
+	TEXT myName				// map_name
+	TEXT myMapDir				// maps/map_name
+	TEXT myMetaDataDir			// maps/map_name/MetaData. 
+
+	WicedSunSettings mySunSettings
+	WicedTextureLayers myLayers
+	WicedBaseDetailTextures myBaseDetailTextures		// 9 base detail textures
+	
+	FILE myNonOverriddenHighendDetailMask1	//These are the splatted highend detail masks before aplying the overide mask
+	FILE myNonOverriddenHighendDetailMask2
+	FILE myNonOverriddenHighendDetailMask3
+
+	FILE myNonOverriddenDetailMask1 	//These are the splatted detail masks before aplying the overide mask
+	FILE myNonOverriddenDetailMask2
+
+
+	FILE myOverrideHighendDetailMask1	//These are the override masks
+	FILE myOverrideHighendDetailMask2
+	FILE myOverrideHighendDetailMask3
+
+	
+	FILE myCachedTextureMap512		// used as base for both autoprop and hit effect color (tint) maps
+	
+	WicedSavedSurrMeshTextures mySavedSurrMeshTextures // so that we can show them as surrmeshes are created dynamically
+	FILE mySavedSurrMeshDetailTexture
+
+	FILE myGeneratedBlendedMap
+	FILE myGeneratedBlendedMapHiRes
+	FILE myGeneratedShadedMap
+	FILE myGeneratedShadedMapHiRes
+	FILE myGeneratedBlendedSurroundMap
+	FILE myGeneratedShadedSurroundMap
+	
+	// Deployment area mask overrides
+	BOOLEAN myUseImportedDeploymentMasksFlag
+	FILE myStartingDeploymentAreaMaskTeam1
+	FILE myStartingDeploymentAreaMaskTeam2
+	WicedCommandPointDeploymentAreaMasks myCommandPointDeploymentAreaMasks
+	WicedSinglePlayerDeploymentAreaMasks mySinglePlayerDeploymentAreaMasks
+	
+	//Deploy points for Assault game mode
+	Vector2 myTeam1AssaultDeployPoint
+	Vector2 myTeam2AssaultDeployPoint
+	
+	//Spline width for assault game mode deployment mask
+	NUMBER myAssaultDeploySplineWidth
+		
+	// Road masks
+	FILE myOverlayRoadsAlphaMask
+	FILE myOverlayRoadsBrightnessMask
+	FILE myUnderlayRoadsAlphaMask
+	FILE myUnderlayRoadsBrightnessMask
+		
+	NUMBER mySplineEditorDisabled
+	WicedImportedRoadModels myImportedRoadModels
+	
+	
+	NUMBER mySurroundMeshesImported
+	WicedImportedSurroundMeshes myImportedSurroundMeshes
+	
+	NUMBER myGlobalDropZonePattern
+	NUMBER myTeam1DropZonePattern
+	NUMBER myTeam2DropZonePattern
+	
+	// Mass grass variables
+	WicedMassGrassTypes myMassGrassTypes
+	FILE myMassGrassFile			// path to mass grass sets file
+	
+	WicedSplines mySplines
+	
+	WicedRoadIntersections myRoadIntersections
+		
+	WicedTerrainGenerationStack myTerrainGenerationStack
+	NUMBER myTerrainGenerationSeed
+
+	FILE mySurrMeshFile
+	DECIMAL mySurrMeshTransitionLength	// 0.0 - 1.0
+	DECIMAL mySurrMeshHeightModifier	// 0.0 - 1.0
+
+	WicedColor myOverviewMapWaterColor
+	
+	// Template to fetch sunflare and water settings from. <Custom> means fetch from mapdata directly
+	TEXT mySunFlareTemplate
+	TEXT myWaterTemplate
+	TEXT myCloudsTemplate
+	TEXT myMoodPreset
+
+	FILE myCamPosDebugInfoFile
+	
+	// low res reference texture tiles for hi res mode
+	WicedMapTiles myLowResReferenceMapTiles
+	
+	WicedRaycastOptions myRaycastOptions
+	
+	// All presets on stack
+	WicedTextureGenerationStack myTextureGenerationStack
+	
+	WicedInstanceGroups myInstanceGroups
+	
+	// Set to true when something that needs recalc of shadowmap has occureed (change of HM, shadowsettings)
+	FILE myGeneratedShadowMap
+	FILE myGeneratedShadowSurroundMap
+	
+	// Current Perimeter point size for the map in wiced
+	TEXT myPerimeterPointSize
+	
+	// Every tile has a pointer to an image file and a rect within that image that represents the last blended non shaded version of that tile.
+	WicedTileBlendmaps myWicedTileBlendmaps
+	
+	FILE myTerrainCutoutAlphaMask
+}

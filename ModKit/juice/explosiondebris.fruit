@@ -1,0 +1,77 @@
+TYPE MoveType
+{
+	FreeFlying
+	GroundHugging
+}
+
+CLASS ParticleTemplate
+{
+	TEXT myName
+	FILE mySurface
+	FILE myDiffuseTexture
+	FILE myNormalTexture
+	NUMBER myAnimFramesX
+	NUMBER myAnimFramesY
+	
+	DECIMAL myProbability
+
+	DECIMAL myMinSize
+	DECIMAL myMaxSize
+	DECIMAL myMaxRotationSpeed
+	DECIMAL myMinAnimSpeed
+	DECIMAL myMaxAnimSpeed
+	DECIMAL myMinRestitution
+	DECIMAL myMaxRestitution
+	DECIMAL myMinWindDrag
+	DECIMAL myMaxWindDrag
+	
+	DECIMAL myStartSpeedMin
+	DECIMAL myStartSpeedMax
+	
+	DECIMAL myFadeInTime
+	DECIMAL myFadeOutTime
+	NUMBER myFullAlpha
+	
+	DECIMAL myRedMin
+	DECIMAL myRedMax
+	DECIMAL myGreenMin
+	DECIMAL myGreenMax
+	DECIMAL myBlueMin
+	DECIMAL myBlueMax
+	
+	MoveType myMoveType
+}
+
+SCRIPTCLASS ParticleTemplates
+{
+	ParticleTemplate
+}
+
+SCRIPTCLASS ParticleTemplateNames
+{
+	TEXT
+}
+
+CLASS GroundSmoke
+{
+	ParticleTemplateNames myParticleTemplates
+}
+
+CLASS HouseDebris
+{
+	DECIMAL myNumParticlesMod
+	ParticleTemplateNames myUpperParticleTemplates
+	ParticleTemplateNames myLowerParticleTemplates
+	GroundSmoke myGroundSmoke
+}
+
+SCRIPTCLASS HouseDebrises
+{
+	HouseDebris
+}
+
+CLASS Houses
+{
+	HouseDebrises myHouses
+}
+

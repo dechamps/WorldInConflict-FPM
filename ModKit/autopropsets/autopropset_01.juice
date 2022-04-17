@@ -1,0 +1,960 @@
+INCLUDE autopropsets/wic_autoprop.fruit
+
+WICAutoProp winter
+{
+	myVersion 1
+	myName winter
+	myCompositeTexture props/autoprops/winter/texture/winter_autoprops.dds
+	myAlphaTestValue 0
+	myAutoPropTypes
+	{
+		AutoPropType weed
+		{
+			myName weed
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype1
+				{
+					myNumPropsOnTile 1
+					myFadeDistance 100
+					myFadeDistanceInYDir 80
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_04 props/autoprops/winter/bush_04/bush_04.mrb
+
+						FILE bush_05 props/autoprops/winter/bush_05/bush_05.mrb
+
+						FILE bush_06 props/autoprops/winter/bush_06/bush_06.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+		AutoPropType dry_bush
+		{
+			myName dry_bush
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype1
+				{
+					myNumPropsOnTile 3
+					myFadeDistance 100
+					myFadeDistanceInYDir 80
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_02 props/autoprops/winter/bush_02/bush_02.mrb
+
+						FILE bush_03 props/autoprops/winter/bush_03/bush_03.mrb
+
+						FILE bush_07 props/autoprops/winter/bush_07/bush_07.mrb
+
+						FILE bush_08 props/autoprops/winter/bush_08/bush_08.mrb
+
+						FILE bush_09 props/autoprops/winter/bush_09/bush_09.mrb
+
+						FILE bush_08 props/autoprops/winter/bush_08/bush_08.mrb
+
+						FILE bush_09 props/autoprops/winter/bush_09/bush_09.mrb
+
+						FILE bush_10 props/autoprops/winter/bush_10/bush_10.mrb
+
+						FILE bush_01 props/autoprops/winter/bush_01/bush_01.mrb
+
+						FILE bush_11 props/autoprops/winter/bush_11/bush_11.mrb
+
+						FILE bush_12 props/autoprops/winter/bush_12/bush_12.mrb
+
+						FILE bush_13 props/autoprops/winter/bush_13/bush_13.mrb
+
+						FILE bush_14 props/autoprops/winter/bush_14/bush_14.mrb
+
+						FILE bush_12 props/autoprops/winter/bush_12/bush_12.mrb
+
+						FILE bush_13 props/autoprops/winter/bush_13/bush_13.mrb
+
+						FILE bush_14 props/autoprops/winter/bush_14/bush_14.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+WICAutoProp summer
+{
+	myVersion 1
+	myName summer
+	myCompositeTexture autopropsets/autoprops/summer/texture/autoprops_summer.dds
+	myAlphaTestValue 0
+	myAutoPropTypes
+	{
+		AutoPropType flowers_&_bushes
+		{
+			myName flowers_&_bushes
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype - closeup grass
+				{
+					myNumPropsOnTile 30
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE grass_01 autopropsets/autoprops/summer/grass_01/grass_01.mrb
+
+						FILE grass_02 autopropsets/autoprops/summer/grass_02/grass_02.mrb
+
+						FILE grass_03 autopropsets/autoprops/summer/grass_03/grass_03.mrb
+
+						FILE grass_04 autopropsets/autoprops/summer/grass_04/grass_04.mrb
+
+						FILE grass_05 autopropsets/autoprops/summer/grass_05/grass_05.mrb
+
+						FILE grass_06 autopropsets/autoprops/summer/grass_06/grass_06.mrb
+
+						FILE grass_07 autopropsets/autoprops/summer/grass_07/grass_07.mrb
+
+						FILE grass_08 autopropsets/autoprops/summer/grass_08/grass_08.mrb
+
+						FILE grass_09 autopropsets/autoprops/summer/grass_09/grass_09.mrb
+
+						FILE grass_10 autopropsets/autoprops/summer/grass_10/grass_10.mrb
+
+						FILE grass_11 autopropsets/autoprops/summer/grass_11/grass_11.mrb
+
+						FILE grass_12 autopropsets/autoprops/summer/grass_12/grass_12.mrb
+
+						FILE grass_13 autopropsets/autoprops/summer/grass_13/grass_13.mrb
+
+						FILE grass_14 autopropsets/autoprops/summer/grass_14/grass_14.mrb
+
+						FILE grass_15 autopropsets/autoprops/summer/grass_15/grass_15.mrb
+
+						FILE grass_16 autopropsets/autoprops/summer/grass_16/grass_16.mrb
+
+						FILE grass_17 autopropsets/autoprops/summer/grass_17/grass_17.mrb
+
+						FILE grass_18 autopropsets/autoprops/summer/grass_18/grass_18.mrb
+
+						FILE grass_19 autopropsets/autoprops/summer/grass_19/grass_19.mrb
+
+						FILE grass_20 autopropsets/autoprops/summer/grass_20/grass_20.mrb
+
+						FILE grass_21 autopropsets/autoprops/summer/grass_21/grass_21.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_22/grass_22.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_23/grass_23.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_24/grass_24.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_25/grass_25.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_26/grass_26.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_27/grass_27.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_28/grass_28.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_29/grass_29.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_30/grass_30.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_31/grass_31.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_32/grass_32.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_33/grass_33.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_34/grass_34.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_35/grass_35.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_36/grass_36.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_37/grass_37.mrb
+
+					}
+
+				}
+
+				SubAutoPropType subtype - flowers & bushes
+				{
+					myNumPropsOnTile 1
+					myFadeDistance 70
+					myFadeDistanceInYDir 70
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 1
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE flower_02 autopropsets/autoprops/summer/flower_02/flower_02.mrb
+
+						FILE flower_03 autopropsets/autoprops/summer/flower_03/flower_03.mrb
+
+						FILE flower_01 autopropsets/autoprops/summer/flower_01/flower_01.mrb
+
+						FILE flower_04 autopropsets/autoprops/summer/flower_04/flower_04.mrb
+
+						FILE flower_05 autopropsets/autoprops/summer/flower_05/flower_05.mrb
+
+						FILE flower_06 autopropsets/autoprops/summer/flower_06/flower_06.mrb
+
+						FILE flower_07 autopropsets/autoprops/summer/flower_07/flower_07.mrb
+
+						FILE flower_08 autopropsets/autoprops/summer/flower_08/flower_08.mrb
+
+						FILE flower_09 autopropsets/autoprops/summer/flower_09/flower_09.mrb
+
+						FILE flower_10 autopropsets/autoprops/summer/flower_10/flower_10.mrb
+
+						FILE flower_11 autopropsets/autoprops/summer/flower_11/flower_11.mrb
+
+						FILE flower_12 autopropsets/autoprops/summer/flower_12/flower_12.mrb
+
+						FILE flower_13 autopropsets/autoprops/summer/flower_13/flower_13.mrb
+
+						FILE bush_01 autopropsets/autoprops/summer/bush_01/bush_01.mrb
+
+						FILE bush_02 autopropsets/autoprops/summer/bush_02/bush_02.mrb
+
+						FILE bush_03 autopropsets/autoprops/summer/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/summer/bush_04/bush_04.mrb
+
+						FILE bush_05 autopropsets/autoprops/summer/bush_05/bush_05.mrb
+
+						FILE bush_06 autopropsets/autoprops/summer/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/summer/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/summer/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/summer/bush_09/bush_09.mrb
+
+						FILE bush_10 autopropsets/autoprops/summer/bush_10/bush_10.mrb
+
+						FILE bush_11 autopropsets/autoprops/summer/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/summer/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/summer/bush_13/bush_13.mrb
+
+						FILE bush_14 autopropsets/autoprops/summer/bush_14/bush_14.mrb
+
+						FILE bush_16 autopropsets/autoprops/summer/bush_16/bush_16.mrb
+
+						FILE bush_17 autopropsets/autoprops/summer/bush_17/bush_17.mrb
+
+						FILE bush_18 autopropsets/autoprops/summer/bush_18/bush_18.mrb
+
+						FILE bush_19 autopropsets/autoprops/summer/bush_19/bush_19.mrb
+
+						FILE bush_01 autopropsets/autoprops/summer/bush_01/bush_01.mrb
+
+						FILE bush_02 autopropsets/autoprops/summer/bush_02/bush_02.mrb
+
+						FILE bush_03 autopropsets/autoprops/summer/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/summer/bush_04/bush_04.mrb
+
+						FILE bush_06 autopropsets/autoprops/summer/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/summer/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/summer/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/summer/bush_09/bush_09.mrb
+
+						FILE bush_10 autopropsets/autoprops/summer/bush_10/bush_10.mrb
+
+						FILE bush_11 autopropsets/autoprops/summer/bush_11/bush_11.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+		AutoPropType closeup_grass
+		{
+			myName closeup_grass
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype - grass small
+				{
+					myNumPropsOnTile 30
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE grass_01 autopropsets/autoprops/summer/grass_01/grass_01.mrb
+
+						FILE grass_02 autopropsets/autoprops/summer/grass_02/grass_02.mrb
+
+						FILE grass_03 autopropsets/autoprops/summer/grass_03/grass_03.mrb
+
+						FILE grass_04 autopropsets/autoprops/summer/grass_04/grass_04.mrb
+
+						FILE grass_05 autopropsets/autoprops/summer/grass_05/grass_05.mrb
+
+						FILE grass_06 autopropsets/autoprops/summer/grass_06/grass_06.mrb
+
+						FILE grass_07 autopropsets/autoprops/summer/grass_07/grass_07.mrb
+
+						FILE grass_08 autopropsets/autoprops/summer/grass_08/grass_08.mrb
+
+						FILE grass_09 autopropsets/autoprops/summer/grass_09/grass_09.mrb
+
+						FILE grass_10 autopropsets/autoprops/summer/grass_10/grass_10.mrb
+
+						FILE grass_11 autopropsets/autoprops/summer/grass_11/grass_11.mrb
+
+						FILE grass_12 autopropsets/autoprops/summer/grass_12/grass_12.mrb
+
+						FILE grass_13 autopropsets/autoprops/summer/grass_13/grass_13.mrb
+
+						FILE grass_14 autopropsets/autoprops/summer/grass_14/grass_14.mrb
+
+						FILE grass_15 autopropsets/autoprops/summer/grass_15/grass_15.mrb
+
+						FILE grass_16 autopropsets/autoprops/summer/grass_16/grass_16.mrb
+
+						FILE grass_17 autopropsets/autoprops/summer/grass_17/grass_17.mrb
+
+						FILE grass_18 autopropsets/autoprops/summer/grass_18/grass_18.mrb
+
+						FILE grass_19 autopropsets/autoprops/summer/grass_19/grass_19.mrb
+
+						FILE grass_20 autopropsets/autoprops/summer/grass_20/grass_20.mrb
+
+						FILE grass_21 autopropsets/autoprops/summer/grass_21/grass_21.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_22/grass_22.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_23/grass_23.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_24/grass_24.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_25/grass_25.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_26/grass_26.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_27/grass_27.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_28/grass_28.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_29/grass_29.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_30/grass_30.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_31/grass_31.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_32/grass_32.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_33/grass_33.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_34/grass_34.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_35/grass_35.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_36/grass_36.mrb
+
+						FILE grass_22 autopropsets/autoprops/summer/grass_37/grass_37.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+WICAutoProp desert
+{
+	myVersion 1
+	myName desert
+	myCompositeTexture autopropsets/autoprops/desert/texture/autoprops_desert.dds
+	myAlphaTestValue 0
+	myAutoPropTypes
+	{
+		AutoPropType green_bushes
+		{
+			myName green_bushes
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype1 - near
+				{
+					myNumPropsOnTile 2
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType NORMAL
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_06 autopropsets/autoprops/desert/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/desert/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/desert/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/desert/bush_09/bush_09.mrb
+
+						FILE bush_10 autopropsets/autoprops/desert/bush_10/bush_10.mrb
+
+						FILE bush_15 autopropsets/autoprops/desert/bush_15/bush_15.mrb
+
+						FILE bush_16 autopropsets/autoprops/desert/bush_16/bush_16.mrb
+
+						FILE bush_17 autopropsets/autoprops/desert/bush_17/bush_17.mrb
+
+						FILE bush_19 autopropsets/autoprops/desert/bush_19/bush_19.mrb
+
+						FILE bush_20 autopropsets/autoprops/desert/bush_20/bush_20.mrb
+
+						FILE bush_21 autopropsets/autoprops/desert/bush_21/bush_21.mrb
+
+						FILE bush_25 autopropsets/autoprops/desert/bush_25/bush_25.mrb
+
+						FILE bush_26 autopropsets/autoprops/desert/bush_26/bush_26.mrb
+
+					}
+
+				}
+
+				SubAutoPropType subtype2 - far
+				{
+					myNumPropsOnTile 1
+					myFadeDistance 70
+					myFadeDistanceInYDir 70
+					myFadeInDistance 0
+					myDrawType NORMAL
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_06 autopropsets/autoprops/desert/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/desert/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/desert/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/desert/bush_09/bush_09.mrb
+
+						FILE bush_10 autopropsets/autoprops/desert/bush_10/bush_10.mrb
+
+						FILE bush_15 autopropsets/autoprops/desert/bush_15/bush_15.mrb
+
+						FILE bush_16 autopropsets/autoprops/desert/bush_16/bush_16.mrb
+
+						FILE bush_17 autopropsets/autoprops/desert/bush_17/bush_17.mrb
+
+						FILE bush_19 autopropsets/autoprops/desert/bush_19/bush_19.mrb
+
+						FILE bush_20 autopropsets/autoprops/desert/bush_20/bush_20.mrb
+
+						FILE bush_21 autopropsets/autoprops/desert/bush_21/bush_21.mrb
+
+						FILE bush_25 autopropsets/autoprops/desert/bush_25/bush_25.mrb
+
+						FILE bush_26 autopropsets/autoprops/desert/bush_26/bush_26.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+		AutoPropType dry_bushes
+		{
+			myName dry_bushes
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype1 - near
+				{
+					myNumPropsOnTile 2
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType NORMAL
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_01 autopropsets/autoprops/desert/bush_01/bush_01.mrb
+
+						FILE bush_02 autopropsets/autoprops/desert/bush_02/bush_02.mrb
+
+						FILE bush_03 autopropsets/autoprops/desert/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/desert/bush_04/bush_04.mrb
+
+						FILE bush_05 autopropsets/autoprops/desert/bush_05/bush_05.mrb
+
+						FILE bush_11 autopropsets/autoprops/desert/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/desert/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/desert/bush_13/bush_13.mrb
+
+						FILE bush_14 autopropsets/autoprops/desert/bush_14/bush_14.mrb
+
+						FILE bush_18 autopropsets/autoprops/desert/bush_18/bush_18.mrb
+
+						FILE bush_22 autopropsets/autoprops/desert/bush_22/bush_22.mrb
+
+						FILE bush_23 autopropsets/autoprops/desert/bush_23/bush_23.mrb
+
+						FILE bush_24 autopropsets/autoprops/desert/bush_24/bush_24.mrb
+
+					}
+
+				}
+
+				SubAutoPropType subtype2 - far
+				{
+					myNumPropsOnTile 1
+					myFadeDistance 70
+					myFadeDistanceInYDir 70
+					myFadeInDistance 0
+					myDrawType NORMAL
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE bush_01 autopropsets/autoprops/desert/bush_01/bush_01.mrb
+
+						FILE bush_02 autopropsets/autoprops/desert/bush_02/bush_02.mrb
+
+						FILE bush_03 autopropsets/autoprops/desert/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/desert/bush_04/bush_04.mrb
+
+						FILE bush_05 autopropsets/autoprops/desert/bush_05/bush_05.mrb
+
+						FILE bush_11 autopropsets/autoprops/desert/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/desert/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/desert/bush_13/bush_13.mrb
+
+						FILE bush_14 autopropsets/autoprops/desert/bush_14/bush_14.mrb
+
+						FILE bush_18 autopropsets/autoprops/desert/bush_18/bush_18.mrb
+
+						FILE bush_22 autopropsets/autoprops/desert/bush_22/bush_22.mrb
+
+						FILE bush_23 autopropsets/autoprops/desert/bush_23/bush_23.mrb
+
+						FILE bush_24 autopropsets/autoprops/desert/bush_24/bush_24.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+WICAutoProp fall
+{
+	myVersion 1
+	myName fall
+	myCompositeTexture autopropsets/autoprops/fall/texture/autoprops_fall.dds
+	myAlphaTestValue 0
+	myAutoPropTypes
+	{
+		AutoPropType flowers_&_bushes
+		{
+			myName flowers_&_bushes
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype - closeup grass
+				{
+					myNumPropsOnTile 30
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE grass_01 autopropsets/autoprops/fall/grass_01/grass_01.mrb
+
+						FILE grass_02 autopropsets/autoprops/fall/grass_02/grass_02.mrb
+
+						FILE grass_03 autopropsets/autoprops/fall/grass_03/grass_03.mrb
+
+						FILE grass_04 autopropsets/autoprops/fall/grass_04/grass_04.mrb
+
+						FILE grass_05 autopropsets/autoprops/fall/grass_05/grass_05.mrb
+
+						FILE grass_06 autopropsets/autoprops/fall/grass_06/grass_06.mrb
+
+						FILE grass_07 autopropsets/autoprops/fall/grass_07/grass_07.mrb
+
+						FILE grass_08 autopropsets/autoprops/fall/grass_08/grass_08.mrb
+
+						FILE grass_09 autopropsets/autoprops/fall/grass_09/grass_09.mrb
+
+						FILE grass_10 autopropsets/autoprops/fall/grass_10/grass_10.mrb
+
+						FILE grass_11 autopropsets/autoprops/fall/grass_11/grass_11.mrb
+
+						FILE grass_12 autopropsets/autoprops/fall/grass_12/grass_12.mrb
+
+						FILE grass_13 autopropsets/autoprops/fall/grass_13/grass_13.mrb
+
+						FILE grass_14 autopropsets/autoprops/fall/grass_14/grass_14.mrb
+
+						FILE grass_15 autopropsets/autoprops/fall/grass_15/grass_15.mrb
+
+						FILE grass_16 autopropsets/autoprops/fall/grass_16/grass_16.mrb
+
+						FILE grass_17 autopropsets/autoprops/fall/grass_17/grass_17.mrb
+
+						FILE grass_18 autopropsets/autoprops/fall/grass_18/grass_18.mrb
+
+						FILE grass_19 autopropsets/autoprops/fall/grass_19/grass_19.mrb
+
+						FILE grass_20 autopropsets/autoprops/fall/grass_20/grass_20.mrb
+
+						FILE grass_21 autopropsets/autoprops/fall/grass_21/grass_21.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_22/grass_22.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_23/grass_23.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_24/grass_24.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_25/grass_25.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_26/grass_26.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_27/grass_27.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_28/grass_28.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_29/grass_29.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_30/grass_30.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_31/grass_31.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_32/grass_32.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_33/grass_33.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_34/grass_34.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_35/grass_35.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_36/grass_36.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_37/grass_37.mrb
+
+					}
+
+				}
+
+				SubAutoPropType subtype - flowers & bushes
+				{
+					myNumPropsOnTile 1
+					myFadeDistance 70
+					myFadeDistanceInYDir 70
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 1
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE flower_02 autopropsets/autoprops/fall/flower_02/flower_02.mrb
+
+						FILE flower_03 autopropsets/autoprops/fall/flower_03/flower_03.mrb
+
+						FILE flower_01 autopropsets/autoprops/fall/flower_01/flower_01.mrb
+
+						FILE flower_04 autopropsets/autoprops/fall/flower_04/flower_04.mrb
+
+						FILE flower_05 autopropsets/autoprops/fall/flower_05/flower_05.mrb
+
+						FILE flower_06 autopropsets/autoprops/fall/flower_06/flower_06.mrb
+
+						FILE flower_07 autopropsets/autoprops/fall/flower_07/flower_07.mrb
+
+						FILE flower_08 autopropsets/autoprops/fall/flower_08/flower_08.mrb
+
+						FILE flower_09 autopropsets/autoprops/fall/flower_09/flower_09.mrb
+
+						FILE flower_10 autopropsets/autoprops/fall/flower_10/flower_10.mrb
+
+						FILE flower_11 autopropsets/autoprops/fall/flower_11/flower_11.mrb
+
+						FILE flower_12 autopropsets/autoprops/fall/flower_12/flower_12.mrb
+
+						FILE flower_13 autopropsets/autoprops/fall/flower_13/flower_13.mrb
+
+						FILE bush_01 autopropsets/autoprops/fall/bush_01/bush_01.mrb
+
+						FILE bush_02 autopropsets/autoprops/fall/bush_02/bush_02.mrb
+
+						FILE bush_03 autopropsets/autoprops/fall/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/fall/bush_04/bush_04.mrb
+
+						FILE bush_05 autopropsets/autoprops/fall/bush_05/bush_05.mrb
+
+						FILE bush_06 autopropsets/autoprops/fall/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/fall/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/fall/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/fall/bush_09/bush_09.mrb
+
+						FILE bush_10 autopropsets/autoprops/fall/bush_10/bush_10.mrb
+
+						FILE bush_11 autopropsets/autoprops/fall/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/fall/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/fall/bush_13/bush_13.mrb
+
+						FILE bush_14 autopropsets/autoprops/fall/bush_14/bush_14.mrb
+
+						FILE bush_16 autopropsets/autoprops/fall/bush_16/bush_16.mrb
+
+						FILE bush_01 autopropsets/autoprops/fall/bush_01/bush_01.mrb
+
+						FILE bush_03 autopropsets/autoprops/fall/bush_03/bush_03.mrb
+
+						FILE bush_04 autopropsets/autoprops/fall/bush_04/bush_04.mrb
+
+						FILE bush_06 autopropsets/autoprops/fall/bush_06/bush_06.mrb
+
+						FILE bush_07 autopropsets/autoprops/fall/bush_07/bush_07.mrb
+
+						FILE bush_08 autopropsets/autoprops/fall/bush_08/bush_08.mrb
+
+						FILE bush_09 autopropsets/autoprops/fall/bush_09/bush_09.mrb
+
+						FILE bush_11 autopropsets/autoprops/fall/bush_11/bush_11.mrb
+
+						FILE flower_14 autopropsets/autoprops/fall/flower_14/flower_14.mrb
+
+						FILE flower_15 autopropsets/autoprops/fall/flower_15/flower_15.mrb
+
+						FILE flower_16 autopropsets/autoprops/fall/flower_16/flower_16.mrb
+
+						FILE flower_17 autopropsets/autoprops/fall/flower_17/flower_17.mrb
+
+						FILE flower_18 autopropsets/autoprops/fall/flower_18/flower_18.mrb
+
+						FILE flower_19 autopropsets/autoprops/fall/flower_19/flower_19.mrb
+
+						FILE bush_11 autopropsets/autoprops/fall/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/fall/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/fall/bush_13/bush_13.mrb
+
+						FILE bush_11 autopropsets/autoprops/fall/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/fall/bush_12/bush_12.mrb
+
+						FILE bush_13 autopropsets/autoprops/fall/bush_13/bush_13.mrb
+
+						FILE flower_02 autopropsets/autoprops/fall/flower_02/flower_02.mrb
+
+						FILE bush_11 autopropsets/autoprops/fall/bush_11/bush_11.mrb
+
+						FILE bush_12 autopropsets/autoprops/fall/bush_12/bush_12.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+		AutoPropType closeup_grass
+		{
+			myName closeup_grass
+			mySubAutoPropTypes
+			{
+				SubAutoPropType subtype - grass small
+				{
+					myNumPropsOnTile 30
+					myFadeDistance 20
+					myFadeDistanceInYDir 30
+					myFadeInDistance 0
+					myDrawType WIND
+					myAlightToCameraHeading 1
+					myAlightToCameraPitch 1
+					myAlignToTerrainNormal 0
+					myDistributionType SPREAD
+					mySurfaceType ALPHA_BLEND
+					myVariationFiles
+					{
+						FILE grass_01 autopropsets/autoprops/fall/grass_01/grass_01.mrb
+
+						FILE grass_02 autopropsets/autoprops/fall/grass_02/grass_02.mrb
+
+						FILE grass_03 autopropsets/autoprops/fall/grass_03/grass_03.mrb
+
+						FILE grass_04 autopropsets/autoprops/fall/grass_04/grass_04.mrb
+
+						FILE grass_05 autopropsets/autoprops/fall/grass_05/grass_05.mrb
+
+						FILE grass_06 autopropsets/autoprops/fall/grass_06/grass_06.mrb
+
+						FILE grass_07 autopropsets/autoprops/fall/grass_07/grass_07.mrb
+
+						FILE grass_08 autopropsets/autoprops/fall/grass_08/grass_08.mrb
+
+						FILE grass_09 autopropsets/autoprops/fall/grass_09/grass_09.mrb
+
+						FILE grass_10 autopropsets/autoprops/fall/grass_10/grass_10.mrb
+
+						FILE grass_11 autopropsets/autoprops/fall/grass_11/grass_11.mrb
+
+						FILE grass_12 autopropsets/autoprops/fall/grass_12/grass_12.mrb
+
+						FILE grass_13 autopropsets/autoprops/fall/grass_13/grass_13.mrb
+
+						FILE grass_14 autopropsets/autoprops/fall/grass_14/grass_14.mrb
+
+						FILE grass_15 autopropsets/autoprops/fall/grass_15/grass_15.mrb
+
+						FILE grass_16 autopropsets/autoprops/fall/grass_16/grass_16.mrb
+
+						FILE grass_17 autopropsets/autoprops/fall/grass_17/grass_17.mrb
+
+						FILE grass_18 autopropsets/autoprops/fall/grass_18/grass_18.mrb
+
+						FILE grass_19 autopropsets/autoprops/fall/grass_19/grass_19.mrb
+
+						FILE grass_20 autopropsets/autoprops/fall/grass_20/grass_20.mrb
+
+						FILE grass_21 autopropsets/autoprops/fall/grass_21/grass_21.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_22/grass_22.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_23/grass_23.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_24/grass_24.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_25/grass_25.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_26/grass_26.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_27/grass_27.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_28/grass_28.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_29/grass_29.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_30/grass_30.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_31/grass_31.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_32/grass_32.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_33/grass_33.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_34/grass_34.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_35/grass_35.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_36/grass_36.mrb
+
+						FILE grass_22 autopropsets/autoprops/fall/grass_37/grass_37.mrb
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

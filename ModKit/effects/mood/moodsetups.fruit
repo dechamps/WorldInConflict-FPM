@@ -1,0 +1,10 @@
+SCRIPTCLASS MoodSetup
+{
+	FILE
+}
+
+
+SCRIPTCLASS MoodSetups
+{
+	MoodSetup
+}

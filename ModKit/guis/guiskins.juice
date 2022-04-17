@@ -1,0 +1,14426 @@
+INCLUDE guis/exp_skin.fruit
+
+EXP_SkinFile mySkinFile
+{
+	mySkins
+	{
+		EXP_Skin skinOne
+		{
+			myFileName ui/skins/ui_01.dds
+			myEditorFileName ui/skins/ui_01.tga
+			myPrefabs
+			{
+				EXP_Prefab trans
+				{
+					myStart
+					{
+						x 718
+						z 1727
+					}
+
+					myEnd
+					{
+						x 724
+						z 1733
+					}
+
+					myInnerStart
+					{
+						x 718
+						z 1727
+					}
+
+					myInnerEnd
+					{
+						x 724
+						z 1733
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ToolTip
+				{
+					myStart
+					{
+						x 762
+						z 1760
+					}
+
+					myEnd
+					{
+						x 777
+						z 1775
+					}
+
+					myInnerStart
+					{
+						x 762
+						z 1760
+					}
+
+					myInnerEnd
+					{
+						x 777
+						z 1775
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Checkbox_on
+				{
+					myStart
+					{
+						x 802
+						z 1037
+					}
+
+					myEnd
+					{
+						x 835
+						z 1070
+					}
+
+					myInnerStart
+					{
+						x 802
+						z 1037
+					}
+
+					myInnerEnd
+					{
+						x 835
+						z 1070
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab LOADINGBAR_FG
+				{
+					myStart
+					{
+						x 735
+						z 1716
+					}
+
+					myEnd
+					{
+						x 755
+						z 1718
+					}
+
+					myInnerStart
+					{
+						x 735
+						z 1716
+					}
+
+					myInnerEnd
+					{
+						x 755
+						z 1718
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab divider
+				{
+					myStart
+					{
+						x 729
+						z 1714
+					}
+
+					myEnd
+					{
+						x 732
+						z 1717
+					}
+
+					myInnerStart
+					{
+						x 730
+						z 1715
+					}
+
+					myInnerEnd
+					{
+						x 731
+						z 1716
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab VOIP_Icon
+				{
+					myStart
+					{
+						x 667
+						z 123
+					}
+
+					myEnd
+					{
+						x 691
+						z 147
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 123
+					}
+
+					myInnerEnd
+					{
+						x 691
+						z 147
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab VOIP_Icon_MouseOver
+				{
+					myStart
+					{
+						x 667
+						z 69
+					}
+
+					myEnd
+					{
+						x 691
+						z 93
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 69
+					}
+
+					myInnerEnd
+					{
+						x 691
+						z 93
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab VOIP_Icon_Disabled
+				{
+					myStart
+					{
+						x 667
+						z 96
+					}
+
+					myEnd
+					{
+						x 691
+						z 120
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 96
+					}
+
+					myInnerEnd
+					{
+						x 691
+						z 120
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_MouseOver
+				{
+					myStart
+					{
+						x 781
+						z 1701
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1725
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1701
+					}
+
+					myInnerEnd
+					{
+						x 1007
+						z 1725
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Selected
+				{
+					myStart
+					{
+						x 781
+						z 1756
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1780
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1756
+					}
+
+					myInnerEnd
+					{
+						x 983
+						z 1780
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Down
+				{
+					myStart
+					{
+						x 781
+						z 1729
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1753
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1729
+					}
+
+					myInnerEnd
+					{
+						x 983
+						z 1753
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_MouseOver_sub
+				{
+					myStart
+					{
+						x 781
+						z 1783
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1799
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1783
+					}
+
+					myInnerEnd
+					{
+						x 983
+						z 1799
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Selected_sub
+				{
+					myStart
+					{
+						x 781
+						z 1803
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1819
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1803
+					}
+
+					myInnerEnd
+					{
+						x 983
+						z 1819
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Down_sub
+				{
+					myStart
+					{
+						x 781
+						z 1823
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1839
+					}
+
+					myInnerStart
+					{
+						x 781
+						z 1823
+					}
+
+					myInnerEnd
+					{
+						x 983
+						z 1839
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Exit
+				{
+					myStart
+					{
+						x 858
+						z 1650
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1672
+					}
+
+					myInnerStart
+					{
+						x 858
+						z 1650
+					}
+
+					myInnerEnd
+					{
+						x 996
+						z 1672
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuButton_Exit_MouseOver
+				{
+					myStart
+					{
+						x 858
+						z 1676
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1698
+					}
+
+					myInnerStart
+					{
+						x 858
+						z 1676
+					}
+
+					myInnerEnd
+					{
+						x 996
+						z 1698
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Scrollbar_Button_Selected_LR
+				{
+					myStart
+					{
+						x 735
+						z 1823
+					}
+
+					myEnd
+					{
+						x 781
+						z 1839
+					}
+
+					myInnerStart
+					{
+						x 749
+						z 1823
+					}
+
+					myInnerEnd
+					{
+						x 755
+						z 1839
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Scrollbar_Button_Default_LR
+				{
+					myStart
+					{
+						x 735
+						z 1805
+					}
+
+					myEnd
+					{
+						x 781
+						z 1821
+					}
+
+					myInnerStart
+					{
+						x 749
+						z 1805
+					}
+
+					myInnerEnd
+					{
+						x 755
+						z 1821
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Scrollbar_Button_Default_UD
+				{
+					myStart
+					{
+						x 701
+						z 1795
+					}
+
+					myEnd
+					{
+						x 717
+						z 1841
+					}
+
+					myInnerStart
+					{
+						x 701
+						z 1810
+					}
+
+					myInnerEnd
+					{
+						x 717
+						z 1816
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Scrollbar_Button_Selected_UD
+				{
+					myStart
+					{
+						x 719
+						z 1795
+					}
+
+					myEnd
+					{
+						x 735
+						z 1841
+					}
+
+					myInnerStart
+					{
+						x 719
+						z 1810
+					}
+
+					myInnerEnd
+					{
+						x 735
+						z 1816
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab DropDown_Menu_Default
+				{
+					myStart
+					{
+						x 722
+						z 1940
+					}
+
+					myEnd
+					{
+						x 876
+						z 1957
+					}
+
+					myInnerStart
+					{
+						x 725
+						z 1943
+					}
+
+					myInnerEnd
+					{
+						x 854
+						z 1954
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab DropDown_Menu_Selected
+				{
+					myStart
+					{
+						x 722
+						z 1959
+					}
+
+					myEnd
+					{
+						x 876
+						z 1976
+					}
+
+					myInnerStart
+					{
+						x 787
+						z 1964
+					}
+
+					myInnerEnd
+					{
+						x 817
+						z 1969
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainButton_Default
+				{
+					myStart
+					{
+						x 686
+						z 1842
+					}
+
+					myEnd
+					{
+						x 875
+						z 1868
+					}
+
+					myInnerStart
+					{
+						x 773
+						z 1844
+					}
+
+					myInnerEnd
+					{
+						x 782
+						z 1866
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainButton_MouseOver
+				{
+					myStart
+					{
+						x 686
+						z 1872
+					}
+
+					myEnd
+					{
+						x 875
+						z 1898
+					}
+
+					myInnerStart
+					{
+						x 773
+						z 1874
+					}
+
+					myInnerEnd
+					{
+						x 782
+						z 1896
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_Default_LEFT
+				{
+					myStart
+					{
+						x 635
+						z 1888
+					}
+
+					myEnd
+					{
+						x 656
+						z 1909
+					}
+
+					myInnerStart
+					{
+						x 638
+						z 1888
+					}
+
+					myInnerEnd
+					{
+						x 652
+						z 1909
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MouseOver_LEFT
+				{
+					myStart
+					{
+						x 636
+						z 1913
+					}
+
+					myEnd
+					{
+						x 656
+						z 1934
+					}
+
+					myInnerStart
+					{
+						x 638
+						z 1913
+					}
+
+					myInnerEnd
+					{
+						x 652
+						z 1934
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_Default_RIGHT
+				{
+					myStart
+					{
+						x 617
+						z 1888
+					}
+
+					myEnd
+					{
+						x 639
+						z 1909
+					}
+
+					myInnerStart
+					{
+						x 621
+						z 1888
+					}
+
+					myInnerEnd
+					{
+						x 635
+						z 1909
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MouseOver_RIGHT
+				{
+					myStart
+					{
+						x 617
+						z 1913
+					}
+
+					myEnd
+					{
+						x 639
+						z 1934
+					}
+
+					myInnerStart
+					{
+						x 621
+						z 1913
+					}
+
+					myInnerEnd
+					{
+						x 635
+						z 1934
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_Default_UP
+				{
+					myStart
+					{
+						x 669
+						z 1910
+					}
+
+					myEnd
+					{
+						x 686
+						z 1922
+					}
+
+					myInnerStart
+					{
+						x 669
+						z 1910
+					}
+
+					myInnerEnd
+					{
+						x 686
+						z 1922
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MouseOver_UP
+				{
+					myStart
+					{
+						x 675
+						z 1796
+					}
+
+					myEnd
+					{
+						x 692
+						z 1805
+					}
+
+					myInnerStart
+					{
+						x 675
+						z 1805
+					}
+
+					myInnerEnd
+					{
+						x 675
+						z 1805
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_Default_DOWN
+				{
+					myStart
+					{
+						x 669
+						z 1922
+					}
+
+					myEnd
+					{
+						x 686
+						z 1934
+					}
+
+					myInnerStart
+					{
+						x 669
+						z 1922
+					}
+
+					myInnerEnd
+					{
+						x 686
+						z 1934
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MouseOver_DOWN
+				{
+					myStart
+					{
+						x 676
+						z 1779
+					}
+
+					myEnd
+					{
+						x 693
+						z 1788
+					}
+
+					myInnerStart
+					{
+						x 676
+						z 1788
+					}
+
+					myInnerEnd
+					{
+						x 676
+						z 1788
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab TextBox
+				{
+					myStart
+					{
+						x 722
+						z 1902
+					}
+
+					myEnd
+					{
+						x 876
+						z 1919
+					}
+
+					myInnerStart
+					{
+						x 724
+						z 1904
+					}
+
+					myInnerEnd
+					{
+						x 874
+						z 1917
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab CheckBox
+				{
+					myStart
+					{
+						x 989
+						z 1854
+					}
+
+					myEnd
+					{
+						x 1007
+						z 1872
+					}
+
+					myInnerStart
+					{
+						x 990
+						z 1855
+					}
+
+					myInnerEnd
+					{
+						x 1006
+						z 1871
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab KeybindingButton
+				{
+					myStart
+					{
+						x 722
+						z 1921
+					}
+
+					myEnd
+					{
+						x 876
+						z 1938
+					}
+
+					myInnerStart
+					{
+						x 771
+						z 1927
+					}
+
+					myInnerEnd
+					{
+						x 821
+						z 1934
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Box
+				{
+					myStart
+					{
+						x 878
+						z 1874
+					}
+
+					myEnd
+					{
+						x 1007
+						z 2003
+					}
+
+					myInnerStart
+					{
+						x 882
+						z 1878
+					}
+
+					myInnerEnd
+					{
+						x 1003
+						z 1999
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab TextInput_field
+				{
+					myStart
+					{
+						x 670
+						z 1978
+					}
+
+					myEnd
+					{
+						x 876
+						z 2003
+					}
+
+					myInnerStart
+					{
+						x 678
+						z 1985
+					}
+
+					myInnerEnd
+					{
+						x 867
+						z 1995
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Horizontal_1
+				{
+					myStart
+					{
+						x 648
+						z 2037
+					}
+
+					myEnd
+					{
+						x 837
+						z 2039
+					}
+
+					myInnerStart
+					{
+						x 648
+						z 2037
+					}
+
+					myInnerEnd
+					{
+						x 837
+						z 2039
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Horizontal_2
+				{
+					myStart
+					{
+						x 648
+						z 2041
+					}
+
+					myEnd
+					{
+						x 1007
+						z 2043
+					}
+
+					myInnerStart
+					{
+						x 648
+						z 2041
+					}
+
+					myInnerEnd
+					{
+						x 1007
+						z 2043
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Horizontal_3
+				{
+					myStart
+					{
+						x 648
+						z 2045
+					}
+
+					myEnd
+					{
+						x 1007
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 648
+						z 2045
+					}
+
+					myInnerEnd
+					{
+						x 1007
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Vertical_1
+				{
+					myStart
+					{
+						x 1009
+						z 1687
+					}
+
+					myEnd
+					{
+						x 1011
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1009
+						z 1687
+					}
+
+					myInnerEnd
+					{
+						x 1011
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Vertical_2
+				{
+					myStart
+					{
+						x 1013
+						z 1687
+					}
+
+					myEnd
+					{
+						x 1015
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1013
+						z 1687
+					}
+
+					myInnerEnd
+					{
+						x 1015
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Vertical_3
+				{
+					myStart
+					{
+						x 1017
+						z 1687
+					}
+
+					myEnd
+					{
+						x 1019
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1017
+						z 1687
+					}
+
+					myInnerEnd
+					{
+						x 1019
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Line_Horizontal_special
+				{
+					myStart
+					{
+						x 662
+						z 2004
+					}
+
+					myEnd
+					{
+						x 964
+						z 2034
+					}
+
+					myInnerStart
+					{
+						x 705
+						z 2004
+					}
+
+					myInnerEnd
+					{
+						x 964
+						z 2034
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab GrayBox
+				{
+					myStart
+					{
+						x 968
+						z 1854
+					}
+
+					myEnd
+					{
+						x 986
+						z 1872
+					}
+
+					myInnerStart
+					{
+						x 970
+						z 1856
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1870
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Interlace
+				{
+					myStart
+					{
+						x 1021
+						z 1235
+					}
+
+					myEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1021
+						z 1235
+					}
+
+					myInnerEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Bg_Trans
+				{
+					myStart
+					{
+						x 757
+						z 1781
+					}
+
+					myEnd
+					{
+						x 777
+						z 1801
+					}
+
+					myInnerStart
+					{
+						x 757
+						z 1781
+					}
+
+					myInnerEnd
+					{
+						x 777
+						z 1801
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab GrayHeader
+				{
+					myStart
+					{
+						x 762
+						z 1760
+					}
+
+					myEnd
+					{
+						x 777
+						z 1775
+					}
+
+					myInnerStart
+					{
+						x 762
+						z 1760
+					}
+
+					myInnerEnd
+					{
+						x 777
+						z 1775
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WIC_logo
+				{
+					myStart
+					{
+						x 1279
+						z 26
+					}
+
+					myEnd
+					{
+						x 1486
+						z 114
+					}
+
+					myInnerStart
+					{
+						x 1279
+						z 26
+					}
+
+					myInnerEnd
+					{
+						x 1486
+						z 114
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab List_Selection
+				{
+					myStart
+					{
+						x 912
+						z 1614
+					}
+
+					myEnd
+					{
+						x 1019
+						z 1630
+					}
+
+					myInnerStart
+					{
+						x 932
+						z 1620
+					}
+
+					myInnerEnd
+					{
+						x 998
+						z 1625
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab List_Selection_MouseOver
+				{
+					myStart
+					{
+						x 912
+						z 1632
+					}
+
+					myEnd
+					{
+						x 1019
+						z 1648
+					}
+
+					myInnerStart
+					{
+						x 932
+						z 1637
+					}
+
+					myInnerEnd
+					{
+						x 998
+						z 1643
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab MainMenuSplash
+				{
+					myStart
+					{
+						x 250
+						z 2022
+					}
+
+					myEnd
+					{
+						x 644
+						z 2044
+					}
+
+					myInnerStart
+					{
+						x 250
+						z 2022
+					}
+
+					myInnerEnd
+					{
+						x 644
+						z 2044
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Scrollbar_Background
+				{
+					myStart
+					{
+						x 492
+						z 2001
+					}
+
+					myEnd
+					{
+						x 646
+						z 2018
+					}
+
+					myInnerStart
+					{
+						x 562
+						z 2001
+					}
+
+					myInnerEnd
+					{
+						x 566
+						z 2018
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ButtonTab
+				{
+					myStart
+					{
+						x 455
+						z 1971
+					}
+
+					myEnd
+					{
+						x 640
+						z 1999
+					}
+
+					myInnerStart
+					{
+						x 542
+						z 1971
+					}
+
+					myInnerEnd
+					{
+						x 548
+						z 1999
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ButtonTab_MouseOver
+				{
+					myStart
+					{
+						x 455
+						z 1941
+					}
+
+					myEnd
+					{
+						x 640
+						z 1969
+					}
+
+					myInnerStart
+					{
+						x 542
+						z 1941
+					}
+
+					myInnerEnd
+					{
+						x 548
+						z 1967
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab DropDownMenu_C
+				{
+					myStart
+					{
+						x 455
+						z 1920
+					}
+
+					myEnd
+					{
+						x 609
+						z 1937
+					}
+
+					myInnerStart
+					{
+						x 458
+						z 1923
+					}
+
+					myInnerEnd
+					{
+						x 584
+						z 1934
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MapDown
+				{
+					myStart
+					{
+						x 644
+						z 1957
+					}
+
+					myEnd
+					{
+						x 665
+						z 1974
+					}
+
+					myInnerStart
+					{
+						x 644
+						z 1959
+					}
+
+					myInnerEnd
+					{
+						x 665
+						z 1973
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MapDown_MouseOver
+				{
+					myStart
+					{
+						x 667
+						z 1941
+					}
+
+					myEnd
+					{
+						x 688
+						z 1958
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 1943
+					}
+
+					myInnerEnd
+					{
+						x 688
+						z 1957
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MapUP
+				{
+					myStart
+					{
+						x 667
+						z 1957
+					}
+
+					myEnd
+					{
+						x 688
+						z 1974
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 1958
+					}
+
+					myInnerEnd
+					{
+						x 688
+						z 1972
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ScrollArrow_MapUP_MouseOver
+				{
+					myStart
+					{
+						x 644
+						z 1941
+					}
+
+					myEnd
+					{
+						x 665
+						z 1958
+					}
+
+					myInnerStart
+					{
+						x 644
+						z 1942
+					}
+
+					myInnerEnd
+					{
+						x 665
+						z 1956
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_HoldFire
+				{
+					myStart
+					{
+						x 325
+						z 53
+					}
+
+					myEnd
+					{
+						x 360
+						z 71
+					}
+
+					myInnerStart
+					{
+						x 325
+						z 53
+					}
+
+					myInnerEnd
+					{
+						x 360
+						z 71
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_HoldFireWorld
+				{
+					myStart
+					{
+						x 293
+						z 53
+					}
+
+					myEnd
+					{
+						x 322
+						z 68
+					}
+
+					myInnerStart
+					{
+						x 293
+						z 53
+					}
+
+					myInnerEnd
+					{
+						x 322
+						z 68
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NoHoldFireWorld
+				{
+					myStart
+					{
+						x 324
+						z 52
+					}
+
+					myEnd
+					{
+						x 361
+						z 72
+					}
+
+					myInnerStart
+					{
+						x 324
+						z 52
+					}
+
+					myInnerEnd
+					{
+						x 361
+						z 72
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_HoldFireBar
+				{
+					myStart
+					{
+						x 387
+						z 74
+					}
+
+					myEnd
+					{
+						x 412
+						z 83
+					}
+
+					myInnerStart
+					{
+						x 387
+						z 74
+					}
+
+					myInnerEnd
+					{
+						x 412
+						z 83
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NoHoldFireBar
+				{
+					myStart
+					{
+						x 351
+						z 74
+					}
+
+					myEnd
+					{
+						x 380
+						z 86
+					}
+
+					myInnerStart
+					{
+						x 351
+						z 74
+					}
+
+					myInnerEnd
+					{
+						x 380
+						z 86
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Transporting
+				{
+					myStart
+					{
+						x 306
+						z 165
+					}
+
+					myEnd
+					{
+						x 359
+						z 174
+					}
+
+					myInnerStart
+					{
+						x 306
+						z 165
+					}
+
+					myInnerEnd
+					{
+						x 359
+						z 174
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Health
+				{
+					myStart
+					{
+						x 315
+						z 36
+					}
+
+					myEnd
+					{
+						x 360
+						z 40
+					}
+
+					myInnerStart
+					{
+						x 315
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 360
+						z 40
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Background
+				{
+					myStart
+					{
+						x 363
+						z 36
+					}
+
+					myEnd
+					{
+						x 412
+						z 70
+					}
+
+					myInnerStart
+					{
+						x 363
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 412
+						z 70
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Building
+				{
+					myStart
+					{
+						x 416
+						z 85
+					}
+
+					myEnd
+					{
+						x 459
+						z 107
+					}
+
+					myInnerStart
+					{
+						x 416
+						z 85
+					}
+
+					myInnerEnd
+					{
+						x 459
+						z 107
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Forest
+				{
+					myStart
+					{
+						x 416
+						z 110
+					}
+
+					myEnd
+					{
+						x 459
+						z 132
+					}
+
+					myInnerStart
+					{
+						x 416
+						z 110
+					}
+
+					myInnerEnd
+					{
+						x 459
+						z 132
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Transported
+				{
+					myStart
+					{
+						x 416
+						z 135
+					}
+
+					myEnd
+					{
+						x 459
+						z 157
+					}
+
+					myInnerStart
+					{
+						x 416
+						z 135
+					}
+
+					myInnerEnd
+					{
+						x 459
+						z 157
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Rank1
+				{
+					myStart
+					{
+						x 400
+						z 89
+					}
+
+					myEnd
+					{
+						x 413
+						z 97
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 89
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 97
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Rank2
+				{
+					myStart
+					{
+						x 400
+						z 100
+					}
+
+					myEnd
+					{
+						x 413
+						z 109
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 100
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 109
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Rank3
+				{
+					myStart
+					{
+						x 400
+						z 112
+					}
+
+					myEnd
+					{
+						x 413
+						z 121
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 112
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 121
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Rank5
+				{
+					myStart
+					{
+						x 400
+						z 136
+					}
+
+					myEnd
+					{
+						x 413
+						z 145
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 136
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 145
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Rank4
+				{
+					myStart
+					{
+						x 400
+						z 124
+					}
+
+					myEnd
+					{
+						x 413
+						z 133
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 124
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 133
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_HoldFireSelectedWorld
+				{
+					myStart
+					{
+						x 418
+						z 160
+					}
+
+					myEnd
+					{
+						x 459
+						z 181
+					}
+
+					myInnerStart
+					{
+						x 418
+						z 160
+					}
+
+					myInnerEnd
+					{
+						x 459
+						z 181
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_TransportingSelected
+				{
+					myStart
+					{
+						x 362
+						z 165
+					}
+
+					myEnd
+					{
+						x 415
+						z 174
+					}
+
+					myInnerStart
+					{
+						x 362
+						z 165
+					}
+
+					myInnerEnd
+					{
+						x 415
+						z 174
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_BlackBox
+				{
+					myStart
+					{
+						x 400
+						z 148
+					}
+
+					myEnd
+					{
+						x 410
+						z 158
+					}
+
+					myInnerStart
+					{
+						x 400
+						z 148
+					}
+
+					myInnerEnd
+					{
+						x 410
+						z 158
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_BackgroundWorld
+				{
+					myStart
+					{
+						x 346
+						z 179
+					}
+
+					myEnd
+					{
+						x 399
+						z 235
+					}
+
+					myInnerStart
+					{
+						x 346
+						z 179
+					}
+
+					myInnerEnd
+					{
+						x 399
+						z 235
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_BackgroundBar
+				{
+					myStart
+					{
+						x 402
+						z 185
+					}
+
+					myEnd
+					{
+						x 455
+						z 235
+					}
+
+					myInnerStart
+					{
+						x 402
+						z 185
+					}
+
+					myInnerEnd
+					{
+						x 455
+						z 235
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_BackgroundSelectedWorld
+				{
+					myStart
+					{
+						x 348
+						z 238
+					}
+
+					myEnd
+					{
+						x 401
+						z 294
+					}
+
+					myInnerStart
+					{
+						x 348
+						z 238
+					}
+
+					myInnerEnd
+					{
+						x 401
+						z 294
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_BackgroundSelectedBar
+				{
+					myStart
+					{
+						x 404
+						z 238
+					}
+
+					myEnd
+					{
+						x 457
+						z 288
+					}
+
+					myInnerStart
+					{
+						x 404
+						z 238
+					}
+
+					myInnerEnd
+					{
+						x 457
+						z 288
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_InfantryDot
+				{
+					myStart
+					{
+						x 412
+						z 179
+					}
+
+					myEnd
+					{
+						x 415
+						z 182
+					}
+
+					myInnerStart
+					{
+						x 412
+						z 179
+					}
+
+					myInnerEnd
+					{
+						x 415
+						z 182
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Interlace_2
+				{
+					myStart
+					{
+						x 1021
+						z 1919
+					}
+
+					myEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1021
+						z 1919
+					}
+
+					myInnerEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Interlace_3
+				{
+					myStart
+					{
+						x 1021
+						z 1667
+					}
+
+					myEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myInnerStart
+					{
+						x 1021
+						z 1667
+					}
+
+					myInnerEnd
+					{
+						x 1023
+						z 2047
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette
+				{
+					myStart
+					{
+						x 573
+						z 375
+					}
+
+					myEnd
+					{
+						x 795
+						z 495
+					}
+
+					myInnerStart
+					{
+						x 573
+						z 375
+					}
+
+					myInnerEnd
+					{
+						x 795
+						z 495
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_RotateMouseOver
+				{
+					myStart
+					{
+						x 772
+						z 268
+					}
+
+					myEnd
+					{
+						x 791
+						z 337
+					}
+
+					myInnerStart
+					{
+						x 772
+						z 277
+					}
+
+					myInnerEnd
+					{
+						x 772
+						z 337
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Ingame_ButtonBig_MouseOver
+				{
+					myStart
+					{
+						x 460
+						z 205
+					}
+
+					myEnd
+					{
+						x 532
+						z 236
+					}
+
+					myInnerStart
+					{
+						x 460
+						z 205
+					}
+
+					myInnerEnd
+					{
+						x 532
+						z 236
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Ingame_ButtonBig_Default
+				{
+					myStart
+					{
+						x 460
+						z 240
+					}
+
+					myEnd
+					{
+						x 532
+						z 270
+					}
+
+					myInnerStart
+					{
+						x 460
+						z 240
+					}
+
+					myInnerEnd
+					{
+						x 532
+						z 270
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Ingame_ButtonSmall_MouseOver
+				{
+					myStart
+					{
+						x 680
+						z 198
+					}
+
+					myEnd
+					{
+						x 712
+						z 215
+					}
+
+					myInnerStart
+					{
+						x 680
+						z 198
+					}
+
+					myInnerEnd
+					{
+						x 712
+						z 215
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Ingame_ButtonSmall_Default
+				{
+					myStart
+					{
+						x 715
+						z 198
+					}
+
+					myEnd
+					{
+						x 747
+						z 215
+					}
+
+					myInnerStart
+					{
+						x 715
+						z 198
+					}
+
+					myInnerEnd
+					{
+						x 747
+						z 215
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Reload
+				{
+					myStart
+					{
+						x 354
+						z 89
+					}
+
+					myEnd
+					{
+						x 397
+						z 111
+					}
+
+					myInnerStart
+					{
+						x 354
+						z 89
+					}
+
+					myInnerEnd
+					{
+						x 397
+						z 111
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_BigButton_MouseOver
+				{
+					myStart
+					{
+						x 666
+						z 605
+					}
+
+					myEnd
+					{
+						x 704
+						z 643
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 605
+					}
+
+					myInnerEnd
+					{
+						x 704
+						z 643
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_BigButton_Default
+				{
+					myStart
+					{
+						x 666
+						z 564
+					}
+
+					myEnd
+					{
+						x 704
+						z 602
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 564
+					}
+
+					myInnerEnd
+					{
+						x 704
+						z 602
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_SmallButton_MouseOver
+				{
+					myStart
+					{
+						x 967
+						z 351
+					}
+
+					myEnd
+					{
+						x 995
+						z 379
+					}
+
+					myInnerStart
+					{
+						x 967
+						z 351
+					}
+
+					myInnerEnd
+					{
+						x 995
+						z 379
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_SmallButton_Default
+				{
+					myStart
+					{
+						x 936
+						z 351
+					}
+
+					myEnd
+					{
+						x 964
+						z 379
+					}
+
+					myInnerStart
+					{
+						x 936
+						z 351
+					}
+
+					myInnerEnd
+					{
+						x 964
+						z 379
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_AbilitylButton_MouseOver
+				{
+					myStart
+					{
+						x 798
+						z 407
+					}
+
+					myEnd
+					{
+						x 851
+						z 460
+					}
+
+					myInnerStart
+					{
+						x 800
+						z 450
+					}
+
+					myInnerEnd
+					{
+						x 849
+						z 458
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_AbilityButton_Default
+				{
+					myStart
+					{
+						x 798
+						z 351
+					}
+
+					myEnd
+					{
+						x 851
+						z 404
+					}
+
+					myInnerStart
+					{
+						x 798
+						z 351
+					}
+
+					myInnerEnd
+					{
+						x 851
+						z 404
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_NextAbility_MouseOver
+				{
+					myStart
+					{
+						x 647
+						z 322
+					}
+
+					myEnd
+					{
+						x 678
+						z 366
+					}
+
+					myInnerStart
+					{
+						x 647
+						z 322
+					}
+
+					myInnerEnd
+					{
+						x 678
+						z 366
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_NextAbility_Default
+				{
+					myStart
+					{
+						x 579
+						z 322
+					}
+
+					myEnd
+					{
+						x 610
+						z 366
+					}
+
+					myInnerStart
+					{
+						x 579
+						z 322
+					}
+
+					myInnerEnd
+					{
+						x 610
+						z 366
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_PrevAbility_MouseOver
+				{
+					myStart
+					{
+						x 681
+						z 322
+					}
+
+					myEnd
+					{
+						x 712
+						z 366
+					}
+
+					myInnerStart
+					{
+						x 681
+						z 322
+					}
+
+					myInnerEnd
+					{
+						x 712
+						z 366
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_PrevAbility_Default
+				{
+					myStart
+					{
+						x 613
+						z 322
+					}
+
+					myEnd
+					{
+						x 644
+						z 366
+					}
+
+					myInnerStart
+					{
+						x 613
+						z 322
+					}
+
+					myInnerEnd
+					{
+						x 644
+						z 366
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Waypoint
+				{
+					myStart
+					{
+						x 423
+						z 291
+					}
+
+					myEnd
+					{
+						x 459
+						z 327
+					}
+
+					myInnerStart
+					{
+						x 423
+						z 291
+					}
+
+					myInnerEnd
+					{
+						x 459
+						z 327
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Repair
+				{
+					myStart
+					{
+						x 462
+						z 277
+					}
+
+					myEnd
+					{
+						x 498
+						z 313
+					}
+
+					myInnerStart
+					{
+						x 462
+						z 277
+					}
+
+					myInnerEnd
+					{
+						x 498
+						z 313
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Follow
+				{
+					myStart
+					{
+						x 501
+						z 277
+					}
+
+					myEnd
+					{
+						x 537
+						z 313
+					}
+
+					myInnerStart
+					{
+						x 501
+						z 277
+					}
+
+					myInnerEnd
+					{
+						x 537
+						z 313
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Move
+				{
+					myStart
+					{
+						x 540
+						z 277
+					}
+
+					myEnd
+					{
+						x 576
+						z 313
+					}
+
+					myInnerStart
+					{
+						x 540
+						z 277
+					}
+
+					myInnerEnd
+					{
+						x 576
+						z 313
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Stop
+				{
+					myStart
+					{
+						x 462
+						z 316
+					}
+
+					myEnd
+					{
+						x 498
+						z 352
+					}
+
+					myInnerStart
+					{
+						x 462
+						z 316
+					}
+
+					myInnerEnd
+					{
+						x 498
+						z 352
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_AttackGround
+				{
+					myStart
+					{
+						x 501
+						z 316
+					}
+
+					myEnd
+					{
+						x 537
+						z 352
+					}
+
+					myInnerStart
+					{
+						x 501
+						z 316
+					}
+
+					myInnerEnd
+					{
+						x 537
+						z 352
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Unload
+				{
+					myStart
+					{
+						x 540
+						z 316
+					}
+
+					myEnd
+					{
+						x 576
+						z 352
+					}
+
+					myInnerStart
+					{
+						x 540
+						z 316
+					}
+
+					myInnerEnd
+					{
+						x 576
+						z 352
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_HoldFire
+				{
+					myStart
+					{
+						x 456
+						z 355
+					}
+
+					myEnd
+					{
+						x 492
+						z 391
+					}
+
+					myInnerStart
+					{
+						x 456
+						z 355
+					}
+
+					myInnerEnd
+					{
+						x 492
+						z 391
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_EnterTransport
+				{
+					myStart
+					{
+						x 495
+						z 355
+					}
+
+					myEnd
+					{
+						x 531
+						z 391
+					}
+
+					myInnerStart
+					{
+						x 495
+						z 355
+					}
+
+					myInnerEnd
+					{
+						x 531
+						z 391
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_EnterBuilding
+				{
+					myStart
+					{
+						x 534
+						z 355
+					}
+
+					myEnd
+					{
+						x 570
+						z 391
+					}
+
+					myInnerStart
+					{
+						x 534
+						z 355
+					}
+
+					myInnerEnd
+					{
+						x 570
+						z 391
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_HeavyTank
+				{
+					myStart
+					{
+						x 186
+						z 391
+					}
+
+					myEnd
+					{
+						x 229
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 186
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 229
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_MediumTank
+				{
+					myStart
+					{
+						x 232
+						z 391
+					}
+
+					myEnd
+					{
+						x 275
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 232
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 275
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_LightTank
+				{
+					myStart
+					{
+						x 278
+						z 391
+					}
+
+					myEnd
+					{
+						x 321
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_HeavyAttackHelicopter
+				{
+					myStart
+					{
+						x 94
+						z 391
+					}
+
+					myEnd
+					{
+						x 137
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 94
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 137
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_MediumAttackHelicopter
+				{
+					myStart
+					{
+						x 140
+						z 391
+					}
+
+					myEnd
+					{
+						x 183
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 140
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 183
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_TransportHelicopter
+				{
+					myStart
+					{
+						x 2
+						z 391
+					}
+
+					myEnd
+					{
+						x 45
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 2
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 45
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_ScoutHelicopter
+				{
+					myStart
+					{
+						x 48
+						z 391
+					}
+
+					myEnd
+					{
+						x 91
+						z 412
+					}
+
+					myInnerStart
+					{
+						x 48
+						z 391
+					}
+
+					myInnerEnd
+					{
+						x 91
+						z 412
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_SniperSquad
+				{
+					myStart
+					{
+						x 186
+						z 367
+					}
+
+					myEnd
+					{
+						x 229
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 186
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 229
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Paratroopers
+				{
+					myStart
+					{
+						x 232
+						z 367
+					}
+
+					myEnd
+					{
+						x 275
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 232
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 275
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_AASquad
+				{
+					myStart
+					{
+						x 2
+						z 367
+					}
+
+					myEnd
+					{
+						x 45
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 2
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 45
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_ATSquad
+				{
+					myStart
+					{
+						x 48
+						z 367
+					}
+
+					myEnd
+					{
+						x 91
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 48
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 91
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_InfantrySquad
+				{
+					myStart
+					{
+						x 94
+						z 367
+					}
+
+					myEnd
+					{
+						x 137
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 94
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 137
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_DemolitionSquad
+				{
+					myStart
+					{
+						x 140
+						z 367
+					}
+
+					myEnd
+					{
+						x 183
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 140
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 183
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_HeavyArtillery
+				{
+					myStart
+					{
+						x 186
+						z 343
+					}
+
+					myEnd
+					{
+						x 229
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 186
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 229
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_MediumArtillery
+				{
+					myStart
+					{
+						x 232
+						z 343
+					}
+
+					myEnd
+					{
+						x 275
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 232
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 275
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_AAHeavy
+				{
+					myStart
+					{
+						x 94
+						z 343
+					}
+
+					myEnd
+					{
+						x 137
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 94
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 137
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_AAMedium
+				{
+					myStart
+					{
+						x 140
+						z 343
+					}
+
+					myEnd
+					{
+						x 183
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 140
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 183
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Jeep
+				{
+					myStart
+					{
+						x 278
+						z 415
+					}
+
+					myEnd
+					{
+						x 321
+						z 436
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 415
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 436
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_AATT
+				{
+					myStart
+					{
+						x 278
+						z 367
+					}
+
+					myEnd
+					{
+						x 321
+						z 388
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 367
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 388
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_RepairVehicle
+				{
+					myStart
+					{
+						x 2
+						z 343
+					}
+
+					myEnd
+					{
+						x 45
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 2
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 45
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Truck
+				{
+					myStart
+					{
+						x 278
+						z 343
+					}
+
+					myEnd
+					{
+						x 321
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_ATT
+				{
+					myStart
+					{
+						x 278
+						z 319
+					}
+
+					myEnd
+					{
+						x 321
+						z 340
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 319
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 340
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DeployDefault
+				{
+					myStart
+					{
+						x 832
+						z 183
+					}
+
+					myEnd
+					{
+						x 895
+						z 246
+					}
+
+					myInnerStart
+					{
+						x 832
+						z 183
+					}
+
+					myInnerEnd
+					{
+						x 895
+						z 246
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_BuyMenu
+				{
+					myStart
+					{
+						x 873
+						z 530
+					}
+
+					myEnd
+					{
+						x 1022
+						z 752
+					}
+
+					myInnerStart
+					{
+						x 873
+						z 530
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 752
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DeployCircle
+				{
+					myStart
+					{
+						x 947
+						z 434
+					}
+
+					myEnd
+					{
+						x 1022
+						z 509
+					}
+
+					myInnerStart
+					{
+						x 947
+						z 434
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 509
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_LeftArrow
+				{
+					myStart
+					{
+						x 656
+						z 1901
+					}
+
+					myEnd
+					{
+						x 664
+						z 1914
+					}
+
+					myInnerStart
+					{
+						x 656
+						z 1901
+					}
+
+					myInnerEnd
+					{
+						x 664
+						z 1914
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReinforcementsDefault
+				{
+					myStart
+					{
+						x 664
+						z 234
+					}
+
+					myEnd
+					{
+						x 704
+						z 274
+					}
+
+					myInnerStart
+					{
+						x 664
+						z 234
+					}
+
+					myInnerEnd
+					{
+						x 704
+						z 274
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReinforcementsMouseOver
+				{
+					myStart
+					{
+						x 535
+						z 234
+					}
+
+					myEnd
+					{
+						x 575
+						z 274
+					}
+
+					myInnerStart
+					{
+						x 535
+						z 234
+					}
+
+					myInnerEnd
+					{
+						x 575
+						z 274
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabCurrentMouseOver
+				{
+					myStart
+					{
+						x 552
+						z 848
+					}
+
+					myEnd
+					{
+						x 618
+						z 892
+					}
+
+					myInnerStart
+					{
+						x 552
+						z 848
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 892
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabCurrentDefault
+				{
+					myStart
+					{
+						x 552
+						z 801
+					}
+
+					myEnd
+					{
+						x 619
+						z 845
+					}
+
+					myInnerStart
+					{
+						x 552
+						z 801
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 845
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabClosedDefault
+				{
+					myStart
+					{
+						x 552
+						z 707
+					}
+
+					myEnd
+					{
+						x 618
+						z 751
+					}
+
+					myInnerStart
+					{
+						x 552
+						z 707
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 751
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReinforcementsBG
+				{
+					myStart
+					{
+						x 532
+						z 87
+					}
+
+					myEnd
+					{
+						x 664
+						z 135
+					}
+
+					myInnerStart
+					{
+						x 532
+						z 87
+					}
+
+					myInnerEnd
+					{
+						x 664
+						z 135
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabClosedMouseOver
+				{
+					myStart
+					{
+						x 552
+						z 754
+					}
+
+					myEnd
+					{
+						x 618
+						z 798
+					}
+
+					myInnerStart
+					{
+						x 552
+						z 754
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 798
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_BuyMenuSmall
+				{
+					myStart
+					{
+						x 421
+						z 422
+					}
+
+					myEnd
+					{
+						x 570
+						z 509
+					}
+
+					myInnerStart
+					{
+						x 421
+						z 422
+					}
+
+					myInnerEnd
+					{
+						x 570
+						z 509
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_SmallBuy
+				{
+					myStart
+					{
+						x 348
+						z 181
+					}
+
+					myEnd
+					{
+						x 397
+						z 208
+					}
+
+					myInnerStart
+					{
+						x 348
+						z 181
+					}
+
+					myInnerEnd
+					{
+						x 397
+						z 208
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab BlackBox
+				{
+					myStart
+					{
+						x 683
+						z 1725
+					}
+
+					myEnd
+					{
+						x 693
+						z 1735
+					}
+
+					myInnerStart
+					{
+						x 683
+						z 1725
+					}
+
+					myInnerEnd
+					{
+						x 693
+						z 1735
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_SetDropZoneBG
+				{
+					myStart
+					{
+						x 666
+						z 522
+					}
+
+					myEnd
+					{
+						x 815
+						z 561
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 522
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 561
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_SetDropZoneDefault
+				{
+					myStart
+					{
+						x 714
+						z 564
+					}
+
+					myEnd
+					{
+						x 815
+						z 598
+					}
+
+					myInnerStart
+					{
+						x 714
+						z 564
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 598
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TacticalAidBG
+				{
+					myStart
+					{
+						x 532
+						z 36
+					}
+
+					myEnd
+					{
+						x 664
+						z 84
+					}
+
+					myInnerStart
+					{
+						x 532
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 664
+						z 84
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TacticalAidButtonBG
+				{
+					myStart
+					{
+						x 923
+						z 235
+					}
+
+					myEnd
+					{
+						x 1022
+						z 270
+					}
+
+					myInnerStart
+					{
+						x 923
+						z 235
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 270
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ButtonBig_NA
+				{
+					myStart
+					{
+						x 327
+						z 116
+					}
+
+					myEnd
+					{
+						x 397
+						z 145
+					}
+
+					myInnerStart
+					{
+						x 327
+						z 116
+					}
+
+					myInnerEnd
+					{
+						x 397
+						z 145
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagBG
+				{
+					myStart
+					{
+						x 262
+						z 2
+					}
+
+					myEnd
+					{
+						x 664
+						z 33
+					}
+
+					myInnerStart
+					{
+						x 262
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 664
+						z 33
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagLeftBG
+				{
+					myStart
+					{
+						x 415
+						z 69
+					}
+
+					myEnd
+					{
+						x 491
+						z 82
+					}
+
+					myInnerStart
+					{
+						x 426
+						z 71
+					}
+
+					myInnerEnd
+					{
+						x 481
+						z 79
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagRightBG
+				{
+					myStart
+					{
+						x 416
+						z 53
+					}
+
+					myEnd
+					{
+						x 492
+						z 66
+					}
+
+					myInnerStart
+					{
+						x 426
+						z 55
+					}
+
+					myInnerEnd
+					{
+						x 481
+						z 63
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagTimeBG
+				{
+					myStart
+					{
+						x 415
+						z 36
+					}
+
+					myEnd
+					{
+						x 493
+						z 50
+					}
+
+					myInnerStart
+					{
+						x 415
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 493
+						z 50
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabClosedTAMouseOver
+				{
+					myStart
+					{
+						x 492
+						z 754
+					}
+
+					myEnd
+					{
+						x 549
+						z 798
+					}
+
+					myInnerStart
+					{
+						x 492
+						z 754
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 798
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabClosedTADefault
+				{
+					myStart
+					{
+						x 492
+						z 707
+					}
+
+					myEnd
+					{
+						x 549
+						z 751
+					}
+
+					myInnerStart
+					{
+						x 492
+						z 707
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 751
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabCurrentTAMouseOver
+				{
+					myStart
+					{
+						x 818
+						z 709
+					}
+
+					myEnd
+					{
+						x 869
+						z 747
+					}
+
+					myInnerStart
+					{
+						x 818
+						z 709
+					}
+
+					myInnerEnd
+					{
+						x 869
+						z 747
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TabCurrentTADefault
+				{
+					myStart
+					{
+						x 818
+						z 668
+					}
+
+					myEnd
+					{
+						x 869
+						z 706
+					}
+
+					myInnerStart
+					{
+						x 818
+						z 668
+					}
+
+					myInnerEnd
+					{
+						x 869
+						z 706
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagArrows
+				{
+					myStart
+					{
+						x 496
+						z 36
+					}
+
+					myEnd
+					{
+						x 529
+						z 60
+					}
+
+					myInnerStart
+					{
+						x 496
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 529
+						z 60
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TAMouseOver
+				{
+					myStart
+					{
+						x 578
+						z 234
+					}
+
+					myEnd
+					{
+						x 618
+						z 274
+					}
+
+					myInnerStart
+					{
+						x 578
+						z 234
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 274
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TADefault
+				{
+					myStart
+					{
+						x 707
+						z 234
+					}
+
+					myEnd
+					{
+						x 747
+						z 274
+					}
+
+					myInnerStart
+					{
+						x 707
+						z 234
+					}
+
+					myInnerEnd
+					{
+						x 747
+						z 274
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_SmallButtonMouseOver
+				{
+					myStart
+					{
+						x 809
+						z 183
+					}
+
+					myEnd
+					{
+						x 829
+						z 193
+					}
+
+					myInnerStart
+					{
+						x 809
+						z 183
+					}
+
+					myInnerEnd
+					{
+						x 829
+						z 193
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_SmallButtonDefault
+				{
+					myStart
+					{
+						x 809
+						z 209
+					}
+
+					myEnd
+					{
+						x 829
+						z 219
+					}
+
+					myInnerStart
+					{
+						x 809
+						z 209
+					}
+
+					myInnerEnd
+					{
+						x 829
+						z 219
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_SmallButton
+				{
+					myStart
+					{
+						x 809
+						z 196
+					}
+
+					myEnd
+					{
+						x 829
+						z 206
+					}
+
+					myInnerStart
+					{
+						x 809
+						z 196
+					}
+
+					myInnerEnd
+					{
+						x 829
+						z 206
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap
+				{
+					myStart
+					{
+						x 432
+						z 512
+					}
+
+					myEnd
+					{
+						x 663
+						z 704
+					}
+
+					myInnerStart
+					{
+						x 432
+						z 512
+					}
+
+					myInnerEnd
+					{
+						x 663
+						z 704
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_Timer
+				{
+					myStart
+					{
+						x 512
+						z 171
+					}
+
+					myEnd
+					{
+						x 540
+						z 184
+					}
+
+					myInnerStart
+					{
+						x 512
+						z 171
+					}
+
+					myInnerEnd
+					{
+						x 540
+						z 184
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FlagDivider
+				{
+					myStart
+					{
+						x 677
+						z 150
+					}
+
+					myEnd
+					{
+						x 684
+						z 172
+					}
+
+					myInnerStart
+					{
+						x 677
+						z 150
+					}
+
+					myInnerEnd
+					{
+						x 684
+						z 172
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DeployMouseOver
+				{
+					myStart
+					{
+						x 959
+						z 274
+					}
+
+					myEnd
+					{
+						x 1022
+						z 337
+					}
+
+					myInnerStart
+					{
+						x 959
+						z 274
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 337
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_SetDropZoneMouseOver
+				{
+					myStart
+					{
+						x 714
+						z 601
+					}
+
+					myEnd
+					{
+						x 815
+						z 635
+					}
+
+					myInnerStart
+					{
+						x 714
+						z 601
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 635
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_RI_Timer
+				{
+					myStart
+					{
+						x 481
+						z 171
+					}
+
+					myEnd
+					{
+						x 509
+						z 184
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 171
+					}
+
+					myInnerEnd
+					{
+						x 509
+						z 184
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_BlueDefault
+				{
+					myStart
+					{
+						x 735
+						z 150
+					}
+
+					myEnd
+					{
+						x 780
+						z 195
+					}
+
+					myInnerStart
+					{
+						x 735
+						z 150
+					}
+
+					myInnerEnd
+					{
+						x 780
+						z 195
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_BlueMouseOver
+				{
+					myStart
+					{
+						x 687
+						z 150
+					}
+
+					myEnd
+					{
+						x 732
+						z 195
+					}
+
+					myInnerStart
+					{
+						x 687
+						z 150
+					}
+
+					myInnerEnd
+					{
+						x 732
+						z 195
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_BlueBorder
+				{
+					myStart
+					{
+						x 750
+						z 198
+					}
+
+					myEnd
+					{
+						x 805
+						z 252
+					}
+
+					myInnerStart
+					{
+						x 750
+						z 198
+					}
+
+					myInnerEnd
+					{
+						x 805
+						z 252
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRoleDefault
+				{
+					myStart
+					{
+						x 886
+						z 297
+					}
+
+					myEnd
+					{
+						x 956
+						z 318
+					}
+
+					myInnerStart
+					{
+						x 886
+						z 297
+					}
+
+					myInnerEnd
+					{
+						x 956
+						z 318
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRoleMouseOver
+				{
+					myStart
+					{
+						x 886
+						z 273
+					}
+
+					myEnd
+					{
+						x 956
+						z 294
+					}
+
+					myInnerStart
+					{
+						x 886
+						z 273
+					}
+
+					myInnerEnd
+					{
+						x 956
+						z 294
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DominationDot
+				{
+					myStart
+					{
+						x 885
+						z 249
+					}
+
+					myEnd
+					{
+						x 895
+						z 259
+					}
+
+					myInnerStart
+					{
+						x 885
+						z 249
+					}
+
+					myInnerEnd
+					{
+						x 895
+						z 259
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DominationRightArrow
+				{
+					myStart
+					{
+						x 872
+						z 249
+					}
+
+					myEnd
+					{
+						x 882
+						z 259
+					}
+
+					myInnerStart
+					{
+						x 872
+						z 249
+					}
+
+					myInnerEnd
+					{
+						x 882
+						z 259
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DominationLeftArrow
+				{
+					myStart
+					{
+						x 859
+						z 249
+					}
+
+					myEnd
+					{
+						x 869
+						z 259
+					}
+
+					myInnerStart
+					{
+						x 859
+						z 249
+					}
+
+					myInnerEnd
+					{
+						x 869
+						z 259
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AerialRecon
+				{
+					myStart
+					{
+						x 32
+						z 270
+					}
+
+					myEnd
+					{
+						x 104
+						z 301
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 270
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 301
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_HeavyAirSupport
+				{
+					myStart
+					{
+						x 182
+						z 134
+					}
+
+					myEnd
+					{
+						x 254
+						z 165
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 134
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 165
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_TacticalNuke
+				{
+					myStart
+					{
+						x 32
+						z 202
+					}
+
+					myEnd
+					{
+						x 104
+						z 233
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 202
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 233
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_PrecisionArtillery
+				{
+					myStart
+					{
+						x 107
+						z 304
+					}
+
+					myEnd
+					{
+						x 179
+						z 335
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 304
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 335
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_LaserBomb
+				{
+					myStart
+					{
+						x 182
+						z 236
+					}
+
+					myEnd
+					{
+						x 254
+						z 267
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 236
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 267
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_CarpetBombing
+				{
+					myStart
+					{
+						x 107
+						z 134
+					}
+
+					myEnd
+					{
+						x 179
+						z 165
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 134
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 165
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AirborneInfantry
+				{
+					myStart
+					{
+						x 32
+						z 168
+					}
+
+					myEnd
+					{
+						x 104
+						z 199
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 168
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 199
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AirToAir
+				{
+					myStart
+					{
+						x 107
+						z 168
+					}
+
+					myEnd
+					{
+						x 179
+						z 199
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 168
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 199
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_ChemicalStrike
+				{
+					myStart
+					{
+						x 182
+						z 168
+					}
+
+					myEnd
+					{
+						x 254
+						z 199
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 168
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 199
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AirDropTank
+				{
+					myStart
+					{
+						x 107
+						z 202
+					}
+
+					myEnd
+					{
+						x 179
+						z 233
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 202
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 233
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_NapalmStrike
+				{
+					myStart
+					{
+						x 32
+						z 236
+					}
+
+					myEnd
+					{
+						x 104
+						z 267
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 236
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 267
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AirDropTransport
+				{
+					myStart
+					{
+						x 107
+						z 236
+					}
+
+					myEnd
+					{
+						x 179
+						z 267
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 236
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 267
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_TankKiller
+				{
+					myStart
+					{
+						x 182
+						z 270
+					}
+
+					myEnd
+					{
+						x 254
+						z 301
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 270
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 301
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_DaisyCutter
+				{
+					myStart
+					{
+						x 32
+						z 134
+					}
+
+					myEnd
+					{
+						x 104
+						z 165
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 134
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 165
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_FuelAirBomb
+				{
+					myStart
+					{
+						x 32
+						z 134
+					}
+
+					myEnd
+					{
+						x 104
+						z 165
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 134
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 165
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Air
+				{
+					myStart
+					{
+						x 313
+						z 177
+					}
+
+					myEnd
+					{
+						x 343
+						z 207
+					}
+
+					myInnerStart
+					{
+						x 313
+						z 177
+					}
+
+					myInnerEnd
+					{
+						x 343
+						z 207
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Armor
+				{
+					myStart
+					{
+						x 313
+						z 210
+					}
+
+					myEnd
+					{
+						x 343
+						z 240
+					}
+
+					myInnerStart
+					{
+						x 313
+						z 210
+					}
+
+					myInnerEnd
+					{
+						x 343
+						z 240
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Support
+				{
+					myStart
+					{
+						x 313
+						z 276
+					}
+
+					myEnd
+					{
+						x 343
+						z 306
+					}
+
+					myInnerStart
+					{
+						x 313
+						z 276
+					}
+
+					myInnerEnd
+					{
+						x 343
+						z 306
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Infantry
+				{
+					myStart
+					{
+						x 313
+						z 243
+					}
+
+					myEnd
+					{
+						x 343
+						z 273
+					}
+
+					myInnerStart
+					{
+						x 313
+						z 243
+					}
+
+					myInnerEnd
+					{
+						x 343
+						z 273
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_NoneDestructive
+				{
+					myStart
+					{
+						x 280
+						z 177
+					}
+
+					myEnd
+					{
+						x 310
+						z 207
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 177
+					}
+
+					myInnerEnd
+					{
+						x 310
+						z 207
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Precision
+				{
+					myStart
+					{
+						x 280
+						z 210
+					}
+
+					myEnd
+					{
+						x 310
+						z 240
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 210
+					}
+
+					myInnerEnd
+					{
+						x 310
+						z 240
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tab_Destruction
+				{
+					myStart
+					{
+						x 280
+						z 243
+					}
+
+					myEnd
+					{
+						x 310
+						z 273
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 243
+					}
+
+					myInnerEnd
+					{
+						x 310
+						z 273
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_GoToDropZone
+				{
+					myStart
+					{
+						x 543
+						z 160
+					}
+
+					myEnd
+					{
+						x 577
+						z 194
+					}
+
+					myInnerStart
+					{
+						x 543
+						z 160
+					}
+
+					myInnerEnd
+					{
+						x 577
+						z 194
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_ToggleFormation
+				{
+					myStart
+					{
+						x 580
+						z 160
+					}
+
+					myEnd
+					{
+						x 614
+						z 194
+					}
+
+					myInnerStart
+					{
+						x 580
+						z 160
+					}
+
+					myInnerEnd
+					{
+						x 614
+						z 194
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_SwapUnitGroup
+				{
+					myStart
+					{
+						x 543
+						z 197
+					}
+
+					myEnd
+					{
+						x 577
+						z 231
+					}
+
+					myInnerStart
+					{
+						x 543
+						z 197
+					}
+
+					myInnerEnd
+					{
+						x 577
+						z 231
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_Objectives
+				{
+					myStart
+					{
+						x 262
+						z 132
+					}
+
+					myEnd
+					{
+						x 290
+						z 145
+					}
+
+					myInnerStart
+					{
+						x 262
+						z 132
+					}
+
+					myInnerEnd
+					{
+						x 290
+						z 145
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropShip_Arrive
+				{
+					myStart
+					{
+						x 365
+						z 297
+					}
+
+					myEnd
+					{
+						x 420
+						z 328
+					}
+
+					myInnerStart
+					{
+						x 365
+						z 297
+					}
+
+					myInnerEnd
+					{
+						x 420
+						z 328
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropShip_Return
+				{
+					myStart
+					{
+						x 365
+						z 331
+					}
+
+					myEnd
+					{
+						x 420
+						z 362
+					}
+
+					myInnerStart
+					{
+						x 365
+						z 331
+					}
+
+					myInnerEnd
+					{
+						x 420
+						z 362
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReadyButton
+				{
+					myStart
+					{
+						x 818
+						z 504
+					}
+
+					myEnd
+					{
+						x 869
+						z 542
+					}
+
+					myInnerStart
+					{
+						x 818
+						z 504
+					}
+
+					myInnerEnd
+					{
+						x 869
+						z 542
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TutorialLeft
+				{
+					myStart
+					{
+						x 924
+						z 804
+					}
+
+					myEnd
+					{
+						x 972
+						z 860
+					}
+
+					myInnerStart
+					{
+						x 924
+						z 804
+					}
+
+					myInnerEnd
+					{
+						x 972
+						z 860
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TutorialRight
+				{
+					myStart
+					{
+						x 975
+						z 804
+					}
+
+					myEnd
+					{
+						x 1022
+						z 860
+					}
+
+					myInnerStart
+					{
+						x 975
+						z 804
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 860
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TutorialUp
+				{
+					myStart
+					{
+						x 906
+						z 755
+					}
+
+					myEnd
+					{
+						x 963
+						z 801
+					}
+
+					myInnerStart
+					{
+						x 906
+						z 755
+					}
+
+					myInnerEnd
+					{
+						x 963
+						z 801
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TutorialDown
+				{
+					myStart
+					{
+						x 966
+						z 755
+					}
+
+					myEnd
+					{
+						x 1022
+						z 801
+					}
+
+					myInnerStart
+					{
+						x 966
+						z 755
+					}
+
+					myInnerEnd
+					{
+						x 1022
+						z 801
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tutorial_MovementLeft
+				{
+					myStart
+					{
+						x 761
+						z 761
+					}
+
+					myEnd
+					{
+						x 815
+						z 791
+					}
+
+					myInnerStart
+					{
+						x 761
+						z 761
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 791
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tutorial_MovementRight
+				{
+					myStart
+					{
+						x 761
+						z 794
+					}
+
+					myEnd
+					{
+						x 815
+						z 824
+					}
+
+					myInnerStart
+					{
+						x 761
+						z 794
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 824
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tutorial_MovementForward
+				{
+					myStart
+					{
+						x 845
+						z 791
+					}
+
+					myEnd
+					{
+						x 903
+						z 813
+					}
+
+					myInnerStart
+					{
+						x 845
+						z 791
+					}
+
+					myInnerEnd
+					{
+						x 903
+						z 813
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Tutorial_MovementBack
+				{
+					myStart
+					{
+						x 849
+						z 816
+					}
+
+					myEnd
+					{
+						x 921
+						z 847
+					}
+
+					myInnerStart
+					{
+						x 849
+						z 816
+					}
+
+					myInnerEnd
+					{
+						x 921
+						z 847
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_KillUnit_Default
+				{
+					myStart
+					{
+						x 666
+						z 646
+					}
+
+					myEnd
+					{
+						x 685
+						z 665
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 646
+					}
+
+					myInnerEnd
+					{
+						x 685
+						z 665
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_KillUnit_MouseOver
+				{
+					myStart
+					{
+						x 688
+						z 646
+					}
+
+					myEnd
+					{
+						x 707
+						z 665
+					}
+
+					myInnerStart
+					{
+						x 688
+						z 646
+					}
+
+					myInnerEnd
+					{
+						x 707
+						z 665
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_NextAbility_Click
+				{
+					myStart
+					{
+						x 715
+						z 324
+					}
+
+					myEnd
+					{
+						x 746
+						z 368
+					}
+
+					myInnerStart
+					{
+						x 715
+						z 324
+					}
+
+					myInnerEnd
+					{
+						x 746
+						z 368
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_PrevAbility_Click
+				{
+					myStart
+					{
+						x 715
+						z 277
+					}
+
+					myEnd
+					{
+						x 746
+						z 321
+					}
+
+					myInnerStart
+					{
+						x 715
+						z 277
+					}
+
+					myInnerEnd
+					{
+						x 746
+						z 321
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMapExtra
+				{
+					myStart
+					{
+						x 666
+						z 696
+					}
+
+					myEnd
+					{
+						x 756
+						z 778
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 696
+					}
+
+					myInnerEnd
+					{
+						x 756
+						z 778
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_BlueButton
+				{
+					myStart
+					{
+						x 666
+						z 668
+					}
+
+					myEnd
+					{
+						x 691
+						z 693
+					}
+
+					myInnerStart
+					{
+						x 666
+						z 668
+					}
+
+					myInnerEnd
+					{
+						x 691
+						z 693
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_BlueButtonMouseOver
+				{
+					myStart
+					{
+						x 694
+						z 668
+					}
+
+					myEnd
+					{
+						x 719
+						z 693
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 668
+					}
+
+					myInnerEnd
+					{
+						x 719
+						z 693
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_GrenadeLauncher
+				{
+					myStart
+					{
+						x 158
+						z 484
+					}
+
+					myEnd
+					{
+						x 207
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 158
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 207
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Sprint
+				{
+					myStart
+					{
+						x 158
+						z 432
+					}
+
+					myEnd
+					{
+						x 207
+						z 481
+					}
+
+					myInnerStart
+					{
+						x 158
+						z 432
+					}
+
+					myInnerEnd
+					{
+						x 207
+						z 481
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_DemolitionCharge
+				{
+					myStart
+					{
+						x 106
+						z 536
+					}
+
+					myEnd
+					{
+						x 155
+						z 585
+					}
+
+					myInnerStart
+					{
+						x 106
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 155
+						z 585
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_APM
+				{
+					myStart
+					{
+						x 210
+						z 588
+					}
+
+					myEnd
+					{
+						x 259
+						z 637
+					}
+
+					myInnerStart
+					{
+						x 210
+						z 588
+					}
+
+					myInnerEnd
+					{
+						x 259
+						z 637
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Heat
+				{
+					myStart
+					{
+						x 3
+						z 484
+					}
+
+					myEnd
+					{
+						x 52
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 52
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_WP
+				{
+					myStart
+					{
+						x 3
+						z 536
+					}
+
+					myEnd
+					{
+						x 52
+						z 585
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 52
+						z 585
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_ShillelaghMissle
+				{
+					myStart
+					{
+						x 3
+						z 432
+					}
+
+					myEnd
+					{
+						x 52
+						z 481
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 432
+					}
+
+					myInnerEnd
+					{
+						x 52
+						z 481
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_TOW
+				{
+					myStart
+					{
+						x 55
+						z 484
+					}
+
+					myEnd
+					{
+						x 104
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 55
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_MK19
+				{
+					myStart
+					{
+						x 55
+						z 588
+					}
+
+					myEnd
+					{
+						x 104
+						z 637
+					}
+
+					myInnerStart
+					{
+						x 55
+						z 588
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 637
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Smoke
+				{
+					myStart
+					{
+						x 106
+						z 484
+					}
+
+					myEnd
+					{
+						x 155
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 106
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 155
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_GroundSupport
+				{
+					myStart
+					{
+						x 106
+						z 588
+					}
+
+					myEnd
+					{
+						x 155
+						z 637
+					}
+
+					myInnerStart
+					{
+						x 106
+						z 588
+					}
+
+					myInnerEnd
+					{
+						x 155
+						z 637
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Flares
+				{
+					myStart
+					{
+						x 55
+						z 432
+					}
+
+					myEnd
+					{
+						x 104
+						z 481
+					}
+
+					myInnerStart
+					{
+						x 55
+						z 432
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 481
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Detonate
+				{
+					myStart
+					{
+						x 55
+						z 536
+					}
+
+					myEnd
+					{
+						x 104
+						z 585
+					}
+
+					myInnerStart
+					{
+						x 55
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 585
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_RepairVehicle
+				{
+					myStart
+					{
+						x 158
+						z 536
+					}
+
+					myEnd
+					{
+						x 207
+						z 585
+					}
+
+					myInnerStart
+					{
+						x 158
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 207
+						z 585
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_IRScan
+				{
+					myStart
+					{
+						x 106
+						z 432
+					}
+
+					myEnd
+					{
+						x 155
+						z 481
+					}
+
+					myInnerStart
+					{
+						x 106
+						z 432
+					}
+
+					myInnerEnd
+					{
+						x 155
+						z 481
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Hellfire
+				{
+					myStart
+					{
+						x 3
+						z 588
+					}
+
+					myEnd
+					{
+						x 52
+						z 637
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 588
+					}
+
+					myInnerEnd
+					{
+						x 52
+						z 637
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_AirToAir
+				{
+					myStart
+					{
+						x 159
+						z 588
+					}
+
+					myEnd
+					{
+						x 208
+						z 637
+					}
+
+					myInnerStart
+					{
+						x 158
+						z 588
+					}
+
+					myInnerEnd
+					{
+						x 207
+						z 637
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SpecialAbilityOverlay_Cooldown
+				{
+					myStart
+					{
+						x 708
+						z 2
+					}
+
+					myEnd
+					{
+						x 759
+						z 53
+					}
+
+					myInnerStart
+					{
+						x 708
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 759
+						z 53
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SpecialAbilityOverlay_Processing
+				{
+					myStart
+					{
+						x 762
+						z 56
+					}
+
+					myEnd
+					{
+						x 813
+						z 107
+					}
+
+					myInnerStart
+					{
+						x 762
+						z 56
+					}
+
+					myInnerEnd
+					{
+						x 813
+						z 107
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SpecialAbilityOverlay_Pending
+				{
+					myStart
+					{
+						x 762
+						z 2
+					}
+
+					myEnd
+					{
+						x 813
+						z 53
+					}
+
+					myInnerStart
+					{
+						x 762
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 813
+						z 53
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_MoveBackwards
+				{
+					myStart
+					{
+						x 326
+						z 309
+					}
+
+					myEnd
+					{
+						x 362
+						z 345
+					}
+
+					myInnerStart
+					{
+						x 326
+						z 309
+					}
+
+					myInnerEnd
+					{
+						x 362
+						z 345
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Armor
+				{
+					myStart
+					{
+						x 324
+						z 389
+					}
+
+					myEnd
+					{
+						x 367
+						z 410
+					}
+
+					myInnerStart
+					{
+						x 324
+						z 389
+					}
+
+					myInnerEnd
+					{
+						x 367
+						z 410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Artillery
+				{
+					myStart
+					{
+						x 370
+						z 413
+					}
+
+					myEnd
+					{
+						x 413
+						z 434
+					}
+
+					myInnerStart
+					{
+						x 370
+						z 413
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 434
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Infantry
+				{
+					myStart
+					{
+						x 324
+						z 413
+					}
+
+					myEnd
+					{
+						x 367
+						z 434
+					}
+
+					myInnerStart
+					{
+						x 324
+						z 413
+					}
+
+					myInnerEnd
+					{
+						x 367
+						z 434
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Repair
+				{
+					myStart
+					{
+						x 370
+						z 365
+					}
+
+					myEnd
+					{
+						x 413
+						z 386
+					}
+
+					myInnerStart
+					{
+						x 370
+						z 365
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 386
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Transport
+				{
+					myStart
+					{
+						x 324
+						z 365
+					}
+
+					myEnd
+					{
+						x 367
+						z 386
+					}
+
+					myInnerStart
+					{
+						x 324
+						z 365
+					}
+
+					myInnerEnd
+					{
+						x 367
+						z 386
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_Air
+				{
+					myStart
+					{
+						x 370
+						z 389
+					}
+
+					myEnd
+					{
+						x 413
+						z 410
+					}
+
+					myInnerStart
+					{
+						x 370
+						z 389
+					}
+
+					myInnerEnd
+					{
+						x 413
+						z 410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab myCombinedType_AntiAir
+				{
+					myStart
+					{
+						x 375
+						z 437
+					}
+
+					myEnd
+					{
+						x 418
+						z 458
+					}
+
+					myInnerStart
+					{
+						x 375
+						z 437
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 458
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FactionDefault
+				{
+					myStart
+					{
+						x 813
+						z 297
+					}
+
+					myEnd
+					{
+						x 883
+						z 318
+					}
+
+					myInnerStart
+					{
+						x 813
+						z 297
+					}
+
+					myInnerEnd
+					{
+						x 883
+						z 318
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_FactionMouseOver
+				{
+					myStart
+					{
+						x 813
+						z 273
+					}
+
+					myEnd
+					{
+						x 883
+						z 294
+					}
+
+					myInnerStart
+					{
+						x 813
+						z 273
+					}
+
+					myInnerEnd
+					{
+						x 883
+						z 294
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReinforcementButtonTopBg
+				{
+					myStart
+					{
+						x 807
+						z 321
+					}
+
+					myEnd
+					{
+						x 956
+						z 348
+					}
+
+					myInnerStart
+					{
+						x 807
+						z 321
+					}
+
+					myInnerEnd
+					{
+						x 956
+						z 348
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MiniMap_ToggleFormationSquare
+				{
+					myStart
+					{
+						x 580
+						z 197
+					}
+
+					myEnd
+					{
+						x 614
+						z 231
+					}
+
+					myInnerStart
+					{
+						x 580
+						z 197
+					}
+
+					myInnerEnd
+					{
+						x 614
+						z 231
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_GCV
+				{
+					myStart
+					{
+						x 48
+						z 343
+					}
+
+					myEnd
+					{
+						x 91
+						z 364
+					}
+
+					myInnerStart
+					{
+						x 48
+						z 343
+					}
+
+					myInnerEnd
+					{
+						x 91
+						z 364
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Dot
+				{
+					myStart
+					{
+						x 315
+						z 136
+					}
+
+					myEnd
+					{
+						x 324
+						z 145
+					}
+
+					myInnerStart
+					{
+						x 315
+						z 136
+					}
+
+					myInnerEnd
+					{
+						x 324
+						z 145
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_RepairBridge
+				{
+					myStart
+					{
+						x 182
+						z 304
+					}
+
+					myEnd
+					{
+						x 254
+						z 335
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 304
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 335
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_HeavyArtillery
+				{
+					myStart
+					{
+						x 107
+						z 270
+					}
+
+					myEnd
+					{
+						x 179
+						z 301
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 270
+					}
+
+					myInnerEnd
+					{
+						x 179
+						z 301
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_LightArtillery
+				{
+					myStart
+					{
+						x 32
+						z 304
+					}
+
+					myEnd
+					{
+						x 104
+						z 335
+					}
+
+					myInnerStart
+					{
+						x 32
+						z 304
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 335
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Fortification_AntiTank
+				{
+					myStart
+					{
+						x 232
+						z 439
+					}
+
+					myEnd
+					{
+						x 275
+						z 460
+					}
+
+					myInnerStart
+					{
+						x 232
+						z 439
+					}
+
+					myInnerEnd
+					{
+						x 275
+						z 460
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Fortification_AntiAir
+				{
+					myStart
+					{
+						x 278
+						z 439
+					}
+
+					myEnd
+					{
+						x 321
+						z 460
+					}
+
+					myInnerStart
+					{
+						x 278
+						z 439
+					}
+
+					myInnerEnd
+					{
+						x 321
+						z 460
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitType_Fortification_MachineGun
+				{
+					myStart
+					{
+						x 232
+						z 415
+					}
+
+					myEnd
+					{
+						x 275
+						z 436
+					}
+
+					myInnerStart
+					{
+						x 232
+						z 415
+					}
+
+					myInnerEnd
+					{
+						x 275
+						z 436
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Resuply_MouseOver
+				{
+					myStart
+					{
+						x 605
+						z 296
+					}
+
+					myEnd
+					{
+						x 628
+						z 319
+					}
+
+					myInnerStart
+					{
+						x 605
+						z 296
+					}
+
+					myInnerEnd
+					{
+						x 628
+						z 319
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Resuply_Click
+				{
+					myStart
+					{
+						x 579
+						z 296
+					}
+
+					myEnd
+					{
+						x 602
+						z 319
+					}
+
+					myInnerStart
+					{
+						x 579
+						z 296
+					}
+
+					myInnerEnd
+					{
+						x 602
+						z 319
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Resuply_Default
+				{
+					myStart
+					{
+						x 631
+						z 296
+					}
+
+					myEnd
+					{
+						x 654
+						z 319
+					}
+
+					myInnerStart
+					{
+						x 631
+						z 296
+					}
+
+					myInnerEnd
+					{
+						x 654
+						z 319
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WorldIcon_SingleProgress
+				{
+					myStart
+					{
+						x 29
+						z 415
+					}
+
+					myEnd
+					{
+						x 95
+						z 424
+					}
+
+					myInnerStart
+					{
+						x 29
+						z 415
+					}
+
+					myInnerEnd
+					{
+						x 95
+						z 424
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WorldIcon_SingleProgressBG
+				{
+					myStart
+					{
+						x 218
+						z 463
+					}
+
+					myEnd
+					{
+						x 284
+						z 472
+					}
+
+					myInnerStart
+					{
+						x 218
+						z 463
+					}
+
+					myInnerEnd
+					{
+						x 284
+						z 472
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WorldIcon_SingleHealth
+				{
+					myStart
+					{
+						x 98
+						z 415
+					}
+
+					myEnd
+					{
+						x 229
+						z 424
+					}
+
+					myInnerStart
+					{
+						x 98
+						z 415
+					}
+
+					myInnerEnd
+					{
+						x 229
+						z 424
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WorldIcon_SingleHealthBG
+				{
+					myStart
+					{
+						x 287
+						z 464
+					}
+
+					myEnd
+					{
+						x 418
+						z 473
+					}
+
+					myInnerStart
+					{
+						x 287
+						z 464
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 473
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UnitBuy_DemolitionSquad
+				{
+					myStart
+					{
+						x 294
+						z 77
+					}
+
+					myEnd
+					{
+						x 337
+						z 96
+					}
+
+					myInnerStart
+					{
+						x 294
+						z 77
+					}
+
+					myInnerEnd
+					{
+						x 337
+						z 96
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Artillery
+				{
+					myStart
+					{
+						x 801
+						z 863
+					}
+
+					myEnd
+					{
+						x 832
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 801
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 832
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_AirSupport
+				{
+					myStart
+					{
+						x 835
+						z 913
+					}
+
+					myEnd
+					{
+						x 866
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 835
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 866
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Repair
+				{
+					myStart
+					{
+						x 903
+						z 913
+					}
+
+					myEnd
+					{
+						x 934
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 903
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 934
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_AntiAir
+				{
+					myStart
+					{
+						x 937
+						z 913
+					}
+
+					myEnd
+					{
+						x 968
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 937
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 968
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Defend
+				{
+					myStart
+					{
+						x 903
+						z 863
+					}
+
+					myEnd
+					{
+						x 934
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 903
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 934
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_WriteToPos
+				{
+					myStart
+					{
+						x 937
+						z 863
+					}
+
+					myEnd
+					{
+						x 968
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 937
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 968
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_CeaseFire
+				{
+					myStart
+					{
+						x 869
+						z 913
+					}
+
+					myEnd
+					{
+						x 900
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 869
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 900
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_GroundSupport
+				{
+					myStart
+					{
+						x 869
+						z 863
+					}
+
+					myEnd
+					{
+						x 900
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 869
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 900
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Attention
+				{
+					myStart
+					{
+						x 801
+						z 913
+					}
+
+					myEnd
+					{
+						x 832
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 801
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 832
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Talk
+				{
+					myStart
+					{
+						x 835
+						z 863
+					}
+
+					myEnd
+					{
+						x 866
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 835
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 866
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_Advance
+				{
+					myStart
+					{
+						x 767
+						z 913
+					}
+
+					myEnd
+					{
+						x 798
+						z 960
+					}
+
+					myInnerStart
+					{
+						x 767
+						z 913
+					}
+
+					myInnerEnd
+					{
+						x 798
+						z 960
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_TacticalAid
+				{
+					myStart
+					{
+						x 804
+						z 963
+					}
+
+					myEnd
+					{
+						x 835
+						z 1010
+					}
+
+					myInnerStart
+					{
+						x 804
+						z 963
+					}
+
+					myInnerEnd
+					{
+						x 835
+						z 1010
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Request_GoingHere
+				{
+					myStart
+					{
+						x 767
+						z 863
+					}
+
+					myEnd
+					{
+						x 798
+						z 910
+					}
+
+					myInnerStart
+					{
+						x 767
+						z 863
+					}
+
+					myInnerEnd
+					{
+						x 798
+						z 910
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRole_Infantry
+				{
+					myStart
+					{
+						x 350
+						z 536
+					}
+
+					myEnd
+					{
+						x 418
+						z 551
+					}
+
+					myInnerStart
+					{
+						x 350
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 551
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRole_Air
+				{
+					myStart
+					{
+						x 350
+						z 518
+					}
+
+					myEnd
+					{
+						x 418
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 350
+						z 518
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRole_Armor
+				{
+					myStart
+					{
+						x 350
+						z 500
+					}
+
+					myEnd
+					{
+						x 418
+						z 515
+					}
+
+					myInnerStart
+					{
+						x 350
+						z 500
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 515
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ChangeRole_Support
+				{
+					myStart
+					{
+						x 350
+						z 482
+					}
+
+					myEnd
+					{
+						x 418
+						z 497
+					}
+
+					myInnerStart
+					{
+						x 350
+						z 482
+					}
+
+					myInnerEnd
+					{
+						x 418
+						z 497
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropZone_Infantry
+				{
+					myStart
+					{
+						x 631
+						z 781
+					}
+
+					myEnd
+					{
+						x 693
+						z 828
+					}
+
+					myInnerStart
+					{
+						x 631
+						z 781
+					}
+
+					myInnerEnd
+					{
+						x 693
+						z 828
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropZone_Armor
+				{
+					myStart
+					{
+						x 696
+						z 781
+					}
+
+					myEnd
+					{
+						x 758
+						z 828
+					}
+
+					myInnerStart
+					{
+						x 696
+						z 781
+					}
+
+					myInnerEnd
+					{
+						x 758
+						z 828
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropZone_Support
+				{
+					myStart
+					{
+						x 631
+						z 831
+					}
+
+					myEnd
+					{
+						x 693
+						z 878
+					}
+
+					myInnerStart
+					{
+						x 631
+						z 831
+					}
+
+					myInnerEnd
+					{
+						x 693
+						z 878
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_DropZone_Air
+				{
+					myStart
+					{
+						x 696
+						z 831
+					}
+
+					myEnd
+					{
+						x 758
+						z 878
+					}
+
+					myInnerStart
+					{
+						x 696
+						z 831
+					}
+
+					myInnerEnd
+					{
+						x 758
+						z 878
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_RedButton
+				{
+					myStart
+					{
+						x 942
+						z 997
+					}
+
+					myEnd
+					{
+						x 969
+						z 1024
+					}
+
+					myInnerStart
+					{
+						x 942
+						z 997
+					}
+
+					myInnerEnd
+					{
+						x 969
+						z 1024
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_RedButtonMouseOver
+				{
+					myStart
+					{
+						x 942
+						z 969
+					}
+
+					myEnd
+					{
+						x 969
+						z 996
+					}
+
+					myInnerStart
+					{
+						x 942
+						z 969
+					}
+
+					myInnerEnd
+					{
+						x 969
+						z 996
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_SmokeHeavyArtillery
+				{
+					myStart
+					{
+						x 262
+						z 484
+					}
+
+					myEnd
+					{
+						x 311
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 262
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 311
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_CallInArtillery
+				{
+					myStart
+					{
+						x 210
+						z 536
+					}
+
+					myEnd
+					{
+						x 259
+						z 585
+					}
+
+					myInnerStart
+					{
+						x 210
+						z 536
+					}
+
+					myInnerEnd
+					{
+						x 259
+						z 585
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_IncendierRound
+				{
+					myStart
+					{
+						x 210
+						z 484
+					}
+
+					myEnd
+					{
+						x 259
+						z 533
+					}
+
+					myInnerStart
+					{
+						x 210
+						z 484
+					}
+
+					myInnerEnd
+					{
+						x 259
+						z 533
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_DotEnemy
+				{
+					myStart
+					{
+						x 299
+						z 137
+					}
+
+					myEnd
+					{
+						x 312
+						z 145
+					}
+
+					myInnerStart
+					{
+						x 299
+						z 137
+					}
+
+					myInnerEnd
+					{
+						x 312
+						z 145
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Atest_SelectRole
+				{
+					myStart
+					{
+						x 672
+						z 498
+					}
+
+					myEnd
+					{
+						x 815
+						z 519
+					}
+
+					myInnerStart
+					{
+						x 672
+						z 498
+					}
+
+					myInnerEnd
+					{
+						x 815
+						z 519
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Lock_Open
+				{
+					myStart
+					{
+						x 729
+						z 1759
+					}
+
+					myEnd
+					{
+						x 742
+						z 1774
+					}
+
+					myInnerStart
+					{
+						x 729
+						z 1759
+					}
+
+					myInnerEnd
+					{
+						x 742
+						z 1774
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Lock_Closed
+				{
+					myStart
+					{
+						x 745
+						z 1759
+					}
+
+					myEnd
+					{
+						x 758
+						z 1774
+					}
+
+					myInnerStart
+					{
+						x 745
+						z 1759
+					}
+
+					myInnerEnd
+					{
+						x 758
+						z 1774
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Icon_Mail
+				{
+					myStart
+					{
+						x 739
+						z 1745
+					}
+
+					myEnd
+					{
+						x 755
+						z 1756
+					}
+
+					myInnerStart
+					{
+						x 739
+						z 1745
+					}
+
+					myInnerEnd
+					{
+						x 755
+						z 1756
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Icon_Online
+				{
+					myStart
+					{
+						x 769
+						z 1742
+					}
+
+					myEnd
+					{
+						x 777
+						z 1756
+					}
+
+					myInnerStart
+					{
+						x 769
+						z 1742
+					}
+
+					myInnerEnd
+					{
+						x 777
+						z 1756
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Icon_Offline
+				{
+					myStart
+					{
+						x 758
+						z 1742
+					}
+
+					myEnd
+					{
+						x 766
+						z 1756
+					}
+
+					myInnerStart
+					{
+						x 758
+						z 1742
+					}
+
+					myInnerEnd
+					{
+						x 766
+						z 1756
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Icon_Playing
+				{
+					myStart
+					{
+						x 725
+						z 1744
+					}
+
+					myEnd
+					{
+						x 736
+						z 1756
+					}
+
+					myInnerStart
+					{
+						x 725
+						z 1744
+					}
+
+					myInnerEnd
+					{
+						x 736
+						z 1756
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Faction_Nato
+				{
+					myStart
+					{
+						x 621
+						z 881
+					}
+
+					myEnd
+					{
+						x 691
+						z 902
+					}
+
+					myInnerStart
+					{
+						x 621
+						z 881
+					}
+
+					myInnerEnd
+					{
+						x 691
+						z 902
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Faction_Ussr
+				{
+					myStart
+					{
+						x 694
+						z 881
+					}
+
+					myEnd
+					{
+						x 764
+						z 902
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 881
+					}
+
+					myInnerEnd
+					{
+						x 764
+						z 902
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Faction_Usa
+				{
+					myStart
+					{
+						x 694
+						z 905
+					}
+
+					myEnd
+					{
+						x 764
+						z 926
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 905
+					}
+
+					myInnerEnd
+					{
+						x 764
+						z 926
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Objectives
+				{
+					myStart
+					{
+						x 617
+						z 187
+					}
+
+					myEnd
+					{
+						x 642
+						z 212
+					}
+
+					myInnerStart
+					{
+						x 617
+						z 187
+					}
+
+					myInnerEnd
+					{
+						x 642
+						z 212
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Contacts
+				{
+					myStart
+					{
+						x 617
+						z 159
+					}
+
+					myEnd
+					{
+						x 642
+						z 184
+					}
+
+					myInnerStart
+					{
+						x 617
+						z 159
+					}
+
+					myInnerEnd
+					{
+						x 642
+						z 184
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_HeavyTank
+				{
+					myStart
+					{
+						x 3
+						z 2
+					}
+
+					myEnd
+					{
+						x 71
+						z 29
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 71
+						z 29
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_MediumTank
+				{
+					myStart
+					{
+						x 3
+						z 32
+					}
+
+					myEnd
+					{
+						x 71
+						z 59
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 32
+					}
+
+					myInnerEnd
+					{
+						x 71
+						z 59
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_LightTank
+				{
+					myStart
+					{
+						x 3
+						z 62
+					}
+
+					myEnd
+					{
+						x 71
+						z 89
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 62
+					}
+
+					myInnerEnd
+					{
+						x 71
+						z 89
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_ScoutHelicopter
+				{
+					myStart
+					{
+						x 145
+						z 92
+					}
+
+					myEnd
+					{
+						x 213
+						z 119
+					}
+
+					myInnerStart
+					{
+						x 145
+						z 92
+					}
+
+					myInnerEnd
+					{
+						x 213
+						z 119
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_MediumAttackHelicopter
+				{
+					myStart
+					{
+						x 216
+						z 96
+					}
+
+					myEnd
+					{
+						x 284
+						z 123
+					}
+
+					myInnerStart
+					{
+						x 216
+						z 96
+					}
+
+					myInnerEnd
+					{
+						x 284
+						z 123
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_HeavyAttackHelicopter
+				{
+					myStart
+					{
+						x 216
+						z 36
+					}
+
+					myEnd
+					{
+						x 284
+						z 63
+					}
+
+					myInnerStart
+					{
+						x 216
+						z 36
+					}
+
+					myInnerEnd
+					{
+						x 284
+						z 63
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_TransportHelicopter
+				{
+					myStart
+					{
+						x 216
+						z 66
+					}
+
+					myEnd
+					{
+						x 284
+						z 93
+					}
+
+					myInnerStart
+					{
+						x 216
+						z 66
+					}
+
+					myInnerEnd
+					{
+						x 284
+						z 93
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_HeavyArtillery
+				{
+					myStart
+					{
+						x 3
+						z 92
+					}
+
+					myEnd
+					{
+						x 71
+						z 119
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 92
+					}
+
+					myInnerEnd
+					{
+						x 71
+						z 119
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_MediumArtillery
+				{
+					myStart
+					{
+						x 361
+						z 644
+					}
+
+					myEnd
+					{
+						x 429
+						z 671
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 644
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 671
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_Truck
+				{
+					myStart
+					{
+						x 145
+						z 2
+					}
+
+					myEnd
+					{
+						x 213
+						z 29
+					}
+
+					myInnerStart
+					{
+						x 145
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 213
+						z 29
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_Jeep
+				{
+					myStart
+					{
+						x 74
+						z 62
+					}
+
+					myEnd
+					{
+						x 142
+						z 89
+					}
+
+					myInnerStart
+					{
+						x 74
+						z 62
+					}
+
+					myInnerEnd
+					{
+						x 142
+						z 89
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_AAHeavy
+				{
+					myStart
+					{
+						x 145
+						z 62
+					}
+
+					myEnd
+					{
+						x 213
+						z 89
+					}
+
+					myInnerStart
+					{
+						x 145
+						z 62
+					}
+
+					myInnerEnd
+					{
+						x 213
+						z 89
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_AAMedium
+				{
+					myStart
+					{
+						x 74
+						z 92
+					}
+
+					myEnd
+					{
+						x 142
+						z 119
+					}
+
+					myInnerStart
+					{
+						x 74
+						z 92
+					}
+
+					myInnerEnd
+					{
+						x 142
+						z 119
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_Repair
+				{
+					myStart
+					{
+						x 145
+						z 32
+					}
+
+					myEnd
+					{
+						x 213
+						z 59
+					}
+
+					myInnerStart
+					{
+						x 145
+						z 32
+					}
+
+					myInnerEnd
+					{
+						x 213
+						z 59
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_AATT
+				{
+					myStart
+					{
+						x 74
+						z 2
+					}
+
+					myEnd
+					{
+						x 142
+						z 29
+					}
+
+					myInnerStart
+					{
+						x 74
+						z 2
+					}
+
+					myInnerEnd
+					{
+						x 142
+						z 29
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_ScoutHelicopter
+				{
+					myStart
+					{
+						x 361
+						z 674
+					}
+
+					myEnd
+					{
+						x 429
+						z 701
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 674
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 701
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_MediumAttackHelicopter
+				{
+					myStart
+					{
+						x 361
+						z 734
+					}
+
+					myEnd
+					{
+						x 429
+						z 761
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 734
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 761
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_HeavyAttackHelicopter
+				{
+					myStart
+					{
+						x 361
+						z 764
+					}
+
+					myEnd
+					{
+						x 429
+						z 791
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 764
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 791
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_TransportHelicopter
+				{
+					myStart
+					{
+						x 361
+						z 704
+					}
+
+					myEnd
+					{
+						x 429
+						z 731
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 704
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 731
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_Truck
+				{
+					myStart
+					{
+						x 290
+						z 734
+					}
+
+					myEnd
+					{
+						x 358
+						z 761
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 734
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 761
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_HeavyTank
+				{
+					myStart
+					{
+						x 219
+						z 644
+					}
+
+					myEnd
+					{
+						x 287
+						z 671
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 644
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 671
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_MediumTank
+				{
+					myStart
+					{
+						x 219
+						z 674
+					}
+
+					myEnd
+					{
+						x 287
+						z 701
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 674
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 701
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_LightTank
+				{
+					myStart
+					{
+						x 219
+						z 704
+					}
+
+					myEnd
+					{
+						x 287
+						z 731
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 704
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 731
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_Jeep
+				{
+					myStart
+					{
+						x 290
+						z 764
+					}
+
+					myEnd
+					{
+						x 358
+						z 791
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 764
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 791
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_AAHeavy
+				{
+					myStart
+					{
+						x 290
+						z 674
+					}
+
+					myEnd
+					{
+						x 358
+						z 701
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 674
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 701
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_Rifleman
+				{
+					myStart
+					{
+						x 290
+						z 614
+					}
+
+					myEnd
+					{
+						x 358
+						z 641
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 614
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 641
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_AAMedium
+				{
+					myStart
+					{
+						x 290
+						z 704
+					}
+
+					myEnd
+					{
+						x 358
+						z 731
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 704
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 731
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_Repair
+				{
+					myStart
+					{
+						x 290
+						z 644
+					}
+
+					myEnd
+					{
+						x 358
+						z 671
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 644
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 671
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_HeavyArtillery
+				{
+					myStart
+					{
+						x 219
+						z 794
+					}
+
+					myEnd
+					{
+						x 287
+						z 821
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 794
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 821
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_MediumArtillery
+				{
+					myStart
+					{
+						x 290
+						z 794
+					}
+
+					myEnd
+					{
+						x 358
+						z 821
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 794
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 821
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_AATT
+				{
+					myStart
+					{
+						x 219
+						z 764
+					}
+
+					myEnd
+					{
+						x 287
+						z 791
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 764
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 791
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_Rifleman
+				{
+					myStart
+					{
+						x 361
+						z 794
+					}
+
+					myEnd
+					{
+						x 429
+						z 821
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 794
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 821
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_HeavyTank
+				{
+					myStart
+					{
+						x 268
+						z 824
+					}
+
+					myEnd
+					{
+						x 336
+						z 851
+					}
+
+					myInnerStart
+					{
+						x 268
+						z 824
+					}
+
+					myInnerEnd
+					{
+						x 336
+						z 851
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_MediumTank
+				{
+					myStart
+					{
+						x 268
+						z 854
+					}
+
+					myEnd
+					{
+						x 336
+						z 881
+					}
+
+					myInnerStart
+					{
+						x 268
+						z 854
+					}
+
+					myInnerEnd
+					{
+						x 336
+						z 881
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_LightTank
+				{
+					myStart
+					{
+						x 268
+						z 884
+					}
+
+					myEnd
+					{
+						x 336
+						z 911
+					}
+
+					myInnerStart
+					{
+						x 268
+						z 884
+					}
+
+					myInnerEnd
+					{
+						x 336
+						z 911
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_Jeep
+				{
+					myStart
+					{
+						x 339
+						z 854
+					}
+
+					myEnd
+					{
+						x 407
+						z 881
+					}
+
+					myInnerStart
+					{
+						x 339
+						z 854
+					}
+
+					myInnerEnd
+					{
+						x 407
+						z 881
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_Truck
+				{
+					myStart
+					{
+						x 339
+						z 884
+					}
+
+					myEnd
+					{
+						x 407
+						z 911
+					}
+
+					myInnerStart
+					{
+						x 339
+						z 884
+					}
+
+					myInnerEnd
+					{
+						x 407
+						z 911
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_Rifleman
+				{
+					myStart
+					{
+						x 481
+						z 944
+					}
+
+					myEnd
+					{
+						x 549
+						z 971
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 944
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 971
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_HeavyAttackHelicopter
+				{
+					myStart
+					{
+						x 481
+						z 914
+					}
+
+					myEnd
+					{
+						x 549
+						z 941
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 914
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 941
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_MediumAttackHelicopter
+				{
+					myStart
+					{
+						x 481
+						z 884
+					}
+
+					myEnd
+					{
+						x 549
+						z 911
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 884
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 911
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_TransportHelicopter
+				{
+					myStart
+					{
+						x 481
+						z 854
+					}
+
+					myEnd
+					{
+						x 549
+						z 881
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 854
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 881
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_ScoutHelicopter
+				{
+					myStart
+					{
+						x 481
+						z 824
+					}
+
+					myEnd
+					{
+						x 549
+						z 851
+					}
+
+					myInnerStart
+					{
+						x 481
+						z 824
+					}
+
+					myInnerEnd
+					{
+						x 549
+						z 851
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_HeavyArtillery
+				{
+					myStart
+					{
+						x 410
+						z 824
+					}
+
+					myEnd
+					{
+						x 478
+						z 851
+					}
+
+					myInnerStart
+					{
+						x 410
+						z 824
+					}
+
+					myInnerEnd
+					{
+						x 478
+						z 851
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_MediumArtillery
+				{
+					myStart
+					{
+						x 410
+						z 854
+					}
+
+					myEnd
+					{
+						x 478
+						z 881
+					}
+
+					myInnerStart
+					{
+						x 410
+						z 854
+					}
+
+					myInnerEnd
+					{
+						x 478
+						z 881
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_AAHeavy
+				{
+					myStart
+					{
+						x 410
+						z 884
+					}
+
+					myEnd
+					{
+						x 478
+						z 911
+					}
+
+					myInnerStart
+					{
+						x 410
+						z 884
+					}
+
+					myInnerEnd
+					{
+						x 478
+						z 911
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_AAMedium
+				{
+					myStart
+					{
+						x 410
+						z 914
+					}
+
+					myEnd
+					{
+						x 478
+						z 941
+					}
+
+					myInnerStart
+					{
+						x 410
+						z 914
+					}
+
+					myInnerEnd
+					{
+						x 478
+						z 941
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_Repair
+				{
+					myStart
+					{
+						x 339
+						z 914
+					}
+
+					myEnd
+					{
+						x 407
+						z 941
+					}
+
+					myInnerStart
+					{
+						x 339
+						z 914
+					}
+
+					myInnerEnd
+					{
+						x 407
+						z 941
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_AATT
+				{
+					myStart
+					{
+						x 268
+						z 914
+					}
+
+					myEnd
+					{
+						x 336
+						z 941
+					}
+
+					myInnerStart
+					{
+						x 268
+						z 914
+					}
+
+					myInnerEnd
+					{
+						x 336
+						z 941
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_NatoBuy_ATT
+				{
+					myStart
+					{
+						x 74
+						z 32
+					}
+
+					myEnd
+					{
+						x 142
+						z 59
+					}
+
+					myInnerStart
+					{
+						x 74
+						z 32
+					}
+
+					myInnerEnd
+					{
+						x 142
+						z 59
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UsBuy_ATT
+				{
+					myStart
+					{
+						x 219
+						z 734
+					}
+
+					myEnd
+					{
+						x 287
+						z 761
+					}
+
+					myInnerStart
+					{
+						x 219
+						z 734
+					}
+
+					myInnerEnd
+					{
+						x 287
+						z 761
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_UssrBuy_ATT
+				{
+					myStart
+					{
+						x 339
+						z 824
+					}
+
+					myEnd
+					{
+						x 407
+						z 851
+					}
+
+					myInnerStart
+					{
+						x 339
+						z 824
+					}
+
+					myInnerEnd
+					{
+						x 407
+						z 851
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Sniper
+				{
+					myStart
+					{
+						x 361
+						z 554
+					}
+
+					myEnd
+					{
+						x 429
+						z 581
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 554
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 581
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Engineer
+				{
+					myStart
+					{
+						x 361
+						z 584
+					}
+
+					myEnd
+					{
+						x 429
+						z 611
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 584
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 611
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_AntiAir
+				{
+					myStart
+					{
+						x 290
+						z 584
+					}
+
+					myEnd
+					{
+						x 358
+						z 611
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 584
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 611
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_AntiTank
+				{
+					myStart
+					{
+						x 290
+						z 554
+					}
+
+					myEnd
+					{
+						x 358
+						z 581
+					}
+
+					myInnerStart
+					{
+						x 290
+						z 554
+					}
+
+					myInnerEnd
+					{
+						x 358
+						z 581
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab UnitIcon_Paratrooper
+				{
+					myStart
+					{
+						x 361
+						z 614
+					}
+
+					myEnd
+					{
+						x 429
+						z 641
+					}
+
+					myInnerStart
+					{
+						x 361
+						z 614
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 641
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BG
+				{
+					myStart
+					{
+						x 3
+						z 1498
+					}
+
+					myEnd
+					{
+						x 277
+						z 1621
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 1498
+					}
+
+					myInnerEnd
+					{
+						x 277
+						z 1621
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_RIGHT_BG
+				{
+					myStart
+					{
+						x 618
+						z 1222
+					}
+
+					myEnd
+					{
+						x 738
+						z 1378
+					}
+
+					myInnerStart
+					{
+						x 618
+						z 1222
+					}
+
+					myInnerEnd
+					{
+						x 738
+						z 1378
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_LEFT_BG
+				{
+					myStart
+					{
+						x 252
+						z 1862
+					}
+
+					myEnd
+					{
+						x 380
+						z 2018
+					}
+
+					myInnerStart
+					{
+						x 252
+						z 1862
+					}
+
+					myInnerEnd
+					{
+						x 380
+						z 2018
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_INFOLEFT_BG
+				{
+					myStart
+					{
+						x 2
+						z 1623
+					}
+
+					myEnd
+					{
+						x 250
+						z 1801
+					}
+
+					myInnerStart
+					{
+						x 2
+						z 1623
+					}
+
+					myInnerEnd
+					{
+						x 250
+						z 1801
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_INFORIGHT_BG
+				{
+					myStart
+					{
+						x 5
+						z 1802
+					}
+
+					myEnd
+					{
+						x 250
+						z 1980
+					}
+
+					myInnerStart
+					{
+						x 5
+						z 1802
+					}
+
+					myInnerEnd
+					{
+						x 250
+						z 1980
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Default
+				{
+					myStart
+					{
+						x 684
+						z 1523
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1596
+					}
+
+					myInnerStart
+					{
+						x 684
+						z 1523
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1596
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_MouseOver
+				{
+					myStart
+					{
+						x 684
+						z 1447
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1520
+					}
+
+					myInnerStart
+					{
+						x 684
+						z 1447
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1520
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Default_Left
+				{
+					myStart
+					{
+						x 347
+						z 1457
+					}
+
+					myEnd
+					{
+						x 681
+						z 1530
+					}
+
+					myInnerStart
+					{
+						x 347
+						z 1457
+					}
+
+					myInnerEnd
+					{
+						x 681
+						z 1530
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Left_MouseOver
+				{
+					myStart
+					{
+						x 347
+						z 1381
+					}
+
+					myEnd
+					{
+						x 681
+						z 1454
+					}
+
+					myInnerStart
+					{
+						x 347
+						z 1381
+					}
+
+					myInnerEnd
+					{
+						x 681
+						z 1454
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Air
+				{
+					myStart
+					{
+						x 825
+						z 1599
+					}
+
+					myEnd
+					{
+						x 865
+						z 1630
+					}
+
+					myInnerStart
+					{
+						x 825
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 865
+						z 1630
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Armor
+				{
+					myStart
+					{
+						x 787
+						z 1599
+					}
+
+					myEnd
+					{
+						x 822
+						z 1639
+					}
+
+					myInnerStart
+					{
+						x 787
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 822
+						z 1639
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Infantry
+				{
+					myStart
+					{
+						x 749
+						z 1599
+					}
+
+					myEnd
+					{
+						x 784
+						z 1628
+					}
+
+					myInnerStart
+					{
+						x 749
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 784
+						z 1628
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectRole_Support
+				{
+					myStart
+					{
+						x 697
+						z 1599
+					}
+
+					myEnd
+					{
+						x 746
+						z 1630
+					}
+
+					myInnerStart
+					{
+						x 697
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 746
+						z 1630
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab RequestButton_Left_Default
+				{
+					myStart
+					{
+						x 741
+						z 1408
+					}
+
+					myEnd
+					{
+						x 950
+						z 1441
+					}
+
+					myInnerStart
+					{
+						x 741
+						z 1408
+					}
+
+					myInnerEnd
+					{
+						x 950
+						z 1441
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab RequestButton_Right_Default
+				{
+					myStart
+					{
+						x 741
+						z 1336
+					}
+
+					myEnd
+					{
+						x 950
+						z 1369
+					}
+
+					myInnerStart
+					{
+						x 750
+						z 1340
+					}
+
+					myInnerEnd
+					{
+						x 941
+						z 1365
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab RequestButton_Left_MouseOver
+				{
+					myStart
+					{
+						x 741
+						z 1372
+					}
+
+					myEnd
+					{
+						x 950
+						z 1405
+					}
+
+					myInnerStart
+					{
+						x 741
+						z 1372
+					}
+
+					myInnerEnd
+					{
+						x 950
+						z 1405
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab RequestButton_Right_MouseOver
+				{
+					myStart
+					{
+						x 741
+						z 1300
+					}
+
+					myEnd
+					{
+						x 950
+						z 1333
+					}
+
+					myInnerStart
+					{
+						x 741
+						z 1300
+					}
+
+					myInnerEnd
+					{
+						x 950
+						z 1333
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_AirStrike
+				{
+					myStart
+					{
+						x 182
+						z 202
+					}
+
+					myEnd
+					{
+						x 254
+						z 233
+					}
+
+					myInnerStart
+					{
+						x 182
+						z 202
+					}
+
+					myInnerEnd
+					{
+						x 254
+						z 233
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_DropDown_Default
+				{
+					myStart
+					{
+						x 741
+						z 1264
+					}
+
+					myEnd
+					{
+						x 950
+						z 1297
+					}
+
+					myInnerStart
+					{
+						x 741
+						z 1264
+					}
+
+					myInnerEnd
+					{
+						x 950
+						z 1297
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_DropDown_MouseOver
+				{
+					myStart
+					{
+						x 741
+						z 1228
+					}
+
+					myEnd
+					{
+						x 950
+						z 1261
+					}
+
+					myInnerStart
+					{
+						x 741
+						z 1228
+					}
+
+					myInnerEnd
+					{
+						x 950
+						z 1261
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Air
+				{
+					myStart
+					{
+						x 953
+						z 1342
+					}
+
+					myEnd
+					{
+						x 984
+						z 1373
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1342
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1373
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Support
+				{
+					myStart
+					{
+						x 953
+						z 1308
+					}
+
+					myEnd
+					{
+						x 984
+						z 1339
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1308
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1339
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Armor
+				{
+					myStart
+					{
+						x 953
+						z 1274
+					}
+
+					myEnd
+					{
+						x 984
+						z 1305
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1274
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1305
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Repair
+				{
+					myStart
+					{
+						x 953
+						z 1376
+					}
+
+					myEnd
+					{
+						x 984
+						z 1407
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1376
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1407
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_TacticalAid
+				{
+					myStart
+					{
+						x 987
+						z 1410
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1441
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1410
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1441
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Attention
+				{
+					myStart
+					{
+						x 953
+						z 1206
+					}
+
+					myEnd
+					{
+						x 984
+						z 1237
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1206
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1237
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Talk
+				{
+					myStart
+					{
+						x 953
+						z 1240
+					}
+
+					myEnd
+					{
+						x 984
+						z 1271
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1240
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1271
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_GoingHere
+				{
+					myStart
+					{
+						x 987
+						z 1274
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1305
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1274
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1305
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_CeaseFire
+				{
+					myStart
+					{
+						x 987
+						z 1376
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1407
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1376
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1407
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Defend
+				{
+					myStart
+					{
+						x 987
+						z 1342
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1373
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1342
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1373
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_Advance
+				{
+					myStart
+					{
+						x 987
+						z 1308
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1339
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1308
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1339
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_WriteToPos
+				{
+					myStart
+					{
+						x 987
+						z 1240
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1271
+					}
+
+					myInnerStart
+					{
+						x 987
+						z 1240
+					}
+
+					myInnerEnd
+					{
+						x 1018
+						z 1271
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Request_Icon_AntiAir
+				{
+					myStart
+					{
+						x 953
+						z 1410
+					}
+
+					myEnd
+					{
+						x 984
+						z 1441
+					}
+
+					myInnerStart
+					{
+						x 953
+						z 1410
+					}
+
+					myInnerEnd
+					{
+						x 984
+						z 1441
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BorderLEFT
+				{
+					myStart
+					{
+						x 280
+						z 1570
+					}
+
+					myEnd
+					{
+						x 603
+						z 1607
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 1570
+					}
+
+					myInnerEnd
+					{
+						x 603
+						z 1607
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BorderRIGHT
+				{
+					myStart
+					{
+						x 282
+						z 1649
+					}
+
+					myEnd
+					{
+						x 605
+						z 1686
+					}
+
+					myInnerStart
+					{
+						x 282
+						z 1649
+					}
+
+					myInnerEnd
+					{
+						x 605
+						z 1686
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_ButtonBorder_LEFT
+				{
+					myStart
+					{
+						x 280
+						z 1533
+					}
+
+					myEnd
+					{
+						x 590
+						z 1548
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 1533
+					}
+
+					myInnerEnd
+					{
+						x 590
+						z 1548
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_ButtonBorder_RIGHT
+				{
+					myStart
+					{
+						x 302
+						z 1342
+					}
+
+					myEnd
+					{
+						x 613
+						z 1359
+					}
+
+					myInnerStart
+					{
+						x 302
+						z 1342
+					}
+
+					myInnerEnd
+					{
+						x 613
+						z 1359
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_LEFT2_BG
+				{
+					myStart
+					{
+						x 512
+						z 1728
+					}
+
+					myEnd
+					{
+						x 630
+						z 1884
+					}
+
+					myInnerStart
+					{
+						x 512
+						z 1728
+					}
+
+					myInnerEnd
+					{
+						x 630
+						z 1884
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_RIGHT2_BG
+				{
+					myStart
+					{
+						x 385
+						z 1762
+					}
+
+					myEnd
+					{
+						x 509
+						z 1917
+					}
+
+					myInnerStart
+					{
+						x 385
+						z 1762
+					}
+
+					myInnerEnd
+					{
+						x 509
+						z 1917
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_ButtonBG
+				{
+					myStart
+					{
+						x 621
+						z 1656
+					}
+
+					myEnd
+					{
+						x 825
+						z 1697
+					}
+
+					myInnerStart
+					{
+						x 621
+						z 1656
+					}
+
+					myInnerEnd
+					{
+						x 825
+						z 1697
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BorderLEFTDown
+				{
+					myStart
+					{
+						x 280
+						z 1609
+					}
+
+					myEnd
+					{
+						x 603
+						z 1646
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 1609
+					}
+
+					myInnerEnd
+					{
+						x 603
+						z 1646
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BorderRIGHTDown
+				{
+					myStart
+					{
+						x 282
+						z 1688
+					}
+
+					myEnd
+					{
+						x 605
+						z 1725
+					}
+
+					myInnerStart
+					{
+						x 282
+						z 1688
+					}
+
+					myInnerEnd
+					{
+						x 605
+						z 1725
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_BigBorder
+				{
+					myStart
+					{
+						x 635
+						z 1715
+					}
+
+					myEnd
+					{
+						x 645
+						z 1885
+					}
+
+					myInnerStart
+					{
+						x 635
+						z 1715
+					}
+
+					myInnerEnd
+					{
+						x 645
+						z 1885
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_SmallBorder
+				{
+					myStart
+					{
+						x 608
+						z 1627
+					}
+
+					myEnd
+					{
+						x 618
+						z 1725
+					}
+
+					myInnerStart
+					{
+						x 608
+						z 1627
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 1725
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_ButtonBorder_LEFTDown
+				{
+					myStart
+					{
+						x 280
+						z 1551
+					}
+
+					myEnd
+					{
+						x 590
+						z 1567
+					}
+
+					myInnerStart
+					{
+						x 280
+						z 1551
+					}
+
+					myInnerEnd
+					{
+						x 590
+						z 1567
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SelectFaction_ButtonBorder_RIGHTDown
+				{
+					myStart
+					{
+						x 302
+						z 1361
+					}
+
+					myEnd
+					{
+						x 613
+						z 1378
+					}
+
+					myInnerStart
+					{
+						x 302
+						z 1361
+					}
+
+					myInnerEnd
+					{
+						x 613
+						z 1378
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SingleplayerTimer_BG
+				{
+					myStart
+					{
+						x 591
+						z 905
+					}
+
+					myEnd
+					{
+						x 691
+						z 936
+					}
+
+					myInnerStart
+					{
+						x 626
+						z 916
+					}
+
+					myInnerEnd
+					{
+						x 658
+						z 925
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SingleplayerTimerBorder_BG
+				{
+					myStart
+					{
+						x 591
+						z 939
+					}
+
+					myEnd
+					{
+						x 691
+						z 970
+					}
+
+					myInnerStart
+					{
+						x 626
+						z 952
+					}
+
+					myInnerEnd
+					{
+						x 656
+						z 958
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SingleplayerTimerBG_BG
+				{
+					myStart
+					{
+						x 538
+						z 1743
+					}
+
+					myEnd
+					{
+						x 567
+						z 1754
+					}
+
+					myInnerStart
+					{
+						x 538
+						z 1743
+					}
+
+					myInnerEnd
+					{
+						x 567
+						z 1754
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_TankSmoke
+				{
+					myStart
+					{
+						x 3
+						z 640
+					}
+
+					myEnd
+					{
+						x 52
+						z 689
+					}
+
+					myInnerStart
+					{
+						x 3
+						z 640
+					}
+
+					myInnerEnd
+					{
+						x 52
+						z 689
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Massgate_MyProfilePic
+				{
+					myStart
+					{
+						x 862
+						z 1096
+					}
+
+					myEnd
+					{
+						x 890
+						z 1132
+					}
+
+					myInnerStart
+					{
+						x 862
+						z 1096
+					}
+
+					myInnerEnd
+					{
+						x 890
+						z 1132
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Massgate_MyClanPic
+				{
+					myStart
+					{
+						x 795
+						z 1135
+					}
+
+					myEnd
+					{
+						x 870
+						z 1171
+					}
+
+					myInnerStart
+					{
+						x 795
+						z 1135
+					}
+
+					myInnerEnd
+					{
+						x 870
+						z 1171
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Massgate_MenuButtonDefault
+				{
+					myStart
+					{
+						x 770
+						z 1174
+					}
+
+					myEnd
+					{
+						x 870
+						z 1225
+					}
+
+					myInnerStart
+					{
+						x 770
+						z 1174
+					}
+
+					myInnerEnd
+					{
+						x 870
+						z 1225
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Massgate_MenuButtonMouseOver
+				{
+					myStart
+					{
+						x 667
+						z 1169
+					}
+
+					myEnd
+					{
+						x 767
+						z 1220
+					}
+
+					myInnerStart
+					{
+						x 667
+						z 1169
+					}
+
+					myInnerEnd
+					{
+						x 767
+						z 1220
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Flag_Ussr
+				{
+					myStart
+					{
+						x 694
+						z 929
+					}
+
+					myEnd
+					{
+						x 748
+						z 959
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 929
+					}
+
+					myInnerEnd
+					{
+						x 748
+						z 959
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Flag_Usa
+				{
+					myStart
+					{
+						x 694
+						z 962
+					}
+
+					myEnd
+					{
+						x 748
+						z 992
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 962
+					}
+
+					myInnerEnd
+					{
+						x 748
+						z 992
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Flag_Nato
+				{
+					myStart
+					{
+						x 694
+						z 995
+					}
+
+					myEnd
+					{
+						x 748
+						z 1025
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 995
+					}
+
+					myInnerEnd
+					{
+						x 748
+						z 1025
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_AssaultArrowGreen
+				{
+					myStart
+					{
+						x 751
+						z 963
+					}
+
+					myEnd
+					{
+						x 765
+						z 973
+					}
+
+					myInnerStart
+					{
+						x 751
+						z 963
+					}
+
+					myInnerEnd
+					{
+						x 765
+						z 973
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_AssaultArrowRed
+				{
+					myStart
+					{
+						x 751
+						z 976
+					}
+
+					myEnd
+					{
+						x 765
+						z 986
+					}
+
+					myInnerStart
+					{
+						x 751
+						z 976
+					}
+
+					myInnerEnd
+					{
+						x 765
+						z 986
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Flag_Border
+				{
+					myStart
+					{
+						x 761
+						z 827
+					}
+
+					myEnd
+					{
+						x 813
+						z 855
+					}
+
+					myInnerStart
+					{
+						x 761
+						z 827
+					}
+
+					myInnerEnd
+					{
+						x 813
+						z 855
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_EmergencyRepairs
+				{
+					myStart
+					{
+						x 55
+						z 640
+					}
+
+					myEnd
+					{
+						x 104
+						z 689
+					}
+
+					myInnerStart
+					{
+						x 55
+						z 640
+					}
+
+					myInnerEnd
+					{
+						x 104
+						z 689
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Flag_Disabled
+				{
+					myStart
+					{
+						x 694
+						z 1028
+					}
+
+					myEnd
+					{
+						x 748
+						z 1058
+					}
+
+					myInnerStart
+					{
+						x 694
+						z 1028
+					}
+
+					myInnerEnd
+					{
+						x 748
+						z 1058
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_HeshRound
+				{
+					myStart
+					{
+						x 107
+						z 640
+					}
+
+					myEnd
+					{
+						x 156
+						z 689
+					}
+
+					myInnerStart
+					{
+						x 107
+						z 640
+					}
+
+					myInnerEnd
+					{
+						x 156
+						z 689
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab OrderPalette_Rocket
+				{
+					myStart
+					{
+						x 159
+						z 640
+					}
+
+					myEnd
+					{
+						x 208
+						z 689
+					}
+
+					myInnerStart
+					{
+						x 159
+						z 640
+					}
+
+					myInnerEnd
+					{
+						x 208
+						z 689
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab TopFade
+				{
+					myStart
+					{
+						x 685
+						z 1599
+					}
+
+					myEnd
+					{
+						x 688
+						z 1631
+					}
+
+					myInnerStart
+					{
+						x 685
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 688
+						z 1631
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab BottomFade
+				{
+					myStart
+					{
+						x 691
+						z 1599
+					}
+
+					myEnd
+					{
+						x 694
+						z 1631
+					}
+
+					myInnerStart
+					{
+						x 691
+						z 1599
+					}
+
+					myInnerEnd
+					{
+						x 694
+						z 1631
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab FrontEndHeaderBG
+				{
+					myStart
+					{
+						x 744
+						z 1336
+					}
+
+					myEnd
+					{
+						x 947
+						z 1369
+					}
+
+					myInnerStart
+					{
+						x 749
+						z 1340
+					}
+
+					myInnerEnd
+					{
+						x 941
+						z 1365
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ChooseTeamBGleft
+				{
+					myStart
+					{
+						x 347
+						z 1381
+					}
+
+					myEnd
+					{
+						x 475
+						z 1454
+					}
+
+					myInnerStart
+					{
+						x 356
+						z 1390
+					}
+
+					myInnerEnd
+					{
+						x 473
+						z 1445
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ChooseTeamBGright
+				{
+					myStart
+					{
+						x 890
+						z 1447
+					}
+
+					myEnd
+					{
+						x 1018
+						z 1520
+					}
+
+					myInnerStart
+					{
+						x 892
+						z 1455
+					}
+
+					myInnerEnd
+					{
+						x 1011
+						z 1511
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ChoosePlate
+				{
+					myStart
+					{
+						x 560
+						z 974
+					}
+
+					myEnd
+					{
+						x 691
+						z 1017
+					}
+
+					myInnerStart
+					{
+						x 568
+						z 982
+					}
+
+					myInnerEnd
+					{
+						x 683
+						z 1010
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ChoosePlate_Border
+				{
+					myStart
+					{
+						x 560
+						z 1022
+					}
+
+					myEnd
+					{
+						x 691
+						z 1065
+					}
+
+					myInnerStart
+					{
+						x 566
+						z 1028
+					}
+
+					myInnerEnd
+					{
+						x 685
+						z 1059
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ChoosePlate_Gray
+				{
+					myStart
+					{
+						x 589
+						z 991
+					}
+
+					myEnd
+					{
+						x 618
+						z 1002
+					}
+
+					myInnerStart
+					{
+						x 589
+						z 991
+					}
+
+					myInnerEnd
+					{
+						x 618
+						z 1002
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab FrontEndGray
+				{
+					myStart
+					{
+						x 601
+						z 1135
+					}
+
+					myEnd
+					{
+						x 792
+						z 1163
+					}
+
+					myInnerStart
+					{
+						x 718
+						z 1135
+					}
+
+					myInnerEnd
+					{
+						x 722
+						z 1163
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Default
+				{
+					myStart
+					{
+						x 668
+						z 1073
+					}
+
+					myEnd
+					{
+						x 859
+						z 1101
+					}
+
+					myInnerStart
+					{
+						x 739
+						z 1076
+					}
+
+					myInnerEnd
+					{
+						x 791
+						z 1098
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MouseOver
+				{
+					myStart
+					{
+						x 668
+						z 1104
+					}
+
+					myEnd
+					{
+						x 859
+						z 1132
+					}
+
+					myInnerStart
+					{
+						x 739
+						z 1107
+					}
+
+					myInnerEnd
+					{
+						x 791
+						z 1129
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Play_Default
+				{
+					myStart
+					{
+						x 622
+						z 707
+					}
+
+					myEnd
+					{
+						x 641
+						z 726
+					}
+
+					myInnerStart
+					{
+						x 622
+						z 707
+					}
+
+					myInnerEnd
+					{
+						x 641
+						z 726
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Play_MouseOver
+				{
+					myStart
+					{
+						x 644
+						z 707
+					}
+
+					myEnd
+					{
+						x 663
+						z 726
+					}
+
+					myInnerStart
+					{
+						x 644
+						z 707
+					}
+
+					myInnerEnd
+					{
+						x 663
+						z 726
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Interlace_4
+				{
+					myStart
+					{
+						x 1021
+						z 1662
+					}
+
+					myEnd
+					{
+						x 1023
+						z 1919
+					}
+
+					myInnerStart
+					{
+						x 1021
+						z 1662
+					}
+
+					myInnerEnd
+					{
+						x 1023
+						z 1919
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab FrontEnd_Award_Default
+				{
+					myStart
+					{
+						x 537
+						z 1235
+					}
+
+					myEnd
+					{
+						x 598
+						z 1296
+					}
+
+					myInnerStart
+					{
+						x 537
+						z 1235
+					}
+
+					myInnerEnd
+					{
+						x 598
+						z 1296
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_MissionBanner
+				{
+					myStart
+					{
+						x 25
+						z 1299
+					}
+
+					myEnd
+					{
+						x 579
+						z 1339
+					}
+
+					myInnerStart
+					{
+						x 25
+						z 1299
+					}
+
+					myInnerEnd
+					{
+						x 579
+						z 1339
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab FrontEndGray_Dirt
+				{
+					myStart
+					{
+						x 157
+						z 1268
+					}
+
+					myEnd
+					{
+						x 534
+						z 1296
+					}
+
+					myInnerStart
+					{
+						x 157
+						z 1268
+					}
+
+					myInnerEnd
+					{
+						x 534
+						z 1296
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab PlayButton_Default
+				{
+					myStart
+					{
+						x 360
+						z 1142
+					}
+
+					myEnd
+					{
+						x 396
+						z 1178
+					}
+
+					myInnerStart
+					{
+						x 360
+						z 1142
+					}
+
+					myInnerEnd
+					{
+						x 396
+						z 1178
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab PlayButton_MouseOver
+				{
+					myStart
+					{
+						x 422
+						z 1142
+					}
+
+					myEnd
+					{
+						x 458
+						z 1178
+					}
+
+					myInnerStart
+					{
+						x 422
+						z 1142
+					}
+
+					myInnerEnd
+					{
+						x 458
+						z 1178
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab PlayButtonSpeed_Default
+				{
+					myStart
+					{
+						x 360
+						z 1047
+					}
+
+					myEnd
+					{
+						x 425
+						z 1083
+					}
+
+					myInnerStart
+					{
+						x 360
+						z 1047
+					}
+
+					myInnerEnd
+					{
+						x 425
+						z 1083
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab PlayButtonSpeed_MouseOver
+				{
+					myStart
+					{
+						x 450
+						z 1047
+					}
+
+					myEnd
+					{
+						x 515
+						z 1083
+					}
+
+					myInnerStart
+					{
+						x 450
+						z 1047
+					}
+
+					myInnerEnd
+					{
+						x 515
+						z 1083
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab StopButton_Default
+				{
+					myStart
+					{
+						x 474
+						z 1098
+					}
+
+					myEnd
+					{
+						x 510
+						z 1134
+					}
+
+					myInnerStart
+					{
+						x 474
+						z 1098
+					}
+
+					myInnerEnd
+					{
+						x 510
+						z 1134
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab StopButton_MouseOver
+				{
+					myStart
+					{
+						x 536
+						z 1098
+					}
+
+					myEnd
+					{
+						x 572
+						z 1134
+					}
+
+					myInnerStart
+					{
+						x 536
+						z 1098
+					}
+
+					myInnerEnd
+					{
+						x 572
+						z 1134
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab ColorpickBG
+				{
+					myStart
+					{
+						x 755
+						z 1714
+					}
+
+					myEnd
+					{
+						x 759
+						z 1718
+					}
+
+					myInnerStart
+					{
+						x 755
+						z 1714
+					}
+
+					myInnerEnd
+					{
+						x 759
+						z 1718
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Bg_Trans_Box
+				{
+					myStart
+					{
+						x 131
+						z 1210
+					}
+
+					myEnd
+					{
+						x 453
+						z 1244
+					}
+
+					myInnerStart
+					{
+						x 178
+						z 1221
+					}
+
+					myInnerEnd
+					{
+						x 429
+						z 1234
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_ReplayBG
+				{
+					myStart
+					{
+						x 343
+						z 1100
+					}
+
+					myEnd
+					{
+						x 442
+						z 1121
+					}
+
+					myInnerStart
+					{
+						x 343
+						z 1100
+					}
+
+					myInnerEnd
+					{
+						x 442
+						z 1121
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab AntiTeamStacking
+				{
+					myStart
+					{
+						x 131
+						z 1081
+					}
+
+					myEnd
+					{
+						x 200
+						z 1150
+					}
+
+					myInnerStart
+					{
+						x 131
+						z 1081
+					}
+
+					myInnerEnd
+					{
+						x 200
+						z 1150
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab AntiTeamStackingBG
+				{
+					myStart
+					{
+						x 36
+						z 961
+					}
+
+					myEnd
+					{
+						x 386
+						z 1034
+					}
+
+					myInnerStart
+					{
+						x 36
+						z 961
+					}
+
+					myInnerEnd
+					{
+						x 386
+						z 1034
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab AntiTeamStackingMini
+				{
+					myStart
+					{
+						x 153
+						z 1169
+					}
+
+					myEnd
+					{
+						x 332
+						z 1191
+					}
+
+					myInnerStart
+					{
+						x 153
+						z 1169
+					}
+
+					myInnerEnd
+					{
+						x 332
+						z 1191
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab SingleplayerTimer2_BG
+				{
+					myStart
+					{
+						x 40
+						z 860
+					}
+
+					myEnd
+					{
+						x 218
+						z 906
+					}
+
+					myInnerStart
+					{
+						x 99
+						z 874
+					}
+
+					myInnerEnd
+					{
+						x 163
+						z 891
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_TA_PhosphorusBomb
+				{
+					myStart
+					{
+						x 36
+						z 753
+					}
+
+					myEnd
+					{
+						x 108
+						z 786
+					}
+
+					myInnerStart
+					{
+						x 36
+						z 753
+					}
+
+					myInnerEnd
+					{
+						x 108
+						z 786
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab WIC_SA_logo
+				{
+					myStart
+					{
+						x 1050
+						z 26
+					}
+
+					myEnd
+					{
+						x 1257
+						z 114
+					}
+
+					myInnerStart
+					{
+						x 1050
+						z 26
+					}
+
+					myInnerEnd
+					{
+						x 1257
+						z 114
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab InGame_Orderpalette_Fade
+				{
+					myStart
+					{
+						x 397
+						z 990
+					}
+
+					myEnd
+					{
+						x 427
+						z 1006
+					}
+
+					myInnerStart
+					{
+						x 397
+						z 990
+					}
+
+					myInnerEnd
+					{
+						x 427
+						z 1006
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Color_FPS
+				{
+					myStart
+					{
+						x 68
+						z 1392
+					}
+
+					myEnd
+					{
+						x 86
+						z 1410
+					}
+
+					myInnerStart
+					{
+						x 68
+						z 1392
+					}
+
+					myInnerEnd
+					{
+						x 86
+						z 1410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Color_DRAWCALLS
+				{
+					myStart
+					{
+						x 89
+						z 1392
+					}
+
+					myEnd
+					{
+						x 107
+						z 1410
+					}
+
+					myInnerStart
+					{
+						x 89
+						z 1392
+					}
+
+					myInnerEnd
+					{
+						x 107
+						z 1410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Color_PARTICLES
+				{
+					myStart
+					{
+						x 110
+						z 1392
+					}
+
+					myEnd
+					{
+						x 128
+						z 1410
+					}
+
+					myInnerStart
+					{
+						x 110
+						z 1392
+					}
+
+					myInnerEnd
+					{
+						x 128
+						z 1410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Color_PHYSICS
+				{
+					myStart
+					{
+						x 131
+						z 1392
+					}
+
+					myEnd
+					{
+						x 149
+						z 1410
+					}
+
+					myInnerStart
+					{
+						x 131
+						z 1392
+					}
+
+					myInnerEnd
+					{
+						x 149
+						z 1410
+					}
+
+					myStyle SCALE
+				}
+
+				EXP_Prefab Interlace_box
+				{
+					myStart
+					{
+						x 767
+						z 1767
+					}
+
+					myEnd
+					{
+						x 768
+						z 1772
+					}
+
+					myInnerStart
+					{
+						x 767
+						z 1767
+					}
+
+					myInnerEnd
+					{
+						x 768
+						z 1772
+					}
+
+					myStyle SCALE
+				}
+
+			}
+
+			myFonts
+			{
+				EXP_Font FontNoll
+				{
+					mySize 10
+					myColorRed 20
+					myColorGreen 20
+					myColorBlue 20
+					myShadow 0
+				}
+
+				EXP_Font StandardFont
+				{
+					mySize 9
+					myColorRed 150
+					myColorGreen 157
+					myColorBlue 129
+					myShadow 0
+				}
+
+				EXP_Font ToolTipFont
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font StandardFontBright
+				{
+					mySize 9
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font StandardFontBright_SHADOW
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font StandardFontDim
+				{
+					mySize 12
+					myColorRed 80
+					myColorGreen 85
+					myColorBlue 69
+					myShadow 0
+				}
+
+				EXP_Font SubtitleFont
+				{
+					mySize 14
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font MassgatePlayerNameFont
+				{
+					mySize 30
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font MassgatePlayerNameFont_Red
+				{
+					mySize 30
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font MassgatePlayerNameFont_Green
+				{
+					mySize 30
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font MassgatePlayerNameFont_Gray
+				{
+					mySize 30
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font MassgatePlayerNameFont_Shadow
+				{
+					mySize 30
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font MassgateClanNameFont_small
+				{
+					mySize 20
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font MassgateClanNameFont_small_shadow
+				{
+					mySize 20
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font MassgateClanNameFont_small_Red
+				{
+					mySize 20
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font MassgateClanNameFont_small_Green
+				{
+					mySize 20
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font MassgateClanNameFont_small_Gray
+				{
+					mySize 20
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font CinematicsBig
+				{
+					mySize 18
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font sp_info_text
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font MainButtonFont
+				{
+					mySize 14
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font MainButtonFont_small
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font ButtonFont
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Headline
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Headline_Shadow
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font TextFont_Headline_Green
+				{
+					mySize 12
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Headline_Green_Shadow
+				{
+					mySize 12
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 1
+				}
+
+				EXP_Font TextFont_Headline_Red
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Headline_Red_Shadow
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 1
+				}
+
+				EXP_Font TextFont
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Shadow
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font TextFont_Green
+				{
+					mySize 10
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Green_Shadow
+				{
+					mySize 10
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 1
+				}
+
+				EXP_Font TextFont_Red
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Red_Shadow
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 1
+				}
+
+				EXP_Font KeybindingFont
+				{
+					mySize 11
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font GrayTextFont_Headline
+				{
+					mySize 12
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font GrayTextFont
+				{
+					mySize 11
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font GrayTextFont_Shadow
+				{
+					mySize 11
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 1
+				}
+
+				EXP_Font GrayTextFont_small
+				{
+					mySize 11
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font TextFontRed
+				{
+					mySize 11
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font TextFontGreen
+				{
+					mySize 11
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font StandardFont_small
+				{
+					mySize 9
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font StandardFont_smallBright
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font StandardFont_small_colored
+				{
+					mySize 9
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font StandardFont_colored
+				{
+					mySize 12
+					myColorRed 57
+					myColorGreen 143
+					myColorBlue 80
+					myShadow 0
+				}
+
+				EXP_Font StandardFont_big
+				{
+					mySize 19
+					myColorRed 150
+					myColorGreen 157
+					myColorBlue 129
+					myShadow 0
+				}
+
+				EXP_Font ChatFont
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 123
+					myColorBlue 59
+					myShadow 0
+				}
+
+				EXP_Font ChatFontRED
+				{
+					mySize 12
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font MessageBoxFont
+				{
+					mySize 14
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font MassgateButtonFont
+				{
+					mySize 11
+					myColorRed 200
+					myColorGreen 200
+					myColorBlue 200
+					myShadow 0
+				}
+
+				EXP_Font MassgateButtonFontRED
+				{
+					mySize 11
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font SmallRed
+				{
+					mySize 9
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font SmallWhite
+				{
+					mySize 8
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font BigRed
+				{
+					mySize 25
+					myColorRed 255
+					myColorGreen 2
+					myColorBlue 2
+					myShadow 0
+				}
+
+				EXP_Font BigBright
+				{
+					mySize 16
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font Black
+				{
+					mySize 12
+					myColorRed 0
+					myColorGreen 0
+					myColorBlue 0
+					myShadow 0
+				}
+
+				EXP_Font ClanName_Font
+				{
+					mySize 26
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 0
+				}
+
+				EXP_Font TextFont_Shadow_Subtitles
+				{
+					mySize 14
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font GrayMessageBox
+				{
+					mySize 11
+					myColorRed 41
+					myColorGreen 41
+					myColorBlue 41
+					myShadow 0
+				}
+
+				EXP_Font TextFont_VOIP
+				{
+					mySize 10
+					myColorRed 255
+					myColorGreen 255
+					myColorBlue 255
+					myShadow 1
+				}
+
+				EXP_Font CinematicsIntro
+				{
+					mySize 30
+					myColorRed 240
+					myColorGreen 240
+					myColorBlue 240
+					myShadow 1
+				}
+
+				EXP_Font CinematicsIntroWicTitle
+				{
+					mySize 35
+					myColorRed 240
+					myColorGreen 240
+					myColorBlue 240
+					myShadow 1
+				}
+
+			}
+
+			myFontData
+			{
+				EXP_FontData Western
+				{
+					myFont font/EurostileDemiForMassive.ttf
+					myBoldFont <empty>
+					myItalicFont <empty>
+					myBoldItalicFont <empty>
+					mySizeScale 1.2
+					myHeightAdjustment 0.0
+				}
+
+				EXP_FontData Asian
+				{
+					myFont font/Asian.ttf
+					myBoldFont <empty>
+					myItalicFont <empty>
+					myBoldItalicFont <empty>
+					mySizeScale 1.2
+					myHeightAdjustment 0.0
+				}
+
+				EXP_FontData Japan
+				{
+					myFont font/japan.ttf
+					myBoldFont <empty>
+					myItalicFont <empty>
+					myBoldItalicFont <empty>
+					mySizeScale 1.2
+					myHeightAdjustment 0.0
+				}
+
+			}
+
+			myFontRanges
+			{
+				EXP_FontDataRange Basic Latin
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Western
+					myStartCharacter 0x0000
+					myEndCharacter 0x007F
+				}
+
+				EXP_FontDataRange Latin-1 Supplement
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Western
+					myStartCharacter 0x0080
+					myEndCharacter 0x00FF
+				}
+
+				EXP_FontDataRange Latin Extended-A
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Western
+					myStartCharacter 0x0100
+					myEndCharacter 0x017F
+				}
+
+				EXP_FontDataRange Greek
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Western
+					myStartCharacter 0x0370
+					myEndCharacter 0x03FF
+				}
+
+				EXP_FontDataRange Cyrillic
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Western
+					myStartCharacter 0x0400
+					myEndCharacter 0x04FF
+				}
+
+				EXP_FontDataRange Hangul Jamo
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0x1100
+					myEndCharacter 0x11FF
+				}
+
+				EXP_FontDataRange Hangul Compatibility Jamo
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0x3130
+					myEndCharacter 0x318F
+				}
+
+				EXP_FontDataRange Hangul Syllables
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0xAC00
+					myEndCharacter 0xD7AF
+				}
+
+				EXP_FontDataRange KangXi Radicals
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x2F00
+					myEndCharacter 0x2FDF
+				}
+
+				EXP_FontDataRange CJK Symbols and Punctuation
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x3000
+					myEndCharacter 0x303F
+				}
+
+				EXP_FontDataRange Hiragana
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x3040
+					myEndCharacter 0x309F
+				}
+
+				EXP_FontDataRange Katakana
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x30A0
+					myEndCharacter 0x30FF
+				}
+
+				EXP_FontDataRange Bopomofo
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0x3100
+					myEndCharacter 0x312F
+				}
+
+				EXP_FontDataRange Kanbun
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x3190
+					myEndCharacter 0x319F
+				}
+
+				EXP_FontDataRange Enclosed CJK Letters and Months
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x3200
+					myEndCharacter 0x32FF
+				}
+
+				EXP_FontDataRange CJK Compatibility
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x3300
+					myEndCharacter 0x33FF
+				}
+
+				EXP_FontDataRange CJK Unified Ideographs
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0x4E00
+					myEndCharacter 0x9FFF
+				}
+
+				EXP_FontDataRange CJK Compatibility Ideographs
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0xF900
+					myEndCharacter 0xFAFF
+				}
+
+				EXP_FontDataRange CJK Compatibility Forms
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Japan
+					myStartCharacter 0xFE30
+					myEndCharacter 0xFE4F
+				}
+
+				EXP_FontDataRange Small Form Variants
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0xFE50
+					myEndCharacter 0xFE6F
+				}
+
+				EXP_FontDataRange Halfwidth and Fullwidth Forms
+				{
+					myFont mySkinFile.mySkins.skinOne.myFontData.Asian
+					myStartCharacter 0xFF00
+					myEndCharacter 0xFFEF
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

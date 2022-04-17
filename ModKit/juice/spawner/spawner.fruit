@@ -1,0 +1,25 @@
+INCLUDE units/unittype.fruit
+INCLUDE juice/team/team.fruit
+
+CLASS Spawner
+{
+	FILEList mySpawnerModels
+	SoundSource mySpawnerSoundFile
+	NUMBER myCargoSpace1
+	NUMBER myCargoSpace2
+	NUMBER myCargoSpace3
+	DECIMAL myDelayBeforeSpawn
+	DECIMAL myDelayAfterSpawn
+	FILE mySpawnerSplineObject
+}
+
+SCRIPTCLASS SpawnerList
+{
+	Spawner
+	PlayerMarker
+}
+
+CLASS PlayerMarker
+{
+	FILE myModelFile
+}

@@ -1,0 +1,29 @@
+INCLUDE campaign/campaign.fruit
+
+CampaignList myCampaigns
+{
+	Campaign cmp1
+	{
+		myCampaignName WIC
+		myImageFile <empty>
+		myBackdropFile <empty>
+		myBulletUpPrefab Campaign_Up
+		myBulletInsidePrefab Campaign_Over
+		myBulletDownPrefab Campaign_dwn
+		myItems
+		{
+			Mission Mission1-Europe1
+			{
+				myFile maps/europetest/europetest.ice
+				myMedalsForCompletion
+				{
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

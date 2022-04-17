@@ -1,0 +1,511 @@
+SCRIPTCLASS WidgetList
+{
+	EXP_RefGroup
+	EXP_Plate
+	EXP_Button
+	EXP_CheckBox
+	EXP_TextLabel
+	EXP_TextInput
+	EXP_TextList
+	EXP_ComboBox
+	EXP_ProgressBar
+	EXP_MultiColumnTextList
+	EXP_MiniMap
+	EXP_DominationBar
+	EXP_Model
+	EXP_Video
+	EXP_Slider
+	EXP_CompositeWidget
+	MG_OptionList
+}
+
+SCRIPTCLASS EXP_CompositeWidget
+{
+	EXP_CompositeWidget
+	EXP_Plate
+	EXP_Button
+	EXP_CheckBox
+	EXP_TextLabel
+	EXP_TextInput
+	EXP_TextList
+	EXP_ComboBox
+	EXP_ProgressBar
+	EXP_MultiColumnTextList
+	EXP_MiniMap
+	EXP_DominationBar
+	EXP_Model
+	EXP_Video
+	EXP_Slider
+	MG_OptionList
+}
+
+CLASS Gui
+{
+	WidgetList myWidgets
+	TEXT myName
+	TEXT myAnimationScript
+}
+
+CLASS ContextMenu
+{
+	TEXT myPrefab
+	TEXT mySelPrefab
+	TEXT myFont
+}
+
+SCRIPTCLASS GuiList
+{
+	Gui
+}
+
+CLASS GuiFile
+{
+	FILE mySkinFile
+	TEXT mySkin
+	ContextMenu myContextMenu
+	GuiList myGuis
+}
+
+TYPE Boolean
+{
+	FALSE
+	TRUE
+}
+
+TYPE Status
+{
+	ENABLED
+	DISABLED
+	HIDDEN
+}
+
+TYPE HAlign
+{
+	LEFT
+	CENTER
+	RIGHT
+}
+
+TYPE VAlign
+{
+	TOP
+	CENTER
+	BOTTOM
+}
+
+TYPE Aspect
+{
+	STRETCH
+	CENTER
+	LEFT
+	RIGHT
+}
+
+CLASS WidgetRef
+{
+	TEXT myWidgetRef
+}
+SCRIPTCLASS WidgetRefs
+{
+	WidgetRef
+}
+CLASS EXP_RefGroup
+{
+	WidgetRefs myWidgetRefs
+}
+
+CLASS EXP_Plate
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_Button
+{
+	TEXT myUpPrefab
+	TEXT myInsidePrefab
+	TEXT myDownPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myTargetGui
+	Boolean myCloseGuiOnClickFlag
+	TEXT myFont
+	VAlign myVAlign
+	HAlign myHAlign
+	LOCTEXT myText
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Boolean myHandleEscapeFlag
+	NUMBER myTextOffset
+	NUMBER myTextOffsetY
+	Aspect myAspect
+}
+
+CLASS EXP_CheckBox
+{
+	TEXT myCheckedPrefab
+	TEXT myUncheckedPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	LOCTEXT myText
+	Boolean myCheckedFlag
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_TextLabel
+{
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	VAlign myVAlign
+	HAlign myHAlign
+	TEXT myFont
+	LOCTEXT myText
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_TextInput
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Boolean myIsNumericFlag
+	Boolean myPositiveNumbersOnlyFlag
+	NUMBER myMaxLength
+	Aspect myAspect
+}
+
+CLASS EXP_TextList
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	NUMBER myScrollBarWidth
+	TEXT mySelectionPrefab
+	TEXT mySelectionHighlightPrefab
+	TEXT myUpButtonUpPrefab
+	TEXT myUpButtonInsidePrefab
+	TEXT myUpButtonDownPrefab
+	TEXT myDownButtonUpPrefab
+	TEXT myDownButtonInsidePrefab
+	TEXT myDownButtonDownPrefab
+	TEXT myScrollBarUpPrefab
+	TEXT myScrollBarInsidePrefab
+	TEXT myScrollBarDownPrefab
+	TEXT myScrollBarBackgroundPrefab
+	TEXT myMouseOverPrefab
+	NUMBER myScrollUnitsPerSecond
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Boolean myIsNumericFlag
+	Boolean myPositiveNumbersOnlyFlag
+	NUMBER myMaxLength
+	Boolean myIsEditableFlag
+	Aspect myAspect
+}
+
+CLASS MG_OptionList
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	NUMBER myScrollBarWidth
+	TEXT mySelectionPrefab
+	TEXT mySelectionHighlightPrefab
+	TEXT myUpButtonUpPrefab
+	TEXT myUpButtonInsidePrefab
+	TEXT myUpButtonDownPrefab
+	TEXT myDownButtonUpPrefab
+	TEXT myDownButtonInsidePrefab
+	TEXT myDownButtonDownPrefab
+	TEXT myScrollBarUpPrefab
+	TEXT myScrollBarInsidePrefab
+	TEXT myScrollBarDownPrefab
+	TEXT myScrollBarBackgroundPrefab
+	TEXT myMouseOverPrefab
+	NUMBER myScrollUnitsPerSecond
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	TEXT myCheckedPrefab
+	TEXT myUncheckedPrefab
+	TEXT myButtonUpPrefab
+	TEXT myButtonInsidePrefab
+	TEXT myButtonDownPrefab
+	NUMBER myListHeight
+	DECIMAL myCheckBoxWidth
+	DECIMAL myCheckBoxHeight
+	DECIMAL myItemWidth
+	DECIMAL myItemHeight
+	DECIMAL myItemSpacing
+	TEXT myComboPrefab
+	Aspect myAspect
+}
+
+TYPE EXP_ComboBoxStyle
+{
+	INPUTLIST
+	DROPLIST
+}
+
+CLASS EXP_ComboBox
+{
+	TEXT myPrefab
+	TEXT myButtonUpPrefab
+	TEXT myButtonInsidePrefab
+	TEXT myButtonDownPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	NUMBER myScrollBarWidth
+	TEXT mySelectionPrefab
+	TEXT myUpButtonUpPrefab
+	TEXT myUpButtonInsidePrefab
+	TEXT myUpButtonDownPrefab
+	TEXT myDownButtonUpPrefab
+	TEXT myDownButtonInsidePrefab
+	TEXT myDownButtonDownPrefab
+	TEXT myScrollBarUpPrefab
+	TEXT myScrollBarInsidePrefab
+	TEXT myScrollBarDownPrefab
+	TEXT myMouseOverPrefab
+	NUMBER myScrollUnitsPerSecond
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIsNumericFlag
+	Boolean myPositiveNumbersOnlyFlag
+	Boolean myIgnoreEvents
+	NUMBER myListHeight
+	EXP_ComboBoxStyle myStyle
+	NUMBER myMaxLength
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_ProgressBar
+{
+	TEXT myPrefab
+	TEXT myBarPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+
+	Boolean myIsPieChartFlag
+
+	FILE myPieSliceImage
+	NUMBER myPieStartColor
+	NUMBER myPieEndColor
+	Boolean myPieGradientFlag
+	
+	Aspect myAspect
+}
+
+TYPE EXP_Slider_Orientation
+{
+	HORIZONTAL
+	VERTICAL
+}
+
+CLASS EXP_Slider
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myLeftButtonUpPrefab
+	TEXT myLeftButtonInsidePrefab
+	TEXT myLeftButtonDownPrefab
+	TEXT myRightButtonUpPrefab
+	TEXT myRightButtonInsidePrefab
+	TEXT myRightButtonDownPrefab
+	TEXT mySliderBarUpPrefab
+	TEXT mySliderBarInsidePrefab
+	TEXT mySliderBarDownPrefab
+	NUMBER myMinValue
+	NUMBER myMaxValue
+	NUMBER myStepValue
+	NUMBER myDefaultValue
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	EXP_Slider_Orientation myOrientation
+	Aspect myAspect
+}
+
+CLASS EXP_MultiColumnTextList
+{
+	TEXT myPrefab
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myFont
+	NUMBER myScrollBarWidth
+	TEXT mySelectionPrefab
+	TEXT mySelectionHighlightPrefab
+	TEXT myUpButtonUpPrefab
+	TEXT myUpButtonInsidePrefab
+	TEXT myUpButtonDownPrefab
+	TEXT myDownButtonUpPrefab
+	TEXT myDownButtonInsidePrefab
+	TEXT myDownButtonDownPrefab
+	TEXT myScrollBarUpPrefab
+	TEXT myScrollBarInsidePrefab
+	TEXT myScrollBarDownPrefab
+	TEXT myScrollBarBackgroundPrefab
+	TEXT myMouseOverPrefab
+	NUMBER myScrollUnitsPerSecond
+	NUMBER myTitleBarHeight
+	TEXT myTitleBarFont
+	TEXT myTitleBarUpPrefab
+	TEXT myTitleBarInsidePrefab
+	TEXT myTitleBarDownPrefab
+	HAlign myTitleBarAlign
+	NUMBER myTitleBarOffset
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	LOCTEXT myColumns
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+
+CLASS EXP_MiniMap
+{
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_DominationBar
+{
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_Model
+{
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myUpPrefab
+	TEXT myInsidePrefab
+	TEXT myDownPrefab
+	FILE myModel
+	DECIMAL myModelX
+	DECIMAL myModelY
+	DECIMAL myModelZ
+	DECIMAL myModelHeading
+	DECIMAL myCameraPitch
+	DECIMAL myCameraFOV
+	TEXT myFont
+	LOCTEXT myText
+	TEXT myTargetGui
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}
+
+CLASS EXP_Video
+{
+	NUMBER myXPos
+	NUMBER myYPos
+	NUMBER myWidth
+	NUMBER myHeight
+	TEXT myUpPrefab
+	TEXT myInsidePrefab
+	TEXT myDownPrefab
+	FILE myVideo
+	DECIMAL myVolume
+	Boolean myInitialPauseState
+	Boolean myKeepAspectRatioFlag
+	TEXT myFont
+	LOCTEXT myText
+	TEXT myTargetGui
+	LOCTEXT myToolTip
+	TEXT myToolTipRef
+	Boolean myIgnoreEvents
+	Status myStatus
+	Boolean myHiddenInEditor
+	Aspect myAspect
+}

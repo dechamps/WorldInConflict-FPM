@@ -1,0 +1,55 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "We're getting reports from the Coast Guard about a developing situation at the harbor front."
+		myStartTime 3.5
+		myVisibleTime 3.8
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "We have a lot of unmarked container ships approaching. And they are refusing to identify themselves, over."
+		myStartTime 7.6
+		myVisibleTime 4.5
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "11-99! I repeat, 11-99 emergency!"
+		myStartTime 18.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "They have gunships, I repeat, gunships!"
+		myStartTime 22.3
+		myVisibleTime 2.5
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "Need help immediately, America is under attack!"
+		myStartTime 25.5
+		myVisibleTime 3.5
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "The vultures have been fed and the world has seen our might."
+		myStartTime 40.8
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Now... clear the skies."
+		myStartTime 44.2
+		myVisibleTime 3
+	}
+
+}
+

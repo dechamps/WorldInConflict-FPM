@@ -1,0 +1,15 @@
+INCLUDE juice/caidata.fruit
+
+AIConstants Constants
+{
+	myScoutMapResolution 100
+	myInfluenceMapResolution 200
+	myInfluenceUpdateStep 8
+	myCloseEnoughMovementDistance 25
+	myStealthCompenstationFactor 1.0
+	myAttackPositionShortRangeInner 0.0
+	myAttackPositionShortRange 0.0
+	myAttackPositionMediumRange 0.0
+	myAttackPositionLongRange 0.0
+}
+

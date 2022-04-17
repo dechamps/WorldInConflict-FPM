@@ -1,0 +1,258 @@
+INCLUDE tools\atlasmaker\AtlasImage.fruit
+
+AtlasImage myAtlasImage
+{
+	SubImage BulletHole_Flesh
+	{
+		myName BulletHole_Flesh
+		myX 512
+		myY 384
+		myWidth 32
+		myHeight 32
+	}
+
+	SubImage BulletHole_Ground_01
+	{
+		myName BulletHole_Ground_01
+		myX 544
+		myY 384
+		myWidth 32
+		myHeight 32
+	}
+
+	SubImage BulletHole_Ground_02
+	{
+		myName BulletHole_Ground_02
+		myX 576
+		myY 384
+		myWidth 32
+		myHeight 32
+	}
+
+	SubImage BulletHole_House
+	{
+		myName BulletHole_House
+		myX 128
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage BulletHole_Metal
+	{
+		myName BulletHole_Metal
+		myX 192
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage GrassHit_1
+	{
+		myName GrassHit_1
+		myX 640
+		myY 0
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Ground_50Cal_BulletHole
+	{
+		myName Ground_50Cal_BulletHole
+		myX 512
+		myY 0
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Ground_50Cal_BulletHole_02
+	{
+		myName Ground_50Cal_BulletHole_02
+		myX 768
+		myY 0
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Metal_50Cal_BulletHole
+	{
+		myName Metal_50Cal_BulletHole
+		myX 256
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage Mortarhit_House_01
+	{
+		myName Mortarhit_House_01
+		myX 896
+		myY 0
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Mortarhit_House_02
+	{
+		myName Mortarhit_House_02
+		myX 512
+		myY 128
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Mortarhit_Metal_01
+	{
+		myName Mortarhit_Metal_01
+		myX 640
+		myY 128
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Rockethit_House
+	{
+		myName Rockethit_House
+		myX 768
+		myY 128
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Rockethit_House_02
+	{
+		myName Rockethit_House_02
+		myX 896
+		myY 128
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Rockethit_Metal
+	{
+		myName Rockethit_Metal
+		myX 0
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Airstrike_01
+	{
+		myName ScorchMark_Airstrike_01
+		myX 128
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Ground
+	{
+		myName ScorchMark_Ground
+		myX 256
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Ground_Heavy
+	{
+		myName ScorchMark_Ground_Heavy
+		myX 384
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Ground_Mortar_Rocket
+	{
+		myName ScorchMark_Ground_Mortar_Rocket
+		myX 512
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Ground_Rocket
+	{
+		myName ScorchMark_Ground_Rocket
+		myX 640
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Ground_Rocket_02
+	{
+		myName ScorchMark_Ground_Rocket_02
+		myX 768
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage ScorchMark_Mortar_Ground
+	{
+		myName ScorchMark_Mortar_Ground
+		myX 0
+		myY 0
+		myWidth 256
+		myHeight 256
+	}
+
+	SubImage Small_BulletHoles
+	{
+		myName Small_BulletHoles
+		myX 320
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage Tankhit_Ground_01
+	{
+		myName Tankhit_Ground_01
+		myX 384
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage Tankhit_Ground_02
+	{
+		myName Tankhit_Ground_02
+		myX 448
+		myY 384
+		myWidth 64
+		myHeight 64
+	}
+
+	SubImage Tankhit_House_02
+	{
+		myName Tankhit_House_02
+		myX 896
+		myY 256
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage Tankhit_Metal
+	{
+		myName Tankhit_Metal
+		myX 0
+		myY 384
+		myWidth 128
+		myHeight 128
+	}
+
+	SubImage TreeShadow_Generic
+	{
+		myName TreeShadow_Generic
+		myX 256
+		myY 0
+		myWidth 256
+		myHeight 256
+	}
+
+}
+

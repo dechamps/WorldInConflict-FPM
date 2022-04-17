@@ -1,0 +1,194 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/usFarmland/AmericanBoxwood_RT.spt
+	{
+		myFilename speedtrees/usFarmland/AmericanBoxwood_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/AmericanBoxwood_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/AmericanBoxwood_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/AmericanBoxwood_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/AmericanBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/BurfordHolly_RT.spt
+	{
+		myFilename speedtrees/usFarmland/BurfordHolly_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/BurfordHolly_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/BurfordHolly_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/BurfordHolly_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/BurfordHolly_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/BurfordHolly_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/BurfordHolly_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/BurfordHolly_RT_Square.spt
+	{
+		myFilename speedtrees/usFarmland/BurfordHolly_RT_Square.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/BurfordHolly_RT_Square_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/KingsvilleBoxwood_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/KingsvilleBoxwood_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/KingsvilleBoxwood_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/LiveOak_RT.spt
+	{
+		myFilename speedtrees/usFarmland/LiveOak_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/LiveOak_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/LiveOak_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/LiveOak_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/LiveOak_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/LiveOak_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/LiveOak_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/LiveOak_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/LiveOak_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/LiveOak_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/LiveOak_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/LiveOak_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/LiveOak_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/LiveOak_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/LiveOak_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/RedRoseBushPatch_RT.spt
+	{
+		myFilename speedtrees/usFarmland/RedRoseBushPatch_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/RedRoseBushPatch_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/RedRoseBushPatch_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/RedRoseBushPatch_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/RedRoseBushPatch_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/RedYucca_RT_Flowers2.spt
+	{
+		myFilename speedtrees/usFarmland/RedYucca_RT_Flowers2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/RedYucca_RT_Flowers2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/SunflowerPatch_RT.spt
+	{
+		myFilename speedtrees/usFarmland/SunflowerPatch_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/SunflowerPatch_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/SunflowerPatch_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/SunflowerPatch_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/SunflowerPatch_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/Weeds_RT.spt
+	{
+		myFilename speedtrees/usFarmland/Weeds_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/Weeds_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/Weeds_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/Weeds_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/Weeds_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/Weeds_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/Weeds_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/Weeds_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/Weeds_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/Weeds_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/Weeds_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/Weeds_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/Weeds_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/Weeds_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/Weeds_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/AmericanElm_RT.spt
+	{
+		myFilename speedtrees/usFarmland/AmericanElm_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/AmericanElm_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/AmericanElm_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/AmericanElm_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/AmericanElm_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/AmericanElm_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/AmericanElm_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/AmericanElm_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/AmericanElm_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/AmericanElm_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/AmericanElm_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/AmericanElm_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/AmericanElm_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/AmericanElm_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/AmericanElm_RT2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/HorseChestnut_RT.spt
+	{
+		myFilename speedtrees/usFarmland/HorseChestnut_RT.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/HorseChestnut_RT_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/HorseChestnut_RT_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/HorseChestnut_RT_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/HorseChestnut_RT_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/HorseChestnut_RT_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/HorseChestnut_RT_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/usFarmland/HorseChestnut_RT2.spt
+	{
+		myFilename speedtrees/usFarmland/HorseChestnut_RT2.spt
+		myBBSideTexture speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbside.dds
+		myBBSideTextureMulti speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbtop.dds
+		myBBTopNormalmap speedtrees/usFarmland/billboards/HorseChestnut_RT2_bbtop_n.dds
+	}
+}

@@ -1,0 +1,167 @@
+INCLUDE juice/vector3.fruit
+
+TYPE StateInput
+{
+    SELF_UNDER_FIRE
+    ALLY_UNDER_FIRE
+    ENEMY_NEAR
+    ENEMY_FAR
+    NO_ENEMY_IN_RANGE
+    EXPLOSION_NEAR
+    ON_USER_ORDER
+    ON_USER_ATTACKORDER
+    FULL_HEALTH
+	GAME_STAND
+	GAME_CROUCH
+	GAME_LAY
+}
+
+TYPE AnimState
+{
+    NORMAL
+    CROUCH
+    LAY
+}
+
+TYPE BuildingCollisionState
+{
+	NORMAL
+	DESTROYED
+}
+
+CLASS StateTransition
+{
+    StateInput myInput
+    DECIMAL myTransitionTime
+    TEXT myTargetState
+}
+
+SCRIPTCLASS StateTransitionList
+{
+    StateTransition
+}
+
+CLASS StateModifier_Movement
+{
+    DECIMAL myMovementSpeedMultiplier
+}
+
+CLASS StateModifier_Animation
+{
+    AnimState myAnimationState
+}
+
+CLASS StateModifier_Collision
+{
+    FILE myPhysFile
+}
+
+CLASS StateModifier_BuildingCollision
+{
+    BuildingCollisionState myBuildingCollisionState
+}
+
+SCRIPTCLASS FiringOffsetList
+{
+	Vector3
+}
+
+CLASS StateModifier_FiringOffset
+{
+    FiringOffsetList myOffsets
+}
+
+CLASS StateModifier_ViewRange
+{
+    DECIMAL myViewRangeMultiplier
+}
+
+CLASS StateModifier_PerceptionRange
+{
+    DECIMAL myPerceptionRangeMultiplier
+}
+
+CLASS StateModifier_Restoration
+{
+    DECIMAL myHealingRate
+    DECIMAL myHealAmountPerTick
+}
+
+CLASS StateModifier_AmmoType
+{
+    TEXT myShooterName
+    TEXT myAmmoName
+}
+
+CLASS StateModifier_TargetingFlags
+{
+    TEXT myShooterName
+    NUMBER myCanTargetAirFlag
+    NUMBER myCanTargetGroundFlag
+    NUMBER myCanTargetInfantryFlag
+    NUMBER myCanTargetHeavyArmorFlag
+    NUMBER myCanAttackGroundFlag
+    NUMBER myCanAutoAcquireFlag
+}
+
+SCRIPTCLASS StateModifierList
+{
+    StateModifier_Movement
+    StateModifier_Animation
+    StateModifier_Collision
+    StateModifier_BuildingCollision
+    StateModifier_FiringOffset
+    StateModifier_ViewRange
+    StateModifier_PerceptionRange
+    StateModifier_Restoration
+    StateModifier_AmmoType
+    StateModifier_TargetingFlags
+}
+
+CLASS State
+{
+    TEXT myName
+    DECIMAL myDuration
+    DECIMAL myReturnTransitionTime
+    NUMBER myIsBlockingStateFlag
+    NUMBER myStopUnitFlag
+    NUMBER myDropTargetFlag
+    StateModifierList myModifiers
+    StateTransitionList myTransitions
+}
+
+// FOR TEH Animation states
+TYPE GameAction
+{
+	NO_ACTION
+	FIRE
+	COWER
+	WAVE
+	SECONDARY_FIRE
+	SPECIAL_ABILITY_FIRE
+	TURN_RIGHT
+	TURN_LEFT
+	ACCELERATE
+	DECELERATE
+	REPEL
+	NO_ACTION_SMOOTH
+}
+
+CLASS AnimationStateMapping
+{
+	GameAction myAction
+	TEXT myMovingAnimation
+	TEXT myNotMovingAnimation
+}
+
+SCRIPTCLASS AnimationStates
+{
+	AnimationStateMapping
+}
+
+CLASS AnimationTable
+{
+	AnimationStates myAnimations_STAND
+	AnimationStates myAnimations_CROUCH
+	AnimationStates myAnimations_PRONE
+}

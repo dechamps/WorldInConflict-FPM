@@ -1,0 +1,175 @@
+INCLUDE juice/AIMessage.fruit
+INCLUDE juice/default.fruit
+INCLUDE juice/Aimer.fruit
+
+TYPE FacingType
+{
+	FACING_UPWARDS
+	FACING_BULLET
+}
+
+
+TYPE WeaponID
+{
+	WI_TANK_NORMAL
+	WI_INFANTRY_NORMAL
+	WI_TANK_BALLISTIC
+	WI_TANK_HOMING
+	F1_INFANTRY_WEP1
+	F1_INFANTRY_WEP2
+	F1_SNIPER_WEP1
+	F1_SIEGESOLDIER_WEP1
+	F1_STEALTHJEEP_WEP1
+	F1_LIGHTAPC_WEP1
+	F1_ROCKETVEHICLE_WEP1
+	F1_MOBILEARTILLERY_WEP1
+	F1_COMBATENGINEER_WEP1
+	F1_MEDIUMTANK_WEP1
+	F1_HEAVYTANK_WEP1
+	F1_ASSAULTAPC_WEP1
+	F1_MINELAYER_WEP1
+	F1_SCOUTCOPTER_WEP1
+	F1_TRANSPORTCOPTER_WEP1
+	F2_LEGIONNAIR_WEP1
+	F2_ABCSOLDIER_WEP1
+	F2_PATHFINDER_WEP1
+	F2_APCHOVER_WEP1
+	F2_COMMANDHOVER_WEP1
+	F2_ENGINEERS_WEP1
+	F2_GATLINWALKER_WEP1
+	F2_MISSILEWALKER_WEP1
+	F2_HEAVYHOVER_WEP1
+	F2_TANKDESTROYER_WEP1
+	F2_HOWITZER_WEP1
+	F2_ATTACKCOPTER_WEP1
+	F3_ASSAULTSOLDIER_WEP1
+	F3_ABCSOLDIER_WEP1
+	F3_SHIELDHOVER_WEP1
+	F3_THUMPER_WEP1
+	F3_GRENADEHOVER_WEP1
+	F3_SURVEILANCE_WEP1
+	F3_LIGHTNINGHOVER_WEP1
+	F3_TWINPULSEHOVER_WEP1
+	F3_CAPTUREHOVER_WEP1
+	F3_BFG_WEP1
+	F3_EMPCOPTER_WEP1
+	F3_ENGINEERCOPTER_WEP1
+	STATIONARY_GUN_1
+}
+
+TYPE WeaponType
+{
+	DIRECT_WEAPON
+	INSTANT_WEAPON
+	INDIRECT_WEAPON
+	CLOUD_WEAPON
+	SNIPER_WEAPON
+	HOMING_WEAPON	
+	ROCKET_WEAPON
+	BALLISTIC_WEAPON
+}
+
+TYPE WeaponAbility
+{
+	WA_IGNORE_ARMOR
+	WA_IGNORE_SHIELDS
+	WA_SNIPER
+	WA_WATER_BLOCK
+	WA_NO_WATER_SHOOT
+	WA_UNSTOPPABLE
+	WA_PARALYZE
+	WA_CAPTURE
+}
+
+
+CLASS VisualHit
+{
+	TEXT myVisualModel
+	DECIMAL myLivingTime
+	FacingType myFacing
+}
+
+SCRIPTCLASS VisualHitList
+{
+	VisualHit
+}
+
+CLASS BulletHit
+{
+	VisualHitList myHitEffects
+	TEXTLIST mySounds
+}
+
+
+CLASS BulletImpactEffect
+{
+	BulletHit myGroundImpact
+	BulletHit myStoneImpact
+	BulletHit myWaterImpact
+	BulletHit myMetalImpact
+	BulletHit myFleshImpact
+	BulletHit myExpirationImpact
+}
+
+
+
+SCRIPTCLASS WeaponAbilities
+{
+	WeaponAbility
+}
+
+CLASS Bullet
+{
+
+}
+
+CLASS SpecialData
+{
+	DECIMAL myHomingSpeedX
+	DECIMAL myHomingSpeedY
+	DECIMAL myAcceleration
+	DECIMAL myHomingTime
+	DECIMAL myContinuousDamage
+	DECIMAL myContinuousTime
+	DECIMAL mySuppressFactor
+	DECIMAL myTimeToAquiringTarget
+	TEXT myBulletSound
+	DECIMAL myParalyzeDuration
+	DECIMAL myCaptureTime
+
+	NUMBER myBroadCastFlag
+	DECIMAL myBroadCastRange
+	DECIMAL myBroadCastFrequency
+	AIMessage myBroadCastMessageId
+
+}
+
+CLASS WeaponInfo
+{
+	WeaponType myWeaponType
+	WeaponID myWeaponID
+
+	DECIMAL myBulletsPerMag
+	DECIMAL myFiringRate
+	DECIMAL myReloadTime
+	DECIMAL myMaxRange
+	DECIMAL myMinRange
+	DECIMAL myPreFire
+	DECIMAL myAccuracy
+	DECIMAL myBlastRadius
+	DECIMAL myDamage
+	DECIMAL mySpeed
+	DECIMAL myDamageInfantry
+	DECIMAL myDamageVehicle
+	DECIMAL myDamageTank
+	DECIMAL myDamageAir
+
+
+	SpecialData myAdvancedData
+	TEXT myBulletRep
+	TEXT myBulletSound
+	BulletImpactEffect myImpactEffect
+
+	WeaponAbilities myWeaponAbilities
+	TEXTLIST myReloadSounds
+}

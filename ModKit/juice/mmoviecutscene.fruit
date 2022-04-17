@@ -1,0 +1,156 @@
+CLASS Position
+{
+	DECIMAL myX
+	DECIMAL myY
+	DECIMAL myZ	
+}
+
+TYPE PresentationEventType
+{
+	SetLightStatus
+	PlaySound
+	KillSound
+	SideSpecLight
+	PrintText
+	Preload
+	PythonCall
+	SetLightProjectionTexture
+	Fade
+	ToggleShadows
+	PrintTextNoSound
+	SetSunOverbright
+	OverrideGlobalLodFudgeRelative
+	TreeShadows
+	RenderGrass
+	SetFarPlane
+	ToggleNonCinematicShadows
+}
+
+CLASS PresentationEvent
+{
+	PresentationEventType myType
+	DECIMAL myTimeOffset
+	NUMBER myIndex
+	FILE myFile
+	TEXT myParams
+	LOCTEXT myLocalizedText	
+}
+
+SCRIPTCLASS PresentationEvents
+{
+	PresentationEvent
+}
+
+SCRIPTCLASS SubTitles
+{
+	LOCTEXT
+}
+
+SCRIPTCLASS ModelFiles
+{
+	FILE
+}
+CLASS LightSetup
+{
+	TEXT myLightName
+	ModelFiles myModelList
+}
+
+SCRIPTCLASS LightSetups
+{
+	LightSetup
+}
+
+CLASS Color
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+}
+
+CLASS FogSettings
+{
+	DECIMAL myFogStart
+	DECIMAL myFogEnd
+	DECIMAL myFogThreshold
+	DECIMAL myFogExponent
+}
+
+CLASS InMapData
+{
+	Position myPosition
+	DECIMAL myRotation
+	DECIMAL myNearPlane
+}
+
+
+CLASS OutOfMapData
+{
+	FILE myBloomConfigFile
+	TEXT myBloomSetup
+	FILE myEnvMap
+
+	LightSetups myLightSetups
+	Color myBackgroundColor
+	FogSettings myFogSettings
+
+	TEXT mySideSpecLightParams
+
+	NUMBER myForceShadows
+
+	DECIMAL myNearPlane
+}
+
+CLASS PresentationPage
+{
+	FILE mySoundFile
+	DECIMAL mySoundVolume
+	FILE myMusicSoundFile
+	DECIMAL myMusicSoundVolume
+
+	DECIMAL myTimeInSeconds
+	DECIMAL myStartTimeOffset
+	DECIMAL mySoundStartTimeOffset
+
+	SubTitles mySubTitles
+
+	PresentationEvents myEvents
+
+	FILE myMovieFile
+
+	NUMBER myInMap	
+	InMapData myInMapData
+	OutOfMapData myOutOfMapData
+
+	TEXT myEndPagePythonCall
+	
+	NUMBER myShouldRenderWaterReflections
+}
+
+SCRIPTCLASS Presentation
+{
+	PresentationPage
+}
+
+CLASS TextSound
+{
+	FILE myFile
+	DECIMAL myVolume
+}
+SCRIPTCLASS TextSounds
+{	
+	TextSound
+}
+
+
+CLASS MMovieScene
+{
+	Presentation myPresentation
+
+	FILE myMusic
+
+	TEXT myExtraTextureSuffix
+		
+	TextSounds myTextSounds	
+	DECIMAL myAspectRatio
+}

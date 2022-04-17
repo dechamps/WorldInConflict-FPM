@@ -1,0 +1,118 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub0
+	{
+		myText <empty>
+		myStartTime 1.3
+		myVisibleTime 4.5
+	}
+
+	MovieSubtitle Sub1
+	{
+		myText Yeah?
+		myStartTime 7.8
+		myVisibleTime 0.8
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Is this Colonel Jeremiah Sawyer?"
+		myStartTime 8.7
+		myVisibleTime 1.8
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText Retired.
+		myStartTime 10.6
+		myVisibleTime 0.8
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Not any more colonel. You've been recalled to active duty. \nWe need you in Europe."
+		myStartTime 11.5
+		myVisibleTime 4.1
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "I was wondering when you people would call.\nIs Ivan giving you a hard time?"
+		myStartTime 15.8
+		myVisibleTime 4.4
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "The Russians have proven ... more resourceful than expected colonel."
+		myStartTime 20.3
+		myVisibleTime 3.8
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "They've made significant gains in Germany and most of the Sixth Fleet has been destroyed."
+		myStartTime 24.3
+		myVisibleTime 4.6
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "Yeah, I heard. So I guess you want me to go to France?"
+		myStartTime 29.0
+		myVisibleTime 4.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "Affirmative, sir. You'll command a combined US and NATO task force  with the order to drive the \nRussians out of southern France."
+		myStartTime 33.1
+		myVisibleTime 6.5
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "You do know why I was discharged, don't you?"
+		myStartTime 39.8
+		myVisibleTime 3.7
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "Well, all has been forgiven colonel."
+		myStartTime 43.7
+		myVisibleTime 2.4
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "I didn't ask for your god damn forgiveness! You people got us into this mess in the first place \nand now you're standing there with your pants down wondering what to do. "
+		myStartTime 46.2
+		myVisibleTime 9.2
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "That's what you get with a bunch of sycophant bureaucrats making all the decisions."
+		myStartTime 55.7
+		myVisibleTime 4.9
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Do you accept the command colonel?"
+		myStartTime 61.6
+		myVisibleTime 2
+	}
+
+	MovieSubtitle sub15
+	{
+		myText "When do I leave?"
+		myStartTime 64.7
+		myVisibleTime 1.8
+	}
+
+}
+

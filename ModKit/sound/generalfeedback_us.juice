@@ -1,0 +1,304 @@
+INCLUDE sound/generalfeedback.fruit
+
+FeedbackData FeedbackData
+{
+	myYouWonSounds
+	{
+	}
+
+	myYouWonSoundsSP
+	{
+	}
+
+	myYouLostSounds
+	{
+	}
+
+	myYouLostSoundsSP
+	{
+	}
+
+	my10minRemainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_001.mp3
+
+	}
+
+	my5minRemainSound
+	{
+	}
+
+	my3minRemainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_002.mp3
+
+	}
+
+	my1minRemainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_003.mp3
+
+	}
+
+	my30secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_004.mp3
+
+	}
+
+	my10secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_005.mp3
+
+	}
+
+	my09secremainSound
+	{
+	}
+
+	my08secremainSound
+	{
+	}
+
+	my07secremainSound
+	{
+	}
+
+	my06secremainSound
+	{
+	}
+
+	my05secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_007.mp3
+
+	}
+
+	my04secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_008.mp3
+
+	}
+
+	my03secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_009.mp3
+
+	}
+
+	my02secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_010.mp3
+
+	}
+
+	my01secremainSound
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_time_left_011.mp3
+
+	}
+
+	myDomination10percentGoingUp
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_player_win_001.mp3
+
+	}
+
+	myDomination25percentGoingUp
+	{
+	}
+
+	myDomination75percentGoingUp
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_player_win_002.mp3
+
+	}
+
+	myDomination90percentGoingUp
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_player_win_003.mp3
+
+	}
+
+	myDomination10percentGoingDown
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_enemy_win_003.mp3
+
+	}
+
+	myDomination25percentGoingDown
+	{
+	}
+
+	myDomination75percentGoingDown
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_enemy_win_002.mp3
+
+	}
+
+	myDomination90percentGoingDown
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_enemy_win_001.mp3
+
+	}
+
+	myDropshipGoingToLZ
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_plane_sent_001a.mp3
+
+		FILE FILE(1) sound/feedback/us/hq/us_hq_plane_sent_001b.mp3
+
+		FILE FILE(2) sound/feedback/us/hq/us_hq_plane_sent_002a.mp3
+
+		FILE FILE(3) sound/feedback/us/hq/us_hq_plane_sent_002b.mp3
+
+		FILE FILE(4) sound/feedback/us/hq/us_hq_plane_sent_003a.mp3
+
+		FILE FILE(5) sound/feedback/us/hq/us_hq_plane_sent_003b.mp3
+
+		FILE FILE(6) sound/feedback/us/hq/us_hq_plane_sent_004a.mp3
+
+		FILE FILE(7) sound/feedback/us/hq/us_hq_plane_sent_004b.mp3
+
+		FILE FILE(8) sound/feedback/us/hq/us_hq_plane_sent_005a.mp3
+
+		FILE FILE(9) sound/feedback/us/hq/us_hq_plane_sent_005b.mp3
+
+	}
+
+	myDropshipDropcomplete
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_plane_drop_001a.mp3
+
+		FILE FILE(1) sound/feedback/us/hq/us_hq_plane_drop_001b.mp3
+
+		FILE FILE(2) sound/feedback/us/hq/us_hq_plane_drop_002a.mp3
+
+		FILE FILE(3) sound/feedback/us/hq/us_hq_plane_drop_002b.mp3
+
+		FILE FILE(4) sound/feedback/us/hq/us_hq_plane_drop_003a.mp3
+
+		FILE FILE(5) sound/feedback/us/hq/us_hq_plane_drop_003b.mp3
+
+		FILE FILE(6) sound/feedback/us/hq/us_hq_plane_drop_004a.mp3
+
+		FILE FILE(7) sound/feedback/us/hq/us_hq_plane_drop_004b.mp3
+
+		FILE FILE(8) sound/feedback/us/hq/us_hq_plane_drop_005a.mp3
+
+		FILE FILE(9) sound/feedback/us/hq/us_hq_plane_drop_005b.mp3
+
+	}
+
+	myDropshipAtBase
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_plane_ready_001a.mp3
+
+		FILE FILE(1) sound/feedback/us/hq/us_hq_plane_ready_001b.mp3
+
+		FILE FILE(2) sound/feedback/us/hq/us_hq_plane_ready_002a.mp3
+
+		FILE FILE(3) sound/feedback/us/hq/us_hq_plane_ready_002b.mp3
+
+		FILE FILE(4) sound/feedback/us/hq/us_hq_plane_ready_003a.mp3
+
+		FILE FILE(5) sound/feedback/us/hq/us_hq_plane_ready_003b.mp3
+
+		FILE FILE(6) sound/feedback/us/hq/us_hq_plane_ready_004a.mp3
+
+		FILE FILE(7) sound/feedback/us/hq/us_hq_plane_ready_004b.mp3
+
+		FILE FILE(8) sound/feedback/us/hq/us_hq_plane_ready_005a.mp3
+
+		FILE FILE(9) sound/feedback/us/hq/us_hq_plane_ready_005b.mp3
+
+	}
+
+	myDominationGoingUp
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_player_win_001.mp3
+
+	}
+
+	myDominationGoingDown
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_enemy_win_003.mp3
+
+	}
+
+	myArtilleryBarrageDetectedSounds
+	{
+	}
+
+	myUnitKilledSounds
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_unit_lost_001a.mp3
+
+		FILE FILE(1) sound/feedback/us/hq/us_hq_unit_lost_001b.mp3
+
+		FILE FILE(2) sound/feedback/us/hq/us_hq_unit_lost_002a.mp3
+
+		FILE FILE(3) sound/feedback/us/hq/us_hq_unit_lost_002b.mp3
+
+		FILE FILE(4) sound/feedback/us/hq/us_hq_unit_lost_003a.mp3
+
+		FILE FILE(5) sound/feedback/us/hq/us_hq_unit_lost_003b.mp3
+
+		FILE FILE(6) sound/feedback/us/hq/us_hq_unit_lost_004a.mp3
+
+		FILE FILE(7) sound/feedback/us/hq/us_hq_unit_lost_004b.mp3
+
+		FILE FILE(8) sound/feedback/us/hq/us_hq_unit_lost_005a.mp3
+
+		FILE FILE(9) sound/feedback/us/hq/us_hq_unit_lost_005b.mp3
+
+	}
+
+	myKothStartsSound
+	{
+	}
+
+	myAssaultRound1DefenderStartUpSounds
+	{
+	}
+
+	myAssaultRound1AttackerStartUpSounds
+	{
+	}
+
+	myAssaultRound2DefenderStartUpSounds
+	{
+	}
+
+	myAssaultRound2AttackerStartUpSounds
+	{
+	}
+
+	myGeigerSounds
+	{
+		FILE FILE(0) sound/interface/geiger_single.wav
+
+		FILE FILE(1) sound/interface/geiger_looped.wav
+
+	}
+
+	myNukeDetectedSounds
+	{
+		FILE FILE(0) sound/feedback/us/hq/us_hq_enemy_nuke_001.mp3
+
+		FILE FILE(1) sound/feedback/us/hq/us_hq_enemy_nuke_002.mp3
+
+		FILE FILE(2) sound/feedback/us/hq/us_hq_enemy_nuke_003.mp3
+
+		FILE FILE(3) sound/feedback/us/hq/us_hq_enemy_nuke_004.mp3
+
+	}
+
+	myNukeNames
+	{
+		TEXT TEXT(0) TacticalNuke_USSR
+
+	}
+
+}
+

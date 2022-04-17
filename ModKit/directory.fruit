@@ -1,0 +1,1547 @@
+INCLUDE juice/vector2.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE juice/camera.fruit
+INCLUDE juice/materials.fruit
+INCLUDE juice/genericmodel.fruit
+INCLUDE juice/commandpoints.fruit
+INCLUDE units/unittype.fruit // for ExperienceLevels
+INCLUDE juice/CameraPosDebugInfo.fruit
+INCLUDE juice/Buildingtemplate.fruit
+INCLUDE juice/DefensiveFortificationType.fruit
+INCLUDE juice/Music.fruit
+INCLUDE juice/color.fruit
+
+//SCRIPTCLASS FILEList
+//{
+//	FILE
+//}
+
+CLASS DominationTickRateSpline
+{
+	Vector2 myMiddlePoint
+	Vector2 myInsidePoint1
+	Vector2 myInsidePoint2
+	Vector2 myEdgePoint
+}
+
+CLASS DeploymentMask
+{
+	DECIMAL myTilingFactor
+	XColorRGB myColor
+	FILE myTexture
+}
+
+
+CLASS ForestBorder
+{
+	DECIMAL myWidth
+	XColorRGB myColor
+	FILE myTexture
+}
+
+CLASS PlayfieldBorder
+{
+	DECIMAL myWidth
+	XColorRGB myColor
+	DECIMAL myFadeTime
+	FILE myTexture
+}
+
+CLASS BallisticMinRangeBorder
+{
+	DECIMAL myWidth
+	XColorRGB myColor
+//	FILE myTexture
+	DECIMAL myAnimationTime
+}
+
+CLASS BallisticMaxRangeBorder
+{
+	DECIMAL myWidth
+	XColorRGB myColor
+//	FILE myTexture
+	DECIMAL myAnimationTime
+}
+
+CLASS LineOfFireBorder
+{
+	DECIMAL myWidth
+	XColorRGB myColor
+	FILE myTexture
+}
+
+CLASS FireRangeBorders
+{
+	BallisticMinRangeBorder myBallisticMinRangeBorder
+	BallisticMaxRangeBorder myBallisticMaxRangeBorder
+	LineOfFireBorder myLineOfFireBorder
+}
+
+CLASS ResupplyInfo
+{
+	FILE myDropAnimation
+	DECIMAL myDropAnimationFadeOutTime
+	DECIMAL myDropDelay
+	DECIMAL myReadyDelay
+}
+
+CLASS SpecialSpeedModifier
+{
+	DECIMAL myMoverSpeedModifier
+	DECIMAL myTurretSpeedModifier
+}
+
+CLASS ScoreSheet
+{
+	LOCTEXT myPlayerNameString
+	LOCTEXT myScoreString
+	LOCTEXT myTeamVictoryLocationsString
+	TEXT myPlayerColorPrefab
+	TEXT myIPCheckVal3IGNORE
+}
+
+CLASS ColorARGB
+{
+	NUMBER myR
+	NUMBER myG
+	NUMBER myB
+	NUMBER myA
+}
+
+CLASS EnterBuildingMarker
+{
+	FILE myEffectMRB
+	DECIMAL myTimetolive
+}
+
+CLASS UpkeepLevel
+{
+	NUMBER myMaintenance
+	DECIMAL myAPFactor
+}
+
+SCRIPTCLASS UpkeepLevels
+{
+	UpkeepLevel
+}
+
+CLASS VisualExperience
+{
+	NUMBER myMinSize
+	NUMBER myMaxSize
+	NUMBER myRelativeSize
+	DECIMAL myScalingFactor
+	NUMBER myOffset
+	TEXT myLevel_01
+	TEXT myLevel_02
+	TEXT myLevel_03
+	TEXT myLevel_04
+	TEXT myLevel_05
+}
+
+CLASS FeedbackMarker
+{
+	FILE myMarkerMRB
+	FILE myMarkerMRBMegaMap
+	ColorARGB myColor
+	ColorARGB myCoverColor
+	DECIMAL myFadeOutTime
+	DECIMAL myRadiusOffset
+	DECIMAL myHeightOffset
+	DECIMAL myBlinkTime
+	DECIMAL myBlinkFrequency
+	DECIMAL myBlinkAlpha	
+}
+
+CLASS VisualComponents
+{
+
+	FeedbackMarker myMoveMarker
+	FeedbackMarker myMoveDirectionMarker
+	FeedbackMarker myMoveFollowMarker
+	FeedbackMarker myMoveQueueMarker
+	FeedbackMarker myDeniedMarker
+	FeedbackMarker myAttackMarker
+	FeedbackMarker myAttackPositionMarker
+	FeedbackMarker myAttackBuildingMarker
+	FeedbackMarker myEnterUnitMarker
+	FeedbackMarker myEnterBuildingMarker
+	FeedbackMarker myTAPlacedMarker
+	FeedbackMarker myRepairMarker
+	FeedbackMarker myLaybridgeMarker
+	FeedbackMarker myLoadPickupSpotMarker
+	FeedbackMarker myVisualCoverPositionPreviewMarker
+
+	FILE myOrderBuoy
+	FILE myOrderBuoyDirection
+	FILE myOrderDeniedBouy
+	DECIMAL myBuoyFadeoutTime
+	NUMBER myBuoyHeight
+	FILE myViewRangeMarker
+	FILE myAttackRangeMarker
+	FILE myAttackGroundBuoy
+	FILE myAttackBuoy
+	FILE myEnterBuildingBuoy
+	FILE myLeaveBuildingBuoy
+	FILE myTacticalAidBuoy
+	FILE myRepairBuoy
+
+}
+
+CLASS DominationBar
+{
+	FILE myDominationBarUS
+	FILE myDominationBarNATO
+	FILE myDominationBarUSSR
+	Vector3 myModelPosition
+	NUMBER myModelHeading
+	NUMBER myCameraPitch
+	NUMBER myCameraFOV
+	FILE myDominationMarker
+	FILE myFriendlyZoneCountMarker
+	FILE myHostileZoneCountMarker
+	Vector3 myMarkerModelPosition
+	NUMBER myMarkerModelHeading
+	NUMBER myMarkerCameraPitch
+	NUMBER myMarkerCameraFOV
+	DECIMAL myDestructionLevel2
+	DECIMAL myDestructionLevel3
+	DECIMAL myDestructionLevel4
+}
+
+CLASS AssultBar
+{
+	TEXT myInstantWinPrefab
+	TEXT myDefendArrowPrefab
+	TEXT myAttackArrowPrefab
+	TEXT myDisabledFlagPrefab
+	DECIMAL myFlashSpeed
+
+	LOCTEXT myToolTipTaken
+	LOCTEXT myToolTipFallen
+	LOCTEXT myToolTipContested
+	LOCTEXT myToolTipFrendlyUncaptured
+	LOCTEXT myToolTipEnemyUncaptured
+	LOCTEXT myToolTipDisabled
+	LOCTEXT myToolTipTimeToHold
+	LOCTEXT myToolTipTimeToWin
+	LOCTEXT myToolTipInstantLoose
+	LOCTEXT myToolTipInstantWin
+}
+
+
+CLASS TacticalAidMenu
+{
+	TEXT myCategoryPrefab0
+	TEXT myCategoryPrefab1
+	TEXT myCategoryPrefab2
+	TEXT myCategoryTooltipRef0
+	TEXT myCategoryTooltipRef1
+	TEXT myCategoryTooltipRef2
+
+	LOCTEXT myPrice
+	LOCTEXT myDeploymentTime
+	LOCTEXT myRechargeTime
+	LOCTEXT myPlacementCount1
+	LOCTEXT myPlacementCount2
+	LOCTEXT myPlacementCount3
+}
+
+CLASS SelectionMarker
+{
+	DECIMAL myVisualRadiusMultiplier
+	NUMBER myNumSegments
+	DECIMAL myLineWidth
+	ColorARGB myColor
+	FILE myTexture
+}
+
+CLASS CorridorSupportThingPlacement
+{
+	DECIMAL myPreviewLerpFactor
+	DECIMAL myPreviewDeadZoneSlowDistance
+	DECIMAL myPreviewDeadZoneStopDistance
+}
+
+CLASS TangibleUI
+{
+	FILE mySkinFile
+	TEXT mySkin
+	TEXT mySelectionLassoPrefab
+	TEXT mySelectionMarkerPrefab
+	TEXT mySelectionMouseOverPrefab
+	TEXT myHealthPrefab
+	TEXT myHealthBGPrefab
+	TEXT myHealthWorldPrefab
+	TEXT myHealthWorldBGPrefab
+	TEXT myInfantryContainedPrefab
+	NUMBER myHealthLeft
+	NUMBER myHealthTop
+	NUMBER myHealthRight
+	NUMBER myHealthBottom
+	FILE myMinimapSignalMarkerFile
+	DECIMAL myMinimapSignalRadius
+	NUMBER myMinimapSignalFlashes
+	VisualComponents myVisualComponents	
+	VisualExperience myVisualExperience
+	FILE myGenericUnitMarkerPrefab
+	FILE myRadioButtonUnselectedPrefab
+	FILE myRadioButtonSelectedPrefab
+	NUMBER myGroupSelectRadius
+	NUMBER myGroupSelectMarkerFadeoutTime
+	NUMBER myGroupSelectMarkerHeight
+	FILE myGroupSelectMarkerFile		
+	TEXT myIPCheckVal4IGNORE
+	FILE myBuildingSelectionModelFile
+	DominationBar myDominationBar
+	AssultBar myAssultBar
+	NUMBER myDropZoneColor
+	SelectionMarker mySelectionMarker
+
+	FILE myIsHoldingFireIcon
+	FILE myIsNotHoldingFireIcon
+	FILE myMixedHoldingFireIcon
+	TEXT myFormationLinePrefab
+	TEXT myFormationBoxPrefab
+
+	ColorARGB myOffensiveAbilityBarStartColor
+	ColorARGB myOffensiveAbilityBarEndColor
+	ColorARGB myDefensiveAbilityBarStartColor
+	ColorARGB myDefensiveAbilityBarEndColor
+	NUMBER myAbilityBarMaxRange
+	DECIMAL myRechargableReloadedBlinkInterval
+	ColorARGB myRechargableReloadedBlinkColor
+	
+	CorridorSupportThingPlacement mySupportThingPlacement
+}
+
+CLASS FocusOrbitConfig
+{
+	NUMBER myFocusEnable
+	DECIMAL myFocusMinDist
+	DECIMAL myFocusMaxDist
+	DECIMAL myFocusDistScale
+}
+
+CLASS WicCamera
+{
+	DECIMAL myMoveSpeed
+	DECIMAL myHeightSpeed
+	DECIMAL myRotateSpeed
+	DECIMAL myPositionLerpSpeed
+	DECIMAL myOrientationLerpSpeed
+	DECIMAL myMinimumSurfaceClearance
+	DECIMAL myMaximumHeight 
+	DECIMAL myFollowCameraMinimumDistanceToUnit
+	DECIMAL myFollowCameraAngleAboveUnit
+	DECIMAL myFollowCameraCameraAngleModifier
+	DECIMAL myFloatingLimit
+	DECIMAL myHeightMoveSpeedModifier
+	DECIMAL myLowMoveSpeed
+	DECIMAL myHighMoveSpeed
+	DECIMAL myLowRotateSpeed
+	DECIMAL myLowRotateSpeedX
+	DECIMAL myLowRotateSpeedY
+	DECIMAL myHighRotateSpeed
+	DECIMAL myHighRotateSpeedX
+	DECIMAL myHighRotateSpeedY
+	DECIMAL myLowFov
+	DECIMAL myHighFov
+	DECIMAL myFovLerpSpeed
+//	DECIMAL myLowPitchLimit
+//	DECIMAL myHighPitchLimit
+	DECIMAL myLowPitchDownLimit
+	DECIMAL myLowPitchUpLimit
+	DECIMAL myHighPitchDownLimit
+	DECIMAL myHighPitchUpLimit
+	DECIMAL myLowMoveAccelerationSpeed
+	DECIMAL myLowMoveDecaySpeed
+	DECIMAL myHighMoveAccelerationSpeed
+	DECIMAL myHighMoveDecaySpeed
+	DECIMAL myRotationAccelerationSpeed
+	DECIMAL myRotationDecaySpeed
+	DECIMAL myHeightInterpolationMiddleModifier
+	
+	FocusOrbitConfig myFocusOrbitNudgeConfig
+	FocusOrbitConfig myFocusOrbitMLookConfig
+
+	DECIMAL myMegaMapFov
+	DECIMAL myMegaMapMinimumSurfaceClearance
+	DECIMAL myMegaMapMaximumHeight
+	DECIMAL myMegaMapLowMoveSpeed
+	DECIMAL myMegaMapHighMoveSpeed
+}
+
+CLASS RTSCamera
+{
+	DECIMAL myMoveSpeed
+	DECIMAL myHeightSpeed
+	DECIMAL myRotateSpeed
+	DECIMAL myPositionLerpSpeed
+	DECIMAL myOrientationLerpSpeed
+	DECIMAL myMinimumSurfaceClearance
+	DECIMAL myMaximumHeight 
+	DECIMAL myFollowCameraMinimumDistanceToUnit
+	DECIMAL myFollowCameraAngleAboveUnit
+	DECIMAL myFollowCameraCameraAngleModifier
+	DECIMAL myFloatingLimit
+	DECIMAL myHeightMoveSpeedModifier
+	DECIMAL myLowMoveSpeed
+	DECIMAL myHighMoveSpeed
+	DECIMAL myLowRotateSpeed
+	DECIMAL myHighRotateSpeed
+	DECIMAL myLowFov
+	DECIMAL myHighFov
+	DECIMAL myFovLerpSpeed
+//	DECIMAL myLowPitchLimit
+//	DECIMAL myHighPitchLimit
+	DECIMAL myLowPitchDownLimit
+	DECIMAL myLowPitchUpLimit
+	DECIMAL myHighPitchDownLimit
+	DECIMAL myHighPitchUpLimit
+	DECIMAL myLowMoveAccelerationSpeed
+	DECIMAL myLowMoveDecaySpeed
+	DECIMAL myHighMoveAccelerationSpeed
+	DECIMAL myHighMoveDecaySpeed
+	DECIMAL myRotationAccelerationSpeed
+	DECIMAL myRotationDecaySpeed
+}
+
+
+CLASS DCCamera
+{
+	DECIMAL myMoveSpeed
+	DECIMAL myHeightSpeed
+	DECIMAL myRotateSpeed
+	DECIMAL myPositionLerpSpeed
+	DECIMAL myOrientationLerpSpeed
+	DECIMAL myMinimumSurfaceClearance
+	DECIMAL myMaximumHeight 
+	DECIMAL myFollowCameraMinimumDistanceToUnit
+	DECIMAL myFollowCameraAngleAboveUnit
+	DECIMAL myFollowCameraCameraAngleModifier
+	DECIMAL myFloatingLimit
+	DECIMAL myHeightMoveSpeedModifier
+	DECIMAL myLowMoveSpeed
+	DECIMAL myHighMoveSpeed
+	DECIMAL myLowRotateSpeed
+	DECIMAL myHighRotateSpeed
+	DECIMAL myLowFov
+	DECIMAL myHighFov
+	DECIMAL myFovLerpSpeed
+//	DECIMAL myLowPitchLimit
+//	DECIMAL myHighPitchLimit
+	DECIMAL myLowPitchDownLimit
+	DECIMAL myLowPitchUpLimit
+	DECIMAL myHighPitchDownLimit
+	DECIMAL myHighPitchUpLimit
+	DECIMAL myLowMoveAccelerationSpeed
+	DECIMAL myLowMoveDecaySpeed
+	DECIMAL myHighMoveAccelerationSpeed
+	DECIMAL myHighMoveDecaySpeed
+	DECIMAL myRotationAccelerationSpeed
+	DECIMAL myRotationDecaySpeed
+	
+	DECIMAL myHighMouseSensitivity
+	DECIMAL myLowMouseSensitivity
+	DECIMAL myHighKeySensitivity
+	DECIMAL myLowKeySensitivity
+	DECIMAL myZoomSteps
+	DECIMAL myHighAccelerationRotationTime
+	DECIMAL myLowAccelerationRotationTime
+	DECIMAL myHighDecayRotationTime
+	DECIMAL myLowDecayRotationTime
+}
+
+CLASS CameraManager
+{
+	WicCamera myWicCamera
+	RTSCamera myRTSCamera
+	DCCamera myDirectControlCameraKeyLook
+	DCCamera myDirectControlCameraMouseLook
+	DCCamera myDirectControlCameraKeyMouseLook
+	DECIMAL myLerpToLandigZoneTime
+	FILE myActionCamSetup
+	DECIMAL myCameraMiniMapOffsetDistance
+}
+
+CLASS EXP_EffectContainer
+{
+	FILE myDrawerSkinFile
+	TEXT myDrawerSkin
+}
+
+CLASS StrategicMap
+{
+	// TODO: REMOVE
+	DECIMAL myUnitIconWidth
+	DECIMAL myUnitIconHeight
+	DECIMAL myUnitDigitSize
+	DECIMAL myUnitArrowSize
+	DECIMAL myUnitIconSize
+	FILE myIconHeavyArmor
+	FILE myIconMediumArmor
+	FILE myIconArtillery
+	FILE myIconHeli
+	FILE myIconAttackHeli
+	FILE myIconInfantry
+	FILE myIconAntiAir
+	FILE myIconEngineer
+	FILE myIconCombinedArms
+	FILE myIconTroopTransport
+	FILE myIconUnitGroupMarker
+	FILE myIconUnitCount1
+	FILE myIconUnitCount2
+	FILE myIconUnitCount3
+	FILE myIconUnitCount4
+	FILE myIconUnitCount5
+	FILE myIconUnitCount6
+	FILE myIconUnitCount7
+	FILE myIconUnitCount8
+	FILE myIconUnitCount9
+	FILE myIconUnitCount0
+	// END TODO
+	DECIMAL myUnitIconScale
+	DECIMAL myDZIconScale
+	DECIMAL myArrowIconScale
+	FILE myIconUnitDestinationArrow
+	FILE myIconUnitDestinationArrowHead
+	FILE myIconTauntsFile
+	FILE myIconWarningsFile
+	ColorARGB myDZTextColor
+	ColorARGB myRequestTextColor
+
+	FILE myIconStrategyFile
+	FILE myIconTacticsFile
+	FILE myIconTaunt1File
+	FILE myIconTaunt2File
+	FILE myIconTaunt3File
+	FILE myIconTaunt4File
+	FILE myIconWarningInfFile
+	FILE myIconWarningArmorFile
+	FILE myIconWarningAirFile
+	FILE myIconWarningArtyFile
+	FILE myIconTacticsAAFile
+	FILE myIconTacticsArmorFile
+	FILE myIconTacticsRepairFile
+	FILE myIconTacticsArtyFile
+	FILE myIconStrategyBridgeFile
+	FILE myIconStrategyClearForestFile
+	FILE myIconStrategyAttackFile
+	FILE myIconStrategyDefendFile
+
+	FILE myDZIcon
+}
+CLASS CombinedTypes
+{
+	FILE myIconHeavyArmor
+	FILE myIconMediumArmor
+	FILE myIconArtillery
+	FILE myIconHeli
+	FILE myIconAttackHeli
+	FILE myIconInfantry
+	FILE myIconAntiAir
+	FILE myIconEngineer
+	FILE myIconCombinedArms
+	FILE myIconTroopTransport
+}
+CLASS UnitWorldIcons
+{
+	DECIMAL myUnitIconOffset
+	Vector2 myUnitIconSourceSize
+	DECIMAL myUnitIconScaleMin
+	DECIMAL myUnitIconScaleMax
+	DECIMAL myUnitIconMegaMapScale
+	DECIMAL myUnitIconUnselectedOpacity
+	DECIMAL myUnitAttackedLitTime
+	DECIMAL myUnitAttackedFadeTime
+	DECIMAL myRequestIconScaleMin
+	DECIMAL myRequestIconScaleMax
+	DECIMAL myRequestIconMegaMapScale
+	NUMBER myInfantryDotSpace	
+
+	DECIMAL mySingleHealthOffset
+	DECIMAL mySingleHealthMegaMapScale
+	DECIMAL mySingleHealthScaleMin
+	DECIMAL mySingleHealthScaleMax
+	DECIMAL mySingleProgressOffset
+	DECIMAL mySingleProgressMegaMapScale
+	DECIMAL mySingleProgressScaleMin
+	DECIMAL mySingleProgressScaleMax
+
+	Vector2 myBackgroundOffset
+	Vector2 myTransportingOffset
+	Vector2 myInBuildingOffset
+	Vector2 myInForestOffset
+	Vector2 myInTransportOffset
+	Vector2 myHealthOffset
+	Vector2 myHoldFireOffset
+	Vector2 myRankOffset
+	Vector2 myUnitTypeOffset
+	Vector2 myInfantryDotOffset
+	Vector2 myReloadOffset
+
+	TEXT myBackgroundPrefab
+	TEXT myBackgroundSelectedPrefab
+	TEXT myTransportingPrefab
+	TEXT myTransportingSelectedPrefab
+	TEXT myInBuildingPrefab
+	TEXT myInForestPrefab
+	TEXT myInTransportPrefab
+	TEXT myHealthPrefab
+	TEXT myHoldFirePrefab
+	TEXT myInfantryDotPrefab
+	TEXT myReloadPrefab
+
+	TEXT myRankPrefab_0
+	TEXT myRankPrefab_1 
+	TEXT myRankPrefab_2 
+	TEXT myRankPrefab_3 
+	TEXT myRankPrefab_4 
+
+	TEXT myCombinedType_0
+	TEXT myCombinedType_1
+	TEXT myCombinedType_2
+	TEXT myCombinedType_3
+	TEXT myCombinedType_4
+	TEXT myCombinedType_5
+	TEXT myCombinedType_6
+	TEXT myCombinedType_7
+	TEXT myCombinedType_8
+	TEXT myCombinedType_9
+
+	TEXT myBackgroundFriendlyDotPrefab
+	TEXT myBackgroundEnemyDotPrefab
+	TEXT myBackgroundEmptyPrefab
+
+	TEXT mySingleHealthPrefab
+	TEXT mySingleHealthBGPrefab
+	TEXT mySingleProgressPrefab
+	TEXT mySingleProgressBGPrefab
+}
+CLASS UnitBarIcons
+{
+	NUMBER myColumnSpace
+	NUMBER myRowSpace
+	NUMBER myFocusSpace
+	NUMBER myMaxColumns
+
+	Vector2 myIconStartPosFloat
+	Vector2 myIconSize
+	NUMBER myInfantryDotSpace
+	
+	Vector2 myBackgroundOffset
+	Vector2 myTransportingOffset
+	Vector2 myInBuildingOffset
+	Vector2 myInForestOffset
+	Vector2 myInTransportOffset
+	Vector2 myHealthOffset
+	Vector2 myHoldFireOffset
+	Vector2 myRankOffset
+	Vector2 myUnitTypeOffset
+	Vector2 myInfantryDotOffset
+	Vector2 myReloadOffset
+
+	TEXT myBackgroundPrefab
+	TEXT myBackgroundSelectedPrefab
+	TEXT myTransportingPrefab
+	TEXT myTransportingSelectedPrefab
+	TEXT myInBuildingPrefab
+	TEXT myInForestPrefab
+	TEXT myInTransportPrefab
+	TEXT myHealthPrefab
+	TEXT myHoldFirePrefab
+	TEXT myInfantryDotPrefab
+	TEXT myReloadPrefab
+	TEXT myRankPrefab_0
+	TEXT myRankPrefab_1 
+	TEXT myRankPrefab_2 
+	TEXT myRankPrefab_3 
+	TEXT myRankPrefab_4 
+	TEXT myUnitTypePrefab_0
+	TEXT myUnitTypePrefab_1
+	TEXT myUnitTypePrefab_2
+	TEXT myUnitTypePrefab_3
+	TEXT myUnitTypePrefab_4
+	TEXT myUnitTypePrefab_5
+	TEXT myUnitTypePrefab_6
+	TEXT myUnitTypePrefab_7
+	TEXT myUnitTypePrefab_8
+	TEXT myUnitTypePrefab_9
+}
+CLASS OrderPaletteIcons
+{
+	TEXT myWaypointPrefab
+	TEXT myRepairPrefab
+	TEXT myFollowPrefab
+	TEXT myMovePrefab
+	TEXT myMoveBackwardsPrefab
+	TEXT myStopPrefab
+	TEXT myAttackGroundPrefab
+	TEXT myUnloadPrefab
+	TEXT myHoldFirePrefab
+	TEXT myEnterTransportPrefab
+	TEXT myEnterBuildingPrefab
+
+	TEXT myAbilityOverlayCooldown
+	TEXT myAbilityOverlayProcessing
+	TEXT myAbilityOverlayPending
+
+	LOCTEXT myRechargeTime
+	LOCTEXT myDurationTime
+}
+
+CLASS FirstTimeTips
+{
+	NUMBER myMoveCameraTime
+	LOCTEXT myMoveCameraText
+	NUMBER myDeployUnitsTime
+	LOCTEXT myDeployUnitsText
+	NUMBER myGiveOrderTime
+	LOCTEXT myGiveOrderText
+	NUMBER myDropTAPoints
+	LOCTEXT myDropTAText
+	NUMBER myTipVisibleTime
+}
+CLASS FortificationInfo
+{
+	NUMBER myFortificationTextPixelOffset
+	FILE myFortificationPositionEffect1
+	FILE myFortificationPositionEffect2
+	FILE myFortificationPositionEffect3
+	DECIMAL myTimeBeforeConsiderUnfortified
+	DECIMAL myFortificationPositionEffectDelay
+	DECIMAL myFortificationPositionStartStopDelay
+}
+
+CLASS VoteSettings
+{
+	DECIMAL myDuration
+	DECIMAL myPlayerCooldown
+	DECIMAL myYesWeight
+	DECIMAL myNoWeight
+	DECIMAL myBlankWeight
+	DECIMAL myKickTeamExtraWeight
+}
+
+CLASS GuiSounds
+{
+	FILE myCreditsUpSound
+	FILE myCreditsDownSound
+	FILE myGotBattleHonorsSound
+	FILE myBhUpSound
+	FILE myBhDownSound
+	FILE myNewSupportAvailableSound
+	FILE myInstantMessageSound
+	FILE myFriendlyFireWarningSound
+}
+
+CLASS EXP_Player
+{
+	CameraManager myCameraManager
+	EXP_EffectContainer myEffects
+	TangibleUI myTangibleUI
+	TacticalAidMenu myTacticalAidMenu	
+	ScoreSheet myScoreSheet
+	TEXT myIPCheckVal1IGNORE
+	FILE myMapPingIconFile
+	FILE myDefaultGuiSkinTexture	
+	FILE myGeneralFeedbackFile
+	FILE myPhysicsWaterSplashMRB
+	GuiSounds myGuiSounds
+}
+
+CLASS PlayState
+{
+	EXP_Player myPlayer
+	GlobalCommandPointInfo myGlobalCommandPointDefinitions
+	FILE mySpawnerConfigFile
+	FILE myTeamConfigFile
+	FILE myGameModeFile
+	FILE myGlobalScriptEventsFile
+	FILE myVisualConfigDefinitionsFile
+	FILE myAlternativeVisualConfigDefinitionsFile
+	FILE myGenericUnitFeedbackFile	
+	StrategicMap myStrategicMap
+	CombinedTypes myCombinedTypes
+	UnitWorldIcons myUnitWorldIcons
+	UnitBarIcons myUnitBarIcons
+	OrderPaletteIcons myOrderPaletteIcons
+	FirstTimeTips myFirstTimeTips
+	FortificationInfo myFortificationInfo
+	VoteSettings myVoteSettings
+}
+
+CLASS MouseConfig
+{
+	FILE mySkinFile
+	TEXT mySkin
+	TEXT myToolTipPrefab
+	TEXT myToolTipFont
+	TEXT myStandard
+	TEXT myExplicit
+	TEXT myAttack
+	TEXT myAttackOutOfRange
+	TEXT myRepair	
+	TEXT myEnter
+	TEXT myLZ
+	TEXT myFollow
+	TEXT mySupportWeapon
+	TEXT myCamLeft
+	TEXT myCamRight
+	TEXT myCamForward
+	TEXT myCamBackward
+	TEXT myCamRotateLeft
+	TEXT myCamRotateRight
+	TEXT myCamRotateUp
+	TEXT myCamRotateDown
+	TEXT myWait
+	ColorARGB myStandardColor
+	ColorARGB myAttackColor
+	ColorARGB myAttackOutOfRangeColor
+	ColorARGB myRepairColor
+	ColorARGB myMeldColor
+	ColorARGB myEnterColor
+	ColorARGB myLZColor
+	ColorARGB myFollowColor
+	ColorARGB myCamColor
+	TEXT myIPCheckVal2IGNORE
+	FILE myHardwareMouseCursors
+}
+
+CLASS RenderFiles
+{
+	FILE myErrorsFile
+
+	FILE myMRenderCapsFile
+
+	FILE myDefaultGfxOptionsFile
+
+	FILE myMinimapSurface
+	FILE myMinimapBlipSurface
+	FILE myMinimapIconSurface
+	FILE myMinimapCompassSurface
+	FILE myMinimapViewConeSurface
+	FILE myMinimapEndOfWorldSurface
+
+	FILE myMinimapLandingZoneTexture
+	FILE myMinimapUnitSpawnedIcon
+	FILE myMinimapNotification
+
+	FILE myMapLowendSurface
+
+	FILE myWaterSurface
+	FILE myWaterSurfaceLow
+	FILE myWaterShoreSurface
+	
+	FILE myLineSurface
+	FILE my3DMarkerModel
+
+	FILE myStencilSurface
+	FILE myStencilShadowSurface
+	FILE myBlobSurface
+	FILE myDefaultBlobTexture
+	NUMBER outOfLosColor
+
+	FILE myDecalsAtlasImage
+	FILE myDecalsAtlasIce
+
+	FILE myWicWaterShader
+	FILE myWicWaterFoamShader
+	FILE myWicWaterTrailShader
+	FILE myWicWaterTrailAroundShader
+	
+	FILE myShadowedTransparentShader
+
+	FILE myCloudsShader
+
+	FILE myBloomDefaultConfig
+	FILE myBloomSurface
+
+	FILE myWarFilterDefaultFile
+
+	FILE myDesaturateSurface
+
+	FILE myUnitTracksBumpSurface
+	FILE myUnitTracksDiffuseSurface
+	FILE myUnitTracksTerrainData
+
+	FILE myPauseBlurSurface
+	FILE myAlphaBlendColorTexSurface
+
+	FILE mySparkEffect
+
+	FILE myParticleDetailGenerator
+	
+	FILE myLightShaftSurface
+	FILE myParticleShadowSurface
+}
+
+CLASS MilesInfo
+{
+	FILE myRedistDirectory
+	FILE myDll
+	FILE my3
+	FILE my6
+	FILE my9
+	FILE my10
+	FILE my11
+	FILE my12
+	FILE my13
+}
+
+CLASS MassgateGameIcons
+{
+	FILE myRankedIcon
+	FILE myUnrankedIcon
+	FILE myPasswordIcon
+	FILE myNoPasswordIcon	
+	FILE myFriendIcon
+	FILE myNoFriendIcon	
+	FILE myNoIconIcon
+}
+
+CLASS MassgateMessagingIcons
+{
+	FILE myFriendHeadingIcon
+	FILE myClanMemberHeadingIcon
+	FILE myAcquaintanceHeadingIcon
+	FILE myEveryoneHeadingIcon
+	FILE myNoIconIcon
+	FILE myPendingMessageIcon
+	FILE myOfflineIcon
+	FILE myOnlineIcon
+	FILE myPlayingIcon
+}
+
+CLASS MassgateRank
+{
+	LOCTEXT myUiName
+	FILE myIconFile
+}
+
+CLASS MassgateRanks
+{
+	MassgateRank level0
+	MassgateRank level1
+	MassgateRank level2
+	MassgateRank level3
+	MassgateRank level4
+	MassgateRank level5
+	MassgateRank level6
+	MassgateRank level7
+	MassgateRank level8
+	MassgateRank level9
+	MassgateRank level10
+	MassgateRank level11
+	MassgateRank level12
+	MassgateRank level13
+	MassgateRank level14
+	MassgateRank level15
+	MassgateRank level16
+	MassgateRank level17
+	MassgateRank level18
+}
+
+CLASS MassgateProfileColors
+{
+	ColorARGB currentUserColor
+	ColorARGB friendOnlineColor
+	ColorARGB friendOfflineColor
+	ColorARGB clanmateOnlineColor
+	ColorARGB clanmateOfflineColor
+	ColorARGB acquaintanceOnlineColor
+	ColorARGB acquaintanceOfflineColor
+	ColorARGB anyoneOnlineColor
+	ColorARGB anyoneOfflineColor
+	ColorARGB clanSmurfOnline
+	ColorARGB clanSmurfOffline
+}
+
+CLASS MassgateMedal 
+{
+	LOCTEXT myName
+	LOCTEXT myInfo
+	LOCTEXT myNextForBronze
+	LOCTEXT myNextForSilver
+	LOCTEXT myNextForGold
+	LOCTEXT myStar1
+	LOCTEXT myStar2
+	LOCTEXT myStar3
+	FILE myImageEmpty
+	FILE myImageBronze
+	FILE myImageSilver
+	FILE myImageGold
+}
+
+CLASS MassgateMedals 
+{
+	FILE myStarImage1
+	FILE myStarImage2
+	FILE myStarImage3
+	MassgateMedal myMedal1
+	MassgateMedal myMedal2
+	MassgateMedal myMedal3
+	MassgateMedal myMedal4
+	MassgateMedal myMedal5
+	MassgateMedal myMedal6
+	MassgateMedal myMedal7
+	MassgateMedal myMedal8
+	MassgateMedal myMedal9
+	MassgateMedal myMedal10
+	MassgateMedal myMedal11
+	MassgateMedal myMedal12
+	MassgateMedal myMedal13
+	MassgateMedal myMedal14
+	MassgateMedal myMedal15
+	MassgateMedal myMedal16
+	MassgateMedal myMedal17
+	MassgateMedal myMedal18
+	MassgateMedal myMedal19
+	MassgateMedal myMedal20
+	MassgateMedal myMedal21
+	MassgateMedal myMedal22
+	MassgateMedal myMedal23
+	MassgateMedal myMedal24
+	MassgateMedal myMedal25
+	MassgateMedal myMedal26
+	MassgateMedal myMedal27
+	MassgateMedal myMedal28
+}
+
+CLASS MassgateBadge
+{
+	LOCTEXT myName
+	LOCTEXT myInfo
+	LOCTEXT myNextForBronze
+	LOCTEXT myNextForSilver
+	LOCTEXT myNextForGold
+	LOCTEXT myStar1
+	LOCTEXT myStar2
+	LOCTEXT myStar3
+	FILE myImageEmpty
+	FILE myImageBronze
+	FILE myImageSilver
+	FILE myImageGold	
+}
+
+CLASS MassgateBadges2 
+{
+	FILE myStarImage1
+	FILE myStarImage2
+	FILE myStarImage3
+	MassgateBadge myBadge1
+	MassgateBadge myBadge2
+	MassgateBadge myBadge3
+	MassgateBadge myBadge4
+	MassgateBadge myBadge5
+	MassgateBadge myBadge6
+	MassgateBadge myBadge7
+	MassgateBadge myBadge8
+	MassgateBadge myBadge9
+	MassgateBadge myBadge10
+	MassgateBadge myBadge11
+	MassgateBadge myBadge12
+	MassgateBadge myBadge13
+	MassgateBadge myBadge14
+	MassgateBadge myBadge15
+}
+
+CLASS MassgateInfo
+{
+	FILE myMassgateTextFile
+	FILE myMassgateLogoFile
+	FILE myPrivacyPolicyFile
+	FILE myCountryListFile
+	FILE myTournamentRulesFile
+	LOCTEXT myCountryCode
+	LOCTEXT myLanguageCode
+	LOCTEXT myDistributionId
+	MassgateGameIcons myGameIcons
+	MassgateMessagingIcons myMessagingIcons
+	MassgateRanks myRankDefinitions
+	MassgateProfileColors myProfileColors
+	MassgateMedals myMedals
+	MassgateBadges2 myBadges
+	FILE myDefaultPlayerPcc
+	FILE myDefaultClanPcc
+}
+
+CLASS ZoneInfo
+{
+	DECIMAL myBHPerMinizone
+	DECIMAL myScorePerMinizone
+	DECIMAL myTicketTime
+	NUMBER myFortificatingBaseScoreValue
+	DECIMAL myFortificatingBaseTeamPlayBonus
+	DECIMAL myFortificatingPerPlayerTeamPlayBonus
+}
+
+CLASS Cutscene
+{
+	FILE myCutsceneFile
+	FILE mySubtitlesFile
+}
+
+SCRIPTCLASS CutsceneList
+{
+	Cutscene
+}
+
+CLASS GroundMaterialSet
+{
+	FILE myAlphaMap
+	MaterialID myMaterial
+}
+
+SCRIPTCLASS GroundMaterialList
+{
+	GroundMaterialSet
+}
+
+CLASS MaterialInfo
+{
+	MaterialID myWaterMaterial
+	GroundMaterialList myGroundMaterials
+}
+
+CLASS CNMH_Fortification
+{
+    NUMBER myDynamicDelayTime
+    TEXT myUnitName
+    GenericModel myTimerModel
+	GenericModel myArrivalModel
+	GenericModel myDeliveryModel
+	DECIMAL myLandAndDeployTime
+	GenericModel myAbortModel
+}
+
+SCRIPTCLASS CNMH_FortificationList
+{
+	CNMH_Fortification
+}
+
+CLASS HelpInfo
+{
+	FILE myTutorialMovieBeginner
+	FILE myTutorialMovieIntermediate
+	FILE myTutorialMovieAdvanced
+}
+
+CLASS ObjectiveGuiInfo
+{
+	FILE myObjectiveVisualisationMarker
+	FILE myObjectiveVisualisationMarkerMouseOver
+	FILE myObjectiveArrowMarkerFile
+	FILE myObjectiveArrowMarkerMouseOverFile
+	FILE myObjectiveVisualisationMiniMapMarkerFile
+
+	FILE myObjectiveVisualisationSecondaryMarker
+	FILE myObjectiveVisualisationSecondaryMarkerMouseOver
+	FILE myObjectiveVisualisationMiniMapSecondaryMarkerFile
+
+	FILE myObjectiveVisualisationAttackCPMarker
+	FILE myObjectiveVisualisationAttackCPMarkerMouseOver
+	FILE myObjectiveVisualisationMiniMapAttackCPMarkerFile
+
+	FILE myObjectiveVisualisationDefendCPMarker
+	FILE myObjectiveVisualisationDefendCPMarkerMouseOver
+	FILE myObjectiveVisualisationMiniMapDefendCPMarkerFile
+
+	FILE myObjectiveLetterAppearingSound
+	DECIMAL myTargetIndicatorScale
+	DECIMAL myMinTargetDistanceForIndicator
+	NUMBER myTargetIndicatorFont
+	DECIMAL myTargetIndicatorLetterDelayTime
+	DECIMAL myTargetIndicatorStartAlpha
+	DECIMAL myTargetIndicatorAlphaFadeTime
+	LOCTEXT myTargetString
+	
+	DECIMAL myTargetFadeLevel
+	DECIMAL myFadeDownTime
+	DECIMAL myTargetBlurLevel
+	DECIMAL myBlurDownTime
+	DECIMAL myGuiFade
+	DECIMAL myGuiFadeTime
+	DECIMAL myDimmedVolumePercentage
+	ColorARGB myNewObjectiveColor
+	ColorARGB myCompletedObjectiveColor
+	ColorARGB myFailedObjectiveColor
+	ColorARGB myCanceledObjectiveColor
+
+	FILE myNewObjectiveIcon
+	FILE myCompletedObjectiveIcon
+	FILE myFailedObjectiveIcon
+	FILE myCanceledObjectiveIcon
+
+	DECIMAL myVOIPPostTalkTimeToLive
+
+	// default scripted event properties
+	FILE myEventSound
+	TEXT myEventPythonClientFunction
+	TEXT myEventPythonServerFunction
+
+	TEXT myObjectiveBrowserClosedPythonClientFunction
+
+	LOCTEXT myCounterStringFormatting
+
+	// primary
+	LOCTEXT myNewPrimaryEventStringFormatting
+	LOCTEXT myUpdatedPrimaryEventStringFormatting
+	LOCTEXT myCompletedPrimaryEventStringFormatting
+	LOCTEXT myFailedPrimaryEventStringFormatting
+	LOCTEXT myCanceledPrimaryEventStringFormatting
+
+	FILE myNewPrimaryEventIcon
+	FILE myUpdatedPrimaryEventIcon
+	FILE myCompletedPrimaryEventIcon
+	FILE myFailedPrimaryEventIcon
+	FILE myCanceledPrimaryEventIcon
+
+	// secondary
+	LOCTEXT myNewSecondaryEventStringFormatting
+	LOCTEXT myUpdatedSecondaryEventStringFormatting
+	LOCTEXT myCompletedSecondaryEventStringFormatting
+	LOCTEXT myFailedSecondaryEventStringFormatting
+	LOCTEXT myCanceledSecondaryEventStringFormatting
+
+	FILE myNewSecondaryEventIcon
+	FILE myUpdatedSecondaryEventIcon
+	FILE myCompletedSecondaryEventIcon
+	FILE myFailedSecondaryEventIcon
+	FILE myCanceledSecondaryEventIcon
+
+	// Attack command point
+	LOCTEXT myNewAttackCPEventStringFormatting
+	LOCTEXT myUpdatedAttackCPEventStringFormatting
+	LOCTEXT myCompletedAttackCPEventStringFormatting
+	LOCTEXT myFailedAttackCPEventStringFormatting
+	LOCTEXT myCanceledAttackCPEventStringFormatting
+
+	FILE myNewAttackCPEventIcon
+	FILE myUpdatedAttackCPEventIcon
+	FILE myCompletedAttackCPEventIcon
+	FILE myFailedAttackCPEventIcon
+	FILE myCanceledAttackCPEventIcon
+
+	// Defend command point
+	LOCTEXT myNewDefendCPEventStringFormatting
+	LOCTEXT myUpdatedDefendCPEventStringFormatting
+	LOCTEXT myCompletedDefendCPEventStringFormatting
+	LOCTEXT myFailedDefendCPEventStringFormatting
+	LOCTEXT myCanceledDefendCPEventStringFormatting
+
+	FILE myNewDefendCPEventIcon
+	FILE myUpdatedDefendCPEventIcon
+	FILE myCompletedDefendCPEventIcon
+	FILE myFailedDefendCPEventIcon
+	FILE myCanceledDefendCPEventIcon
+
+	// Events
+	DECIMAL myScriptEventRollInStopTime
+	DECIMAL myScriptEventTimeToLive
+	DECIMAL myScriptEventFadeOutTime
+}
+
+CLASS Request
+{
+	LOCTEXT myName
+	LOCTEXT myInfoString
+	LOCTEXT myInfoStringAtGrid
+	LOCTEXT myInfoStringAtUnit
+
+	TEXT myGlobalScriptedEventName
+
+	TEXT myIconPrefab
+	FILE myMinimapFlashIcon
+	DECIMAL myMinimapFlashTime
+	NUMBER myNumberOfMinimapFlashes
+	DECIMAL myIconScale
+	DECIMAL myMegaMapIconScale
+	DECIMAL myMiniMapIconSize
+
+	FILE myModel
+	DECIMAL myModelScale
+
+	ColorARGB myColor
+	NUMBER myIsPersistingFlag // whether this is stored or just a general message
+	NUMBER myCanBePlacedOnAlliesFlag
+	NUMBER myCanBePlacedOnEnemiesFlag
+	NUMBER mySoloIfPlacedOnAllyFlag
+}
+SCRIPTCLASS Requests
+{
+	Request
+}
+
+CLASS DestructionGridSettings
+{
+	DECIMAL myForestRadiusMax
+	DECIMAL myMaxCellDestruction
+}
+
+CLASS ScreenMessageColors
+{
+	ColorARGB mySystemMessage
+	ColorARGB myGameMessage
+	ColorARGB myChatAll
+	ColorARGB myChatTeam
+	ColorARGB myTauntMessage
+	ColorARGB myVoteMessage
+	ColorARGB myCommandPointMessageColor
+	ColorARGB myRequestMessageColor
+	ColorARGB myDebugMessage
+}
+
+SCRIPTCLASS SoundBudgetGroups
+{
+	NUMBER
+}
+
+SCRIPTCLASS StereoSeparationInterpolators
+{
+	DECIMAL
+}
+
+CLASS MobileOverlay
+{
+	FILE myBatteryIcon0
+	FILE myBatteryIcon1
+	FILE myBatteryIcon2
+	FILE myBatteryIcon3
+	FILE myBatteryIcon4
+	FILE myBatteryIcon5
+
+	FILE myHighBatteryIcon
+	FILE myMediumBatteryIcon
+	FILE myLowBatteryIcon
+	DECIMAL myBatteryPosX
+	DECIMAL myBatteryPosY	
+	DECIMAL myBatterySizeX
+	DECIMAL myBatterySizeY	
+
+	FILE myWlanIcon0
+	FILE myWlanIcon1
+	FILE myWlanIcon2
+	FILE myWlanIcon3
+	FILE myWlanIcon4
+	FILE myWlanIcon5
+
+	FILE myHighWlanIcon
+	FILE myMediumWlanIcon
+	FILE myLowWlanIcon
+	DECIMAL myWlanPosX
+	DECIMAL myWlanPosY	
+	DECIMAL myWlanSizeX
+	DECIMAL myWlanSizeY
+	
+	DECIMAL myTextPosX
+	DECIMAL myTextPosY
+	TEXT myFont		
+}
+
+
+CLASS SinglePlayerStatusImages
+{
+	FILE myUSSRWonImage
+	FILE myUSSRLostImage
+	FILE myUSWonImage
+	FILE myUSLostImage
+	
+	FILE myUSBannerImage
+	FILE myUSSRBannerImage
+}
+
+SCRIPTCLASS SinglePlayerNames
+{
+	LOCTEXT
+}
+
+SCRIPTCLASS SinglePlayerSounds
+{
+	FILE
+}
+
+CLASS LauncherData
+{
+	TEXT myForumLink
+	TEXT mySupportLink
+	TEXT myPurchaseCDKeyLink
+	TEXT myInvalidCDKeyLink
+	TEXT myBannerLink
+	TEXT myPurchaseBannerLink
+	TEXT myPurchaseBannerLogoURL
+	
+	FILE myBackground
+	FILE myBackgroundSA
+	FILE myButtonSmall_Normal
+	FILE myButtonSmall_Focused
+	FILE myButtonSmall_Disabled
+	FILE myButtonBig_Normal
+	FILE myButtonBig_Focused
+	FILE myCloseButton_Normal
+	FILE myCloseButton_Focused
+	
+	// Resource data
+	LOCTEXT myNewsHeader
+	LOCTEXT myStartGame
+	LOCTEXT myPlayOnline
+	LOCTEXT myRegisterCDKey
+	LOCTEXT myPurchaseCDKey
+	LOCTEXT mySupport
+	LOCTEXT myVisitForums
+	
+	LOCTEXT myNewsOffline
+	LOCTEXT myDownloadingNews
+
+	FILE myBackground_RegisterCdKey
+	LOCTEXT myRegisterButton
+	LOCTEXT myCancelButton
+
+	FILE myBackground_Message
+	LOCTEXT myOKButton
+	LOCTEXT mySuccessHeader
+	LOCTEXT mySuccessText
+}
+
+CLASS WicData
+{
+	MouseConfig myGuiMouse
+	FILE myCampaignFile
+	LOCTEXT myDefaultProfileName
+	LOCTEXT myDefaultGameName
+	LOCTEXT myNoProfileName
+	FILE myMultiplayerMissionsFile
+	FILE myDedicatedServerConfigFile
+	FILEList myGuiFiles
+	TEXT myInitialGui
+	MusicEvent myGUISong
+	FILE myGuiButtonDownSoundFile
+	FILE myGuiButtonReleaseSoundFile
+	FILE myGuiListSelectSoundFile
+	FILE myGuiErrorSoundFile
+	FILE myGuiMenuMainLogo
+	FILE myGuiMenuMainLogoSA
+	FILE myFont
+	FILE myFontDefinition
+	FILE myMotdFile
+	RenderFiles myRenderFiles
+	ZoneInfo myZoneInfo
+	FILE myDefaultSettingsFile
+	FILE myIdleBackdrop
+	FILE myCreditsBackdrop
+	MusicEvent myCreditsSong
+	FILE myCreditsTextFile
+	FILE myCreditsLogo1
+	FILE myCreditsLogo2
+	TEXT myCreditsPrefab1
+	TEXT myCreditsPrefab2
+	NUMBER myCreditsTextScrollSpeed
+	FILE myLobbyBackdrop
+	PlayState myPlayState
+	MilesInfo myMilesInfo
+	FILE myGameTextFile
+	MassgateInfo myMassgateInfo
+	FILE mySkirmishAIDefs
+	CutsceneList myIntroMovies
+	FILE myExitImage
+	TEXT myWebLink
+	TEXT myBuyLink
+	TEXT myCustomMissionsDirectory
+	UpkeepLevels myUpkeepLevels
+	FILE myAutoPropDefinitionFile
+	FILE myUnitExperienceLevelsFile
+	FILE myHitEffectsFile
+	MaterialInfo myMaterials
+    	CNMH_FortificationList myCNMH_Fortifications
+    	FILE myPlayerRolesDefinitionFile
+    	DECIMAL myRoleSelectWaitTime
+	DECIMAL myUnitBlinkBeforeDeathTime
+	ExperienceLevels GLOBAL_ExperienceLevelMultipliers // myExperienceLimit ignored
+	HelpInfo myHelpInfo
+	FILE myEEPicFile
+	FILE myMessageBoxTalkingMarkerFile
+	FILE myGlobalTweakParamsFile
+	EnterBuildingMarker myEnterBuildingMarker
+	ResupplyInfo myResupplyInfo
+	DominationTickRateSpline myDominationTickRateSpline
+	
+	ObjectiveGuiInfo myObjectiveGuiInfo
+	Vector2 myVirtualUIResolution
+
+	//LOCTEXT myRequestAcceptedString
+	LOCTEXT myRequestAcceptedStringAtGrid
+	LOCTEXT myAlliedUnitString
+	LOCTEXT myEnemyUnitString
+	Requests myRequests
+	
+	DECIMAL myRequestDistanceToCommandPointRange
+	DECIMAL myRequestDistanceToPerimeterPointRange
+
+	FILE mySupportWeaponDatabase
+	FILE myBuildingTemplateFile
+	FILE myDefensiveFortificationTypeFile
+	FILE myNoRankIcon
+	
+	DestructionGridSettings myDestructionGridSettings
+
+	LOCTEXT myAutoSaveName
+	LOCTEXT myNewSavedGame
+
+	DECIMAL mySPHealthModifier
+
+	DECIMAL myRequestTimeToLive
+
+	TEXT myCamPosDebugUploadPath
+	FILE myCamPosDebugInfoFruitFile
+	FILE myUnitStatesFile
+	FILE myUnitAnimationTablesFile
+
+	ScreenMessageColors myScreenMessageColors
+
+	SoundBudgetGroups mySoundBudgetGroups
+	StereoSeparationInterpolators myStereoSeparationInterpolators
+	MobileOverlay myMobileOverlay
+
+	PlayfieldBorder myPlayfieldBorder	
+	ForestBorder myForestBorder
+	FireRangeBorders myFireRangeBorders	
+
+	DECIMAL myDeploymentPulseSpeed
+	DECIMAL myDeploymentPulseDepth
+	DeploymentMask myDeploymentMask
+	DeploymentMask myDeploymentMaskMM
+
+	DECIMAL myTreeLOSHeight
+	DECIMAL myCoverSystemRadius
+	DECIMAL myCoverSystemDelay
+	DECIMAL myCoverSystemForestRadius
+	DECIMAL myCoverSystemForestDelay
+
+	FILEList myGroundExplosionBrushes
+
+	DECIMAL myMatchStartDelayTime
+
+	SinglePlayerStatusImages spStatusImages
+
+	FILE myMapWonImage
+	FILE myMapLostImage
+	DECIMAL myFPMSupportRechargeModifier
+	FILE myToWFronlineFile
+	FILE myTutorialMap
+
+	FILE myBenchmarkFile
+
+	NUMBER myEndSplashScreenTimeToLive
+	LOCTEXT myEndSplashScreenClosingInText
+	TEXT myEndSplashScreenPreOrderLink
+	FILE myEndSplashScreenBGPic
+	
+	NUMBER myBinkSoundtrackId
+
+	NUMBER myNumAllowedPlayersPerRole
+	SinglePlayerNames mySinglePlayerNames
+	SinglePlayerSounds mySinglePlayerSounds
+	
+	LauncherData myLauncherData
+}

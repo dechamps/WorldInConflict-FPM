@@ -1,0 +1,25 @@
+  -1797584163 WicedRoadIntersectionPreset
+    382600227 myTemplate
+   1511655530 WicedRoadIntersection
+   1850542416 myWicedRoadIntersection
+     47448353 FILE
+   1059325631 myIntersectionMRB
+    134808065 BOOLEAN
+    692127087 myIsLockedFlag
+   1414334451 myRenderToGroundFlag
+    128516592 DECIMAL
+  -2111829501 myInnerGroundAffectRadius
+  -2084435434 myOuterGroundAffectRadius
+    638584152 myTextureFile
+    603522320 mySpecMapFile
+    810288622 myNormalMapFile
+    825361940 myVariationFile
+   1700006109 myGlobalBrightnessMask
+   1272907677 myGlobalOpacityMask
+    106496458 NUMBER
+   1877412135 myGroundDetailTextureID
+   1599015068 myRemoveAutopropsFlag
+    603850030 myScaleFactor
+
+
+No duplicate hash entries.

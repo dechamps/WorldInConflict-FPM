@@ -1,0 +1,5 @@
+INCLUDE juice/CameraPosDebugInfo.fruit
+
+CameraPosDebugInfoList myCameraPosDebugInfoList
+{
+}

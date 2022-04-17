@@ -1,0 +1,28 @@
+
+CLASS Medal
+{
+	LOCTEXT	myName
+	LOCTEXT	myDescription
+	FILE	myImage
+
+	//NUMBER	myIPGain
+
+	//FILE	myModel
+	//NUMBER	myModelAmbientRGB
+	//DECIMAL	myModelZDistance
+	//DECIMAL	myModelRotationsPerSecond
+
+	NUMBER	myCanOnlyBeCompletedViaPythonFlag // if true, then the below is ignored
+	DECIMAL myRequiredScore
+	DECIMAL	myRequiredKillDeathRatio
+	DECIMAL	myRequiredScoreWithTA
+	NUMBER	myRequiredMaximumReinforcementsUsed
+	NUMBER	myRequiredMaxReinforcementLosses
+	NUMBER	myRequiredMaxFriendlyReinforcementLosses
+	//NUMBER	myPOWsMustSurviveFlag <- needs tracking unit type deaths
+}
+
+SCRIPTCLASS Medals
+{
+	Medal
+}

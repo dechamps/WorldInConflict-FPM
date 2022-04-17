@@ -1,0 +1,185 @@
+INCLUDE juice/decisiontreenode.fruit
+
+SCRIPTCLASS TreeList
+{
+	DecisionTreeNode
+}
+
+
+CLASS AIChatTexts
+{
+	LOCTEXT myArtilleryBarageText
+	LOCTEXT myAttackAreaText
+	LOCTEXT myDefendAreaText
+	LOCTEXT myAAText
+	LOCTEXT myBackupText
+	LOCTEXT myTAText
+	LOCTEXT myDefaultText	
+}
+
+CLASS AIConstants
+{
+
+	NUMBER myScoutMapResolution
+	NUMBER myInfluenceMapResolution
+	NUMBER myInfluenceUpdateStep 
+	DECIMAL myCloseEnoughMovementDistance
+	DECIMAL myStealthCompenstationFactor
+	DECIMAL myAttackPositionShortRangeInner	//The shortest distance from a position that an attack position can have.
+	DECIMAL myAttackPositionShortRange		//The longest distance from a position that an attack position can be and still be considered short range.
+	DECIMAL myAttackPositionMediumRange		//The longest distance from a position that an attack position can be and still be considered medium range.
+	DECIMAL myAttackPositionLongRange		//The longest distance from a position that an attack position can be and still be considered long range.
+	
+
+}
+
+CLASS AINearConstants
+{
+	DECIMAL myAttackFitnessDistanceNormalisationValue
+	DECIMAL myDefendFitnessDistanceNormalisationValue
+	DECIMAL myMoveFitnessDistanceNormalisationValue
+	DECIMAL myDeathMapDecayRate			//how fast the DeathMap decays
+	DECIMAL myOpponentActivityMapDecayRate	//how fast the OpponentActivityMap decays
+	DECIMAL myAssumedEnemyHistoryTime		//how long the assumed enemy should be kept in memory when updated from enemyHistory
+	DECIMAL myAssumedEnemyDistance		//how far must the assumed enemy be updated, et c
+	DECIMAL myAssumedEnemyRememberTime		//how long the assumed enemy should be remembered before it is removed
+	DECIMAL myPlatoonCohesionValue
+	DECIMAL myPlatoonCohesionRadius
+	DECIMAL myFormationRowDistance		//The distance between two units in the same row.
+	DECIMAL myFormationColumnDistance		//The distance between two units in the same column.
+	DECIMAL myScoutMapThresHold			//If the ScoutMap::GetAwareness() returns a value larger than this, the area does not need to be scouted.
+	DECIMAL myEnemyGroupPositionDistance	//the distance that the enemy group should be within, from a position, to be considered.
+	DECIMAL myDeathMapForbiddenTilesThreshold //The number(<=0) that determines it the tile should be added to the forbidden tiles.
+	DECIMAL myDeathMapInfluenceDistance	 	//How far the influence from a killed unti should spread, in meters.
+
+
+
+}
+
+
+CLASS AdvancedUsers
+{
+	//VERY IMPORTANT: myIsActiveRole=1 for armor and inf, myIsActiveRole=0 for support and air - mixing this will crash application
+	//Parameter must be set if new roles are added
+	NUMBER myIsActiveRole
+	DECIMAL myAwarnessModifierRadius // distance of awareness that is taken into account
+	DECIMAL myAwarnessModifierBase // How much unawareness is accepted
+	DECIMAL myDefaultAwareness	// What the worls is defaulted as
+	NUMBER myMaxSquadSize
+	DECIMAL mySquadCohesionValue
+	DECIMAL myInfluenceMovementFadeOutBase	
+	NUMBER myUnitRenewBehaviourStepCount
+	DECIMAL myEnemyGroupDistance			//maximum distance between the members of enemy groups, excluding the radius
+	DECIMAL myRallyAreaWidth			//how wide the ring around the enemy should be
+	DECIMAL myReactionTimeToEnemyMovement	//used when calculating the distance from the enemy group when calculating rally areas.
+	DECIMAL myDefenseNeedCutOff			//
+	DECIMAL myEnemyLZRadius		// radius they cast a influence inbetween	
+	DECIMAL myNeutralLZRadius
+	DECIMAL myLZRadius
+	DECIMAL myEnemyVLRadius		// radius they cast a influence inbetween	
+	DECIMAL myNeutralVLRadius
+	DECIMAL myVLRadius
+	DECIMAL mySpecialAbilityOffensiveFactor 	// 0.0-inf - 0.0 always use spec abil if better than main gun - 100 only use spec ab if 100 times better
+	DECIMAL mySpecialAbilityDefensiveFactor 	// factor determines when defensive ab should be used (0-1.0 of health remaining)
+	DECIMAL myLeadSkillSuckageFactor 	// 0.0-1500 - offsets random dist with random angle
+	//Obedience factor - n=0->inf,  n times more likely to accept a request
+	DECIMAL myObedienceFactor
+	//Only valid numbers are 0 and 2 - 0 tries to find good positions while 1 attacks asap - regroups at intervals - 2 is random b/w 0-1
+	NUMBER myPatternNumber
+	NUMBER myIgnoresThreatsFlag
+	DECIMAL myUpperMergePlatoonMergeLimit
+	DECIMAL myLowerMergePlatoonMergeLimit
+	//Different behaviors: 1 fire asap, 2 move to good position, 3 rnd?
+	NUMBER myAttackBehavior
+	LOCTEXT myUIName
+}
+
+CLASS CommanderBrain
+{
+	DECIMAL myEnforcedBuyDelay
+	NUMBER myMaxNrOfUnits 
+
+	DECIMAL myEnemyVLBaseValue	 // Forumla is Base+Base*MAX*Percentage of exsisting
+	DECIMAL myNeutralVLBaseValue
+	DECIMAL myVLBaseValue
+
+	DECIMAL myEnemyLZBaseValue	 // Forumla is Base+Base*MAX*Percentage of exsisting
+	DECIMAL myNeutralLZBaseValue
+	DECIMAL myLZBaseValue
+
+	DECIMAL myEnemyLZMaxBonus
+	DECIMAL myNeutralLZMaxBonus
+	DECIMAL myLZMaxBonus
+
+	DECIMAL myEnemyVLMaxBonus
+	DECIMAL myNeutralVLMaxBonus
+	DECIMAL myVLMaxBonus
+	
+	DECIMAL myEnemyGroupAttackWillingness 
+
+	DECIMAL myFitnessMaxValue
+	DECIMAL myMilitaryAllowTakeOverMissionFactor
+	DECIMAL myPlatoonDeviationWillingness
+	DECIMAL myPlatoonEngageSucessProbability
+	NUMBER myNumberOfActivePlatoons		//The number of platoons used for offensive missions.
+	NUMBER myNumberOfInactivePlatoons		//The number of platoons used for defensive missions.
+
+
+	DECIMAL myUnitReassignmentFactor	
+	DECIMAL myDefendUnitPriority
+	DECIMAL mySADPriority
+	NUMBER myUseDropShipInCombat
+	DECIMAL myUseDropShipFactor
+
+}
+
+//ONLY ADVANCED USERS - Incorrect scripting will crash application on start or make AI go crazy
+CLASS AdvancedAIMissions
+{
+	//For all roles - if AI should respond to player requests
+	NUMBER myGenerateRequestMissions
+	//Important: if this is sat to 1 the AI will not do anything but defend itself - all 
+	NUMBER myGenerateOnlyRequestMissions
+
+	//Primary missions for active roles - armor and infantry
+	NUMBER myGenerateCaptureMissions
+	NUMBER myGenerateBreakMissions
+	NUMBER myGenerateDefendMissions
+	//Important: Backup mission is a passive mission generated from other AIs need - CANNOT be generated by requests!
+	NUMBER myGenerateBackupMissions
+
+	//Missions for support role
+	NUMBER myGenerateFireSupportMissions
+	NUMBER myGenerateAntiAirMissions
+	NUMBER myGenerateHealingMissions
+
+	//Air role missions
+	NUMBER myGenerateAirEscortMissions
+
+	//Secondary missions for active role - could be used for other roles as well
+	NUMBER myGenerateEnemyGroupMissions
+	NUMBER myGenerateEnemyGroupBackupMissions
+	NUMBER myGenerateFortifyAreaMissions
+	NUMBER myGenerateAttackAreaMissions
+	NUMBER myGenerateHoldAreaMissions
+
+	//TA Parameters
+	//NOT: If active AI and flags is sat to false AI will NOT respond to TA requests - only use TA by self.
+	NUMBER myFireTaOnlyOnRequest
+
+	//Request parameters - time that AI will hold on to mission
+	NUMBER myArtilleryBarrageTimeInSeconds
+	NUMBER myHoldAreaTimeInSeconds
+	NUMBER myAntiAirTimeInSeconds
+	NUMBER myHealingTimeInSeconds
+
+	//Artillery parameters
+	NUMBER myArtilleryTargetBlindEnemyPerimiterPoints
+	NUMBER myArtilleryTargetSlowTargets
+	NUMBER myArtilleryTargetFastTargets
+	DECIMAL myArtilleryBarrageAreaRadius
+
+	//The higher value the more undiciplined are enemy group missions and aa missions 10 default and app 50000 is max
+	DECIMAL myStrengthFactorCap
+
+}

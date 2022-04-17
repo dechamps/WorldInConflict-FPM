@@ -1,0 +1,183 @@
+Update 1.2.1.1 changes
+
+Features
+
+- The props database has been updated to include props from the maps included in Update 11 for World In Conflict and Soviet Assault
+
+Bugs
+
+- The default reinforcement point tick rate was inconsistent with official maps and has been reduced from 60 to 45 
+
+Update 1.2.1.0 changes
+
+Features
+
+- Export deathmap command added
+
+Bugs
+
+- Masks (alpha and brightness) on terrain extensions/roads is no longer reset at reload of map
+- Map loading crashes fixed
+- Compile map problems fixed
+- Help buttons still visible after closing dialogs fixed
+- Fixed WicEd Crash during load when you have a second WicEd instance open
+
+Update 1.2.0.0 changes
+
+Features
+
+- New popup style object property system
+- Render terrain extensions to ground feature added
+- New Single player/Multi player mode added (affects visible units and gameplay editor)
+- Auto generate python file for single player use
+- Road intersection system added
+- Export heightmap to LWO added
+- Deploy mask editor added to gameplay map
+- Resolution editor added
+- Import ground texture operation added
+- Splatting mask edit tool
+- Detail texture override edit tool
+- 16 k splatting working
+- F1 triggers help menu
+- Ability to visualize the real ingame path maps
+- New remove brightness and alpha mask button on terrain extension
+- Shading only ground texture rendering feature added (renders color textures first if cached textures not found)
+- Perimeter points can have custom sizes (fetched from wiced.juice)
+- Hold ctrl to change object height 10x the normal speed
+- Improved surround fade command (now does fade between tiles with different resolution as well), renamed to border fade
+- New terrain cut out tool added (accessible throught the mask edit tool)
+- New editor for the mood system (in the environment tool)
+- New editor for the bloom system (in the environment tool)
+- New sleeker progress bar
+- Better problem reporting
+- Camera follows ground flag in settings dialog now saved between sessions
+- Context menu of perimeter and command points can be reached from the gameplay editor
+
+Bugs
+
+- Road spline hidden and roads unselectable when hiding roads
+- Various crash-bugs fixed
+- Better road selection
+- Division bug fixed, ambient sounds can be placed in other divisions than multiplayer
+- Save as bug fixes
+- Visualization of semi-highlight for areas and commandpoints added
+- Stuck WASD keys fixed
+- Naming for single player defensive fortifications and pp changed
+- Area deletion bug fixed
+- Moving command point between divisions bug fixed
+- Naming of cp, pp and df follows naming convention
+- Texturing a surroundmesh without detail texture crash bug fixed
+- Props not in database are not included in top down raytraces
+- Hurt state slider bug fix
+- Forest generation improved
+- Road burn in bug fixed (they were not always shaded correctly)
+- Save unshaded locked roads correctly
+- Extra heightmap finalizer crash bug fixed
+- Fixed file links for terrain extensions and locked roads
+- Fixed unique name generation algorithm
+- Road texture tile a discrete number of times (to be able to do seamless transitions to intersections)
+- Fixed mirrored road textures
+- Save as bug concerning imported surround meshes fixed
+- Fixed crash bug when changing game mode
+- Improved performance of pan/mouselook in edit object mode
+- Fixed faulty spec on roads
+- Load order crash bug fixed
+- Improved waypoint mouse selection
+- ToW in Horizontal deploy direction fixed
+- Mouse pointer problems in gameplay editor fixed
+- Terrain extensions not visible after load in some cases bug fixed
+- Roads are now exported as quads in lwo
+- Roads that do not render still affect detail texture bug fixed
+- Better selection of trees
+- Better tree highlighting (corresponds better to other props)
+- Saturation in post-fx fixed
+- Change to edit tool at save to avoid problems with road tool and heightmap
+- Too big images show a black thumbnail instead of missing texture (a little less confusing)
+- Removed bug reports menu item
+- Open map bug fixed (wiced now always open the selected map)
+- Enabled cubemap finalizer again
+- Fixed rotation of anti tank DF
+- Dirty flag problems fixed
+- Optimizations for ground texture rendering (infomap refresh more seldom and faster)
+- Bugfix Shading Hi res textures now gives the correct hi res resolution
+- Filter blendmap when shading
+- Multisample when scaling textures (to avoid problems with scaling down 16k textures)
+- Bug fix for normal map scaling
+- Lods finalizer bug fixes
+- Memory leak fixes
+- Select all ground texture tiles at startup
+- Reset dirty flag when saving
+- Props converted to alt props only if it has slots outside playfield
+- Fixed so wiced remembers if it was maximized last session
+- Relative rotate has same behaviour in all tools
+- Gui hook bug fixes
+- Side splat issues fixed
+- Shaded road mesh bug fixes
+- Nicer road burn in
+- Faster bilinear texture lookups (speeds up ground texture rendering)
+- Blending and shading threaded (speeds up ground texture rendering on multi core systems)
+- Black detail texture on the playfield border after surr mesh fade fixed
+- Removed need to save before doing a surr mesh fade
+- Faster scaling of certain images
+- Road subtraction from property masks bug fixed
+- Faster road burn in image generation
+- Texture top down ray tracing working
+- Enable the user to select a path where to save the exported pathfinding map
+- Pressing enter in dialogs should crash wiced anymore
+- Blockbox gui cleanup
+- Screensaver crashes fixed
+- Rotate does not reset prop height
+- Fixed a huge amount of memory leaks
+- Removed unneccassary allocations that happened evey frame (somewhat better performance, less memory fragmentation)
+- Fixed road/intersection crash bugs
+- Sticky mouse button behaviour in gameplay dialog fixed
+- Hide mini floater in gameplay dialog when gameplay tool deselected
+- Array out of bounds fixed (potential crash bugs)
+- Avoid duplicate update heightmap when working with roads (better performance)
+- Toolbar button behaviour fixed (multiple buttons could be pressed at the same time in some cases)
+- Show red squares over open water as well (impassable)
+- Verify name when renaming instances 
+- Roads and surround meshes are now always visible as load to avoid confusion
+- Changed range of brush size in deploy mask paint editor
+- Hide/show child windows correctly when minimizing/restoring
+- Preview road deformation checkbox working correctly
+- Bloom config bug fixed
+
+ Update 1.1.0.0 changes
+
+- Save Map As feature implemented. Reachable from File menu.
+- Locked object feature now functional and tweaked.
+- Ramp tool near playfield edges crash bug fixed.
+- Moving props in surround editor bug fixed.
+- Hoover compensation crash bug fixed.
+- Stuck heightfield after finalize bug fixed
+- Bug fixes to compile map. Certain files that were not supposed to be compiled into SDF have been removed. 
+  Maps compiled with old version could require recompile to work properly.
+- Shadow raytracing tweaks (better feedback and sane defaults).
+- Assault objectives bug fixed.
+- Better generation of instance names when using copy tool.
+- New controls for setting wind direction and speed (in atmosphere page in environment editor) added.
+- New controls for setting global destruction multiplier (in postFX page in environment editor) added.
+- Edit boxes are now capped to the same value as the sliders (could cause crash in some cases).
+- Ground splatting bug fixed.
+- Surround texture scale bug fixed.
+- Road tool crash bug fixed.
+- In-game crash caused by roads with only 1 waypoint fixed.
+- CTRL+S now saves the map.
+- Update of shortcuts in preferences bugfixed.
+- Copy of command points not possible anymore and will not cause in-game crashes.
+- Help file updated to reflect GUI changes.
+	
+
+
+ Hotfix 1.0.0.1 changes
+
+- GUI-fixes in gameplay dialogs.
+- Crash-bug fixed (triggered by setting assault capture order).
+- Bug that caused ground mesh lod to disappear (resulting in bad performance) fixed.
+- Gameplay tool switched to edit tool when user closes any of the windows.
+- Fix to the texture mask generation (limited on direction and slope ranges).
+- Creating a new road template crash fixed.
+- ‘Use global’ in advanced lighting now works as intended, see help file for reference.
+- Changes in retail delivered maps now is compiled into SDF.
+- Undo-system bugfixed and enhanced.

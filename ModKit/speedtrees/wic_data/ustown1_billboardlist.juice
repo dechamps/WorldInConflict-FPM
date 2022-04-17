@@ -1,0 +1,394 @@
+INCLUDE juice/speedtree_billboards.fruit
+SpeedTreeBillboardList myBillboards
+{
+	SpeedTreeBillboardType speedtrees/us_town/americanboxwood_rt.spt
+	{
+		myFilename speedtrees/us_town/americanboxwood_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanboxwood_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanboxwood_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanboxwood_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanboxwood_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanboxwood_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanboxwood_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanboxwoodcluster_rt2.spt
+	{
+		myFilename speedtrees/ustown1/americanboxwoodcluster_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanboxwoodcluster_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanboxwoodcluster_rt.spt
+	{
+		myFilename speedtrees/ustown1/americanboxwoodcluster_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanboxwoodcluster_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanholly_rt2.spt
+	{
+		myFilename speedtrees/ustown1/americanholly_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanholly_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanholly_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanholly_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanholly_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanholly_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanholly_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanholly_rt3.spt
+	{
+		myFilename speedtrees/ustown1/americanholly_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanholly_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanholly_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanholly_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanholly_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanholly_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanholly_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanholly_rt.spt
+	{
+		myFilename speedtrees/ustown1/americanholly_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanholly_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanholly_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanholly_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanholly_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanholly_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanholly_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/americanholly_rt_berries.spt
+	{
+		myFilename speedtrees/ustown1/americanholly_rt_berries.spt
+		myBBSideTexture speedtrees/USTown1/billboards/americanholly_rt_berries_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/americanholly_rt_berries_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/americanholly_rt_berries_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/americanholly_rt_berries_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/americanholly_rt_berries_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/americanholly_rt_berries_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/arizonabush_cluster.spt
+	{
+		myFilename speedtrees/ustown1/arizonabush_cluster.spt
+		myBBSideTexture speedtrees/USTown1/billboards/arizonabush_cluster_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/arizonabush_cluster_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/arizonabush_cluster_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/arizonabush_cluster_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/arizonabush_cluster_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/arizonabush_cluster_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/arizonabush_cluster_flowers.spt
+	{
+		myFilename speedtrees/ustown1/arizonabush_cluster_flowers.spt
+		myBBSideTexture speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/arizonabush_cluster_flowers_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/arizonabush_rt.spt
+	{
+		myFilename speedtrees/ustown1/arizonabush_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/arizonabush_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/arizonabush_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/arizonabush_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/arizonabush_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/arizonabush_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/arizonabush_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/arizonabush_rt_flowers.spt
+	{
+		myFilename speedtrees/ustown1/arizonabush_rt_flowers.spt
+		myBBSideTexture speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/arizonabush_rt_flowers_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/douglasfir_rt2.spt
+	{
+		myFilename speedtrees/ustown1/douglasfir_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/douglasfir_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/douglasfir_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/douglasfir_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/douglasfir_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/douglasfir_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/douglasfir_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/douglasfir_rt.spt
+	{
+		myFilename speedtrees/ustown1/douglasfir_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/douglasfir_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/douglasfir_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/douglasfir_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/douglasfir_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/douglasfir_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/douglasfir_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/douglasfir_rt_full2.spt
+	{
+		myFilename speedtrees/ustown1/douglasfir_rt_full2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/douglasfir_rt_full2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/douglasfir_rt_full2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/douglasfir_rt_full2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/douglasfir_rt_full2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/douglasfir_rt_full3.spt
+	{
+		myFilename speedtrees/ustown1/douglasfir_rt_full3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/douglasfir_rt_full3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/douglasfir_rt_full3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/douglasfir_rt_full3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/douglasfir_rt_full3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/douglasfir_rt_full.spt
+	{
+		myFilename speedtrees/ustown1/douglasfir_rt_full.spt
+		myBBSideTexture speedtrees/USTown1/billboards/douglasfir_rt_full_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/douglasfir_rt_full_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/douglasfir_rt_full_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/douglasfir_rt_full_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/douglasfir_rt_full_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/fraserfir_rt2.spt
+	{
+		myFilename speedtrees/ustown1/fraserfir_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/fraserfir_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/fraserfir_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/fraserfir_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/fraserfir_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/fraserfir_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/fraserfir_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/fraserfir_rt3.spt
+	{
+		myFilename speedtrees/ustown1/fraserfir_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/fraserfir_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/fraserfir_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/fraserfir_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/fraserfir_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/fraserfir_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/fraserfir_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/fraserfir_rt.spt
+	{
+		myFilename speedtrees/ustown1/fraserfir_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/fraserfir_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/fraserfir_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/fraserfir_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/fraserfir_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/fraserfir_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/fraserfir_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/graybirch_rt2.spt
+	{
+		myFilename speedtrees/ustown1/graybirch_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/graybirch_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/graybirch_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/graybirch_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/graybirch_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/graybirch_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/graybirch_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/graybirch_rt3.spt
+	{
+		myFilename speedtrees/ustown1/graybirch_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/graybirch_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/graybirch_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/graybirch_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/graybirch_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/graybirch_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/graybirch_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/graybirch_rt.spt
+	{
+		myFilename speedtrees/ustown1/graybirch_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/graybirch_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/graybirch_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/graybirch_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/graybirch_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/graybirch_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/graybirch_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/kingsvilleboxwood_rt2.spt
+	{
+		myFilename speedtrees/ustown1/kingsvilleboxwood_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/kingsvilleboxwood_rt3.spt
+	{
+		myFilename speedtrees/ustown1/kingsvilleboxwood_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/kingsvilleboxwood_rt.spt
+	{
+		myFilename speedtrees/ustown1/kingsvilleboxwood_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/kingsvilleboxwood_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/redmaple_rt2.spt
+	{
+		myFilename speedtrees/ustown1/redmaple_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/redmaple_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/redmaple_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/redmaple_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/redmaple_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/redmaple_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/redmaple_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/redmaple_rt3.spt
+	{
+		myFilename speedtrees/ustown1/redmaple_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/redmaple_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/redmaple_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/redmaple_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/redmaple_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/redmaple_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/redmaple_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/redmaple_rt.spt
+	{
+		myFilename speedtrees/ustown1/redmaple_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/redmaple_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/redmaple_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/redmaple_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/redmaple_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/redmaple_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/redmaple_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/redyucca_rt.spt
+	{
+		myFilename speedtrees/ustown1/redyucca_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/redyucca_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/redyucca_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/redyucca_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/redyucca_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/redyucca_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/redyucca_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/redyucca_rt_flowers.spt
+	{
+		myFilename speedtrees/ustown1/redyucca_rt_flowers.spt
+		myBBSideTexture speedtrees/USTown1/billboards/redyucca_rt_flowers_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/redyucca_rt_flowers_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/redyucca_rt_flowers_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/redyucca_rt_flowers_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/redyucca_rt_flowers_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/redyucca_rt_flowers_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/southernmagnolia_rt2.spt
+	{
+		myFilename speedtrees/ustown1/southernmagnolia_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/southernmagnolia_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/southernmagnolia_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/southernmagnolia_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/southernmagnolia_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/southernmagnolia_rt3.spt
+	{
+		myFilename speedtrees/ustown1/southernmagnolia_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/southernmagnolia_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/southernmagnolia_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/southernmagnolia_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/southernmagnolia_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/southernmagnolia_rt.spt
+	{
+		myFilename speedtrees/ustown1/southernmagnolia_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/southernmagnolia_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/southernmagnolia_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/southernmagnolia_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/southernmagnolia_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/southernmagnolia_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/sugarpine_rt2.spt
+	{
+		myFilename speedtrees/ustown1/sugarpine_rt2.spt
+		myBBSideTexture speedtrees/USTown1/billboards/sugarpine_rt2_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/sugarpine_rt2_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/sugarpine_rt2_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/sugarpine_rt2_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/sugarpine_rt2_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/sugarpine_rt2_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/sugarpine_rt3.spt
+	{
+		myFilename speedtrees/ustown1/sugarpine_rt3.spt
+		myBBSideTexture speedtrees/USTown1/billboards/sugarpine_rt3_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/sugarpine_rt3_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/sugarpine_rt3_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/sugarpine_rt3_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/sugarpine_rt3_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/sugarpine_rt3_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/sugarpine_rt.spt
+	{
+		myFilename speedtrees/ustown1/sugarpine_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/sugarpine_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/sugarpine_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/sugarpine_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/sugarpine_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/sugarpine_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/sugarpine_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/weedpatch_rt.spt
+	{
+		myFilename speedtrees/ustown1/weedpatch_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/weedpatch_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/weedpatch_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/weedpatch_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/weedpatch_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/weedpatch_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/weedpatch_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/weeds_rt.spt
+	{
+		myFilename speedtrees/ustown1/weeds_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/weeds_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/weeds_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/weeds_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/weeds_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/weeds_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/weeds_rt_bbtop_n.dds
+	}
+	SpeedTreeBillboardType speedtrees/ustown1/weepingwillow_rt.spt
+	{
+		myFilename speedtrees/ustown1/weepingwillow_rt.spt
+		myBBSideTexture speedtrees/USTown1/billboards/weepingwillow_rt_bbside.dds
+		myBBSideTextureMulti speedtrees/USTown1/billboards/weepingwillow_rt_bbside_multi.dds
+		myBBSideNormalmap speedtrees/USTown1/billboards/weepingwillow_rt_bbside_n.dds
+		myBBSideNormalmapMulti speedtrees/USTown1/billboards/weepingwillow_rt_bbside_n_multi.dds
+		myBBTopTexture speedtrees/USTown1/billboards/weepingwillow_rt_bbtop.dds
+		myBBTopNormalmap speedtrees/USTown1/billboards/weepingwillow_rt_bbtop_n.dds
+	}
+}

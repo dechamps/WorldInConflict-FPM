@@ -1,0 +1,422 @@
+aaa1 ------
+aaa2 Basic
+aaa3 ------
+
+STND (Stand)
+STD2 (Post fire)
+READ (Stand ready)
+RELX (Stand relax)
+CRCH (Crouch)
+CRRD (Crouch ready)
+CRRX (Crouch relax)
+PRON (Prone)
+PRRD (Prone ready)
+PRRX (Prone relax)
+TRNR (Turn Right)
+TRNL (Turn Left)
+WALK (Walk)
+WLK2 (Walk 2)
+WLTS (Walk to stand)
+
+aaa1 ------
+aaa2 Fire states
+aaa3 ------
+
+FIRE (Old Fire)
+FIR1 (Primary fire)
+FIR2 (Primary second fire)
+FIR3 (Primary 3 fire)
+FIR4 (Primary 4 fire)
+STFR (Stand fire - for marines)
+CRFR (Crouch fire - for marines)
+PRFR (Prone fire - for marines)
+WLFR (Walk fire - for marines)
+
+aaa1 ------
+aaa2 Special Ability Fire
+aaa3 ------
+
+SFI0 ( Special Ability Fire 01 )
+SFI1 ( Special Ability Fire 02 )
+SFI2 ( Special Ability Fire 03 )
+
+aaa1 ------
+aaa2 Special abilities
+aaa3 ------
+
+SSAO (Stand Special ability offencive)
+SSAE (Stand Special ability offencive engineere)
+SSAD (Stand Special ability defencive)
+CSAO (Crouch Special ability offencive)
+CSAE (Crouch Special ability offencive engineere)
+CSAD (Crouch Special ability defencive)
+PSAO (Prone Special ability offencive)
+PSAE (Prone Special ability offencive Engineere)
+PSAD (Prone Special ability defencive)
+WSAO (Walk Special ability offencive)
+WSAE (Walk Special ability offencive engineere)
+WSAD (Walk Special ability defencive)
+
+aaa1 ------
+aaa2 Transition states
+aaa3 ------
+
+STTC (Stand to crouch)
+STTP (Stand to prone)
+CRTS (Crouch to stand)
+CRTP (Crouch to prone)
+PRTS (Prone to Stand)
+PRTC (Prone to crouch)
+
+aaa1 ------
+aaa2 Cower states
+aaa3 ------
+
+STCW (Stand cower)
+RNCW (Walk cower)
+CRCW (Crouch cower)
+PRCW (Prone cower)
+
+AAA1 -------
+AAA2 Switch IN/OUT
+AAA3 -------
+
+SWIN (Switch in)
+SWOT (Switch out)
+
+AAA1 -------
+AAA2 Death Anims
+AAA3 -------
+
+BODS (Stand Death)
+BODE (Stand Death Explosion)
+BOCD (Crouch Death)
+BOCE (Crouch Death Explosion)
+BOPD (Prone Death)
+BOPE (Prone Death Explosion)
+BOWD (Walk Death)
+BOWE (Walk Death Explosion)
+BOGI (Gibbing animation)
+
+aaa1 ------
+aaa2 Secondary Fire states
+aaa3 ------
+
+WLF2 (2ND walk fire - for marines)
+STF2 (2ND stand fire - for marines)
+CRF2 (2ND crouch fire - for marines)
+PRF2 (2ND Prone fire - for marines)
+SEF1 (Secondary Primary fire)
+SEF2 (Secondary second fire)
+
+
+aaa1 ------
+aaa2 Hurt modes
+aaa3 ------
+
+HUR0 (not hurt)
+HUR1 (hurt a little)
+HUR2 (somewhat hurt)
+HUR3 (hurt a lot)
+
+aaa1 ------
+aaa2 Invisible
+aaa3 ------
+
+INVS Invisible
+
+aaa1 ------
+aaa2 Next Animations
+aaa3 ------
+
+RUNX (Forced run after run)
+
+
+
+AAA1 -------
+AAA2 Ragdoll animtions
+AAA3 -------
+
+DIEE (Ragdoll Explosion (flyger))
+DIEA (Ragdoll Landing Pose)
+DIEO (Ragdoll Overload (die default))
+
+AAA1 -------
+AAA2 Group Leader Orders
+AAA3 -------
+
+GLAT (Attack Order)
+GLMV (Move Order)
+GLST (Stop order)(
+
+aaa1 ------
+aaa2 Car RunOver Wreck
+aaa3 ------
+
+WRE1 Bone 1
+WRE2 Bone 2
+WRE3 Bone 3
+WRE4 Bone 4
+WRE5 Bone 5
+WRE6 Bone 6
+WRE7 Bone 7
+WRE8 Bone 8
+WRE9 Bone 9
+
+aaa1 ------
+aaa2 Fear System
+aaa3 ------
+
+FESF Fear Stand Fire
+FEWF Fear Walk Fire
+FEST Fear Stand
+FEWA Fear Walk
+
+aaa1 ------
+aaa2 FACTION STATES
+aaa3 ------
+
+NEUT Neutral
+EUUU European Union
+USAA USA
+NEUB Neutral BIG
+EUUB EU BIG
+USAB USA BIG
+USSR USSR
+USSB USSB
+
+aaa1 ------
+aaa2 Weapon Chooser
+aaa3 ------
+
+WEA1 Weapon 1
+WEA2 Weapon 2
+
+aaa1 ------
+aaa2 Idle States
+aaa3 ------
+
+IDLE Idle Enter
+IDL0 Idle State 0
+IDL1 Idle State 1
+IDL2 Idle State 2
+IDL3 Idle State 3
+
+aaa1 ------
+aaa2 Marine Utrustning
+aaa3 ------
+
+OFFF Remove All
+ON01 Item 1
+ON02 Item 2
+ON03 Item 3
+
+
+aaa1 ------
+aaa2 suppressed modes
+aaa3 ------
+
+SUPY (suppressed)
+SUPN (not suppressed)
+
+
+
+aaa1 ------
+aaa2 burnstates
+aaa3 ------
+
+BRNY (burning)
+BRNN (not burning)
+
+
+
+aaa1 ------
+aaa2 Gasstates
+aaa3 ------
+
+GASY (gased)
+GASN (not gased)
+
+
+
+aaa1 ------
+aaa2 Paralyzed
+aaa3 ------
+
+PARY (paralyzed)
+PARN (not paralyzed)
+
+
+aaa1 ------
+aaa2 Heal
+aaa3 ------
+
+HEAL (healing)
+NHEL (not healing)
+
+
+aaa1 ------
+aaa2 DropShip Specific Fire
+aaa3 ------
+
+NOFR (no fire)
+FR01 (fire 01)
+FR02 (fire 02)
+FR03 (fire 03)
+FR04 (fire 04)
+
+aaa1 ------
+aaa2 DropShip Specific Guns
+aaa3 ------
+
+GN01 (gun 01)
+GN02 (gun 02)
+GN03 (gun 03)
+GN04 (gun 04)
+
+aaa3 ------
+
+aaa1 ------
+aaa2 old states
+aaa3 ------
+
+AAA1 -------
+AAA2 Loopers
+AAA3 -------
+
+AAA3 -------
+
+LOOL Lie Looping
+LIEN Lie Enter (Cover) 
+CRWL Lie Move (Crawl)
+
+AAA3 -------
+
+CRST Crouch Stand
+CRMV Crouch Move
+
+AAA3 -------
+
+WBCK Walk Back
+DKWL Duck Walk
+REPR Repair
+WADE Wade
+SWIM Swim
+UNLD Repelling
+
+AAA1 -------
+AAA2 Fire Animations
+AAA3 -------
+
+STFR Stand Fire
+WLFR Walk Fire
+RNFR Run Fire
+LIFR Lie Fire (Craw Fire)
+CRFR Crouch Fire
+ALTF Alternative Fire
+
+AAA1 -------
+AAA2 Siege Mode
+AAA3 -------
+
+ENSI Enter Siege Mode
+SIGE Siege Mode Stand
+EXSI Exit Siege Mode
+
+AAA1 -------
+AAA2 Repair mode
+AAA3 -------
+
+ENRM Enter Repair Mode
+RPMD Repair Mode
+ERPM Exit Repair Mode
+
+AAA1 -------
+AAA2 Extras
+AAA3 -------
+
+DISA Disable
+BHIT Bullet Hit
+RELD Reload
+SHUT Shout
+TALK Talk
+
+AAA1 -------
+AAA2 Dynamic Prop
+AAA3 -------
+
+DIR1 Direction 1
+DIR2 Direction 2
+DIR3 Direction 3
+DIR4 Direction 4
+DIR5 Direction 5
+DIR6 Direction 6
+DIR7 Direction 7
+DIR8 Direction 8
+
+AAA1 -------
+AAA2 Dropship
+AAA3 -------
+
+HOVR Hover
+SLFS Slow Flight Speed
+FAFS Fast Flight Speed
+LMOD Landing Mode
+TKOF Takeoff Mode 
+
+AAA1 -------
+AAA2 Commander Specific
+AAA3 -------
+
+HTUP Hatch Up
+HTDW Hatch Down
+
+SLCT Select
+DSLT DeSelect
+
+WEEN Weather end
+
+aaa1 ------
+aaa2 Secondary modes
+aaa3 ------
+
+SECO (enter secondary)
+STN2 (secondary stand)
+WAL2 (secondary walk)
+PRIM (exit secondary)
+
+AAA1 -------
+AAA2 Projectile Stuff
+AAA3 -------
+
+LIVE Projectile Live
+DEAD Projectile Dead
+
+AAA1 -------
+AAA2 CPC Exclusive
+AAA3 -------
+
+CMS4 Cpc Mercedes Slot 2-4
+CMS5 Cpc Mercedes Slot 5
+
+AAA1 -------
+AAA2 Easter eggs
+AAA3 -------
+
+DAMP (Funny impatient animation)
+
+aaa1 ------
+aaa2 Slot states
+aaa3 ------
+
+CLOS Close slot
+OPEN Open slot
+
+
+aaa1 ------
+aaa2 Old states created by anal Bohman
+aaa3 ------
+
+BACK (Walk back)
+RUUN (Run)
+STTW (Stand to walk)

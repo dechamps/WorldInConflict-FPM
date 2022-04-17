@@ -1,0 +1,26 @@
+INCLUDE juice/genericmodel.fruit
+
+CLASS DefensiveFortificationType
+{
+	TEXT mySpawnedAgentTypeTeam0
+	TEXT mySpawnedAgentTypeTeam1
+	TEXT mySpawnedAgentTypeTeam2
+	TEXT mySpawnedAgentTypeTeam3
+	TEXT mySpawnedAgentTypeTeam4
+	TEXT mySpawnedAgentTypeTeam5
+	TEXT mySpawnedAgentTypeTeam6
+	TEXT mySpawnedAgentTypeTeam7
+	TEXT mySpawnedAgentTypeTeam8
+
+	GenericModel myTimerModel
+	GenericModel myDropperModel
+	NUMBER myLevel
+	DECIMAL myInitialDelay
+	DECIMAL myDropDelay
+	NUMBER myFortificationScore
+}
+
+SCRIPTCLASS DefensiveFortificationTypeList
+{
+	DefensiveFortificationType
+}

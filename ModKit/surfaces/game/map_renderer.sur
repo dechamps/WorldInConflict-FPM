@@ -1,0 +1,864 @@
+Version 2
+
+DefaultTextures
+{
+	// Lowend & Highend
+	texture surfaces/textures/gray			// [0] LOWEND: RGB   detailmap 1
+	texture surfaces/textures/gray			// [1] LOWEND: RGB   detailmap 2
+	texture surfaces/dummy		noRepeat	// [2] LOWEND: DXT1a mega texture tile
+	texture surfaces/dummy		  		// [3] deployment zone texture tile
+	texture ex3dmap_dzmask noRepeat			// [4] deployment zone mask
+
+	// Highend only
+	texture surfaces/dummy				// [5] HIGHEND: RGB  mtrlweights0 (d1r, d1g, d1b)
+	texture surfaces/dummy				// [6] HIGHEND: RGBA mtrlweights1 (d2r, d2g, rmd, spec)
+	texture surfaces/dummy				// [7] HIGHEND: RGBA mtrlweights2 (d3r, d3g, d3b, d3a)
+	texture surfaces/dummy				// [8] HIGHEND: RGBA detailmap 3
+	texture surfaces/textures/black			// [9] HIGHEND: Landscape wreck detail texture (DXT5), .rgb = detail/color, .a = noise to break tiling
+	texture surfaces/textures/black			// [10] HIGHEND: Landscape wreck from objects texture (DXT5), .rgb = detail/color, .a = noise to break tiling
+	texture surfaces/textures/black	noRepeat	// [11] HIGHEND: Landscape wreck from small explosion texture (DXT5)
+	texture wi3d_mapwreckdirections	noRepeat	// [12] Wreck directions buffer (.xy = direction, .y = wrecktexture factor, .w = attenuation)
+	texture ex_groundshadow				// [13] Shadows from terrain baked into a DXT5 textures
+	
+}
+
+SupportedDefines
+{
+	OPTIMIZE_DONT_SAMPLE_DETAILS3_G
+	OPTIMIZE_DONT_SAMPLE_DETAILS3_B
+	OPTIMIZE_DONT_SAMPLE_DETAILS3_A
+	TEXTURED_EXPLOSION_2
+	TEXTURED_EXPLOSION_3
+	TEXTURED_EXPLOSION_4
+	TEXTURED_EXPLOSION_5
+	TEXTURED_EXPLOSION_6
+	TEXTURED_EXPLOSION_7
+	TEXTURED_EXPLOSION_8
+	TEXTURED_EXPLOSION_9
+	TEXTURED_EXPLOSION_10
+
+	WICED_OVERLAY_NON_ALPHA
+	WICED_OVERLAY_ALPHA
+}
+
+
+
+DefineText HLSL_VSOUTPUT_PS20
+{
+	struct VSOutput
+	{
+		float  myFog			: FOG;		// dx10 filling
+		half4  myLightmapColor		: COLOR0;	// .rgb = vertex lightmaping, .a = vertex y-offset (used in vertex shader)
+		float2 myUV0			: TEXCOORD0;	// [0,1] of tile uv
+		float2 myUV1			: TEXCOORD1;	// [0,1] of entire map uv
+		float2 myUV2			: TEXCOORD2;	// .xy = details1 splatting Y plane uv (scaled to details1TileScale in vertex shader)
+								// .zw = xy but rotated 22.5 degrees (for wreck directions)
+		float2 myUV3			: TEXCOORD3;	// details2 splatting Y plane uv (scaled to details2TileScale in vertex shader)
+		float4 myRedGreenDetail3UV	: TEXCOORD4;
+		float4 myBlueAlphaDetail3UV	: TEXCOORD5;
+		float3 myNormal			: TEXCOORD6;
+		half4 myTanSpaceHalfVec		: TEXCOORD7;	// also detailtexstrength in w
+	};
+}
+
+DefineText HLSL_VSOUTPUT_PS20_EXP
+{
+	struct VSOutput
+	{
+		float  myFog			: FOG;		// dx10 filling
+		half4  myLightmapColor		: COLOR0;	// .rgb = vertex lightmaping, .a = vertex y-offset (used in vertex shader)
+		float4 myUV0			: TEXCOORD0;	// .xy = tileUV, .zw = entire map [0,1]
+		float4 myUV1			: TEXCOORD1;	// .xy = details1 tiling UV, .zw = explosion1 UV
+		float4 myUV2			: TEXCOORD2;	// .xy = explosion2 UV, .zw = explosion3 UV
+		float4 myUV3			: TEXCOORD3;	// ...
+		float4 myUV4			: TEXCOORD4;
+		float4 myUV5			: TEXCOORD5;
+		float2 myUV6			: TEXCOORD6;
+		float4 myTanSpaceHalfVec	: TEXCOORD7;
+	};
+}
+
+
+Config Normal PS2.0 8TMU
+{
+	NormalPass
+	{
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				return half4(1,0,0,1);
+			}
+		}
+	}
+	
+	DeploymentZonePass
+	{
+		blend = srcAlpha invSrcAlpha
+		textureRemap = (3, 4)
+		alphaTest = greater 1
+		zWrite = off
+
+		setConstant[1] = CUSTOM0
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			struct VSOutput
+			{			
+				float  myFog	: FOG;			// dx10 filling
+				float4 myUV0	: TEXCOORD0;	// xy = tile
+				float4 myUV1	: TEXCOORD1;	// xy = entire map [0,1]
+			};
+			
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				half4 maskmap  = tex2D(sampler1, aVSOut.myUV1.xy);
+				half4 colormap = tex2D(sampler0, aVSOut.myUV0.xy);
+				half4 colormod = half4( setConstant1.rgb, maskmap.a * setConstant1.a);
+				colormap *= colormod;
+				return colormap;
+			}
+		}
+	}	
+	
+	TexturedExplosionWreckPass
+	{
+		blend = srcAlpha invSrcAlpha
+		textureRemap = (0, 1, 2, 11, 9, 12, 13)
+		alphaTest = greater 1
+		zWrite = off
+		
+		setConstant[1] = AMBIENCE
+		setConstant[2] = SUN_COLOR * 1.5	// increase sun color abit
+		setConstant[3] = CUSTOM0		// x = specular exponent
+							// y = global specular factor for craters
+							// z = global specular factor (0.0-8.0)
+							// w = detail texture strength
+		setConstant[4] = CUSTOM1		// tanspace sun vector
+		setConstant[5] = CUSTOM2		// fade values for 1,2,3,4
+		setConstant[6] = CUSTOM3		// fade values for 5,6,7,8
+		setConstant[7] = CUSTOM4		// fade values for 9,10
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			$insertText HLSL_VSOUTPUT_PS20_EXP
+			
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				// Optimize instructions due to limited swizzling in PS2.0
+				const half4 entireMap01 = aVSOut.myUV0.wzyx;
+				
+				half4 colormap    = tex2D(sampler2, aVSOut.myUV0.xy);
+				half4 wreckdirmap = tex2D(sampler5, entireMap01.xy);
+				half4 wrecktex    = tex2D(sampler4, aVSOut.myUV1.xy);
+				half4 groundshadow= tex2D(sampler6, entireMap01.xy);
+				half4 exp;
+				half4 exp2;
+				float2 uv;
+				
+				const float3 expandDXT5 = float3(2.0238095, 2.0, 2.0238095);	// for DXT5 compressed (126,127,126) = 0.0 normal length
+				//const float3 expandDXT5 = float3(2.0, 2.0, 2.0);		// for uncompressed (127,127,127) = 0.0 normal length
+				
+				// Optimize instructions due to limited swizzling in PS2.0
+				const float4 tempUV0_zw = aVSOut.myUV1.wzyx;
+				const float4 tempUV2_zw = aVSOut.myUV2.wzyx;
+				const float4 tempUV3_zw = aVSOut.myUV3.wzyx;
+				const float4 tempUV4_zw = aVSOut.myUV4.wzyx;
+				const float4 tempUV5_zw = aVSOut.myUV5.wzyx;
+			
+				// Explosion 1
+				exp = tex2D(sampler3, tempUV0_zw.xy);
+				exp.rgb = exp.rgb * 2.0 - 1.0;
+				exp *= setConstant5.x;	// fade
+			
+				@ifdef TEXTURED_EXPLOSION_2		// Explosion 2
+					exp2 = tex2D(sampler3, aVSOut.myUV2.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant5.y;	// fade
+					exp = exp + exp2;
+				@endif
+			
+				@ifdef TEXTURED_EXPLOSION_3 		// Explosion 3
+					exp2 = tex2D(sampler3, tempUV2_zw.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant5.z;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_4		// Explosion 4
+					exp2 = tex2D(sampler3, aVSOut.myUV3.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant5.w;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_5		// Explosion 5
+					exp2 = tex2D(sampler3, tempUV3_zw.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant6.x;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_6		// Explosion 6
+					exp2 = tex2D(sampler3, aVSOut.myUV4.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant6.y;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_7		// Explosion 7
+					exp2 = tex2D(sampler3, tempUV4_zw.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant6.z;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_8		// Explosion 8
+					exp2 = tex2D(sampler3, aVSOut.myUV5.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant6.w;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_9		// Explosion 9
+					exp2 = tex2D(sampler3, tempUV5_zw.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant7.x;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				@ifdef TEXTURED_EXPLOSION_10		// Explosion 10
+					exp2 = tex2D(sampler3, aVSOut.myUV6.xy);
+					exp2.rgb = exp2.rgb * expandDXT5 - 1.0;
+					exp2 *= setConstant7.y;	// fade
+					exp = exp + exp2;
+				@endif
+				
+				half4 final;
+			
+				final.a = saturate( length(exp.xyz) );		// length of normal is alpha
+				
+				//final.a *= step(0.045, final.a);		// needed because of "alpha bleedning" after adding up to 10 normals (with DXT5 compression)
+				final.a = lerp(0.0, final.a, saturate((length(exp.xyz) - 0.125) * 14.0));	// new "step" wich gives better results on ATI
+
+
+				half3 tsLightDir = setConstant4.xyz;
+				half3 normal = exp.xyz;
+			
+				normal = normalize(normal);
+				
+				half shade = saturate( dot(normal, tsLightDir) );
+				
+				half3 sunRGB = setConstant2.rgb * groundshadow.rgb;
+				
+				// Specular
+				float specFactor = aVSOut.myTanSpaceHalfVec.z;	// OK when using normal(0,0,1)
+				specFactor = pow(saturate(specFactor), setConstant3.x);
+				shade += specFactor * setConstant3.y * shade;				// spec * global specular factor
+				
+				// Combine diffuse, specular and ambience
+				half3 light = sunRGB * shade + setConstant1.rgb;
+				
+				light += aVSOut.myLightmapColor.rgb;
+			
+				// Final
+				final.rgb = lerp(colormap.rgb * wrecktex.a * 2, wrecktex.rgb, saturate(exp.a));
+				final.rgb *= light.rgb;
+				final.a *= (1.0 - wreckdirmap.x);
+				final.a *= aVSOut.myLightmapColor.w;				// fade out
+				final.a *= colormap.a;
+				
+				return saturate(final);
+			}
+		}
+	}
+	
+	WreckPass
+	{
+		blend = srcAlpha invSrcAlpha
+		textureRemap = (0, 1, 2, 9, 10, 12, 13)
+		alphaTest = greater 1
+		zWrite = off
+		
+		setConstant[1] = AMBIENCE
+		setConstant[2] = SUN_COLOR
+		setConstant[3] = CUSTOM0	// x = specular exponent
+						// (UNUSED)
+						// z = global specular factor (0.0-8.0)
+						// w = detail texture strength
+		setConstant[4] = CUSTOM1	// tanspace sun vector
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			struct VSOutput		//Dont change this to the HLSL_VSOUTPUT_PS20 macro it messes up DX10 renderer !!!
+			{
+				float  myFog			: FOG;		// dx10 filling
+				half4  myLightmapColor		: COLOR0;	// .rgb = vertex lightmaping, .a = vertex y-offset (used in vertex shader)
+				float2 myUV0			: TEXCOORD0;	// [0,1] of tile uv
+				float2 myUV1			: TEXCOORD1;	// [0,1] of entire map uv
+				float2 myUV2			: TEXCOORD2;	// .xy = details1 splatting Y plane uv (scaled to details1TileScale in vertex shader)
+										// .zw = xy but rotated 22.5 degrees (for wreck directions)
+			};
+						
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				// Wreck dir map weights:
+				// x   = object attenuation
+				// yzw = explosion normal (length is attenuation)
+				
+				/////////////////////////////////////
+				// Sample maps
+				half4 colormap 		= tex2D(sampler2, aVSOut.myUV0.xy);
+				half4 wrecktexture 	= tex2D(sampler3, aVSOut.myUV2.xy);
+				half4 wrecktextureObj 	= tex2D(sampler4, aVSOut.myUV2.xy);
+				half4 wreckdirmap 	= tex2D(sampler5, aVSOut.myUV1.xy);
+				half4 groundshadow	= tex2D(sampler6, aVSOut.myUV1.xy);
+				
+				half  objectAtten 	= wreckdirmap.x;
+				half3 explosionNormal 	= wreckdirmap.yzw * 2.0 - 1.0;
+				half  explosionAtten 	= length(explosionNormal);
+				
+				half4 final;
+				
+				//////////////////////////////////////
+				// Wrecks from explosions
+				
+				explosionNormal = normalize(explosionNormal);
+				half shade = saturate(dot(setConstant4.xyz, explosionNormal.xyz));
+				half3 light = setConstant1.xyz + (setConstant2.xyz * groundshadow.rgb) * shade;
+				light += saturate(aVSOut.myLightmapColor.rgb * 2.0 - 1.0);
+				
+				final.rgb = wrecktexture.rgb * light;
+				
+				//////////////////////////////////////
+				// Wrecks from objects
+				 
+				objectAtten = step(1.0-objectAtten, wrecktextureObj.a - (1.0/255.0) );  // wreckTexObj.a [0,254] range
+				 
+				final.rgb = lerp(final.rgb, wrecktextureObj.rgb, objectAtten);
+				 
+				final.a = saturate(objectAtten + explosionAtten);  // blend against dst color
+				
+				final.a *= colormap.a;
+				
+				return saturate( final );
+			}
+		}
+	}
+
+
+	HighendPass
+	{
+		blend = off
+		
+		alphaTest = greater 127
+		textureRemap = (0,1,2,5,6,7,8,4)
+						
+		setConstant[2] = SUN_COLOR	// sun rgb and overbright
+		setConstant[3] = CUSTOM0	// x = specular exponent
+						// (UNUSED)
+						// z = global specular factor (0.0-8.0)
+						// w = detail texture strength
+
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			$insertText HLSL_VSOUTPUT_PS20
+			
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				// Sample weight maps
+				half4 mtrlweights0 = tex2D(sampler3, aVSOut.myUV1.xy);
+				half4 mtrlweights1 = tex2D(sampler4, aVSOut.myUV1.xy);
+				half4 mtrlweights2 = tex2D(sampler5, aVSOut.myUV1.xy);
+				
+				// Sample details 1 and 2
+				half4 details1 = tex2D(sampler0, aVSOut.myUV2);
+				half4 details2 = tex2D(sampler1, aVSOut.myUV3);
+
+				// Sample details 3
+				half4 details3;
+
+				details3.xyzw = tex2D(sampler6, aVSOut.myRedGreenDetail3UV.xy).xyzw;
+
+				@ifndef OPTIMIZE_DONT_SAMPLE_DETAILS3_G
+					details3.y = tex2D(sampler6, aVSOut.myRedGreenDetail3UV.zw).y;
+				@endif
+				
+				@ifndef OPTIMIZE_DONT_SAMPLE_DETAILS3_B
+					details3.z = tex2D(sampler6, aVSOut.myBlueAlphaDetail3UV.xy).z;
+				@endif
+				
+				@ifndef OPTIMIZE_DONT_SAMPLE_DETAILS3_A
+					details3.w = tex2D(sampler6, aVSOut.myBlueAlphaDetail3UV.zw).w;
+				@endif
+				
+				
+				@ifdef LOWEND_PREVIEW
+					details3 = half4(0.5, 0.5, 0.5, 0.5);
+				@endif
+				
+				half details = 	dot(details1.xyz,  mtrlweights0.xyz)  +	// details1
+					dot(details2.xy,   mtrlweights1.xy)   +	// details2
+					dot(details3.xyzw, mtrlweights2.xyzw) +	// details3
+					mtrlweights1.z * 0.5;			// remainder
+				
+				details = lerp(0.5, details, saturate(aVSOut.myTanSpaceHalfVec.w));
+				
+				half4 result = aVSOut.myLightmapColor;
+				
+
+				// Specular
+					//half4 normal = half4(0,0,1,0);
+					//float specFactor = dot(normal.xyz, aVSOut.myTanSpaceHalfVec.xyz);
+				float specFactor = aVSOut.myTanSpaceHalfVec.z;	// OK when using normal(0,0,1)
+				
+				specFactor = pow(saturate(specFactor), setConstant3.x);
+				specFactor *= setConstant3.z;						// global specular factor
+				result.xyz += setConstant2 * (specFactor * mtrlweights1.w * 0.5);
+				
+				half4 colormap = tex2D(sampler2, aVSOut.myUV0.xy);
+				
+				result.xyz *= (details * 2.0);
+				result.xyz *= 2.0;
+				result.xyz *= colormap.xyz;
+
+				// Alpha test
+				result.w = colormap.w;
+
+				@ifdef WICED_OVERLAY_NON_ALPHA
+					half4 overlaymap = tex2D(sampler7, aVSOut.myUV0.xy);
+					result.x +=overlaymap.x;
+					result.y +=overlaymap.y;
+					result.z +=overlaymap.z;
+					result.w = 1;
+				@endif
+				
+				@ifdef WICED_OVERLAY_ALPHA
+					half4 overlaymap = tex2D(sampler7, aVSOut.myUV0.xy);
+					result.x +=overlaymap.x;
+					result.y +=overlaymap.y;
+					result.z +=overlaymap.z;
+					result.w = (1-overlaymap.w);
+				@endif
+				
+				
+					
+				
+								
+				return saturate(result);
+			}
+		}
+	}
+	
+	
+	AlphaMaskToRGBAPass	// used by WICEd
+	{
+		blend = off
+		
+		alphaTest = greater 127
+		textureRemap = (0,1,2,5,6,7,8)
+				
+		setConstant[2] = SUN_COLOR	// sun rgb and overbright
+		setConstant[3] = CUSTOM0	// x = specular exponent
+						// (UNUSED)
+						// z = global specular factor (0.0-8.0)
+						// w = detail texture strength
+
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			$insertText HLSL_VSOUTPUT_PS20
+			
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				half4 colormap = tex2D(sampler2, aVSOut.myUV0.xy);
+								
+				return saturate(colormap.wwww);
+			}
+		}
+	}
+
+	
+	LowendPass
+	{
+		blend = off
+		alphaTest = greater 127
+		
+		textureRemap = (0,1,2,9)
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				float  	myFog			: FOG;		//dx10 filling
+				half4	myColor0		: COLOR0;
+				half4	myColor1		: COLOR1;
+				half2	myUV0			: TEXCOORD0;
+				half2	myUV1			: TEXCOORD1;
+				half2	myUV2			: TEXCOORD2;
+				half3	myUV3			: TEXCOORD3;
+				half2	myWreckNoiseUV		: TEXCOORD4;	// wreck noise UV
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				half4 tex0 = tex2D(sampler0, aVSOut.myUV0.xy);
+				half4 tex1 = tex2D(sampler1, aVSOut.myUV1.xy);
+				half4 tex2 = tex2D(sampler2, aVSOut.myUV2.xy);
+				half4 wrecktex 	= tex2D(sampler3, aVSOut.myUV0.xy);
+				half  wreckNoise= tex2D(sampler3, aVSOut.myWreckNoiseUV.xy).a;
+
+				half4 temp = saturate(dot(tex0.xyz, aVSOut.myColor1.xyz));	// details1 = dot3(detailTexture, detailWeights)
+				half4 temp2 = saturate(dot(tex1.xyz, aVSOut.myUV3.xyz));	// details2 = dot3(detailTexture2, detailWeights2)
+				temp.rgb = saturate(tex2.rgb * aVSOut.myColor0.rgb * 2);	// r0.rgb  = (groundTex * vertexColor) * 2.0
+				temp.a = saturate(temp.a + temp2.a);				// details = details1 + details2
+				temp.rgb = saturate(temp.rgb * temp.a * 2);			// diffuse = r0 * details
+				temp2.rgb = saturate(tex2.rgb * aVSOut.myColor1.a * 2);		// spec    = (groundTex * specCalc) * 2.0
+				temp.rgb = saturate(temp2.rgb * temp.a + temp.rgb);		// out     = (spec * details) + diffuse
+				temp.a = tex2.a;
+				
+				// Wreck
+				wrecktex.rgb = lerp(wrecktex.rgb, wrecktex.rgb * wreckNoise * 1.5, 0.75);
+				float wreckStrength = saturate( (aVSOut.myColor0.b * 2.0 - 1.0) * -1.0 );
+				temp.rgb = lerp(temp.rgb, wrecktex.rgb, wreckStrength);
+				
+				return saturate(temp);				
+			}
+		}
+
+	}
+	
+	LowendLod2Pass
+	{
+		blend = off
+		alphaTest = greater 127
+		
+		textureRemap = (0,1,2)
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				float  	myFog			: FOG;		//dx10 filling
+				half4	myColor0		: COLOR0;
+				half4	myColor1		: COLOR1;
+				half2	myUV0			: TEXCOORD0;
+				half2	myUV1			: TEXCOORD1;
+				half2	myUV2			: TEXCOORD2;
+			};
+			float4 main (VSOutput aVSOut) : COLOR0
+			{
+				half4 tex2 = tex2D(sampler2, aVSOut.myUV2.xy);
+				
+				half4 temp = saturate(tex2 * aVSOut.myColor0 * 2);
+				half3 temp2 = saturate(tex2.rgb * aVSOut.myColor1.a * 2);
+				temp.rgb = saturate(temp2 * 0.5 + temp.rgb);
+				temp.a = tex2.a;
+				return temp;
+			}
+		}
+
+	}
+	
+	HighendLod2Pass
+	{
+		blend = off
+		
+		alphaTest = greater 127
+		
+		textureRemap = (2,6,2)
+
+		setConstant[2] = sun_color	// sun rgb and overbright
+		setConstant[3] = CUSTOM0	// x = specular exponent, y = wreck texture strength, z = global specular factor (0.0-8.0)
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+				
+			struct VSOutput
+			{
+				float  myFog		: FOG;		//dx10 filling
+				half4 myLightmapColor	: COLOR0;
+				float2 myUV0		: TEXCOORD0;	// [0,1] of tile uv
+				float2 myUV1		: TEXCOORD1;	// [0,1] of entire map uv
+				float2 myUV2		: TEXCOORD2;	// details1 splatting Y plane uv (scaled to details1TileScale in vertex shader)
+				float2 myUV3		: TEXCOORD3;	// dx10 filling
+				float4 myUV4		: TEXCOORD4;	// dx10 filling
+				float4 myUV5		: TEXCOORD5;	// dx10 filling
+				float3 myNormal			: TEXCOORD6;	//dx10 filling
+				half4 myTanSpaceHalfVec	: TEXCOORD7;
+			};
+			
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				// Sample weight map
+				half4 mtrlweights1 = tex2D(sampler1, aVSOut.myUV1.xy);	// needed for spec weight
+				
+				half4 result = aVSOut.myLightmapColor;
+
+				// Specular
+				half4 normal = half4(0,0,1,0);
+				float specFactor = dot(normal.xyz, aVSOut.myTanSpaceHalfVec.xyz);
+				specFactor = pow(saturate(specFactor), setConstant3.x);
+				specFactor *= setConstant3.z;						// global specular factor
+				result.xyz += setConstant2 * (specFactor * mtrlweights1.w * 0.5);
+				
+				half4 colormap = tex2D(sampler2, aVSOut.myUV0.xy);
+				result.xyz *= 2.0;
+				result.xyz *= colormap.xyz;
+								
+				// Alpha test
+				result.w = colormap.w;
+				
+				return saturate(result);
+			}
+		}
+
+	}
+
+	EditorLightingPass
+	{
+		blend = off // override in code by src = dst_color, dst = src_alpha
+		
+		textureRemap = (0)
+
+		setConstant[1] = AMBIENCE
+		setConstant[2] = SUN_COLOR		// sun rgb and overbright
+		setConstant[4] = CUSTOM1		// tanspace sun vector
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				float  myFog		: FOG;		//dx10 filling
+				half4 myLightmapColor	: COLOR0;
+				float2 myUV0		: TEXCOORD0;	// [0,1] of tile uv
+				float2 myUV1		: TEXCOORD1;	// [0,1] of entire map uv
+				float2 myUV2		: TEXCOORD2;	// details1 splatting Y plane uv (scaled to details1TileScale in vertex shader)
+				float2 myUV3		: TEXCOORD3;	// dx10 filling
+				float4 myUV4		: TEXCOORD4;	// dx10 filling
+				float4 myUV5		: TEXCOORD5;	// dx10 filling
+				float3 myNormal			: TEXCOORD6;	//dx10 filling
+				half4 myTanSpaceHalfVec	: TEXCOORD7;
+			};
+
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				float3 normal = normalize(aVSOut.myNormal);
+				float diffuse = dot(normal, setConstant4.xyz);
+
+				half4 result;
+				float3 color = ((2.0 * setConstant2.xyz * saturate(diffuse)) + setConstant1.xyz);
+				float flatLightness = min(min(1.0, color.r), min(color.g, color.b));
+				float3 colorLightness = color - flatLightness;
+
+				return float4(colorLightness, flatLightness);
+			}
+		}
+	}
+
+	GouraudPass
+	{
+		blend = off
+		
+		textureRemap = (0)
+
+		setConstant[4] = CUSTOM1		// tanspace sun vector
+
+		Code
+		{
+			HLSL (ps_2_0, main)
+
+			struct VSOutput
+			{
+				float  myFog		: FOG;		//dx10 filling
+				half4 myLightmapColor	: COLOR0;
+				float2 myUV0		: TEXCOORD0;	// [0,1] of tile uv
+				float2 myUV1		: TEXCOORD1;	// [0,1] of entire map uv
+				float2 myUV2		: TEXCOORD2;	// details1 splatting Y plane uv (scaled to details1TileScale in vertex shader)
+				float2 myUV3		: TEXCOORD3;	// dx10 filling
+				float4 myUV4		: TEXCOORD4;	// dx10 filling
+				float4 myUV5		: TEXCOORD5;	// dx10 filling
+				float3 myNormal			: TEXCOORD6;	//dx10 filling
+				half4 myTanSpaceHalfVec	: TEXCOORD7;
+			};
+
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				float3 normal = normalize(aVSOut.myNormal);
+				float diffuse = dot(normal, setConstant4.xyz);
+				return float4(float3(1,1,1) * saturate(diffuse), 1);
+			}
+		}
+	}
+
+	WireframePass
+	{
+		blend = alphaBlend
+		
+		textureRemap = (0)
+		
+		alphaTest = greater 10
+		
+		Code
+		{
+			HLSL (ps_2_0, main)
+			
+			struct VSOutput
+			{
+			};
+
+			half4 main(VSOutput aVSOut) : COLOR0
+			{
+				return half4(1, 1, 1, 0.2);
+			}
+		}		
+	}
+}
+
+
+Config Lowend PS1.1
+{
+	NormalPass
+	{
+		textureRemap = (0)
+		
+		Code
+		{
+			ps_1_1
+			def c3, 1,0,0,1
+			mov r0, c3
+		}
+	}
+
+
+	HighendPass
+	{
+		textureRemap = (0)
+		Code
+		{
+			ps_1_1
+			def c3, 1,0,0,1
+			mov r0, c3
+		}
+	}
+	
+	HighendLod2Pass
+	{
+		textureRemap = (0)
+		Code
+		{
+			ps_1_1
+			def c3, 1,0,0,1
+			mov r0, c3
+		}
+	}
+
+	DeploymentZonePass
+	{
+		blend = srcAlpha invSrcAlpha
+		textureRemap = (3, 4)
+		alphaTest = greater 1
+
+		setConstant[1] = CUSTOM0
+		
+		Code
+		{
+			ps_1_1
+			tex t0
+			tex t1
+			mul t1.a, t1.a, c1.a
+			mul r0.rgb, t0, c1
+			+mov r0.a, t1.a
+		}
+	}
+	
+	LowendPass
+	{
+		blend = off
+		alphaTest = greater 127
+		
+		textureRemap = (0,1,2)
+
+		Code
+		{
+			ps_1_1
+			tex t0
+			tex t1
+			tex t2
+			texcoord t3
+			
+			dp3_sat r0, t0, v1			// details1 = dot3(detailTexture, detailWeights)
+			dp3_sat r1, t1, t3			// details2 = dot3(detailTexture2, detailWeights2)
+			add_sat r0.a, r0.a, r1.a		// details = details1 + details2
+			
+			mul_x2_sat r0.rgb, t2, v0		// r0.rgb = 2.0 * (groundTex * vertexColor)
+			mul_x2_sat r0.rgb, r0, r0.a		// diffuse = r0 * details
+			
+			//MSV:FO removed spec from lowend to avoid glithces between surround mesh and terrain
+			//mul_x4_sat r1.rgb, t2, v1.a		// spec = 4.0 * (groundTex * specCalc)
+			//mad_sat r0.rgb, r1, r0.a, r0		// out = (spec * details) + diffuse
+			
+			+mov r0.a, t2.a
+		}
+
+	}
+	
+	LowendLod2Pass
+	{
+		blend = off
+		alphaTest = greater 127
+		
+		textureRemap = (0,1,2)
+
+		Code
+		{
+			ps_1_1
+			
+			def c3, 0.5,0.5,0.5,0.5
+			
+			tex t2
+		
+			mul_x2_sat r0.rgba, t2, v0		// r0.rgb = 2.0 * (groundTex * vertexColor)
+			
+			//MSV:FO removed spec from lowend to avoid glithces between surround mesh and terrain
+			//mul_x4_sat r1.rgb, t2, v1.a		// spec = 4.0 * (groundTex * specCalc)
+			//mad_sat r0.rgb, r1, c3.a, r0		// out = (spec * noDetails) + diffuse
+		}
+
+	}
+
+	WireframePass
+	{
+		blend = alphaBlend
+		alphaTest = greater 10
+		textureRemap = (0)
+		Code
+		{
+			ps_1_1
+			def c3, 1, 1, 1, 0.2
+			mov_sat r0, c3
+		}		
+	}
+}

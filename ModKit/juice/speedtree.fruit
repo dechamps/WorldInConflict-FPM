@@ -1,0 +1,79 @@
+INCLUDE juice/speedtreeshared.fruit
+
+//
+// !!! NOTE NOTE NOTE !!!
+// Files packed into TreeSetName_packedfiles.sdf are of type TEXT
+// so that they aren't tracked by out asset tracking tool
+// !!! NOTE NOTE NOTE !!!
+//
+
+
+CLASS Pos
+{
+	DECIMAL myX
+	DECIMAL myY
+	DECIMAL myZ
+	NUMBER myShadowValues		// 0xDDCCBBAA, AA = shadow at top, BB = shadow at ground, CC = unused, DD unused
+	NUMBER myHeading
+	NUMBER myGroundColor		// D3DCOLOR (0xAARRGGBB) .rgb = ground color, .a = unused
+	NUMBER mySeed
+}
+
+
+SCRIPTCLASS Positions
+{
+	Pos
+}
+
+
+
+CLASS SpeedTree
+{
+	TEXT myFilename				// (in TreeSetName_packedfiles.sdf)
+	TEXT myBranchTexture			// (in TreeSetName_packedfiles.sdf)
+	NUMBER mySeed
+	DECIMAL mySize
+	DECIMAL mySizeVariance
+	DECIMAL myLodNear
+	DECIMAL myLodFar
+	FILE myBurnModel
+	FILE myPushOverModel
+	FILE myExplodeModel
+	BirdEffect myBirdEffect
+	FILE myRenderedShadowTexture
+	TEXT myBBSideTexture			// (in TreeSetName_packedfiles.sdf)
+	TEXT myBBSideTextureMulti		// (in TreeSetName_packedfiles.sdf)
+	TEXT myBBSideNormalmap			// (in TreeSetName_packedfiles.sdf)
+	TEXT myBBSideNormalmapMulti		// (in TreeSetName_packedfiles.sdf)
+	TEXT myBBTopTexture			// (in TreeSetName_packedfiles.sdf)
+	TEXT myBBTopNormalmap			// (in TreeSetName_packedfiles.sdf)
+	DECIMAL myTreeHeight			// Used by WICG_SpeedTree to setup flags
+	TEXT mySpecialOptions			// Special override options
+	Pos myPosition
+	Positions myInstancePositions
+}
+
+
+SCRIPTCLASS SpeedTreeList
+{
+	SpeedTree
+}
+
+
+CLASS SpeedTreeForest
+{
+	SpeedTreeList mySpeedTrees
+	FILE myPackedFiles
+	TEXT myCompositeMap		// (in TreeSetName_packedfiles.sdf)
+	TEXT myCompositeNormalmap	// unused
+	TEXT myCompositeShadowmap	// unused
+	FILE myTreeStubMRB
+	FILE myTreeStubBurnedMRB
+}
+
+
+SCRIPTCLASS SpeedTreeForestList
+{
+	SpeedTreeForest
+}
+

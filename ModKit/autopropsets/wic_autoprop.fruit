@@ -1,0 +1,69 @@
+TYPE DrawTypes
+{
+	NORMAL
+	WIND
+}
+
+TYPE SurfaceType
+{
+	ALPHA_BLEND
+	ALPHA_TEST
+}
+
+TYPE DistributionType
+{
+	SPREAD
+	EVEN
+	SNAP
+}
+
+
+SCRIPTCLASS AutoPropFileList
+{
+	FILE
+}
+
+CLASS SubAutoPropType
+{
+	NUMBER myNumPropsOnTile
+
+	DECIMAL myFadeDistance
+	DECIMAL myFadeDistanceInYDir
+	DECIMAL myFadeInDistance
+	DrawTypes myDrawType
+	
+	NUMBER myAlightToCameraHeading
+	NUMBER myAlightToCameraPitch
+	NUMBER myAlignToTerrainNormal
+	
+	DistributionType myDistributionType
+	
+	SurfaceType mySurfaceType
+
+	AutoPropFileList myVariationFiles
+}
+
+SCRIPTCLASS SubAutoPropTypes
+{
+	SubAutoPropType
+}
+
+CLASS AutoPropType
+{
+	TEXT myName
+	SubAutoPropTypes mySubAutoPropTypes
+}
+
+SCRIPTCLASS AutoPropTypes
+{
+	AutoPropType
+}
+
+CLASS WICAutoProp
+{
+	NUMBER myVersion
+	TEXT myName
+	FILE myCompositeTexture
+	NUMBER myAlphaTestValue
+	AutoPropTypes myAutoPropTypes
+}

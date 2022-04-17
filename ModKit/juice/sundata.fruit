@@ -1,0 +1,35 @@
+
+CLASS SunFlareSetup
+{
+	FILE myFile
+	DECIMAL myLowLimit
+	DECIMAL myHighLimit
+	DECIMAL myMinSizeX
+	DECIMAL myMinSizeY
+	DECIMAL myMaxSizeX
+	DECIMAL myMaxSizeY
+	DECIMAL myMinAlpha
+	DECIMAL myMaxAlpha
+	DECIMAL myGrowSpeed
+	DECIMAL myDecaySpeed
+	DECIMAL myExponent
+	DECIMAL myDazzleFactor
+	DECIMAL myShimmerMagnitude
+	DECIMAL myShimmerSpeed
+}
+
+SCRIPTCLASS SunFlareSetupList
+{
+	SunFlareSetup
+}
+
+CLASS SunData
+{
+	FILE myCoinFile
+	DECIMAL myCoinSizeX
+	DECIMAL myCoinSizeY
+	SunFlareSetupList myEarlyFlareSetupList
+	SunFlareSetupList myPreBloomFlareSetupList
+	SunFlareSetupList myFlareSetupList
+}
+

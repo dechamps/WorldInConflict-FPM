@@ -1,0 +1,30 @@
+INCLUDE startingunits.fruit
+
+StartingUnits myStartingUnits
+{
+	myUnitLists
+	{
+		StartingUnitListForFaction StartingUnitListForFaction(0)
+		{
+			myListName "Bald Eagle ASSault"
+			myTeam US
+			myUnits
+			{
+			}
+
+		}
+
+		StartingUnitListForFaction StartingUnitListForFaction(1)
+		{
+			myListName "Euro Trasher"
+			myTeam NATO
+			myUnits
+			{
+			}
+
+		}
+
+	}
+
+}
+

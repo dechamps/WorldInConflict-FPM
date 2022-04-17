@@ -1,0 +1,142 @@
+INCLUDE juice/ShowboxWireExport.fruit
+
+
+ShowboxWireExport myExports
+{
+	myAttachPoints
+	{
+		WireAttach myAttachPoint0
+		{
+			myBone "barn04_4_NodeCover"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint1
+		{
+			myBone "Wire"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint2
+		{
+			myBone "Wire1"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint3
+		{
+			myBone "Wire2"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint4
+		{
+			myBone "Wire3"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint5
+		{
+			myBone "Wire4"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint6
+		{
+			myBone "Wire5"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint7
+		{
+			myBone "Wire6"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint8
+		{
+			myBone "Wire7"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint9
+		{
+			myBone "Wire8"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint10
+		{
+			myBone "Wire9"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint11
+		{
+			myBone "Wire10"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint12
+		{
+			myBone "Wire11"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint13
+		{
+			myBone "Wire12"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint14
+		{
+			myBone "Wire13"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint15
+		{
+			myBone "Wire14"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint16
+		{
+			myBone "Wire15"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint17
+		{
+			myBone "Wire16"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint18
+		{
+			myBone "Wire17"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint19
+		{
+			myBone "Wire18"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint20
+		{
+			myBone "Wire19"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint21
+		{
+			myBone "Wire20"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint22
+		{
+			myBone "Wire21"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint23
+		{
+			myBone "Wire22"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint24
+		{
+			myBone "Wire23"
+			myExternalFlag 1
+		}
+		WireAttach myAttachPoint25
+		{
+			myBone "Wire24"
+			myExternalFlag 1
+		}
+	}
+	myInternalWires
+	{
+	}
+}

@@ -1,0 +1,6 @@
+VERSION_NUMBER 17
+OPENMODEL "editordata\presets\intersection\2laneL_Crossing\States\2laneL_Crossing.lws" "editordata\presets\intersection\2laneL_Crossing\States\2laneL_Crossing.mrb" "STND"
+SELECTSURFACE "surfaces/roads2layers.sur" 0 0
+SURFACEDEFINE "surfaces/roads2layers.sur" "2laneL_Crossing_1_" "USELAYER2"
+CHANGETEXTURE "EDITORDATA/PRESETS/INTERSECTION/2LANEL_CROSSING/TEXTURES/TWOLANEROAD01_LCROSS_BUMP" 0 2
+CHANGETEXTURE "EDITORDATA/PRESETS/INTERSECTION/2LANEL_CROSSING/TEXTURES/TWOLANEROAD01_LCROSS_SPEC" 0 4

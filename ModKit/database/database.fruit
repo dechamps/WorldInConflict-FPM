@@ -1,0 +1,26 @@
+// database.fruit
+// This is the database used by both WIC and WICEd
+// Created by Peen 050426
+
+CLASS WicDatabase
+{
+	FILE myPropTypes
+	FILE myAltPropTypes
+	FILE myAgentTypes
+	FILE myAgentTypesSinglePlayer
+	FILE myWeathers
+	FILE myCharacters
+	FILE mySupportThings
+	FILE mySpeedTrees
+	FILE myAmbientSounds
+	FILE myAmbientSoundsIce
+	FILE myAddOnPropTypes
+	FILE myDefFortTypes
+
+	FILE myGamePropTypesFile
+	FILE myGameSupportThingsFile
+	FILE myGameWeathersFile
+	FILE myGameCharactersFile
+	FILE myGameSoundFile
+	FILE myAgentSoundsFile
+}

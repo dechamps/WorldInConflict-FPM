@@ -1,0 +1,243 @@
+///////////////////////////////////////////////////////////////
+// Rigid Bodies
+
+CLASS Vert
+{
+	DECIMAL myX
+	DECIMAL myY
+	DECIMAL myZ
+}
+
+SCRIPTCLASS Verts
+{
+	Vert
+}
+
+SCRIPTCLASS Polygons
+{
+	NUMBER
+}
+
+SCRIPTCLASS PathBlockingFlags
+{
+	NUMBER
+}
+
+CLASS Element
+{
+	TEXT myName				
+	NUMBER myType				// 0=box, 1=sphere, 2=capsule, 3=mesh
+	TEXT myMaterial
+	NUMBER myNoPhysicsFlag
+	NUMBER myPathingHullFlag
+	NUMBER myUseForCollisions
+	NUMBER myIsFence
+	NUMBER myIsCutting
+	NUMBER myIsAimTarget
+	PathBlockingFlags myIsBlocking
+	Vert myPos
+	Vert myRotHPB
+	
+	// Extents description:
+	// Type			Sphere	Capsule	  Box		Mesh
+	//myExtents.myX 	radie	radie	  width/2	(undefined)
+	//myExtent.myY 		-	-	  height/2	(undefined)
+	//myExtent.myZ 		-	legnth/2  depth/2	(undefined)
+	Vert myExtents
+	
+	DECIMAL myRestFriction
+	DECIMAL myMoveFriction
+	DECIMAL myElasticity
+	DECIMAL myMass				// mass (kg)
+	
+	Verts myVerts				// if type = mesh
+}
+
+SCRIPTCLASS Elements
+{
+	Element
+}
+
+SCRIPTCLASS States
+{
+	TEXT
+}
+
+CLASS Event
+{
+	NUMBER myType				// 0=coll-vs-me, 1=coll-vs-others, ...
+	TEXT mySoundFilename			// play this sound once
+	TEXT myTriggerState			// set this state (for particle emitters) ("NONE" for no trigger state)
+	DECIMAL myRadius
+	DECIMAL	myStrength			// if radius & strength > 0, trigger physics explosion
+	NUMBER myCount
+	DECIMAL myDelay
+	DECIMAL myProbability			// 0 - 1 likelihood of occurrance
+}
+
+SCRIPTCLASS Events
+{
+	Event
+}
+
+CLASS RigidBody
+{
+	TEXT myName				// name of rigid body bone
+	TEXT myMeshBone				// name of mesh bone
+	Vert myRootPosition			// root position
+	NUMBER myObjectIsCg			// update MRB's position with this RigidBody's pos/orientation (otherwise only update radius)
+	NUMBER myIsDynamic
+	NUMBER myInteractionLayer
+	NUMBER myIsWreck			// used for car wrecks (bone is compressed, implies not dynamic)
+	NUMBER myWaterDepth
+	NUMBER myHasPathing
+	NUMBER myMaxVsUnitCollisions
+	States myStates				// states list
+	Events myEvents				// events
+	Elements myElements			// elements list
+
+	TEXT myWreckState			// State/animation that the wreck code manipulates
+
+	DECIMAL myTouchOfDeathTime		// after first touch, after <time> seconds, the object dies
+
+//	TODO: wreck distance event list
+//	Things that should happen at different compression depths
+//		Set a state, play a sound, spawn an explosion..?
+//		Maybe this list should just refer to events in the event list?
+	Vert myCenterOfMass
+}
+
+SCRIPTCLASS RigidBodies
+{
+	RigidBody
+}
+
+
+///////////////////////////////////////////////////////////////
+// Joints
+
+TYPE JointType
+{
+	BALL_JOINT
+	HINGE_JOINT
+	FIXED_JOINT
+	FIXED_ORIENTATION
+	ANGULAR_JOINT_LIMIT
+	LINEAR_JOINT_LIMIT
+	SPRING_DAMPENER
+	ANGULAR_SPRING_DAMPENER
+}
+
+CLASS Joint
+{
+	JointType myType
+	TEXT myRB1				// rigid body 1 (or "myPhysWorld" for ground)
+	TEXT myRB2				// rigid body 2 (or "myPhysWorld" for ground)
+	Vert myPos				// position (in model space)
+	Vert myPos2
+	DECIMAL myBreakThreshold
+	DECIMAL mySeparationDistance
+	DECIMAL mySpringStrengthConst
+	DECIMAL mySpringDampenerConst
+	DECIMAL myRestStateLength
+	Vert myVector1
+	Vert myVector2
+}
+
+SCRIPTCLASS Joints
+{
+	Joint
+}
+
+CLASS RagDollJoint
+{
+	TEXT myName
+	NUMBER myType
+	Vert myAxis
+	Vert myBoneVector
+	DECIMAL myConeAngle
+	DECIMAL myTwistAngle
+	DECIMAL myDamping
+	DECIMAL myMinBendAngle
+	DECIMAL myMaxBendAngle
+}
+
+SCRIPTCLASS RagDollJoints
+{
+	RagDollJoint
+}
+
+CLASS RagDollPart
+{
+	TEXT myName
+	NUMBER myEnable
+}
+
+SCRIPTCLASS RagDollParts
+{
+	RagDollPart
+}
+
+CLASS RagDollGeometry
+{
+	TEXT myName
+	DECIMAL myRadius
+}
+
+SCRIPTCLASS RagDollGeometries
+{
+	RagDollGeometry
+}
+
+CLASS RagDollLOD
+{
+	NUMBER myDistance
+	RagDollParts myParts
+	RagDollJoints myJoints
+	RagDollGeometries myGeometries
+}
+
+SCRIPTCLASS RagDollLODs
+{
+	RagDollLOD
+}
+
+CLASS RagDoll
+{
+	TEXT myName				// (unused for now)
+}
+
+SCRIPTCLASS RagDolls
+{
+	RagDoll
+}
+
+CLASS RagDoll2
+{
+	TEXT myName
+	RagDollLODs myLODs
+}
+
+SCRIPTCLASS RagDolls2
+{
+	RagDoll2
+}
+
+CLASS DelayedExplosion
+{
+	DECIMAL myDelay
+	DECIMAL myDelayRndLo
+	DECIMAL myDelayRndHi
+	TEXT myBone	// Delayed explosions should be client-side effects only (!?)
+	TEXT myState
+	DECIMAL myRadius
+	DECIMAL myStrength
+	TEXT mySoundFile
+	DECIMAL myProbability
+}
+
+SCRIPTCLASS DelayedExplosions
+{
+	DelayedExplosion
+}
+

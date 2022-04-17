@@ -1,0 +1,139 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText Yeah?
+		myStartTime 7.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "Yeah?\nDid I wake you, Captain Webb?"
+		myStartTime 7.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Colonel Sawyer?"
+		myStartTime 9.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Colonel Sawyer?\nHow are you, James?"
+		myStartTime 10.1
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "Wide awake, sir. What's up?"
+		myStartTime 11.5
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "How's your knee these days?"
+		myStartTime 13.8
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Still a bit stiff, sir. But nothing I can't handle."
+		myStartTime 15.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "So you're fit for combat duty?"
+		myStartTime 18.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "Damn straight, sir."
+		myStartTime 21.0
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "The folks at medical review don't know their asses from their elbows."
+		myStartTime 23.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "I heard they made you a ranger school instructor."
+		myStartTime 26.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "I've asked for a transfer to a combat unit but they've refused me twice."
+		myStartTime 29.3
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Good thing I outrank them. "
+		myStartTime 33.3
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "I'm gonna be needing a new company commander. You up for it?"
+		myStartTime 35.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "I'm all yours, sir. Just itching to get into this damn fight and do some good."
+		myStartTime 40.2
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "Then pack your gear and meet me at Fort Bragg in four days. \nI'll arrange the transfer."
+		myStartTime 44.4
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "Roger that, colonel! And thank you."
+		myStartTime 49.5
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "Yeah, I should have done this a long time ago... Now get back to sleep."
+		myStartTime 52.0
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "Yes, sir."
+		myStartTime 56.4
+		myVisibleTime 2.0
+	}
+
+}
+

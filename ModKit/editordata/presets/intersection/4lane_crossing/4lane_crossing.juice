@@ -1,0 +1,24 @@
+INCLUDE editordata/wiced/fruit/wicedtemplates.fruit
+
+WicedRoadIntersectionPreset myTemplate
+{
+	myWicedRoadIntersection
+	{
+		myIntersectionMRB editordata/presets/intersection/4lane_crossing/4lane_Crossing.mrb
+		myIsLockedFlag FALSE
+		myRenderToGroundFlag TRUE
+		myInnerGroundAffectRadius 18.000000
+		myOuterGroundAffectRadius 25.000000
+		myTextureFile editordata/presets/intersection/4lane_crossing/textures/Town_4lane_intersection1_diffuse.dds
+		mySpecMapFile editordata/presets/intersection/4lane_crossing/textures/Town_4lane_intersection1_specular.dds
+		myNormalMapFile editordata/presets/intersection/4lane_crossing/textures/Town_4lane_intersection1_bump.dds
+		myVariationFile editordata/presets/intersection/4lane_crossing/textures/Town_4lane_intersection1_patch_diffuse.dds
+		myGlobalBrightnessMask <empty>
+		myGlobalOpacityMask <empty>
+		myGroundDetailTextureID 0
+		myRemoveAutopropsFlag TRUE
+		myScaleFactor 1.000000
+	}
+
+}
+

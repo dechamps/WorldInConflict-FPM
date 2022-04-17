@@ -1,0 +1,65 @@
+INCLUDE juice/spawner/spawner.fruit
+
+SpawnerList SpawnerDefinitions
+{
+	Spawner Dropship
+	{
+		mySpawnerModels
+		{
+			FILE Neutral_1 <empty>
+
+			FILE Neutral_2 <empty>
+
+			FILE Neutral_3 <empty>
+
+			FILE Neutral_4 <empty>
+
+			FILE US_1 units/airdropbox/us_airdrop_sub01.mrb
+
+			FILE US_2 units/airdropbox/us_airdrop_2_drops_sub01.mrb
+
+			FILE US_3 units/airdropbox/us_airdrop_3_drops_sub01.mrb
+
+			FILE US_4 units/airdropbox/us_airdrop_3_drops_sub01.mrb
+
+			FILE USSR_1 units/airdropbox/ussr_airdrop_sub01.mrb
+
+			FILE USSR_2 units/airdropbox/ussr_airdrop_2_drops_sub01.mrb
+
+			FILE USSR_3 units/airdropbox/ussr_airdrop_3_drops_sub01.mrb
+
+			FILE USSR_4 units/airdropbox/ussr_airdrop_3_drops_sub01.mrb
+
+			FILE NATO_1 units/airdropbox/nato_airdrop_sub01.mrb
+
+			FILE NATO_2 units/airdropbox/nato_airdrop_2_drops_sub01.mrb
+
+			FILE NATO_3 units/airdropbox/nato_airdrop_3_drops_sub01.mrb
+
+			FILE NATO_4 units/airdropbox/nato_airdrop_3_drops_sub01.mrb
+
+		}
+
+		mySpawnerSoundFile
+		{
+			myBaseFrequency 0
+			mySpeedShiftFlag 0
+			myDopplerShiftFlag 1
+			mySound engine_us_dropship
+		}
+
+		myCargoSpace1 2
+		myCargoSpace2 4
+		myCargoSpace3 6
+		myDelayBeforeSpawn 20
+		myDelayAfterSpawn 20
+		mySpawnerSplineObject effects/supportweapons/nato_soundsplinetest.mot
+	}
+
+	PlayerMarker PlayerMarker
+	{
+		myModelFile props/base/dropzone/dropzone.mrb
+	}
+
+}
+

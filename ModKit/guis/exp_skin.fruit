@@ -1,0 +1,82 @@
+INCLUDE juice/vector2.fruit
+
+SCRIPTCLASS EXP_PrefabList
+{
+	EXP_Prefab
+}
+
+CLASS EXP_FontData
+{
+	FILE myFont
+	FILE myBoldFont
+	FILE myItalicFont
+	FILE myBoldItalicFont
+	DECIMAL mySizeScale
+	DECIMAL myHeightAdjustment
+}
+
+SCRIPTCLASS EXP_FontDataList
+{
+	EXP_FontData
+}
+
+CLASS EXP_FontDataRange
+{
+	EXP_FontData* myFont
+	TEXT myStartCharacter
+	TEXT myEndCharacter
+}
+
+SCRIPTCLASS EXP_FontDataRangeList
+{
+	EXP_FontDataRange
+}
+
+CLASS EXP_Font
+{
+	NUMBER mySize
+	NUMBER myColorRed	//ranged 0-255
+	NUMBER myColorGreen	//ranged 0-255
+	NUMBER myColorBlue	//ranged 0-255
+	NUMBER myShadow
+}
+
+SCRIPTCLASS EXP_FontList
+{
+	EXP_Font
+}
+
+CLASS EXP_Skin
+{
+	FILE myFileName
+	FILE myEditorFileName
+	EXP_PrefabList myPrefabs
+	EXP_FontList myFonts
+	EXP_FontDataList myFontData
+	EXP_FontDataRangeList myFontRanges
+}
+
+SCRIPTCLASS EXP_SkinList
+{
+	EXP_Skin
+}
+
+CLASS EXP_SkinFile
+{
+	EXP_SkinList mySkins
+}
+
+TYPE EXP_PrefabStyle
+{
+	SCALE
+	TILE
+}
+
+CLASS EXP_Prefab
+{
+	Vector2 myStart
+	Vector2 myEnd
+	Vector2 myInnerStart
+	Vector2 myInnerEnd
+	EXP_PrefabStyle myStyle
+}

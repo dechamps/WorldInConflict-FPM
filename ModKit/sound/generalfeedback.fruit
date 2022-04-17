@@ -1,0 +1,58 @@
+SCRIPTCLASS FILEList
+{
+	FILE
+}
+
+SCRIPTCLASS TEXTList
+{
+	TEXT
+}
+
+CLASS FeedbackData
+{
+	FILEList myYouWonSounds
+	FILEList myYouWonSoundsSP
+	FILEList myYouLostSounds
+	FILEList myYouLostSoundsSP
+	FILEList my10minRemainSound
+	FILEList my5minRemainSound
+	FILEList my3minRemainSound
+	FILEList my1minRemainSound
+	FILEList my30secremainSound
+	FILEList my10secremainSound
+	FILEList my09secremainSound
+	FILEList my08secremainSound
+	FILEList my07secremainSound
+	FILEList my06secremainSound
+	FILEList my05secremainSound
+	FILEList my04secremainSound
+	FILEList my03secremainSound
+	FILEList my02secremainSound
+	FILEList my01secremainSound
+	FILEList myDomination10percentGoingUp
+	FILEList myDomination25percentGoingUp
+	FILEList myDomination75percentGoingUp
+	FILEList myDomination90percentGoingUp
+	FILEList myDomination10percentGoingDown
+	FILEList myDomination25percentGoingDown
+	FILEList myDomination75percentGoingDown
+	FILEList myDomination90percentGoingDown
+	FILEList myDropshipGoingToLZ
+	FILEList myDropshipDropcomplete
+	FILEList myDropshipAtBase
+	FILEList myDominationGoingUp
+	FILEList myDominationGoingDown
+	FILEList myArtilleryBarrageDetectedSounds
+	FILEList myUnitKilledSounds
+	FILEList myKothStartsSound
+
+	FILEList myAssaultRound1DefenderStartUpSounds
+	FILEList myAssaultRound1AttackerStartUpSounds
+	FILEList myAssaultRound2DefenderStartUpSounds
+	FILEList myAssaultRound2AttackerStartUpSounds
+
+	FILEList myGeigerSounds
+	
+	FILEList myNukeDetectedSounds
+	TEXTList myNukeNames
+}

@@ -1,0 +1,643 @@
+INCLUDE juice/wic_state.fruit
+
+State myUnitNormal
+{
+	myName UnitNormal
+	myDuration 0.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State myInfantryNormal
+{
+	myName InfantryNormal
+	myDuration 0.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 1
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_Animation StateModifier_Animation(0)
+		{
+			myAnimationState NORMAL
+		}
+
+		StateModifier_Collision StateModifier_Collision(0)
+		{
+			myPhysFile units/generic_marine_rb/stance_stand_rb.ice
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(1)
+		{
+			myInput GAME_CROUCH
+			myTransitionTime 0.92
+			myTargetState InfantryCrouch
+		}
+
+		StateTransition StateTransition(0)
+		{
+			myInput GAME_LAY
+			myTransitionTime 1.5
+			myTargetState InfantryLay
+		}
+
+		StateTransition StateTransition(2)
+		{
+			myInput EXPLOSION_NEAR
+			myTransitionTime 1
+			myTargetState InfantryCover
+		}
+
+	}
+
+}
+
+State myModeIRScan
+{
+	myName ModeIRScan
+	myDuration 10.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_ViewRange StateModifier_ViewRange(0)
+		{
+			myViewRangeMultiplier 1.5
+		}
+
+		StateModifier_PerceptionRange StateModifier_PerceptionRange(0)
+		{
+			myPerceptionRangeMultiplier 3.0
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition myRevertTransition
+		{
+			myInput SELF_UNDER_FIRE
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+	}
+
+}
+
+State myInfantryCrouch
+{
+	myName InfantryCrouch
+	myDuration 0.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 1
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_Animation StateModifier_Animation(0)
+		{
+			myAnimationState CROUCH
+		}
+
+		StateModifier_Collision StateModifier_Collision(0)
+		{
+			myPhysFile units/generic_marine_rb/stance_crouch_rb.ice
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(1)
+		{
+			myInput GAME_STAND
+			myTransitionTime 0.92
+			myTargetState InfantryNormal
+		}
+
+		StateTransition StateTransition(0)
+		{
+			myInput GAME_LAY
+			myTransitionTime 1.5
+			myTargetState InfantryLay
+		}
+
+		StateTransition StateTransition(2)
+		{
+			myInput ON_USER_ORDER
+			myTransitionTime 0.92
+			myTargetState InfantryNormal
+		}
+
+		StateTransition StateTransition(3)
+		{
+			myInput EXPLOSION_NEAR
+			myTransitionTime 1
+			myTargetState InfantryCover
+		}
+
+	}
+
+}
+
+State myInfantryLay
+{
+	myName InfantryLay
+	myDuration 0.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 1
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_Animation StateModifier_Animation(0)
+		{
+			myAnimationState LAY
+		}
+
+		StateModifier_Collision StateModifier_Collision(0)
+		{
+			myPhysFile units/generic_marine_rb/stance_prone_rb.ice
+		}
+
+		StateModifier_Movement StateModifier_Movement(0)
+		{
+			myMovementSpeedMultiplier 1
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(1)
+		{
+			myInput GAME_CROUCH
+			myTransitionTime 1.5
+			myTargetState InfantryCrouch
+		}
+
+		StateTransition StateTransition(0)
+		{
+			myInput GAME_STAND
+			myTransitionTime 1.67
+			myTargetState InfantryNormal
+		}
+
+		StateTransition StateTransition(2)
+		{
+			myInput ON_USER_ORDER
+			myTransitionTime 1.67
+			myTargetState InfantryNormal
+		}
+
+		StateTransition StateTransition(3)
+		{
+			myInput EXPLOSION_NEAR
+			myTransitionTime 1
+			myTargetState InfantryCover
+		}
+
+	}
+
+}
+
+State myInfantryCover
+{
+	myName InfantryCover
+	myDuration 1
+	myReturnTransitionTime 0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State myModeRestoration
+{
+	myName ModeRestoration
+	myDuration 10.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 1
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_Restoration StateModifier_Restoration(0)
+		{
+			myHealingRate 0.5
+			myHealAmountPerTick 60.0
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(0)
+		{
+			myInput ON_USER_ORDER
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+	}
+
+}
+
+State myModeChangeAmmoType
+{
+	myName ModeChangeAmmoType
+	myDuration 10.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName shooterNameHere
+			myAmmoName ammoNameHere
+		}
+
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName shooterNameHere
+			myCanTargetAirFlag 1
+			myCanTargetGroundFlag 0
+			myCanTargetInfantryFlag 0
+			myCanTargetHeavyArmorFlag 0
+			myCanAttackGroundFlag 0
+			myCanAutoAcquireFlag 1
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_ArmorPiercingBullets
+{
+	myName SPECIAL_ArmorPiercingBullets
+	myDuration 12
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 50Cal
+			myAmmoName 50Cal_AP
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_HEI_Bullets_Btr80
+{
+	myName SPECIAL_HEI_Bullets_Btr80
+	myDuration 12
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 14.5mm_cannon
+			myAmmoName 14.5mm_HEI
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_HEI_Bullets_Luchs
+{
+	myName SPECIAL_HEI_Bullets_Luchs
+	myDuration 12
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 20mm_cannon
+			myAmmoName 20mm_HEI
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_InfantrySprint
+{
+	myName SPECIAL_InfantrySprint
+	myDuration 10.0
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 1
+	myStopUnitFlag 0
+	myDropTargetFlag 1
+	myModifiers
+	{
+		StateModifier_Movement StateModifier_Movement(0)
+		{
+			myMovementSpeedMultiplier 2.0
+		}
+
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName InfantryPrimary
+			myCanTargetAirFlag -1
+			myCanTargetGroundFlag -1
+			myCanTargetInfantryFlag -1
+			myCanTargetHeavyArmorFlag -1
+			myCanAttackGroundFlag -1
+			myCanAutoAcquireFlag 0
+		}
+
+		StateModifier_Animation StateModifier_Animation(0)
+		{
+			myAnimationState NORMAL
+		}
+
+		StateModifier_Collision StateModifier_Collision(0)
+		{
+			myPhysFile units/generic_marine_rb/stance_stand_rb.ice
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(0)
+		{
+			myInput ON_USER_ATTACKORDER
+			myTransitionTime 0.0
+			myTargetState InfantryNormal
+		}
+
+	}
+
+}
+
+State SPECIAL_IRScan
+{
+	myName SPECIAL_IRScan
+	myDuration 15
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_PerceptionRange StateModifier_PerceptionRange(0)
+		{
+			myPerceptionRangeMultiplier 18
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_FieldRepairs
+{
+	myName SPECIAL_FieldRepairs
+	myDuration 10
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 1
+	myDropTargetFlag 1
+	myModifiers
+	{
+		StateModifier_Restoration StateModifier_Restoration(0)
+		{
+			myHealingRate 1
+			myHealAmountPerTick 200
+		}
+
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName <empty>
+			myCanTargetAirFlag 0
+			myCanTargetGroundFlag 0
+			myCanTargetInfantryFlag 0
+			myCanTargetHeavyArmorFlag 0
+			myCanAttackGroundFlag 0
+			myCanAutoAcquireFlag 0
+		}
+
+	}
+
+	myTransitions
+	{
+		StateTransition StateTransition(0)
+		{
+			myInput ON_USER_ORDER
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+		StateTransition StateTransition(1)
+		{
+			myInput ON_USER_ATTACKORDER
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+		StateTransition StateTransition(2)
+		{
+			myInput SELF_UNDER_FIRE
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+		StateTransition StateTransition(3)
+		{
+			myInput FULL_HEALTH
+			myTransitionTime 0.0
+			myTargetState UnitNormal
+		}
+
+	}
+
+}
+
+State SPECIAL_GroundSupport_M163
+{
+	myName SPECIAL_GroundSupport_M163
+	myDuration 10
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName 20mm_Vulcan
+			myCanTargetAirFlag 0
+			myCanTargetGroundFlag 1
+			myCanTargetInfantryFlag 1
+			myCanTargetHeavyArmorFlag 1
+			myCanAttackGroundFlag 0
+			myCanAutoAcquireFlag 1
+		}
+
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 20mm_Vulcan
+			myAmmoName 20mm_Vulcan_GroundSupport
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_GroundSupport_Gepard
+{
+	myName SPECIAL_GroundSupport_Gepard
+	myDuration 10
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName 35mm_autocannons
+			myCanTargetAirFlag 0
+			myCanTargetGroundFlag 1
+			myCanTargetInfantryFlag 1
+			myCanTargetHeavyArmorFlag 1
+			myCanAttackGroundFlag 0
+			myCanAutoAcquireFlag 1
+		}
+
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 35mm_autocannons
+			myAmmoName 35mm_GroundSupport
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_GroundSupport_Shilka
+{
+	myName SPECIAL_GroundSupport_Shilka
+	myDuration 10
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_TargetingFlags StateModifier_TargetingFlags(0)
+		{
+			myShooterName 23mm_autocannons
+			myCanTargetAirFlag 0
+			myCanTargetGroundFlag 1
+			myCanTargetInfantryFlag 1
+			myCanTargetHeavyArmorFlag 1
+			myCanAttackGroundFlag 0
+			myCanAutoAcquireFlag 1
+		}
+
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 23mm_autocannons
+			myAmmoName 23mm_HEI_API_GroundSupport
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+
+State SPECIAL_APDS_Bullets_Warrior
+{
+	myName SPECIAL_APDS_Bullets_Warrior
+	myDuration 10
+	myReturnTransitionTime 0.0
+	myIsBlockingStateFlag 0
+	myStopUnitFlag 0
+	myDropTargetFlag 0
+	myModifiers
+	{
+		StateModifier_AmmoType StateModifier_AmmoType(0)
+		{
+			myShooterName 30mmGun
+			myAmmoName 30mm_APDS
+		}
+
+	}
+
+	myTransitions
+	{
+	}
+
+}
+

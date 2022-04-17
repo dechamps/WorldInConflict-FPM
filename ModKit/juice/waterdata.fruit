@@ -1,0 +1,126 @@
+INCLUDE juice/color.fruit
+
+CLASS WaterData
+{
+	DECIMAL mySpecExponent
+	DECIMAL mySunReflectionScale
+	DECIMAL myRippleSoftener
+	DECIMAL myRippleReflectionScale
+	DECIMAL myWaveReflectionScale
+	XColorRGB myReflectedColorScale
+	DECIMAL myMeanReflectionDist
+	DECIMAL myWaveHeight1
+	DECIMAL myWaveHeight2
+	DECIMAL myWaveLength1
+	DECIMAL myWaveLength2
+	DECIMAL myTravelSpeed1
+	DECIMAL myTravelSpeed2
+	DECIMAL myRippleScaler1
+	DECIMAL myRippleScaler2
+	DECIMAL myRippleScaler3
+	DECIMAL myRippleScaler4
+	DECIMAL myWaterAngle1
+	DECIMAL myRelDir2
+	DECIMAL myRelDir3
+	DECIMAL myRelDir4
+	DECIMAL myWaterScale1
+	DECIMAL myWaterScale2
+	DECIMAL myWaterScale3
+	DECIMAL myWaterScale4
+	DECIMAL myWaterSpeed1
+	DECIMAL myWaterSpeed2
+	DECIMAL myWaterSpeed3
+	DECIMAL myWaterSpeed4
+	XColorRGBA myRefractShallowColor
+	XColorRGBA myRefractDeepColor
+	
+	DECIMAL myFresnelBase
+	DECIMAL myFresnelExponent
+	DECIMAL myFresnelScale
+	DECIMAL myAlphaExponent
+	DECIMAL myAlphaBase
+	DECIMAL myReflectionStrength
+	DECIMAL myWaveReflection
+	DECIMAL myReflectedColorScaleAlpha
+	
+	DECIMAL myFoamHeightOffset
+	DECIMAL myFoamDepthScale
+	DECIMAL myFoamDepthOffset
+	DECIMAL myFoamAlphaScale
+	
+	DECIMAL myFoamScaleU1
+	DECIMAL myFoamScaleV1
+	DECIMAL myFoamScaleU2
+	DECIMAL myFoamScaleV2
+	
+	DECIMAL myFoamSpeedU1
+	DECIMAL myFoamSpeedV1
+	DECIMAL myFoamSpeedU2
+	DECIMAL myFoamSpeedV2
+	
+	DECIMAL myWaveFoamScale1
+	DECIMAL myWaveFoamScale2
+	DECIMAL myWaveFoamScale3
+	DECIMAL myWaveFoamScale4
+	DECIMAL myWaveFoamScrollingMaskRelDir1
+	DECIMAL myWaveFoamScrollingMaskScale1
+	DECIMAL myWaveFoamScrollingMaskSpeed1
+	DECIMAL myWaveFoamScrollingMaskRelDir2
+	DECIMAL myWaveFoamScrollingMaskScale2
+	DECIMAL myWaveFoamScrollingMaskSpeed2
+	
+	DECIMAL myCrestMaxStartDist
+	DECIMAL myCrestMaxYTravel
+	DECIMAL myCrestMaxGroundTravelDist
+	DECIMAL myCrestMinmumSpacing
+	DECIMAL myCrestFadeInTime
+	DECIMAL myCrestFadeOutTime
+	DECIMAL myCrestLifeTime
+	DECIMAL myCrestSecondLayerSpeed
+	DECIMAL myCrestSecondLayerUScale
+	DECIMAL myCrestSecondLayerVScale
+	DECIMAL myCrestSpeedScale
+	DECIMAL myCrestShrinkFactor
+	DECIMAL myCrestWidth
+	DECIMAL myCrestLength
+	DECIMAL myCrestAlphaScale
+	DECIMAL myCrestWaveDirLimit
+	
+	DECIMAL myLowEndValuesOverride
+	DECIMAL myLowWaterScale1
+	DECIMAL myLowWaterScale2
+	DECIMAL myLowWaterSpeed1
+	DECIMAL myLowWaterSpeed2
+	DECIMAL myLowWaterAngle1
+	DECIMAL myLowRelDir2
+	XColorRGBA myLowRefractShallowColor
+	XColorRGBA myLowRefractDeepColor
+	XColorRGB myLowReflectedColorScale
+	DECIMAL myLowFresnelBase
+	DECIMAL myLowFresnelExponent
+	DECIMAL myLowFresnelScale
+	DECIMAL myLowAlphaExponent
+	DECIMAL myLowAlphaBase
+	DECIMAL myLowReflectionStrength
+	DECIMAL myLowReflectedColorScaleAlpha
+	FILE myLowWaterSurface_Normal
+	
+	FILE myWaterSurface_NormalAndHeight
+	FILE myWaterSurface_NormalMask
+	FILE myWaterSurface_Foam
+	FILE myWaterSurface_FoamMask
+	FILE myWaterSurface_WaveFoamScrollingMask
+	
+	FILE myCrestMask
+	FILE myCrest_Foam1
+	FILE myCrest_Foam2
+	
+	FILE myAroundVessel_Foam
+	FILE myAroundVessel_Side
+	FILE myAroundVessel_BoatShape
+	
+	FILE myTrail_Foam
+	FILE myTrail_Noise
+	
+	FILE myWaterMeshFile
+}

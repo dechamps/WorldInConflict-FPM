@@ -1,0 +1,46 @@
+INCLUDE directory.fruit
+ 
+RenderFiles myRenderFiles
+{
+	myErrorsFile errors.ice
+	myMRenderCapsFile mrendercaps.txt
+	myDefaultGfxOptionsFile wic_default_gfx.txt
+	myMinimapSurface ui/minimap/minimap.sur
+	myMinimapBlipSurface ui/minimap/minimap_blip.sur
+	myMinimapIconSurface ui/minimap/minimap_icon.sur
+	myMinimapCompassSurface ui/minimap/TestCompass.tga
+	myMinimapViewConeSurface ui/minimap/minimap_viewcone.tga
+	myMinimapEndOfWorldSurface ui/minimap/minimap_endofworld.tga
+	myMinimapLandingZoneTexture ui/skins/lz.tga
+	myMinimapUnitSpawnedIcon <empty>
+	myMinimapNotification ui/minimap/notification.tga
+	myMapLowendSurface surfaces/game/map_lowend.sur
+	myMapHighendPass1Surface surfaces/game/map_highend_pass1.sur
+	myMapHighendPass2_1Surface surfaces/game/map_highend_pass2_1.sur
+	myMapHighendPass2_2Surface surfaces/game/map_highend_pass2_2.sur
+	myMapHighendPassLightSurface surfaces/game/map_highend_light.sur
+	myWaterSurface surfaces/game/water.sur
+	myWaterSurfaceLow surfaces/game/water_low.sur
+	myWaterShoreSurface surfaces/game/water_shore.sur
+	myLineSurface surfaces/line_surface.tga
+	my3DMarkerModel effects/marker/marker.mrb
+	myStencilSurface surfaces/game/stencil_poly.sur
+	myStencilShadowSurface surfaces/game/stencil_shadow.sur
+	myBlobSurface surfaces/shadow_blob.sur
+	myDefaultBlobTexture surfaces/blob_shadow_all.dds
+	outOfLosColor 0
+	myDecalsAtlasImage effects/decals/decalatlas.dds
+	myDecalsAtlasIce effects/decals/decalatlas.ice
+	myWicWaterShader surfaces/game/wicwater.sur
+	myWicWaterFoamShader surfaces/game/wicwater_foam.sur
+	myWicWaterTrailShader surfaces/game/wicwater_trail.sur
+	myWicWaterTrailAroundShader surfaces/game/wicwater_trail_around.sur
+	myShadowedTransparentShader surfaces/game/shadowed_transparent.sur
+	myCloudsShader surfaces/game/wicclouds.sur
+	myCloudsShaderNuke <empty>
+	myBloomDefaultConfig <empty>
+	myBloomSurface <empty>
+	myWarFilterDefaultFile <empty>
+	myDesaturateSurface <empty>
+}
+

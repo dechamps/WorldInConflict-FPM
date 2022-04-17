@@ -1,0 +1,1231 @@
+INCLUDE juice/vector2.fruit
+INCLUDE juice/vector3.fruit
+INCLUDE juice/materials.fruit
+INCLUDE juice/hiteffects.fruit
+INCLUDE juice/team/team.fruit
+INCLUDE juice/role.fruit
+INCLUDE juice/art/alt_texture.fruit
+INCLUDE juice/dfm.fruit
+
+TYPE Boolean
+{
+	TRUE
+	FALSE
+}
+
+TYPE UnitType::MetaType
+{
+	AIR
+	GROUND
+	INFANTRY
+	HEAVYARMOR
+}
+
+TYPE UnitType::CombinedType
+{
+	HEAVYARMOR
+	MEDIUMARMOR
+	ARTILLERY
+	HELI
+	ATTACKHELI
+	INFANTRY
+	ANTIAIR
+	ENGINEER
+//	COMBINEDARMS
+//	TROOPTRANSPORT
+}
+
+TYPE UnitType::RoleType
+{
+	CARRIER
+	SCOUT
+	COMBAT
+	SUPPORT
+	SPECIAL
+	FLANKER
+	STATIONARY
+}
+
+TYPE UnitType::UnitFeedbackType
+{
+	US_INFANTRY
+	US_VEHICLES
+	US_TANKS
+	US_COPTERS
+	US_MISCELlANEOUS
+	US_ANTIAIR
+
+	USSR_INFANTRY
+	USSR_VEHICLES
+	USSR_TANKS
+	USSR_COPTERS
+	USSR_MISCELlANEOUS
+	USSR_ANTIAIR
+	USSR_SPETSNAZ
+
+	NATO_INFANTRY
+	NATO_INFANTRY_NO
+	NATO_VEHICLES
+	NATO_TANKS
+	NATO_TANKS_DE
+	NATO_COPTERS
+	NATO_MISCELlANEOUS
+	NATO_ANTIAIR
+	
+	SILENT
+}
+
+TYPE UnitType::PathType
+{
+	VEHICLES
+	AMPHIBIANS
+	INFANTRY
+	HELICOPTERS
+	STEERING_VEHICLES
+}
+
+CLASS ExperienceInfo
+{
+	NUMBER myExperienceLimit
+	DECIMAL myDamageFactor
+}
+
+SCRIPTCLASS ExperienceList
+{
+	ExperienceInfo
+}
+
+SCRIPTCLASS TEXTList
+{
+	TEXT
+}
+
+SCRIPTCLASS FILEList
+{
+	FILE
+}
+
+TYPE UnitType::LightType
+{
+	SHADOWMAP_AND_LIGHT
+	LIGHTMAP
+}
+
+TYPE UnitType::CategoryType
+{
+	INFANTRY
+	VEHICLES
+	TANKS
+	COPTERS
+	MISC
+	DEEP_WATER
+	NONTARGETABLE
+}
+
+CLASS UnitType::Rep
+{
+	FILE myModelName
+	FILE myShadowFile
+	AlternateTexture myAlternativeTexture
+	NUMBER myDecalLodNumber
+	FILE myTracksTexture
+	FILE myPhysFile
+	DECIMAL myTracksWidth
+	DECIMAL myWaterTrailWidth
+	UnitType::LightType myLightType
+	FILEList myColoredParticleEmitters
+}
+
+
+CLASS UnitType::EffectType
+{
+	UnitType::EffectType::ModelInfoList myModels	
+	TEXTList mySounds
+}
+
+
+
+CLASS StateList
+{
+	TEXT myFrontStateId
+	TEXT myLeftStateId
+	TEXT myBackStateId
+	TEXT myRightStateId
+}
+
+CLASS RagdollData
+{
+	FILE myRagdollModel
+	FILE myRagdollPhysFile
+	FILE myGibModel
+	FILE myGibPhysFile
+}
+
+CLASS SecondaryDeathEffect
+{
+	FILE myMRB
+	DECIMAL myLifeTime
+	DECIMAL myProbability
+}
+
+SCRIPTCLASS SecondaryDeathEffects
+{
+	SecondaryDeathEffect
+}
+
+CLASS DeathEffect
+{
+	FILE myFileName
+	FILE myShadowFileName
+	FILE myPhysFile
+	FILE myGetYFile
+	StateList myStates
+	NUMBER myStatesDependOnHitDirectionFlag
+	DECIMAL myLifeTime
+	NUMBER myHasRagdollFlag
+	RagdollData myRagdollData
+	DECIMAL myVelocityScale
+	SecondaryDeathEffects mySecondary
+}
+
+
+SCRIPTCLASS DeathEffectList
+{
+	DeathEffect	
+}
+
+CLASS UnitType::DeathEffects
+{
+	DeathEffectList myDeathEffects
+	TEXTLIST mySounds
+	FILE myVeryLowReplacement
+}
+
+CLASS SoundSource
+{
+	NUMBER myBaseFrequency
+	NUMBER mySpeedShiftFlag
+	NUMBER myDopplerShiftFlag
+	TEXT mySound
+}
+
+CLASS ProjectileType
+{
+	FILE myModelFile
+	DECIMAL myPostHitTimeToLive
+	SoundSource mySoundSource
+	HitEffectTypes myHitEffect
+}
+
+CLASS EngineSoundSource
+{
+	SoundSource myConstantSound
+	SoundSource myMovingSound
+	TEXT myStartMovingSound
+	TEXT myStopMovingSound
+}
+
+CLASS AimerSoundSource
+{
+	SoundSource myMovingSound
+	TEXT myStartMovingSound
+	TEXT myStopMovingSound
+}
+
+CLASS TankMover
+{
+	NUMBER myNumWheelPairs
+	NUMBER mySpringConfigId
+	DECIMAL mySpeed
+	DECIMAL myAcceleration
+	DECIMAL myHeightDampener
+	DECIMAL myRotationalDampener
+	Vector2 myFrontLeftWheel
+	Vector2 myBackRightWheel
+	DECIMAL myTurningSpeedAcceleration
+	DECIMAL myMaxTurningSpeed
+	DECIMAL mySpeedAcceleration
+	DECIMAL mySpeedDeceleration
+	DECIMAL myTurnAndMoveAngleConstraint
+	Vector3 myDimensions
+
+}
+
+CLASS TankNonMover
+{	
+}
+
+CLASS AmphibiousTankMover
+{
+	NUMBER myNumWheelPairs
+	NUMBER mySpringConfigId
+	DECIMAL mySpeed
+	DECIMAL myAcceleration
+	DECIMAL myHeightDampener
+	DECIMAL myRotationalDampener
+	Vector2 myFrontLeftWheel
+	Vector2 myBackRightWheel
+	DECIMAL myTurningSpeedAcceleration
+	DECIMAL myMaxTurningSpeed
+	DECIMAL mySpeedAcceleration
+	DECIMAL mySpeedDeceleration
+	DECIMAL myTurnAndMoveAngleConstraint
+	Vector3 myDimensions
+}
+
+CLASS SteeringMover
+{
+	DECIMAL mySpeed
+	DECIMAL myAcceleration
+	DECIMAL myHeightDampener
+	DECIMAL myRotationalDampener
+	Vector2 myFrontLeftWheel
+	Vector2 myBackRightWheel
+	DECIMAL myTurningSpeedAcceleration
+	DECIMAL myMaxTurningSpeed
+	DECIMAL mySpeedAcceleration
+	DECIMAL mySpeedDeceleration
+	DECIMAL myTurnAndMoveAngleConstraint
+	Vector3 myDimensions
+	DECIMAL myDistanceToFrontWheelPair
+	DECIMAL myDistanceToBackWheelPair
+
+}
+
+CLASS VehicleMover
+{
+	NUMBER myNumWheelPairs
+	NUMBER mySpringConfigId
+	DECIMAL mySpeed
+	DECIMAL myAcceleration
+	DECIMAL myHeightDampener
+	DECIMAL myRotationalDampener
+	Vector2 myFrontLeftWheel
+	Vector2 myBackRightWheel
+	DECIMAL myTurningSpeedAcceleration
+	DECIMAL myMaxTurningSpeed
+	DECIMAL mySpeedAcceleration
+	DECIMAL mySpeedDeceleration
+	DECIMAL myTurnAndMoveAngleConstraint
+	Vector3 myDimensions
+}
+
+CLASS VehicleNonMover
+{
+}
+
+CLASS InfantryMover
+{
+	DECIMAL mySpeed
+	Vector3 myDimensions
+}
+
+CLASS InfantryNonMover
+{
+}
+
+CLASS CopterMover
+{
+	DECIMAL mySpeed // Max Speed
+	DECIMAL myMinFlyingHeightWhenMoving // Minimum desired flying height while moving
+	DECIMAL myMaxFlyingHeightWhenMoving // Maximum flying height while moving
+	DECIMAL myMinFlyingHeightWhenIdle // Minimum height while hovering
+	DECIMAL myMaxFlyingHeightWhenIdle // Maximum height while hovering
+	DECIMAL myTurningSpeedAcceleration // Turn acceleration
+	DECIMAL myMovingSpeedAcceleration // Move acceleration
+	DECIMAL myTurnToTargetDistance // Distance from target position when agent starts to turn to desired target. Does not affect turning while strafing
+	DECIMAL myMaxStrafeDistance // All move orders within this distance will make the agent strafe
+	DECIMAL myMinTurnRadius // A minimum turn radius for non strafe move orders. And that is when an agent is moving and get a long mover order.
+	DECIMAL myMaxTurnRadius // A maximum turn radius.
+	DECIMAL myMaxPitch // Determines how much the agent pitch. Good value is 0.2.
+	DECIMAL myMaxBank // Determines how much the agent bank. Good value is 1.8.
+	DECIMAL myPitchSpeed // Pitch speed. Good value is 10.
+	DECIMAL myBankSpeed // Bank speed. Good value is 63.
+	DECIMAL myHeightSpeed // Height acceleration. Good value is 20.
+
+	DECIMAL myAcceleration
+	DECIMAL myTurningSpeed
+	DECIMAL myFlyingHeightWhenMoving
+	DECIMAL myFlyingHeightWhenIdle
+	Vector3 myDimensions
+}
+
+CLASS PythonMover
+{
+	DECIMAL mySpeed
+	TEXT myPythonClientModule
+	TEXT myPythonClientClass
+	TEXT myPythonServerModule
+	TEXT myPythonServerClass
+	UnitType::PathType myPathType
+}
+
+CLASS PP_DirectDamage
+{
+	NUMBER myDamage
+        DECIMAL myArmorPiercing
+}
+
+CLASS PP_BlastDamage
+{
+	NUMBER myDamage
+	DECIMAL myBlastRadius
+	DECIMAL myExplosionForce
+        DECIMAL myArmorPiercing
+	DECIMAL	myBlastSpeed
+	NUMBER myBreakCPFlag
+}
+
+CLASS PP_UnitSpawner
+{
+	TEXT myUnitType
+}
+
+CLASS PP_BloomBurner
+{
+	TEXT myBloomPreset
+	DECIMAL myInitialDelay
+	DECIMAL myFadeUpTime
+	DECIMAL myRemainTime
+	DECIMAL myFadeDownTime
+	FILE mySoundFile
+}
+
+CLASS PP_Cloud
+{
+	NUMBER myCloudID
+	DECIMAL myTimeToLive
+	NUMBER myBlockLOSFlag
+	NUMBER myBlockRadarFlag
+	NUMBER myHealthChange
+	DECIMAL myHealthChangeInterval
+	DECIMAL myDamageMultiplier
+	DECIMAL myAttackDamageMultiplier
+	DECIMAL myArmorMultiplier
+	DECIMAL myViewRangeMultiplier
+//	DECIMAL myRadarRangeMultiplier
+	DECIMAL myWeaponMinRangeMultiplier
+	DECIMAL myWeaponMaxRangeMultiplier
+	DECIMAL myMaxSpeedMultiplier
+	DECIMAL myFireRateMultiplier
+	NUMBER myEnergyChange
+	DECIMAL myEnergyChangeInterval
+	NUMBER myAffectEnemyFlag
+	NUMBER myAffectFriendlyFlag
+	DECIMAL myRadius
+	FILE myModelFile
+	NUMBER myAffectsInfantryFlag
+	NUMBER myAffectsVehicleFlag
+	NUMBER myAffectsTanksFlag
+	NUMBER myAffectsCoptersFlag
+	NUMBER myAffectsMiscFlag
+	NUMBER myAffectsBuildingsFlag
+	NUMBER myKillsWithNoDeathEffectFlag
+	TEXT myWarFilterPreset
+	NUMBER myDestroyProjectiles
+	DECIMAL myDestroyProjectilesCheckRange
+	DECIMAL myDestroyProjectilesProbability
+	DECIMAL myDestroyProjectilesChangeTimeInterval
+	DECIMAL myInitialLogicDelay
+	NUMBER myIgnoreBuildingDamageReductionFlag
+	DECIMAL myInfantryDamageTakenMultiplier
+	DECIMAL myGroundDamageTakenMultiplier
+	DECIMAL myHeavyArmorDamageTakenMultiplier
+	DECIMAL myAirDamageTakenMultiplier
+	DECIMAL myBuildingDamageTakenMultiplier
+	NUMBER myIgnoreForestDamageReductionFlag
+}
+
+
+CLASS PP_ForestDestroyer
+{
+	DECIMAL	myDestructionRadius
+}
+
+
+SCRIPTCLASS ProjectileParasiteList
+{
+	PP_ForestDestroyer
+	PP_DirectDamage
+	PP_BlastDamage
+	PP_UnitSpawner
+	PP_Cloud
+	PP_BloomBurner
+}
+
+CLASS NonShooter
+{
+}
+
+CLASS ShooterOffsetStanceList
+{
+	Vector3 myShooterOffset_Stand
+	Vector3 myShooterOffset_Crouch
+	Vector3 myShooterOffset_Lay
+}
+
+SCRIPTCLASS FireOffsetList
+{
+	Vector3
+}
+
+CLASS AmmoType
+{
+	DECIMAL myMinRange
+	DECIMAL myMaxRange
+	DECIMAL myAccuracy
+	DECIMAL myTrackFactor
+	DECIMAL myFireRate
+	NUMBER myMagazineCapacity
+	DECIMAL myReloadTime
+	DECIMAL myProjectileSpeed
+	ProjectileParasiteList myParasites
+	ProjectileType myProjectile
+}
+SCRIPTCLASS AmmoTypes
+{
+	AmmoType
+}
+
+SCRIPTCLASS AimingBones
+{
+	TEXT
+}
+
+CLASS StraightShooter
+{
+	AmmoTypes myAmmoTypes
+
+	TEXT myFireSound1
+	TEXT myFireSound2
+	TEXT myFireSound3
+	DECIMAL myTargetSpreadRadius
+	FILEList myAcquiredTargetFeedback
+	FILEList myKilledEnemyFeedback
+	DECIMAL myShooterOffsetX
+	DECIMAL myShooterOffsetY
+	DECIMAL myShooterOffsetZ
+	DECIMAL myBarrelOffsetX
+	DECIMAL myBarrelOffsetY
+	DECIMAL myBarrelOffsetZ
+	DECIMAL myFireOffsetX
+	DECIMAL myFireOffsetY
+	DECIMAL myFireOffsetZ
+	DECIMAL myFiringImpulse
+	FireOffsetList myFireOffsets
+	DECIMAL myAttackMoveLOFOffset
+	ShooterOffsetStanceList myShooterOffsetPerStanceList
+	NUMBER myUseMovementSpecificFireAnimationFlag
+	TEXT myHeadingAimingChild
+	TEXT myPitchAimingChild
+	DECIMAL myPitchOffset
+	NUMBER myCanTargetAirFlag
+	NUMBER myCanTargetGroundFlag
+	NUMBER myCanTargetInfantryFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanAttackGroundFlag
+	DECIMAL myRotationSpeed
+	NUMBER myOneShotFlag
+	NUMBER myAutoAcquireFlag
+	NUMBER myCanMoveAndFireFlag
+	NUMBER myCPC_SlotID
+	NUMBER myGroupID
+	DECIMAL myAngleLimit
+	NUMBER myIsAimingWithBodyFlag
+	DECIMAL myMinVisualCannonPitch
+	NUMBER myIsSpecialAbilityFlag
+	NUMBER myIgnoreBuildingDamageReductionFlag
+	NUMBER myUseBurstSoundFlag
+	NUMBER mySeekingTurretFlag
+	AimingBones myPitchAimingBones
+	AimingBones myHeadingAimingBones
+	NUMBER myUseSmoothAimingFlag
+	TEXT myTargetMarkerSupportName
+	NUMBER myIgnoreForestDamageReductionFlag
+}
+
+CLASS BallisticShooter
+{
+	AmmoTypes myAmmoTypes
+
+	TEXT myFireSound1		
+	TEXT myFireSound2		
+	TEXT myFireSound3		
+	DECIMAL myTargetSpreadRadius
+	FILEList myAcquiredTargetFeedback
+	FILEList myKilledEnemyFeedback
+	DECIMAL myShooterOffsetX
+	DECIMAL myShooterOffsetY
+	DECIMAL myShooterOffsetZ
+	DECIMAL myBarrelOffsetX
+	DECIMAL myBarrelOffsetY
+	DECIMAL myBarrelOffsetZ
+	DECIMAL myFireOffsetX
+	DECIMAL myFireOffsetY
+	DECIMAL myFireOffsetZ
+	FireOffsetList myFireOffsets
+	DECIMAL myAttackMoveLOFOffset
+	DECIMAL myFiringImpulse
+	ShooterOffsetStanceList myShooterOffsetPerStanceList
+	NUMBER myUseMovementSpecificFireAnimationFlag
+	TEXT myHeadingAimingChild
+	TEXT myPitchAimingChild
+	DECIMAL myPitchOffset
+	NUMBER myCanTargetAirFlag
+	NUMBER myCanTargetGroundFlag
+	NUMBER myCanTargetInfantryFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanAttackGroundFlag
+	DECIMAL myRotationSpeed
+	NUMBER myOneShotFlag
+	NUMBER myAutoAcquireFlag
+	NUMBER myCanMoveAndFireFlag
+	NUMBER myCPC_SlotID
+	NUMBER myGroupID
+	NUMBER myUseLowAngleFlag
+	DECIMAL myAngleLimit
+	NUMBER myIsAimingWithBodyFlag
+	NUMBER myIsSpecialAbilityFlag
+	NUMBER myIgnoreBuildingDamageReductionFlag
+	NUMBER myUseBurstSoundFlag
+	NUMBER mySeekingTurretFlag
+	AimingBones myPitchAimingBones
+	AimingBones myHeadingAimingBones
+	NUMBER myUseSmoothAimingFlag
+	TEXT myTargetMarkerSupportName
+	NUMBER myIgnoreForestDamageReductionFlag
+}
+
+CLASS HomingShooter
+{
+	AmmoTypes myAmmoTypes
+
+	TEXT myFireSound1		
+	TEXT myFireSound2		
+	TEXT myFireSound3		
+	DECIMAL myTargetSpreadRadius
+	FILEList myAcquiredTargetFeedback
+	FILEList myKilledEnemyFeedback
+	DECIMAL myShooterOffsetX
+	DECIMAL myShooterOffsetY
+	DECIMAL myShooterOffsetZ
+	DECIMAL myBarrelOffsetX
+	DECIMAL myBarrelOffsetY
+	DECIMAL myBarrelOffsetZ
+	DECIMAL myFireOffsetX
+	DECIMAL myFireOffsetY
+	DECIMAL myFireOffsetZ
+	DECIMAL myFiringImpulse
+	FireOffsetList myFireOffsets
+	DECIMAL myAttackMoveLOFOffset
+	ShooterOffsetStanceList myShooterOffsetPerStanceList
+	NUMBER myUseMovementSpecificFireAnimationFlag
+	TEXT myHeadingAimingChild
+	TEXT myPitchAimingChild
+	DECIMAL myPitchOffset
+	NUMBER myCanTargetAirFlag
+	NUMBER myCanTargetGroundFlag
+	NUMBER myCanTargetInfantryFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanAttackGroundFlag
+	DECIMAL myRotationSpeed
+	NUMBER myOneShotFlag
+	NUMBER myAutoAcquireFlag
+	NUMBER myCanMoveAndFireFlag
+	NUMBER myCPC_SlotID
+	NUMBER myGroupID
+	DECIMAL myAngleLimit
+	NUMBER myIsAimingWithBodyFlag
+	NUMBER myIsSpecialAbilityFlag
+	DECIMAL myTargetYAimOffsetPerMeter
+	NUMBER myIgnoreBuildingDamageReductionFlag
+	NUMBER myUseBurstSoundFlag
+	NUMBER mySeekingTurretFlag
+	AimingBones myPitchAimingBones
+	AimingBones myHeadingAimingBones
+	NUMBER myUseSmoothAimingFlag
+	TEXT myTargetMarkerSupportName
+	NUMBER myIgnoreForestDamageReductionFlag
+}
+
+CLASS PythonShooter
+{
+	AmmoTypes myAmmoTypes
+
+	TEXT myFireSound1
+	TEXT myFireSound2
+	TEXT myFireSound3
+	DECIMAL myTargetSpreadRadius
+	FILEList myAcquiredTargetFeedback
+	FILEList myKilledEnemyFeedback
+	DECIMAL myShooterOffsetX
+	DECIMAL myShooterOffsetY
+	DECIMAL myShooterOffsetZ
+	DECIMAL myBarrelOffsetX
+	DECIMAL myBarrelOffsetY
+	DECIMAL myBarrelOffsetZ
+	DECIMAL myFireOffsetX
+	DECIMAL myFireOffsetY
+	DECIMAL myFireOffsetZ
+	DECIMAL myFiringImpulse
+	FireOffsetList myFireOffsets
+	DECIMAL myAttackMoveLOFOffset
+	ShooterOffsetStanceList myShooterOffsetPerStanceList
+	NUMBER myUseMovementSpecificFireAnimationFlag
+	TEXT myHeadingAimingChild
+	TEXT myPitchAimingChild
+	DECIMAL myPitchOffset
+	NUMBER myCanTargetAirFlag
+	NUMBER myCanTargetGroundFlag
+	NUMBER myCanTargetInfantryFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanAttackGroundFlag
+	DECIMAL myRotationSpeed
+	NUMBER myOneShotFlag
+	NUMBER myAutoAcquireFlag
+	NUMBER myCanMoveAndFireFlag
+	NUMBER myCPC_SlotID
+	NUMBER myGroupID
+	DECIMAL myAngleLimit
+	NUMBER myIsAimingWithBodyFlag
+	DECIMAL myMinVisualCannonPitch
+	NUMBER myIsSpecialAbilityFlag
+	NUMBER myIgnoreBuildingDamageReductionFlag
+	NUMBER myUseBurstSoundFlag
+	NUMBER mySeekingTurretFlag
+	AimingBones myPitchAimingBones
+	AimingBones myHeadingAimingBones
+	NUMBER myUseSmoothAimingFlag
+	TEXT myTargetMarkerSupportName
+	NUMBER myIgnoreForestDamageReductionFlag
+	
+	TEXT myPythonModule
+	TEXT myPythonClass
+}
+
+CLASS DeployableType
+{
+	NUMBER myHealth
+	FILE myModelFile
+}
+
+TYPE CursorType
+{
+	ATTACK
+	HEAL	
+	DEPLOY	
+}
+
+TYPE SpecialAbilityType
+{
+	OFFENSIVE
+	DEFENSIVE	
+}
+
+CLASS SpecialVisualRep
+{
+	NUMBER myHighlightTargetFlag
+	TEXT myGuiIconPrefab
+
+	DECIMAL myRadius
+	NUMBER myHighlightAreaFlag
+	FILE myAreaPositiveMrbFile		
+	FILE myAreaNegativeMrbFile		
+	NUMBER myHighlightUnitFlag
+	NUMBER mySnapToUnitFlag
+	NUMBER mySnapToBuildingFlag	
+	NUMBER myHighlightBuildingFlag
+	
+	LOCTEXT myName
+	LOCTEXT myInfo
+	SpecialAbilityType myType
+	CursorType myCursor
+}
+
+CLASS ShooterAbility
+{
+	DECIMAL myRange
+	DECIMAL myRechargeTime
+	DECIMAL myInitRechargeTime
+	NUMBER myCanTargetAreaFlag
+	NUMBER myCanTargetUnitFlag
+	NUMBER myCanTargetInfantryUnitFlag
+	NUMBER myCanTargetArmorUnitFlag
+	NUMBER myCanTargetCopterUnitFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanTargetBuildingFlag
+	//NUMBER myDoNotTargetFlag
+	NUMBER myCanTargetFriendlyFlag
+	NUMBER myCanTargetEnemyFlag
+	NUMBER myIgnoreTypeInFocusFlag
+
+	TEXT myShooterName
+	NUMBER myForceShooterReload
+
+	SpecialVisualRep myVisualRep
+}
+
+CLASS HealingAbility
+{
+	DECIMAL myRange
+	DECIMAL myRechargeTime
+	DECIMAL myInitRechargeTime
+	NUMBER myCanTargetAreaFlag
+	NUMBER myCanTargetUnitFlag
+	NUMBER myCanTargetInfantryUnitFlag
+	NUMBER myCanTargetArmorUnitFlag
+	NUMBER myCanTargetCopterUnitFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanTargetBuildingFlag
+	//NUMBER myDoNotTargetFlag
+	NUMBER myCanTargetFriendlyFlag
+	NUMBER myCanTargetEnemyFlag
+	NUMBER myIgnoreTypeInFocusFlag
+
+	NUMBER myHealingValue
+	DECIMAL myHealingRange
+	NUMBER myMoveIntoRangeFlag
+	
+	SpecialVisualRep myVisualRep
+}
+
+CLASS CloudAbility
+{
+	DECIMAL myRange
+	DECIMAL myRechargeTime
+	DECIMAL myInitRechargeTime
+	NUMBER myCanTargetAreaFlag
+	NUMBER myCanTargetUnitFlag
+	NUMBER myCanTargetInfantryUnitFlag
+	NUMBER myCanTargetArmorUnitFlag
+	NUMBER myCanTargetCopterUnitFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanTargetBuildingFlag
+	//NUMBER myDoNotTargetFlag
+	NUMBER myCanTargetFriendlyFlag
+	NUMBER myCanTargetEnemyFlag
+	NUMBER myIgnoreTypeInFocusFlag
+
+	NUMBER myNumberSpawns
+	DECIMAL myTimeBetweenSpawns
+
+	DECIMAL myMrbTimeToLive
+	FILE myMRB
+	Vector3 myMRBOffset
+	Vector3 myCloudOffset
+	PP_Cloud myCloud
+	SpecialVisualRep myVisualRep
+}
+
+CLASS SupportAbility
+{
+	DECIMAL myRange
+	DECIMAL myRechargeTime
+	DECIMAL myInitRechargeTime
+	NUMBER myCanTargetAreaFlag
+	NUMBER myCanTargetUnitFlag
+	NUMBER myCanTargetInfantryUnitFlag
+	NUMBER myCanTargetArmorUnitFlag
+	NUMBER myCanTargetCopterUnitFlag
+	NUMBER myCanTargetHeavyArmorFlag
+	NUMBER myCanTargetBuildingFlag
+	NUMBER myCanTargetFriendlyFlag
+	NUMBER myCanTargetEnemyFlag
+	NUMBER myIgnoreTypeInFocusFlag
+
+	//NUMBER myDoNotTargetFlag
+	NUMBER myIsDeployableFlag
+	NUMBER myIsDeployMovementNeededFlag
+	
+	DECIMAL myAgentDirectDamage
+	DeployableType myDeployable
+	
+	FILE myMrbFile
+		
+	TEXT mySupportName
+	NUMBER mySupportLevel
+		
+	SpecialVisualRep myVisualRep
+}
+
+CLASS ModeAbility
+{
+	DECIMAL myRechargeTime
+	DECIMAL myInitRechargeTime
+	SpecialVisualRep myVisualRep
+	NUMBER myIgnoreTypeInFocusFlag
+
+	TEXT myStateName
+}
+
+SCRIPTCLASS SpecialAbilityList
+{
+	ShooterAbility
+	HealingAbility
+	CloudAbility
+	SupportAbility
+	ModeAbility
+}
+
+CLASS SpecialAbility
+{
+	SpecialAbilityList mySpecialAbilities
+}
+
+CLASS Containable
+{
+	NUMBER myContainableType
+}
+
+CLASS Container
+{
+	NUMBER myCapacity
+	NUMBER myClaimableFlag
+	NUMBER myContainerType
+	NUMBER myHidePassengersFlag
+
+	FILE mySlotFile
+	FILE mySplinePathFile
+	FILE mySplineModel
+	DECIMAL mySplineMaxTime
+	
+	NUMBER myWaitTime
+	NUMBER myFollowDistance
+	NUMBER myStopDistance
+	NUMBER myForceLoadDistance
+}
+
+TYPE CPC_SlotType
+{
+	FREE
+	GUNNER
+	MEDIC
+	SCOUT
+}
+
+CLASS CPC_Slot
+{
+	Vector3 myPos
+	CPC_SlotType myType
+	TEXT myAnimState
+	DECIMAL myHeadingOffset
+}
+
+CLASS CPC_Containable
+{
+	NUMBER myCPC_ContainableType
+	CPC_SlotType myPrefferedCPC_SlotType
+}
+
+CLASS ControlPointContainer
+{
+	Vector3 myGlobalSlotOffset
+	CPC_Slot mySlot1
+	CPC_Slot mySlot2
+	CPC_Slot mySlot3
+	CPC_Slot mySlot4
+	CPC_Slot mySlot5
+	CPC_Slot mySlot6
+	CPC_Slot mySlot7
+	CPC_Slot mySlot8
+	NUMBER myCPC_ContainerType
+	NUMBER myIsMoveableFlag
+}
+
+TYPE Armor::Type
+{
+	BODY
+	VEHICULAR
+	REINFORCED_VEHICULAR
+	ARMOR
+	EXOTIC
+	BUILDING
+	IMMUNE
+}
+
+CLASS Armor
+{
+	Armor::Type myType
+	DECIMAL myFrontArmor
+	DECIMAL mySideArmor
+	DECIMAL myBackArmor
+	DECIMAL myTopBottomArmor
+	DECIMAL myFrontSlope
+	DECIMAL mySideSlope
+	DECIMAL myBackSlope
+	DECIMAL myTopBottomSlope	
+}
+
+CLASS Seer
+{
+	DECIMAL myViewRange
+//	DECIMAL myRadarRange
+	DECIMAL myEyeHeight
+	DECIMAL myPerceptionRange
+	DECIMAL myAngleLimit
+	NUMBER myDetectSmoke
+}
+
+CLASS Stealth
+{
+	DECIMAL myRange
+	DECIMAL myForestIncrease
+	DECIMAL myBuildingIncrease
+	DECIMAL myFireingDecrease
+	DECIMAL myFireingDecreaseFallOffTime
+}
+
+CLASS ZoneCapturer
+{
+}
+
+CLASS Regenerator
+{
+	NUMBER myTimeIntervalInSeconds
+	NUMBER myHealedDamagePerTimeInterval
+}
+
+CLASS Blower
+{
+
+	NUMBER myDamage
+	DECIMAL myBlastRadius
+}
+
+CLASS BlowerTrigger
+{
+	DECIMAL myTrigRadius
+}
+
+CLASS Repairer
+{
+	DECIMAL myRepairRadius
+	NUMBER myTimeIntervalInSeconds
+	NUMBER myRepairedDamagePerTimeInterval 
+	Boolean myCanRepairInfantryFlag
+	Boolean myCanRepairVehicleFlag
+	Boolean myCanRepairAirFlag
+	Boolean myRepairWhileMovingFlag
+	Boolean myAutoAcquireTargetFlag
+	DECIMAL myScriptedDistance
+}
+
+CLASS Resident
+{
+
+}
+
+CLASS ImmuneVsDamageList
+{
+
+}
+
+SCRIPTCLASS ImmuneVsDamage
+{
+	ImmuneVsDamageList
+}
+
+SCRIPTCLASS Death
+{
+	PP_BlastDamage
+	PP_Cloud
+	PP_UnitSpawner
+}
+
+CLASS SelfDestruct
+{
+	NUMBER myTimeToLive
+}
+
+SCRIPTCLASS PrimaryShooter
+{
+	StraightShooter
+	BallisticShooter
+	HomingShooter	
+	PythonShooter
+}
+
+SCRIPTCLASS SecondaryShooter
+{
+	StraightShooter
+	BallisticShooter
+	HomingShooter	
+	PythonShooter
+}
+
+SCRIPTCLASS SpecialAbilityShooter
+{
+	StraightShooter
+	BallisticShooter
+	HomingShooter	
+	PythonShooter
+}
+
+CLASS MultipleShooter
+{
+	PrimaryShooter myPrimaryShooter
+	SecondaryShooter mySecondaryShooter
+	SpecialAbilityShooter mySpecialAbilityShooter
+}
+
+SCRIPTCLASS SquadMemberList
+{
+	TEXT
+}
+
+CLASS Squad
+{
+	SquadMemberList mySquadMembers
+	SoundSource mySquadLeaderStartMovingFeedback
+	SoundSource mySquadLeaderStopMovingFeedback
+	SoundSource myGetOutOfHereFeedback
+	SoundSource myAllAboardFeedback
+	SquadMemberList mySpecialists
+}
+
+SCRIPTCLASS ParasiteList
+{
+	TankMover
+	TankNonMover
+	VehicleMover
+	SteeringMover
+	VehicleNonMover
+	PythonMover
+	InfantryMover
+	InfantryNonMover
+	CopterMover
+	NonShooter
+	StraightShooter
+	BallisticShooter
+	HomingShooter
+	Containable
+	Container
+	EngineSoundSource
+	Armor
+	Seer
+	Stealth
+	ZoneCapturer
+	Regenerator
+	Blower
+	BlowerTrigger
+	Repairer
+	Resident
+	ImmuneVsDamage
+	Death
+	SelfDestruct
+	MultipleShooter
+	AimerSoundSource
+	Squad
+	AmphibiousTankMover
+	ControlPointContainer
+	CPC_Containable
+	DirectFireMode_Parasite
+	SpecialAbility
+}
+
+CLASS UnitType::Mode
+{
+	FILE myUIIconFile
+	FILE mySwitchButtonIconFile
+	UnitType::Rep myRep
+	ParasiteList myParasites
+}
+
+CLASS FeedBacks
+{
+	FILEList myPositiveFeedback
+	FILEList myNegativeFeedback
+	FILEList myDamageFeedback
+	FILEList myReloadingFeedback
+	FILEList myOutOfRangeFeedback
+	FILEList myAAWarningFeedback
+	FILEList myDAMPFeedback
+}
+
+CLASS SpecialAbilityUnitFeedback
+{
+	FILEList myUsedFeedbackList
+	FILEList myReadyFeedbackList
+	FILEList myDeployedFeedbackList
+}
+
+CLASS UnitFeedbackOverrides
+{
+	FILEList mySelectFeedbackOverrides
+	FILEList myMoveFeedbackOverrides
+	FILEList myAttackFeedbackOverrides
+	FILEList myUnderFireFeedbackOverrides
+	FILEList myOutOfCombatFeedbackOverrides
+	FILEList myContainerFeedbackOverrides
+	SpecialAbilityUnitFeedback myOffensiveSpecialAbilityFeedback
+	SpecialAbilityUnitFeedback myDefensiveSpecialAbilityFeedback
+}
+
+CLASS ExperienceLevel
+{
+	NUMBER myExperienceLimit
+	DECIMAL myLeadPercentageMultiplier
+	DECIMAL myDevianceMultiplier
+	DECIMAL myMovementPenaltyMultiplier
+	DECIMAL myReloadTimeMultiplier
+	DECIMAL myViewRangeMultiplier
+	DECIMAL myMaxSpeedMultiplier
+	DECIMAL myRepairTimeIntervalMultiplier
+}
+SCRIPTCLASS ExperienceLevels
+{
+	ExperienceLevel
+}
+
+// optional spawn model
+CLASS SpawnModel
+{
+	FILE mySplineObjectFile
+	FILEList mySplineObjectFiles
+	FILE myModel
+	SoundSource mySoundFile
+}
+CLASS UnitType
+{
+	Teams myTeam
+	UnitType::MetaType myType
+	UnitType::CombinedType myCombinedType
+	UnitType::RoleType myRoleType
+	UnitType::UnitFeedbackType myUnitFeedbackType
+	MaterialID myMaterial
+	DECIMAL myRadius
+	DECIMAL mySelectionRadius
+	NUMBER myHealth
+        RoleCostList myRoleCosts
+        RoleBlackList myRoleBlackList
+	ExperienceLevels myExperienceLevels
+	NUMBER myCost
+	NUMBER myScore
+	NUMBER myDropshipOccupation
+	NUMBER myMaintenance
+	NUMBER myPresence
+	NUMBER myDisableWhenKilledFlag
+	FeedBacks myFeedBack
+	UnitFeedbackOverrides myNormalFeedBack
+	UnitFeedbackOverrides myInCombatFeedBack
+	UnitType::DeathEffects myDeathEffects
+	UnitType::CategoryType myUnitCategory
+	NUMBER myWeight
+	Boolean myIsSelectableFlag
+	FILE mySwitchButtonIconFile
+	UnitType::Rep myRep
+	ParasiteList myParasites
+	TEXT myDefaultState
+	SpawnModel mySpawnModel
+	
+	LOCTEXT myUIName
+	LOCTEXT myToolTipInfo
+	TEXT myIconWorldPrefab
+	TEXT myIconMenuPrefab
+	FILE myIconToolTipBitmap
+}
+
+SCRIPTCLASS UnitTypeList
+{
+	UnitType
+}

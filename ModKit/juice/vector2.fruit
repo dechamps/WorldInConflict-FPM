@@ -1,0 +1,5 @@
+CLASS Vector2
+{
+	DECIMAL x
+	DECIMAL z
+}

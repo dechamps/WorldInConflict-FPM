@@ -1,0 +1,66 @@
+//Order Class
+INCLUDE juice/AIMessage.fruit
+INCLUDE juice/AIState.fruit
+INCLUDE juice/Vector3.fruit
+INCLUDE juice/OrderType.fruit
+INCLUDE juice/animationtype.fruit
+
+TYPE BaseArgument
+{
+	NONE
+	ME
+	LAST_RECEIVED
+}
+
+
+SCRIPTCLASS OrderList
+{
+	Order
+}
+
+
+CLASS AnimationData
+{
+	NUMBER myPriority
+	AnimationID myAnimation
+}
+
+
+CLASS OrderSet
+{
+	AIMessage myMessageToRespondTo
+	DECIMAL myPriority
+	OrderList myOrderStack
+}
+
+CLASS Message
+{
+	AIMessage myMessageID
+	OrderSet myOrders
+}
+
+
+CLASS Order
+{
+	OrderType myOrderType
+	BaseArgument myBaseArgument
+
+	Vector3 myTargetPosition
+	NUMBER myTargetId
+	AIState myNewStateId
+	AnimationData myAnimationState
+	Message myMessage
+	
+}
+
+
+
+SCRIPTCLASS OrderSetList
+{
+	OrderSet
+}
+
+CLASS MessageResponseSet
+{
+	OrderSetList myOrderSets
+}

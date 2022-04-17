@@ -1,0 +1,23 @@
+Version 2
+
+DefaultTextures
+{
+}
+
+Config Normal PS1.1
+{
+	NormalPass
+	{
+		blend = dstcolor srccolor
+		zWrite = default
+		alphatest = off
+		fogColor = default
+				
+		Code
+		{
+			ps_1_1
+
+			mov_sat r0, v0
+		}
+	}
+}

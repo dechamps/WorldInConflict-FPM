@@ -1,0 +1,6895 @@
+INCLUDE editordata/wiced/fruit/wicedmetadata.fruit
+
+NameBases myNameBases
+{
+	NUMBER 01 0
+
+	NUMBER 02 3
+
+	NUMBER 03 1
+
+	NUMBER 04_45 2
+
+	NUMBER 05 13
+
+	NUMBER 06 4
+
+	NUMBER 08 34
+
+	NUMBER 090905_final 1
+
+	NUMBER 1.3k_Ocean_L 1
+
+	NUMBER 1.3k_Ocean_R 1
+
+	NUMBER 15Paradropps 3
+
+	NUMBER 23l-41h-38w 0
+
+	NUMBER 24l-7h-37w 0
+
+	NUMBER 34l-13h-76w 1
+
+	NUMBER 34l-15h-54w 1
+
+	NUMBER 36l-18h-54w 0
+
+	NUMBER 36l-50h-104w 0
+
+	NUMBER 38l-17h-63w 2
+
+	NUMBER 40l-19h-37w 11
+
+	NUMBER 44l-14h-32w 1
+
+	NUMBER 45ish 1
+
+	NUMBER 50s_car 1
+
+	NUMBER 59l-7h-32w 4
+
+	NUMBER 62l-18h-17w 1
+
+	NUMBER 73l-34h-32w_02 0
+
+	NUMBER 73l-41h-32w_03 0
+
+	NUMBER 73l-61h-32w_01 1
+
+	NUMBER 74l-15h-74w_02 1
+
+	NUMBER 90ish 0
+
+	NUMBER 90l-25h-37w 0
+
+	NUMBER AdminBuilding 1
+
+	NUMBER AdminBuilding_V2 1
+
+	NUMBER Admin_building 1
+
+	NUMBER AirBase_Wall 68
+
+	NUMBER AirBase_Wall_with_sign 1
+
+	NUMBER Airbase_Hangar 2
+
+	NUMBER Airbase_Hangar_V2 1
+
+	NUMBER Airfield_Flag 1
+
+	NUMBER AirportWelcome 1
+
+	NUMBER Alp_Bridge_02 0
+
+	NUMBER Alp_Bridge_RoadLayer 0
+
+	NUMBER Alp_Gran_Block_02 11
+
+	NUMBER Alp_Gran_Block_02_invisble 0
+
+	NUMBER Alp_Tree_Block_100x100m 1
+
+	NUMBER Alp_Tree_Block_100x100m_invisble 0
+
+	NUMBER Alp_Tree_Block_100x32m 35
+
+	NUMBER Alp_Tree_Block_100x64m 0
+
+	NUMBER Alp_Tree_Block_Triangle_01 3
+
+	NUMBER Aluminium_Trailer_01 2
+
+	NUMBER Aluminium_Trailer_02 1
+
+	NUMBER Amb_war_light_3l 1
+
+	NUMBER Amb_war_light_3r 1
+
+	NUMBER ApartmentBlock_01 16
+
+	NUMBER ApartmentBlock_02 9
+
+	NUMBER ApartmentBlock_03 5
+
+	NUMBER ApartmentBlock_04 9
+
+	NUMBER ApartmentBlock_05 5
+
+	NUMBER ApartmentBlock_06 4
+
+	NUMBER ApartmentBlock_06_WIC_Alt_Prop 25
+
+	NUMBER ApartmentBlock_06_v2 3
+
+	NUMBER Aquaduct 8
+
+	NUMBER Aquaduct_Var2 6
+
+	NUMBER Area 118
+
+	NUMBER BIGstone 2
+
+	NUMBER BMW318 2
+
+	NUMBER Backdrop_mountains 0
+
+	NUMBER BarbedWire 29
+
+	NUMBER BarbedWireFences_18Meter 11
+
+	NUMBER BarbedWireFences_18Meter_W_Sign 4
+
+	NUMBER BarbedWireFences_3Meter 3
+
+	NUMBER BarbedWireFences_3Meter_W_Sign 1
+
+	NUMBER BarbedWireFences_6Meter 2
+
+	NUMBER BarbedWireFences_6Meter_W_Sign 0
+
+	NUMBER BarbedWireFences_6m_Rundown_Opening 1
+
+	NUMBER BarbedWireFences_ClosedDoor_W_Sign 12
+
+	NUMBER BarbedWireFences_OpenDoor_W_Sign 6
+
+	NUMBER Barge 1
+
+	NUMBER Barn 6
+
+	NUMBER Barn01 2
+
+	NUMBER Barn02 3
+
+	NUMBER Barn03 2
+
+	NUMBER Barn04 2
+
+	NUMBER Barn05 2
+
+	NUMBER Barracks 0
+
+	NUMBER Barrel 3
+
+	NUMBER Barrel_Big 21
+
+	NUMBER Barrel_LyingDown 0
+
+	NUMBER Barrel_Pile_01 3
+
+	NUMBER Barrel_Pile_02 1
+
+	NUMBER Barrel_Pyramid 8
+
+	NUMBER Barrel_Round 4
+
+	NUMBER Barrel_SingleDown 1
+
+	NUMBER Barrel_SingleUp 11
+
+	NUMBER Barrel_Spill 1
+
+	NUMBER Barrel_Tower 2
+
+	NUMBER BaseProp_01 3
+
+	NUMBER BaseProp_02 2
+
+	NUMBER BaseProp_03 1
+
+	NUMBER Basketball_Hoop 7
+
+	NUMBER Beech_Tree 115
+
+	NUMBER Bench_OneSide_Concrete 1
+
+	NUMBER Bench_Oneside 2
+
+	NUMBER Bench_TwoSide 26
+
+	NUMBER Bench_TwoSide_Parasol 4
+
+	NUMBER BigBunker 2
+
+	NUMBER Big_Russian_Radar_Parabol 1
+
+	NUMBER Billboard_01 3
+
+	NUMBER Birdflock 1
+
+	NUMBER Birds_ocean_heavy 2
+
+	NUMBER Birds_ocean_light 1
+
+	NUMBER Birds_ocean_medium 1
+
+	NUMBER Boat01 14
+
+	NUMBER Boat02 17
+
+	NUMBER Boat03 2
+
+	NUMBER BoatHouse 1
+
+	NUMBER BoxHouse_01_V1 1
+
+	NUMBER BoxHouse_01_V3 0
+
+	NUMBER BoxHouse_02_V3 1
+
+	NUMBER Boxes_01 3
+
+	NUMBER Boxes_02 2
+
+	NUMBER Boxes_03 4
+
+	NUMBER Boxes_04 1
+
+	NUMBER Boxes_05 2
+
+	NUMBER Bridge_01 1
+
+	NUMBER Bridge_02 0
+
+	NUMBER Bridge_02_Snow 1
+
+	NUMBER BrokenRadar 2
+
+	NUMBER Bunker 3
+
+	NUMBER Bunker_MachineGun 0
+
+	NUMBER Bunker_Structure 0
+
+	NUMBER Buoy 6
+
+	NUMBER BurnedTrees 20
+
+	NUMBER BurnedTrees_02 17
+
+	NUMBER BusStop 6
+
+	NUMBER BusStop_Europe 7
+
+	NUMBER Bus_Cbm1 0
+
+	NUMBER Bus_Cbm2 0
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__116 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__117 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__118 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__119 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__120 1
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__121 1
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall2__122 1
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall__76 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall__77 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall__78 2
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall__79 1
+
+	NUMBER COM_EUCOAST_AmericanElm_RT_Fall__80 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__219 2
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__220 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__221 2
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__222 2
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__223 2
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__224 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__225 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__226 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall2__227 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__124 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__125 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__126 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__127 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__129 1
+
+	NUMBER COM_EUCOAST_ElmStocky_RT_Fall__130 1
+
+	NUMBER COM_EUCOAST_Grapevine_RT2__50 1
+
+	NUMBER COM_EUCOAST_Grapevine_RT2__51 1
+
+	NUMBER COM_EUCOAST_Grapevine_RT__26 1
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__125 2
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__126 2
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__127 2
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__128 1
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__129 1
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall2__130 1
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall__277 2
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall__278 1
+
+	NUMBER COM_EUCOAST_GreenAsh_RT_Fall__279 2
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__136 2
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__137 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__138 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__139 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__140 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__141 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall2__142 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__150 2
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__151 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__152 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__153 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__154 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__155 1
+
+	NUMBER COM_EUCOAST_HorseChestnut_RT_Fall__156 1
+
+	NUMBER COM_EUCOAST_ItalianStonePine_RT_1__160 2
+
+	NUMBER COM_EUCOAST_ItalianStonePine_RT_1__161 1
+
+	NUMBER COM_EUCOAST_ItalianStonePine_RT_1__162 2
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__179 2
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__180 2
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__181 2
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__182 1
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__183 1
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__184 1
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall2__185 1
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall__87 3
+
+	NUMBER COM_EUCOAST_Linden_RT_Fall__88 1
+
+	NUMBER COM_EUCOAST_LiveOak_RT2__25 2
+
+	NUMBER COM_EUCOAST_LiveOak_RT2__26 1
+
+	NUMBER COM_EUCOAST_RedMaple_RT_Fall__133 1
+
+	NUMBER COM_EUCOAST_RedMaple_RT_Fall__134 1
+
+	NUMBER COM_EUCOAST_RedMaple_RT_Fall__135 1
+
+	NUMBER COM_EUCOAST_RedMaple_RT_Fall__136 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT2__49 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT2__50 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT2__51 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__421 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__422 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__423 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__424 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__425 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__426 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__427 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__428 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__429 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__430 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__431 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__432 2
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__433 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__434 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__435 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__436 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__437 1
+
+	NUMBER COM_EUCOAST_RiverBirch_RT__438 1
+
+	NUMBER COM_Wire_Pole_02__13 1
+
+	NUMBER Camaro_red 6
+
+	NUMBER CamoNet 5
+
+	NUMBER CampGate 2
+
+	NUMBER Caprice 6
+
+	NUMBER CarShelter 7
+
+	NUMBER CardboardBoxes 7
+
+	NUMBER CargoShip 3
+
+	NUMBER Cart 0
+
+	NUMBER Challenger 1
+
+	NUMBER Challenger2 3
+
+	NUMBER Challenger_green 2
+
+	NUMBER CheckPoint_LookOut_Building 4
+
+	NUMBER CheckPoint_Russia 22
+
+	NUMBER Chicken_Coop 1
+
+	NUMBER ChristmasSign 11
+
+	NUMBER ChristmasTree 31
+
+	NUMBER Church 0
+
+	NUMBER ChurchRural 0
+
+	NUMBER ChurchTown 0
+
+	NUMBER Cistern 25
+
+	NUMBER CisternWithConnection 7
+
+	NUMBER Cistern_02 4
+
+	NUMBER Cistern_V2 3
+
+	NUMBER Cistern_V3 1
+
+	NUMBER Code 9318
+
+	NUMBER Coliseum 3
+
+	NUMBER CommandPoint 6
+
+	NUMBER Comment 2725
+
+	NUMBER Container 0
+
+	NUMBER ContainerStack 0
+
+	NUMBER ContainerStack_11 15
+
+	NUMBER ContainerStack_11_v2 11
+
+	NUMBER ContainerStack_12 6
+
+	NUMBER ContainerStack_12_v2 21
+
+	NUMBER ContainerStack_8 32
+
+	NUMBER ContainerStack_8_v2 30
+
+	NUMBER ContainerStack_8_v3 24
+
+	NUMBER ContainerStack_8_v4 13
+
+	NUMBER ContainerStack_9 38
+
+	NUMBER ContainerStack_9_v2 4
+
+	NUMBER Container_01 1
+
+	NUMBER Container_02 2
+
+	NUMBER Container_03 16
+
+	NUMBER Container_04 14
+
+	NUMBER Container_05 27
+
+	NUMBER Container_06 14
+
+	NUMBER Container_Loader 5
+
+	NUMBER Container_Single 19
+
+	NUMBER Container_Single_V2 27
+
+	NUMBER Container_Single_V3 29
+
+	NUMBER CopCaprice 16
+
+	NUMBER Copcar_Caprice 1
+
+	NUMBER Corner_01 2
+
+	NUMBER Corner_02 2
+
+	NUMBER Corner_03 11
+
+	NUMBER Corner_04 18
+
+	NUMBER CountryHouse_01 5
+
+	NUMBER CountryHouse_02 9
+
+	NUMBER CountryHouse_02_V2 2
+
+	NUMBER CountryHouse_03 2
+
+	NUMBER CountryHouse_04 3
+
+	NUMBER Coupe_v1 21
+
+	NUMBER Coupe_v2 16
+
+	NUMBER Coupe_v3 13
+
+	NUMBER DeadTree 0
+
+	NUMBER Digger 8
+
+	NUMBER Diner01 1
+
+	NUMBER Diner_01_B 1
+
+	NUMBER Disposal_Container_01 4
+
+	NUMBER Disposal_Container_01_Var_02 1
+
+	NUMBER Disposal_Container_02_Var1 6
+
+	NUMBER Disposal_Container_02_Var2 2
+
+	NUMBER Disposal_Container_02_Var3 5
+
+	NUMBER Disposal_Container_02_Var4 8
+
+	NUMBER DockCylinder 5
+
+	NUMBER DownTown_Trash_Big 7
+
+	NUMBER DownTown_Trash_Long 1
+
+	NUMBER DownTown_Trash_Small 4
+
+	NUMBER Dummy_bush_01 8
+
+	NUMBER Dummy_bush_02 2
+
+	NUMBER Dummy_bush_03 39
+
+	NUMBER Dummy_tree_block_corner 0
+
+	NUMBER Dumpster_01 6
+
+	NUMBER Dumpster_01_v2 5
+
+	NUMBER Dumpster_01_v3 3
+
+	NUMBER Dumpster_02 4
+
+	NUMBER Dumpster_02_v2 5
+
+	NUMBER Dumpster_02_v3 3
+
+	NUMBER Dumpster_02_v4 3
+
+	NUMBER EUCOAST_AmericanElm_RT_Fall 76
+
+	NUMBER EUCOAST_AmericanElm_RT_Fall2 116
+
+	NUMBER EUCOAST_EasternRedCedar_RT 62
+
+	NUMBER EUCOAST_EasternRedCedar_RT2 80
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall 124
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2 219
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__201 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__202 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__203 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__204 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__205 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__206 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__207 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__208 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__209 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__211 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__212 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__213 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__214 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__215 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__216 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__217 1
+
+	NUMBER EUCOAST_ElmStocky_RT_Fall2__218 1
+
+	NUMBER EUCOAST_Ficus_RT_Fall 49
+
+	NUMBER EUCOAST_Grapevine_RT 26
+
+	NUMBER EUCOAST_Grapevine_RT2 50
+
+	NUMBER EUCOAST_Grapevine_RT3 9
+
+	NUMBER EUCOAST_Grapevine_RT_End 27
+
+	NUMBER EUCOAST_GreenAsh_RT_Fall 277
+
+	NUMBER EUCOAST_GreenAsh_RT_Fall2 125
+
+	NUMBER EUCOAST_HorseChestnut_RT_Fall 150
+
+	NUMBER EUCOAST_HorseChestnut_RT_Fall2 136
+
+	NUMBER EUCOAST_ItalianCypress_RT2 62
+
+	NUMBER EUCOAST_ItalianCypress_RT3 31
+
+	NUMBER EUCOAST_ItalianCypress_RT4 31
+
+	NUMBER EUCOAST_ItalianStonePine_RT_1 160
+
+	NUMBER EUCOAST_Linden_RT_Fall 87
+
+	NUMBER EUCOAST_Linden_RT_Fall2 179
+
+	NUMBER EUCOAST_LiveOak_RT 3
+
+	NUMBER EUCOAST_LiveOak_RT2 25
+
+	NUMBER EUCOAST_RedMaple_RT_Fall 133
+
+	NUMBER EUCOAST_RedMaple_RT_Fall2 2
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__23 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__24 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__25 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__26 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__27 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__28 1
+
+	NUMBER EUCOAST_RedMaple_RT_Fall__29 1
+
+	NUMBER EUCOAST_RiverBirch_RT 421
+
+	NUMBER EUCOAST_RiverBirch_RT2 49
+
+	NUMBER EUCOAST_RiverBirch_RT__120 1
+
+	NUMBER EUCOAST_RiverBirch_RT__121 1
+
+	NUMBER EUCOAST_RiverBirch_RT__122 1
+
+	NUMBER EUCOAST_RiverBirch_RT__123 1
+
+	NUMBER EUCOAST_RiverBirch_RT__124 1
+
+	NUMBER EUCOAST_RiverBirch_RT__125 1
+
+	NUMBER EUCOAST_RiverBirch_RT__126 1
+
+	NUMBER EUCOAST_RiverBirch_RT__127 1
+
+	NUMBER EUCOAST_RiverBirch_RT__128 1
+
+	NUMBER EUCOAST_RiverBirch_RT__130 1
+
+	NUMBER EUCOAST_RiverBirch_RT__131 1
+
+	NUMBER EUCOAST_RiverBirch_RT__132 1
+
+	NUMBER EUCOAST_RiverBirch_RT__133 1
+
+	NUMBER EUCOAST_RiverBirch_RT__134 1
+
+	NUMBER EUCOAST_RiverBirch_RT__135 1
+
+	NUMBER EUCOAST_RiverBirch_RT__136 1
+
+	NUMBER EUCOAST_RiverBirch_RT__137 1
+
+	NUMBER EUCOAST_RiverBirch_RT__138 1
+
+	NUMBER EUCOAST_RiverBirch_RT__140 1
+
+	NUMBER EUCOAST_RiverBirch_RT__140__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__141 1
+
+	NUMBER EUCOAST_RiverBirch_RT__141__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__142 1
+
+	NUMBER EUCOAST_RiverBirch_RT__142__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__143 1
+
+	NUMBER EUCOAST_RiverBirch_RT__143__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__144 1
+
+	NUMBER EUCOAST_RiverBirch_RT__144__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__145 1
+
+	NUMBER EUCOAST_RiverBirch_RT__145__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__146 1
+
+	NUMBER EUCOAST_RiverBirch_RT__146__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__147 1
+
+	NUMBER EUCOAST_RiverBirch_RT__147__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__148 1
+
+	NUMBER EUCOAST_RiverBirch_RT__150 1
+
+	NUMBER EUCOAST_RiverBirch_RT__150__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__151 1
+
+	NUMBER EUCOAST_RiverBirch_RT__151__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__152 1
+
+	NUMBER EUCOAST_RiverBirch_RT__152__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__153 1
+
+	NUMBER EUCOAST_RiverBirch_RT__153__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__154 1
+
+	NUMBER EUCOAST_RiverBirch_RT__154__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__155 1
+
+	NUMBER EUCOAST_RiverBirch_RT__155__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__156 1
+
+	NUMBER EUCOAST_RiverBirch_RT__156__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__157 1
+
+	NUMBER EUCOAST_RiverBirch_RT__157__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__158 1
+
+	NUMBER EUCOAST_RiverBirch_RT__160 1
+
+	NUMBER EUCOAST_RiverBirch_RT__160__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__161 1
+
+	NUMBER EUCOAST_RiverBirch_RT__161__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__162 1
+
+	NUMBER EUCOAST_RiverBirch_RT__162__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__166 1
+
+	NUMBER EUCOAST_RiverBirch_RT__166__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__167 1
+
+	NUMBER EUCOAST_RiverBirch_RT__167__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__168 1
+
+	NUMBER EUCOAST_RiverBirch_RT__170 1
+
+	NUMBER EUCOAST_RiverBirch_RT__170__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__171 1
+
+	NUMBER EUCOAST_RiverBirch_RT__171__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__172 1
+
+	NUMBER EUCOAST_RiverBirch_RT__172__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__173 1
+
+	NUMBER EUCOAST_RiverBirch_RT__173__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__174 1
+
+	NUMBER EUCOAST_RiverBirch_RT__174__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__175 1
+
+	NUMBER EUCOAST_RiverBirch_RT__175__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__176 1
+
+	NUMBER EUCOAST_RiverBirch_RT__176__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__177 1
+
+	NUMBER EUCOAST_RiverBirch_RT__177__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__178 1
+
+	NUMBER EUCOAST_RiverBirch_RT__180 1
+
+	NUMBER EUCOAST_RiverBirch_RT__180__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__181 1
+
+	NUMBER EUCOAST_RiverBirch_RT__181__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__182 1
+
+	NUMBER EUCOAST_RiverBirch_RT__182__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__183 1
+
+	NUMBER EUCOAST_RiverBirch_RT__184 1
+
+	NUMBER EUCOAST_RiverBirch_RT__184__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__185 1
+
+	NUMBER EUCOAST_RiverBirch_RT__185__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__186 1
+
+	NUMBER EUCOAST_RiverBirch_RT__268 1
+
+	NUMBER EUCOAST_RiverBirch_RT__269 1
+
+	NUMBER EUCOAST_RiverBirch_RT__271 1
+
+	NUMBER EUCOAST_RiverBirch_RT__272 1
+
+	NUMBER EUCOAST_RiverBirch_RT__273 1
+
+	NUMBER EUCOAST_RiverBirch_RT__274 1
+
+	NUMBER EUCOAST_RiverBirch_RT__275 1
+
+	NUMBER EUCOAST_RiverBirch_RT__276 1
+
+	NUMBER EUCOAST_RiverBirch_RT__277 1
+
+	NUMBER EUCOAST_RiverBirch_RT__278 1
+
+	NUMBER EUCOAST_RiverBirch_RT__279 1
+
+	NUMBER EUCOAST_RiverBirch_RT__301 1
+
+	NUMBER EUCOAST_RiverBirch_RT__302 1
+
+	NUMBER EUCOAST_RiverBirch_RT__303 1
+
+	NUMBER EUCOAST_RiverBirch_RT__304 1
+
+	NUMBER EUCOAST_RiverBirch_RT__305 1
+
+	NUMBER EUCOAST_RiverBirch_RT__306 1
+
+	NUMBER EUCOAST_RiverBirch_RT__307 1
+
+	NUMBER EUCOAST_RiverBirch_RT__308 1
+
+	NUMBER EUCOAST_RiverBirch_RT__309 1
+
+	NUMBER EUCOAST_RiverBirch_RT__311 1
+
+	NUMBER EUCOAST_RiverBirch_RT__312 1
+
+	NUMBER EUCOAST_RiverBirch_RT__313 1
+
+	NUMBER EUCOAST_RiverBirch_RT__314 1
+
+	NUMBER EUCOAST_RiverBirch_RT__315 1
+
+	NUMBER EUCOAST_RiverBirch_RT__316 1
+
+	NUMBER EUCOAST_RiverBirch_RT__317 1
+
+	NUMBER EUCOAST_RiverBirch_RT__318 1
+
+	NUMBER EUCOAST_RiverBirch_RT__319 1
+
+	NUMBER EUCOAST_RiverBirch_RT__321 1
+
+	NUMBER EUCOAST_RiverBirch_RT__322 1
+
+	NUMBER EUCOAST_RiverBirch_RT__323 1
+
+	NUMBER EUCOAST_RiverBirch_RT__324 1
+
+	NUMBER EUCOAST_RiverBirch_RT__325 1
+
+	NUMBER EUCOAST_RiverBirch_RT__326 1
+
+	NUMBER EUCOAST_RiverBirch_RT__327 1
+
+	NUMBER EUCOAST_RiverBirch_RT__328 1
+
+	NUMBER EUCOAST_RiverBirch_RT__329 1
+
+	NUMBER EUCOAST_RiverBirch_RT__331 1
+
+	NUMBER EUCOAST_RiverBirch_RT__332 1
+
+	NUMBER EUCOAST_RiverBirch_RT__333 1
+
+	NUMBER EUCOAST_RiverBirch_RT__334 1
+
+	NUMBER EUCOAST_RiverBirch_RT__335 1
+
+	NUMBER EUCOAST_RiverBirch_RT__336 1
+
+	NUMBER EUCOAST_RiverBirch_RT__337 1
+
+	NUMBER EUCOAST_RiverBirch_RT__338 1
+
+	NUMBER EUCOAST_RiverBirch_RT__339 1
+
+	NUMBER EUCOAST_RiverBirch_RT__341 1
+
+	NUMBER EUCOAST_RiverBirch_RT__342 1
+
+	NUMBER EUCOAST_RiverBirch_RT__343 1
+
+	NUMBER EUCOAST_RiverBirch_RT__344 1
+
+	NUMBER EUCOAST_RiverBirch_RT__346 1
+
+	NUMBER EUCOAST_RiverBirch_RT__347 1
+
+	NUMBER EUCOAST_RiverBirch_RT__349 1
+
+	NUMBER EUCOAST_RiverBirch_RT__349__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__351 1
+
+	NUMBER EUCOAST_RiverBirch_RT__352 1
+
+	NUMBER EUCOAST_RiverBirch_RT__352__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__353 1
+
+	NUMBER EUCOAST_RiverBirch_RT__353__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__354 1
+
+	NUMBER EUCOAST_RiverBirch_RT__354__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__355 1
+
+	NUMBER EUCOAST_RiverBirch_RT__355__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__356 1
+
+	NUMBER EUCOAST_RiverBirch_RT__356__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__357 1
+
+	NUMBER EUCOAST_RiverBirch_RT__357__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__358 1
+
+	NUMBER EUCOAST_RiverBirch_RT__358__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__359 1
+
+	NUMBER EUCOAST_RiverBirch_RT__359__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__361 1
+
+	NUMBER EUCOAST_RiverBirch_RT__362 1
+
+	NUMBER EUCOAST_RiverBirch_RT__363 1
+
+	NUMBER EUCOAST_RiverBirch_RT__364 1
+
+	NUMBER EUCOAST_RiverBirch_RT__365 1
+
+	NUMBER EUCOAST_RiverBirch_RT__366 1
+
+	NUMBER EUCOAST_RiverBirch_RT__367 1
+
+	NUMBER EUCOAST_RiverBirch_RT__368 1
+
+	NUMBER EUCOAST_RiverBirch_RT__369 1
+
+	NUMBER EUCOAST_RiverBirch_RT__372 1
+
+	NUMBER EUCOAST_RiverBirch_RT__373 1
+
+	NUMBER EUCOAST_RiverBirch_RT__375 1
+
+	NUMBER EUCOAST_RiverBirch_RT__376 1
+
+	NUMBER EUCOAST_RiverBirch_RT__377 1
+
+	NUMBER EUCOAST_RiverBirch_RT__378 1
+
+	NUMBER EUCOAST_RiverBirch_RT__379 1
+
+	NUMBER EUCOAST_RiverBirch_RT__402 1
+
+	NUMBER EUCOAST_RiverBirch_RT__402__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__403 1
+
+	NUMBER EUCOAST_RiverBirch_RT__403__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__403__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__404 1
+
+	NUMBER EUCOAST_RiverBirch_RT__404__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__404__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__405 1
+
+	NUMBER EUCOAST_RiverBirch_RT__405__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__405__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__406 1
+
+	NUMBER EUCOAST_RiverBirch_RT__406__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__407 1
+
+	NUMBER EUCOAST_RiverBirch_RT__407__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__408 1
+
+	NUMBER EUCOAST_RiverBirch_RT__408__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__409 1
+
+	NUMBER EUCOAST_RiverBirch_RT__409__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__409__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__411 1
+
+	NUMBER EUCOAST_RiverBirch_RT__412 1
+
+	NUMBER EUCOAST_RiverBirch_RT__412__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__413 1
+
+	NUMBER EUCOAST_RiverBirch_RT__413__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__413__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__414 1
+
+	NUMBER EUCOAST_RiverBirch_RT__414__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__414__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__415 1
+
+	NUMBER EUCOAST_RiverBirch_RT__415__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__415__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__416 1
+
+	NUMBER EUCOAST_RiverBirch_RT__416__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__416__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__417 1
+
+	NUMBER EUCOAST_RiverBirch_RT__417__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__417__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__418 1
+
+	NUMBER EUCOAST_RiverBirch_RT__418__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__418__0__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__419 1
+
+	NUMBER EUCOAST_RiverBirch_RT__419__0 1
+
+	NUMBER EUCOAST_RiverBirch_RT__419__0__0 1
+
+	NUMBER EUFAL_AmericanBoxwood_RT 35
+
+	NUMBER EUFAL_AmericanBoxwood_RT2 148
+
+	NUMBER EUFAL_AmericanElm_RT_Fall 19
+
+	NUMBER EUFAL_AmericanElm_RT_Fall2 327
+
+	NUMBER EUFAL_Azalea_RT 52
+
+	NUMBER EUFAL_Azalea_RT2 39
+
+	NUMBER EUFAL_BurfordHolly_RT_Row 5
+
+	NUMBER EUFAL_BurfordHolly_RT_Row2 190
+
+	NUMBER EUFAL_BurfordHolly_RT_Square 74
+
+	NUMBER EUFAL_BurfordHolly_RT_Square2 85
+
+	NUMBER EUFAL_CamphorTree_RT_Spring 6
+
+	NUMBER EUFAL_CamphorTree_RT_Spring2 7
+
+	NUMBER EUFAL_ElmStocky_RT_Fall 95
+
+	NUMBER EUFAL_ElmStocky_RT_Fall2 0
+
+	NUMBER EUFAL_EuropeanAspen_RT_Fall 18
+
+	NUMBER EUFAL_EuropeanAspen_RT_Fall2 13
+
+	NUMBER EUFAL_Grapevine_RT 19
+
+	NUMBER EUFAL_Grapevine_RT2 65
+
+	NUMBER EUFAL_Grapevine_RT3 55
+
+	NUMBER EUFAL_Grapevine_RT_End 61
+
+	NUMBER EUFAL_GreenAsh_RT_Fall 101
+
+	NUMBER EUFAL_GreenAsh_RT_Fall2 303
+
+	NUMBER EUFAL_HorseChestnut_RT_Fall 16
+
+	NUMBER EUFAL_HorseChestnut_RT_Fall2 664
+
+	NUMBER EUFAL_Katsura_RT_Fall 424
+
+	NUMBER EUFAL_Katsura_RT_Fall2 9
+
+	NUMBER EUFAL_Linden_RT_Fall 209
+
+	NUMBER EUFAL_Linden_RT_Fall2 538
+
+	NUMBER EUFAL_LiveOak_RT 2
+
+	NUMBER EUFAL_LiveOak_RT2 5
+
+	NUMBER EUFAL_LombardyPoplar_RT 23
+
+	NUMBER EUFAL_LombardyPoplar_RT2 69
+
+	NUMBER EUFAL_RedMaple_RT_Fall 15
+
+	NUMBER EUFAL_RedMaple_RT_Fall2 223
+
+	NUMBER EUFAL_SouthernMagnolia_RT 1
+
+	NUMBER EUFAL_SouthernMagnolia_RT2 1
+
+	NUMBER EUFAL_SouthernMagnolia_RT3 3
+
+	NUMBER EUFAL_WhiteBirch_RT_Fall 363
+
+	NUMBER EUFAL_WhiteBirch_RT_Fall2 322
+
+	NUMBER Elektro_A 34
+
+	NUMBER Elektro_B 0
+
+	NUMBER EuroTruck_v1 2
+
+	NUMBER EuroTruck_v2 1
+
+	NUMBER Europe_Cart 2
+
+	NUMBER Europe_SmallCar_v2 1
+
+	NUMBER F15_parked 20
+
+	NUMBER F1_Marine 0
+
+	NUMBER F5e_Statue 1
+
+	NUMBER Farm01 2
+
+	NUMBER Farm02 0
+
+	NUMBER Farm04 2
+
+	NUMBER Farm05 1
+
+	NUMBER Fence 10
+
+	NUMBER Fence01 46
+
+	NUMBER Fence_Corner 0
+
+	NUMBER Fence_Test_Car 46
+
+	NUMBER FerrisWheel 1
+
+	NUMBER Fiesta 5
+
+	NUMBER FireControl_Tower 1
+
+	NUMBER Fire_10m 0
+
+	NUMBER Fire_25m 2
+
+	NUMBER Fire_2m 2
+
+	NUMBER Fire_5m 1
+
+	NUMBER FishingBod 0
+
+	NUMBER FlackGunExplo 3
+
+	NUMBER Flag 11
+
+	NUMBER FlightControl_Tower 1
+
+	NUMBER Flight_Control_Tower 0
+
+	NUMBER Fog_Object_Test01 0
+
+	NUMBER Fortification_Zu23_SP 6
+
+	NUMBER FuelTrainWagon 19
+
+	NUMBER FuelTrainWagon_v2 7
+
+	NUMBER Fuel_Depot 2
+
+	NUMBER Fueltruck 0
+
+	NUMBER Fueltruck_TEMP 0
+
+	NUMBER FuncDef 436
+
+	NUMBER GasStation 0
+
+	NUMBER GasStation_02 11
+
+	NUMBER GasStation_V2 0
+
+	NUMBER GasTank_Tall 1
+
+	NUMBER GasTank_W_Support 1
+
+	NUMBER Gasplant_01 1
+
+	NUMBER Gasplant_02 1
+
+	NUMBER Geese 1
+
+	NUMBER Gerdsgard 17
+
+	NUMBER GolfDrivingRange 1
+
+	NUMBER GolfVilla 0
+
+	NUMBER GoodsTrainWagon 6
+
+	NUMBER GoodsTrainWagon_v2 1
+
+	NUMBER GrandSafari 9
+
+	NUMBER GrandSafari2 5
+
+	NUMBER GrandSafari_blue 0
+
+	NUMBER GrandSafari_green 0
+
+	NUMBER Grapevine_70m 17
+
+	NUMBER GreenHouse 4
+
+	NUMBER GreenTrainEngine 0
+
+	NUMBER Grill 27
+
+	NUMBER GroundGlow 3
+
+	NUMBER Guardhouse 1
+
+	NUMBER Halmbal 13
+
+	NUMBER Hamburger01 2
+
+	NUMBER Hangar_01_Back_BackLeft 0
+
+	NUMBER Hangar_01_Back_BackRight 0
+
+	NUMBER Hangar_01_Corner_BackLeft 0
+
+	NUMBER Hangar_01_Corner_BackRight 0
+
+	NUMBER Hangar_01_Corner_FrontLeft 0
+
+	NUMBER Hangar_01_Corner_FrontRight 0
+
+	NUMBER Hangar_01_Front_FrontLeft 0
+
+	NUMBER Hangar_01_Front_FrontRight 0
+
+	NUMBER Hangar_01_Side_Center 6
+
+	NUMBER Hangar_01_Side_Side 6
+
+	NUMBER HarbourCrane 8
+
+	NUMBER HarbourCrane_V2 2
+
+	NUMBER HarbourStorage 5
+
+	NUMBER HighSchool_Snow 2
+
+	NUMBER Highway_Sign 1
+
+	NUMBER HorizonFire 5
+
+	NUMBER HorizonFire_LessSmoke 0
+
+	NUMBER Horse 9
+
+	NUMBER Hotel 2
+
+	NUMBER House01 0
+
+	NUMBER HouseShed 3
+
+	NUMBER House_01 0
+
+	NUMBER House_02 0
+
+	NUMBER House_04 0
+
+	NUMBER House_06 0
+
+	NUMBER House_08 0
+
+	NUMBER IceCreamVan 0
+
+	NUMBER IceRink 1
+
+	NUMBER Idle_Guy_01 0
+
+	NUMBER Industrial_01_A 6
+
+	NUMBER Industrial_01_B 44
+
+	NUMBER Industrial_01_C 7
+
+	NUMBER Industrial_02 3
+
+	NUMBER Industrial_03 2
+
+	NUMBER Industrial_03_V2 0
+
+	NUMBER Industrial_04 5
+
+	NUMBER Industrial_04_russia 1
+
+	NUMBER Industrial_Building_05 3
+
+	NUMBER Industrial_Building_06 3
+
+	NUMBER Industrial_Building_07 4
+
+	NUMBER Industrial_Building_08 30
+
+	NUMBER Iroc-Z 3
+
+	NUMBER Iroc-Z2 4
+
+	NUMBER Jetty01 1
+
+	NUMBER Jetty02 44
+
+	NUMBER Kadett 2
+
+	NUMBER KingDome 3
+
+	NUMBER KingStreetStation 6
+
+	NUMBER KingStreet_RADTESER 1
+
+	NUMBER Kiosk 2
+
+	NUMBER Korsvirke 0
+
+	NUMBER Kvarter01_Corner_01 3
+
+	NUMBER Kvarter01_Corner_02 3
+
+	NUMBER Kvarter01_Corner_02_A 1
+
+	NUMBER Kvarter01_Corner_02_B 2
+
+	NUMBER Kvarter05_Corner01 1
+
+	NUMBER Kvarter05_Corner02 1
+
+	NUMBER Kvarter_01_C01 17
+
+	NUMBER Kvarter_01_C01_V2 11
+
+	NUMBER Kvarter_01_C02 0
+
+	NUMBER Kvarter_01_C02_B 20
+
+	NUMBER Kvarter_02_C01 0
+
+	NUMBER Kvarter_02_C02 1
+
+	NUMBER Kvarter_02_C03 0
+
+	NUMBER Kvarter_02_C03_Test 11
+
+	NUMBER Kvarter_02_Corner_01 2
+
+	NUMBER Kvarter_02_Corner_02 1
+
+	NUMBER Kvarter_02_Corner_03 1
+
+	NUMBER Kvarter_03_C03 0
+
+	NUMBER Kvarter_03_Corner_01 3
+
+	NUMBER Kvarter_03_Corner_02 1
+
+	NUMBER Kvarter_03_Corner_03 1
+
+	NUMBER Kvarter_03_Corner_04 1
+
+	NUMBER Kvarter_06_C01 0
+
+	NUMBER Kvarter_06_C01_V2 1
+
+	NUMBER LIBYA_CinnamonFern_RT 3
+
+	NUMBER LIBYA_CinnamonFern_RT2 0
+
+	NUMBER LIBYA_DatePalm_RT 61
+
+	NUMBER LIBYA_DatePalm_RT2 23
+
+	NUMBER LIBYA_DatePalm_RT3 12
+
+	NUMBER LIBYA_FanPalm_RT 18
+
+	NUMBER LIBYA_FanPalm_RT2 11
+
+	NUMBER LIBYA_JungleBrush_RT 14
+
+	NUMBER LIBYA_JungleBrush_RT2 9
+
+	NUMBER LIBYA_QueenPalm_RT 4
+
+	NUMBER LIBYA_QueenPalm_RT2 2
+
+	NUMBER LIBYA_RedYucca_RT 3
+
+	NUMBER LIBYA_RedYucca_RT2 2
+
+	NUMBER LIBYA_UmbrellaThorn_RT 3
+
+	NUMBER LIBYA_UmbrellaThorn_RT2 2
+
+	NUMBER LIBYA_UmbrellaThorn_RT_Dead 2
+
+	NUMBER LandingLights 7
+
+	NUMBER LandingSigns_Arrows 1
+
+	NUMBER Landing_Lights_01 15
+
+	NUMBER Landing_Signs_01 3
+
+	NUMBER LeafTree_1 14
+
+	NUMBER LifeGuardStation 1
+
+	NUMBER LightHouse 0
+
+	NUMBER LightHouse_House 1
+
+	NUMBER LogPile 8
+
+	NUMBER LookOutBuilding 6
+
+	NUMBER LookOut_Building_CheckPoint 20
+
+	NUMBER MailBox 3
+
+	NUMBER MailBox_01 3
+
+	NUMBER MailBox_02 3
+
+	NUMBER MailBox_03 3
+
+	NUMBER MailBox_04 3
+
+	NUMBER MailBox_05 2
+
+	NUMBER MailBox_06 3
+
+	NUMBER MailBox_07 2
+
+	NUMBER Mansion_01 0
+
+	NUMBER Mansion_02 0
+
+	NUMBER MegaDigger 0
+
+	NUMBER MemorialStadium 3
+
+	NUMBER Merc_Cleaning_Dude 1
+
+	NUMBER Mercedes 0
+
+	NUMBER MercuryBrougham 11
+
+	NUMBER MilitaryTent_01 1
+
+	NUMBER MilitaryTent_02 4
+
+	NUMBER MilitaryTruck 2
+
+	NUMBER MineDigger 0
+
+	NUMBER MonoRailStation 4
+
+	NUMBER MonoRailTrain 2
+
+	NUMBER MonoRailway_40m 18
+
+	NUMBER MonoRailway_Turn_11 1
+
+	NUMBER MonoRailway_Turn_22 3
+
+	NUMBER NATO_AntiTank 1
+
+	NUMBER NATO_Chieftain_MkV 0
+
+	NUMBER NATO_Chinook 2
+
+	NUMBER NATO_Engineer 1
+
+	NUMBER NATO_Gazelle_341 0
+
+	NUMBER NATO_Machine_Gunner 1
+
+	NUMBER NATO_Mangusta 0
+
+	NUMBER NATO_Mortar_Weasel 1
+
+	NUMBER NATO_PAH_1_Bo105 0
+
+	NUMBER NATO_Superpuma_UH 0
+
+	NUMBER NATO_Tank_Leopard2 2
+
+	NUMBER NEWYORK_AmericanElm_RT_Winter 1
+
+	NUMBER NEWYORK_AmericanElm_RT_Winter2 179
+
+	NUMBER NEWYORK_BurfordHolly_RT 194
+
+	NUMBER NEWYORK_BurfordHolly_RT2 94
+
+	NUMBER NEWYORK_BurfordHolly_RT_Square 38
+
+	NUMBER NEWYORK_FraserFir_RT_Snow 10
+
+	NUMBER NEWYORK_FraserFir_RT_Snow2 13
+
+	NUMBER NEWYORK_Gimlet_RT_Winter 213
+
+	NUMBER NEWYORK_Gimlet_RT_Winter2 57
+
+	NUMBER NEWYORK_HoneyLocust_RT_Winter 149
+
+	NUMBER NEWYORK_HoneyLocust_RT_Winter2 1
+
+	NUMBER NEWYORK_HoneyLocust_RT_Winter3 4
+
+	NUMBER NEWYORK_WinterTree_RT 62
+
+	NUMBER NEWYORK_WinterTree_RT2 54
+
+	NUMBER NEWYORK_WinterTree_RT3 1
+
+	NUMBER NEWYORK_WinterTree_RT4 123
+
+	NUMBER NPCSpawnPoint_Idle_Guy_01 0
+
+	NUMBER NPCSpawnPoint_US_Civilian_Female_01_(Shoulder_Strap) 7
+
+	NUMBER NPCSpawnPoint_US_Civilian_Female_01_(Shoulder_Strap)_V2 8
+
+	NUMBER NPCSpawnPoint_US_Civilian_Female_02_(Skirt_Suit) 5
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_01_(Fat) 6
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_01_(Fat)_V2 0
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_01_(Fat)_V3 2
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_02_(Jacket) 4
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_02_(Jacket)_V2 3
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_03_(Teen) 3
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_03_(Teen)_V2 3
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_04_(T-Shirt) 3
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_04_(T-Shirt)_V2 1
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_04_(T-Shirt)_V3 1
+
+	NUMBER NPCSpawnPoint_US_Civilian_Male_04_(T-Shirt)_V4 2
+
+	NUMBER NPCWaypoint_Civilian 0
+
+	NUMBER NPCWaypoint_Critter 0
+
+	NUMBER Nest_SandbagsTrench_Mortar 0
+
+	NUMBER Nest_Sandbags_Mortar 1
+
+	NUMBER No_Trespassing_Sign 46
+
+	NUMBER NomadVan_white 0
+
+	NUMBER Nomad_Van 13
+
+	NUMBER Ocean_Reverse_01a 1
+
+	NUMBER Ocean_Reverse_01b 1
+
+	NUMBER OfficeBuilding_01 0
+
+	NUMBER OfficeBuilding_02 0
+
+	NUMBER OfficeBuilding_03 1
+
+	NUMBER OfficeBuilding_04 1
+
+	NUMBER OfficeBuilding_05 0
+
+	NUMBER OfficeBuilding_06 42
+
+	NUMBER OfficeBuilding_07 5
+
+	NUMBER Office_Building_08 5
+
+	NUMBER Old_PoliceStation 0
+
+	NUMBER Oldcar_v1 11
+
+	NUMBER Oldcar_v2 14
+
+	NUMBER Oldcar_v3 2
+
+	NUMBER OreTrainWagon 2
+
+	NUMBER Pallet01 3
+
+	NUMBER Pallet02 2
+
+	NUMBER Paratrooper_Bitmaps 0
+
+	NUMBER Paratrooper_Bitmaps2 6
+
+	NUMBER ParkedF15 18
+
+	NUMBER Parked_C130 0
+
+	NUMBER ParkingGarage 16
+
+	NUMBER People_Stand_Talking_1 1
+
+	NUMBER People_Stand_Talking_2 0
+
+	NUMBER People_Stand_talking_03 1
+
+	NUMBER People_Stand_talking_04 1
+
+	NUMBER People_Standing_around 1
+
+	NUMBER People_Standing_around_02 1
+
+	NUMBER PerimeterPoint 13
+
+	NUMBER Perrong 21
+
+	NUMBER Perrongtak 42
+
+	NUMBER Phone 2
+
+	NUMBER PickUp 26
+
+	NUMBER PickUp_01 0
+
+	NUMBER PickUp_v2 24
+
+	NUMBER Pickup_Snow 23
+
+	NUMBER Pier01 1
+
+	NUMBER Pier02 1
+
+	NUMBER PlatformRoof_w_RussianSign 1
+
+	NUMBER Pontiac_69_Red 0
+
+	NUMBER Pontiac_69_White 0
+
+	NUMBER Pontiac_Gto_69 4
+
+	NUMBER PotPlant 29
+
+	NUMBER PowerLine_Stright 7
+
+	NUMBER PowerStation_Building 1
+
+	NUMBER Powerstation 3
+
+	NUMBER PublicToilet 4
+
+	NUMBER RUSSIA_AmericanBoxwood_RT 9
+
+	NUMBER RUSSIA_AmericanBoxwood_RT2 13
+
+	NUMBER RUSSIA_AmericanBoxwood_RT_Row 3
+
+	NUMBER RUSSIA_BlueGum_RT_Winter 9
+
+	NUMBER RUSSIA_BlueGum_RT_Winter2 24
+
+	NUMBER RUSSIA_BurfordHolly_RT 21
+
+	NUMBER RUSSIA_BurfordHolly_RT2 15
+
+	NUMBER RUSSIA_ColumnarEnglishOak_RT_Winter 13
+
+	NUMBER RUSSIA_ColumnarEnglishOak_RT_Winter2 10
+
+	NUMBER RUSSIA_ColumnarEnglishOak_RT_Winter3 21
+
+	NUMBER RUSSIA_ColumnarEnglishOak_RT_Winter4 14
+
+	NUMBER RUSSIA_CrabApple_RT_Winter 1
+
+	NUMBER RUSSIA_CrabApple_RT_Winter2 1
+
+	NUMBER RUSSIA_CrabApple_RT_Winter3 7
+
+	NUMBER RUSSIA_DouglasFir_RT 23
+
+	NUMBER RUSSIA_DouglasFir_RT2 10
+
+	NUMBER RUSSIA_DouglasFir_RT3 12
+
+	NUMBER RUSSIA_DouglasFir_RT4 22
+
+	NUMBER RUSSIA_DouglasFir_RT5 16
+
+	NUMBER RUSSIA_FraserFir_RT_Snow 1221
+
+	NUMBER RUSSIA_FraserFir_RT_Snow2 120
+
+	NUMBER RUSSIA_FraserFir_RT_Snow3 70
+
+	NUMBER RUSSIA_GhostGum_RT_Dead 8
+
+	NUMBER RUSSIA_GhostGum_RT_Dead2 1
+
+	NUMBER RUSSIA_GrayBirch_RT_Winter 50
+
+	NUMBER RUSSIA_GrayBirch_RT_Winter2 44
+
+	NUMBER RUSSIA_GrayBirch_RT_Winter3 9
+
+	NUMBER RUSSIA_ManchurianAngelicaTree_RT 782
+
+	NUMBER RUSSIA_ManchurianAngelicaTree_RT_Small 34
+
+	NUMBER RUSSIA_RussianOlive_RT_Fall 5
+
+	NUMBER RUSSIA_RussianOlive_RT_Fall2 53
+
+	NUMBER RUSSIA_RussianOlive_RT_Winter 23
+
+	NUMBER RUSSIA_RussianOlive_RT_Winter2 8
+
+	NUMBER RUSSIA_SugarMaple_RT_Winter 3
+
+	NUMBER RUSSIA_SugarMaple_RT_Winter2 7
+
+	NUMBER RUSSIA_Tamarind_RT_Winter 23
+
+	NUMBER RUSSIA_Tamarind_RT_Winter2 3
+
+	NUMBER RUSSIA_WesternRedCedar_RT_Winter 319
+
+	NUMBER RUSSIA_WesternRedCedar_RT_Winter2 5
+
+	NUMBER RUSSIA_WesternRedCedar_RT_Winter3 84
+
+	NUMBER RUSSIA_WhiteBirch_RT_Winter 4
+
+	NUMBER RUSSIA_WhiteBirch_RT_Winter2 2
+
+	NUMBER RUSSIA_WhiteBirch_RT_Winter3 4
+
+	NUMBER Radar_russia 4
+
+	NUMBER RadioTowers 2
+
+	NUMBER RailWayPowerlines 29
+
+	NUMBER Railing_10M 43
+
+	NUMBER Railing_12m 5
+
+	NUMBER Railing_24m 8
+
+	NUMBER Railing_5M 22
+
+	NUMBER Railing_6m 4
+
+	NUMBER Railing_Turn_Left_10 2
+
+	NUMBER Railing_Turn_Left_25 0
+
+	NUMBER Railing_Turn_Left_45 0
+
+	NUMBER Railing_Turn_Right_10 12
+
+	NUMBER Railing_Turn_Right_25 2
+
+	NUMBER Railing_Turn_Right_45 2
+
+	NUMBER RailwayHall 1
+
+	NUMBER Range_Length 1
+
+	NUMBER Rats_Dumpster_02_(Circle) 2
+
+	NUMBER Rats_Dumpster_02_(Wall) 1
+
+	NUMBER RedTrainEngine 3
+
+	NUMBER Reindeers 21
+
+	NUMBER RibbonBell 3
+
+	NUMBER RoadwayLight_01 56
+
+	NUMBER RoadwayLight_01a 10
+
+	NUMBER RoadwayLight_01x3 0
+
+	NUMBER RoadwayLight_01x5 0
+
+	NUMBER RoadwayLight_02 0
+
+	NUMBER RoadwayLight_02a 77
+
+	NUMBER RoadwayLight_02c 12
+
+	NUMBER RoadwayLight_03 0
+
+	NUMBER RuinChurch 0
+
+	NUMBER RuinTower 5
+
+	NUMBER Running_Man_KeyFramed_004 1
+
+	NUMBER RuralPlank_10 2
+
+	NUMBER RuralPlank_25 1
+
+	NUMBER RuralPlank_50 2
+
+	NUMBER Russia_Barrack 2
+
+	NUMBER Russia_FuelDepot 131
+
+	NUMBER Russia_RoadWayLight 1166
+
+	NUMBER Russia_RoadWayLight_Sign 658
+
+	NUMBER Russian_CityJeep_v1 6
+
+	NUMBER Russian_CityJeep_v2 6
+
+	NUMBER Russian_CityJeep_v3 5
+
+	NUMBER Russian_Industrial_01_B 0
+
+	NUMBER Russian_Industrial_01_B_WIC_Alt_Prop 1
+
+	NUMBER Russian_Industrial_01_C 0
+
+	NUMBER Russian_Old_PoliceCar 16
+
+	NUMBER Russian_Old_Towncar_Snow_v1 4
+
+	NUMBER Russian_Old_Towncar_Snow_v2 5
+
+	NUMBER Russian_Old_Towncar_v1 3
+
+	NUMBER Russian_Old_Towncar_v2 1
+
+	NUMBER RustyOldBarrels 0
+
+	NUMBER SWH_05meters_01 2
+
+	NUMBER SWH_05meters_02 2
+
+	NUMBER SWH_10Meter_01 1
+
+	NUMBER SWH_10Meter_01_V2 6
+
+	NUMBER SWH_10Meter_02 2
+
+	NUMBER SWH_10Meter_02_V2 1
+
+	NUMBER SWH_10Meter_03 1
+
+	NUMBER SWH_10Meter_03_V3 3
+
+	NUMBER SWH_10Meter_04 0
+
+	NUMBER SWH_10Meter_04_V2 1
+
+	NUMBER SWH_10meters_01 3
+
+	NUMBER SWH_10meters_02 1
+
+	NUMBER SWH_10meters_03 4
+
+	NUMBER SWH_10meters_04 2
+
+	NUMBER SWH_15meter_01 2
+
+	NUMBER SWH_15meter_01_V2 3
+
+	NUMBER SWH_15meter_02 1
+
+	NUMBER SWH_15meters_01 2
+
+	NUMBER SWH_15meters_02 2
+
+	NUMBER SWH_20meter_01 0
+
+	NUMBER SWH_20meter_01_V2 1
+
+	NUMBER SWH_20meter_02 16
+
+	NUMBER SWH_20meter_02_V2 3
+
+	NUMBER SWH_20meter_03 1
+
+	NUMBER SWH_20meter_03_V2 3
+
+	NUMBER SWH_20meter_04 14
+
+	NUMBER SWH_20meter_04_V2 4
+
+	NUMBER SWH_20meters_01 5
+
+	NUMBER SWH_20meters_02 1
+
+	NUMBER SWH_20meters_03 1
+
+	NUMBER SWH_20meters_04 10
+
+	NUMBER Sack01 1
+
+	NUMBER Sack02 4
+
+	NUMBER Sandbags_10m 18
+
+	NUMBER Sandbags_Circle 2
+
+	NUMBER Sandbags_Round 11
+
+	NUMBER Santa 33
+
+	NUMBER SantaRopeLights 12
+
+	NUMBER SawMill 1
+
+	NUMBER SchoolBus 1
+
+	NUMBER Scoreboard 1
+
+	NUMBER SearchLight 4
+
+	NUMBER Secret_base_02 1
+
+	NUMBER Sedan 21
+
+	NUMBER Sedan_2 31
+
+	NUMBER Sedan_3 9
+
+	NUMBER Sedan_Snow 16
+
+	NUMBER ShipyardDock 0
+
+	NUMBER Sidewalk_4x10_V1 1
+
+	NUMBER Sign_Circle_Var1 2
+
+	NUMBER Sign_Circle_Var2 6
+
+	NUMBER Sign_Circle_Var4 1
+
+	NUMBER Sign_Circle_Var5 2
+
+	NUMBER Sign_Direction_Var1 1
+
+	NUMBER Sign_Direction_Var2 4
+
+	NUMBER Sign_Flat_Type1_Var3 1
+
+	NUMBER Sign_Flat_Type2_Var2 3
+
+	NUMBER Sign_Flat_Type2_Var3 10
+
+	NUMBER Sign_Flat_Type3_Var1 8
+
+	NUMBER Sign_Flat_Type3_Var2 2
+
+	NUMBER Sign_Low_Type1_Var2 1
+
+	NUMBER Sign_Low_Type2_Var1 4
+
+	NUMBER Sign_Low_Type3_Var1 2
+
+	NUMBER Sign_Low_Type3_Var2 3
+
+	NUMBER Sign_Low_Type4 1
+
+	NUMBER Sign_Route_Var1 2
+
+	NUMBER Sign_Square_Var4 2
+
+	NUMBER Sign_Stop_Var1 8
+
+	NUMBER Sign_Stop_Var2 1
+
+	NUMBER Sign_Tri_Var2 1
+
+	NUMBER Sign_Tri_Var4 7
+
+	NUMBER Sign_Welcome 3
+
+	NUMBER SiloEntrance 1
+
+	NUMBER SiloEscapeHatch 5
+
+	NUMBER SiloGroundDoor 3
+
+	NUMBER SiloGroundDoor_V2 3
+
+	NUMBER SiloMaintenance 3
+
+	NUMBER SiloShaft 3
+
+	NUMBER Silverado1500 17
+
+	NUMBER Silverado15002 6
+
+	NUMBER Silverado1500blue 0
+
+	NUMBER Silverado1500red 0
+
+	NUMBER Small_Antenna 129
+
+	NUMBER Small_shed 7
+
+	NUMBER SmokeStack 0
+
+	NUMBER Smoke_Longlived_1 1
+
+	NUMBER SnowMan 32
+
+	NUMBER SnowSlide 2
+
+	NUMBER SnowSlide_Small 2
+
+	NUMBER SolarArray 0
+
+	NUMBER SpaceNeedle 1
+
+	NUMBER SportsCar_v1 17
+
+	NUMBER SportsCar_v2 16
+
+	NUMBER Spotlight_Russia 76
+
+	NUMBER Sprinkler 0
+
+	NUMBER Sprinkler_Europe 0
+
+	NUMBER Square_Boxes_01 0
+
+	NUMBER Square_Stand_02 0
+
+	NUMBER Square_Stand_03 1
+
+	NUMBER Stair_Dual 2
+
+	NUMBER Stair_Round 0
+
+	NUMBER Stair_Sidewall_Big 4
+
+	NUMBER Stair_Sidewall_Dual 3
+
+	NUMBER Stair_Sidewall_Small 7
+
+	NUMBER Stair_Small 30
+
+	NUMBER Stair_Small_2 11
+
+	NUMBER Stair_Small_3 3
+
+	NUMBER Stair_Square 18
+
+	NUMBER StationWagon 46
+
+	NUMBER StreetLight_2x1 2
+
+	NUMBER SubHouse_Fence_10m_Low 7
+
+	NUMBER SubHouse_Fence_15m_Low_opening 1
+
+	NUMBER SubHouse_Fence_20m_High 12
+
+	NUMBER SubHouse_Fence_20m_Low 15
+
+	NUMBER SubHouse_Fence_20m_LowToHigh 21
+
+	NUMBER SubHouse_Fence_20m_Low_opening 3
+
+	NUMBER SubHouse_Fence_20m_Low_opening2 2
+
+	NUMBER SuburbHouse_Large_01 1
+
+	NUMBER Suburbia_House_01 163
+
+	NUMBER Suburbia_House_01_Snow 2
+
+	NUMBER Suburbia_House_01_V2 18
+
+	NUMBER Suburbia_House_02 12
+
+	NUMBER Suburbia_House_02_Snow 36
+
+	NUMBER Suburbia_House_03 7
+
+	NUMBER Suburbia_House_03_Snow 26
+
+	NUMBER Suburbia_House_04 17
+
+	NUMBER Suburbia_House_04_Snow 25
+
+	NUMBER Suburbia_House_04_V2 2
+
+	NUMBER Suburbia_House_05 1
+
+	NUMBER Suburbia_House_05_Snow 25
+
+	NUMBER Suburbia_House_06 11
+
+	NUMBER Suburbia_House_06_Snow 12
+
+	NUMBER Suburbia_House_06_V2 1
+
+	NUMBER Suburbia_House_07 29
+
+	NUMBER Suburbia_House_07_Snow 24
+
+	NUMBER Suburbia_Trash_Big 7
+
+	NUMBER Suburbia_Trash_Long 5
+
+	NUMBER Suburbia_Trash_Small 1
+
+	NUMBER SunkenShip 1
+
+	NUMBER SuperMarket_02 1
+
+	NUMBER Supermarket 1
+
+	NUMBER Supermarket01 1
+
+	NUMBER Supermarket_Snow 1
+
+	NUMBER Surround_Bullets 6
+
+	NUMBER Surround_Bullets_2 6
+
+	NUMBER Surround_Bullets_3 4
+
+	NUMBER Surround_Bullets_4 2
+
+	NUMBER Swing_4m 14
+
+	NUMBER Swing_8m 9
+
+	NUMBER TVStation 6
+
+	NUMBER TankTrap 37
+
+	NUMBER TankTruck 2
+
+	NUMBER TankTruck_Russia_01 4
+
+	NUMBER TankTruck_Russia_02 4
+
+	NUMBER Tank_Traps 13
+
+	NUMBER Telephone_Pole_01 11
+
+	NUMBER Telephone_Pole_02 5
+
+	NUMBER Telephone_Pole_03 4
+
+	NUMBER Telphone_Pole_01 22
+
+	NUMBER Telphone_Pole_02 1
+
+	NUMBER Telphone_Pole_03 2
+
+	NUMBER Telphone_Pole_06 2
+
+	NUMBER Telphone_Pole_07 2
+
+	NUMBER Terass 10
+
+	NUMBER TimberTrainWagon 3
+
+	NUMBER Timberjack 2
+
+	NUMBER Timberjack_Animated 2
+
+	NUMBER Tombstone01 26
+
+	NUMBER Tombstone02 15
+
+	NUMBER Tombstone03 20
+
+	NUMBER Tombstone04 16
+
+	NUMBER Tombstone05 9
+
+	NUMBER Tombstone06 1
+
+	NUMBER Tombstone07 3
+
+	NUMBER Tombstone08 4
+
+	NUMBER Tombstone09 5
+
+	NUMBER Tombstone10 11
+
+	NUMBER Tombstone11 19
+
+	NUMBER TownHall 2
+
+	NUMBER TownHall_Europe 0
+
+	NUMBER TownHouse_06 2
+
+	NUMBER Townhall 0
+
+	NUMBER Tractor 1
+
+	NUMBER TractorUSA_v1 1
+
+	NUMBER TractorUSA_v2 3
+
+	NUMBER TractorUSA_v3 1
+
+	NUMBER TrafficObstacle 76
+
+	NUMBER TransAm77 2
+
+	NUMBER TransAm772 4
+
+	NUMBER TrashCan 0
+
+	NUMBER TrashCan_v2 2
+
+	NUMBER TrashcanEurope 1
+
+	NUMBER Tree_Block_Cut 7
+
+	NUMBER Tree_Block_SuperTest 2
+
+	NUMBER Tree_Cage 3
+
+	NUMBER Tree_Chunk_01 2
+
+	NUMBER TunnelEntrance 1
+
+	NUMBER TyphoonDock 1
+
+	NUMBER TyphoonUboat 2
+
+	NUMBER USDES_AmericanBoxwood_RT 306
+
+	NUMBER USDES_AmericanBoxwood_RT2 220
+
+	NUMBER USDES_AmericanHolly_RT 91
+
+	NUMBER USDES_AmericanHolly_RT2 62
+
+	NUMBER USDES_ArizonaBush_RT 19
+
+	NUMBER USDES_ArizonaBush_RT2 22
+
+	NUMBER USDES_ArizonaBush_RT_Flowers 11
+
+	NUMBER USDES_ArizonaBush_RT_Flowers2 6
+
+	NUMBER USDES_BeavertailCactus_RT 52
+
+	NUMBER USDES_BeavertailCactus_RT2 25
+
+	NUMBER USDES_BeavertailCactus_RT_Flowers 21
+
+	NUMBER USDES_BeavertailCactus_RT_Flowers2 34
+
+	NUMBER USDES_BurfordHolly_RT 88
+
+	NUMBER USDES_BurfordHolly_RT2 37
+
+	NUMBER USDES_BurfordHolly_RT_Square 293
+
+	NUMBER USDES_BurfordHolly_RT_Square2 137
+
+	NUMBER USDES_JoshuaTree_RT 23
+
+	NUMBER USDES_JoshuaTree_RT2 13
+
+	NUMBER USDES_JoshuaTree_RT3 6
+
+	NUMBER USDES_PricklyPearCactus_RT 29
+
+	NUMBER USDES_RedYucca_RT 232
+
+	NUMBER USDES_RedYucca_RT_Flowers 6
+
+	NUMBER USDES_SaguaroCactus_RT 33
+
+	NUMBER USDES_SaguaroCactus_RT2 18
+
+	NUMBER USFARM_AmericanBoxwood_RT 63
+
+	NUMBER USFARM_AmericanBoxwood_RT2 221
+
+	NUMBER USFARM_AmericanElm_RT 212
+
+	NUMBER USFARM_AmericanElm_RT2 353
+
+	NUMBER USFARM_BurfordHolly_RT 509
+
+	NUMBER USFARM_BurfordHolly_RT2 69
+
+	NUMBER USFARM_BurfordHolly_RT_Square 14
+
+	NUMBER USFARM_HorseChestnut_RT 890
+
+	NUMBER USFARM_HorseChestnut_RT2 501
+
+	NUMBER USFARM_KingsvilleBoxwood_RT 563
+
+	NUMBER USFARM_LiveOak_RT 10
+
+	NUMBER USFARM_LiveOak_RT2 9
+
+	NUMBER USFARM_RedRoseBushPatch_RT 32
+
+	NUMBER USFARM_RedRoseBushPatch_RT2 9
+
+	NUMBER USFARM_RedYucca_RT_Flowers 41
+
+	NUMBER USFARM_SunflowerPatch_RT 14
+
+	NUMBER USFARM_SunflowerPatch_RT2 10
+
+	NUMBER USFARM_Weeds_RT 6
+
+	NUMBER USFARM_Weeds_RT2 14
+
+	NUMBER USMOUNT_AmericanBoxwood_RT 134
+
+	NUMBER USMOUNT_AmericanBoxwood_RT2 99
+
+	NUMBER USMOUNT_AmericanBoxwood_RT_Row 33
+
+	NUMBER USMOUNT_AmericanBoxwood_RT_Row2 39
+
+	NUMBER USMOUNT_ArizonaBush_RT 5
+
+	NUMBER USMOUNT_ArizonaBush_RT_Flowers 5
+
+	NUMBER USMOUNT_DouglasFir_RT 97
+
+	NUMBER USMOUNT_DouglasFir_RT2 56
+
+	NUMBER USMOUNT_DouglasFir_RT_Full 6
+
+	NUMBER USMOUNT_DouglasFir_RT_Full2 29
+
+	NUMBER USMOUNT_DouglasFir_RT_Full3 173
+
+	NUMBER USMOUNT_DouglasFir_RT_Full4 120
+
+	NUMBER USMOUNT_FraserFir_RT 75
+
+	NUMBER USMOUNT_FraserFir_RT2 34
+
+	NUMBER USMOUNT_FraserFir_RT3 32
+
+	NUMBER USMOUNT_FraserFir_RT4 326
+
+	NUMBER USMOUNT_GrayBirch_RT 13
+
+	NUMBER USMOUNT_GrayBirch_RT2 48
+
+	NUMBER USMOUNT_GrayBirch_RT3 24
+
+	NUMBER USMOUNT_KingsvilleBoxwood_RT2 117
+
+	NUMBER USMOUNT_KingsvilleBoxwood_RT3 19
+
+	NUMBER USMOUNT_RedMaple_RT 8
+
+	NUMBER USMOUNT_RedMaple_RT2 5
+
+	NUMBER USMOUNT_RedMaple_RT3 84
+
+	NUMBER USMOUNT_RedYucca_RT 2
+
+	NUMBER USMOUNT_RedYucca_RT_Flowers 0
+
+	NUMBER USMOUNT_SouthernMagnolia_RT 8
+
+	NUMBER USMOUNT_SouthernMagnolia_RT2 8
+
+	NUMBER USMOUNT_SouthernMagnolia_RT3 8
+
+	NUMBER USMOUNT_SugarPine_RT 44
+
+	NUMBER USMOUNT_SugarPine_RT2 18
+
+	NUMBER USMOUNT_SugarPine_RT3 64
+
+	NUMBER USMOUNT_Weeds_RT 8
+
+	NUMBER USSR_2S7_Pion 1
+
+	NUMBER USSR_2S9_Anona 1
+
+	NUMBER USSR_AntiTank 2
+
+	NUMBER USSR_Bmp_3 1
+
+	NUMBER USSR_Bmp_R 1
+
+	NUMBER USSR_Btr80 1
+
+	NUMBER USSR_Ka-25_Hormone 0
+
+	NUMBER USSR_Machine_Gunner 1
+
+	NUMBER USSR_Marine 3
+
+	NUMBER USSR_Sniper 3
+
+	NUMBER USSR_Squad_Sniper 0
+
+	NUMBER USSR_T62 2
+
+	NUMBER USSR_T80U 1
+
+	NUMBER USSR_UAZ469 1
+
+	NUMBER USSR_VT55 1
+
+	NUMBER USSR_ZSU_Shilka 1
+
+	NUMBER USSUM_Agarwood_RT 206
+
+	NUMBER USSUM_Agarwood_RT3 206
+
+	NUMBER USSUM_Agarwood_RT4 206
+
+	NUMBER USSUM_AmericanBoxwood_RT 12
+
+	NUMBER USSUM_AmericanBoxwood_RT2 206
+
+	NUMBER USSUM_AmericanElm_RT 287
+
+	NUMBER USSUM_AmericanElm_RT2 85
+
+	NUMBER USSUM_BurfordHolly_RT 28
+
+	NUMBER USSUM_BurfordHolly_RT2 1
+
+	NUMBER USSUM_BurfordHolly_RT_Square 6
+
+	NUMBER USSUM_BurfordHolly_RT_Square2 4
+
+	NUMBER USSUM_FraserFir_RT 10
+
+	NUMBER USSUM_FraserFir_RT2 4
+
+	NUMBER USSUM_FraserFir_RT3 1021
+
+	NUMBER USSUM_GreenAsh_RT 50
+
+	NUMBER USSUM_GreenAsh_RT2 24
+
+	NUMBER USSUM_HorseChestnut_RT 10
+
+	NUMBER USSUM_HorseChestnut_RT2 33
+
+	NUMBER USSUM_KingsvilleBoxwood_RT 1
+
+	NUMBER USSUM_KingsvilleBoxwood_RT2 207
+
+	NUMBER USSUM_PeachTree_RT 18
+
+	NUMBER USSUM_PeachTree_RT2 1
+
+	NUMBER USSUM_RedYucca_RT 37
+
+	NUMBER USSUM_RedYucca_RT2 6
+
+	NUMBER USSUM_RedYucca_RT3 10
+
+	NUMBER USSUM_Weeds_RT 31
+
+	NUMBER USSUM_Weeds_RT2 4
+
+	NUMBER USSUM_WeepingWillow_RT 9
+
+	NUMBER USSUM_WeepingWillow_RT2 10
+
+	NUMBER UST1_ST_AmericanBoxwoodCluster_RT 1
+
+	NUMBER UST1_ST_AmericanBoxwoodCluster_RT.spt 0
+
+	NUMBER UST1_ST_AmericanBoxwoodCluster_RT2 12
+
+	NUMBER UST1_ST_AmericanBoxwoodCluster_RT2.spt 0
+
+	NUMBER UST1_ST_AmericanBoxwood_RT 11
+
+	NUMBER UST1_ST_AmericanBoxwood_RT.spt 4
+
+	NUMBER UST1_ST_AmericanHolly_RT 7
+
+	NUMBER UST1_ST_AmericanHolly_RT.spt 6
+
+	NUMBER UST1_ST_AmericanHolly_RT2 4
+
+	NUMBER UST1_ST_AmericanHolly_RT2.spt 15
+
+	NUMBER UST1_ST_AmericanHolly_RT3 1
+
+	NUMBER UST1_ST_AmericanHolly_RT3.spt 3
+
+	NUMBER UST1_ST_AmericanHolly_RT_Berries 1
+
+	NUMBER UST1_ST_AmericanHolly_RT_Berries.spt 17
+
+	NUMBER UST1_ST_ArizonaBush_Cluster 1
+
+	NUMBER UST1_ST_ArizonaBush_RT 2
+
+	NUMBER UST1_ST_ArizonaBush_RT_Flowers 14
+
+	NUMBER UST1_ST_DouglasFir_RT 0
+
+	NUMBER UST1_ST_DouglasFir_RT.spt 2
+
+	NUMBER UST1_ST_DouglasFir_RT2.spt 1
+
+	NUMBER UST1_ST_DouglasFir_RT_Full 1
+
+	NUMBER UST1_ST_DouglasFir_RT_Full.spt 2
+
+	NUMBER UST1_ST_DouglasFir_RT_Full2.spt 2
+
+	NUMBER UST1_ST_DouglasFir_RT_Full3.spt 1
+
+	NUMBER UST1_ST_FraserFir_RT.spt 107
+
+	NUMBER UST1_ST_FraserFir_RT2 9
+
+	NUMBER UST1_ST_FraserFir_RT2.spt 67
+
+	NUMBER UST1_ST_FraserFir_RT3 5
+
+	NUMBER UST1_ST_FraserFir_RT3.spt 28
+
+	NUMBER UST1_ST_GrayBirch_RT 1
+
+	NUMBER UST1_ST_GrayBirch_RT.spt 12
+
+	NUMBER UST1_ST_GrayBirch_RT2 4
+
+	NUMBER UST1_ST_GrayBirch_RT2.spt 31
+
+	NUMBER UST1_ST_GrayBirch_RT3 0
+
+	NUMBER UST1_ST_GrayBirch_RT3.spt 25
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT 17
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT.spt 17
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT2 5
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT2.spt 15
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT3 10
+
+	NUMBER UST1_ST_KingsvilleBoxwood_RT3.spt 11
+
+	NUMBER UST1_ST_RedMaple_RT 1
+
+	NUMBER UST1_ST_RedMaple_RT.spt 1
+
+	NUMBER UST1_ST_RedMaple_RT2 1
+
+	NUMBER UST1_ST_RedMaple_RT2.spt 2
+
+	NUMBER UST1_ST_RedMaple_RT3 3
+
+	NUMBER UST1_ST_RedMaple_RT3.spt 7
+
+	NUMBER UST1_ST_SouthernMagnolia_RT.spt 1
+
+	NUMBER UST1_ST_SouthernMagnolia_RT2 0
+
+	NUMBER UST1_ST_SouthernMagnolia_RT2.spt 5
+
+	NUMBER UST1_ST_SouthernMagnolia_RT3.spt 3
+
+	NUMBER UST1_ST_SugarPine_RT 4
+
+	NUMBER UST1_ST_SugarPine_RT.spt 34
+
+	NUMBER UST1_ST_SugarPine_RT2 1
+
+	NUMBER UST1_ST_SugarPine_RT2.spt 54
+
+	NUMBER UST1_ST_SugarPine_RT3 1
+
+	NUMBER UST1_ST_SugarPine_RT3.spt 65
+
+	NUMBER UST1_ST_WeepingWillow_RT.spt 2
+
+	NUMBER USWIN_AmericanBoxwood_RT 0
+
+	NUMBER USWIN_AmericanBoxwood_RT2 15
+
+	NUMBER USWIN_AmericanElm_RT_Winter 17
+
+	NUMBER USWIN_AmericanElm_RT_Winter2 46
+
+	NUMBER USWIN_BurfordHolly_RT 51
+
+	NUMBER USWIN_BurfordHolly_RT2 11
+
+	NUMBER USWIN_FraserFir_RT_Snow 70
+
+	NUMBER USWIN_FraserFir_RT_Snow2 84
+
+	NUMBER USWIN_GreenAsh_RT_Winter 36
+
+	NUMBER USWIN_GreenAsh_RT_Winter2 3
+
+	NUMBER USWIN_HorseChestnut_RT_Winter 6
+
+	NUMBER USWIN_HorseChestnut_RT_Winter2 5
+
+	NUMBER USWIN_SugarPine_RT_Winter 303
+
+	NUMBER USWIN_SugarPine_RT_Winter2 32
+
+	NUMBER USWIN_SugarPine_RT_Winter3 8
+
+	NUMBER USWIN_Weeds_RT2 0
+
+	NUMBER USWIN_WeepingWillow_RT_Winter 19
+
+	NUMBER USWIN_WeepingWillow_RT_Winter2 9
+
+	NUMBER USWIN_WesternRedCedar_RT_Winter 237
+
+	NUMBER USWIN_WesternRedCedar_RT_Winter2 33
+
+	NUMBER US_AAVP7A1 2
+
+	NUMBER US_AH1_Super_Cobra 0
+
+	NUMBER US_AH_Apache 3
+
+	NUMBER US_Blackhawk_UH 2
+
+	NUMBER US_Bradley_APC 6
+
+	NUMBER US_CH53_Sea_Stallion 0
+
+	NUMBER US_Engineer 1
+
+	NUMBER US_HUMWEE 2
+
+	NUMBER US_M125_Mortar 1
+
+	NUMBER US_M270 1
+
+	NUMBER US_M60A1_AVLB 2
+
+	NUMBER US_M60A3 1
+
+	NUMBER US_M730A2_AA 1
+
+	NUMBER US_M88A1_Arv 1
+
+	NUMBER US_OH_6A_Cayuse 0
+
+	NUMBER US_Sheridan 1
+
+	NUMBER US_Squad_Engineer 2
+
+	NUMBER US_Squad_Infantry 2
+
+	NUMBER US_Squad_Mechanized 2
+
+	NUMBER US_Support_M109 1
+
+	NUMBER US_Support_Para 0
+
+	NUMBER US_Tank_Abrahms 1
+
+	NUMBER US_Town_Bench_01 1
+
+	NUMBER US_Town_Bench_02 1
+
+	NUMBER US_Town_Lamp_01 3
+
+	NUMBER US_Town_Lamp_02 1
+
+	NUMBER US_Town_Parking_Meter 5
+
+	NUMBER US_Town_Statue 1
+
+	NUMBER UTS_BMX 13
+
+	NUMBER UTS_BasketBall 13
+
+	NUMBER UTS_BasketBall_Korg 1
+
+	NUMBER UTS_Bench_OneSide 7
+
+	NUMBER UTS_Bench_TwoSide 3
+
+	NUMBER UTS_DogHouse 11
+
+	NUMBER UTS_FireHydrant 6
+
+	NUMBER UTS_Grill 3
+
+	NUMBER UTS_Gungor 2
+
+	NUMBER UTS_Light_01 17
+
+	NUMBER UTS_Light_02 15
+
+	NUMBER UTS_MailBox_01 44
+
+	NUMBER UTS_MailBox_02 13
+
+	NUMBER UTS_MailBox_03 5
+
+	NUMBER UTS_MailBox_04 4
+
+	NUMBER UTS_Sign_SmallSign_01 1
+
+	NUMBER UTS_Sign_SmallSign_02 0
+
+	NUMBER UTS_Sign_SmallSign_04 2
+
+	NUMBER UTS_Skateboard 9
+
+	NUMBER UTS_Trashcan 17
+
+	NUMBER Ustown4_Rock02 2
+
+	NUMBER Ustown4_Rock03 4
+
+	NUMBER Ustown4_Rock04 4
+
+	NUMBER Ustown4_Rock05 6
+
+	NUMBER Ustown4_Rock06 2
+
+	NUMBER Ustown4_Rock09 4
+
+	NUMBER Ustown4_Rock12 4
+
+	NUMBER Ustown4_Rock14 2
+
+	NUMBER Van_v1 23
+
+	NUMBER Van_v2 11
+
+	NUMBER Viaduct22DegreeLeft 16
+
+	NUMBER Viaduct45DegreeLeft 10
+
+	NUMBER Viaduct60DegreeLeft 4
+
+	NUMBER ViaductCollapsed 1
+
+	NUMBER ViaductJunction 2
+
+	NUMBER ViaductSegment 21
+
+	NUMBER ViaductSlipway 2
+
+	NUMBER ViaductSlipwayBend 8
+
+	NUMBER ViaductSlipwayBend50Degree 4
+
+	NUMBER Viaduct_Sign_01 3
+
+	NUMBER Viaduct_Sign_02 1
+
+	NUMBER Volvo 1
+
+	NUMBER VwBus 15
+
+	NUMBER WICROAD_europe2_wall01 0
+
+	NUMBER WICROAD_europe2_wall02 0
+
+	NUMBER WICROAD_europe3_bunkerwall01 1
+
+	NUMBER WICROAD_europe3_bunkerwall01_block 5
+
+	NUMBER WICROAD_seattle2_17m_01 0
+
+	NUMBER WICROAD_seattle2_20m_01 0
+
+	NUMBER WICROAD_seattle2_34m_01 0
+
+	NUMBER WICROAD_seattle2_HARBOR_34m_01 0
+
+	NUMBER WICROAD_seattle2_TRAINTRACK_01 0
+
+	NUMBER WICROAD_seattle2_VIADUCT_34m_01 0
+
+	NUMBER WICROAD_seattle2_to34m_01 0
+
+	NUMBER WICROAD_seattle3_20m 0
+
+	NUMBER WICROAD_seattle3_30mplus 0
+
+	NUMBER Walkway 1
+
+	NUMBER WaterBarrels 2
+
+	NUMBER WaterTower 1
+
+	NUMBER WaterTower_V2 1
+
+	NUMBER Water_ocean_heavy 4
+
+	NUMBER Water_ocean_light 5
+
+	NUMBER Water_ocean_rocks_heavy 10
+
+	NUMBER WelcomeSign 1
+
+	NUMBER WillysJeep 0
+
+	NUMBER WindMill 1
+
+	NUMBER Wind_Power_Building 4
+
+	NUMBER Wind_grass_light_1 1
+
+	NUMBER Wind_grass_light_2 2
+
+	NUMBER Wind_trees_heavy_1 1
+
+	NUMBER Wind_trees_heavy_2 1
+
+	NUMBER Wind_trees_light_1 1
+
+	NUMBER WineBarrelModern 10
+
+	NUMBER WineBarrelOld 7
+
+	NUMBER Winery 0
+
+	NUMBER Wire_Pole_01 51
+
+	NUMBER Wire_Pole_02 11
+
+	NUMBER WoodFense_06m 8
+
+	NUMBER WoodFense_20m 2
+
+	NUMBER WoodFense_70m 2
+
+	NUMBER WoodPlank_025m 11
+
+	NUMBER WoodPlank_025m_v2 44
+
+	NUMBER WoodPlank_025m_v3 17
+
+	NUMBER WoodPlank_10m 19
+
+	NUMBER WoodPlank_10m_v2 6
+
+	NUMBER WoodPlank_10m_v3 4
+
+	NUMBER WoodPlank_2.5m 2
+
+	NUMBER WoodPlank_20m 5
+
+	NUMBER WoodPlank_20m_v2 2
+
+	NUMBER WoodPlank_20m_v3 17
+
+	NUMBER WorkComplex 3
+
+	NUMBER Yacht 1
+
+	NUMBER Yacht_V2 1
+
+	NUMBER Zu23 3
+
+	NUMBER aquaduct02 1
+
+	NUMBER aquaduct_01 11
+
+	NUMBER audience 2
+
+	NUMBER backdrop_city 0
+
+	NUMBER barrack 0
+
+	NUMBER barracks 13
+
+	NUMBER base_admin_building 1
+
+	NUMBER bathTub_V1 2
+
+	NUMBER bathTub_V2 2
+
+	NUMBER bathTub_V3 2
+
+	NUMBER bend 0
+
+	NUMBER bigRedStone 6
+
+	NUMBER bigRedStoneS 2
+
+	NUMBER blockBox_harbor_Big 3
+
+	NUMBER block_40x40 2
+
+	NUMBER block_40x80 1
+
+	NUMBER block_80x80 7
+
+	NUMBER blockbox_dehouse_090905 20
+
+	NUMBER blockbox_dehouse_202005 6
+
+	NUMBER blockbox_dehouse_363605 9
+
+	NUMBER blockbox_dehouse_818120 0
+
+	NUMBER blocker 5
+
+	NUMBER blue_container 2
+
+	NUMBER boat02 0
+
+	NUMBER boat03 9
+
+	NUMBER boat04 1
+
+	NUMBER brickWall10 1
+
+	NUMBER bridgeFarmland 1
+
+	NUMBER bridgeStone 3
+
+	NUMBER building_01 4
+
+	NUMBER building_02 0
+
+	NUMBER building_03 0
+
+	NUMBER building_04 1
+
+	NUMBER building_05 1
+
+	NUMBER building_06 1
+
+	NUMBER building_06_B 1
+
+	NUMBER building_11 2
+
+	NUMBER building_12 3
+
+	NUMBER building_13 7
+
+	NUMBER building_13B 5
+
+	NUMBER building_14 4
+
+	NUMBER building_15 0
+
+	NUMBER building_16 2
+
+	NUMBER building_16B 1
+
+	NUMBER building_16C 3
+
+	NUMBER building_16D 1
+
+	NUMBER building_17 3
+
+	NUMBER building_17B 3
+
+	NUMBER building_17C 2
+
+	NUMBER building_18 2
+
+	NUMBER building_18B 2
+
+	NUMBER building_18C 3
+
+	NUMBER building_18D 1
+
+	NUMBER building_19 1
+
+	NUMBER building_20 1
+
+	NUMBER busstop 0
+
+	NUMBER cactus 15
+
+	NUMBER camoNet 1
+
+	NUMBER carshelter 0
+
+	NUMBER cattleFence_27m 18
+
+	NUMBER cattleFence_45m 43
+
+	NUMBER cattleFence_9m 73
+
+	NUMBER cattleGate 7
+
+	NUMBER center_square 1
+
+	NUMBER checkpoint 0
+
+	NUMBER chicken_coop 2
+
+	NUMBER church_building 1
+
+	NUMBER cistern01 3
+
+	NUMBER cistern02 8
+
+	NUMBER cityHouse01 18
+
+	NUMBER cityHouse02 10
+
+	NUMBER cityHouse03 18
+
+	NUMBER cityHouse04 4
+
+	NUMBER cityHouse05 3
+
+	NUMBER cityHouse06 9
+
+	NUMBER cityHouse07 9
+
+	NUMBER cityHouse08 4
+
+	NUMBER cityHouseWall_15mx2m 2
+
+	NUMBER cityHouseWall_15mx4m 12
+
+	NUMBER cityHouseWall_20mx2m 3
+
+	NUMBER cityHouseWall_20mx4m 3
+
+	NUMBER cityHouseWall_30mx2m 2
+
+	NUMBER cityHouseWall_30mx4m 1
+
+	NUMBER cityHouseWall_5mx2m 9
+
+	NUMBER cityHouseWall_5mx4m 13
+
+	NUMBER cityHouse_wall_13m 18
+
+	NUMBER commerce 1
+
+	NUMBER container01 2
+
+	NUMBER container02 1
+
+	NUMBER container03 5
+
+	NUMBER container6m01 37
+
+	NUMBER container6m02 30
+
+	NUMBER container6m03 27
+
+	NUMBER container6m04 28
+
+	NUMBER container6m05 11
+
+	NUMBER container6m06 16
+
+	NUMBER container9m01 13
+
+	NUMBER container9m02 59
+
+	NUMBER container9m03 18
+
+	NUMBER container9m04 27
+
+	NUMBER container9m05 40
+
+	NUMBER container9m06 21
+
+	NUMBER container9mBlock01 46
+
+	NUMBER container9mBlock02 13
+
+	NUMBER container9mBlock03 11
+
+	NUMBER container9mBlock04 12
+
+	NUMBER containerLoader 2
+
+	NUMBER container_single 2
+
+	NUMBER container_stack 5
+
+	NUMBER contretewall 22
+
+	NUMBER copter_landed 1
+
+	NUMBER corner_building 0
+
+	NUMBER craneHarbour 3
+
+	NUMBER craneHarbour02 2
+
+	NUMBER cropDuster 1
+
+	NUMBER cropDuster_V2 1
+
+	NUMBER cropRefinery 2
+
+	NUMBER cropRefineryPart01 1
+
+	NUMBER cropRefineryPart02 4
+
+	NUMBER cropSilo_Big 2
+
+	NUMBER cropSilo_Big_v2 1
+
+	NUMBER cropSilo_Double 2
+
+	NUMBER cropSilo_Small 1
+
+	NUMBER crop_duster_plane 1
+
+	NUMBER demolishedCar 1
+
+	NUMBER dess_rock_big_flat 4
+
+	NUMBER dess_rock_big_terrain 1
+
+	NUMBER dess_rock_round_extra 59
+
+	NUMBER dess_rock_round_small 98
+
+	NUMBER dess_rock_single_mid 8
+
+	NUMBER dess_rock_small_flat 6
+
+	NUMBER dess_rock_small_terrain 0
+
+	NUMBER digger 1
+
+	NUMBER dock_cylinder 1
+
+	NUMBER dummyBigPot01 4
+
+	NUMBER dummyBlockBox20 0
+
+	NUMBER dummyBlockBox36 5
+
+	NUMBER dummyBlockBox81 13
+
+	NUMBER dummyBlockBox9 13
+
+	NUMBER dummyBush02 1
+
+	NUMBER dummyRailRoad 129
+
+	NUMBER dummyRailRoad_short_flat 0
+
+	NUMBER dummyRoad 160
+
+	NUMBER dummyStones01 28
+
+	NUMBER dummyStones02 30
+
+	NUMBER dummyTree01 9
+
+	NUMBER dummyTree02 3
+
+	NUMBER dummyTree03AleTraet 29
+
+	NUMBER dummyTreeWinter01 0
+
+	NUMBER dummyTreeWinter02 1
+
+	NUMBER dummybridge01 0
+
+	NUMBER eliileouter 1
+
+	NUMBER end 2
+
+	NUMBER europeTest 0
+
+	NUMBER europe_cityhouse01_v2 16
+
+	NUMBER europe_cityhouse02_v2 9
+
+	NUMBER europe_cityhouse03_v2 13
+
+	NUMBER europe_cityhouse04_v2 1
+
+	NUMBER europe_cityhouse06_v2 13
+
+	NUMBER europe_cityhouse07_v2 4
+
+	NUMBER farmerHouse 3
+
+	NUMBER farmerHouse_v2 2
+
+	NUMBER farmerHouse_v3 3
+
+	NUMBER fence01[50m] 1
+
+	NUMBER field 2
+
+	NUMBER finrabatt 5
+
+	NUMBER gardenTable 1
+
+	NUMBER gardentable 1
+
+	NUMBER germanCow 12
+
+	NUMBER gety_wall_rural01 12
+
+	NUMBER gety_wall_rural02 0
+
+	NUMBER govileouter 1
+
+	NUMBER grapevine_20m 10
+
+	NUMBER greenhouse 1
+
+	NUMBER harborTires 0
+
+	NUMBER harbor_blockbox 12
+
+	NUMBER harbor_office 1
+
+	NUMBER harbour01 1
+
+	NUMBER harbour02 2
+
+	NUMBER harrows 3
+
+	NUMBER hayPile 5
+
+	NUMBER hayRoll 115
+
+	NUMBER hay_pile 2
+
+	NUMBER heathaze_test 4
+
+	NUMBER helicopterSmall_V2 1
+
+	NUMBER highwayGuardRail_10m 1
+
+	NUMBER highwayGuardRail_26m 1
+
+	NUMBER highwayGuardRail_50m 81
+
+	NUMBER highwayGuardRail_Stop 3
+
+	NUMBER highwayGuardRail_Turn_Right_25 2
+
+	NUMBER highwayGuardRail_Turn_Right_45 1
+
+	NUMBER highwayLight02 2
+
+	NUMBER highwaySign01 1
+
+	NUMBER highwaySign02 1
+
+	NUMBER horse01 5
+
+	NUMBER hotel_block 0
+
+	NUMBER house9Floor 1
+
+	NUMBER house_01_vinery 0
+
+	NUMBER house_02_vinery 1
+
+	NUMBER house_03 5
+
+	NUMBER house_04 1
+
+	NUMBER house_05 1
+
+	NUMBER house_06_barn 1
+
+	NUMBER house_07_barn 1
+
+	NUMBER house_08_shed 1
+
+	NUMBER hummer_black 1
+
+	NUMBER hummer_green 1
+
+	NUMBER hummer_red 1
+
+	NUMBER hummer_yellow 1
+
+	NUMBER huntingTower 3
+
+	NUMBER industrialFenceLow 36
+
+	NUMBER industrialFenceLow02 3
+
+	NUMBER industrialFenceLowGetY 21
+
+	NUMBER industrialHouse01 1
+
+	NUMBER industrialHouse02 1
+
+	NUMBER industrialHouse03 8
+
+	NUMBER industrialHouse04 8
+
+	NUMBER instance 0
+
+	NUMBER jeanneStatue 0
+
+	NUMBER kawasaki_1981 1
+
+	NUMBER kingdome_parking 1
+
+	NUMBER libilebridge 0
+
+	NUMBER libileinner 1
+
+	NUMBER libileouter 1
+
+	NUMBER libya_mansion 1
+
+	NUMBER lightHouse02 0
+
+	NUMBER longlong_building 2
+
+	NUMBER mailbox_rural01 2
+
+	NUMBER mansion 0
+
+	NUMBER mansion_fountain 2
+
+	NUMBER marygoround 0
+
+	NUMBER mega_digger 0
+
+	NUMBER middle 34
+
+	NUMBER minedigger 0
+
+	NUMBER missing_model_01 0
+
+	NUMBER missing_model_02 0
+
+	NUMBER missing_model_03 0
+
+	NUMBER missing_model_04 0
+
+	NUMBER missing_model_05 0
+
+	NUMBER missing_model_06 0
+
+	NUMBER missing_model_07 0
+
+	NUMBER missing_model_08 0
+
+	NUMBER missing_model_09 0
+
+	NUMBER missing_model_10 0
+
+	NUMBER missing_model_11 0
+
+	NUMBER missing_model_12 0
+
+	NUMBER missing_model_13 0
+
+	NUMBER missing_model_14 0
+
+	NUMBER missing_model_15 0
+
+	NUMBER missing_model_16 0
+
+	NUMBER missing_model_17 0
+
+	NUMBER missing_model_18 0
+
+	NUMBER missing_model_19 0
+
+	NUMBER missing_model_20 0
+
+	NUMBER missing_model_x 0
+
+	NUMBER mySpeedTreeType0 10
+
+	NUMBER mySpeedTreeType1 4
+
+	NUMBER officebuilding_04_tall 6
+
+	NUMBER oldFence_10m 21
+
+	NUMBER oldFence_25m 5
+
+	NUMBER oldFence_50m 6
+
+	NUMBER oldMine 5
+
+	NUMBER oldShed 1
+
+	NUMBER oldShed_02 1
+
+	NUMBER pierhouse 7
+
+	NUMBER planeModel 0
+
+	NUMBER plank02_20 2
+
+	NUMBER plank02_poster 1
+
+	NUMBER plank10 0
+
+	NUMBER pool01 0
+
+	NUMBER pool01_rural 1
+
+	NUMBER pool02_rural 0
+
+	NUMBER railwayTunnel 8
+
+	NUMBER roadstone01 23
+
+	NUMBER ruin 13
+
+	NUMBER ruinTower 4
+
+	NUMBER ruralStoneWall_10m 14
+
+	NUMBER ruralStoneWall_25m 11
+
+	NUMBER ruralStoneWall_50m 2
+
+	NUMBER russia4_rail_xroad 0
+
+	NUMBER russia4_trainroad_connect 21
+
+	NUMBER russia4_trainroad_connect_Flip 13
+
+	NUMBER rusty_barrel 1
+
+	NUMBER sack 13
+
+	NUMBER sack_red 4
+
+	NUMBER sandBags01 14
+
+	NUMBER sandBags02 0
+
+	NUMBER sandbags03 0
+
+	NUMBER seaSideLamp 17
+
+	NUMBER searchlight 3
+
+	NUMBER seaside_lamp 17
+
+	NUMBER secret_sign 6
+
+	NUMBER secret_tent 5
+
+	NUMBER shortened_building 0
+
+	NUMBER skyscrape01 2
+
+	NUMBER skyscrape03 1
+
+	NUMBER skyscrape05 1
+
+	NUMBER skyscrape07 1
+
+	NUMBER skyscrape07_v2 1
+
+	NUMBER skyscrape08 2
+
+	NUMBER skyscrape09 2
+
+	NUMBER skyscrape11 2
+
+	NUMBER skyscrape11_v2 5
+
+	NUMBER skyscrape4 1
+
+	NUMBER skyscraper01 1
+
+	NUMBER skyscraper02 1
+
+	NUMBER skyscraper06 3
+
+	NUMBER skyscraper10 6
+
+	NUMBER smallHanger 1
+
+	NUMBER spaceneedle 0
+
+	NUMBER spotLight01 2
+
+	NUMBER square01 0
+
+	NUMBER stealth_plane_cammo 0
+
+	NUMBER stealth_plane_clean 0
+
+	NUMBER stone_wall 24
+
+	NUMBER streetlight_L_01x3 8
+
+	NUMBER streetlight_L_01x5 20
+
+	NUMBER streetlight_L_01x9 0
+
+	NUMBER streetlight_L_02x3 4
+
+	NUMBER streetlight_L_02x5 6
+
+	NUMBER streetlight_L_02x9 0
+
+	NUMBER streetlight_L_03x3 1
+
+	NUMBER streetlight_L_03x5 4
+
+	NUMBER streetprops_01_4m_x_10m 1
+
+	NUMBER streetprops_01_4m_x_25m 3
+
+	NUMBER streetprops_01_4m_x_50m 3
+
+	NUMBER streetprops_01_4m_x_75m 13
+
+	NUMBER streetprops_02_4m_x_50m 10
+
+	NUMBER sydneyExpress 1
+
+	NUMBER telefon_stolpe_01 6
+
+	NUMBER tent01 1
+
+	NUMBER tent03_hq 0
+
+	NUMBER toilets 4
+
+	NUMBER tombstone01 4
+
+	NUMBER tombstone03 11
+
+	NUMBER tombstone04 2
+
+	NUMBER tombstone05 3
+
+	NUMBER touristBus 0
+
+	NUMBER tow_14m 0
+
+	NUMBER tow_21m 19
+
+	NUMBER townchurch 0
+
+	NUMBER tractorHarrow_01 2
+
+	NUMBER tractorHarrow_02 1
+
+	NUMBER tractorHarrow_03 2
+
+	NUMBER tractorHayLoad01 2
+
+	NUMBER tractorHayLoad02 3
+
+	NUMBER tractorHayLoad03 1
+
+	NUMBER trafficObstacle 96
+
+	NUMBER trafficObstacle05 7
+
+	NUMBER trailer01 1
+
+	NUMBER traktor 3
+
+	NUMBER trashcans_bundle1 0
+
+	NUMBER trashcans_bundle2 2
+
+	NUMBER trashcans_bundle3 1
+
+	NUMBER truck 2
+
+	NUMBER truck_france 1
+
+	NUMBER trucktank 1
+
+	NUMBER trucktank2 1
+
+	NUMBER tumbleweed 0
+
+	NUMBER tunnel 0
+
+	NUMBER typhoon 0
+
+	NUMBER under_construction_sign_01 4
+
+	NUMBER under_construction_sign_02 3
+
+	NUMBER under_construction_sign_02_ver2 20
+
+	NUMBER under_construction_sign_03 2
+
+	NUMBER under_construction_sign_04 5
+
+	NUMBER under_construction_sign_05 1
+
+	NUMBER under_construction_sign_06 0
+
+	NUMBER usDesert2_03x02 2
+
+	NUMBER usdesert1 1
+
+	NUMBER viaduct004 0
+
+	NUMBER viaduct_50d 2
+
+	NUMBER viaduct_combine 0
+
+	NUMBER viaduct_crashed 1
+
+	NUMBER viaduct_plane 0
+
+	NUMBER viaduct_plane_wing 1
+
+	NUMBER warning_sign 3
+
+	NUMBER water_trough 5
+
+	NUMBER windMill 4
+
+	NUMBER windmill 1
+
+	NUMBER windmill_europe 0
+
+	NUMBER wine_barrel01 1
+
+	NUMBER wine_barrel02 8
+
+	NUMBER winerystomp 4
+
+	NUMBER wire 296
+
+	NUMBER wireGroundPole 7
+
+	NUMBER workingComplex 0
+
+}
+
+WicedMetaData myWicedMetaData
+{
+	myName europeTest
+	myMapDir maps/europeTest
+	myMetaDataDir maps/europeTest/MetaData
+	mySunSettings
+	{
+		myGroundOverrideLighting 1
+		myGroundOverrideDirCol 0
+		myGroundDirectionalColor
+		{
+			myR 228
+			myG 202
+			myB 165
+		}
+
+		myGroundOverrideAmbCol 0
+		myGroundAmbientColor
+		{
+			myR 67
+			myG 98
+			myB 131
+		}
+
+		myGroundOverrideElevation 0
+		myGroundElevation 23.22
+		myShadowDetail 0
+		myOverbrightFactor 0.203
+		myOverbrightFactorCap 0.066
+		myShadowStretch 0.520000
+		myShadowSoftness 0.120000
+		myOnRoadsFactorRaytrace 0.0
+		mySoftShadowsSettings
+		{
+			myEnabledFlag TRUE
+			myPropShadowStrength 0.0
+			myPropShadowSoftness 0.0
+			myPropShadowMinSizeMeters 0.0
+			myTreeShadowDarkness 0.0
+			myTreeShadowSizeMeters 0.0
+			myTreeShadowDarknessCap 0.0
+			myOnRoadsFactor 0.0
+		}
+
+	}
+
+	myLayers
+	{
+		WicedTextureLayer myLayerPrototype
+		{
+			myName BaseGrass
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture editordata/grounded/splattingtextures/8k/europeTest/europeTest_8k.tga
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag FALSE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 3
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 0.140000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_GRASS
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask0.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride <empty>
+			myMaskOverrideOriginal <empty>
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName Fielddetail
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 8
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 1.000000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_GRASS
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask1.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_Fielddetail.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/fields.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName gardengrassdetail
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 3
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 1.000000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_GRASS
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask2.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_gardengrassdetail.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/gardengrass.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName Sand
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 2
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 0.560000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_DIRT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask3.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_Sand.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/sand_final.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName beachdetail_only
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.730000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 7
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 0.760000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_DIRT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask4.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_beachdetail_only.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/beach.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName GrassNorm
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.130000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 0.5
+				myTextureYScaleFactor 0.5
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_GRASS
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap editordata/grounded/splattingtextures/normalmaps/europeTest/grassnorm.tga
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask5.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride <empty>
+			myMaskOverrideOriginal <empty>
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName Bumpall
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.680000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag FALSE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag FALSE
+				myMaterialID GROUND_DEFAULT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap editordata/grounded/splattingtextures/normalmaps/europeTest/bumpall.tga
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask6.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_Bumpall.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/sand_final.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName Rock
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.000000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture editordata/grounded/splattingtextures/8k/europeTest/rockadd.tga
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 0.6
+				myTextureYScaleFactor 0.6
+				myBrightnessModifier -0.000000
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 0
+				myDetailTextureIntensity 1.000000
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 0.140000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_ROCK
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap editordata/grounded/splattingtextures/normalmaps/europeTest/desertnormal.tga
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask7.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_Rock.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/kliff.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName Forest
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 4
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag TRUE
+				mySpecularity 0.000000
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_GRASS
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask8.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_Forest.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/forest.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName rubble
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 0.1
+				myTextureYScaleFactor 0.1
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag TRUE
+				myDetailTextureID 1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag TRUE
+				myMaterialID GROUND_DIRT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap editordata/grounded/splattingtextures/normalmaps/europeTest/rubblebump.tga
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask9.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_rubble.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/rubble.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName water_darkness
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.830000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture editordata/grounded/splattingtextures/Misc/black.tga
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag TRUE
+				myMaterialID WATER
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask10.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_water_darkness.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/rock_darkness.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName object_darkness
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.520000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture editordata/grounded/splattingtextures/Misc/black.tga
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag FALSE
+				myMaterialID GROUND_DEFAULT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask11.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_object_darkness.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/object_darkness.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName forest_darkness
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 0.890000
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag TRUE
+				myTexture editordata/grounded/splattingtextures/Misc/black.tga
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag TRUE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag FALSE
+				myMaterialID GROUND_DEFAULT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 1.0
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask12.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_forest_darkness.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/masks/europeTest/forest_darkness.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName "1k mask - conrete material"
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag FALSE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag TRUE
+				myMaterialID CONCRETE
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 0.640000
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType <empty>
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask13.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_1k_mask_-_conrete_material.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/BIG_LAYERMASKS_TEXTURES_&_NORMALMAPS/europeTest/europeTest_1k_mask_concrete_material.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName "1k mask - MASSGRASS"
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag FALSE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag FALSE
+				myMaterialID GROUND_DEFAULT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag FALSE
+				myAutopropName <empty>
+				myAutopropIntensity 0.640000
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag TRUE
+				myMassGrassType summer_grass
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask14.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_1k_mask_-_MASSGRASS.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/BIG_LAYERMASKS_TEXTURES_&_NORMALMAPS/europeTest/europeTest_1k_mask_MASSGRASS.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+		WicedTextureLayer myLayerPrototype
+		{
+			myName "1k mask - AUTOPROPS"
+			myEnabledFlag TRUE
+			myEnabledInPlayAreaFlag TRUE
+			myEnabledInSurroundFlag FALSE
+			myMask
+			{
+				myUseFractalNoise FALSE
+				myUseMaxAltitude FALSE
+				myUseMinAltitude FALSE
+				myUseMaxSlope FALSE
+				myUseMinSlope FALSE
+				myUseDirection FALSE
+				myOpacity 1.0
+				myFractalNoiseSeed 7436
+				myFractalNoiseRoughness 0.6
+				myFractalNoiseCoverage 0.8
+				myFractalNoiseContrast 0.6
+				myMaxAltitude 128
+				myMinAltitude 0
+				myMaxSlope 90
+				myMinSlope 0
+				myDirection 0
+				myMaxAltitudeSharpness 0.8
+				myMinAltitudeSharpness 0.8
+				myMaxSlopeSharpness 0.8
+				myMinSlopeSharpness 0.8
+				myDirectionCutoff 0.5
+				myDirectionSharpness 0.8
+			}
+
+			mySurface
+			{
+				myUseTextureFlag FALSE
+				myTexture <empty>
+				myBlendingType Normal
+				myTextureColorTint
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myTextureXScaleFactor 1.0
+				myTextureYScaleFactor 1.0
+				myBrightnessModifier 0.0
+				myTextureIntensity 1.0
+				myTileTextureFlag FALSE
+				myUVProjAxis 0.0
+				myUseSideSplattingFlag TRUE
+				myDontUseSideSplattingFlag TRUE
+				mySideSplattingDir 0
+				myUseDetailTextureFlag FALSE
+				myDetailTextureID -1
+				myDetailTextureIntensity 1.0
+				myDetailTextureEnabledInLowendFlag TRUE
+				myDetailTextureEnabledInHighendFlag TRUE
+				myUseSpecularityFlag FALSE
+				mySpecularity 0.05
+				myUseMaterialFlag FALSE
+				myMaterialID GROUND_DEFAULT
+				myMaterialParticleColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myCombineParticleColorWithGroundFlag TRUE
+				myUseAutopropFlag TRUE
+				myAutopropName flowers_&_bushes
+				myAutopropIntensity 1.000000
+				myAutopropColor
+				{
+					myR 0
+					myG 0
+					myB 0
+				}
+
+				myUseMassGrassFlag FALSE
+				myMassGrassType summer_grass
+				myMassGrassIntensity 1.0
+				myUseNormalMapFlag TRUE
+				myNormalMap <empty>
+			}
+
+			myGeneratedMask editordata/wiced/temp/SplattingMask15.tga
+			myGeneratedSurroundMask <empty>
+			myMaskOverride maps/europeTest/MetaData/MaskOverride_1k_mask_-_AUTOPROPS.tga
+			myMaskOverrideOriginal editordata/grounded/splattingtextures/BIG_LAYERMASKS_TEXTURES_&_NORMALMAPS/europeTest/europeTest_1k_mask_AUTOPROPS.tga
+			myGeneratedMaskDirtyFlag TRUE
+			myGeneratedSurroundMaskDirtyFlag TRUE
+		}
+
+	}
+
+	myBaseDetailTextures
+	{
+		WicedBaseDetailTexture myDetailTexture0
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/europeTestrock.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myDetailTexture1
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/mix.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myDetailTexture2
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/basesand.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myDetailTexture3
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/basegrass.tga
+			myUseInSurrMeshFlag TRUE
+		}
+
+		WicedBaseDetailTexture myDetailTexture4
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/leafpile3.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myTempBaseDetailTexturePrototype
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/leaves.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myTempBaseDetailTexturePrototype
+		{
+			myImageFile <empty>
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myTempBaseDetailTexturePrototype
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/sand22.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+		WicedBaseDetailTexture myTempBaseDetailTexturePrototype
+		{
+			myImageFile editordata/grounded/splattingtextures/detailtextures/hay.tga
+			myUseInSurrMeshFlag FALSE
+		}
+
+	}
+
+	myCachedTextureMap512 maps/europeTest/MetaData/TextureMap.tga
+	mySavedSurrMeshTextures
+	{
+		FILE myTexture0 maps/europeTest/SurroundMeshes/SurrMeshTexture0.dds
+
+		FILE myTexture1 maps/europeTest/SurroundMeshes/SurrMeshTexture1.dds
+
+		FILE myTexture2 maps/europeTest/SurroundMeshes/SurrMeshTexture2.dds
+
+		FILE myTexture3 maps/europeTest/SurroundMeshes/SurrMeshTexture3.dds
+
+		FILE myTexture4 maps/europeTest/SurroundMeshes/SurrMeshTexture4.dds
+
+		FILE myTexture5 maps/europeTest/SurroundMeshes/SurrMeshTexture5.dds
+
+		FILE myTexture6 maps/europeTest/SurroundMeshes/SurrMeshTexture6.dds
+
+		FILE myTexture7 maps/europeTest/SurroundMeshes/SurrMeshTexture7.dds
+
+	}
+
+	mySavedSurrMeshDetailTexture maps/europeTest/SurroundMeshes/SurrMeshDetailTexture.dds
+	myGeneratedBlendedMap editordata/wiced/temp/BlendedMap.tga
+	myGeneratedBlendedMapHiRes <empty>
+	myGeneratedShadedMap editordata/wiced/temp/ShadedMap.tga
+	myGeneratedShadedMapHiRes <empty>
+	myGeneratedBlendedSurroundMap editordata/GroundEd/temp/BlendedMapSurround.tga
+	myGeneratedShadedSurroundMap <empty>
+	myUseImportedDeploymentMasksFlag FALSE
+	myStartingDeploymentAreaMaskTeam1 <empty>
+	myStartingDeploymentAreaMaskTeam2 <empty>
+	myCommandPointDeploymentAreaMasks
+	{
+	}
+
+	myTeam1AssaultDeployPoint
+	{
+		x 0.0
+		z 0.0
+	}
+
+	myTeam2AssaultDeployPoint
+	{
+		x 0.0
+		z 0.0
+	}
+
+	myAssaultDeploySplineWidth 0
+	myOverlayRoadsAlphaMask <empty>
+	myOverlayRoadsBrightnessMask <empty>
+	myUnderlayRoadsAlphaMask <empty>
+	myUnderlayRoadsBrightnessMask <empty>
+	mySplineEditorDisabled 0
+	myImportedRoadModels
+	{
+		WicedImportedRoadModel myRoadMesh0
+		{
+			myImportedModel europeTest_asphalt.mrb
+			myAlphaMask <empty>
+			myBrightnessMask <empty>
+			myAffectedByMasksFlag TRUE
+		}
+
+	}
+
+	mySurroundMeshesImported 1
+	myImportedSurroundMeshes
+	{
+		WicedImportedSurroundMesh mySurroundMesh0
+		{
+			myNumber 0
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_0.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh1
+		{
+			myNumber 1
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_1.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh2
+		{
+			myNumber 2
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_2.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh3
+		{
+			myNumber 3
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_3.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh4
+		{
+			myNumber 4
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_4.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh5
+		{
+			myNumber 5
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_5.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh6
+		{
+			myNumber 6
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_6.raw
+		}
+
+		WicedImportedSurroundMesh mySurroundMesh7
+		{
+			myNumber 7
+			myBoneNbrContainingHeightMapData 0
+			myHeightMap maps/europeTest/SurroundMeshes/surrmesh_heightmap_7.raw
+		}
+
+	}
+
+	myGlobalDropZonePattern 1
+	myTeam1DropZonePattern 0
+	myTeam2DropZonePattern 0
+	myMassGrassTypes
+	{
+		WicedMassGrassType MassyGrassy
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType usmountains
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType fall
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType winter
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType usdesert
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType winter_forest
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType usfarmland_corn
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType winter_props
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType usfarmland_wheat
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType summer_grass
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType summer_wheat
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType summer_river
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+		WicedMassGrassType winter_grass
+		{
+			myColorTint
+			{
+				myR 0
+				myG 0
+				myB 0
+			}
+
+		}
+
+	}
+
+	myMassGrassFile autopropsets/massgrasstypes.juice
+	mySplines
+	{
+		WicedSpline mySplinePrototype
+		{
+			myName asdads
+			myWidth 14.000000
+			mySegmentation 12
+			mySmoothness 5
+			myElasticity 0
+			mySideFlatteningWidth 0
+			mySide1InterpolationLength 12.000000
+			mySide2InterpolationLength 2.000000
+			myHeightModifier 0.0
+			myGenerateMeshFlag TRUE
+			myFlattenHeightMapFlag FALSE
+			myRemoveAutopropsFlag TRUE
+			myRenderToGroundFlag TRUE
+			myLockedRoad <empty>
+			myGroundDetailTextureID 0
+			myGroundDetailTextureIntensity 0.0
+			myMaterialID METAL
+			myTextureFile EditorData/GroundEd/road.dds
+			mySpecMapFile EditorData/GroundEd/roadspecmap.dds
+			myNormalMapFile <empty>
+			myVariationFile <empty>
+			myGlobalBrightnessMask <empty>
+			myGlobalOpacityMask <empty>
+			myIsOverlayFlag TRUE
+			myWayPoints
+			{
+				WicedSplineWayPoint WayPoint_0
+				{
+					myPos
+					{
+						x 1131.012573
+						z 1535.867432
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_1
+				{
+					myPos
+					{
+						x 1100.048462
+						z 1425.269165
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_2
+				{
+					myPos
+					{
+						x 1091.296143
+						z 1370.362549
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_3
+				{
+					myPos
+					{
+						x 1038.504272
+						z 1283.262695
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_4
+				{
+					myPos
+					{
+						x 995.371521
+						z 1189.622070
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_5
+				{
+					myPos
+					{
+						x 998.827332
+						z 1088.706421
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_6
+				{
+					myPos
+					{
+						x 997.202148
+						z 1029.245972
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_7
+				{
+					myPos
+					{
+						x 986.660278
+						z 992.962158
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_8
+				{
+					myPos
+					{
+						x 989.118896
+						z 892.752502
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_9
+				{
+					myPos
+					{
+						x 1022.614685
+						z 788.245361
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_10
+				{
+					myPos
+					{
+						x 1005.291382
+						z 711.220276
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_11
+				{
+					myPos
+					{
+						x 1097.941528
+						z 605.395142
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_12
+				{
+					myPos
+					{
+						x 1142.031006
+						z 525.965393
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_13
+				{
+					myPos
+					{
+						x 1142.343140
+						z 463.098785
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_14
+				{
+					myPos
+					{
+						x 1120.423462
+						z 384.222565
+					}
+
+					myHeightModifier 0.000000
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_15
+				{
+					myPos
+					{
+						x 1116.177490
+						z 342.195801
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_16
+				{
+					myPos
+					{
+						x 1098.435547
+						z 173.227692
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_17
+				{
+					myPos
+					{
+						x 1133.820190
+						z 20.474703
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+			}
+
+		}
+
+		WicedSpline mySplinePrototype
+		{
+			myName "New Spline"
+			myWidth 14.000000
+			mySegmentation 15
+			mySmoothness 3
+			myElasticity 0
+			mySideFlatteningWidth 0
+			mySide1InterpolationLength 4.000000
+			mySide2InterpolationLength 0.000000
+			myHeightModifier 0.0
+			myGenerateMeshFlag TRUE
+			myFlattenHeightMapFlag FALSE
+			myRemoveAutopropsFlag TRUE
+			myRenderToGroundFlag TRUE
+			myLockedRoad <empty>
+			myGroundDetailTextureID 0
+			myGroundDetailTextureIntensity 0.0
+			myMaterialID METAL
+			myTextureFile EditorData/GroundEd/road.dds
+			mySpecMapFile EditorData/GroundEd/roadspecmap.dds
+			myNormalMapFile surfaces/dummy_normalmap_flat.dds
+			myVariationFile <empty>
+			myGlobalBrightnessMask <empty>
+			myGlobalOpacityMask <empty>
+			myIsOverlayFlag FALSE
+			myWayPoints
+			{
+				WicedSplineWayPoint WayPoint_0
+				{
+					myPos
+					{
+						x 1534.529419
+						z 775.856995
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_1
+				{
+					myPos
+					{
+						x 1411.288086
+						z 785.945251
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_2
+				{
+					myPos
+					{
+						x 1353.741821
+						z 764.129517
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_3
+				{
+					myPos
+					{
+						x 1305.130737
+						z 720.145386
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_4
+				{
+					myPos
+					{
+						x 1257.807495
+						z 690.509338
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_5
+				{
+					myPos
+					{
+						x 1218.757935
+						z 679.474854
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_6
+				{
+					myPos
+					{
+						x 1147.080811
+						z 680.321655
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_7
+				{
+					myPos
+					{
+						x 1069.421265
+						z 718.836914
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_8
+				{
+					myPos
+					{
+						x 1037.291504
+						z 757.530334
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_9
+				{
+					myPos
+					{
+						x 993.324219
+						z 767.051392
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_10
+				{
+					myPos
+					{
+						x 927.224365
+						z 778.719299
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+				WicedSplineWayPoint WayPoint_11
+				{
+					myPos
+					{
+						x 890.956482
+						z 782.421814
+					}
+
+					myHeightModifier 0.0
+					myBrightness 0.0
+					myOpacity 0.0
+				}
+
+			}
+
+		}
+
+	}
+
+	myTerrainGenerationStack
+	{
+	}
+
+	myTerrainGenerationSeed 0
+	mySurrMeshFile maps/europeTest/MetaData/SurrMesh.raw
+	mySurrMeshTransitionLength 0.020000
+	mySurrMeshHeightModifier 1.000000
+	myOverviewMapWaterColor
+	{
+		myR 0
+		myG 0
+		myB 0
+	}
+
+	mySunFlareTemplate <Custom>
+	myWaterTemplate <Custom>
+	myCloudsTemplate <Custom>
+	myMoodPreset <empty>
+	myCamPosDebugInfoFile maps/europeTest/MetaData/CameraPosDebugInfo.juice
+	myLowResReferenceMapTiles
+	{
+		WicedMapTile myTile0
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile1
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile2
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile3
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile4
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile5
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile6
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile7
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile8
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile9
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile10
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile11
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile12
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile13
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile14
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile15
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile16
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile17
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile18
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile19
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile20
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile21
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile22
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile23
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile24
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile25
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile26
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile27
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile28
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile29
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile30
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile31
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile32
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile33
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile34
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile35
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile36
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile37
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile38
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile39
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile40
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile41
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile42
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile43
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile44
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile45
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile46
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile47
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile48
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile49
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile50
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile51
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile52
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile53
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile54
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile55
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile56
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile57
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile58
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile59
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile60
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile61
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile62
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+		WicedMapTile myTile63
+		{
+			myTexture0 <empty>
+			myTexture1 <empty>
+			myTexture2 <empty>
+			myTexture3 <empty>
+			myIsTileWithSubTilesFlag 0
+			myIsLockedTile 0
+		}
+
+	}
+
+	myRaycastOptions
+	{
+		myIncludeSpeedtreesFlag FALSE
+		myIncludePropsFlag TRUE
+		myIncludeWaterFlag FALSE
+		myIncludeRoadsFlag FALSE
+		myIncludeCutoutsFlag FALSE
+		myIncludePerimeterPointsFlag FALSE
+		myShowTexturesFlag FALSE
+		myGeneratedMapQuality 2
+		myGeneratedMapPath C:/1.tga
+	}
+
+	myTextureGenerationStack
+	{
+	}
+
+	myInstanceGroups
+	{
+	}
+
+	myGeneratedShadowMap <empty>
+	myGeneratedShadowSurroundMap <empty>
+	myPerimeterPointSize <empty>
+}
+

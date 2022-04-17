@@ -1,0 +1,7 @@
+CLASS GenericModel
+{
+	FILE myModelFile
+	FILE mySplineFile
+	DECIMAL myTimeToLive
+	DECIMAL myFadeOutTime
+}

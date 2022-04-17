@@ -1,0 +1,18 @@
+INCLUDE juice/art/alt_texture.fruit
+
+CLASS AddonProp
+{
+	FILE myMRB
+	FILE myShadowFile
+	AlternateTexture myAlternativeTexture
+}
+
+SCRIPTCLASS AddonPropGroup
+{
+	AddonProp
+}
+
+SCRIPTCLASS AddonPropGroups
+{
+	AddonPropGroup
+}

@@ -1,0 +1,111 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "What is it?"
+		myStartTime 3.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "What is it?\nMr. President. General Morgan."
+		myStartTime 4.6
+		myVisibleTime 2.0
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "We have a situation developing in Seattle."
+		myStartTime 7.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "A situation, general?"
+		myStartTime 9.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "Communications have been sketchy, but it appears that Russian troops have \nmanaged to sneak into port using disguised cargo ships."
+		myStartTime 11.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "Let me get this clear. You're saying that we have Soviet soldiers on American soil, general? \nThat we've been invaded?"
+		myStartTime 19.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "Yes, sir. It seems more are coming in. \nWe have precious few units in the area and they are putting up what resistance they can."
+		myStartTime 25.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "My god ... What are our options?"
+		myStartTime 33.8
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "They're rather limited, sir. If we start pulling divisions back from Europe we'll lose what control we-"
+		myStartTime 36.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "I know, I know. Don't we have anything to defend our own country with?"
+		myStartTime 41.4
+		myVisibleTime 4.5
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "I've ordered what units that we have to go west, sir."
+		myStartTime 46.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "Who's leading them?\nA Colonel Sawyer, sir. He's as tough as they come."
+		myStartTime 49.6
+		myVisibleTime 2.9
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Well, he better be... "
+		myStartTime 52.7
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub15
+	{
+		myText "Assemble the staff. Situation Room. Twenty minutes."
+		myStartTime 54.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "Very well, Mr. President."
+		myStartTime 58.0
+		myVisibleTime 2.0
+	}
+
+}
+

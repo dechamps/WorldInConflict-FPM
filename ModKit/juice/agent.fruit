@@ -1,0 +1,272 @@
+INCLUDE juice/state.fruit
+INCLUDE juice/Agenttype.fruit
+INCLUDE juice/WeaponConfig.fruit
+INCLUDE juice/AgentClassID.fruit
+INCLUDE juice/EXCL_Rep.fruit
+
+
+TYPE SurfaceType
+{
+        FLESH
+        STONE
+        METAL
+}
+
+TYPE MoverType
+{
+        INFANTERY_MOVER
+        TANK_MOVER
+        HELI_MOVER
+        HOVER_MOVER
+}
+
+SCRIPTCLASS stateFileList
+{
+        TEXT
+}
+
+SCRIPTCLASS AgentList
+{
+        AgentInstance
+}
+
+SCRIPTCLASS AgentTypeList
+{
+        Agent
+}
+
+
+CLASS AgentInstance
+{
+        Vector3 myPosition
+        Vector3 myOrientation
+        FILE myScriptFileName
+}
+
+CLASS MoverData
+{
+        MoverType myMoverType
+        DECIMAL myHoverFactor
+        DECIMAL myHoverSpeed
+        Vector2f myHoverAngleLimits
+        Vector2f myHoverSpeeds
+        DECIMAL myTurningLeeway
+        DECIMAL myTurningSpeed
+        DECIMAL myTurningAcceleration
+        DECIMAL myTurningDecceleration
+        DECIMAL myMovementSpeed
+        DECIMAL myAcceleration
+        DECIMAL myDecceleration
+        DECIMAL myGroundHeight
+}
+
+
+SCRIPTCLASS UnitResistance
+{
+        WeaponAbility
+}
+
+CLASS MovementData
+{
+        DECIMAL myMovementSpeed
+        DECIMAL myAcceleration
+        DECIMAL myDecceleration
+}
+
+CLASS ArmorData
+{
+        DECIMAL myFrontArmor
+        DECIMAL myRearArmor
+        DECIMAL mySideArmor
+        DECIMAL myTopArmor
+}
+
+TYPE AgentOrderType
+{
+        BUY
+        ATTACK
+        FORCEFIRE
+        MOVE
+        LOAD
+        CAPTURE
+        REPAIR
+        SALVAGE
+        PATROL
+        ENTER_BUILDING
+        DEPLOY_STRUCTURE
+        ENTER_SIEGE_MODE
+        EXIT_SIEGE_MODE
+        FORTRESS
+        CLOAK
+        AMBUSH
+        SMOKE_SCREEN
+        FORTIFY
+        RADAR
+        HIGH_ALTITUDE
+        PARALYZE
+        SET_RALLY_POINT
+        NONE
+}
+
+CLASS AgentOrder
+{
+        AgentOrderType myOrder
+        TEXTLIST myAffirmiative
+        TEXTLIST myNegative
+}
+
+CLASS AgentOrderList
+{
+        AgentOrder mySlot1
+        AgentOrder mySlot2
+        AgentOrder mySlot3
+        AgentOrder mySlot4
+        AgentOrder mySlot5
+        AgentOrder mySlot6
+        AgentOrder mySlot7
+        AgentOrder mySlot8
+        AgentOrder mySlot9
+}
+
+CLASS EngineSound
+{
+        TEXT mySound
+        NUMBER myBaseFrequency
+}
+
+CLASS FeedbackSounds
+{
+        TEXTLIST myUnderAttackSounds
+}
+
+
+CLASS AgentStats
+{
+        AgentType myId
+        AgentClassID myAgentClassId
+        DECIMAL myHealth
+        DECIMAL myDisabledPercentage
+        DECIMAL myDisabledDetoriation
+        DECIMAL myRegenerationSpeed
+        DECIMAL myAimingSpeed
+        DECIMAL myPerception
+        DECIMAL myViewRange
+        DECIMAL myStealth
+        DECIMAL myGroundHeight
+        MovementData myMovementData
+        ArmorData myArmor
+        UnitResistance myResistances    
+        DECIMAL myAPCost
+        SurfaceType mySurface
+        NUMBER myCaptureLZFlag
+        DECIMAL myBuildTime
+        NUMBER myIsAbleToFireAndMoveFlag
+}
+
+CLASS UIRep
+{
+        DECIMAL myPositionX
+        DECIMAL myPositionY
+        DECIMAL myPositionZ
+        DECIMAL myHeading
+        DECIMAL myCameraPitch
+        DECIMAL myCameraFOV
+}
+
+
+CLASS LandingZoneData
+{
+        NUMBER myisLandingzoneFlag
+        DECIMAL myCaptureRadius
+        DECIMAL myCaptureTime
+
+        TEXT myLZInfoFile
+}
+
+
+
+CLASS LandingZoneBuilding
+{
+        NUMBER myisLandingzoneBuildingFlag
+        AgentType myAgentType
+        TEXT myLZBuildingInfoFile
+}
+
+
+CLASS StateMachineData
+{
+        stateFileList myStates
+        AIState myDefaultState
+}
+
+
+CLASS GeneralData
+{
+        EngineSound myEngineSound
+        UIRep myUIRep
+        AgentOrderList myOrders
+        FeedbackSounds myFeedbackSounds
+}
+
+
+CLASS WeaponData
+{
+        Aimer myAimer
+        WeaponInfo myWeapon
+}
+
+SCRIPTCLASS WeaponDataList
+{
+        WeaponData
+}
+
+CLASS AgentStatsData
+{
+        AgentType myId
+        AgentClassID myAgentClassId
+        TEXT myUIName
+        MoverData myMover
+        ArmorData myArmor
+        WeaponDataList myWeapons
+
+        DECIMAL myHealth
+        DECIMAL myDisabledPercentage
+        DECIMAL myDisabledDetoriation
+        DECIMAL myRegenerationSpeed
+        DECIMAL myPerception
+        DECIMAL myViewRange
+        DECIMAL myStealth
+
+        UnitResistance myResistances    
+        SurfaceType mySurface
+        NUMBER myCaptureLZFlag
+        NUMBER myIsAbleToFireAndMoveFlag
+
+
+        DECIMAL myAPCost
+        DECIMAL myBuildTime
+}
+
+CLASS Agent
+{
+        AgentStatsData myStats
+        GeneralData myGeneralData
+        EXCL_Rep myRep
+        StateMachineData myStateData    
+        LandingZoneData myLandingZoneData
+        LandingZoneBuilding myLandingZoneBuilding
+        TEXT myGridFile
+}
+
+
+
+CLASS AgentStatsModifier
+{
+        DECIMAL myPerception
+        DECIMAL myViewRange
+        DECIMAL myStealth
+        MovementData myMovementData
+        ArmorData myArmor
+        NUMBER useSpecialBullet
+        DECIMAL myAccuracy
+}

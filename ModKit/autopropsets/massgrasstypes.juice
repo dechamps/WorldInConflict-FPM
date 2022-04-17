@@ -1,0 +1,142 @@
+INCLUDE autopropsets/wic_massgrass.fruit
+
+MassGrass myGrassData
+{
+	myTypes
+	{
+		MassGrassType summer_grass
+		{
+			myTypeName summer_grass
+			myColorTintR 0
+			myColorTintG 0
+			myColorTintB 0
+			myLayers
+			{
+				MassGrassLayer GrassLayer1_Dens
+				{
+					myGrassTexture autopropsets/massgrassset01/summer_grass/massgrass_summer_grass.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 5.0
+					myHeight 1.5
+					myFadeDist 120.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 768
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+				MassGrassLayer GrassLayer2_Sparse
+				{
+					myGrassTexture autopropsets/massgrassset01/summer_grass/massgrass_summer_grass.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade2.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 10.0
+					myHeight 1.7
+					myFadeDist 240.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 180
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+			}
+
+		}
+
+		MassGrassType summer_wheat
+		{
+			myTypeName summer_wheat
+			myColorTintR 0
+			myColorTintG 0
+			myColorTintB 0
+			myLayers
+			{
+				MassGrassLayer GrassLayer1_Dens
+				{
+					myGrassTexture autopropsets/massgrassset01/summer_wheat/summer_wheat.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 5.0
+					myHeight 2
+					myFadeDist 120.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 768
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+				MassGrassLayer GrassLayer2_Sparse
+				{
+					myGrassTexture autopropsets/massgrassset01/summer_wheat/summer_wheat.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade2.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 10.0
+					myHeight 3
+					myFadeDist 240.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 180
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+			}
+
+		}
+
+		MassGrassType winter_grass
+		{
+			myTypeName winter_grass
+			myColorTintR 0
+			myColorTintG 0
+			myColorTintB 0
+			myLayers
+			{
+				MassGrassLayer GrassLayer1_Dens
+				{
+					myGrassTexture autopropsets/massgrassset01/winter_grass/massgrass_winter_grass.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 5.0
+					myHeight 2
+					myFadeDist 120.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 768
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+				MassGrassLayer GrassLayer2_Sparse
+				{
+					myGrassTexture autopropsets/massgrassset01/winter_grass/massgrass_winter_grass.dds
+					myFadeTexture autopropsets/massgrassset01/grassfade2.tga
+					myNumBladeQuadsInTexture 2
+					myWidth 10.0
+					myHeight 3
+					myFadeDist 240.0
+					myHeightFadeFactor 1.0
+					myWeightmapRes 180
+					myOptionsString <empty>
+					myPerMapWeightmap <empty>
+					myPerMapGroundColormap <empty>
+					myPerMapGroundSpecWeightMap <empty>
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

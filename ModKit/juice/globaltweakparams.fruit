@@ -1,0 +1,16 @@
+INCLUDE juice/autoloddata.fruit
+INCLUDE juice/shadowdata.fruit
+
+CLASS WarfilterBlurSettings
+{
+	DECIMAL myBlurExponent
+	DECIMAL myBlurTimeScale
+	DECIMAL myBlurIntensityScale
+}
+
+CLASS GlobalTweakParameters
+{
+	ShadowData myGlobalShadowData
+	AutolodData myGlobalAutolodData
+	WarfilterBlurSettings myWarfilterBlurSettings
+}

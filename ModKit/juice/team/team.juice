@@ -1,0 +1,142 @@
+INCLUDE juice/team/team.fruit
+
+TeamList myTeams
+{
+	PlayerTeam Neutral
+	{
+		myTeam Neutral
+		myTeamName Neutral
+		myOrderIcons
+		{
+			myMoveIcon ui/icons/movers/move.dds
+			myFollowIcon ui/icons/movers/follow.dds
+			myStackIcon ui/icons/movers/follow.dds
+			myStopIcon ui/icons/movers/stop.dds
+			myAttackIcon ui/icons/movers/attack.dds
+			myGoToBaseIcon ui/icons/movers/gotobase.tga
+			myGoToLandingZoneIcon ui/icons/movers/deploy.tga
+			myToggleReturnToBaseIcon ui/icons/movers/stayatbase.dds
+			mySelectLandingZoneIcon ui/icons/movers/selectlandingzone.tga
+			myLoadIcon ui/icons/movers/loadin.dds
+			myUnloadAllIcon ui/icons/movers/loadout.dds
+			myEnterBuildingIcon ui/icons/movers/loadin.dds
+			myBlowIcon ui/icons/movers/blow.tga
+			myRepairIcon ui/icons/movers/repair.tga
+			myLayBridgeIcon ui/icons/movers/repair.dds
+			mySwitchToSecondaryModeIcon ui/icons/movers/secondarymode.tga
+			mySwitchToPrimaryModeIcon ui/icons/movers/primarymode.tga
+			myCancelIcon ui/icons/movers/stop.dds
+		}
+
+		myIconPrefab <empty>
+		myIconFlagPrefab <empty>
+		myZoneBigFlagAnimationState NEUB
+		myZoneSmallFlagAnimationState NEUT
+		myWinScreenBackground ui/score_sheet/us_failedflag.dds
+		myDominationBarModelFile ui/hud_flag/nato/nato_flag.mrb
+	}
+
+	PlayerTeam USA
+	{
+		myTeam US
+		myTeamName USA
+		myOrderIcons
+		{
+			myMoveIcon ui/icons/movers/move.dds
+			myFollowIcon ui/icons/movers/follow.dds
+			myStackIcon ui/icons/movers/follow.dds
+			myStopIcon ui/icons/movers/stop.dds
+			myAttackIcon ui/icons/movers/attack.dds
+			myGoToBaseIcon ui/icons/movers/gotobase.tga
+			myGoToLandingZoneIcon ui/icons/movers/deploy.tga
+			myToggleReturnToBaseIcon ui/icons/movers/stayatbase.dds
+			mySelectLandingZoneIcon ui/icons/movers/selectlandingzone.tga
+			myLoadIcon ui/icons/movers/loadin.dds
+			myUnloadAllIcon ui/icons/movers/loadout.dds
+			myEnterBuildingIcon ui/icons/movers/loadin.dds
+			myBlowIcon ui/icons/movers/blow.tga
+			myRepairIcon ui/icons/movers/repair.tga
+			myLayBridgeIcon ui/icons/movers/repair.dds
+			mySwitchToSecondaryModeIcon ui/icons/movers/secondarymode.tga
+			mySwitchToPrimaryModeIcon ui/icons/movers/primarymode.tga
+			myCancelIcon ui/icons/movers/stop.dds
+		}
+
+		myIconPrefab InGame_Faction_Usa
+		myIconFlagPrefab InGame_Flag_Usa
+		myZoneBigFlagAnimationState USAB
+		myZoneSmallFlagAnimationState USAA
+		myWinScreenBackground ui/score_sheet/victoryflag_us.dds
+		myDominationBarModelFile ui/hud_flag/us/us_flag.mrb
+	}
+
+	PlayerTeam NATO
+	{
+		myTeam NATO
+		myTeamName NATO
+		myOrderIcons
+		{
+			myMoveIcon ui/icons/movers/move.tga
+			myFollowIcon ui/icons/movers/follow.dds
+			myStackIcon ui/icons/movers/follow.dds
+			myStopIcon ui/icons/movers/stop_icon.tga
+			myAttackIcon ui/icons/movers/attack.tga
+			myGoToBaseIcon ui/icons/movers/gotobase.tga
+			myGoToLandingZoneIcon ui/icons/movers/deploy.tga
+			myToggleReturnToBaseIcon ui/icons/movers/stayatbase.dds
+			mySelectLandingZoneIcon ui/icons/movers/selectlandingzone.tga
+			myLoadIcon ui/icons/movers/loadin.tga
+			myUnloadAllIcon ui/icons/movers/loadout.tga
+			myEnterBuildingIcon ui/icons/movers/loadin.dds
+			myBlowIcon ui/icons/movers/blow.tga
+			myRepairIcon ui/icons/movers/repair.tga
+			myLayBridgeIcon ui/icons/movers/repair.dds
+			mySwitchToSecondaryModeIcon ui/icons/movers/secondarymode.tga
+			mySwitchToPrimaryModeIcon ui/icons/movers/primarymode.tga
+			myCancelIcon ui/icons/movers/stop.tga
+		}
+
+		myIconPrefab InGame_Faction_Nato
+		myIconFlagPrefab InGame_Flag_Nato
+		myZoneBigFlagAnimationState EUUB
+		myZoneSmallFlagAnimationState EUUU
+		myWinScreenBackground ui/score_sheet/eu_wins.dds
+		myDominationBarModelFile ui/hud_flag/nato/nato_flag.mrb
+	}
+
+	PlayerTeam USSR
+	{
+		myTeam USSR
+		myTeamName USSR
+		myOrderIcons
+		{
+			myMoveIcon ui/icons/movers/move.dds
+			myFollowIcon ui/icons/movers/follow.dds
+			myStackIcon ui/icons/movers/follow.dds
+			myStopIcon ui/icons/movers/stop.dds
+			myAttackIcon ui/icons/movers/attack.dds
+			myGoToBaseIcon ui/icons/movers/gotobase.tga
+			myGoToLandingZoneIcon ui/icons/movers/deploy.tga
+			myToggleReturnToBaseIcon ui/icons/movers/stayatbase.dds
+			mySelectLandingZoneIcon ui/icons/movers/selectlandingzone.tga
+			myLoadIcon ui/icons/movers/loadin.dds
+			myUnloadAllIcon ui/icons/movers/loadout.dds
+			myEnterBuildingIcon ui/icons/movers/loadin.dds
+			myBlowIcon ui/icons/movers/blow.tga
+			myRepairIcon ui/icons/movers/repair.tga
+			myLayBridgeIcon ui/icons/movers/repair.dds
+			mySwitchToSecondaryModeIcon ui/icons/movers/secondarymode.tga
+			mySwitchToPrimaryModeIcon ui/icons/movers/primarymode.tga
+			myCancelIcon ui/icons/movers/stop.dds
+		}
+
+		myIconPrefab InGame_Faction_Ussr
+		myIconFlagPrefab InGame_Flag_Ussr
+		myZoneBigFlagAnimationState USSR
+		myZoneSmallFlagAnimationState USSR
+		myWinScreenBackground ui/score_sheet/victoryflag_ussr.dds
+		myDominationBarModelFile ui/hud_flag/ussr/ussr_flag.mrb
+	}
+
+}
+

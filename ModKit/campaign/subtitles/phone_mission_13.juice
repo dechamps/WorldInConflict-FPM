@@ -1,0 +1,195 @@
+INCLUDE campaign/campaign.fruit
+
+MovieSubtitleList mySubtitles
+{
+	MovieSubtitle Sub1
+	{
+		myText "Hello, you've reached James Webb and Nicole Warner."
+		myStartTime 6.3
+		myVisibleTime 3.0
+	}
+
+	MovieSubtitle Sub2
+	{
+		myText "We're not here right now, but please leave a message after the-"
+		myStartTime 9.5
+		myVisibleTime 2.9
+	}
+
+	MovieSubtitle Sub3
+	{
+		myText "Hey, baby it's me. Pick up the phone. I know you're there."
+		myStartTime 13.5
+		myVisibleTime 3.6
+	}
+
+	MovieSubtitle Sub4
+	{
+		myText "Look, I'm sorry, Nicole. Please, pick up."
+		myStartTime 19.1
+		myVisibleTime 2.7
+	}
+
+	MovieSubtitle Sub5
+	{
+		myText "James, I just don't have anything more to say to you."
+		myStartTime 23.7
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub6
+	{
+		myText "But we're talking right now, aren't we? "
+		myStartTime 26.3
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub7
+	{
+		myText "I'm real sorry, Nicole. But you know I had to do this."
+		myStartTime 28.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub8
+	{
+		myText "No, you didn't."
+		myStartTime 31.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub9
+	{
+		myText "You could have stayed here with me. "
+		myStartTime 33.3
+		myVisibleTime 2.1
+	}
+
+	MovieSubtitle Sub10
+	{
+		myText "I just can't handle it, Jamie."
+		myStartTime 35.8
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub11
+	{
+		myText "If you die-"
+		myStartTime 37.6
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub12
+	{
+		myText "Baby... I won't."
+		myStartTime 38.7
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub13
+	{
+		myText "Look, everything's gonna be okay."
+		myStartTime 40.5
+		myVisibleTime 1.6
+	}
+
+	MovieSubtitle Sub14
+	{
+		myText "Don't worry, alright?"
+		myStartTime 42.3
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub16
+	{
+		myText "If I survived a nuclear explosion there isn't anything that's gonna hold me back."
+		myStartTime 43.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub17
+	{
+		myText "Oh my god! Were you in Cascade Falls?!"
+		myStartTime 47.6
+		myVisibleTime 0
+	}
+
+	MovieSubtitle Sub18
+	{
+		myText "Don't worry, I'm not glowing in the dark or anything."
+		myStartTime 49.4
+		myVisibleTime 2.9
+	}
+
+	MovieSubtitle Sub19
+	{
+		myText "But the colonel... I think he... feels that we failed somehow..."
+		myStartTime 52.6
+		myVisibleTime 4.2
+	}
+
+	MovieSubtitle Sub20
+	{
+		myText "that we should have been able to stop it. And now, he's trying to make up for it."
+		myStartTime 57.0
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub21
+	{
+		myText "Trying? How?"
+		myStartTime 61.4
+		myVisibleTime 1.3
+	}
+
+	MovieSubtitle Sub22
+	{
+		myText "What's he doing?"
+		myStartTime 62.9
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub23
+	{
+		myText "Don't let him make you do anything crazy."
+		myStartTime 64.3
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub24
+	{
+		myText "Look... honey, everything's gonna be alright."
+		myStartTime 67.0
+		myVisibleTime 2.9
+	}
+
+	MovieSubtitle Sub25
+	{
+		myText "I gotta go, okay. Talk to you soon."
+		myStartTime 70.4
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub26
+	{
+		myText Wait!
+		myStartTime 72.4
+		myVisibleTime 1.5
+	}
+
+	MovieSubtitle Sub27
+	{
+		myText "I love you, Jamie."
+		myStartTime 74.2
+		myVisibleTime 0.0
+	}
+
+	MovieSubtitle Sub28
+	{
+		myText "Love you too."
+		myStartTime 75.5
+		myVisibleTime 2.0
+	}
+
+}
+

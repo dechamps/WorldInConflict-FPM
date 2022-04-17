@@ -1,0 +1,45 @@
+INCLUDE ui/default_settings.fruit
+
+CLASS OrderIcons
+{
+	FILE myMoveIcon
+	FILE myFollowIcon
+	FILE myStackIcon
+	FILE myStopIcon
+	FILE myAttackIcon
+	FILE myGoToBaseIcon
+	FILE myGoToLandingZoneIcon
+	FILE myToggleReturnToBaseIcon
+	FILE mySelectLandingZoneIcon
+	FILE myLoadIcon
+	FILE myUnloadAllIcon	
+	FILE myEnterBuildingIcon
+	FILE myBlowIcon
+	FILE myRepairIcon
+	FILE myLayBridgeIcon
+	FILE mySwitchToSecondaryModeIcon
+	FILE mySwitchToPrimaryModeIcon
+	FILE myCancelIcon
+}
+
+CLASS InformationBoxType
+{
+	LOCTEXT myHeadline
+	LOCTEXT myDescription
+	GameActionsType myShortcutKey
+}
+
+CLASS PopupBoxType
+{
+	LOCTEXT myHeadline
+	LOCTEXT myDescription
+	FILE myIcon
+}
+
+CLASS HelpBoxType
+{
+	LOCTEXT myLeftHandedDescription
+	FILE myLeftHandedIcon
+	LOCTEXT myRightHandedDescription
+	FILE myRightHandedIcon
+}

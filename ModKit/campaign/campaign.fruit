@@ -1,0 +1,128 @@
+INCLUDE campaign/medals.fruit
+
+CLASS MovieSubtitle
+{
+	LOCTEXT myText
+	NUMBER myStartTime
+	NUMBER myVisibleTime
+}
+
+SCRIPTCLASS MovieSubtitleList
+{
+	MovieSubtitle
+}
+
+TYPE Faction
+{
+	US
+	USSR
+}
+
+//TYPE LongitudePointOfCompass
+//{
+//	EAST
+//	WEST
+//}
+//TYPE LatitudePointOfCompass 
+//{
+//	NORTH
+//	SOUTH
+//}
+//CLASS Coordinates
+//{
+//	DECIMAL myLongitude
+//	LongitudePointOfCompass myLongitudePointOfCompass
+//
+//	DECIMAL myLatitude
+//	LatitudePointOfCompass myLatitudePointOfCompass
+//}
+
+CLASS Cutscene
+{
+	FILE myFile
+	FILE mySubtitleFile
+	//FILE myNodeImage
+	//Coordinates myCoordinates
+	LOCTEXT myName
+	LOCTEXT myDescription
+	NUMBER myExcludeOnCinematicsScreenFlag
+	//NUMBER myLevel
+	//NUMBER myRequiredLevel
+	//NUMBER myCutoffLevel
+	//DECIMAL myGlobeStartZoom // must be > min zoom
+
+	//NUMBER myRoleLevelForCompletion	// 0 = no roles enabled, 1 = first role enabled etc. never decrease
+	//NUMBER myAvailablePersonnelSlotsForCompletion // must be <= myRoleLevelForCompletion. never decrease
+	//NUMBER myTacAidLevelForCompletion
+
+	//NUMBER myIPGainForCompletion
+	//NUMBER myInitialAPGainForCompletion
+	//NUMBER myMaxAPGainForCompletion
+}
+
+
+
+
+
+CLASS Mission
+{
+	FILE myFile
+	//FILE myNodeImage
+	//Coordinates myCoordinates
+	//NUMBER myLevel
+	//NUMBER myRequiredLevel
+	//NUMBER myCutoffLevel
+	//DECIMAL myGlobeStartZoom	// must be > min zoom
+
+	//NUMBER myRoleLevelForCompletion	// 0 = no roles enabled, 1 = first role enabled etc. never decrease
+	//NUMBER myAvailablePersonnelSlotsForCompletion // must be <= myRoleLevelForCompletion. never decrease
+	//NUMBER myTacAidLevelForCompletion
+
+	//NUMBER myIPGainForCompletion
+	//NUMBER myInitialAPGainForCompletion
+	//NUMBER myMaxAPGainForCompletion
+	Medals myMedalsForCompletion
+	Faction myFaction
+
+	//NUMBER myShowBriefingRoomFlag
+	//NUMBER myIsSkirmishFlag
+
+	//FILE myBriefingFile
+	//TEXT myBriefingName
+}
+
+SCRIPTCLASS ItemList
+{
+	Mission
+	Cutscene
+}
+
+CLASS Campaign
+{
+	LOCTEXT myCampaignName
+	FILE myImageFile
+	FILE myBackdropFile
+//	FILE myUnknownNodeImageFile
+//	FILE myTreeImageFile
+	TEXT myBulletUpPrefab
+	TEXT myBulletInsidePrefab
+	TEXT myBulletDownPrefab
+	//DECIMAL myIPGainHardMultiplier
+
+	//FILE myMissionPreparationScene
+	//FILE myMissionPreparationGlobeMRBInSceneFile
+	//FILE myMissionPreparationMedalsMRBInSceneFile
+	//FILE myMissionPreparationExitDoorMRBInSceneFile
+
+	ItemList myItems
+
+	//DECIMAL myGlobeMinZoom
+	//DECIMAL myGlobeMaxZoom
+	//DECIMAL myGlobeRadius // check radius in lightwave, NOT in showbox (shows wrong radius)
+	//FILE myGlobeMRB
+}
+
+SCRIPTCLASS CampaignList
+{
+	Campaign
+}
