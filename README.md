@@ -20,3 +20,8 @@ in the buy menu - it also determines which buy menu tab it ends up in. If a
 non-`FPM_ROLE` `RoleCost` has a `myPriceType` of `REBATE_REBATED` or
 `REBATE_UNIQUE`, the unit will appear in the buy menu tab that corresponds to
 `myRole`.
+
+### Support weapons
+
+Support weapons are configured in `maps/supportweapons.juice`, *not*
+`database/supportdatabase.juice` (which appears to be unused).
