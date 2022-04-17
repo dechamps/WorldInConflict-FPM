@@ -5100,12 +5100,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ENGINEER_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -6844,12 +6838,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
-			Role Role(4) ENGINEER_ROLE
-
 		}
 
 		myExperienceLevels
@@ -8355,12 +8343,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -10806,12 +10788,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(3) ARMY_ROLE
-
-			Role Role(0) ENGINEER_ROLE
-
-			Role Role(1) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -13928,12 +13904,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -15938,12 +15908,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(1) ARMY_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
-			Role Role(3) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -18327,12 +18291,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -19767,12 +19725,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMOR_ROLE
-
-			Role Role(1) AIR_ROLE
-
-			Role Role(2) ENGINEER_ROLE
-
 		}
 
 		myExperienceLevels
@@ -20303,12 +20255,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -30254,12 +30200,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ENGINEER_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -31950,12 +31890,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ENGINEER_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -33413,12 +33347,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -35914,12 +35842,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -38801,7 +38723,7 @@ UnitTypeList UnitTypes
 		}
 
 		myUIName "NATO - Amphibious Transport"
-		myToolTipInfo "<#888><i>Spähpanzer Luchs</></>\n\nGood Against: \n- Infantry \n- Helicopters \n\n <#4a3>Characteristics: \n- Amphibious infantry transport \n- Strong against infantry \n- Medium armor, low speed</>"
+		myToolTipInfo "<#888><i>Spï¿½hpanzer Luchs</></>\n\nGood Against: \n- Infantry \n- Helicopters \n\n <#4a3>Characteristics: \n- Amphibious infantry transport \n- Strong against infantry \n- Medium armor, low speed</>"
 		myIconWorldPrefab UnitIcon_UnitType_AATT
 		myIconMenuPrefab UnitIcon_UnitType_AATT
 		myIconToolTipBitmap ui/Icons/unit_info/nato_armor_amphtransport.TGA
@@ -38838,12 +38760,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -40636,12 +40552,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(1) ARMY_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
-			Role Role(3) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -42991,12 +42901,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -44390,12 +44294,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMOR_ROLE
-
-			Role Role(1) AIR_ROLE
-
-			Role Role(2) ENGINEER_ROLE
-
 		}
 
 		myExperienceLevels
@@ -44926,12 +44824,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -54941,12 +54833,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ENGINEER_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -56685,12 +56571,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
-			Role Role(4) ENGINEER_ROLE
-
 		}
 
 		myExperienceLevels
@@ -58196,12 +58076,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -60593,12 +60467,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -63627,12 +63495,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -65467,12 +65329,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(1) ARMY_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
-			Role Role(3) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -67884,12 +67740,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ARMOR_ROLE
-
-			Role Role(2) AIR_ROLE
-
 		}
 
 		myExperienceLevels
@@ -69331,12 +69181,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMOR_ROLE
-
-			Role Role(1) AIR_ROLE
-
-			Role Role(2) ENGINEER_ROLE
-
 		}
 
 		myExperienceLevels
@@ -69867,12 +69711,6 @@ UnitTypeList UnitTypes
 
 		myRoleBlackList
 		{
-			Role Role(0) ARMY_ROLE
-
-			Role Role(1) ENGINEER_ROLE
-
-			Role Role(2) ARMOR_ROLE
-
 		}
 
 		myExperienceLevels
