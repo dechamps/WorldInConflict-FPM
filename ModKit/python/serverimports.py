@@ -272,6 +272,14 @@ def OnPlayerConnected( aPlayerId, aTeam ):
 		if aPlayerId+1 == PLAYER_HUMAN:
 			## set default Player name to Parker
 			thePlayers[ PLAYER_HUMAN ].myName = 'parker'
+	else:
+		debug.DebugMessage('[WorldInConflict-FPM] Overriding FPM AP/TA rules')
+		for team in [TEAM_USA, TEAM_NATO, TEAM_USSR]:
+			wicg.SetMaxAP(18000, team)
+			wicg.SetStartingAP(2000, team)
+		wicg.SetApRegrowthRate(105)
+		wicg.SetUnitScoreToTAMultiplier(0.075)
+		wicg.SetDomTotalDominationFactor(2)
 			
 	return 1
 
