@@ -2,7 +2,7 @@ INCLUDE juice/modinfo.fruit
 
 ModInfo myModInfo
 {
-	myModName <empty>
-	myLocModName <empty>
+	myModName "FPM 0.1"
+	myLocModName "FPM 0.1"
 }
 
