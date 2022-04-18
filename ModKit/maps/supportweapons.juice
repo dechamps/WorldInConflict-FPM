@@ -17,42 +17,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -308,42 +272,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -596,42 +524,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -884,42 +776,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -1172,42 +1028,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -1455,42 +1275,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -1821,42 +1605,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -2188,42 +1936,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -2516,42 +2228,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -2825,42 +2501,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -3220,42 +2860,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -3529,42 +3133,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -3812,42 +3380,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -4089,42 +3621,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -4372,42 +3868,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -4649,42 +4109,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -4932,42 +4356,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -5986,42 +5374,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -6309,42 +5661,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -6632,42 +5948,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -6960,42 +6240,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -7288,42 +6532,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -7610,42 +6818,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 50
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -7938,42 +7110,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -8530,42 +7666,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -8821,42 +7921,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -9109,42 +8173,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -9397,42 +8425,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -9685,42 +8677,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -9968,42 +8924,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -10334,42 +9254,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -10701,42 +9585,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -11029,42 +9877,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -11338,42 +10150,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -11733,42 +10509,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -12042,42 +10782,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -12325,42 +11029,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -12602,42 +11270,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -12885,42 +11517,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -13162,42 +11758,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -13445,42 +12005,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -14499,42 +13023,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -14822,42 +13310,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -15145,42 +13597,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -15473,42 +13889,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -15801,42 +14181,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -16123,42 +14467,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 50
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -16451,42 +14759,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -17043,42 +15315,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -17334,42 +15570,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -17622,42 +15822,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -17910,42 +16074,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -18198,42 +16326,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -18481,42 +16573,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -18847,42 +16903,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 12
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -19214,42 +17234,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -19542,42 +17526,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -19851,42 +17799,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 12
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -20246,42 +18158,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -20555,42 +18431,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -20838,42 +18678,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -21115,42 +18919,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -21398,42 +19166,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -21675,42 +19407,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -21958,42 +19654,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -23012,42 +20672,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -23335,42 +20959,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -23658,42 +21246,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 14
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -23986,42 +21538,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -24314,42 +21830,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -24636,42 +22116,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 50
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -24964,42 +22408,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -25552,42 +22960,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -30101,42 +27473,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 80
-					myCost2 60
-					myCost3 40
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -31813,42 +29149,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -32101,42 +29401,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -32888,42 +30152,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -33179,42 +30407,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 12
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 20
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -38573,42 +35765,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -38864,42 +36020,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 12
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 20
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -43151,42 +40271,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 6
-					myCost2 6
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 5
-					myCost2 5
-					myCost3 5
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -43442,42 +40526,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 12
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 20
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -48308,42 +45356,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -48674,42 +45686,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -50208,42 +47184,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 6
-					myCost2 12
-					myCost3 6
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 8
-					myCost2 16
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 20
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -50727,42 +47667,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 50
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -51055,42 +47959,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 8
-					myCost3 8
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -51378,42 +48246,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 50
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 45
-					myCost2 30
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -51706,42 +48538,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -52028,42 +48824,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 12
-					myCost2 12
-					myCost3 12
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 15
-					myCost2 15
-					myCost3 15
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 10
-					myCost2 10
-					myCost3 10
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -52337,42 +49097,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -53863,42 +50587,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 25
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -54168,42 +50856,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -54451,42 +51103,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -54734,42 +51350,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMOR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ARMY_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 0
-					myCost2 0
-					myCost3 0
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
@@ -55843,42 +52423,6 @@ SupportWeapons SupportWeaponDatabase
 			myTargetAreaWidth 0.0
 			myRoleCosts
 			{
-				SupportCost SupportCost(0)
-				{
-					myRole ARMY_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(1)
-				{
-					myRole ENGINEER_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(2)
-				{
-					myRole ARMOR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
-				SupportCost SupportCost(3)
-				{
-					myRole AIR_ROLE
-					myCost1 30
-					myCost2 20
-					myCost3 20
-					myCostType REBATE_UNIQUE
-				}
-
 			}
 
 			myRoleBlackList
