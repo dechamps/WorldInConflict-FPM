@@ -41,6 +41,24 @@ GuiFile myGuiFile
 					myAspect STRETCH
 				}
 
+				EXP_TextLabel myTextLabel_FPM
+				{
+					myXPos 948
+					myYPos 8
+					myWidth 68
+					myHeight 38
+					myVAlign TOP
+					myHAlign RIGHT
+					myFont BigRed
+					myText FPM
+					myToolTip <empty>
+					myToolTipRef <empty>
+					myIgnoreEvents FALSE
+					myStatus ENABLED
+					myHiddenInEditor FALSE
+					myAspect STRETCH
+				}
+
 			}
 
 			myName Backdrop

@@ -27,6 +27,14 @@
 				<Property type="FILE" name="myVideo" value="movies\\bg_movie_frontend.bik"/>
 				<Property type="BOOL" name="myKeepAspectRatioFlag" value="1"/>
 			</Item>
+			<Item name="myTextLabel_FPM" template="Templates�TextLabel">
+				<Property type="INT" name="myXPos" value="948" flags="PF_RELATIVE"/>
+				<Property type="INT" name="myYPos" value="8" flags="PF_RELATIVE"/>
+				<Property type="ITEM" name="myFont" value="Fonts�BigRed" flags="PF_FONT"/>
+				<Property type="LOCSTRING" name="myText" value="FPM"/>
+				<Property type="INT" name="myWidth" value="68"/>
+				<Property type="ENUM" name="myHAlign" value="Right" enumtype="HAlign"/>
+			</Item>
 		</Item>
 		<Item name="Menu_Background">
 			<Property type="STRING" name="Type" value="Screen"/>
