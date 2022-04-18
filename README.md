@@ -1,4 +1,13 @@
-# World In Conflict FPM tweaks
+# World In Conflict FPM mod
+
+This World In Conflict mod aligns non-FPM (Few Players Mode) with FPM, making it
+possible to effectively play non-FPM games with FPM rules, including:
+
+- Reinforcement points (2000 starting, 18000 total)
+- No unit role restrictions and same unit costs as FPM regardless of role
+- Same Tactical Aid costs as FPM regardless of role
+
+## `ModKit` directory
 
 The initial state of the `ModKit` directory is a copy of all the *text* files
 from the [World In Conflict ModKit][], as autodetected by the following command:
