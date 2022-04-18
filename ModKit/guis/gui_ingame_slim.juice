@@ -15378,6 +15378,24 @@ GuiFile myGuiFile
 					myAspect CENTER
 				}
 
+				EXP_TextLabel myTextLabel_FPM
+				{
+					myXPos 762
+					myYPos 87
+					myWidth 68
+					myHeight 39
+					myVAlign TOP
+					myHAlign RIGHT
+					myFont BigRed
+					myText FPM
+					myToolTip <empty>
+					myToolTipRef <empty>
+					myIgnoreEvents FALSE
+					myStatus ENABLED
+					myHiddenInEditor FALSE
+					myAspect CENTER
+				}
+
 			}
 
 			myName SelectTeam
@@ -22656,6 +22674,24 @@ GuiFile myGuiFile
 					myAspect CENTER
 				}
 
+				EXP_TextLabel myTextLabel_FPM
+				{
+					myXPos 505
+					myYPos 590
+					myWidth 68
+					myHeight 39
+					myVAlign TOP
+					myHAlign RIGHT
+					myFont BigRed
+					myText FPM
+					myToolTip <empty>
+					myToolTipRef <empty>
+					myIgnoreEvents FALSE
+					myStatus ENABLED
+					myHiddenInEditor FALSE
+					myAspect CENTER
+				}
+
 			}
 
 			myName GameEnd
@@ -26614,6 +26650,24 @@ GuiFile myGuiFile
 					myHAlign LEFT
 					myFont GrayTextFont
 					myText _YesNo_
+					myToolTip <empty>
+					myToolTipRef <empty>
+					myIgnoreEvents FALSE
+					myStatus ENABLED
+					myHiddenInEditor FALSE
+					myAspect CENTER
+				}
+
+				EXP_TextLabel myTextLabel_FPM
+				{
+					myXPos 735
+					myYPos 55
+					myWidth 70
+					myHeight 43
+					myVAlign TOP
+					myHAlign RIGHT
+					myFont BigRed
+					myText FPM
 					myToolTip <empty>
 					myToolTipRef <empty>
 					myIgnoreEvents FALSE

@@ -8324,6 +8324,16 @@
 				<Property type="ITEM" name="myFont" value="Fonts¤TextFont_Headline_Red" flags="PF_FONT"/>
 				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
 			</Item>
+			<Item name="myTextLabel_FPM" template="Templatesï¿½TextLabel">
+				<Property type="INT" name="myXPos" value="762" flags="PF_RELATIVE"/>
+				<Property type="INT" name="myYPos" value="87" flags="PF_RELATIVE"/>
+				<Property type="ITEM" name="myFont" value="Fontsï¿½BigRed" flags="PF_FONT"/>
+				<Property type="ENUM" name="myHAlign" value="Right" enumtype="HAlign"/>
+				<Property type="LOCSTRING" name="myText" value="FPM"/>
+				<Property type="INT" name="myWidth" value="68"/>
+				<Property type="INT" name="myHeight" value="39"/>
+				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
+			</Item>
 		</Item>
 		<Item name="SelectRole">
 			<Property type="STRING" name="Type" value="Screen"/>
@@ -12120,6 +12130,16 @@
 				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
 				<Property type="ENUM" name="myHAlign" value="Left" enumtype="HAlign"/>
 			</Item>
+			<Item name="myTextLabel_FPM" template="Templatesï¿½TextLabel">
+				<Property type="INT" name="myXPos" value="505" flags="PF_RELATIVE"/>
+				<Property type="INT" name="myYPos" value="590" flags="PF_RELATIVE"/>
+				<Property type="ITEM" name="myFont" value="Fontsï¿½BigRed" flags="PF_FONT"/>
+				<Property type="ENUM" name="myHAlign" value="Right" enumtype="HAlign"/>
+				<Property type="LOCSTRING" name="myText" value="FPM"/>
+				<Property type="INT" name="myWidth" value="68"/>
+				<Property type="INT" name="myHeight" value="39"/>
+				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
+			</Item>
 		</Item>
 		<Item name="GameEndCameraFreedom">
 			<Property type="STRING" name="Type" value="Screen"/>
@@ -14234,6 +14254,16 @@
 				<Property type="ITEM" name="myFont" value="Fonts¤GrayTextFont" flags="PF_FONT"/>
 				<Property type="INT" name="myWidth" value="180"/>
 				<Property type="LOCSTRING" name="myText" value="_YesNo_"/>
+				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
+			</Item>
+			<Item name="myTextLabel_FPM" template="Templatesï¿½TextLabel">
+				<Property type="INT" name="myXPos" value="735" flags="PF_RELATIVE"/>
+				<Property type="INT" name="myYPos" value="55" flags="PF_RELATIVE"/>
+				<Property type="ITEM" name="myFont" value="Fontsï¿½BigRed" flags="PF_FONT"/>
+				<Property type="ENUM" name="myHAlign" value="Right" enumtype="HAlign"/>
+				<Property type="LOCSTRING" name="myText" value="FPM"/>
+				<Property type="INT" name="myWidth" value="70"/>
+				<Property type="INT" name="myHeight" value="43"/>
 				<Property type="ENUM" name="myAspect" value="Center" enumtype="Aspect"/>
 			</Item>
 		</Item>
